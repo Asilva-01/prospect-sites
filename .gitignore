@@ -1,0 +1,5 @@
+prospector-config.json
+prospector.db
+*.log
+publicador-log.txt
+.system_generated/

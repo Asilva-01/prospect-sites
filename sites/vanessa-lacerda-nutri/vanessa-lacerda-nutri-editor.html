@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Vanessa Lacerda Nutricionista | Emagrecimento & Ganho de Massa</title>
+  <meta name="description" content="Nutrição humanizada e focada em resultados reais em Santo Amaro, São Paulo e online. Emagrecimento, hipertrofia e reeducação alimentar com a Dra. Vanessa Lacerda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-deep: #16261d;
+      --primary: #244232;
+      --primary-accent: #407558;
+      --accent: #5a9976;
+      --accent-light: #cee5d8;
+      --accent-soft: #edf5f0;
+      --bg-base: #f7faf8;
+      --bg-surface: #ffffff;
+      --bg-card: #f0f7f3;
+      --ink: #17241c;
+      --ink-muted: #516458;
+      --ink-light: #7b8e82;
+      --border: rgba(36, 66, 50, 0.12);
+      --shadow-sm: 0 4px 12px rgba(22, 38, 29, 0.04);
+      --shadow-md: 0 12px 32px rgba(22, 38, 29, 0.08);
+      --shadow-lg: 0 20px 48px rgba(22, 38, 29, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', Georgia, serif;
+      color: var(--primary-deep);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-spacing {
+      padding: 96px 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-spacing {
+        padding: 64px 0;
+      }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary-accent);
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background-color: var(--primary-accent);
+      border-radius: var(--radius-full);
+    }
+
+    .badge-google {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-deep);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .stars {
+      color: #f59e0b;
+      display: inline-flex;
+      gap: 2px;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 16px 30px;
+      border-radius: var(--radius-full);
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent) 0%, var(--primary-accent) 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(64, 117, 88, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(64, 117, 88, 0.45);
+      background: linear-gradient(135deg, #6aa885 0%, #36634a 100%);
+      color: #ffffff;
+    }
+
+    .btn-outline-dark {
+      background: transparent;
+      border-color: var(--border);
+      color: var(--primary-deep);
+    }
+
+    .btn-outline-dark:hover {
+      background: var(--bg-card);
+      border-color: var(--primary-accent);
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(247, 250, 248, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(36, 66, 50, 0.08);
+      transition: var(--transition);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary-deep);
+    }
+
+    .brand-title span {
+      display: block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--primary-accent);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+    }
+
+    .nav-menu a:hover {
+      color: var(--primary-accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      padding-bottom: 60px;
+      background: radial-gradient(circle at 80% 20%, rgba(90, 153, 118, 0.18) 0%, transparent 60%),
+                  radial-gradient(circle at 15% 85%, rgba(36, 66, 50, 0.08) 0%, transparent 50%),
+                  var(--bg-base);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(2.3rem, 4.4vw, 3.5rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h1 span {
+      font-style: italic;
+      color: var(--primary-accent);
+      font-weight: 400;
+    }
+
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--ink-muted);
+      margin-bottom: 32px;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .hero-proof {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .hero-media {
+      position: relative;
+    }
+
+    .hero-card-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 8px solid #ffffff;
+      background: var(--bg-surface);
+    }
+
+    .hero-card-frame img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-card-frame:hover img {
+      transform: scale(1.03);
+    }
+
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: #ffffff;
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    /* Strip */
+    .strip-banner {
+      background: var(--primary-deep);
+      color: #ffffff;
+      padding: 28px 0;
+    }
+
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .strip-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .strip-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-light);
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .strip-item strong {
+      display: block;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .strip-item span {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* About Section */
+    .about-section {
+      background: var(--bg-surface);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .about-img-frame {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/5;
+      background: var(--primary);
+    }
+
+    .about-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-content h2 {
+      font-size: clamp(2rem, 3.2vw, 2.8rem);
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      color: var(--ink-muted);
+      font-size: 1.025rem;
+      margin-bottom: 18px;
+    }
+
+    .about-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 36px;
+    }
+
+    .pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      color: var(--primary-deep);
+      padding: 8px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Services Section */
+    .services-section {
+      background: var(--bg-base);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 56px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      margin-bottom: 16px;
+    }
+
+    .section-header p {
+      color: var(--ink-muted);
+      font-size: 1.05rem;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary-accent);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--primary-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--ink-muted);
+      font-size: 0.95rem;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--primary-accent);
+    }
+
+    /* Testimonials */
+    .testimonials-section {
+      background: var(--bg-surface);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .testimonial-quote {
+      font-style: italic;
+      color: var(--ink);
+      font-size: 0.975rem;
+      line-height: 1.65;
+      margin: 16px 0 24px;
+    }
+
+    .author-meta strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--primary-deep);
+    }
+
+    .author-meta span {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: var(--bg-base);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 32px 0 36px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--primary-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-item strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--primary-deep);
+    }
+
+    .contact-item span, .contact-item a {
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+    }
+
+    .contact-card-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* FAQ */
+    .faq-section {
+      background: var(--bg-surface);
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: var(--bg-base);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      padding: 22px 24px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--primary-deep);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .faq-answer {
+      padding: 0 24px 22px;
+      color: var(--ink-muted);
+      font-size: 0.95rem;
+      display: none;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background: #101a14;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 60px 0 30px;
+      font-size: 0.875rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand h3 {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 99;
+      background: #25d366;
+      color: #ffffff;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+    }
+
+    .whatsapp-floating:hover {
+      transform: scale(1.08) translateY(-3px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.5);
+    }
+
+    .whatsapp-floating svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-grid, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .services-grid, .testimonials-grid, .strip-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+      .services-grid, .testimonials-grid, .strip-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-actions {
+        flex-direction: column;
+      }
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-nav">
+      <a href="#" class="brand-title">
+        Dra. Vanessa Lacerda
+        <span>Nutricionista · Emagrecimento & Saúde</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#atuacao">Áreas de Atuação</a></li>
+        <li><a href="#metodologia">Como Funciona</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div>
+        <a href="https://wa.me/5511966869718?text=Olá%2C%20Dra.%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem;">
+          Agendar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <div class="eyebrow">Nutrição em Santo Amaro · São Paulo & Online</div>
+          <h1>Nutrição humanizada com <span>compromisso, equilíbrio e resultados reais.</span></h1>
+          <p class="hero-lead">
+            Recupere sua autoestima, conquiste o emagrecimento definitivo e aumente sua massa magra com um acompanhamento acolhedor e dedicado às suas necessidades.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511966869718?text=Olá%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20minha%20consulta%20nutricional." target="_blank" rel="noopener" class="btn btn-primary">
+              Agendar Consulta no WhatsApp
+            </a>
+            <a href="#atuacao" class="btn btn-outline-dark">
+              Conhecer Especialidades
+            </a>
+          </div>
+          <div class="hero-proof">
+            <div class="badge-google">
+              <span class="stars">★★★★★</span>
+              <span><strong>5.0</strong> no Google (40+ avaliações)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-card-frame">
+            <img src="https://nutricao.info/imgs/user/249712.jpg" alt="Dra. Vanessa Lacerda Nutricionista">
+          </div>
+          <div class="hero-floating-badge">
+            <div>
+              <strong>Dra. Vanessa Lacerda</strong>
+              <span style="font-size:0.8rem; color:var(--ink-muted);">Especialista em Emagrecimento & Massa Magra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strip -->
+  <div class="strip-banner">
+    <div class="container">
+      <div class="strip-grid">
+        <div class="strip-item">
+          <div class="strip-icon">🎯</div>
+          <div>
+            <strong>Atendimento Humanizado</strong>
+            <span>Focado na sua realidade e rotina</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon">🥗</div>
+          <div>
+            <strong>Emagrecimento com Saúde</strong>
+            <span>Sem efeito sanfona ou restrições severas</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon">💪</div>
+          <div>
+            <strong>Ganho de Massa Magra</strong>
+            <span>Estratégia para tônus e definição</span>
+          </div>
+        </div>
+        <div class="strip-item">
+          <div class="strip-icon">⭐</div>
+          <div>
+            <strong>Satisfação Comprovada</strong>
+            <span>Avaliação máxima 5.0 estrelas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="sobre" class="section-spacing about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-frame">
+            <img src="https://nutricao.info/imgs/user/249712.jpg" alt="Dra. Vanessa Lacerda">
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="eyebrow">Sobre Mim</div>
+          <h2>Nutrição com amor, dedicação e foco em transformar vidas.</h2>
+          <p>
+            Olá! Sou a <strong>Dra. Vanessa Lacerda</strong>, nutricionista apaixonada por ajudar pessoas a recuperarem sua autoestima e viverem com mais saúde, energia e leveza.
+          </p>
+          <p>
+            Meu trabalho é baseado em quatro pilares fundamentais: <strong>compromisso, equilíbrio, empatia e resultado</strong>. Minha missão é atender de forma próxima e acolhedora, auxiliando você a superar as dificuldades do dia a dia para atingir seus objetivos de forma sustentável e eficiente.
+          </p>
+          <div class="about-pills">
+            <span class="pill">🌿 Emagrecimento Definitivo</span>
+            <span class="pill">💪 Ganho de Massa Muscular</span>
+            <span class="pill">✨ Autoestima & Vitalidade</span>
+            <span class="pill">🧠 Reeducação Alimentar</span>
+          </div>
+          <a href="https://wa.me/5511966869718?text=Olá%2C%20Dra.%20Vanessa!%20Gostaria%20de%20iniciar%20meu%20acompanhamento%20nutricional." target="_blank" rel="noopener" class="btn btn-primary">
+            Falar com a Dra. Vanessa no WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="atuacao" class="section-spacing services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Áreas de Atuação</div>
+        <h2>Cuidado nutricional sob medida para seus objetivos.</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div>
+            <div class="service-icon">🥗</div>
+            <h3>Emagrecimento Saudável</h3>
+            <p>Estratégia nutricional calculada para acelerar a queima de gordura preservando o metabolismo e o prazer de comer.</p>
+          </div>
+          <a href="https://wa.me/5511966869718?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20Emagrecimento." target="_blank" rel="noopener" class="service-link">
+            Saber mais →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon">💪</div>
+            <h3>Hipertrofia & Massa Magra</h3>
+            <p>Planejamento estratégico de nutrientes para impulsionar a definição corporal, força física e recuperação muscular.</p>
+          </div>
+          <a href="https://wa.me/5511966869718?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20plano%20de%20Hipertrofia." target="_blank" rel="noopener" class="service-link">
+            Saber mais →
+          </a>
+        </div>
+
+        <div class="service-card">
+          <div>
+            <div class="service-icon">✨</div>
+            <h3>Reeducação Alimentar</h3>
+            <p>Construção de hábitos alimentares sólidos e conscientes, desarmando o efeito sanfona de uma vez por todas.</p>
+          </div>
+          <a href="https://wa.me/5511966869718?text=Olá!%20Quero%20saber%20mais%20sobre%20Reeducação%20Alimentar." target="_blank" rel="noopener" class="service-link">
+            Saber mais →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="depoimentos" class="section-spacing testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Depoimentos</div>
+        <h2>Resultados reais de quem confiou no acompanhamento.</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "A Dra. Vanessa é maravilhosa! Super atenciosa, elaborou um plano alimentar perfeito para a minha rotina corrida e os resultados foram rápidos e sustentáveis!"
+          </p>
+          <div class="author-meta">
+            <strong>Carla Mendes</strong>
+            <span>Paciente · Google Review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Atendimento muito humano e motivador. Consegui atingir minha meta de emagrecimento sem sofrimento e com muito mais energia para o dia a dia."
+          </p>
+          <div class="author-meta">
+            <strong>Lucas Oliveira</strong>
+            <span>Paciente · Google Review</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Excelente profissional! O acompanhamento é próximo e dedicado. Recomendo de olhos fechados para quem busca saúde e definição corporal."
+          </p>
+          <div class="author-meta">
+            <strong>Aline Santos</strong>
+            <span>Paciente · Google Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contato" class="section-spacing contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="eyebrow">Contato Direto</div>
+          <h2>Agende sua consulta com a Dra. Vanessa Lacerda.</h2>
+          <p>
+            Tire suas dúvidas ou agende seu horário direto no WhatsApp.
+          </p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <strong>WhatsApp Oficial:</strong>
+                <a href="https://wa.me/5511966869718" target="_blank" rel="noopener">(11) 96686-9718</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <strong>E-mail Profissional:</strong>
+                <a href="mailto:vanessa.lacerdanutri@yahoo.com">vanessa.lacerdanutri@yahoo.com</a>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/5511966869718?text=Olá%2C%20Dra.%20Vanessa!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary">
+            Chamar no WhatsApp Agora
+          </a>
+        </div>
+
+        <div class="contact-card-box">
+          <h3 style="margin-bottom:16px;">Atendimento Presencial & Online</h3>
+          <p style="color:var(--ink-muted); margin-bottom:20px;">
+            Consultas completas com avaliação detalhada de rotina e histórico, entrega de plano individualizado e suporte contínuo para você alcançar o melhor resultado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Dra. Vanessa Lacerda</h3>
+          <p>Nutricionista clínica especializada em emagrecimento, hipertrofia e reeducação alimentar.</p>
+        </div>
+        <div>
+          <h4 style="color:#fff; margin-bottom:16px;">Navegação</h4>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:8px;">
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#atuacao">Áreas de Atuação</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#fff; margin-bottom:16px;">Contato</h4>
+          <p>WhatsApp: (11) 96686-9718</p>
+          <p>vanessa.lacerdanutri@yahoo.com</p>
+          <p>Santo Amaro, São Paulo - SP</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Dra. Vanessa Lacerda Nutricionista. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511966869718?text=Olá%2C%20Dra.%20Vanessa!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-floating" target="_blank" rel="noopener" title="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+  </a>
+
+<!-- PROSPECTOR-EDITOR-START -->
+<style id="pe-style">
+#pe-bar{position:fixed;top:0;left:0;right:0;z-index:99999;background:#111;color:#fff;font:14px/1 -apple-system,Segoe UI,Roboto,sans-serif;display:flex;align-items:center;gap:16px;padding:10px 16px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#pe-bar button{background:#22c55e;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer}
+#pe-bar button:hover{background:#16a34a}
+body{margin-top:44px !important}
+.pe-hover{outline:2px dashed #22c55e !important;outline-offset:2px;cursor:pointer}
+[contenteditable="true"]:focus{outline:2px solid #3b82f6 !important;outline-offset:2px}
+</style>
+<div id="pe-bar">
+  <strong>Modo edição</strong>
+  <span>Clique em textos para editar · clique em imagens para trocar</span>
+  <button id="pe-export" type="button">Exportar página</button>
+</div>
+<input type="file" id="pe-file" accept="image/*" style="display:none">
+<script id="pe-script">
+(function(){
+  var TEXT='h1,h2,h3,h4,h5,h6,p,li,a,span,button,td,th,figcaption,blockquote,strong,em';
+  document.querySelectorAll(TEXT).forEach(function(el){
+    if(el.closest('#pe-bar'))return;
+    if(el.children.length===0||el.childElementCount<=1){
+      el.addEventListener('click',function(e){
+        if(el.tagName==='A'||el.tagName==='BUTTON')e.preventDefault();
+        el.setAttribute('contenteditable','true');el.focus();
+      });
+      el.addEventListener('mouseenter',function(){el.classList.add('pe-hover')});
+      el.addEventListener('mouseleave',function(){el.classList.remove('pe-hover')});
+      el.addEventListener('blur',function(){el.removeAttribute('contenteditable')});
+    }
+  });
+  var fileInput=document.getElementById('pe-file'),currentImg=null;
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();currentImg=img;fileInput.click()});
+    img.addEventListener('mouseenter',function(){img.classList.add('pe-hover')});
+    img.addEventListener('mouseleave',function(){img.classList.remove('pe-hover')});
+  });
+  fileInput.addEventListener('change',function(){
+    var f=fileInput.files[0];if(!f||!currentImg)return;
+    var r=new FileReader();
+    r.onload=function(){currentImg.src=r.result;if(currentImg.srcset)currentImg.removeAttribute('srcset')};
+    r.readAsDataURL(f);fileInput.value='';
+  });
+  document.getElementById('pe-export').addEventListener('click',function(){
+    var doc=document.documentElement.cloneNode(true);
+    ['#pe-bar','#pe-style','#pe-script','#pe-file'].forEach(function(s){var n=doc.querySelector(s);if(n)n.remove()});
+    doc.querySelectorAll('[contenteditable]').forEach(function(n){n.removeAttribute('contenteditable')});
+    doc.querySelectorAll('.pe-hover').forEach(function(n){n.classList.remove('pe-hover')});
+    var html='<!DOCTYPE html>\n'+doc.outerHTML;
+    var blob=new Blob([html],{type:'text/html'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='index.html';a.click();
+  });
+})();
+</script>
+<!-- PROSPECTOR-EDITOR-END -->
+</body>
+</html>
