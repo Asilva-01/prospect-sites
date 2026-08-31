@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métra Psicologia e Psicanálise | Santo Amaro & Chácara Santo Antônio</title>
+  <meta name="description" content="Espaço de referência em psicologia clínica, psicanálise e saúde mental na Zona Sul de SP há mais de 25 anos. Equipe com mais de 15 especialistas. Atendimento presencial e online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1f2a44;
+      --primary-dark: #121a2d;
+      --primary-light: #32436d;
+      --accent: #c59b27;
+      --accent-hover: #a37e1a;
+      --bg-cream: #faf9f6;
+      --bg-white: #ffffff;
+      --bg-soft-blue: #f0f4fa;
+      --text-main: #1e2430;
+      --text-muted: #5e6a7e;
+      --border-light: #e3e8f0;
+      --shadow-sm: 0 4px 12px rgba(31, 42, 68, 0.05);
+      --shadow-md: 0 10px 28px rgba(31, 42, 68, 0.08);
+      --shadow-lg: 0 20px 40px rgba(31, 42, 68, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Cinzel', serif;
+      color: var(--primary-dark);
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      color: #dce5f5;
+      font-size: 0.875rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .top-bar strong {
+      color: var(--accent);
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 85px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-badge {
+      width: 46px;
+      height: 46px;
+      background: var(--primary);
+      color: var(--accent);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.3rem;
+      font-family: 'Cinzel', serif;
+    }
+
+    .logo-text h2 {
+      font-size: 1.45rem;
+      color: var(--primary-dark);
+      letter-spacing: 1px;
+    }
+
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .btn-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 75px 0 85px;
+      background: linear-gradient(180deg, rgba(240, 244, 250, 0.8) 0%, rgba(250, 249, 246, 1) 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-experience {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .badge-experience span {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: 3.1rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: #20ba5a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-white);
+      color: var(--primary-dark);
+      border: 1.5px solid var(--border-light);
+      padding: 16px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-soft-blue);
+      border-color: var(--primary-light);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item h3 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--border-light);
+      max-width: 320px;
+    }
+
+    .floating-badge .icon {
+      width: 48px;
+      height: 48px;
+      background: #fef3c7;
+      color: #d97706;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .floating-badge h4 {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+    }
+
+    .floating-badge p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-subtitle {
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.35rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(31, 42, 68, 0.25);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-soft-blue);
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .service-link:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* Institution Banner */
+    .institution-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .institution-banner h3 {
+      color: #fff;
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+    }
+
+    .institution-banner p {
+      color: #dce5f5;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .institution-banner .btn-gold {
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .institution-banner .btn-gold:hover {
+      background: var(--accent-hover);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image-wrapper img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    .about-text h2 {
+      font-size: 2.35rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .check-list li span {
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      background: linear-gradient(135deg, #121a2d 0%, #1f2a44 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-bottom h2 {
+      color: #fff;
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-bottom p {
+      color: #dce5f5;
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d1322;
+      color: #8c99b2;
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .footer-col p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: pulse 2.5s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .institution-banner {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🏛️ <strong>Tradição & Excelência Clínica</strong> — Rua Alexandre Dumas, 501 (Santo Amaro / Chácara Santo Antônio) | WhatsApp: <strong>(11) 99970-6712</strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <div class="logo-container">
+          <div class="logo-badge">M</div>
+          <div class="logo-text">
+            <h2>Métra</h2>
+            <p>Psicologia & Psicanálise</p>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#servicos">Atendimentos</a></li>
+          <li><a href="#institucional">Espaço Clínico</a></li>
+          <li><a href="#contato">Localização</a></li>
+        </ul>
+        <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20cl%C3%ADnico%20na%20M%C3%A9tra!" target="_blank" class="btn-header">
+          Agendar Atendimento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-experience">
+            <span>★</span> Desde 1999 • Mais de 25 anos de tradição na Zona Sul
+          </div>
+          <h1 class="hero-title">
+            Um espaço de diálogo entre a <span>Psicanálise</span> e a saúde mental.
+          </h1>
+          <p class="hero-desc">
+            Atendimento clínico de excelência para adultos, crianças, casais e famílias, conduzido por uma equipe multidisciplinar de mais de 15 especialistas.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20na%20M%C3%A9tra%20Psicologia!" target="_blank" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Agendar no WhatsApp
+            </a>
+            <a href="#servicos" class="btn-secondary">
+              Conhecer Especialidades
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>25+</h3>
+              <p>Anos de Atuação</p>
+            </div>
+            <div class="stat-item">
+              <h3>15+</h3>
+              <p>Profissionais</p>
+            </div>
+            <div class="stat-item">
+              <h3>Ética</h3>
+              <p>& Rigor Clínico</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Espaço Clínico Métra Santo Amaro">
+          </div>
+          <div class="floating-badge">
+            <div class="icon">🏛️</div>
+            <div>
+              <h4>Corpo Clínico Integrado</h4>
+              <p>Psicanalistas, psiquiatras, neuropsicólogos e fonoaudiólogos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Áreas de Atuação</span>
+        <h2 class="section-title">Atendimentos Especializados</h2>
+        <p class="section-desc">Cuidado integrado para as mais diversas demandas do sofrimento psíquico e desenvolvimento humano.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛋️</div>
+          <h3>Psicanálise & Psicoterapia Adultos</h3>
+          <p>Investigação profunda das causas inconscientes da angústia, ansiedade, depressão e repetições de padrões relacionais.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20psican%C3%A1lise" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧩</div>
+          <h3>Avaliação Neuropsicológica</h3>
+          <p>Mapeamento das funções cognitivas, memória, atenção e diagnóstico diferencial de TDAH, TEA e declínio cognitivo.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🩺</div>
+          <h3>Psiquiatria Integrada</h3>
+          <p>Diagnóstico médico, suporte farmacológico responsável e acompanhamento conjunto com os terapeutas da clínica.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20agendar%20consulta%20psiqui%C3%A1trica" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Atendimento Infantil & Juvenil</h3>
+          <p>Psicoterapia lúdica, psicopedagogia e suporte ao desenvolvimento emocional de crianças e adolescentes.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20infantil" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Terapia de Casal e Família</h3>
+          <p>Mediação de crises, facilitação do diálogo e reestruturação dos vínculos afetivos familiares.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20terapia%20de%20casal" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Assessoria a Empresas & Escolas</h3>
+          <p>Programas de saúde mental corporativa, palestras, gestão de clima e apoio emocional institucional.</p>
+          <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20assessoria%20empresarial" class="service-link">Saiba mais →</a>
+        </div>
+      </div>
+
+      <!-- Institution Banner -->
+      <div class="institution-banner" id="institucional">
+        <div>
+          <h3>Espaço Clínico na Chácara Santo Antônio</h3>
+          <p>Ambiente nobre, acolhedor e silencioso na Rua Alexandre Dumas, 501. Estrutura completa para atendimentos individuais e em grupo.</p>
+          <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20espa%C3%A7o%20cl%C3%ADnico%20da%20M%C3%A9tra!" target="_blank" class="btn-gold">
+            Agendar Visita ou Consulta
+          </a>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">
+          🌿 🏛️
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" style="background: #fff;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Márcia Moreira Jordão Métra Psicologia">
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Direção Clínica</span>
+          <h2>Márcia Moreira Jordão</h2>
+          <p>
+            Psicóloga e psicanalista com mais de 30 anos de experiência clínica e acadêmica. Especialista em saúde mental comunitária e supervisão clínica.
+          </p>
+          <p>
+            A Métra nasceu da necessidade de oferecer à comunidade da Zona Sul de São Paulo (Santo Amaro, Chácara Santo Antônio, Granja Julieta, Brooklin e Moema) um espaço ético e de rigor técnico inegociável.
+          </p>
+          <ul class="check-list">
+            <li><span>✔</span> Mais de 15 profissionais especializados</li>
+            <li><span>✔</span> Discussão clínica interdisciplinar</li>
+            <li><span>✔</span> Atendimentos presenciais e online</li>
+            <li><span>✔</span> Mais de 25 anos de credibilidade</li>
+          </ul>
+          <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20a%20equipe%20da%20M%C3%A9tra!" target="_blank" class="btn-primary">
+            Falar com a Central de Atendimento
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>Possibilitando circulação de discursos, possibilitando saúde.</h2>
+      <p>Nossa equipe está pronta para acolher sua demanda com total discrição e ética profissional.</p>
+      <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20desejo%20agendar%20um%20atendimento%20cl%C3%ADnico!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+        Entrar em Contato via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contato">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Métra Psicologia e Psicanálise</h4>
+          <p>Centro de Atendimento Clínico, Formação e Assessoria Institucional.</p>
+          <p>Desde 1999 promovendo saúde mental na Zona Sul de São Paulo.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <p>📍 Rua Alexandre Dumas, 501 - Chácara Santo Antônio / Santo Amaro, São Paulo - SP</p>
+          <p>📞 Tel: (11) 5182-0953</p>
+        </div>
+        <div class="footer-col">
+          <h4>Canais Diretos</h4>
+          <p>📱 WhatsApp: (11) 99970-6712</p>
+          <p>✉️ E-mail: contato@metrapsi.com.br</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Métra Psicologia e Psicanálise. Todos os direitos reservados. Design de Alta Conversão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20consultas!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>

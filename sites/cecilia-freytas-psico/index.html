@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicóloga Cecília Freytas | Terapia em Santo Amaro - SP & Online</title>
+  <meta name="description" content="Atendimento psicológico acolhedor e humanizado para adultos, casais, adolescentes e crianças. Presencial no NovAmérica Office Park (Santo Amaro) e Online. Mais de 70 avaliações 5 estrelas no Google.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2d4a3e;
+      --primary-dark: #1b3329;
+      --primary-light: #446b5c;
+      --accent: #d48b48;
+      --accent-hover: #b87132;
+      --bg-cream: #fbf9f5;
+      --bg-white: #ffffff;
+      --bg-soft-green: #edf4f0;
+      --text-main: #1e2925;
+      --text-muted: #586861;
+      --border-light: #e2ebe6;
+      --shadow-sm: 0 4px 12px rgba(45, 74, 62, 0.05);
+      --shadow-md: 0 10px 28px rgba(45, 74, 62, 0.08);
+      --shadow-lg: 0 20px 40px rgba(45, 74, 62, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      color: #e5f0eb;
+      font-size: 0.875rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .top-bar strong {
+      color: #ffd699;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    .logo-text h2 {
+      font-size: 1.35rem;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 80px;
+      background: linear-gradient(180deg, rgba(237, 244, 240, 0.7) 0%, rgba(251, 249, 245, 1) 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-google {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .stars {
+      color: #f59e0b;
+      letter-spacing: 2px;
+    }
+
+    .hero-title {
+      font-size: 3.25rem;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: #20ba5a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-white);
+      color: var(--primary-dark);
+      border: 1.5px solid var(--border-light);
+      padding: 16px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-soft-green);
+      border-color: var(--primary-light);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item h3 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--border-light);
+      max-width: 320px;
+    }
+
+    .floating-badge .icon {
+      width: 48px;
+      height: 48px;
+      background: #fef3c7;
+      color: #d97706;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .floating-badge h4 {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .floating-badge p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-subtitle {
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(45, 74, 62, 0.25);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .service-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* Location Banner */
+    .location-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-banner h3 {
+      color: #fff;
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+    }
+
+    .location-banner p {
+      color: #e2f1e8;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .location-banner .btn-white {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image-wrapper img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    .about-text h2 {
+      font-size: 2.35rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .check-list li span {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: var(--bg-soft-green);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(45, 74, 62, 0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-stars {
+      color: #f59e0b;
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-quote {
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .author-avatar {
+      width: 42px;
+      height: 42px;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .author-info h4 {
+      font-size: 0.95rem;
+    }
+
+    .author-info p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.05rem;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      background: linear-gradient(135deg, #1b3329 0%, #2d4a3e 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-bottom h2 {
+      color: #fff;
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-bottom p {
+      color: #d1fae5;
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111d18;
+      color: #8fa89e;
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: pulse 2.5s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .location-banner {
+        grid-template-columns: 1fr;
+      }
+      .services-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong>(11) 99601-2736</strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <div class="logo-container">
+          <div class="logo-badge">CF</div>
+          <div class="logo-text">
+            <h2>Cecília Freytas</h2>
+            <p>Psicóloga Clínica & Psicoterapeuta</p>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#consultorio">Consultório</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+        <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20sess%C3%B5es%20de%20psicoterapia!" target="_blank" class="btn-header">
+          Agendar Sessão
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-google">
+            <span class="stars">★★★★★</span>
+            <span><strong>5.0 no Google</strong> (+70 avaliações verificadas)</span>
+          </div>
+          <h1 class="hero-title">
+            Um espaço seguro de escuta, acolhimento e <span>transformação</span>.
+          </h1>
+          <p class="hero-desc">
+            Psicoterapia humanizada para adultos, jovens, casais e crianças. Supere a ansiedade, estresse e conflitos emocionais com acompanhamento ético e discreto.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20um%20atendimento%20psicol%C3%B3gico!" target="_blank" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Conversar no WhatsApp
+            </a>
+            <a href="#tratamentos" class="btn-secondary">
+              Conhecer Abordagens
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>70+</h3>
+              <p>Avaliações 5 Estrelas</p>
+            </div>
+            <div class="stat-item">
+              <h3>Sigilo</h3>
+              <p>Total e Absoluto</p>
+            </div>
+            <div class="stat-item">
+              <h3>Híbrido</h3>
+              <p>Presencial ou Online</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Psicoterapia Acolhedora Santo Amaro">
+          </div>
+          <div class="floating-badge">
+            <div class="icon">🤍</div>
+            <div>
+              <h4>Atendimento Humanizado</h4>
+              <p>Espaço preparado para acolher sua história sem julgamentos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments Section -->
+  <section id="tratamentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Áreas de Cuidado</span>
+        <h2 class="section-title">Como a psicoterapia pode te ajudar</h2>
+        <p class="section-desc">Metodologias personalizadas para diferentes momentos e necessidades da vida.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌱</div>
+          <h3>Psicoterapia para Adultos</h3>
+          <p>Superação de ansiedade, depressão, síndrome do pânico, estresse crônico e busca por autoconhecimento e equilíbrio emocional.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20para%20adultos" class="service-link">Agendar sessão →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💑</div>
+          <h3>Terapia de Casal</h3>
+          <p>Restauração do diálogo, resolução de conflitos, superação de crises conjugais e construção de uma parceria saudável e madura.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20terapia%20de%20casal" class="service-link">Agendar sessão →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧸</div>
+          <h3>Psicoterapia Infantil / Ludoterapia</h3>
+          <p>Acolhimento de dificuldades emocionais e comportamentais na infância através do brincar e do diálogo com os pais.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20atendimento%20infantil" class="service-link">Agendar sessão →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Psicoterapia Breve & Foco</h3>
+          <p>Intervenções pontuais e objetivas para momentos de crise, luto, transições de carreira ou tomada de decisões importantes.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20terapia%20breve" class="service-link">Agendar sessão →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h3>Burnout & Saúde no Trabalho</h3>
+          <p>Apoio a profissionais em esgotamento mental, excesso de cobrança, ansiedade corporativa e redefinição de limites.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20ajuda%20com%20estresse%20e%20burnout" class="service-link">Agendar sessão →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Terapia Online Segura</h3>
+          <p>Sessões por videochamada com o mesmo sigilo e eficácia, para você ser atendido no conforto e privacidade do seu lar.</p>
+          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20agendar%20terapia%20online" class="service-link">Agendar sessão →</a>
+        </div>
+      </div>
+
+      <!-- Location Highlight Banner -->
+      <div class="location-banner" id="consultorio">
+        <div>
+          <h3>Consultório no NovAmérica Office Park</h3>
+          <p>Localização privilegiada na Av. das Nações Unidas em Santo Amaro, com fácil acesso, estacionamento no local, segurança e privacidade absoluta.</p>
+          <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Santo%20Amaro!" target="_blank" class="btn-white">
+            Agendar Atendimento Presencial
+          </a>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">
+          📍 🏢
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" style="background: #fff;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Cecília Freytas Psicóloga">
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Sobre a Profissional</span>
+          <h2>Cecília Freytas</h2>
+          <p>
+            Sou psicóloga com sólida formação clínica e anos de dedicação ao bem-estar emocional de adultos, casais e famílias.
+          </p>
+          <p>
+            Meu trabalho é fundamentado na escuta ética, no respeito à singularidade de cada pessoa e no desenvolvimento de ferramentas práticas para que você lide com os desafios da vida de forma mais autêntica e serena.
+          </p>
+          <ul class="check-list">
+            <li><span>✔</span> Ambiente seguro e confidencial</li>
+            <li><span>✔</span> Abordagem humanizada e integrativa</li>
+            <li><span>✔</span> Mais de 70 avaliações nota máxima</li>
+            <li><span>✔</span> Flexibilidade de horários</li>
+          </ul>
+          <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20conhecer%20mais%20o%20seu%20trabalho!" target="_blank" class="btn-primary">
+            Agendar Primeira Sessão
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="depoimentos" class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Depoimentos</span>
+        <h2 class="section-title">O que dizem os pacientes</h2>
+        <p class="section-desc">Avaliações públicas compartilhadas no Google Meu Negócio.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "A Cecília é uma profissional extraordinária. Me ajudou a atravessar um dos momentos mais difíceis da minha vida com muita paciência e acolhimento."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+              <h4>Mariana Rocha</h4>
+              <p>Avaliação no Google Maps</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Excelente atendimento! O consultório é super acolhedor e a terapia online funciona perfeitamente. Me sinto muito segura nas sessões."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">GS</div>
+            <div class="author-info">
+              <h4>Gabriel Santos</h4>
+              <p>Avaliação no Google Maps</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Profissional pontual, ética e extremamente empática. Recomendo de olhos fechados para quem busca acompanhamento de verdade."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">LC</div>
+            <div class="author-info">
+              <h4>Letícia Carvalho</h4>
+              <p>Avaliação no Google Maps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas Comuns sobre Psicoterapia</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">Qual a frequência das sessões? <span>+</span></div>
+          <div class="faq-answer">Geralmente as sessões ocorrem semanalmente, com duração de 50 minutos. A frequência pode ser ajustada conforme a necessidade clínica de cada caso.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Como funciona o sigilo profissional? <span>+</span></div>
+          <div class="faq-answer">O sigilo é rigoroso e garantido pelo Código de Ética Profissional do Psicólogo. Tudo o que for compartilhado em sessão permanece em total confidencialidade.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Vocês emitem recibo para reembolso no convênio? <span>+</span></div>
+          <div class="faq-answer">Sim! Emitimos recibo detalhado para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>Dê o primeiro passo para o seu bem-estar emocional</h2>
+      <p>Cuidar da sua saúde mental é o maior investimento que você pode fazer por si mesmo. Fale conosco pelo WhatsApp.</p>
+      <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20quero%20agendar%20uma%20sess%C3%A3o!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Psicóloga Cecília Freytas</h4>
+          <p>Centro de Saúde Psicológica • Atendimento Clínico e Terapia Online.</p>
+          <p>Mais de 70 avaliações 5 estrelas no Google Meu Negócio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Endereço do Consultório</h4>
+          <p>📍 Av. das Nações Unidas, 18801 - Sala 1225 (NovAmérica Office Park), Santo Amaro, São Paulo - SP</p>
+        </div>
+        <div class="footer-col">
+          <h4>Atendimento Direto</h4>
+          <p>📱 WhatsApp: (11) 99601-2736</p>
+          <p>🌐 Atendimento Online para todo o Brasil e exterior</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Cecília Freytas Psicologia. Todos os direitos reservados. Design de Alta Conversão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20uma%20consulta!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
+    💬
+  </a>
+
+</body>
+</html>

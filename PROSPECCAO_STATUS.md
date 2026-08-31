@@ -1,27 +1,49 @@
-# Status da Sessão de Prospecção (Lote 1 Completo)
+# Status da Sessão de Prospecção — Santo Amaro (Lote 1 + Lote 1B + Lote 2)
 
-**Data da conclusão do lote:** 30/08/2026  
-**Nicho:** Nutricionistas  
-**Região:** Santo Amaro, São Paulo - SP  
+**Data:** 31/08/2026  
+**Nichos Ativos:** Nutricionistas & Psicólogos / Neuropsicólogos  
+**Região:** Santo Amaro, Chácara Santo Antônio e Zona Sul, São Paulo - SP  
 
 ---
 
-## 🎯 Entregas Concluídas
+## 🎯 Entregas do Sistema
 
-### 1. Comparador Antes vs Depois (3 Clientes em Abas)
-- [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html) — Permite alternar entre os 3 clientes e ver o site antigo vs a nova versão lado a lado.
+### 1. Comparador Antes vs Depois Multicliente
+- [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html) — Navegação em abas para 7 clientes (Nutrição + Psicologia).
 
-### 2. Páginas Redesenhadas + Editores Visuais:
-- **Lourdes Costa Nutricionista:**
-  - Página Nova: [lourdes-costa-nutri.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/lourdes-costa-nutri/lourdes-costa-nutri.html)
-  - Editor Visual: [lourdes-costa-nutri-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/lourdes-costa-nutri/lourdes-costa-nutri-editor.html)
-- **Carolina Vasconcelos Nutricionista:**
-  - Página Nova: [carolina-vasconcelos-nutri.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/carolina-vasconcelos-nutri/carolina-vasconcelos-nutri.html)
-  - Editor Visual: [carolina-vasconcelos-nutri-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/carolina-vasconcelos-nutri/carolina-vasconcelos-nutri-editor.html)
-- **Dra. Vanessa Lacerda Nutricionista:**
-  - Página Nova: [vanessa-lacerda-nutri.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/vanessa-lacerda-nutri/vanessa-lacerda-nutri.html)
-  - Editor Visual: [vanessa-lacerda-nutri-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/vanessa-lacerda-nutri/vanessa-lacerda-nutri-editor.html)
+---
 
-### 3. Painel de Controle e Banco de Dados:
-- Banco SQLite [prospector.db](file:///c:/Temp/ProspectSitesStoAmaro/prospector.db) sincronizado.
-- Dashboard [dashboard.html](file:///c:/Temp/ProspectSitesStoAmaro/dashboard.html) atualizado com todos os leads no status `redesenhado`.
+### 2. Nicho Ouro: Psicólogos & Neuropsicólogos em Santo Amaro (Lote 2)
+- **Dra. Cecília Freytas — Psicóloga (NovAmérica Office Park, 70+ avaliações 5.0★):**
+  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/cecilia-freytas-psico/index.html)
+  - Editor Visual: [cecilia-freytas-psico-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/cecilia-freytas-psico/cecilia-freytas-psico-editor.html)
+  - WhatsApp: `(11) 99601-2736`
+- **Métra Psicologia e Psicanálise (Alexandre Dumas, 15 profissionais, 25+ anos de história):**
+  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/metra-psicologia/index.html)
+  - Editor Visual: [metra-psicologia-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/metra-psicologia/metra-psicologia-editor.html)
+  - E-mail: `contato@metrapsi.com.br` | WhatsApp: `(11) 99970-6712`
+- **Clínica Langner — Psicologia e Neuropsicologia (Manoel Borba, Centro de Sto Amaro):**
+  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/clinica-langner/index.html)
+  - Editor Visual: [clinica-langner-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/clinica-langner/clinica-langner-editor.html)
+  - E-mail: `contato@clinicalangner.com.br` | WhatsApp: `(11) 94818-9898`
+
+---
+
+### 3. Lead Ouro: Nutrição com Alto Volume de Avaliações (Lote 1B)
+- **Dra. Paula Paraíso Nutricionista (138 avaliações 5.0★ no Google):**
+  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/paula-paraiso-nutri/index.html)
+  - Editor Visual: [paula-paraiso-nutri-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/paula-paraiso-nutri/paula-paraiso-nutri-editor.html)
+  - WhatsApp: `(11) 96277-7356`
+
+---
+
+### 4. Nutricionistas — Lote 1 Enviado (30/08/2026)
+- **Lourdes Costa Nutricionista** (`nutrilourdescosta@gmail.com`) -> Enviado
+- **Carolina Vasconcelos Nutricionista** (`carolinavasconcelost@gmail.com`) -> Enviado
+- **Dra. Vanessa Lacerda Nutricionista** (`vanessa.lacerdanutri@yahoo.com`) -> Enviado
+
+---
+
+### 5. Banco de Dados e Dashboard
+- SQLite [prospector.db](file:///c:/Temp/ProspectSitesStoAmaro/prospector.db) sincronizado com 9 leads.
+- Servidor local do painel rodando na porta 8765.

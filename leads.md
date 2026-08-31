@@ -1,29 +1,38 @@
-# Leads Prospector — Nutricionistas Santo Amaro, São Paulo - SP
+# Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da prospecção: 29/08/2026 - 30/08/2026  
-Status da etapa: **Propostas Enviadas com Sucesso via Gmail**
-
----
-
-## 🎯 Leads com Proposta Comercial Enviada
-
-| # | Nome | Nota | Aval. | E-mail | Telefone / WhatsApp | Site atual | Status | URL Nova no Ar (HTTPS) | Data Envio |
-|---|------|------|-------|--------|---------------------|------------|--------|-------------------------|------------|
-| 1 | **Lourdes Costa Nutricionista** | 5.0 ★ | 45 | `nutrilourdescosta@gmail.com` | (11) 95118-1020 / `wa.me/5511951181020` | http://www.nutrilourdescostaa.com.br/ | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/lourdes-costa-nutri/ | 30/08/2026 |
-| 2 | **Carolina Vasconcelos Nutricionista** | 5.0 ★ | 42 | `carolinavasconcelost@gmail.com` | (11) 99449-0592 / `wa.me/5511994490592` | http://nutricionistacarolinavasconcelos.com/ | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/carolina-vasconcelos-nutri/ | 30/08/2026 |
-| 3 | **Dra. Vanessa Lacerda Nutricionista** | 5.0 ★ | 40 | `vanessa.lacerdanutri@yahoo.com` | (11) 96686-9718 / `wa.me/5511966869718` | https://nutricao.info/dravanessalacerdanutri | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/vanessa-lacerda-nutri/ | 30/08/2026 |
+Data da atualização: 31/08/2026  
+Status geral: **Lote 1 (Nutricionistas) Entregue & Lote 1B / Lote 2 (Psicólogos) Criados com Sucesso**
 
 ---
 
-## 🔗 Comparador Geral Antes vs Depois no Ar
-- **Comparador:** https://asilva-01.github.io/prospect-sites/comparar.html
+## 🎯 Lote 2: Psicólogos e Clínicas (Nicho Ouro) — Sites Prontos
+
+| # | Nome | Nota | Aval. | E-mail / Contato | WhatsApp / Telefone | Site atual | Status | URL Nova Pronta | Endereço em Santo Amaro |
+|---|------|------|-------|------------------|---------------------|------------|--------|-----------------|-------------------------|
+| 1 | **Dra. Cecília Freytas — Psicóloga** | 5.0 ★ | 70 | Abordagem WhatsApp | (11) 99601-2736 / `wa.me/5511996012736` | https://ceciliafreytas.com.br/ | `site pronto` | [Ver Nova Página](file:///c:/Temp/ProspectSitesStoAmaro/sites/cecilia-freytas-psico/index.html) | Av. das Nações Unidas, 18801 - NovAmérica Office Park |
+| 2 | **Métra Psicologia e Psicanálise** | 4.8 ★ | 35 | `contato@metrapsi.com.br` | (11) 99970-6712 / `wa.me/5511999706712` | https://metrapsi.com.br/ | `site pronto` | [Ver Nova Página](file:///c:/Temp/ProspectSitesStoAmaro/sites/metra-psicologia/index.html) | Rua Alexandre Dumas, 501 - Chácara Santo Antônio |
+| 3 | **Clínica Langner Psicologia & Neuropsicologia** | 4.9 ★ | 28 | `contato@clinicalangner.com.br` | (11) 94818-9898 / `wa.me/5511948189898` | https://clinicalangner.com.br/ | `site pronto` | [Ver Nova Página](file:///c:/Temp/ProspectSitesStoAmaro/sites/clinica-langner/index.html) | Rua Manoel Borba, 292 - Centro de Santo Amaro |
 
 ---
 
-## 📋 Leads Descartados para E-mail Frio (Sem E-mail Público Direto — WhatsApp Preservado)
+## 🥗 Lote 1B: Nutricionista Lead Ouro — Site Pronto
 
-| # | Nome | Nota | Aval. | WhatsApp | Site atual | Motivo do Descarte / Observação |
-|---|------|------|-------|----------|------------|---------------------------------|
-| 4 | **Paula Paraíso Nutricionista** | 5.0 ★ | 138 | `wa.me/5511962777356` | https://paulaparaiso.com.br/ | Sem e-mail público direto identificado (Instagram @nutripaulaparaiso). Lead de altíssimo volume para abordagem direta via WhatsApp |
-| 5 | **Irani Amaro Nutricionista** | 5.0 ★ | 50 | `wa.me/5511986151777` | https://iraniamaronutri.com.br/ | Sem e-mail público direto identificado (Instagram @nutricionistairani_amaro) |
-| 6 | **Nutri Bárbara Nieri** | 5.0 ★ | 40 | `wa.me/5511917085987` | https://nutribabinieri.lovable.app | Sem e-mail público direto identificado (Instagram @babinierinutri) |
+| # | Nome | Nota | Aval. | E-mail / Contato | WhatsApp / Telefone | Site atual | Status | URL Nova Pronta | Endereço |
+|---|------|------|-------|------------------|---------------------|------------|--------|-----------------|----------|
+| 4 | **Dra. Paula Paraíso Nutricionista** | 5.0 ★ | 138 | `contato@paulaparaiso.com.br` | (11) 96277-7356 / `wa.me/5511962777356` | https://paulaparaiso.com.br/ | `site pronto` | [Ver Nova Página](file:///c:/Temp/ProspectSitesStoAmaro/sites/paula-paraiso-nutri/index.html) | Rua Itirapuã, 218 - Vila Prel / Zona Sul |
+
+---
+
+## ✉️ Lote 1: Nutricionistas — Propostas Enviadas (30/08/2026)
+
+| # | Nome | Nota | Aval. | E-mail | WhatsApp | Status | URL Pública no Ar |
+|---|------|------|-------|--------|----------|--------|-------------------|
+| 5 | **Lourdes Costa Nutricionista** | 5.0 ★ | 45 | `nutrilourdescosta@gmail.com` | `wa.me/5511951181020` | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/lourdes-costa-nutri/ |
+| 6 | **Carolina Vasconcelos Nutricionista** | 5.0 ★ | 42 | `carolinavasconcelost@gmail.com` | `wa.me/5511994490592` | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/carolina-vasconcelos-nutri/ |
+| 7 | **Dra. Vanessa Lacerda Nutricionista** | 5.0 ★ | 40 | `vanessa.lacerdanutri@yahoo.com` | `wa.me/5511966869718` | `proposta enviada` | https://asilva-01.github.io/prospect-sites/sites/vanessa-lacerda-nutri/ |
+
+---
+
+## 🔗 Comparador Geral Antes vs Depois
+- **Arquivo local:** [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html)
+- **URL pública no GitHub Pages:** https://asilva-01.github.io/prospect-sites/comparar.html

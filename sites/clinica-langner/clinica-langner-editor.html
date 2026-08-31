@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Langner | Psicologia & Neuropsicologia em Santo Amaro - SP</title>
+  <meta name="description" content="Clínica especializada em Avaliação Neuropsicológica, TCC, Psicologia Clínica e Reabilitação Cognitiva em Santo Amaro. Cuidado humanizado e baseado em evidências.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f4c5c;
+      --primary-dark: #0a333e;
+      --primary-light: #166b82;
+      --accent: #e36414;
+      --accent-hover: #c4520e;
+      --bg-cream: #fafafa;
+      --bg-white: #ffffff;
+      --bg-soft: #edf5f7;
+      --text-main: #18282d;
+      --text-muted: #536b73;
+      --border-light: #e1ebed;
+      --shadow-sm: 0 4px 12px rgba(15, 76, 92, 0.05);
+      --shadow-md: 0 10px 28px rgba(15, 76, 92, 0.08);
+      --shadow-lg: 0 20px 40px rgba(15, 76, 92, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      color: #e0f2f7;
+      font-size: 0.875rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .top-bar strong {
+      color: #fed7aa;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-soft);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    .logo-text h2 {
+      font-size: 1.35rem;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 80px;
+      background: linear-gradient(180deg, rgba(237, 245, 247, 0.7) 0%, rgba(250, 250, 250, 1) 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-evidence {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .badge-evidence span {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: 3.25rem;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: #20ba5a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-white);
+      color: var(--primary-dark);
+      border: 1.5px solid var(--border-light);
+      padding: 16px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-soft);
+      border-color: var(--primary-light);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item h3 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-image-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--border-light);
+      max-width: 320px;
+    }
+
+    .floating-badge .icon {
+      width: 48px;
+      height: 48px;
+      background: #fef3c7;
+      color: #d97706;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .floating-badge h4 {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .floating-badge p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-subtitle {
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(15, 76, 92, 0.25);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-soft);
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .service-link:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Location Banner */
+    .location-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-banner h3 {
+      color: #fff;
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+    }
+
+    .location-banner p {
+      color: #e0f2f7;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .location-banner .btn-white {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image-wrapper img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: block;
+    }
+
+    .about-text h2 {
+      font-size: 2.35rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .check-list li span {
+      color: var(--accent);
+      font-size: 1.1rem;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      background: linear-gradient(135deg, #0a333e 0%, #0f4c5c 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-bottom h2 {
+      color: #fff;
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-bottom p {
+      color: #e0f2f7;
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* Footer */
+    footer {
+      background: #081a20;
+      color: #7997a0;
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: pulse 2.5s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .location-banner {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .nav-links {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🧠 <strong>Psicologia & Neuropsicologia Clínica</strong> — Rua Manoel Borba, 292 (Santo Amaro, SP) | WhatsApp: <strong>(11) 94818-9898</strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <div class="logo-container">
+          <div class="logo-badge">CL</div>
+          <div class="logo-text">
+            <h2>Clínica Langner</h2>
+            <p>Psicologia & Neuropsicologia</p>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#sobre">A Clínica</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#neuropsicologia">Neuropsicologia</a></li>
+          <li><a href="#contato">Localização</a></li>
+        </ul>
+        <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimentos%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-header">
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-evidence">
+            <span>🧠</span> Prática Clínica Baseada em Evidências Científicas
+          </div>
+          <h1 class="hero-title">
+            Compreender a mente para <span>potencializar</span> vidas.
+          </h1>
+          <p class="hero-desc">
+            Diagnóstico neuropsicológico preciso e intervenções psicoterapêuticas integradas para crianças, adolescentes, adultos e idosos em Santo Amaro.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Agendar no WhatsApp
+            </a>
+            <a href="#especialidades" class="btn-secondary">
+              Ver Especialidades
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>TCC</h3>
+              <p>Abordagem Cognitiva</p>
+            </div>
+            <div class="stat-item">
+              <h3>Laudos</h3>
+              <p>Completos & Técnicos</p>
+            </div>
+            <div class="stat-item">
+              <h3>Integral</h3>
+              <p>Infantil até Idosos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80" alt="Clínica Langner Neuropsicologia">
+          </div>
+          <div class="floating-badge">
+            <div class="icon">🔍</div>
+            <div>
+              <h4>Avaliação Cognitiva Completa</h4>
+              <p>Investigação para TDAH, Autismo, Memória e Aprendizagem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="especialidades">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Nossos Serviços</span>
+        <h2 class="section-title">Especialidades Clínicas</h2>
+        <p class="section-desc">Atendimentos voltados para o diagnóstico, reabilitação e desenvolvimento emocional saudável.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" id="neuropsicologia">
+          <div class="service-icon">🧠</div>
+          <h3>Avaliação Neuropsicológica</h3>
+          <p>Investigação aprofundada de funções executivas, atenção, QI e memória para suporte diagnóstico de TDAH, TEA e demências.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💡</div>
+          <h3>Terapia Cognitivo-Comportamental (TCC)</h3>
+          <p>Tratamento focado no presente, identificando padrões de pensamento disfuncionais para superar ansiedade, pânico e depressão.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20TCC" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧸</div>
+          <h3>Psicologia Infantil & Neurodesenvolvimento</h3>
+          <p>Acompanhamento lúdico especializado para crianças com dificuldades escolares, comportamentais ou atipicidades no desenvolvimento.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20psicologia%20infantil" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧩</div>
+          <h3>Reabilitação Cognitiva</h3>
+          <p>Treinamento de habilidades cerebrais para pacientes pós-AVC, traumatismo, ou em tratamento de perdas de memória.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20reabilita%C3%A7%C3%A3o%20cognitiva" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3>Orientação Vocacional & Profissional</h3>
+          <p>Processo estruturado para jovens em escolha de carreira e profissionais buscando transição no mercado de trabalho.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20orienta%C3%A7%C3%A3o%20vocacional" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Psicoterapia Online</h3>
+          <p>Sessões estruturadas por videoconferência com total praticidade, pontualidade e segurança.</p>
+          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20online" class="service-link">Saiba mais →</a>
+        </div>
+      </div>
+
+      <!-- Location Highlight Banner -->
+      <div class="location-banner" id="contato">
+        <div>
+          <h3>Consultório em Santo Amaro</h3>
+          <p>Localizado na Rua Manoel Borba, 292 — próximo à Estação Santo Amaro e principais vias de acesso da Zona Sul.</p>
+          <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Santo%20Amaro!" target="_blank" class="btn-white">
+            Agendar Atendimento Presencial
+          </a>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">
+          📍 🏥
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" style="background: #fff;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Equipe Clínica Langner">
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Sobre a Clínica</span>
+          <h2>Clínica Langner</h2>
+          <p>
+            A Clínica Langner é um centro de referência em Psicologia Clínica e Neuropsicologia fundado com a missão de unir rigor científico e acolhimento humano.
+          </p>
+          <p>
+            Trabalhamos com protocolos clínicos validados internacionalmente, entregando laudos detalhados que auxiliam médicos neurologistas, psiquiatras, escolas e famílias a entenderem a fundo o funcionamento cognitivo e emocional de cada paciente.
+          </p>
+          <ul class="check-list">
+            <li><span>✔</span> Testes neuropsicológicos padronizados</li>
+            <li><span>✔</span> Equipe altamente qualificada</li>
+            <li><span>✔</span> Consultório aconchegante e acessível</li>
+            <li><span>✔</span> Emissão de recibos para reembolso</li>
+          </ul>
+          <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20um%20agendamento!" target="_blank" class="btn-primary">
+            Falar Diretamente com a Clínica
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>O cuidado com a saúde mental começa com uma boa decisão</h2>
+      <p>Agende uma avaliação com nossa equipe e descubra o caminho para uma vida com mais clareza, equilíbrio e bem-estar.</p>
+      <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20quero%20agendar%20minha%20consulta%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+        Agendar Consulta via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Clínica Langner</h4>
+          <p>Centro de Psicologia Clínica, Neuropsicologia e Desenvolvimento Humano.</p>
+          <p>Prática baseada em evidências científicas.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Endereço</h4>
+          <p>📍 Rua Manoel Borba, 292 - Santo Amaro, São Paulo - SP</p>
+          <p>🌐 Atendimentos presenciais e online</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p>📱 WhatsApp: (11) 94818-9898</p>
+          <p>✉️ E-mail: contato@clinicalangner.com.br</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Clínica Langner. Todos os direitos reservados. Design de Alta Conversão.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimentos!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
+    💬
+  </a>
+
+<!-- PROSPECTOR-EDITOR-START -->
+<style id="pe-style">
+#pe-bar{position:fixed;top:0;left:0;right:0;z-index:99999;background:#111;color:#fff;font:14px/1 -apple-system,Segoe UI,Roboto,sans-serif;display:flex;align-items:center;gap:16px;padding:10px 16px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#pe-bar button{background:#22c55e;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer}
+#pe-bar button:hover{background:#16a34a}
+body{margin-top:44px !important}
+.pe-hover{outline:2px dashed #22c55e !important;outline-offset:2px;cursor:pointer}
+[contenteditable="true"]:focus{outline:2px solid #3b82f6 !important;outline-offset:2px}
+</style>
+<div id="pe-bar">
+  <strong>Modo edição</strong>
+  <span>Clique em textos para editar · clique em imagens para trocar</span>
+  <button id="pe-export" type="button">Exportar página</button>
+</div>
+<input type="file" id="pe-file" accept="image/*" style="display:none">
+<script id="pe-script">
+(function(){
+  var TEXT='h1,h2,h3,h4,h5,h6,p,li,a,span,button,td,th,figcaption,blockquote,strong,em';
+  document.querySelectorAll(TEXT).forEach(function(el){
+    if(el.closest('#pe-bar'))return;
+    if(el.children.length===0||el.childElementCount<=1){
+      el.addEventListener('click',function(e){
+        if(el.tagName==='A'||el.tagName==='BUTTON')e.preventDefault();
+        el.setAttribute('contenteditable','true');el.focus();
+      });
+      el.addEventListener('mouseenter',function(){el.classList.add('pe-hover')});
+      el.addEventListener('mouseleave',function(){el.classList.remove('pe-hover')});
+      el.addEventListener('blur',function(){el.removeAttribute('contenteditable')});
+    }
+  });
+  var fileInput=document.getElementById('pe-file'),currentImg=null;
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();currentImg=img;fileInput.click()});
+    img.addEventListener('mouseenter',function(){img.classList.add('pe-hover')});
+    img.addEventListener('mouseleave',function(){img.classList.remove('pe-hover')});
+  });
+  fileInput.addEventListener('change',function(){
+    var f=fileInput.files[0];if(!f||!currentImg)return;
+    var r=new FileReader();
+    r.onload=function(){currentImg.src=r.result;if(currentImg.srcset)currentImg.removeAttribute('srcset')};
+    r.readAsDataURL(f);fileInput.value='';
+  });
+  document.getElementById('pe-export').addEventListener('click',function(){
+    var doc=document.documentElement.cloneNode(true);
+    ['#pe-bar','#pe-style','#pe-script','#pe-file'].forEach(function(s){var n=doc.querySelector(s);if(n)n.remove()});
+    doc.querySelectorAll('[contenteditable]').forEach(function(n){n.removeAttribute('contenteditable')});
+    doc.querySelectorAll('.pe-hover').forEach(function(n){n.classList.remove('pe-hover')});
+    var html='<!DOCTYPE html>\n'+doc.outerHTML;
+    var blob=new Blob([html],{type:'text/html'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='index.html';a.click();
+  });
+})();
+</script>
+<!-- PROSPECTOR-EDITOR-END -->
+</body>
+</html>

@@ -1,21 +1,5 @@
 <!DOCTYPE html>
-<!-- TEMPLATE DO COMPARADOR — uso: substituir [
-  {
-    "nome": "Lourdes Costa Nutricionista",
-    "slug": "lourdes-costa-nutri",
-    "old": "http://www.nutrilourdescostaa.com.br/"
-  },
-  {
-    "nome": "Carolina Vasconcelos Nutricionista",
-    "slug": "carolina-vasconcelos-nutri",
-    "old": "http://nutricionistacarolinavasconcelos.com/"
-  },
-  {
-    "nome": "Dra. Vanessa Lacerda Nutricionista",
-    "slug": "vanessa-lacerda-nutri",
-    "old": "https://nutricao.info/dravanessalacerdanutri"
-  }
-] pelo array JSON e salvar como comparar.html na RAIZ da pasta conectada -->
+<!-- TEMPLATE DO COMPARADOR — uso: substituir CLIENTES pelo array JSON e salvar como comparar.html na RAIZ da pasta conectada -->
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -28,7 +12,8 @@
   h1{font-size:22px;margin:0 0 4px}
   p.sub{color:var(--muted);margin:0 0 18px;font-size:14px}
   .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-  .tab{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:9px 16px;border-radius:10px;cursor:pointer;font-size:14px;font-weight:600}
+  .tab{background:var(--card);border:1px solid var(--line);color:var(--ink);padding:9px 16px;border-radius:10px;cursor:pointer;font-size:14px;font-weight:600;transition:all .2s}
+  .tab:hover{border-color:var(--blue);color:#fff}
   .tab.on{background:var(--blue);border-color:var(--blue);color:#fff}
   .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   @media(max-width:900px){.cols{grid-template-columns:1fr}}
@@ -47,7 +32,7 @@
 </head>
 <body>
 <h1>Antes vs Depois</h1>
-<p class="sub">Esquerda: site atual do cliente · Direita: nova versão criada pelo Claude. Se o site antigo não carregar aqui (alguns bloqueiam incorporação), use o link "abrir em nova aba".</p>
+<p class="sub">Esquerda: site atual do cliente · Direita: nova versão de alta conversão. Se o site antigo não carregar aqui (alguns bloqueiam iframe), use o link "abrir em nova aba".</p>
 <div class="tabs" id="tabs"></div>
 <div class="cols">
   <div class="col">
@@ -59,9 +44,29 @@
     <div id="newwrap"></div>
   </div>
 </div>
-<p class="hint">Dica: para editar uma página, abra o arquivo <b>[cliente]-editor.html</b> na pasta sites/[cliente]/.</p>
+<p class="hint">Dica: para editar uma página visualmente, abra o arquivo <b>[cliente]-editor.html</b> na pasta sites/[cliente]/.</p>
 <script>
 var CLIENTES=[
+  {
+    "nome": "Dra. Paula Paraíso Nutricionista (138★)",
+    "slug": "paula-paraiso-nutri",
+    "old": "https://paulaparaiso.com.br/"
+  },
+  {
+    "nome": "Dra. Cecília Freytas Psicóloga (70★)",
+    "slug": "cecilia-freytas-psico",
+    "old": "https://ceciliafreytas.com.br/"
+  },
+  {
+    "nome": "Métra Psicologia e Psicanálise",
+    "slug": "metra-psicologia",
+    "old": "https://metrapsi.com.br/"
+  },
+  {
+    "nome": "Clínica Langner Psicologia",
+    "slug": "clinica-langner",
+    "old": "https://clinicalangner.com.br/"
+  },
   {
     "nome": "Lourdes Costa Nutricionista",
     "slug": "lourdes-costa-nutri",
@@ -96,27 +101,3 @@ if(CLIENTES.length)mostra(CLIENTES[0]);
 </script>
 </body>
 </html>
-<!--
-FORMATO DO ARRAY [
-  {
-    "nome": "Lourdes Costa Nutricionista",
-    "slug": "lourdes-costa-nutri",
-    "old": "http://www.nutrilourdescostaa.com.br/"
-  },
-  {
-    "nome": "Carolina Vasconcelos Nutricionista",
-    "slug": "carolina-vasconcelos-nutri",
-    "old": "http://nutricionistacarolinavasconcelos.com/"
-  },
-  {
-    "nome": "Dra. Vanessa Lacerda Nutricionista",
-    "slug": "vanessa-lacerda-nutri",
-    "old": "https://nutricao.info/dravanessalacerdanutri"
-  }
-] (JSON):
-[
-  {"nome":"Nome do Cliente","slug":"slug-do-cliente","old":"https://siteantigo.com.br/"},
-  {"nome":"Cliente Sem Site","slug":"outro-slug","old":null,"motivo":"Site fora do ar"}
-]
-Regras: novos clientes ENTRAM no array existente (ler o comparar.html atual e mesclar, nunca sobrescrever perdendo clientes antigos). Slug deve bater com a pasta sites/[slug]/[slug].html.
--->
