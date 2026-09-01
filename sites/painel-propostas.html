@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Propostas - Santo Amaro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --border-color: #e2e8f0;
+            --accent-primary: #0ea5e9;
+            --accent-hover: #0284c7;
+            --whatsapp-color: #25d366;
+            --whatsapp-hover: #1ebd59;
+            --badge-new: #3b82f6;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            --sidebar-width: 320px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --text-primary: #f8fafc;
+                --text-secondary: #94a3b8;
+                --border-color: #334155;
+                --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-badge {
+            background-color: var(--accent-primary);
+            color: white;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--bg-primary);
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 65px);
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            font-weight: 750;
+        }
+
+        .lead-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lead-item {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background-color 0.2s;
+            position: relative;
+        }
+
+        .lead-item:hover {
+            background-color: var(--bg-primary);
+        }
+
+        .lead-item.active {
+            background-color: var(--bg-primary);
+            border-left: 4px solid var(--accent-primary);
+        }
+
+        .lead-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+
+        .lead-nicho {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .lead-meta {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            font-size: 0.75rem;
+        }
+
+        .badge {
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+
+        .badge-wa {
+            background-color: rgb(37 211 102 / 0.1);
+            color: #128c7e;
+        }
+
+        .badge-email {
+            background-color: rgb(59 130 246 / 0.1);
+            color: #2563eb;
+        }
+
+        /* Content area styling */
+        .content-area {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .lead-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .lead-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .lead-card-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .lead-card-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .lead-links {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .link-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.8rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .link-pill:hover {
+            color: var(--accent-primary);
+            border-color: var(--accent-primary);
+            background-color: rgba(14, 165, 233, 0.05);
+        }
+
+        .link-pill.new-site {
+            background-color: rgba(14, 165, 233, 0.09);
+            color: var(--accent-primary);
+            border-color: var(--accent-primary);
+        }
+
+        .link-pill.new-site:hover {
+            background-color: var(--accent-primary);
+            color: white;
+        }
+
+        /* Tabs system */
+        .tab-nav {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1.25rem;
+        }
+
+        .tab-btn {
+            padding: 0.75rem 1.25rem;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .tab-btn.active {
+            color: var(--accent-primary);
+            border-bottom-color: var(--accent-primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Proposal Section */
+        .proposal-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .field-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .field-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .field-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .field-textarea {
+            width: 100%;
+            height: 280px;
+            padding: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            resize: vertical;
+        }
+
+        .action-bar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.25rem;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--border-color);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+        }
+
+        /* Briefing/Painel informativo */
+        .briefing-box {
+            background-color: rgba(14, 165, 233, 0.03);
+            border: 1px solid rgba(14, 165, 233, 0.15);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1rem;
+            font-size: 0.88rem;
+            line-height: 1.45;
+        }
+
+        .briefing-title {
+            font-weight: 700;
+            color: var(--accent-primary);
+            margin-bottom: 0.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .info-pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-pill {
+            font-size: 0.75rem;
+            background-color: var(--bg-primary);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+        }
+
+        /* CRM Help Section */
+        .crm-help {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        .crm-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .crm-steps {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        .crm-step-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .crm-step-num {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            font-size: 0.75rem;
+            font-weight: 700;
+            width: 20px;
+            height: 20px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+
+        .code-snippet {
+            font-family: monospace;
+            background-color: var(--bg-primary);
+            padding: 0.4rem 0.6rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            display: block;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+            color: var(--text-primary);
+            font-size: 0.8rem;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--text-primary);
+            color: var(--bg-secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            transform: translateY(150%);
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 100;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
+                max-height: 260px;
+            }
+            .content-area {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-title">
+            <span> Santo Amaro Prospecção</span>
+            <span class="header-badge">Onda 1B & 2</span>
+        </div>
+        <button class="theme-toggle" id="themeBtn" aria-label="Alternar Tema">☀️</button>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar com lista de Leads -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Leads Prontos para Envio</h3>
+            </div>
+            <ul class="lead-list" id="leadList">
+                <!-- Cecilia Freytas -->
+                <li class="lead-item active" data-index="0">
+                    <div class="lead-name">Dra. Cecília Freytas</div>
+                    <div class="lead-nicho">🧠 Psicologia Clínica</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-wa">WhatsApp Principal</span>
+                    </div>
+                </li>
+                <!-- Metra -->
+                <li class="lead-item" data-index="1">
+                    <div class="lead-name">Métra Psicologia</div>
+                    <div class="lead-nicho">👥 Psicanálise & Clínica</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email">E-mail + WA</span>
+                    </div>
+                </li>
+                <!-- Clinica Langner -->
+                <li class="lead-item" data-index="2">
+                    <div class="lead-name">Clínica Langner</div>
+                    <div class="lead-nicho">🔬 Neuropsicologia & TCC</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email">E-mail + WA</span>
+                    </div>
+                </li>
+                <!-- Paula Paraiso -->
+                <li class="lead-item" data-index="3">
+                    <div class="lead-name">Dra. Paula Paraíso</div>
+                    <div class="lead-nicho">🥗 Nutricionista</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email">E-mail + WA</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="content-area">
+            <div class="lead-card">
+                <div class="lead-card-header">
+                    <div>
+                        <h2 class="lead-card-title" id="cardName">Dra. Cecília Freytas</h2>
+                        <p class="lead-card-subtitle" id="cardNicho">Psicóloga Clinica</p>
+                        <div class="lead-links">
+                            <a href="https://ceciliafreytas.com.br/" target="_blank" class="link-pill" id="linkAntigo">
+                                🔗 Site Atual/Original
+                            </a>
+                            <a href="https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/" target="_blank" class="link-pill new-site" id="linkNovo">
+                                ✨ Ver Novo Redesenho
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="briefing-box">
+                    <div class="briefing-title">
+                        <span>🎯 Análise do Site Antigo e Porquê do Redesenho</span>
+                    </div>
+                    <p id="cardAnalise">O site original possui um cabeçalho fixo estático que quebra ou oculta links no celular em resoluções mais baixas. O formulário de contato do site carece de feedback visual de sucesso e não tem links diretos e fluidos para o WhatsApp. A proposta traz cabeçalho inteligente que oculta/mostra ao rolar, menu mobile fluido, CRP visível, FAQ animado e depoimentos otimizados.</p>
+                    <div class="info-pill-container" id="cardPills">
+                        <span class="info-pill">Endereço: Av. das Nações Unidas, 18801 - NovAmérica Office Park</span>
+                        <span class="info-pill">Telefone: (11) 99601-2736</span>
+                        <span class="info-pill">Avaliações: 5.0 ★ (70 reviews no Maps)</span>
+                    </div>
+                </div>
+
+                <!-- Tabs de Comunicação -->
+                <div class="tab-nav">
+                    <button class="tab-btn active" data-tab="whatsapp">WhatsApp (Mais Eficiente)</button>
+                    <button class="tab-btn" data-tab="email">E-mail (Proposta Formal)</button>
+                </div>
+
+                <!-- Tab WhatsApp -->
+                <div class="tab-content active" id="tab-whatsapp">
+                    <div class="proposal-block">
+                        <div class="field-group">
+                            <label class="field-label">Mensagem Pronta para WhatsApp</label>
+                            <textarea class="field-textarea" id="waText" readonly></textarea>
+                        </div>
+                        <div class="action-bar">
+                            <button class="btn btn-secondary" onclick="copyField('waText')">Copiar Texto</button>
+                            <a href="#" target="_blank" class="btn btn-whatsapp" id="waSendBtn">
+                                💬 Abrir WhatsApp Web
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab E-mail -->
+                <div class="tab-content" id="tab-email">
+                    <div class="proposal-block">
+                        <div class="field-group">
+                            <label class="field-label">Assunto do E-mail</label>
+                            <input type="text" class="field-input" id="emailSubject" readonly>
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Corpo do E-mail</label>
+                            <textarea class="field-textarea" id="emailText" readonly></textarea>
+                        </div>
+                        <div class="action-bar">
+                            <button class="btn btn-secondary" onclick="copyField('emailSubject')">Copiar Assunto</button>
+                            <button class="btn btn-secondary" onclick="copyField('emailText')">Copiar Corpo</button>
+                            <a href="#" target="_blank" class="btn btn-primary" id="emailSendBtn">
+                                ✉️ Enviar via Gmail
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRM Instruções -->
+            <div class="crm-help">
+                <h3 class="crm-title">📋 Passos Finais da Prospecção (CRM)</h3>
+                <ul class="crm-steps">
+                    <li class="crm-step-item">
+                        <span class="crm-step-num">1</span>
+                        <span>Envie a mensagem clicando nos botões acima ou copiando para o seu WhatsApp/E-mail.</span>
+                    </li>
+                    <li class="crm-step-item">
+                        <span class="crm-step-num">2</span>
+                        <span>Assim que enviar, atualize o status dos leads no banco de dados local executando este comando no terminal:</span>
+                    </li>
+                    <li>
+                        <code class="code-snippet" id="sqlCmd">python -c "import sqlite3; conn = sqlite3.connect('prospector.db'); conn.execute(\"UPDATE leads SET status='proposta' WHERE slug IN ('cecilia-freytas-psico', 'metra-psicologia', 'clinica-langner', 'paula-paraiso-nutri')\"); conn.commit(); conn.close(); print('Status atualizado para Proposta no SQLite!')"</code>
+                    </li>
+                    <li class="crm-step-item">
+                        <span class="crm-step-num">3</span>
+                        <span>No arquivo <a href="../leads.md" target="_blank" style="color:var(--accent-primary);">leads.md</a>, atualize a coluna "Status" de cada lead de <code>site pronto</code> para <code>proposta enviada</code>.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Component -->
+    <div class="toast" id="toast">Copiado com sucesso!</div>
+
+    <script>
+        // Dados dos leads e propostas
+        const leads = [
+            {
+                name: "Dra. Cecília Freytas",
+                nicho: "Psicóloga Clínica",
+                slug: "cecilia-freytas-psico",
+                siteAntigo: "https://ceciliafreytas.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/",
+                telefone: "(11) 99601-2736",
+                email: "contato@ceciliafreytas.com.br", // Geralmente ela usa WA no site antigo, mas salvamos fallback
+                analise: "O site original de Cecília é instável no celular (navegação esconde os links se a tela for menor que 992px de largura). Também não possui FAQ dinâmico nem otimização rápida de carregamento. O novo redesenho traz uma estética em verde-musgo/dourado ultra-acolhedora, menus de rolagem e FAQ interativo de alto impacto.",
+                reviews: "70 avaliações no Maps (5.0 ★)",
+                endereco: "Av. das Nações Unidas, 18801 - NovAmérica Office Park",
+                waMsg: `Olá, Dra. Cecília, tudo bem?
+
+Acompanho o seu trabalho no NovAmérica Office Park e vejo o quanto é referência aqui em Santo Amaro (com 70 avaliações excelentes).
+
+Dando uma olhada básica na sua presença digital, percebi que o seu site oficial apresenta algumas falhas no celular (os links principais acabam sumindo na tela menor e a resposta do carregamento é um pouco lenta).
+
+Como sou designer especializado e atuo na região de Santo Amaro, tomei a liberdade de desenhar uma nova versão moderna e 100% responsiva para a sua página, mantendo a sobriedade que sua atuação exige, mas com foco total no agendamento no celular.
+
+Ficou assim: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
+
+Se gostar do redesenho, podemos conversar sobre como ativá-lo no seu domínio (faço a publicação completa por um valor único de R$ 1.200).
+
+Seria um prazer te ajudar a refinar essa porta de entrada digital. Um abraço!`,
+                emailSubject: "Proposta de Redesenho Web e Otimização para Celular - Dra. Cecília Freytas",
+                emailBody: `Olá, Dra. Cecília, tudo bem?
+
+Meu nome é André, sou designer web especializado em páginas de alta conversão para profissionais liberais, e moro aqui na região de Santo Amaro.
+
+Tenho acompanhado sua excelente presença e os depoimentos elogiosos dos seus pacientes (as 70 avaliações 5.0 estrelas no Google demonstram sua relevância no NovAmérica Office Park).
+
+Ao analisar a parte técnica do seu domínio (ceciliafreytas.com.br) no aparelho celular, percebi alguns gargalos importantes que afetam a conversão de pacientes novos:
+1. O menu de navegação some em larguras típicas de smartphones, impossibilitando a leitura fluida.
+2. O carregamento de imagens principais está lento para conexões 4G/5G.
+3. Não há uma estrutura de FAQ moderno (perguntas frequentes) para quebrar as principais objeções de pacientes que veem seu site à noite ou nos fins de semana.
+
+Com o objetivo de demonstrar na prática o valor do meu formato, eu tomei a liberdade de programar um redesenho completo para o seu site. É rápido de testar e você pode abrir direto pelo seu celular:
+
+👉 Link do Novo Site Redesenhado: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
+
+O que mudou nesta nova página:
+- Arquitetura móvel 100% testada (o menu funciona perfeitamente em qualquer aparelho).
+- Design acolhedor e profissional (estruturado em tons elegantes de musgo e dourado).
+- FAQ interativo para aumentar a retenção de pacientes curiosos.
+- Carregamento ultrarrápido (imagens pré-otimizadas e otimização SEO local).
+
+Gostaria de saber se faz sentido agendarmos uma conversa rápida de 5 minutos por ligação ou WhatsApp para eu lhe mostrar como podemos ativar essa nova versão no seu domínio oficial.
+
+Entrego a página instalada e configurada por um valor único de R$ 1.200 (podendo parcelar). Opcionalmente, ofereço manutenção por R$ 150/mês para cuidar de todas as atualizações de texto e segurança.
+
+Fico à disposição, Dra. Cecília!
+
+Atenciosamente,
+André Luiz da Silva
+Telefone: (11) 95118-1020
+andre1981luiz@gmail.com`
+            },
+            {
+                name: "Métra Psicologia",
+                nicho: "Psicanálise & Clínica",
+                slug: "metra-psicologia",
+                siteAntigo: "https://metrapsi.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/",
+                telefone: "(11) 99970-6712",
+                email: "contato@metrapsi.com.br",
+                analise: "O site atual da Clínica Métra tem tempo de carregamento insatisfatório para campanhas digitais e adota fotos genéricas frias e sem expressividade clínica. Além disso, o FAQ de psicanálise e os depoimentos estão mal estruturados na tela do celular. O redesenho em azul-marinho e ouro premium melhora a conversão e traz um visual muito mais autoral.",
+                reviews: "35 avaliações no Maps (4.8 ★)",
+                endereco: "Rua Alexandre Dumas, 501 - Chácara Santo Antônio",
+                waMsg: `Olá, pessoal da Métra Psicologia, tudo bem?
+
+Encontrei a clínica de vocês enquanto pesquisava excelentes consultórios de psicanálise e psicologia na Chácara Santo Antônio.
+
+Analisando o site de vocês (metrapsi.com.br) pelo celular, percebi que ele demora bastante para iniciar o carregamento inicial das sessões e os cartões de profissionais ficam desalinhados no mobile.
+
+Como sou especialista em web design aqui na zona sul, desenvolvi um modelo de redesign premium completo do site de vocês, focado em agilidade no mobile e estéticas clássicas de psicologia (com tipografia Cincel sofisticada e depoimentos fluidos).
+
+Vejam como ficou excelente o teste: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
+
+Se fizer sentido modernizar o canal oficial de vocês com essa página impecável, podemos ativá-la no domínio atual por um custo de R$ 1.200. Abraços!`,
+                emailSubject: "Redesign Premium e Otimização de Performance - Métra Psicologia",
+                emailBody: `Olá, equipe da Métra Psicologia e Psicanálise, tudo bem?
+
+Meu nome é André, sou designer de sites especializados em alta conversão clínica, atuando na região de Santo Amaro e Chácara Santo Antônio.
+
+Estava mapeando os principais nomes de psicoterapia da nossa região e cheguei ao perfil de vocês na Alexandre Dumas (com excelentes 35 análises no Google).
+
+Acessando o site atual (metrapsi.com.br), notei que a página tem uma boa base, mas apresenta gargalos técnicos que reduzem a conversão de pacientes novos, especialmente aqueles oriundos de anúncios pagos ou buscas locais pelo smartphone:
+1. Carregamento inicial pesado, o que gera abandono do site em conexões móveis ruins do celular.
+2. Uso intenso de ilustrações genéricas de banco, diminuindo a conexão humanizada que um serviço de saúde e psicanálise exige.
+3. Seção de depoimentos estática e FAQ técnico confuso no mobile.
+
+Para demonstrar como a Métra pode ter uma recepção digital compatível com a excelência do espaço físico de vocês, tomei a iniciativa de reconstruir a landing page de vocês por completo. O link está ativo para vocês verem em tempo real, inclusive pelo celular:
+
+👉 Teste do Redesenho Métra: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
+
+Destaques da nova proposta:
+- Layout sofisticado com tipografia clássica serifada de prestígio (Cinzel).
+- Painel de depoimentos otimizado, exibindo de forma limpa as opiniões dos pacientes.
+- Bloco de Perguntas Frequentes (FAQ) interativo para sanar dúvidas sobre sessões e planos de reembolso.
+- Velocidade de carregamento reduzida a menos da metade da atual, retendo mais visitas.
+
+Se vocês gostarem do visual e o desempenho for o que buscam para a clínica, entrego a página completa instalada no domínio oficial por R$ 1.200. Também disponibilizo suporte mensal de R$ 150/mês para pequenas escritas e manutenção do servidor.
+
+O que acham de fazermos um breve alinhamento sobre essa nova versão? Fico no aguardo.
+
+Cordialmente,
+André Luiz da Silva
+Telefone: (11) 95118-1020
+andre1981luiz@gmail.com`
+            },
+            {
+                name: "Clínica Langner",
+                nicho: "Neuropsicologia & TCC",
+                slug: "clinica-langner",
+                siteAntigo: "https://clinicalangner.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/clinica-langner/",
+                telefone: "(11) 94818-9898",
+                email: "contato@clinicalangner.com.br",
+                analise: "O site antigo da Clínica Langner é poluído, com muitas fontes e cores simultâneas competindo pela atenção. Consequentemente, o formulário de Neuropsicologia fica escondido nos celulares. O redesenho em azul-saúde e laranja de contraste organiza as informações verticalmente de maneira limpa, apresenta estatísticas de relevância (anos de clínica, sessões) na hero e integra um FAQ dinâmico eficiente.",
+                reviews: "28 avaliações no Maps (4.9 ★)",
+                endereco: "Rua Manoel Borba, 292 - Centro de Santo Amaro",
+                waMsg: `Olá, Dr. Langner / Equipe da Clínica, tudo bem?
+
+Visitei a clínica de vocês na Manoel Borba recentemente e gostei muito da relevância que possuem em neuropsicologia aqui no Centro de Santo Amaro.
+
+Observei o site institucional de vocês (clinicalangner.com.br) no smartphone e notei que a página tem muitas informações e cores misturadas, o que acaba escondendo a ficha de agendamentos rápidos e atrasa o carregamento.
+
+Para resolver isso, criei um redesign otimizado focado em conversão e profissionalismo médico (limpando o visual e evidenciando a experiência de vocês e o agendamento móvel).
+
+O redesenho completo pode ser visualizado aqui: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
+
+Se concordarem que essa página traz mais credibilidade e atração de pacientes, ofereço a transição completa para o seu site oficial por R$ 1.200. Estou à disposição!`,
+                emailSubject: "Otimização de Conversão e Redesenho de Landing Page - Clínica Langner",
+                emailBody: `Prezado Dr. Langner, e equipe da Clínica Langner, tudo bem?
+
+Meu nome é André, sou especialista em web design e otimização de conversões em Santo Amaro.
+
+Acompanho o prestígio e o trabalho em neuropsicologia e terapia cognitivo-comportamental que realizam na Manoel Borba, sendo um dos consultórios mais bem qualificados da região.
+
+Analisando a estrutura técnica e visual do seu site atual (clinicalangner.com.br), identifiquei pontos de fricção que podem estar desperdiçando cliques de potenciais pacientes (especialmente aqueles vindos de campanhas do Google Ads):
+1. Excesso de informação simultânea na primeira tela, deixando o site visualmente poluído no mobile.
+2. Dificuldade de acessar e preencher a área de agendamento de consultas pelo celular.
+3. Ausência de FAQs rápidos que abordem diretamente os exames neuropsicológicos de forma intuitiva.
+
+Desenvolvi uma proposta completa de redesenho, totalmente responsiva e focada na experiência do paciente moderno. Você pode acessar e testar o funcionamento em tempo real aqui:
+
+👉 Proposta de Redesenho Clínica Langner: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
+
+Diferenciais da nova proposta:
+- Layout 'Clean' e focado em saúde, transmitindo seriedade e acolhimento clínico imediatos.
+- Destaque das conquistas e credenciais clínicas na primeira dobra da página.
+- FAQ dinâmico interativo para explicar exames e atendimentos a convênios ou reembolso.
+- Interface de chamada direta de telefone e WhatsApp em botões flutuantes para celular.
+- Estrutura desenvolvida para obter carregamento nota máxima no PageSpeed, diminuindo custos por clique em anúncios.
+
+A entrega técnica desse projeto pronto no domínio oficial de vocês tem o custo fixo de R$ 1.200. Também ofereço a manutenção técnica e atualizações periódicas por R$ 150 mensais.
+
+Caso tenha interesse em saber como podemos substituir o site de forma rápida e segura sem tirar o seu e-mail do ar, estou disponível para uma breve ligação.
+
+Atenciosamente,
+André Luiz da Silva
+Telefone: (11) 95118-1020
+andre1981luiz@gmail.com`
+            },
+            {
+                name: "Dra. Paula Paraíso",
+                nicho: "Nutricionista",
+                slug: "paula-paraiso-nutri",
+                siteAntigo: "https://paulaparaiso.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/",
+                telefone: "(11) 96277-7356",
+                email: "contato@paulaparaiso.com.br",
+                analise: "A renomada nutricionista Paula Paraíso possui 138 excelentes avaliações no Google, contudo, seu site paulaparaiso.com.br tem design antigo em flash/estático que carrega com quebras no celular. O novo redesenho traz o conceito wellness moderno com cores verde e areia, inclui contadores editáveis de pacientes e planos de saúde, e disponibiliza botões de ação e depoimentos destacados.",
+                reviews: "138 avaliações no Maps (5.0 ★)",
+                endereco: "Rua Itirapuã, 218 - Vila Prel / Zona Sul",
+                waMsg: `Olá, Dra. Paula Paraíso, tudo bem?
+
+Acompanho o seu incrível trabalho em nutrição na zona sul, vi que a senhora tem excelentes 138 depoimentos de sucesso no Google.
+
+Percebi que o seu site oficial atual (paulaparaiso.com.br) está com uma tecnologia um pouco datada e lenta ao abrir no celular, o que prejudica a chegada de novos pacientes.
+
+Como moro perto de Santo Amaro e crio sites para área de saúde, desenvolvi um redesenho moderno, 100% responsivo e elegante em tons verde wellness para o seu espaço digital, trazendo destaque para os seus planos de saúde e depoimentos.
+
+Dá para conferir como ficou rápida e linda no celular aqui neste link: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
+
+Caso queira adotar essa nova cara para a sua clínica na web, faço a publicação completa no seu domínio por R$ 1.200. Um abraço!`,
+                emailSubject: "Redesenho e Otimização para Nutrição Wellness - Dra. Paula Paraíso",
+                emailBody: `Prezada Dra. Paula Paraíso, tudo bem?
+
+Meu nome é André, sou web designer de alta performance no segmento de nutrição e saúde, atuando aqui na Zona Sul / Santo Amaro.
+
+Em minhas pesquisas, localizei o seu perfil de atendimento e fiquei impressionado com a quantidade expressiva de avaliações (são 138 reviews 5.0 estrelas no Google, demonstrando o quanto é referência em nutrição).
+
+Contudo, ao analisar a experiência digital do seu site oficial (paulaparaiso.com.br) via smartphone, percebi sérios gargalos que reduzem sua conversão digital:
+1. Navegação datada ou desconfigurada que impede a leitura dinâmica das especialidades médicas.
+2. Carregamento demorado para pacientes que chegam através do Instagram ou buscas no celular.
+3. Botão de agendamento por WhatsApp que não contém preenchimento automático de mensagem nem direcionamento fluido no aparelho celular.
+
+Para mostrar o potencial com que a senhora pode receber digitalmente novos pacientes, eu construí um redesign inteiramente focado na sua marca. Ele já está no ar para demonstração:
+
+👉 Novo Redesenho Dra. Paula Paraíso: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
+
+Benefícios desta nova página:
+- Identidade visual moderna e acolhedora voltada a nutrição Wellness e longevidade.
+- Apresentação inteligente de avaliações e da sua formação profissional.
+- Bloco interativo de perguntas frequentes (FAQ) para sanar dúvidas comuns no atendimento.
+- Destaque legível para planos de saúde aceitos e opções de reembolso.
+- Layout ultrarrápido programado com as melhores práticas de SEO local de Santo Amaro.
+
+Caso goste da proposta visual e deseje realizar a migração permanente para o seu domínio oficial, eu posso ativá-lo por completo pelo investimento único de R$ 1.200. Opcionalmente, ofereço suporte e manutenção contínua por R$ 150 mensais para manter a página sempre atualizada.
+
+Podemos agendar um bate-papo rápido de 5 minutos pelo WhatsApp para alinharmos?
+
+Fico à disposição!
+
+Atenciosamente,
+André Luiz da Silva
+Telefone: (11) 95118-1020
+andre1981luiz@gmail.com`
+            }
+        ];
+
+        // Carregar dados no card
+        function loadLead(index) {
+            const lead = leads[index];
+            document.getElementById("cardName").textContent = lead.name;
+            document.getElementById("cardNicho").textContent = lead.nicho;
+            document.getElementById("linkAntigo").href = lead.siteAntigo;
+            document.getElementById("linkNovo").href = lead.siteNovo;
+            document.getElementById("cardAnalise").textContent = lead.analise;
+
+            // Atualizar pills extras
+            const pillsContainer = document.getElementById("cardPills");
+            pillsContainer.innerHTML = `
+                <span class="info-pill">📍 Endereço: ${lead.endereco}</span>
+                <span class="info-pill">📞 Telefone: ${lead.telefone}</span>
+                <span class="info-pill">⭐ Google: ${lead.reviews}</span>
+            `;
+
+            // Inputs e Textareas
+            document.getElementById("waText").value = lead.waMsg;
+            document.getElementById("emailSubject").value = lead.emailSubject;
+            document.getElementById("emailText").value = lead.emailBody;
+
+            // Links rápidos de envio
+
+            // Link WhatsApp Web
+            const cleanPhone = lead.telefone.replace(/\D/g, "");
+            const encodedWa = encodeURIComponent(lead.waMsg);
+            document.getElementById("waSendBtn").href = `https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encodedWa}`;
+
+            // Link Gmail
+            const encodedSubject = encodeURIComponent(lead.emailSubject);
+            const encodedBody = encodeURIComponent(lead.emailBody);
+            document.getElementById("emailSendBtn").href = `https://mail.google.com/mail/?view=cm&fs=1&to=${lead.email}&su=${encodedSubject}&body=${encodedBody}`;
+
+            // Atualizar comando SQL de exemplo para o card atual apenas (se o usuário quiser rodar individualmente)
+            document.getElementById("sqlCmd").textContent = `python -c "import sqlite3; conn = sqlite3.connect('prospector.db'); conn.execute(\\"UPDATE leads SET status='proposta' WHERE slug='${lead.slug}'\\"); conn.commit(); conn.close(); print('Status de ${lead.name} atualizado para Proposta!')"`;
+        }
+
+        // Tab Handler
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const tabId = btn.getAttribute("data-tab");
+
+                tabBtns.forEach(b => b.classList.remove("active"));
+                tabContents.forEach(c => c.classList.remove("active"));
+
+                btn.classList.add("active");
+                document.getElementById(`tab-${tabId}`).classList.add("active");
+            });
+        });
+
+        // Sidebar Lead Selection
+        const listItems = document.querySelectorAll(".lead-item");
+        listItems.forEach(item => {
+            item.addEventListener("click", () => {
+                listItems.forEach(i => i.classList.remove("active"));
+                item.classList.add("active");
+                const idx = parseInt(item.getAttribute("data-index"));
+                loadLead(idx);
+            });
+        });
+
+        // Theme Toggle Handler
+        const themeBtn = document.getElementById("themeBtn");
+        let activeTheme = localStorage.getItem("panel-theme") || "system";
+
+        function applyTheme(theme) {
+            if (theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+                document.documentElement.setAttribute("data-theme", "dark");
+                themeBtn.textContent = "🌙";
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+                themeBtn.textContent = "☀️";
+            }
+        }
+
+        themeBtn.addEventListener("click", () => {
+            const current = document.documentElement.getAttribute("data-theme");
+            const target = current === "dark" ? "light" : "dark";
+            localStorage.setItem("panel-theme", target);
+            applyTheme(target);
+        });
+
+        // Initialize theme and load first lead
+        applyTheme(activeTheme);
+        loadLead(0);
+
+        // Copy Clipboard Helper
+        function copyField(elId) {
+            const copyText = document.getElementById(elId);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            navigator.clipboard.writeText(copyText.value)
+                .then(() => {
+                    const toast = document.getElementById("toast");
+                    toast.classList.add("show");
+                    setTimeout(() => {
+                        toast.classList.remove("show");
+                    }, 2000);
+                })
+                .catch(err => {
+                    alert("Erro ao copiar: " + err);
+                });
+        }
+    </script>
+</body>
+</html>

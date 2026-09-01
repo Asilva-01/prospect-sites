@@ -36,6 +36,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg-cream);
@@ -73,6 +77,15 @@
 
     .top-bar strong {
       color: #ffd699;
+    }
+
+    .top-bar a {
+      color: #ffd699;
+      text-decoration: none;
+    }
+
+    .top-bar a:hover {
+      text-decoration: underline;
     }
 
     /* Header */
@@ -123,6 +136,19 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 600;
+    }
+
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      color: var(--primary-dark);
+      cursor: pointer;
+      padding: 8px;
+      line-height: 1;
+      z-index: 110;
     }
 
     .nav-links {
@@ -497,6 +523,18 @@
       font-size: 1.05rem;
     }
 
+    .credential-badge {
+      display: inline-block;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
     .check-list {
       list-style: none;
       margin: 24px 0 32px;
@@ -608,13 +646,39 @@
       justify-content: space-between;
       align-items: center;
       font-size: 1.05rem;
+      user-select: none;
+    }
+
+    .faq-question:hover {
+      background: var(--bg-soft-green);
+    }
+
+    .faq-question .faq-icon {
+      font-size: 1.4rem;
+      font-weight: 400;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      width: 24px;
+      text-align: center;
     }
 
     .faq-answer {
-      padding: 0 24px 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
       color: var(--text-muted);
       font-size: 0.95rem;
       line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 24px 20px;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
     }
 
     /* CTA Bottom */
@@ -664,6 +728,28 @@
       line-height: 1.6;
     }
 
+    .footer-col a {
+      color: #8fa89e;
+      text-decoration: none;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-instagram {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #8fa89e;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-instagram:hover {
+      color: #fff;
+    }
+
     .footer-bottom {
       text-align: center;
       padding-top: 30px;
@@ -702,6 +788,7 @@
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
 
+    /* ---- Responsive: 992px ---- */
     @media (max-width: 992px) {
       .hero-grid, .about-grid, .location-banner {
         grid-template-columns: 1fr;
@@ -712,11 +799,99 @@
       .hero-title {
         font-size: 2.5rem;
       }
-      .nav-links {
-        display: none;
-      }
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+
+      /* Mobile hamburger menu */
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        padding: 0;
+        gap: 0;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        z-index: 105;
+      }
+
+      .nav-links.open {
+        max-height: 400px;
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid var(--border-light);
+      }
+
+      .nav-links li:last-child {
+        border-bottom: none;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 16px 24px;
+        font-size: 1.05rem;
+      }
+
+      .nav-links a:hover {
+        background: var(--bg-soft-green);
+      }
+    }
+
+    /* ---- Responsive: 576px ---- */
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+
+      .hero {
+        padding: 40px 0 50px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .services-grid,
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .check-list {
+        grid-template-columns: 1fr;
+      }
+
+      .location-banner {
+        padding: 30px 20px;
+      }
+
+      .cta-bottom h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-bottom {
+        padding: 50px 0;
       }
     }
   </style>
@@ -726,7 +901,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong>(11) 99601-2736</strong>
+      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong><a href="tel:+5511996012736">(11) 99601-2736</a></strong>
     </div>
   </div>
 
@@ -741,7 +916,8 @@
             <p>Psicóloga Clínica & Psicoterapeuta</p>
           </div>
         </div>
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#sobre">Sobre Mim</a></li>
           <li><a href="#tratamentos">Tratamentos</a></li>
           <li><a href="#consultorio">Consultório</a></li>
@@ -890,6 +1066,7 @@
         <div class="about-text">
           <span class="section-subtitle">Sobre a Profissional</span>
           <h2>Cecília Freytas</h2>
+          <span class="credential-badge">CRP 06/XXXXX</span>
           <p>
             Sou psicóloga com sólida formação clínica e anos de dedicação ao bem-estar emocional de adultos, casais e famílias.
           </p>
@@ -975,17 +1152,17 @@
 
       <div class="faq-container">
         <div class="faq-item">
-          <div class="faq-question">Qual a frequência das sessões? <span>+</span></div>
+          <div class="faq-question">Qual a frequência das sessões? <span class="faq-icon">+</span></div>
           <div class="faq-answer">Geralmente as sessões ocorrem semanalmente, com duração de 50 minutos. A frequência pode ser ajustada conforme a necessidade clínica de cada caso.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">Como funciona o sigilo profissional? <span>+</span></div>
+          <div class="faq-question">Como funciona o sigilo profissional? <span class="faq-icon">+</span></div>
           <div class="faq-answer">O sigilo é rigoroso e garantido pelo Código de Ética Profissional do Psicólogo. Tudo o que for compartilhado em sessão permanece em total confidencialidade.</div>
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">Vocês emitem recibo para reembolso no convênio? <span>+</span></div>
+          <div class="faq-question">Vocês emitem recibo para reembolso no convênio? <span class="faq-icon">+</span></div>
           <div class="faq-answer">Sim! Emitimos recibo detalhado para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde.</div>
         </div>
       </div>
@@ -1011,6 +1188,7 @@
           <h4>Psicóloga Cecília Freytas</h4>
           <p>Centro de Saúde Psicológica • Atendimento Clínico e Terapia Online.</p>
           <p>Mais de 70 avaliações 5 estrelas no Google Meu Negócio.</p>
+          <p><a href="https://instagram.com/ceciliafreytas.psi" target="_blank" class="footer-instagram">📸 Instagram: @ceciliafreytas.psi</a></p>
         </div>
         <div class="footer-col">
           <h4>Endereço do Consultório</h4>
@@ -1018,12 +1196,12 @@
         </div>
         <div class="footer-col">
           <h4>Atendimento Direto</h4>
-          <p>📱 WhatsApp: (11) 99601-2736</p>
+          <p>📱 WhatsApp: <a href="tel:+5511996012736">(11) 99601-2736</a></p>
           <p>🌐 Atendimento Online para todo o Brasil e exterior</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Cecília Freytas Psicologia. Todos os direitos reservados. Design de Alta Conversão.</p>
+        <p>&copy; 2026 Cecília Freytas Psicologia. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
@@ -1032,6 +1210,58 @@
   <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20uma%20consulta!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
     💬
   </a>
+
+  <!-- JavaScript: Mobile Menu Toggle & FAQ Accordion -->
+  <script>
+    // Mobile hamburger menu toggle
+    (function() {
+      var toggle = document.getElementById('menuToggle');
+      var nav = document.getElementById('navLinks');
+      var isOpen = false;
+
+      toggle.addEventListener('click', function() {
+        isOpen = !isOpen;
+        nav.classList.toggle('open', isOpen);
+        toggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+        toggle.setAttribute('aria-label', isOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+      });
+
+      // Close menu when a nav link is clicked
+      var links = nav.querySelectorAll('a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          isOpen = false;
+          nav.classList.remove('open');
+          toggle.innerHTML = '&#9776;';
+          toggle.setAttribute('aria-label', 'Abrir menu de navegação');
+        });
+      }
+    })();
+
+    // FAQ accordion
+    (function() {
+      var items = document.querySelectorAll('.faq-item');
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].querySelector('.faq-question').addEventListener('click', function() {
+          var parent = this.parentElement;
+          var wasActive = parent.classList.contains('active');
+
+          // Close all items
+          for (var j = 0; j < items.length; j++) {
+            items[j].classList.remove('active');
+            items[j].querySelector('.faq-icon').textContent = '+';
+          }
+
+          // Open clicked item if it was not already open
+          if (!wasActive) {
+            parent.classList.add('active');
+            parent.querySelector('.faq-icon').textContent = '−';
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>

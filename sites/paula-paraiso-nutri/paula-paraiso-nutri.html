@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="scroll-behavior: smooth;">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -721,6 +721,45 @@
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
 
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      color: var(--primary-dark);
+      cursor: pointer;
+      padding: 4px 8px;
+      line-height: 1;
+      z-index: 101;
+    }
+
+    /* FAQ toggle styles */
+    .faq-answer {
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-question span {
+      transition: transform 0.3s ease;
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    /* Phone link in top bar */
+    .top-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     @media (max-width: 992px) {
       .hero-grid, .about-grid, .highlight-banner {
         grid-template-columns: 1fr;
@@ -731,11 +770,50 @@
       .hero-title {
         font-size: 2.5rem;
       }
+      .menu-toggle {
+        display: block;
+      }
       .nav-links {
         display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .nav-links li:last-child {
+        border-bottom: none;
       }
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      section {
+        padding: 50px 0;
       }
     }
   </style>
@@ -745,7 +823,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      🌱 <strong>Atendimento Presencial e Online</strong> — Zona Sul de São Paulo & Todo o Brasil | Agende pelo WhatsApp: <strong>(11) 96277-7356</strong>
+      🌱 <strong>Atendimento Presencial e Online</strong> — Zona Sul de São Paulo & Todo o Brasil | Agende pelo WhatsApp: <a href="tel:+5511962777356"><strong>(11) 96277-7356</strong></a>
     </div>
   </div>
 
@@ -760,7 +838,8 @@
             <p>Nutricionista • CRN3 14316</p>
           </div>
         </div>
-        <ul class="nav-links">
+        <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#sobre">Sobre Mim</a></li>
           <li><a href="#servicos">Especialidades</a></li>
           <li><a href="#bioimpedancia">Bioimpedância</a></li>
@@ -934,7 +1013,7 @@
   <section id="depoimentos" class="testimonials">
     <div class="container">
       <div class="section-header">
-        <span class="section-subtitle">Prova Social</span>
+        <span class="section-subtitle">Depoimentos de Pacientes</span>
         <h2 class="section-title">O que dizem os pacientes</h2>
         <p class="section-desc">Histórias reais de transformação e conquistas compartilhadas no Google Meu Negócio.</p>
       </div>
@@ -1045,7 +1124,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Dra. Paula Paraíso Nutricionista. Todos os direitos reservados. Design de Alta Conversão.</p>
+        <p>&copy; 2026 Paula Para&iacute;so Nutricionista. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
@@ -1054,6 +1133,52 @@
   <a href="https://wa.me/5511962777356?text=Ol%C3%A1%20Dra.%20Paula,%20gostaria%20de%20agendar%20uma%20consulta!" target="_blank" class="floating-whatsapp" title="Fale com a Dra. Paula no WhatsApp" aria-label="WhatsApp">
     💬
   </a>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile hamburger menu toggle
+    function toggleMenu() {
+      var nav = document.getElementById('navLinks');
+      var btn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('active');
+      if (nav.classList.contains('active')) {
+        btn.innerHTML = '&#10005;';
+        btn.setAttribute('aria-label', 'Fechar menu');
+      } else {
+        btn.innerHTML = '&#9776;';
+        btn.setAttribute('aria-label', 'Abrir menu');
+      }
+    }
+
+    // Close mobile menu when a nav link is clicked
+    document.querySelectorAll('#navLinks a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var nav = document.getElementById('navLinks');
+        var btn = document.querySelector('.menu-toggle');
+        nav.classList.remove('active');
+        btn.innerHTML = '&#9776;';
+        btn.setAttribute('aria-label', 'Abrir menu');
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        var parent = this.parentElement;
+        var isActive = parent.classList.contains('active');
+
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(function(item) {
+          item.classList.remove('active');
+        });
+
+        // Open clicked one if it was not already open
+        if (!isActive) {
+          parent.classList.add('active');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>

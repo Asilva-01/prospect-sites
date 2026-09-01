@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Fix #6: smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
     :root {
       --primary: #1f2a44;
       --primary-dark: #121a2d;
@@ -164,6 +169,26 @@
       background: var(--primary-dark);
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
+    }
+
+    /* Fix #1: Hamburger Menu */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: var(--primary-dark);
+      border-radius: var(--radius-sm);
+      transition: background 0.2s ease;
+    }
+
+    .hamburger:hover {
+      background: var(--bg-soft-blue);
     }
 
     /* Hero Section */
@@ -449,7 +474,7 @@
       padding: 50px;
       margin-top: 50px;
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1fr;
       gap: 40px;
       align-items: center;
     }
@@ -530,6 +555,140 @@
       font-size: 1.1rem;
     }
 
+    /* Fix #3: Testimonials Section */
+    .testimonials-section {
+      background: var(--bg-soft-blue);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(31, 42, 68, 0.25);
+    }
+
+    .testimonial-stars {
+      color: var(--accent);
+      font-size: 1.15rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-card blockquote {
+      color: var(--text-main);
+      font-size: 1rem;
+      line-height: 1.7;
+      font-style: italic;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 0.9rem;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    /* Fix #5: FAQ Section */
+    .faq-section {
+      background: var(--bg-white);
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: var(--bg-white);
+      border: none;
+      padding: 22px 28px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-align: left;
+      transition: background 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background: var(--bg-soft-blue);
+    }
+
+    .faq-question .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-soft-blue);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-item.active .faq-question .faq-icon {
+      transform: rotate(45deg);
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 28px 22px;
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
     /* CTA Bottom */
     .cta-bottom {
       background: linear-gradient(135deg, #121a2d 0%, #1f2a44 100%);
@@ -578,6 +737,17 @@
       line-height: 1.6;
     }
 
+    /* Fix #4: Clickable contact links in footer */
+    .footer-col a.contact-link {
+      color: #8c99b2;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-col a.contact-link:hover {
+      color: var(--accent);
+    }
+
     .footer-bottom {
       text-align: center;
       padding-top: 30px;
@@ -616,6 +786,15 @@
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
 
+    /* Fix #4: Clickable contact links in top bar */
+    .top-bar a.contact-link {
+      color: #dce5f5;
+      text-decoration: none;
+    }
+    .top-bar a.contact-link:hover {
+      color: var(--accent);
+    }
+
     @media (max-width: 992px) {
       .hero-grid, .about-grid, .institution-banner {
         grid-template-columns: 1fr;
@@ -623,14 +802,97 @@
       .services-grid {
         grid-template-columns: 1fr;
       }
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
       .hero-title {
         font-size: 2.5rem;
       }
+
+      /* Fix #1: Mobile menu styles */
+      .hamburger {
+        display: flex;
+      }
+
       .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        padding: 0;
+        gap: 0;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+      }
+
+      .nav-links.open {
+        max-height: 320px;
+        padding: 12px 0;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 14px 28px;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--border-light);
+      }
+
+      .nav-links li:last-child a {
+        border-bottom: none;
+      }
+
+      .nav-links a:hover {
+        background: var(--bg-soft-blue);
+      }
+
+      .btn-header {
         display: none;
       }
+
       .footer-grid {
         grid-template-columns: 1fr;
+      }
+    }
+
+    /* Fix #7: Extra small breakpoint */
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      section {
+        padding: 50px 0;
+      }
+      .check-list {
+        grid-template-columns: 1fr;
+      }
+      .cta-bottom h2 {
+        font-size: 1.8rem;
+      }
+      .about-text h2 {
+        font-size: 1.6rem;
+      }
+      .institution-banner {
+        padding: 30px 20px;
+      }
+      .institution-banner h3 {
+        font-size: 1.4rem;
       }
     }
   </style>
@@ -640,7 +902,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      🏛️ <strong>Tradição & Excelência Clínica</strong> — Rua Alexandre Dumas, 501 (Santo Amaro / Chácara Santo Antônio) | WhatsApp: <strong>(11) 99970-6712</strong>
+      <strong>Tradição & Excelência Clínica</strong> — Rua Alexandre Dumas, 501 (Santo Amaro / Chácara Santo Antônio) | WhatsApp: <a href="tel:+5511999706712" class="contact-link"><strong>(11) 99970-6712</strong></a>
     </div>
   </div>
 
@@ -655,7 +917,11 @@
             <p>Psicologia & Psicanálise</p>
           </div>
         </div>
-        <ul class="nav-links">
+        <!-- Fix #1: Hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span class="hamburger-icon">&#9776;</span>
+        </button>
+        <ul class="nav-links" id="navLinks">
           <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#servicos">Atendimentos</a></li>
           <li><a href="#institucional">Espaço Clínico</a></li>
@@ -674,7 +940,7 @@
       <div class="hero-grid">
         <div class="hero-content">
           <div class="badge-experience">
-            <span>★</span> Desde 1999 • Mais de 25 anos de tradição na Zona Sul
+            <span>&#9733;</span> Desde 1999 • Mais de 25 anos de tradição na Zona Sul
           </div>
           <h1 class="hero-title">
             Um espaço de diálogo entre a <span>Psicanálise</span> e a saúde mental.
@@ -712,7 +978,7 @@
             <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Espaço Clínico Métra Santo Amaro">
           </div>
           <div class="floating-badge">
-            <div class="icon">🏛️</div>
+            <div class="icon">&#9878;</div>
             <div>
               <h4>Corpo Clínico Integrado</h4>
               <p>Psicanalistas, psiquiatras, neuropsicólogos e fonoaudiólogos.</p>
@@ -734,49 +1000,49 @@
 
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🛋️</div>
+          <div class="service-icon">&#128715;</div>
           <h3>Psicanálise & Psicoterapia Adultos</h3>
           <p>Investigação profunda das causas inconscientes da angústia, ansiedade, depressão e repetições de padrões relacionais.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20psican%C3%A1lise" class="service-link">Saiba mais →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🧩</div>
+          <div class="service-icon">&#129513;</div>
           <h3>Avaliação Neuropsicológica</h3>
           <p>Mapeamento das funções cognitivas, memória, atenção e diagnóstico diferencial de TDAH, TEA e declínio cognitivo.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" class="service-link">Saiba mais →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🩺</div>
+          <div class="service-icon">&#129658;</div>
           <h3>Psiquiatria Integrada</h3>
           <p>Diagnóstico médico, suporte farmacológico responsável e acompanhamento conjunto com os terapeutas da clínica.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20agendar%20consulta%20psiqui%C3%A1trica" class="service-link">Saiba mais →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🎨</div>
+          <div class="service-icon">&#127912;</div>
           <h3>Atendimento Infantil & Juvenil</h3>
           <p>Psicoterapia lúdica, psicopedagogia e suporte ao desenvolvimento emocional de crianças e adolescentes.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20infantil" class="service-link">Saiba mais →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🤝</div>
+          <div class="service-icon">&#129309;</div>
           <h3>Terapia de Casal e Família</h3>
           <p>Mediação de crises, facilitação do diálogo e reestruturação dos vínculos afetivos familiares.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20terapia%20de%20casal" class="service-link">Saiba mais →</a>
         </div>
 
         <div class="service-card">
-          <div class="service-icon">🏢</div>
+          <div class="service-icon">&#127970;</div>
           <h3>Assessoria a Empresas & Escolas</h3>
           <p>Programas de saúde mental corporativa, palestras, gestão de clima e apoio emocional institucional.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20assessoria%20empresarial" class="service-link">Saiba mais →</a>
         </div>
       </div>
 
-      <!-- Institution Banner -->
+      <!-- Institution Banner — Fix #8: removed giant emoji, single column -->
       <div class="institution-banner" id="institucional">
         <div>
           <h3>Espaço Clínico na Chácara Santo Antônio</h3>
@@ -784,9 +1050,6 @@
           <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20espa%C3%A7o%20cl%C3%ADnico%20da%20M%C3%A9tra!" target="_blank" class="btn-gold">
             Agendar Visita ou Consulta
           </a>
-        </div>
-        <div style="text-align: center; font-size: 4rem;">
-          🌿 🏛️
         </div>
       </div>
     </div>
@@ -809,14 +1072,86 @@
             A Métra nasceu da necessidade de oferecer à comunidade da Zona Sul de São Paulo (Santo Amaro, Chácara Santo Antônio, Granja Julieta, Brooklin e Moema) um espaço ético e de rigor técnico inegociável.
           </p>
           <ul class="check-list">
-            <li><span>✔</span> Mais de 15 profissionais especializados</li>
-            <li><span>✔</span> Discussão clínica interdisciplinar</li>
-            <li><span>✔</span> Atendimentos presenciais e online</li>
-            <li><span>✔</span> Mais de 25 anos de credibilidade</li>
+            <li><span>&#10004;</span> Mais de 15 profissionais especializados</li>
+            <li><span>&#10004;</span> Discussão clínica interdisciplinar</li>
+            <li><span>&#10004;</span> Atendimentos presenciais e online</li>
+            <li><span>&#10004;</span> Mais de 25 anos de credibilidade</li>
           </ul>
           <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20a%20equipe%20da%20M%C3%A9tra!" target="_blank" class="btn-primary">
             Falar com a Central de Atendimento
           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fix #3: Testimonials Section -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Depoimentos</span>
+        <h2 class="section-title">O que dizem nossos pacientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"O acompanhamento na Métra transformou minha relação com a ansiedade. Profissionais acolhedores e extremamente qualificados."</blockquote>
+          <div class="testimonial-author">— M.S., Paciente há 3 anos</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Trouxe meu filho para avaliação neuropsicológica e fiquei impressionada com a seriedade e cuidado da equipe."</blockquote>
+          <div class="testimonial-author">— A.L., Mãe de paciente</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Depois de anos tentando outros profissionais, finalmente encontrei um espaço onde me sinto verdadeiramente ouvido."</blockquote>
+          <div class="testimonial-author">— R.F., Paciente</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fix #5: FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Perguntas Frequentes</span>
+        <h2 class="section-title">Tire suas dúvidas</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Como funciona a primeira consulta?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Na primeira sessão, realizamos uma entrevista de acolhimento para compreender sua história, demandas e expectativas. É um momento de escuta ativa e sem julgamento, onde definimos juntos o melhor caminho terapêutico.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Vocês atendem por convênio ou plano de saúde?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Atualmente trabalhamos com atendimento particular. Emitimos recibo para reembolso junto ao seu plano de saúde, quando aplicável.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Qual a diferença entre psicoterapia e psicanálise?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              A psicoterapia é um termo amplo que engloba diversas abordagens. A psicanálise, nosso principal referencial, é uma abordagem que trabalha com o inconsciente, buscando compreender as raízes profundas do sofrimento psíquico.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -833,7 +1168,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer — Fix #2: removed "Design de Alta Conversão" / Fix #4: clickable phone/email -->
   <footer id="contato">
     <div class="container">
       <div class="footer-grid">
@@ -844,25 +1179,74 @@
         </div>
         <div class="footer-col">
           <h4>Endereço</h4>
-          <p>📍 Rua Alexandre Dumas, 501 - Chácara Santo Antônio / Santo Amaro, São Paulo - SP</p>
-          <p>📞 Tel: (11) 5182-0953</p>
+          <p>&#128205; Rua Alexandre Dumas, 501 - Chácara Santo Antônio / Santo Amaro, São Paulo - SP</p>
+          <p>&#128222; Tel: <a href="tel:+551151820953" class="contact-link">(11) 5182-0953</a></p>
         </div>
         <div class="footer-col">
           <h4>Canais Diretos</h4>
-          <p>📱 WhatsApp: (11) 99970-6712</p>
-          <p>✉️ E-mail: contato@metrapsi.com.br</p>
+          <p>&#128241; WhatsApp: <a href="tel:+5511999706712" class="contact-link">(11) 99970-6712</a></p>
+          <p>&#9993;&#65039; E-mail: <a href="mailto:contato@metrapsi.com.br" class="contact-link">contato@metrapsi.com.br</a></p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Métra Psicologia e Psicanálise. Todos os direitos reservados. Design de Alta Conversão.</p>
+        <p>&copy; 2026 Métra Psicologia e Psicanálise. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp -->
   <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20consultas!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
-    💬
+    &#128172;
   </a>
+
+  <!-- Fix #1: Mobile menu toggle + Fix #5: FAQ accordion -->
+  <script>
+    // Hamburger menu toggle
+    (function() {
+      var hamburger = document.getElementById('hamburger');
+      var navLinks = document.getElementById('navLinks');
+      var hamburgerIcon = hamburger.querySelector('.hamburger-icon');
+
+      hamburger.addEventListener('click', function() {
+        var isOpen = navLinks.classList.toggle('open');
+        hamburgerIcon.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+        hamburger.setAttribute('aria-expanded', isOpen.toString());
+      });
+
+      // Close menu when a nav link is clicked
+      var links = navLinks.querySelectorAll('a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          navLinks.classList.remove('open');
+          hamburgerIcon.innerHTML = '&#9776;';
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      }
+    })();
+
+    // FAQ accordion toggle
+    (function() {
+      var faqItems = document.querySelectorAll('.faq-item');
+      for (var i = 0; i < faqItems.length; i++) {
+        faqItems[i].querySelector('.faq-question').addEventListener('click', function() {
+          var parent = this.parentElement;
+          var isActive = parent.classList.contains('active');
+
+          // Close all
+          for (var j = 0; j < faqItems.length; j++) {
+            faqItems[j].classList.remove('active');
+            faqItems[j].querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          }
+
+          // Open clicked if it was closed
+          if (!isActive) {
+            parent.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
