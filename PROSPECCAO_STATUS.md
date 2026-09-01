@@ -47,3 +47,15 @@
 ### 5. Banco de Dados e Dashboard
 - SQLite [prospector.db](file:///c:/Temp/ProspectSitesStoAmaro/prospector.db) sincronizado com 9 leads.
 - Servidor local do painel rodando na porta 8765.
+
+---
+
+### 6. Painel de Propostas — Pronto para Envio (01/09/2026)
+- Publicado: [painel-propostas.html](https://asilva-01.github.io/prospect-sites/sites/painel-propostas.html)
+- Correções de responsividade (menu mobile, FAQ animado) aplicadas e publicadas nos 4 sites do Lote 1B/2:
+  - https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
+  - https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
+  - https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
+  - https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
+- Mensagens de WhatsApp e e-mail já redigidas por lead — abrir o painel, selecionar o lead na barra lateral e clicar em "Abrir WhatsApp Web" ou "Enviar via Gmail".
+- Após cada envio, marcar o status como `proposta enviada` em [leads.md](file:///c:/Temp/ProspectSitesStoAmaro/leads.md) e rodar o comando SQL sugerido no próprio painel.
