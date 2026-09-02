@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Métra Psicologia e Psicanálise | Santo Amaro & Chácara Santo Antônio</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Métra Psicologia e Psicanálise | Santo Amaro & Chácara Santo Antônio">
+  <meta property="og:description" content="Espaço de referência em psicologia clínica e psicanálise na Zona Sul de São Paulo, desde 1999.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23121a2d'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Arial' fill='%23c59b27' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
   <meta name="description" content="Espaço de referência em psicologia clínica, psicanálise e saúde mental na Zona Sul de SP há mais de 25 anos. Equipe com mais de 15 especialistas. Atendimento presencial e online.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Fix #6: smooth scrolling */
     html {
       scroll-behavior: smooth;
+    }
+
+    section[id] {
+      scroll-margin-top: 100px;
     }
 
     :root {
@@ -171,7 +181,6 @@
       box-shadow: var(--shadow-md);
     }
 
-    /* Fix #1: Hamburger Menu */
     .hamburger {
       display: none;
       background: none;
@@ -555,7 +564,6 @@
       font-size: 1.1rem;
     }
 
-    /* Fix #3: Testimonials Section */
     .testimonials-section {
       background: var(--bg-soft-blue);
     }
@@ -607,7 +615,6 @@
       border-top: 1px solid var(--border-light);
     }
 
-    /* Fix #5: FAQ Section */
     .faq-section {
       background: var(--bg-white);
     }
@@ -737,7 +744,6 @@
       line-height: 1.6;
     }
 
-    /* Fix #4: Clickable contact links in footer */
     .footer-col a.contact-link {
       color: #8c99b2;
       text-decoration: none;
@@ -786,7 +792,6 @@
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
 
-    /* Fix #4: Clickable contact links in top bar */
     .top-bar a.contact-link {
       color: #dce5f5;
       text-decoration: none;
@@ -809,7 +814,6 @@
         font-size: 2.5rem;
       }
 
-      /* Fix #1: Mobile menu styles */
       .hamburger {
         display: flex;
       }
@@ -865,7 +869,6 @@
       }
     }
 
-    /* Fix #7: Extra small breakpoint */
     @media (max-width: 576px) {
       .hero-title {
         font-size: 1.8rem;
@@ -902,7 +905,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      <strong>Tradição & Excelência Clínica</strong> — Rua Alexandre Dumas, 501 (Santo Amaro / Chácara Santo Antônio) | WhatsApp: <a href="tel:+5511999706712" class="contact-link"><strong>(11) 99970-6712</strong></a>
+      <strong>Tradição & Excelência Clínica</strong> — Rua Alexandre Dumas, 501 (Santo Amaro / Chácara Santo Antônio) | WhatsApp: <a href="https://wa.me/5511999706712" class="contact-link"><strong>(11) 99970-6712</strong></a>
     </div>
   </div>
 
@@ -917,7 +920,6 @@
             <p>Psicologia & Psicanálise</p>
           </div>
         </div>
-        <!-- Fix #1: Hamburger button -->
         <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
           <span class="hamburger-icon">&#9776;</span>
         </button>
@@ -926,6 +928,7 @@
           <li><a href="#servicos">Atendimentos</a></li>
           <li><a href="#institucional">Espaço Clínico</a></li>
           <li><a href="#contato">Localização</a></li>
+          <li><a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20agendar%20um%20atendimento!" target="_blank" rel="noopener" style="color: var(--accent, #c59b27); font-weight:700;">Agendar no WhatsApp</a></li>
         </ul>
         <a href="https://wa.me/5511999706712?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20cl%C3%ADnico%20na%20M%C3%A9tra!" target="_blank" class="btn-header">
           Agendar Atendimento
@@ -1009,7 +1012,7 @@
         <div class="service-card">
           <div class="service-icon">&#129513;</div>
           <h3>Avaliação Neuropsicológica</h3>
-          <p>Mapeamento das funções cognitivas, memória, atenção e diagnóstico diferencial de TDAH, TEA e declínio cognitivo.</p>
+          <p>Mapeamento das funções cognitivas, memória, atenção e contribuição ao diagnóstico diferencial de TDAH, TEA e declínio cognitivo.</p>
           <a href="https://wa.me/5511999706712?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" class="service-link">Saiba mais →</a>
         </div>
 
@@ -1042,7 +1045,6 @@
         </div>
       </div>
 
-      <!-- Institution Banner — Fix #8: removed giant emoji, single column -->
       <div class="institution-banner" id="institucional">
         <div>
           <h3>Espaço Clínico na Chácara Santo Antônio</h3>
@@ -1060,7 +1062,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Márcia Moreira Jordão Métra Psicologia">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Ambiente de atendimento clínico">
         </div>
         <div class="about-text">
           <span class="section-subtitle">Direção Clínica</span>
@@ -1085,34 +1087,17 @@
     </div>
   </section>
 
-  <!-- Fix #3: Testimonials Section -->
   <section class="testimonials-section" id="depoimentos">
     <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Depoimentos</span>
-        <h2 class="section-title">O que dizem nossos pacientes</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>"O acompanhamento na Métra transformou minha relação com a ansiedade. Profissionais acolhedores e extremamente qualificados."</blockquote>
-          <div class="testimonial-author">— M.S., Paciente há 3 anos</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>"Trouxe meu filho para avaliação neuropsicológica e fiquei impressionada com a seriedade e cuidado da equipe."</blockquote>
-          <div class="testimonial-author">— A.L., Mãe de paciente</div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <blockquote>"Depois de anos tentando outros profissionais, finalmente encontrei um espaço onde me sinto verdadeiramente ouvido."</blockquote>
-          <div class="testimonial-author">— R.F., Paciente</div>
-        </div>
+      <div class="rating-summary" style="text-align:center; max-width:520px; margin:0 auto;">
+        <div style="font-size:2.5rem;">★★★★★</div>
+        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">4,8 · 35 avaliações no Google</p>
+        <p>Confira as avaliações reais no perfil do Google da clínica.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=M%C3%A9tra+Psicologia+e+Psican%C3%A1lise+Rua+Alexandre+Dumas+501+Santo+Amaro" target="_blank" rel="noopener" class="btn-primary">Ver avaliações no Google</a>
       </div>
     </div>
   </section>
 
-  <!-- Fix #5: FAQ Section -->
   <section class="faq-section" id="faq">
     <div class="container">
       <div class="section-header">
@@ -1168,7 +1153,6 @@
     </div>
   </section>
 
-  <!-- Footer — Fix #2: removed "Design de Alta Conversão" / Fix #4: clickable phone/email -->
   <footer id="contato">
     <div class="container">
       <div class="footer-grid">
@@ -1184,7 +1168,7 @@
         </div>
         <div class="footer-col">
           <h4>Canais Diretos</h4>
-          <p>&#128241; WhatsApp: <a href="tel:+5511999706712" class="contact-link">(11) 99970-6712</a></p>
+          <p>&#128241; WhatsApp: <a href="https://wa.me/5511999706712" class="contact-link">(11) 99970-6712</a></p>
           <p>&#9993;&#65039; E-mail: <a href="mailto:contato@metrapsi.com.br" class="contact-link">contato@metrapsi.com.br</a></p>
         </div>
       </div>
@@ -1199,7 +1183,6 @@
     &#128172;
   </a>
 
-  <!-- Fix #1: Mobile menu toggle + Fix #5: FAQ accordion -->
   <script>
     // Hamburger menu toggle
     (function() {
@@ -1246,6 +1229,28 @@
         });
       }
     })();
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Métra Psicologia e Psicanálise",
+  "telephone": "+5511999706712",
+  "email": "contato@metrapsi.com.br",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Alexandre Dumas, 501",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "35"
+  }
+}
   </script>
 
 </body>

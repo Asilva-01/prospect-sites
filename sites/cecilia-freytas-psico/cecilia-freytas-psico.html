@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psicóloga Cecília Freytas | Terapia em Santo Amaro - SP & Online</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Psicóloga Cecília Freytas | Terapia em Santo Amaro - SP & Online">
+  <meta property="og:description" content="Atendimento psicológico acolhedor e humanizado para adultos, casais e adolescentes em Santo Amaro e online.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231b3329'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Arial' fill='white' text-anchor='middle'%3ECF%3C/text%3E%3C/svg%3E">
   <meta name="description" content="Atendimento psicológico acolhedor e humanizado para adultos, casais, adolescentes e crianças. Presencial no NovAmérica Office Park (Santo Amaro) e Online. Mais de 70 avaliações 5 estrelas no Google.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +45,10 @@
 
     html {
       scroll-behavior: smooth;
+    }
+
+    section[id] {
+      scroll-margin-top: 100px;
     }
 
     body {
@@ -677,10 +688,6 @@
       padding: 0 24px 20px;
     }
 
-    .faq-item.active .faq-icon {
-      transform: rotate(45deg);
-    }
-
     /* CTA Bottom */
     .cta-bottom {
       background: linear-gradient(135deg, #1b3329 0%, #2d4a3e 100%);
@@ -808,6 +815,15 @@
         display: block;
       }
 
+      .btn-header {
+        display: none;
+      }
+
+      .header-nav {
+        height: auto;
+        min-height: 64px;
+      }
+
       .nav-links {
         display: flex;
         flex-direction: column;
@@ -901,7 +917,7 @@
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong><a href="tel:+5511996012736">(11) 99601-2736</a></strong>
+      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong><a href="https://wa.me/5511996012736">(11) 99601-2736</a></strong>
     </div>
   </div>
 
@@ -944,7 +960,7 @@
             Um espaço seguro de escuta, acolhimento e <span>transformação</span>.
           </h1>
           <p class="hero-desc">
-            Psicoterapia humanizada para adultos, jovens, casais e crianças. Supere a ansiedade, estresse e conflitos emocionais com acompanhamento ético e discreto.
+            Psicoterapia humanizada para adultos, jovens, casais e crianças. Um espaço para lidar com a ansiedade, o estresse e os conflitos emocionais, com acompanhamento ético e sigiloso.
           </p>
           <div class="hero-actions">
             <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20um%20atendimento%20psicol%C3%B3gico!" target="_blank" class="btn-primary">
@@ -961,8 +977,8 @@
               <p>Avaliações 5 Estrelas</p>
             </div>
             <div class="stat-item">
-              <h3>Sigilo</h3>
-              <p>Total e Absoluto</p>
+              <h3>Ética</h3>
+              <p>Sigilo Profissional</p>
             </div>
             <div class="stat-item">
               <h3>Híbrido</h3>
@@ -1000,7 +1016,7 @@
         <div class="service-card">
           <div class="service-icon">🌱</div>
           <h3>Psicoterapia para Adultos</h3>
-          <p>Superação de ansiedade, depressão, síndrome do pânico, estresse crônico e busca por autoconhecimento e equilíbrio emocional.</p>
+          <p>Superação de ansiedade, depressão, transtorno de pânico, estresse crônico e busca por autoconhecimento e equilíbrio emocional.</p>
           <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20para%20adultos" class="service-link">Agendar sessão →</a>
         </div>
 
@@ -1061,12 +1077,12 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Cecília Freytas Psicóloga">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Ambiente acolhedor de atendimento psicológico">
         </div>
         <div class="about-text">
           <span class="section-subtitle">Sobre a Profissional</span>
           <h2>Cecília Freytas</h2>
-          <span class="credential-badge">CRP 06/XXXXX</span>
+          <span class="credential-badge">CRP/SP 10166 J</span>
           <p>
             Sou psicóloga com sólida formação clínica e anos de dedicação ao bem-estar emocional de adultos, casais e famílias.
           </p>
@@ -1096,48 +1112,11 @@
         <p class="section-desc">Avaliações públicas compartilhadas no Google Meu Negócio.</p>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "A Cecília é uma profissional extraordinária. Me ajudou a atravessar um dos momentos mais difíceis da minha vida com muita paciência e acolhimento."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">MR</div>
-            <div class="author-info">
-              <h4>Mariana Rocha</h4>
-              <p>Avaliação no Google Maps</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "Excelente atendimento! O consultório é super acolhedor e a terapia online funciona perfeitamente. Me sinto muito segura nas sessões."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">GS</div>
-            <div class="author-info">
-              <h4>Gabriel Santos</h4>
-              <p>Avaliação no Google Maps</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "Profissional pontual, ética e extremamente empática. Recomendo de olhos fechados para quem busca acompanhamento de verdade."
-          </p>
-          <div class="testimonial-author">
-            <div class="author-avatar">LC</div>
-            <div class="author-info">
-              <h4>Letícia Carvalho</h4>
-              <p>Avaliação no Google Maps</p>
-            </div>
-          </div>
-        </div>
+      <div class="rating-summary" style="text-align:center; max-width:520px; margin:0 auto;">
+        <div style="font-size:2.5rem;">★★★★★</div>
+        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">5,0 · mais de 70 avaliações no Google</p>
+        <p style="color:var(--text-muted, #555);">Confira as avaliações reais de pacientes no perfil do Google.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cec%C3%ADlia+Freytas+Psic%C3%B3loga+Av+das+Na%C3%A7%C3%B5es+Unidas+18801+Santo+Amaro" target="_blank" rel="noopener" class="btn-secondary">Ver avaliações no Google</a>
       </div>
     </div>
   </section>
@@ -1162,8 +1141,8 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-question">Vocês emitem recibo para reembolso no convênio? <span class="faq-icon">+</span></div>
-          <div class="faq-answer">Sim! Emitimos recibo detalhado para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde.</div>
+          <div class="faq-question">Você emite recibo para reembolso no convênio? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">Sim! Emito recibo detalhado para que você solicite reembolso junto ao seu plano de saúde; o valor reembolsado depende das regras do seu convênio.</div>
         </div>
       </div>
     </div>
@@ -1173,7 +1152,7 @@
   <section class="cta-bottom">
     <div class="container">
       <h2>Dê o primeiro passo para o seu bem-estar emocional</h2>
-      <p>Cuidar da sua saúde mental é o maior investimento que você pode fazer por si mesmo. Fale conosco pelo WhatsApp.</p>
+      <p>Cuidar da sua saúde mental é o maior investimento que você pode fazer por si mesmo. Fale comigo pelo WhatsApp.</p>
       <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20quero%20agendar%20uma%20sess%C3%A3o!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
         Agendar pelo WhatsApp
       </a>
@@ -1188,16 +1167,15 @@
           <h4>Psicóloga Cecília Freytas</h4>
           <p>Centro de Saúde Psicológica • Atendimento Clínico e Terapia Online.</p>
           <p>Mais de 70 avaliações 5 estrelas no Google Meu Negócio.</p>
-          <p><a href="https://instagram.com/ceciliafreytas.psi" target="_blank" class="footer-instagram">📸 Instagram: @ceciliafreytas.psi</a></p>
         </div>
         <div class="footer-col">
           <h4>Endereço do Consultório</h4>
-          <p>📍 Av. das Nações Unidas, 18801 - Sala 1225 (NovAmérica Office Park), Santo Amaro, São Paulo - SP</p>
+          <p>📍 Av. das Nações Unidas, 18801 - NovAmérica Office Park, Santo Amaro, São Paulo - SP</p>
         </div>
         <div class="footer-col">
           <h4>Atendimento Direto</h4>
-          <p>📱 WhatsApp: <a href="tel:+5511996012736">(11) 99601-2736</a></p>
-          <p>🌐 Atendimento Online para todo o Brasil e exterior</p>
+          <p>📱 WhatsApp: <a href="https://wa.me/5511996012736">(11) 99601-2736</a></p>
+          <p>🌐 Atendimento Online para todo o Brasil</p>
         </div>
       </div>
       <div class="footer-bottom">
@@ -1261,6 +1239,27 @@
         });
       }
     })();
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Cecília Freytas Psicóloga",
+  "telephone": "+5511996012736",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. das Nações Unidas, 18801 - NovAmérica Office Park",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "70"
+  }
+}
   </script>
 
 </body>
