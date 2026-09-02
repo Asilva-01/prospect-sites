@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bianca Cremonez Magnelli | Nutricionista Esportiva em Moema - São Paulo</title>
+  <meta name="description" content="Nutricionista esportiva em Moema, Zona Sul de São Paulo, com atendimento presencial e online para hipertrofia, emagrecimento e performance esportiva.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bianca Cremonez Magnelli | Nutricionista Esportiva em Moema - São Paulo">
+  <meta property="og:description" content="Nutrição esportiva com atendimento presencial em Moema e online, para quem quer treinar mais forte e evoluir com saúde.">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f4c5c'/%3E%3Ctext x='50' y='68' font-size='42' font-family='Arial' fill='white' text-anchor='middle'%3EBM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f4c5c;
+      --primary-dark: #0a323d;
+      --primary-light: #17677d;
+      --accent: #f97316;
+      --accent-hover: #ea580c;
+      --bg-cream: #f6f9fa;
+      --bg-white: #ffffff;
+      --bg-soft-green: #e7f2f3;
+      --text-main: #16242a;
+      --text-muted: #57696f;
+      --border-light: #e1eaec;
+      --shadow-sm: 0 4px 12px rgba(15, 76, 92, 0.07);
+      --shadow-md: 0 10px 28px rgba(15, 76, 92, 0.11);
+      --shadow-lg: 0 20px 40px rgba(15, 76, 92, 0.15);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Outfit', sans-serif;
+      color: var(--primary-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      color: #dcf0f2;
+      font-size: 0.875rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .top-bar strong {
+      color: #ffb37a;
+    }
+
+    .top-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    .logo-text h2 {
+      font-size: 1.35rem;
+      color: var(--primary-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-text p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 80px;
+      background: linear-gradient(180deg, rgba(231, 242, 243, 0.6) 0%, rgba(246, 249, 250, 1) 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-google {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .badge-google .icon {
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-size: 3.1rem;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+      position: relative;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.05rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: #20ba5a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-white);
+      color: var(--primary-dark);
+      border: 1.5px solid var(--border-light);
+      padding: 16px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-soft-green);
+      border-color: var(--primary-light);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item h3 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-art {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.3) 0%, rgba(249, 115, 22, 0) 70%);
+      top: -60px;
+      right: -60px;
+    }
+
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+      bottom: -80px;
+      left: -60px;
+    }
+
+    .hero-art-symbol {
+      position: relative;
+      z-index: 2;
+      color: #eaf6f8;
+      text-align: center;
+    }
+
+    .hero-art-symbol .leaf {
+      font-size: 4.5rem;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .hero-art-symbol p {
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      max-width: 260px;
+      margin: 0 auto;
+      color: #dcf0f2;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--border-light);
+      max-width: 320px;
+    }
+
+    .floating-badge .icon {
+      width: 48px;
+      height: 48px;
+      background: #ffe4cc;
+      color: var(--accent-hover);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .floating-badge h4 {
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .floating-badge p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-subtitle {
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(15, 76, 92, 0.25);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-soft-green);
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .service-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* Highlight Banner */
+    .highlight-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .highlight-banner h3 {
+      color: #fff;
+      font-size: 1.85rem;
+      margin-bottom: 14px;
+    }
+
+    .highlight-banner p {
+      color: #d5ecef;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .highlight-banner .btn-white {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-art {
+      background: linear-gradient(160deg, var(--bg-soft-green) 0%, #fff 100%);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-art .initials {
+      font-family: 'Outfit', sans-serif;
+      font-size: 6.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      opacity: 0.9;
+    }
+
+    .about-art::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      opacity: 0.35;
+    }
+
+    .about-text h2 {
+      font-size: 2.35rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    .check-list li span {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    /* Reviews / Social Proof */
+    .reviews-section {
+      background: var(--bg-soft-green);
+    }
+
+    .rating-summary {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+
+    .rating-summary .icon-google {
+      font-size: 2.75rem;
+      margin-bottom: 10px;
+    }
+
+    .rating-summary p {
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-size: 1.02rem;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.05rem;
+    }
+
+    .faq-answer {
+      padding: 0 24px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      background: linear-gradient(135deg, #0a323d 0%, #0f4c5c 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-bottom h2 {
+      color: #fff;
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-bottom p {
+      color: #d5ecef;
+      font-size: 1.15rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a1518;
+      color: #8ba3a8;
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-col a {
+      color: inherit;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: pulse 2.5s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      color: var(--primary-dark);
+      cursor: pointer;
+      padding: 4px 8px;
+      line-height: 1;
+      z-index: 101;
+    }
+
+    /* FAQ toggle styles */
+    .faq-answer {
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-question span {
+      transition: transform 0.3s ease;
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    section[id] { scroll-margin-top: 100px; }
+
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .highlight-banner {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.5rem;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .btn-header {
+        display: none;
+      }
+      .header-nav {
+        height: auto;
+        min-height: 64px;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border-light);
+      }
+      .nav-links li:last-child {
+        border-bottom: none;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      section {
+        padding: 50px 0;
+      }
+      .highlight-banner {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🏃 <strong>Atendimento Presencial e Online</strong> — Moema, Zona Sul de São Paulo | Agende pelo WhatsApp: <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener"><strong>(11) 97232-7220</strong></a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <div class="logo-container">
+          <div class="logo-badge">BM</div>
+          <div class="logo-text">
+            <h2>Bianca Cremonez Magnelli</h2>
+            <p>Nutricionista Esportiva</p>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#servicos">Especialidades</a></li>
+          <li><a href="#avaliacao">Avaliação Corporal</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+        <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener" class="btn-header">
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-google">
+            <span class="icon">📍</span>
+            <span><strong>Atendimento em Moema, Zona Sul de São Paulo</strong></span>
+          </div>
+          <h1 class="hero-title">
+            Nutrição esportiva para treinar mais forte e evoluir com <span>saúde</span>.
+          </h1>
+          <p class="hero-desc">
+            Consulta individualizada para hipertrofia, emagrecimento e performance, unindo mais de uma década de experiência clínica e esportiva a um plano alimentar possível de seguir no seu dia a dia.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20vi%20o%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%20consultas%21" target="_blank" rel="noopener" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Agendar Consulta no WhatsApp
+            </a>
+            <a href="#sobre" class="btn-secondary">
+              Conhecer Minha Trajetória
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>Esportiva</h3>
+              <p>Nutrição Esportiva</p>
+            </div>
+            <div class="stat-item">
+              <h3>Híbrido</h3>
+              <p>Presencial ou Online</p>
+            </div>
+            <div class="stat-item">
+              <h3>Moema</h3>
+              <p>Zona Sul de SP</p>
+            </div>
+          </div>
+          <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Os resultados podem variar de pessoa para pessoa, de acordo com a avaliação individual.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-art">
+            <div class="hero-art-symbol">
+              <span class="leaf">🥗</span>
+              <p>Nutrição individualizada para treinar mais forte e com saúde.</p>
+            </div>
+          </div>
+          <div class="floating-badge">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Atendimento em Moema</h4>
+              <p>Perto do metrô Eucaliptos e do Shopping Ibirapuera, ou online para todo o Brasil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Áreas de Atuação</span>
+        <h2 class="section-title">Nutrição esportiva para cada fase do seu treino</h2>
+        <p class="section-desc">Planos individualizados para quem treina, compete ou simplesmente quer mais energia e saúde no dia a dia.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">💪</div>
+          <h3>Hipertrofia e Ganho de Massa</h3>
+          <p>Estratégia nutricional para ganho de massa muscular, com cálculo individualizado de macronutrientes alinhado à sua fase de treino.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20o%20acompanhamento%20para%20hipertrofia%20e%20ganho%20de%20massa" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🥗</div>
+          <h3>Emagrecimento Saudável</h3>
+          <p>Redução de gordura corporal sem abrir mão de energia para treinar, com um plano possível de seguir na sua rotina.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20o%20acompanhamento%20de%20emagrecimento" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏃</div>
+          <h3>Corredores, Ciclistas e Atletas Amadores</h3>
+          <p>Nutrição voltada à performance e recuperação para quem corre, pedala ou pratica esporte amador com regularidade.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20nutri%C3%A7%C3%A3o%20para%20corredores%20e%20ciclistas" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Avaliação com Adipômetro</h3>
+          <p>Avaliação de composição corporal com adipômetro, para acompanhar a evolução além do número na balança.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20composi%C3%A7%C3%A3o%20corporal%20com%20adip%C3%B4metro" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🥊</div>
+          <h3>Lutas e Esportes Coletivos</h3>
+          <p>Planejamento alimentar para praticantes de lutas e esportes coletivos, respeitando volume de treino e calendário de competições.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20nutri%C3%A7%C3%A3o%20para%20lutas%20e%20esportes%20coletivos" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Consultoria Online</h3>
+          <p>Consulta e acompanhamento por vídeo para quem está fora de São Paulo, com suporte contínuo pelo WhatsApp após a consulta.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20a%20consultoria%20online" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+        </div>
+      </div>
+
+      <!-- Adipômetro Highlight Banner -->
+      <div class="highlight-banner" id="avaliacao">
+        <div>
+          <h3>Avaliação de Composição Corporal com Adipômetro</h3>
+          <p>Muito além do peso da balança: acompanhe medidas e composição corporal para entender sua evolução real ao longo do acompanhamento.</p>
+          <a href="https://wa.me/5511972327220?text=Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20de%20composi%C3%A7%C3%A3o%20corporal" target="_blank" rel="noopener" class="btn-white">
+            Agendar Avaliação
+          </a>
+        </div>
+        <div style="text-align: center; font-size: 4.5rem;">
+          📏 ⚖️
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" style="background: #fff;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-art">
+          <span class="initials">BM</span>
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Sobre Mim</span>
+          <h2>Bianca Cremonez Magnelli</h2>
+          <p>
+            Sou nutricionista com foco em nutrição esportiva, atendendo quem busca hipertrofia, emagrecimento e melhora de performance nos treinos, com um plano alimentar pensado para caber na rotina de cada pessoa.
+          </p>
+          <p>
+            Hoje atendo presencialmente em Moema, na Zona Sul de São Paulo, e online para todo o Brasil, com um acompanhamento próximo e individualizado.
+          </p>
+          <ul class="check-list">
+            <li><span>✔</span> Foco em nutrição esportiva</li>
+            <li><span>✔</span> Atendimento presencial e online</li>
+            <li><span>✔</span> Plano alimentar individualizado</li>
+            <li><span>✔</span> Suporte contínuo pelo WhatsApp</li>
+          </ul>
+          <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20conversar%20sobre%20meus%20objetivos%20de%20treino%20e%20alimenta%C3%A7%C3%A3o%21" target="_blank" rel="noopener" class="btn-primary">
+            Falar Diretamente com a Bianca
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="avaliacoes" class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Avaliações</span>
+        <h2 class="section-title">Confira as avaliações no Google</h2>
+        <p class="section-desc">Veja o que pacientes reais comentam sobre o atendimento no perfil do Google Meu Negócio.</p>
+      </div>
+
+      <div class="rating-summary">
+        <div class="icon-google">⭐</div>
+        <p>As avaliações mais recentes e completas estão disponíveis diretamente no perfil do Google, sempre atualizadas por quem já passou por uma consulta.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Nutricionista+Bianca+Magnelli+Av+Moaci+857+Moema+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn-primary">Ver avaliações no Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tire suas Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <p class="section-desc">Tudo o que você precisa saber antes de agendar sua consulta.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">Como funciona a consulta com a nutricionista esportiva? <span>+</span></div>
+          <div class="faq-answer">A consulta avalia sua rotina, objetivos, treinos, histórico alimentar, preferências e composição corporal para montar uma estratégia nutricional individualizada, aplicável no seu dia a dia.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">A Bianca atende hipertrofia e emagrecimento? <span>+</span></div>
+          <div class="faq-answer">Sim. O atendimento pode ser direcionado para ganho de massa muscular, perda de gordura, definição corporal e melhora de performance, sempre respeitando a fase de treino, a rotina e as preferências alimentares de cada paciente.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Existe consulta online com nutricionista esportivo? <span>+</span></div>
+          <div class="faq-answer">Sim. A consulta online é indicada para quem precisa de acompanhamento à distância, com orientação sobre medidas, rotina alimentar, treinos e suporte contínuo pelo WhatsApp.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">O consultório fica perto de qual metrô? <span>+</span></div>
+          <div class="faq-answer">O atendimento presencial é em Moema, na Av. Moaci, 857, São Paulo, próximo ao metrô Eucaliptos e ao Shopping Ibirapuera.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>Pronto para treinar mais forte e evoluir com saúde?</h2>
+      <p>Dê o primeiro passo rumo aos seus objetivos esportivos com um plano alimentar individualizado. Agende sua consulta hoje mesmo.</p>
+      <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20quero%20agendar%20minha%20consulta%20agora%21" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
+        Agendar Consulta via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Bianca Cremonez Magnelli Nutricionista</h4>
+          <p>Nutricionista esportiva, com foco em hipertrofia, emagrecimento e performance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Localização</h4>
+          <p>📍 Av. Moaci, 857 - Moema, São Paulo - SP</p>
+          <p>Próximo ao metrô Eucaliptos e ao Shopping Ibirapuera</p>
+          <p>🌐 Atendimento Online para todo o Brasil</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contato Direto</h4>
+          <p>📱 WhatsApp: <a href="https://wa.me/5511972327220" target="_blank" rel="noopener">(11) 97232-7220</a></p>
+          <p>✉️ <a href="mailto:nutricionista@nutricionistasp.com">nutricionista@nutricionistasp.com</a></p>
+          <p>📷 Instagram: <a href="https://www.instagram.com/nutribiancamagnelli/" target="_blank" rel="noopener">@nutribiancamagnelli</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bianca Cremonez Magnelli Nutricionista. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%21" target="_blank" rel="noopener" class="floating-whatsapp" title="Fale com a Bianca no WhatsApp" aria-label="WhatsApp">
+    💬
+  </a>
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile hamburger menu toggle
+    function toggleMenu() {
+      var nav = document.getElementById('navLinks');
+      var btn = document.querySelector('.menu-toggle');
+      nav.classList.toggle('active');
+      if (nav.classList.contains('active')) {
+        btn.innerHTML = '&#10005;';
+        btn.setAttribute('aria-label', 'Fechar menu');
+      } else {
+        btn.innerHTML = '&#9776;';
+        btn.setAttribute('aria-label', 'Abrir menu');
+      }
+    }
+
+    // Close mobile menu when a nav link is clicked
+    document.querySelectorAll('#navLinks a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        var nav = document.getElementById('navLinks');
+        var btn = document.querySelector('.menu-toggle');
+        nav.classList.remove('active');
+        btn.innerHTML = '&#9776;';
+        btn.setAttribute('aria-label', 'Abrir menu');
+      });
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+      question.addEventListener('click', function() {
+        var parent = this.parentElement;
+        var isActive = parent.classList.contains('active');
+
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(function(item) {
+          item.classList.remove('active');
+        });
+
+        // Open clicked one if it was not already open
+        if (!isActive) {
+          parent.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "additionalType": "https://schema.org/Nutritionist",
+  "name": "Bianca Cremonez Magnelli - Nutricionista Esportiva",
+  "telephone": "+5511972327220",
+  "email": "nutricionista@nutricionistasp.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Moaci, 857 - Moema",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  }
+}
+  </script>
+
+</body>
+</html>

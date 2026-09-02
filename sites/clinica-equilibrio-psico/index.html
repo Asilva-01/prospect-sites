@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Equilíbrio | Psicologia e Neuropsicologia em Moema - Zona Sul de SP</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Clínica Equilíbrio | Psicologia e Neuropsicologia em Moema - Zona Sul de SP">
+  <meta property="og:description" content="Psicoterapia, psicoterapia infantil e avaliação neuropsicológica. Atendimento presencial em Moema e online para todo o Brasil.">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Clínica Equilíbrio | Psicologia e Neuropsicologia em Moema - Zona Sul de SP">
+  <meta name="twitter:description" content="Psicoterapia, psicoterapia infantil e avaliação neuropsicológica. Atendimento presencial e online.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231b3a3a'/%3E%3Ctext x='50' y='68' font-size='38' font-family='Arial' fill='%23d9a441' text-anchor='middle'%3ECE%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="Clínica Equilíbrio - Psicologia e Neuropsicologia. Psicoterapia para adultos e crianças, avaliação neuropsicológica. Presencial na Alameda dos Arapanés, Moema, e Online para todo o Brasil.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1b3a3a;
+      --primary-dark: #102626;
+      --primary-light: #2c5454;
+      --accent: #d9a441;
+      --accent-hover: #bf8a2c;
+      --bg-cream: #f7f6f2;
+      --bg-white: #ffffff;
+      --bg-soft: #eaf0ee;
+      --text-main: #1f2626;
+      --text-muted: #5c6866;
+      --border-light: #e1e6e3;
+      --shadow-sm: 0 4px 12px rgba(27, 58, 58, 0.07);
+      --shadow-md: 0 10px 28px rgba(27, 58, 58, 0.1);
+      --shadow-lg: 0 20px 40px rgba(27, 58, 58, 0.15);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section[id] {
+      scroll-margin-top: 100px;
+    }
+
+    body {
+      font-family: 'Karla', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Fraunces', serif;
+      color: var(--primary-dark);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--primary-dark);
+      color: #e8efec;
+      font-size: 0.85rem;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .top-bar strong {
+      color: var(--accent);
+    }
+
+    .top-bar a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .top-bar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-badge {
+      width: 44px;
+      height: 44px;
+      background: var(--bg-soft);
+      color: var(--primary);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+    }
+
+    .logo-text h2 {
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+      letter-spacing: -0.3px;
+    }
+
+    .logo-text p {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    /* Hamburger Menu Button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.75rem;
+      color: var(--primary-dark);
+      cursor: pointer;
+      padding: 8px;
+      line-height: 1;
+      z-index: 110;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .btn-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .btn-header:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 70px 0 80px;
+      background: linear-gradient(180deg, rgba(234, 240, 238, 0.7) 0%, rgba(247, 246, 242, 1) 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge-info {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-white);
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary-dark);
+    }
+
+    .hero-title {
+      font-size: 3.1rem;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .hero-title span {
+      color: var(--accent-hover);
+    }
+
+    .hero-desc {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary {
+      background: #25d366;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1.03rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .btn-primary:hover {
+      background: #20ba5a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary {
+      background: var(--bg-white);
+      color: var(--primary-dark);
+      border: 1.5px solid var(--border-light);
+      padding: 16px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-soft);
+      border-color: var(--primary-light);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .stat-item h3 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .stat-item p {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Abstract hero visual (no photo used - no professional names/photos confirmed) */
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-art {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .hero-art::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(217, 164, 65, 0.3) 0%, rgba(217, 164, 65, 0) 70%);
+      top: -60px;
+      right: -60px;
+    }
+
+    .hero-art::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+      bottom: -80px;
+      left: -60px;
+    }
+
+    .hero-art-symbol {
+      position: relative;
+      z-index: 2;
+      color: #eef4f2;
+      text-align: center;
+    }
+
+    .hero-art-symbol .leaf {
+      font-size: 4.5rem;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .hero-art-symbol p {
+      font-size: 1.05rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      max-width: 260px;
+      margin: 0 auto;
+      color: #dce8e4;
+    }
+
+    .floating-badge {
+      position: absolute;
+      bottom: -20px;
+      left: 20px;
+      background: var(--bg-white);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--border-light);
+      max-width: 320px;
+    }
+
+    .floating-badge .icon {
+      width: 48px;
+      height: 48px;
+      background: var(--bg-soft);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .floating-badge h4 {
+      font-size: 0.93rem;
+      margin-bottom: 2px;
+    }
+
+    .floating-badge p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Shared */
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .section-subtitle {
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.3rem;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .service-card {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      padding: 36px 28px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(27, 58, 58, 0.25);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--bg-soft);
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 22px;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .service-link {
+      font-weight: 700;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+    }
+
+    .service-link:hover {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    /* Location Banner */
+    .location-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 50px;
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-banner h3 {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
+
+    .location-banner p {
+      color: #e8efec;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+
+    .location-banner ul {
+      list-style: none;
+      margin: 0 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .location-banner ul li {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .location-banner .btn-white {
+      background: #fff;
+      color: var(--primary-dark);
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    /* About Section */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-art {
+      background: linear-gradient(160deg, var(--bg-soft) 0%, #fff 100%);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-art .initials {
+      font-family: 'Fraunces', serif;
+      font-size: 6.5rem;
+      font-weight: 600;
+      color: var(--primary);
+      opacity: 0.9;
+    }
+
+    .about-art::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      opacity: 0.35;
+    }
+
+    .about-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+    }
+
+    .check-list {
+      list-style: none;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text-main);
+      font-size: 0.93rem;
+    }
+
+    .check-list li span {
+      color: var(--primary);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    /* Google Reviews Section */
+    .reviews {
+      background: var(--bg-soft);
+    }
+
+    .reviews-card {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+      background: var(--bg-white);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+    }
+
+    .reviews-card .icon-google {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+
+    .reviews-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 28px;
+    }
+
+    /* FAQ Section */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--bg-white);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      border: 1px solid var(--border-light);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.02rem;
+      user-select: none;
+    }
+
+    .faq-question:hover {
+      background: var(--bg-soft);
+    }
+
+    .faq-question .faq-icon {
+      font-size: 1.4rem;
+      font-weight: 400;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      width: 24px;
+      text-align: center;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+      padding: 0 24px 20px;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      background: linear-gradient(135deg, #102626 0%, #1b3a3a 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-bottom h2 {
+      color: #fff;
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    .cta-bottom p {
+      color: #dce8e4;
+      font-size: 1.12rem;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d1f1f;
+      color: #a3b3b0;
+      padding: 60px 0 30px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 18px;
+    }
+
+    .footer-col p {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-col a {
+      color: #a3b3b0;
+      text-decoration: none;
+    }
+
+    .footer-col a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+    }
+
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25d366;
+      color: #fff;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: pulse 2.5s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background: #20ba5a;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* ---- Responsive: 992px ---- */
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .location-banner {
+        grid-template-columns: 1fr;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.4rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Mobile hamburger menu */
+      .menu-toggle {
+        display: block;
+      }
+
+      .btn-header {
+        display: none;
+      }
+
+      .header-nav {
+        height: auto;
+        min-height: 64px;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        padding: 0;
+        gap: 0;
+        border-bottom: 1px solid var(--border-light);
+        box-shadow: var(--shadow-md);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+        z-index: 105;
+      }
+
+      .nav-links.open {
+        max-height: 400px;
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid var(--border-light);
+      }
+
+      .nav-links li:last-child {
+        border-bottom: none;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 16px 24px;
+        font-size: 1.05rem;
+      }
+
+      .nav-links a:hover {
+        background: var(--bg-soft);
+      }
+    }
+
+    /* ---- Responsive: 576px ---- */
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+
+      section {
+        padding: 50px 0;
+      }
+
+      .hero {
+        padding: 40px 0 50px;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .check-list {
+        grid-template-columns: 1fr;
+      }
+
+      .location-banner {
+        padding: 30px 20px;
+      }
+
+      .cta-bottom h2 {
+        font-size: 1.8rem;
+      }
+
+      .cta-bottom {
+        padding: 50px 0;
+      }
+
+      .reviews-card {
+        padding: 34px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      🌿 <strong>Atendimento Presencial e Online</strong> — Moema (Zona Sul de SP) & Videochamada | WhatsApp: <strong><a href="https://wa.me/5511999960772" target="_blank" rel="noopener">(11) 99996-0772</a></strong>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-nav">
+        <div class="logo-container">
+          <div class="logo-badge">CE</div>
+          <div class="logo-text">
+            <h2>Clínica Equilíbrio</h2>
+            <p>Psicologia e Neuropsicologia</p>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atendimentos">Atendimentos</a></li>
+          <li><a href="#regiao">Região</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+        <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20na%20Cl%C3%ADnica%20Equil%C3%ADbrio." target="_blank" rel="noopener" class="btn-header">
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge-info">
+            <span>📍</span>
+            <span>Atendimento em <strong>Moema</strong> e Online para todo o Brasil</span>
+          </div>
+          <h1 class="hero-title">
+            Cuidado individualizado em <span>Psicologia</span> e Neuropsicologia.
+          </h1>
+          <p class="hero-desc">
+            Psicoterapia para adultos e crianças, além de avaliação neuropsicológica, com atendimento presencial em Moema ou por videochamada, pautado em princípios éticos e técnico-científicos.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento%20na%20Cl%C3%ADnica%20Equil%C3%ADbrio." target="_blank" rel="noopener" class="btn-primary">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Conversar no WhatsApp
+            </a>
+            <a href="#atendimentos" class="btn-secondary">
+              Conhecer Atendimentos
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>Ética</h3>
+              <p>Cuidado Individualizado</p>
+            </div>
+            <div class="stat-item">
+              <h3>Híbrido</h3>
+              <p>Presencial ou Online</p>
+            </div>
+            <div class="stat-item">
+              <h3>Moema</h3>
+              <p>Zona Sul de SP</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-art">
+            <div class="hero-art-symbol">
+              <span class="leaf">🌿</span>
+              <p>Escuta acolhedora e avaliação técnica, no seu tempo.</p>
+            </div>
+          </div>
+          <div class="floating-badge">
+            <div class="icon">🤍</div>
+            <div>
+              <h4>Cuidado Técnico-Científico</h4>
+              <p>Atuação pautada em princípios éticos e técnico-científicos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Treatments Section -->
+  <section id="atendimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Áreas de Atendimento</span>
+        <h2 class="section-title">Como podemos ajudar</h2>
+        <p class="section-desc">Atendimento individualizado, conforme a necessidade de cada pessoa e cada fase da vida.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌱</div>
+          <h3>Psicoterapia para Adultos</h3>
+          <p>Acompanhamento psicológico para lidar com ansiedade, estresse, conflitos emocionais e momentos de transição na vida adulta.</p>
+          <a href="https://wa.me/5511999960772?text=Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20para%20adultos" target="_blank" rel="noopener" class="service-link">Agendar conversa →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧸</div>
+          <h3>Psicoterapia Infantil</h3>
+          <p>Acompanhamento de questões emocionais e comportamentais na infância, em conjunto com pais e responsáveis.</p>
+          <a href="https://wa.me/5511999960772?text=Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20infantil" target="_blank" rel="noopener" class="service-link">Agendar conversa →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🧠</div>
+          <h3>Avaliação Neuropsicológica</h3>
+          <p>Avaliação neuropsicológica para investigar questões cognitivas, de aprendizagem, atenção e desenvolvimento.</p>
+          <a href="https://wa.me/5511999960772?text=Gostaria%20de%20saber%20mais%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" target="_blank" rel="noopener" class="service-link">Agendar conversa →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Atendimento Online</h3>
+          <p>Sessões por videochamada com o mesmo sigilo e cuidado, para quem prefere ou precisa ser atendido a partir de casa, em qualquer lugar do Brasil.</p>
+          <a href="https://wa.me/5511999960772?text=Gostaria%20de%20agendar%20atendimento%20online" target="_blank" rel="noopener" class="service-link">Agendar conversa →</a>
+        </div>
+      </div>
+
+      <!-- Location Highlight Banner -->
+      <div class="location-banner" id="regiao">
+        <div>
+          <h3>Atendimento em Moema e região</h3>
+          <p>Consultório na Alameda dos Arapanés, em Moema, com fácil acesso para quem está na Zona Sul de São Paulo. Atendimento online disponível para todo o Brasil.</p>
+          <ul>
+            <li>Moema</li>
+            <li>Zona Sul de SP</li>
+            <li>Online para todo o Brasil</li>
+          </ul>
+          <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Moema." target="_blank" rel="noopener" class="btn-white">
+            Agendar Atendimento Presencial
+          </a>
+        </div>
+        <div style="text-align: center; font-size: 4rem;">
+          📍 🏠
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="sobre" style="background: #fff;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-art">
+          <span class="initials">CE</span>
+        </div>
+        <div class="about-text">
+          <span class="section-subtitle">Sobre a Clínica</span>
+          <h2>Clínica Equilíbrio</h2>
+          <p>
+            A Clínica Equilíbrio é um espaço de Psicologia e Neuropsicologia em Moema, com atendimento a adultos e crianças, oferecendo psicoterapia e avaliação neuropsicológica.
+          </p>
+          <p>
+            O trabalho é pautado por um cuidado individualizado e por uma atuação orientada por princípios éticos e técnico-científicos, construindo junto com cada paciente um espaço de confiança para lidar com os desafios do dia a dia.
+          </p>
+          <ul class="check-list">
+            <li><span>✔</span> Ambiente seguro e confidencial</li>
+            <li><span>✔</span> Atendimento humanizado</li>
+            <li><span>✔</span> Presencial ou Online</li>
+            <li><span>✔</span> Horários combinados na agenda</li>
+          </ul>
+          <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20mais%20o%20trabalho%20da%20Cl%C3%ADnica%20Equil%C3%ADbrio." target="_blank" rel="noopener" class="btn-primary">
+            Agendar Primeira Conversa
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews Section -->
+  <section id="avaliacoes" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Avaliações</span>
+        <h2 class="section-title">Avaliações no Google</h2>
+        <p class="section-desc">Confira as avaliações públicas do perfil no Google.</p>
+      </div>
+
+      <div class="reviews-card">
+        <div class="icon-google">⭐</div>
+        <p>Você pode consultar diretamente no Google as avaliações deixadas por quem já foi atendido, antes de agendar sua consulta.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Equil%C3%ADbrio+Psicologia+e+Neuropsicologia+Alameda+dos+Arapan%C3%A9s+Moema+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn-secondary">Ver avaliações no Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Dúvidas Frequentes</span>
+        <h2 class="section-title">Perguntas Comuns sobre o Atendimento</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">Como funciona a primeira sessão? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">Na primeira sessão fazemos uma conversa inicial para entender o que motivou a busca por acompanhamento, e combinamos juntos como será a continuidade do atendimento, incluindo frequência e duração das sessões.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Como funciona o sigilo profissional? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">O sigilo é garantido pelo Código de Ética Profissional do Psicólogo. Tudo o que for compartilhado durante o atendimento permanece confidencial.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Como funciona a avaliação neuropsicológica? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">A avaliação neuropsicológica envolve uma série de encontros para investigar questões cognitivas, de aprendizagem, atenção e desenvolvimento, com um relatório ao final do processo. Consulte pelo WhatsApp os detalhes e a duração para o seu caso.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">O atendimento online tem a mesma qualidade do presencial? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">O atendimento online é feito por videochamada, com o mesmo sigilo e cuidado do atendimento presencial, sendo uma opção para quem prefere ou precisa ser atendido a partir de casa, em qualquer lugar do Brasil.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Vocês emitem recibo para reembolso pelo convênio? <span class="faq-icon">+</span></div>
+          <div class="faq-answer">Consulte diretamente pelo WhatsApp a possibilidade de emissão de recibo para solicitação de reembolso junto ao seu plano de saúde; as regras de reembolso dependem do seu convênio.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>Dê o primeiro passo para cuidar de você</h2>
+      <p>Cuidar da sua saúde emocional é um investimento em você mesmo. Fale conosco pelo WhatsApp e tire suas dúvidas sobre o atendimento.</p>
+      <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Equil%C3%ADbrio." target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.15rem; padding: 18px 40px;">
+        Agendar pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Clínica Equilíbrio</h4>
+          <p>Psicologia e Neuropsicologia • Atendimento presencial e online.</p>
+          <p>Adultos, crianças, psicoterapia e avaliação neuropsicológica.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Consultório</h4>
+          <p>📍 Alameda dos Arapanés, 881 - cj 33, Moema, São Paulo - SP</p>
+          <p>Atendimento online para todo o Brasil</p>
+        </div>
+        <div class="footer-col">
+          <h4>Atendimento Direto</h4>
+          <p>📱 WhatsApp: <a href="https://wa.me/5511999960772" target="_blank" rel="noopener">(11) 99996-0772</a></p>
+          <p>💻 Atendimento Online disponível</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Clínica Equilíbrio - Psicologia e Neuropsicologia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511999960772?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
+    💬
+  </a>
+
+  <!-- JavaScript: Mobile Menu Toggle & FAQ Accordion -->
+  <script>
+    // Mobile hamburger menu toggle
+    (function() {
+      var toggle = document.getElementById('menuToggle');
+      var nav = document.getElementById('navLinks');
+      var isOpen = false;
+
+      toggle.addEventListener('click', function() {
+        isOpen = !isOpen;
+        nav.classList.toggle('open', isOpen);
+        toggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+        toggle.setAttribute('aria-label', isOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+      });
+
+      // Close menu when a nav link is clicked
+      var links = nav.querySelectorAll('a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          isOpen = false;
+          nav.classList.remove('open');
+          toggle.innerHTML = '&#9776;';
+          toggle.setAttribute('aria-label', 'Abrir menu de navegação');
+        });
+      }
+    })();
+
+    // FAQ accordion
+    (function() {
+      var items = document.querySelectorAll('.faq-item');
+
+      for (var i = 0; i < items.length; i++) {
+        items[i].querySelector('.faq-question').addEventListener('click', function() {
+          var parent = this.parentElement;
+          var wasActive = parent.classList.contains('active');
+
+          // Close all items
+          for (var j = 0; j < items.length; j++) {
+            items[j].classList.remove('active');
+            items[j].querySelector('.faq-icon').textContent = '+';
+          }
+
+          // Open clicked item if it was not already open
+          if (!wasActive) {
+            parent.classList.add('active');
+            parent.querySelector('.faq-icon').textContent = '−';
+          }
+        });
+      }
+    })();
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Clínica Equilíbrio - Psicologia e Neuropsicologia",
+  "telephone": "+5511999960772",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Alameda dos Arapanés, 881 - cj 33",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  }
+}
+  </script>
+
+</body>
+</html>

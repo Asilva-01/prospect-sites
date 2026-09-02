@@ -1,7 +1,7 @@
 # Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da atualização: 31/08/2026  
-Status geral: **Lote 1 (Nutricionistas) Entregue & Lote 1B / Lote 2 (Psicólogos) Criados com Sucesso**
+Data da atualização: 02/09/2026  
+Status geral: **Lote 1 (Nutricionistas) Entregue & Lote 1B / Lote 2 (Psicólogos) Criados com Sucesso — Lote 3 (3 sites) Pronto, Aguardando Confirmação de Contato/Avaliações Antes do Envio**
 
 ---
 
@@ -36,3 +36,24 @@ Status geral: **Lote 1 (Nutricionistas) Entregue & Lote 1B / Lote 2 (Psicólogos
 ## 🔗 Comparador Geral Antes vs Depois
 - **Arquivo local:** [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html)
 - **URL pública no GitHub Pages:** https://asilva-01.github.io/prospect-sites/comparar.html
+
+---
+
+## 🔍 Lote 3: Candidatos Levantados (01/09/2026) — Pesquisa sem acesso a API do Maps
+
+Levantamento feito por busca web (sem API do Google Maps — nota e nº de avaliações **não confirmados** salvo indicação de fonte). André deve confirmar manualmente no Google Maps antes de investir tempo em qualquer um. Critério: mesmo nicho/região do Lote 1-2, priorizando defeito técnico visível no site atual.
+
+| # | Nome | Nicho | Bairro | WhatsApp/Tel | Site atual | Defeito encontrado (verificado via HTTP) | Prioridade |
+|---|------|-------|--------|--------------|------------|--------------------------------------------|------------|
+| 8 | **Luciene Hessel Fogaça (Psicóloga Luciene)** | Psicologia | Brooklin Velho / Campo Belo | (11) 97018-4141 | https://psicologaluciene.com.br/ | Erro visível no rodapé ("Error: Cant get content") + parágrafo de spam sobre "relógio de luxo" fora de contexto — site provavelmente comprometido | **Alta** — site pronto em `sites/luciene-hessel-psico/` |
+| 9 | **Bianca Cremonez Magnelli** | Nutrição Esportiva | Moema | (11) 97232-7220 — **não confirmado, achado em nutricionistasp.com, confirmar antes de enviar** | 2 sites concorrentes: http://www.nutricionistasp.com/ (HTTP sem SSL) e https://www.nutricionistaesportivo.com/ | Um dos domínios roda sem certificado de segurança (aviso "não seguro" no navegador); marca fragmentada em 2 sites | **Média-Alta** — site pronto em `sites/bianca-cremonez-nutri/` (corrigido em 02/09 — versão anterior tinha foto, bio, CRN e estatísticas fabricadas/copiadas do site real da profissional, ver [[feedback-nao-fabricar-dados-profissionais]]) |
+| 10 | **Clínica Equilíbrio — Psicologia e Neuropsicologia** | Psicologia/Neuropsicologia | Moema | (11) 99996-0772 — confirmado no site oficial em 02/09/2026 | https://equilibriopsiconeuro.com.br/ | Template Wix genérico, copyright do rodapé com ano errado ("2026") — sinal de zero manutenção | **Média** — site pronto em `sites/clinica-equilibrio-psico/` (construído em 02/09/2026, sem nome de profissional/CRP pois não constam no site oficial) |
+| 11 | Regenera Fisioterapia | Fisioterapia | Campo Belo | (11) 96161-0383 | https://www.regenerafisioterapia.com.br/ | Widget de avaliação de terceiro (Trustindex) em vez de integração nativa — site básico | Baixa-Média |
+| 12 | Franciane Bortoli (Psicólogo Com.Br) | Psicologia | Chácara Santo Antônio / Nova Berrini | não confirmado | https://www.psicologo.com.br/ | Nenhum — site já moderno (tour 360°); 440+ avaliações citadas no próprio site | Baixa (site já forte) |
+| 13 | Fonobrooklin (Clínica Multidisciplinar) | Fono/Nutrição/Psico | Brooklin | não confirmado | https://fonobrooklin.com.br/ | Nenhum — WordPress moderno e responsivo | Baixa |
+| 14 | Equilíbrio Fisioterapia | Fisioterapia | Campo Belo | não confirmado | https://fisioequilibrio.com.br/ | Nenhum — WordPress moderno e responsivo | Baixa |
+| 15 | Elaine Paiva (EPS Consultório) | Psicologia/Neuro | Vila Mascote | não confirmado | https://www.elainepaiva.com/ | Nenhum — Wix moderno e cuidado | Baixa |
+| 16 | Cristiana Julianelli | Psicologia/Psicanálise | Campo Belo | (11) 99615-0285 | https://www.cristianajulianelli.com.br/ | Nenhum — WordPress moderno, feito por agência | Baixa |
+| 17 | Irani Amaro | Nutrição | Santo Amaro (endereço exato não encontrado) | não confirmado | https://iraniamaronutri.com.br/ | Nenhum — GreatPages moderna | Baixa |
+
+**Próximo passo:** confirmar nota/avaliações reais dos #8, #9 e #10 no Google Maps (2 min por lead) antes de enviar a proposta. Para o #9 (Bianca), confirmar também se o WhatsApp (11) 97232-7220 e o e-mail nutricionista@nutricionistasp.com realmente pertencem a ela antes de enviar.
