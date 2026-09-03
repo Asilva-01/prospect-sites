@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tempstar Ar Condicionado | Instalação, Manutenção & PMOC — Santo Amaro, SP</title>
-    <meta name="description" content="Especialistas em instalação e manutenção de ar-condicionado residencial e comercial em Santo Amaro e Zona Sul de SP. Contratos PMOC, higienização e conserto rápido. Solicite atendimento via WhatsApp.">
+    <title>Tempstar | Engenharia Térmica, Instalação de Ar Condicionado & PMOC — Santo Amaro, SP</title>
+    <meta name="description" content="Engenharia de climatização e conforto térmico em Santo Amaro e Zona Sul de SP. Instalação de sistemas Split, Multi-Split e VRF, contratos corporativos PMOC e manutenção preventiva certificada.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-body: #F8FAFC;
+            --bg-page: #F8FAFC;
             --bg-card: #FFFFFF;
-            --navy-dark: #0F172A;
-            --navy-light: #1E293B;
+            --navy-deep: #0A0F1D;
+            --navy-surface: #131B2E;
             --blue-tech: #0284C7;
-            --blue-soft: #E0F2FE;
-            --blue-hover: #0369A1;
-            --orange-action: #EA580C;
-            --orange-hover: #C2410C;
-            --text-title: #0F172A;
-            --text-body: #475569;
+            --blue-tech-hover: #0369A1;
+            --blue-ice: #E0F2FE;
+            --orange-alert: #EA580C;
+            --text-heading: #0F172A;
+            --text-regular: #475569;
+            --text-light: #94A3B8;
             --border-ui: #E2E8F0;
-            --whatsapp: #25D366;
-            --whatsapp-dark: #1EBE5D;
-            --radius-sm: 8px;
-            --radius-md: 14px;
-            --radius-lg: 20px;
-            --transition: all 0.25s ease;
+            --whatsapp-green: #25D366;
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * {
@@ -37,19 +36,20 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-body);
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-regular);
+            line-height: 1.65;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
 
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, .brand-logo {
             font-family: 'Montserrat', sans-serif;
-            color: var(--text-title);
+            color: var(--text-heading);
             font-weight: 700;
-            line-height: 1.25;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
         }
 
         a {
@@ -59,26 +59,31 @@
 
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1240px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
 
-        /* Topbar */
-        .topbar {
-            background: var(--navy-dark);
+        /* Top Bar */
+        .topbar-tech {
+            background: var(--navy-deep);
             color: #E2E8F0;
             font-size: 13px;
-            padding: 9px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .topbar-content {
+        .topbar-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
         }
-        .topbar strong {
+        .topbar-tag {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             color: #38BDF8;
         }
 
@@ -87,284 +92,317 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(14px);
             border-bottom: 1px solid var(--border-ui);
         }
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 75px;
+            height: 80px;
         }
-        .brand {
+        .brand-block {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
-        .brand-icon {
-            font-size: 26px;
+        .brand-icon-box {
+            width: 40px;
+            height: 40px;
+            background: var(--blue-tech);
+            color: #fff;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 800;
         }
         .brand-text {
             display: flex;
             flex-direction: column;
         }
-        .brand-name {
+        .brand-logo {
             font-size: 22px;
-            font-weight: 800;
-            color: var(--navy-dark);
             letter-spacing: -0.02em;
+            color: var(--navy-deep);
         }
-        .brand-name span {
+        .brand-logo span {
             color: var(--blue-tech);
         }
         .brand-sub {
-            font-size: 11px;
+            font-size: 10px;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: var(--text-body);
+            letter-spacing: 0.16em;
+            color: var(--text-light);
             font-weight: 600;
         }
 
-        .nav-items {
+        .nav-links {
             display: flex;
-            gap: 28px;
+            gap: 32px;
             list-style: none;
         }
-        .nav-items a {
-            font-size: 15px;
+        .nav-links a {
+            font-size: 14px;
             font-weight: 600;
-            color: var(--text-body);
+            color: var(--text-regular);
             transition: var(--transition);
         }
-        .nav-items a:hover {
+        .nav-links a:hover {
             color: var(--blue-tech);
         }
 
-        .btn-call {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--blue-tech);
-            color: #fff;
-            padding: 11px 20px;
-            border-radius: var(--radius-sm);
-            font-weight: 600;
-            font-size: 14px;
-            transition: var(--transition);
-        }
-        .btn-call:hover {
-            background: var(--blue-hover);
-            transform: translateY(-2px);
-        }
-
-        .btn-wa-action {
+        .btn-tech-primary {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: var(--whatsapp);
+            background: var(--blue-tech);
             color: #fff;
-            padding: 15px 28px;
-            border-radius: var(--radius-sm);
-            font-size: 16px;
-            font-weight: 700;
-            transition: var(--transition);
-            box-shadow: 0 6px 18px rgba(37, 211, 102, 0.28);
-        }
-        .btn-wa-action:hover {
-            background: var(--whatsapp-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
-        }
-
-        /* Hero */
-        .hero {
-            padding: 75px 0 65px;
-            background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
-            border-bottom: 1px solid var(--border-ui);
-            position: relative;
-        }
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 50px;
-            align-items: center;
-        }
-        .kicker {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--blue-soft);
-            color: var(--blue-tech);
-            border: 1px solid #BAE6FD;
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 12px;
+            padding: 12px 24px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 18px;
-        }
-        .hero h1 {
-            font-size: clamp(32px, 4.2vw, 50px);
-            margin-bottom: 20px;
-            letter-spacing: -0.03em;
-        }
-        .hero h1 em {
-            font-style: normal;
-            color: var(--blue-tech);
-        }
-        .hero p {
-            font-size: 17px;
-            color: var(--text-body);
-            margin-bottom: 34px;
-            max-width: 550px;
-        }
-        .hero-buttons {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 36px;
-        }
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            padding: 14px 24px;
-            border: 1px solid var(--border-ui);
-            background: #fff;
-            color: var(--navy-dark);
+            letter-spacing: 0.06em;
             border-radius: var(--radius-sm);
-            font-size: 15px;
-            font-weight: 600;
             transition: var(--transition);
         }
-        .btn-secondary:hover {
+        .btn-tech-primary:hover {
+            background: var(--blue-tech-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-wa-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--whatsapp-green);
+            color: #fff;
+            padding: 16px 30px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+        }
+        .btn-wa-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.38);
+            filter: brightness(1.05);
+        }
+
+        .btn-tech-outline {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 26px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-ui);
+            color: var(--navy-deep);
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+        .btn-tech-outline:hover {
             border-color: var(--blue-tech);
             color: var(--blue-tech);
         }
 
-        .trust-stats {
-            display: flex;
-            gap: 32px;
-            border-top: 1px solid var(--border-ui);
-            padding-top: 24px;
+        /* Hero */
+        .hero {
+            padding: 90px 0 75px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+            border-bottom: 1px solid var(--border-ui);
         }
-        .stat-col h4 {
-            font-size: 26px;
-            color: var(--navy-dark);
+        .hero-layout {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 55px;
+            align-items: center;
+        }
+        .hero-kicker {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--blue-tech);
+            margin-bottom: 18px;
+        }
+        .hero h1 {
+            font-size: clamp(36px, 4.5vw, 56px);
+            margin-bottom: 22px;
+        }
+        .hero h1 span {
+            color: var(--blue-tech);
+        }
+        .hero p {
+            font-size: 18px;
+            color: var(--text-regular);
+            margin-bottom: 38px;
+            max-width: 560px;
+        }
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 44px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 36px;
+            border-top: 1px solid var(--border-ui);
+            padding-top: 26px;
+        }
+        .stat-box h4 {
+            font-size: 28px;
+            color: var(--navy-deep);
             margin-bottom: 2px;
         }
-        .stat-col span {
-            font-size: 12px;
+        .stat-box span {
+            font-size: 11px;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-body);
+            letter-spacing: 0.08em;
+            color: var(--text-light);
             font-weight: 600;
         }
 
-        .hero-fast-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-ui);
-            border-radius: var(--radius-lg);
-            padding: 34px;
-            box-shadow: 0 16px 36px rgba(15, 23, 42, 0.06);
+        /* Hero Frame */
+        .hero-photo-wrap {
             position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.1);
+            border: 1px solid var(--border-ui);
         }
-        .hero-fast-card::before {
-            content: '';
+        .hero-photo-wrap img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s ease;
+        }
+        .hero-photo-wrap:hover img {
+            transform: scale(1.03);
+        }
+        .hero-photo-badge {
             position: absolute;
-            top: 0;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--blue-tech), #38BDF8);
+            bottom: 24px;
+            left: 24px;
+            right: 24px;
+            background: rgba(10, 15, 29, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 24px;
+            border-radius: var(--radius-md);
+            color: #fff;
         }
-        .card-tag {
-            font-size: 12px;
+        .badge-title {
+            font-size: 15px;
             font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--orange-action);
-            margin-bottom: 12px;
+            color: #fff;
+            margin-bottom: 4px;
         }
-        .fast-card-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin: 22px 0 28px;
-        }
-        .fast-card-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            font-size: 14px;
-            color: var(--text-title);
-        }
-        .fast-card-list li i {
-            color: var(--blue-tech);
-            font-style: normal;
-            font-weight: bold;
+        .badge-desc {
+            font-size: 13px;
+            color: #94A3B8;
         }
 
-        /* Seções */
+        /* Services Grid */
         .section-padding {
-            padding: 85px 0;
+            padding: 105px 0;
         }
         .section-header {
             text-align: center;
-            max-width: 680px;
-            margin: 0 auto 55px;
+            max-width: 720px;
+            margin: 0 auto 65px;
+        }
+        .section-kicker {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--blue-tech);
+            margin-bottom: 12px;
         }
         .section-header h2 {
-            font-size: clamp(28px, 3.6vw, 42px);
-            margin-bottom: 14px;
+            font-size: clamp(32px, 3.8vw, 46px);
+            margin-bottom: 16px;
         }
         .section-header p {
             font-size: 16px;
-            color: var(--text-body);
+            color: var(--text-regular);
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 26px;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 30px;
         }
-        .service-box {
+        .service-card {
             background: var(--bg-card);
             border: 1px solid var(--border-ui);
             border-radius: var(--radius-md);
-            padding: 32px;
+            overflow: hidden;
             transition: var(--transition);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
-        .service-box:hover {
+        .service-card:hover {
             transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
             border-color: #BAE6FD;
-            box-shadow: 0 16px 36px rgba(2, 132, 199, 0.08);
         }
-        .service-badge {
+        .card-photo {
+            height: 230px;
+            overflow: hidden;
+            position: relative;
+        }
+        .card-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .service-card:hover .card-photo img {
+            transform: scale(1.05);
+        }
+        .card-tag {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: rgba(10, 15, 29, 0.88);
+            backdrop-filter: blur(6px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 4px;
             font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: var(--blue-tech);
-            margin-bottom: 12px;
+            color: #38BDF8;
         }
-        .service-box h3 {
-            font-size: 22px;
-            margin-bottom: 14px;
-        }
-        .service-box p {
-            font-size: 14px;
-            color: var(--text-body);
-            margin-bottom: 20px;
+        .card-body {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
             flex-grow: 1;
         }
-        .service-items {
+        .card-body h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+        .card-body p {
+            font-size: 14px;
+            color: var(--text-regular);
+            margin-bottom: 22px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+        .card-features {
             list-style: none;
             border-top: 1px solid var(--border-ui);
             padding-top: 16px;
@@ -373,48 +411,63 @@
             flex-direction: column;
             gap: 8px;
             font-size: 13px;
-            color: var(--text-title);
+            color: var(--text-heading);
         }
-        .service-items li::before {
-            content: "✓ ";
+        .card-features li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card-features li::before {
+            content: "—";
             color: var(--blue-tech);
-            font-weight: bold;
+        }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid #F1F5F9;
         }
         .service-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--blue-tech);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--blue-tech);
             transition: var(--transition);
         }
         .service-link:hover {
-            color: var(--blue-hover);
+            color: var(--blue-tech-hover);
             gap: 10px;
         }
 
-        /* PMOC Destaque */
-        .pmoc-banner {
-            background: linear-gradient(135deg, var(--navy-dark) 0%, #1E293B 100%);
-            color: #fff;
+        /* PMOC Banner */
+        .pmoc-wrapper {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, #172554 100%);
             border-radius: var(--radius-lg);
-            padding: 48px;
+            padding: 55px;
+            color: #fff;
             display: grid;
             grid-template-columns: 1.2fr 0.8fr;
-            gap: 40px;
+            gap: 50px;
             align-items: center;
-            margin-top: 50px;
+            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.2);
+            margin-top: 60px;
         }
-        .pmoc-banner h3 {
+        .pmoc-content h3 {
             color: #fff;
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 16px;
         }
-        .pmoc-banner p {
+        .pmoc-content p {
             color: #94A3B8;
             font-size: 15px;
-            margin-bottom: 24px;
+            margin-bottom: 26px;
+            line-height: 1.7;
         }
         .pmoc-list {
             list-style: none;
@@ -424,114 +477,166 @@
             font-size: 14px;
             color: #E2E8F0;
         }
+        .pmoc-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         .pmoc-list li::before {
-            content: "✦ ";
+            content: "•";
             color: #38BDF8;
+            font-size: 20px;
+        }
+
+        /* Differentials */
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 26px;
+        }
+        .diff-tile {
+            background: var(--bg-card);
+            border: 1px solid var(--border-ui);
+            border-radius: var(--radius-md);
+            padding: 34px 28px;
+            transition: var(--transition);
+        }
+        .diff-tile:hover {
+            border-color: #BAE6FD;
+            transform: translateY(-3px);
+        }
+        .diff-kicker {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--blue-tech);
+            margin-bottom: 14px;
+        }
+        .diff-tile h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .diff-tile p {
+            font-size: 14px;
+            color: var(--text-regular);
+            line-height: 1.6;
         }
 
         /* FAQ */
-        .faq-wrap {
-            max-width: 800px;
+        .faq-list {
+            max-width: 860px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
-        .faq-box {
+        .faq-tile {
             background: var(--bg-card);
             border: 1px solid var(--border-ui);
-            border-radius: var(--radius-md);
+            border-radius: var(--radius-sm);
             overflow: hidden;
         }
-        .faq-title {
-            padding: 20px 24px;
+        .faq-question {
+            padding: 22px 28px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
-            font-weight: 600;
-            font-size: 16px;
-            color: var(--navy-dark);
             user-select: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--navy-deep);
         }
-        .faq-title span {
+        .faq-icon {
             font-size: 20px;
             color: var(--blue-tech);
             transition: var(--transition);
         }
-        .faq-body {
-            padding: 0 24px 20px;
+        .faq-answer {
+            padding: 0 28px 24px;
             font-size: 14px;
-            color: var(--text-body);
+            color: var(--text-regular);
             display: none;
-            border-top: 1px solid #F1F5F9;
-            padding-top: 14px;
+            border-top: 1px solid var(--bg-page);
+            padding-top: 16px;
+            line-height: 1.7;
         }
-        .faq-box.active .faq-body {
+        .faq-tile.open .faq-answer {
             display: block;
         }
-        .faq-box.active .faq-title span {
+        .faq-tile.open .faq-icon {
             transform: rotate(45deg);
         }
 
-        /* Contato */
-        .contact-box {
+        /* Contact Section */
+        .contact-card {
             background: var(--bg-card);
             border: 1px solid var(--border-ui);
             border-radius: var(--radius-lg);
-            padding: 48px;
+            padding: 50px;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            gap: 50px;
             align-items: center;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
         }
-        .contact-text h3 {
-            font-size: 32px;
-            margin-bottom: 14px;
+        .contact-info h3 {
+            font-size: 34px;
+            margin-bottom: 16px;
         }
-        .contact-text p {
-            color: var(--text-body);
-            margin-bottom: 24px;
+        .contact-info p {
             font-size: 15px;
-        }
-        .contact-list {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
+            color: var(--text-regular);
             margin-bottom: 30px;
         }
-        .contact-item {
+        .info-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 36px;
+        }
+        .info-row {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 14px;
             font-size: 15px;
-            color: var(--navy-dark);
+            color: var(--navy-deep);
         }
-        .contact-item strong {
+        .info-kicker {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
             color: var(--blue-tech);
+            width: 85px;
+            flex-shrink: 0;
         }
 
         /* Footer */
         footer {
-            background: var(--navy-dark);
+            background: var(--navy-deep);
             color: #94A3B8;
-            padding: 40px 0 24px;
+            padding: 45px 0 30px;
             font-size: 13px;
             text-align: center;
         }
-        .footer-brand {
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
             color: #fff;
-            font-weight: 600;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
+            letter-spacing: 0.05em;
         }
 
-        /* Float WhatsApp */
+        /* Floating WhatsApp */
         .wa-float {
             position: fixed;
-            bottom: 24px;
-            right: 24px;
+            bottom: 26px;
+            right: 26px;
             z-index: 999;
-            background: var(--whatsapp);
+            background: var(--whatsapp-green);
             color: #fff;
             width: 60px;
             height: 60px;
@@ -539,30 +644,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
             transition: var(--transition);
         }
         .wa-float:hover {
             transform: scale(1.08);
-            background: var(--whatsapp-dark);
+            filter: brightness(1.1);
+        }
+        .wa-float svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor;
         }
 
-        @media (max-width: 900px) {
-            .hero-grid {
+        @media (max-width: 960px) {
+            .hero-layout, .pmoc-wrapper, .contact-card {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
-            .pmoc-banner {
-                grid-template-columns: 1fr;
-                padding: 30px 20px;
+            .contact-card, .pmoc-wrapper {
+                padding: 32px 24px;
             }
-            .contact-box {
-                grid-template-columns: 1fr;
-                padding: 30px 20px;
-            }
-            .nav-items {
+            .nav-links {
                 display: none;
+            }
+            .hero {
+                padding: 65px 0 50px;
             }
         }
     </style>
@@ -570,13 +677,13 @@
 <body>
 
     <!-- Topbar -->
-    <div class="topbar">
-        <div class="container topbar-content">
+    <div class="topbar-tech">
+        <div class="container topbar-flex">
             <div>
-                📍 <span>Rua São Benedito, 941 — Santo Amaro, São Paulo - SP</span>
+                <span class="topbar-tag">Atendimento Técnico Santo Amaro:</span> Rua São Benedito, 941 — São Paulo, SP
             </div>
             <div>
-                📞 Telefone: <strong>(11) 3848-0018</strong> · WhatsApp: <strong>(11) 97096-4539</strong>
+                Telefone: <strong>(11) 3848-0018</strong> · WhatsApp de Plantão: <strong>(11) 97096-4539</strong>
             </div>
         </div>
     </div>
@@ -584,20 +691,21 @@
     <!-- Header -->
     <header>
         <div class="container navbar">
-            <div class="brand">
-                <div class="brand-icon">❄️</div>
+            <div class="brand-block">
+                <div class="brand-icon-box">T</div>
                 <div class="brand-text">
-                    <div class="brand-name">TEMPSTAR <span>Climatização</span></div>
+                    <div class="brand-logo">TEMPSTAR <span>Climatização</span></div>
                     <div class="brand-sub">Instalação, Manutenção & PMOC</div>
                 </div>
             </div>
-            <ul class="nav-items">
+            <ul class="nav-links">
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#pmoc">PMOC Empresas</a></li>
+                <li><a href="#diferenciais">Padrão Técnico</a></li>
                 <li><a href="#faq">Dúvidas</a></li>
                 <li><a href="#contato">Atendimento</a></li>
             </ul>
-            <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Preciso%20de%20atendimento%20t%C3%A9cnico%20para%20ar-condicionado." class="btn-call" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20visita%20t%C3%A9cnica%20de%20ar-condicionado." class="btn-tech-primary" target="_blank" rel="noopener">
                 Chamar Técnico
             </a>
         </div>
@@ -605,128 +713,134 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-left">
-                <div class="kicker">
-                    🏢 Atendimento Especializado em Santo Amaro & Zona Sul
-                </div>
-                <h1>Climatização confiável para o seu <em>conforto residencial e empresarial</em>.</h1>
+        <div class="container hero-layout">
+            <div class="hero-content">
+                <span class="hero-kicker">Engenharia de Climatização & Conforto Térmico</span>
+                <h1>Climatização inteligente para o seu <span>ambiente residencial e corporativo</span>.</h1>
                 <p>
-                    Instalação ágil, manutenção preventiva e corretiva, higienização profunda e laudos PMOC obrigatórios para comércios e escritórios com técnicos certificados.
+                    Instalação padronizada de sistemas Split, Inverter e VRF, higienização química profunda e laudos PMOC obrigatórios para edifícios comerciais com técnicos certificados na Zona Sul de SP.
                 </p>
-                <div class="hero-buttons">
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tempstar%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-wa-action" target="_blank" rel="noopener">
-                        💬 Orçamento Imediato no WhatsApp
+                <div class="hero-actions">
+                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tempstar%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-wa-cta" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                        Orçamento Rápido no WhatsApp
                     </a>
-                    <a href="#servicos" class="btn-secondary">
-                        Ver Serviços
+                    <a href="#servicos" class="btn-tech-outline">
+                        Explorar Serviços
                     </a>
                 </div>
-                <div class="trust-stats">
-                    <div class="stat-col">
-                        <h4>Split & VRF</h4>
-                        <span>Todas as Marcas</span>
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <h4>Todas Marcas</h4>
+                        <span>Split, Cassete & VRF</span>
                     </div>
-                    <div class="stat-col">
-                        <h4>PMOC</h4>
-                        <span>Laudos Conformes</span>
+                    <div class="stat-box">
+                        <h4>Lei 13.589</h4>
+                        <span>PMOC Conforme</span>
                     </div>
-                    <div class="stat-col">
-                        <h4>Rápido</h4>
-                        <span>Atendimento no Bairro</span>
+                    <div class="stat-box">
+                        <h4>Plantão</h4>
+                        <span>Santo Amaro & Região</span>
                     </div>
                 </div>
             </div>
 
-            <div class="hero-fast-card">
-                <div class="card-tag">Atendimento Técnico Ágil</div>
-                <h3 style="font-size: 20px; margin-bottom: 10px;">Ar Parou de Gelar ou Fazendo Barulho?</h3>
-                <p style="font-size: 14px; color: var(--text-body);">
-                    Não passe calor. Acione nossa equipe técnica com ferramentas calibradas e peças originais para diagnóstico imediato:
-                </p>
-                <ul class="fast-card-list">
-                    <li><i>✓</i> <strong>Recarga de Gás Ecológico (R410A / R32):</strong> Com teste prévio de vazamento na tubulação.</li>
-                    <li><i>✓</i> <strong>Higienização Química Antibacteriana:</strong> Elimina cheiro de mofo e melhora o rendimento em até 30%.</li>
-                    <li><i>✓</i> <strong>Conserto de Placas Eletrônicas Inverter:</strong> Reduzindo o custo de troca de equipamentos caros.</li>
-                    <li><i>✓</i> <strong>Garantia de Mão de Obra:</strong> Nota fiscal e suporte técnico garantido após a visita.</li>
-                </ul>
-                <a href="https://wa.me/5511970964539?text=Ol%C3%A1%2C%20meu%20ar-condicionado%20est%C3%A1%20com%20problema%20e%20preciso%20de%20visita." class="btn-call" style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
-                    Solicitar Visita Técnica Urgente
-                </a>
+            <div class="hero-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85" alt="Ambiente Residencial Contemporâneo com Climatização Integrada">
+                <div class="hero-photo-badge">
+                    <div class="badge-title">Atendimento Técnico em Santo Amaro</div>
+                    <div class="badge-desc">Diagnóstico preciso com manômetros digitais e recolhimento ecológico de gás refrigerante.</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Serviços -->
+    <!-- Services Section -->
     <section id="servicos" class="section-padding">
         <div class="container">
             <div class="section-header">
-                <h2>Soluções Completas em Ar Condicionado</h2>
-                <p>Desde a infraestrutura de obras até contratos corporativos de longa duração.</p>
+                <span class="section-kicker">Soluções Completas</span>
+                <h2>Engenharia de Climatização para Cada Demanda</h2>
+                <p>Equipes treinadas para preservar a garantia dos fabricantes e otimizar o consumo energético dos aparelhos.</p>
             </div>
 
             <div class="services-grid">
                 <!-- 1. Instalação -->
-                <div class="service-box">
-                    <div>
-                        <div class="service-badge">Residencial & Comercial</div>
-                        <h3>Instalação Padronizada</h3>
-                        <p>Instalação de aparelhos Split Hi-Wall, Inverter, Multi-Split, Cassete e Piso Teto seguindo as normas dos fabricantes para manter sua garantia de fábrica.</p>
-                        <ul class="service-items">
-                            <li>Vácuo correto na linha frigorígena</li>
-                            <li>Isolamento térmico blindado contra condensação</li>
-                            <li>Suportes em aço galvanizado anti-ferrugem</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="card-photo">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Instalação Técnica de Ar Condicionado">
+                        <div class="card-tag">Residencial & Comercial</div>
                     </div>
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20uma%20Instala%C3%A7%C3%A3o%20de%20Ar." class="service-link" target="_blank" rel="noopener">Orçar Instalação →</a>
+                    <div class="card-body">
+                        <h3>Instalação Padronizada</h3>
+                        <p>Instalação de modelos Split Hi-Wall, Inverter, Multi-Split, Cassete e Piso Teto seguindo as normas técnicas para manter intacta a garantia da montadora.</p>
+                        <ul class="card-features">
+                            <li>Vácuo correto na tubulação frigorígena com bomba de vácuo</li>
+                            <li>Isolamento térmico blindado contra condensação interna</li>
+                            <li>Suportes de condensadora em aço galvanizado anti-corrosão</li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Instala%C3%A7%C3%A3o%20de%20Ar." class="service-link" target="_blank" rel="noopener">Orçar Instalação →</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 2. Higienização -->
-                <div class="service-box">
-                    <div>
-                        <div class="service-badge">Saúde Respiratória</div>
-                        <h3>Higienização Química Profunda</h3>
-                        <p>Limpeza bactericida da serpentina, turbina e filtros de ar. Elimina ácaros, fungos e vírus, além de reduzir o consumo de energia elétrica.</p>
-                        <ul class="service-items">
-                            <li>Uso de produtos biodegradáveis autorizados pela Anvisa</li>
-                            <li>Sem sujeira no ambiente com bolsa coletora</li>
-                            <li>Aumento significativo da vazão de ar gelado</li>
-                        </ul>
+                <div class="service-card">
+                    <div class="card-photo">
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Higienização Química Antibacteriana de Ar Condicionado">
+                        <div class="card-tag">Saúde Respiratória</div>
                     </div>
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Preciso%20de%20Higieniza%C3%A7%C3%A3o%20do%20meu%20Ar-Condicionado." class="service-link" target="_blank" rel="noopener">Agendar Higienização →</a>
+                    <div class="card-body">
+                        <h3>Higienização Antibacteriana</h3>
+                        <p>Limpeza bactericida completa da serpentina, turbina de ventilação e bandejas de dreno. Remove ácaros, fungos e odores de mofo com bolsa coletora sem sujeira.</p>
+                        <ul class="card-features">
+                            <li>Produtos biodegradáveis homologados pela Anvisa</li>
+                            <li>Aumento imediato de até 30% no rendimento do fluxo de ar</li>
+                            <li>Redução significativa no consumo de energia elétrica mensal</li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Preciso%20de%20Higieniza%C3%A7%C3%A3o%20do%20meu%20Ar-Condicionado." class="service-link" target="_blank" rel="noopener">Agendar Higienização →</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- 3. Manutenção Corretiva -->
-                <div class="service-box">
-                    <div>
-                        <div class="service-badge">Reparo Rápido</div>
-                        <h3>Conserto & Manutenção Corretiva</h3>
-                        <p>Correção de pinga-pinga, congelamento da evaporadora, troca de capacitores, ventiladores e compressores para recuperar seu equipamento.</p>
-                        <ul class="service-items">
-                            <li>Identificação precisa do código de erro</li>
-                            <li>Peças de reposição originais multimarcas</li>
-                            <li>Eliminação definitiva de vazamentos de gás</li>
-                        </ul>
+                <!-- 3. Conserto e Placas -->
+                <div class="service-card">
+                    <div class="card-photo">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Conserto de Placas Inverter e Manutenção Corretiva">
+                        <div class="card-tag">Reparo de Precisão</div>
                     </div>
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Preciso%20de%20Conserto%20para%20o%20meu%20aparelho." class="service-link" target="_blank" rel="noopener">Chamar Conserto →</a>
+                    <div class="card-body">
+                        <h3>Conserto & Placas Inverter</h3>
+                        <p>Diagnóstico de códigos de erro eletrônicos, reparo de placas controladoras Inverter, troca de capacitores, motores ventiladores e compressores.</p>
+                        <ul class="card-features">
+                            <li>Solução definitiva para vazamento de gás e gotejamentos</li>
+                            <li>Carga de fluido refrigerante ecológico (R410A / R32) por peso</li>
+                            <li>Garantia formal de mão de obra e peças substituídas</li>
+                        </ul>
+                        <div class="card-footer">
+                            <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Meu%20ar-condicionado%20parou%20e%20preciso%20de%20conserto." class="service-link" target="_blank" rel="noopener">Chamar Conserto →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Banner PMOC -->
-            <div id="pmoc" class="pmoc-banner">
-                <div>
-                    <h3>Contratos PMOC para Empresas & Clínicas</h3>
+            <!-- PMOC Banner -->
+            <div id="pmoc" class="pmoc-wrapper">
+                <div class="pmoc-content">
+                    <h3>Contratos PMOC para Empresas e Clínicas</h3>
                     <p>
-                        O <strong>Plano de Manutenção, Operação e Controle (PMOC)</strong> é exigência legal da Lei Federal 13.589/2018 para edifícios comerciais e ambientes climatizados. Evite multas da Vigilância Sanitária e garanta a saúde dos seus colaboradores.
+                        O <strong>Plano de Manutenção, Operação e Controle (PMOC)</strong> é exigência legal da Lei Federal 13.589/2018 para todos os edifícios de uso público e coletivo. Evite multas da Vigilância Sanitária e garanta ar puro para colaboradores e clientes.
                     </p>
                     <ul class="pmoc-list">
-                        <li>Emissão de ART por Engenheiro Mecânico credenciado</li>
-                        <li>Visitas periódicas programadas sem interromper seu expediente</li>
-                        <li>Livro de registros e laudos de qualidade do ar em conformidade total</li>
+                        <li>Emissão de ART (Anotação de Responsabilidade Técnica) por Engenheiro Mecânico</li>
+                        <li>Cronograma periódico de vistorias sem interrupção do seu expediente</li>
+                        <li>Livro de registros técnicos e laudos microbiológicos de qualidade do ar</li>
                     </ul>
                 </div>
                 <div style="text-align: center;">
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20uma%20proposta%20de%20Contrato%20PMOC%20para%20minha%20empresa." class="btn-wa-action" style="background: #0284C7; box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);" target="_blank" rel="noopener">
+                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20uma%20proposta%20de%20Contrato%20PMOC%20para%20minha%20empresa." class="btn-tech-primary" style="background:#0284C7; padding: 18px 34px;" target="_blank" rel="noopener">
                         Solicitar Proposta de PMOC
                     </a>
                 </div>
@@ -734,85 +848,125 @@
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section-padding" style="background: #fff; border-top: 1px solid var(--border-ui); border-bottom: 1px solid var(--border-ui);">
+    <!-- Differentials -->
+    <section id="diferenciais" class="section-padding" style="background: #F1F5F9; border-top: 1px solid var(--border-ui); border-bottom: 1px solid var(--border-ui);">
         <div class="container">
             <div class="section-header">
-                <h2>Dúvidas Frequentes</h2>
-                <p>Respostas diretas para as principais perguntas sobre climatização.</p>
+                <span class="section-kicker">Garantia & Rigor</span>
+                <h2>Por Que a Tempstar é Escolhida na Zona Sul</h2>
+                <p>Compromisso com pontualidade, proteção do seu patrimônio e conformidade técnica integral.</p>
             </div>
 
-            <div class="faq-wrap">
-                <div class="faq-box">
-                    <div class="faq-title">
-                        <span>De quanto em quanto tempo devo fazer a higienização do ar-condicionado?</span>
-                        <span>+</span>
+            <div class="diff-grid">
+                <div class="diff-tile">
+                    <div class="diff-kicker">Ferramental Calibrado</div>
+                    <h4>Pressurização com Nitrogênio</h4>
+                    <p>Realizamos testes de estanqueidade sob alta pressão com nitrogênio antes de liberar a carga de gás, garantindo zero vazamentos futuros.</p>
+                </div>
+                <div class="diff-tile">
+                    <div class="diff-kicker">Suporte Multimarcas</div>
+                    <h4>Homologação de Fábrica</h4>
+                    <p>Técnicos capacitados para operar equipamentos Daikin, Fujitsu, LG, Samsung, Midea, Gree, Carrier e Elgin.</p>
+                </div>
+                <div class="diff-tile">
+                    <div class="diff-kicker">Conformidade Legal</div>
+                    <h4>Responsabilidade Técnica</h4>
+                    <p>Todos os contratos corporativos contam com emissão de ART formal junto ao CREA, assegurando tranquilidade jurídica à sua empresa.</p>
+                </div>
+                <div class="diff-tile">
+                    <div class="diff-kicker">Atendimento Ágil</div>
+                    <h4>Plantão em Santo Amaro</h4>
+                    <p>Sede física no coração de Santo Amaro para atendimento prioritário e envio rápido de peças originais para a Zona Sul.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-kicker">Dúvidas Técnicas</span>
+                <h2>Perguntas Frequentes Sobre Climatização</h2>
+                <p>Respostas diretas sobre higienização, instalação e requisitos legais.</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-tile">
+                    <div class="faq-question">
+                        <span>Qual a frequência recomendada para higienizar o aparelho?</span>
+                        <span class="faq-icon">+</span>
                     </div>
-                    <div class="faq-body">
-                        Em residências, a recomendação é a cada 6 meses (ou anualmente se o uso for esporádico). Em empresas, consultórios e comércios com fluxo diário de pessoas, a limpeza deve ser mensal ou trimestral conforme as diretrizes do PMOC.
+                    <div class="faq-answer">
+                        Para residências com uso moderado, o ideal é realizar a higienização química a cada 6 meses (e limpeza simples de telas plásticas quinzenalmente). Em escritórios, clínicas e comércios, a manutenção e desinfecção devem ser mensais ou trimestrais para cumprir as metas do PMOC e evitar contaminações respiratórias.
                     </div>
                 </div>
 
-                <div class="faq-box">
-                    <div class="faq-title">
-                        <span>Por que o ar-condicionado começa a pingar água para dentro do quarto?</span>
-                        <span>+</span>
+                <div class="faq-tile">
+                    <div class="faq-question">
+                        <span>Por que o aparelho começa a pingar água dentro do cômodo?</span>
+                        <span class="faq-icon">+</span>
                     </div>
-                    <div class="faq-body">
-                        Geralmente é causado pelo entupimento da mangueira de dreno por sujeira acumulada ou falha na inclinação da tubulação. Nossos técnicos desobstruem o dreno e fazem a limpeza da bandeja coletora rapidamente.
-                    </div>
-                </div>
-
-                <div class="faq-box">
-                    <div class="faq-title">
-                        <span>Vocês atendem quais marcas do mercado?</span>
-                        <span>+</span>
-                    </div>
-                    <div class="faq-body">
-                        Atendemos todas as principais marcas líderes: Daikin, Fujitsu, LG, Samsung, Midea, Gree, Carrier, Springer, Elgin e Consul, tanto modelos convencionais quanto tecnologia Inverter.
+                    <div class="faq-answer">
+                        O gotejamento interno geralmente decorre de lodo biológico obstruindo a mangueira de dreno, bandeja coletora descalibrada ou congelamento da serpentina por falta de gás. Nossos técnicos fazem a desobstrução imediata e a assepsia do dreno para solucionar o problema em uma única visita.
                     </div>
                 </div>
 
-                <div class="faq-box">
-                    <div class="faq-title">
-                        <span>Qual o prazo para agendamento de uma visita técnica?</span>
-                        <span>+</span>
+                <div class="faq-tile">
+                    <div class="faq-question">
+                        <span>Todas as empresas são obrigadas por lei a ter PMOC?</span>
+                        <span class="faq-icon">+</span>
                     </div>
-                    <div class="faq-body">
-                        Para Santo Amaro e bairros vizinhos (Chácara Santo Antônio, Brooklin, Granja Julieta), costumamos atender em até 24 a 48 horas úteis, com possibilidade de encaixe emergencial no mesmo dia.
+                    <div class="faq-answer">
+                        Sim, a Lei Federal 13.589/2018 exige que qualquer edifício comercial, consultório, academia ou espaço corporativo climatizado mantenha um plano PMOC ativo. O não cumprimento pode acarretar multas severas da Anvisa e Vigilância Sanitária em fiscalizações de rotina.
+                    </div>
+                </div>
+
+                <div class="faq-tile">
+                    <div class="faq-question">
+                        <span>Qual o prazo para agendamento de atendimento técnico?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Em Santo Amaro e bairros adjacentes (Chácara Santo Antônio, Brooklin, Granja Julieta e Moema), o atendimento costuma ser realizado em até 24 a 48 horas úteis, dispondo de encaixes para emergências comerciais no mesmo dia.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
-    <section id="contato" class="section-padding">
+    <!-- Contact & Location -->
+    <section id="contato" class="section-padding" style="background: var(--bg-page); padding-top: 20px;">
         <div class="container">
-            <div class="contact-box">
-                <div class="contact-text">
+            <div class="contact-card">
+                <div class="contact-info">
                     <h3>Fale Conosco em Santo Amaro</h3>
-                    <p>Entre em contato pelo canal de sua preferência para agendar orçamentos ou solicitar atendimento técnico no seu endereço.</p>
-                    <div class="contact-list">
-                        <div class="contact-item">
-                            📍 <span>Rua São Benedito, 941 — Santo Amaro, São Paulo - SP</span>
+                    <p>Agende uma visita técnica ou solicite uma cotação para instalação ou contrato corporativo de manutenção.</p>
+                    <div class="info-lines">
+                        <div class="info-row">
+                            <span class="info-kicker">Endereço</span>
+                            <span>Rua São Benedito, 941 — Santo Amaro, São Paulo - SP</span>
                         </div>
-                        <div class="contact-item">
-                            📞 <span>Telefone Fixo:</span> <strong>(11) 3848-0018</strong>
+                        <div class="info-row">
+                            <span class="info-kicker">Telefone</span>
+                            <span>(11) 3848-0018</span>
                         </div>
-                        <div class="contact-item">
-                            💬 <span>WhatsApp Técnico:</span> <strong>(11) 97096-4539</strong>
+                        <div class="info-row">
+                            <span class="info-kicker">WhatsApp</span>
+                            <span>(11) 97096-4539</span>
                         </div>
-                        <div class="contact-item">
-                            ✉️ <span>E-mail:</span> tempstar@tempstar.com.br
+                        <div class="info-row">
+                            <span class="info-kicker">E-mail</span>
+                            <span>tempstar@tempstar.com.br</span>
                         </div>
                     </div>
-                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20da%20Tempstar." class="btn-wa-action" target="_blank" rel="noopener">
-                        Chamar no WhatsApp Agora
+                    <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20da%20Tempstar." class="btn-wa-cta" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                        Falar Direto no WhatsApp
                     </a>
                 </div>
 
-                <div style="border-radius: 14px; overflow: hidden; border: 1px solid var(--border-ui); height: 320px;">
+                <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-ui); height: 340px;">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.992209700355!2d-46.70281232387103!3d-23.640476464491795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f3b735232b%3A0xc3cf9c9f28d8b13!2sR.%20S%C3%A3o%20Benedito%2C%20941%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1725322000000!5m2!1spt-BR!2sbr" 
                         width="100%" 
@@ -830,20 +984,21 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p class="footer-brand">TEMPSTAR AR CONDICIONADO & CLIMATIZAÇÃO</p>
-            <p>Instalação, Manutenção, Higienização e Contratos PMOC em Santo Amaro e Zona Sul de São Paulo - SP.</p>
+            <div class="footer-logo">TEMPSTAR CLIMATIZAÇÃO</div>
+            <p>Engenharia Térmica, Instalação, Manutenção e Contratos PMOC em Santo Amaro e Zona Sul de São Paulo - SP.</p>
+            <p style="margin-top: 6px;">Rua São Benedito, 941 — Santo Amaro, São Paulo - SP</p>
         </div>
     </footer>
 
-    <!-- Float WhatsApp -->
+    <!-- Floating WhatsApp -->
     <a href="https://wa.me/5511970964539?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tempstar%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." class="wa-float" target="_blank" rel="noopener" title="Falar no WhatsApp">
-        💬
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
     </a>
 
     <script>
-        document.querySelectorAll('.faq-title').forEach(t => {
-            t.addEventListener('click', () => {
-                t.parentElement.classList.toggle('active');
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                q.parentElement.classList.toggle('open');
             });
         });
     </script>
