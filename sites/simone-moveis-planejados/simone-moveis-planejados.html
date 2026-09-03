@@ -104,10 +104,20 @@
         }
         .brand-wrap {
             display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .brand-wrap img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+        .brand-text {
+            display: flex;
             flex-direction: column;
         }
         .brand-main {
-            font-size: 28px;
+            font-size: 26px;
             letter-spacing: -0.01em;
             color: var(--wood-charcoal);
         }
@@ -257,13 +267,14 @@
             font-weight: 600;
         }
 
-        /* Hero Visual Frame */
+        /* Hero Visual Frame com Zoom */
         .hero-gallery-frame {
             position: relative;
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: 0 25px 60px rgba(45, 37, 30, 0.12);
             border: 1px solid var(--border-line);
+            cursor: zoom-in;
         }
         .hero-gallery-frame img {
             width: 100%;
@@ -274,6 +285,22 @@
         }
         .hero-gallery-frame:hover img {
             transform: scale(1.03);
+        }
+        .zoom-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-line);
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--wood-espresso);
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         .hero-frame-caption {
             position: absolute;
@@ -322,7 +349,7 @@
             color: var(--text-body);
         }
 
-        /* Gallery Grid */
+        /* Gallery Grid com Zoom */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
@@ -343,9 +370,10 @@
             border-color: #D4C9BC;
         }
         .card-img-wrap {
-            height: 250px;
+            height: 260px;
             overflow: hidden;
             position: relative;
+            cursor: zoom-in;
         }
         .card-img-wrap img {
             width: 100%;
@@ -354,7 +382,7 @@
             transition: transform 0.6s ease;
         }
         .portfolio-card:hover .card-img-wrap img {
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
         .card-badge {
             position: absolute;
@@ -431,7 +459,7 @@
             gap: 10px;
         }
 
-        /* Material Excellence Section */
+        /* Material Excellence */
         .materials-section {
             background: var(--bg-accent);
             border-top: 1px solid var(--border-line);
@@ -623,6 +651,70 @@
             fill: currentColor;
         }
 
+        /* LIGHTBOX MODAL DE ZOOM */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(18, 15, 12, 0.94);
+            backdrop-filter: blur(16px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        .lightbox-dialog {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--gold-subtle);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+            object-fit: contain;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .lightbox-modal.active .lightbox-img {
+            transform: scale(1);
+        }
+        .lightbox-caption {
+            margin-top: 16px;
+            color: #FAF8F5;
+            font-size: 17px;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            text-align: center;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            background: transparent;
+            border: none;
+            color: #FAF8F5;
+            font-size: 32px;
+            cursor: pointer;
+            line-height: 1;
+            transition: var(--transition);
+        }
+        .lightbox-close:hover {
+            color: var(--gold-subtle);
+            transform: rotate(90deg);
+        }
+
         @media (max-width: 960px) {
             .hero-split, .consultation-box {
                 grid-template-columns: 1fr;
@@ -658,8 +750,11 @@
     <header>
         <div class="container navbar">
             <div class="brand-wrap">
-                <div class="brand-main">Simone <span>Móveis Planejados</span></div>
-                <div class="brand-desc">Ambientes Sob Medida de Alto Padrão</div>
+                <img src="img/logo.png" alt="Simone Móveis Planejados Logo">
+                <div class="brand-text">
+                    <div class="brand-main">Simone <span>Móveis Planejados</span></div>
+                    <div class="brand-desc">Ambientes Sob Medida de Alto Padrão</div>
+                </div>
             </div>
             <ul class="nav-links">
                 <li><a href="#ambientes">Projetos</a></li>
@@ -707,8 +802,10 @@
                 </div>
             </div>
 
-            <div class="hero-gallery-frame">
+            <!-- FOTO HERO COM ZOOM -->
+            <div class="hero-gallery-frame zoom-trigger" data-full="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=90" data-caption="Cozinha Contemporânea com Ilha em Nogueira & Mármore — Simone Móveis Planejados">
                 <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Cozinha Contemporânea com Ilha e Marcenaria Sob Medida">
+                <div class="zoom-badge">🔍 Clique para ampliar</div>
                 <div class="hero-frame-caption">
                     <div class="caption-title">Cozinha Integrada em Nogueira & Mármore</div>
                     <div class="caption-sub">Projeto e execução por Simone Móveis Planejados</div>
@@ -717,21 +814,22 @@
         </div>
     </section>
 
-    <!-- Ambientes Section -->
+    <!-- Ambientes Section com Zoom -->
     <section id="ambientes" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <div class="header-kicker">Portfólio de Ambientes</div>
                 <h2>A Harmonia Perfeita Entre Forma e Função</h2>
-                <p>Cada projeto nasce a partir da sua rotina familiar, aproveitando vãos com elegância e sofisticação.</p>
+                <p>Clique em qualquer projeto para abrir em tela cheia com zoom de alta resolução.</p>
             </div>
 
             <div class="portfolio-grid">
                 <!-- 1. Cozinha -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=90" data-caption="Cozinhas Planejadas & Ilhas Gourmet — Marcenaria Sob Medida">
                         <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Cozinhas Planejadas e Ilhas Gourmet">
                         <div class="card-badge">Coração do Lar</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Cozinhas & Ilhas Gourmet</h3>
@@ -749,9 +847,10 @@
 
                 <!-- 2. Dormitórios e Closets -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=1600&q=90" data-caption="Closets Walk-in e Dormitórios Planejados com Iluminação Embutida">
                         <img src="https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80" alt="Closets Walk-in e Dormitórios Planejados">
                         <div class="card-badge">Organização Pessoal</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Closets & Dormitórios</h3>
@@ -769,9 +868,10 @@
 
                 <!-- 3. Home Theater -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=90" data-caption="Home Theater e Painéis Ripados em Lâmina de Madeira Natural">
                         <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Home Theater e Painéis Ripados">
                         <div class="card-badge">Living & Convivência</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Home Theater & Ripados</h3>
@@ -789,9 +889,10 @@
 
                 <!-- 4. Home Office -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=90" data-caption="Home Office Executivo sob Medida com Estantes Estruturadas">
                         <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Home Office e Espaços de Trabalho Executivos">
                         <div class="card-badge">Foco & Produtividade</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Home Office Executivo</h3>
@@ -809,9 +910,10 @@
 
                 <!-- 5. Banheiros -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1600&q=90" data-caption="Banheiros e Lavabos de Luxo com Marcenaria Naval Resistente a Umidade">
                         <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=800&q=80" alt="Banheiros e Lavabos de Luxo">
                         <div class="card-badge">Bem-Estar & Banho</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Banheiros & Lavabos</h3>
@@ -827,11 +929,12 @@
                     </div>
                 </div>
 
-                <!-- 6. Dormitório de Casal -->
+                <!-- 6. Suíte Master -->
                 <div class="portfolio-card">
-                    <div class="card-img-wrap">
+                    <div class="card-img-wrap zoom-trigger" data-full="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=90" data-caption="Suíte Master Contemporânea em Tons de Areia e Carvalho Nobre">
                         <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80" alt="Suítes Master e Dormitórios Planejados">
                         <div class="card-badge">Acolhimento & Suíte</div>
+                        <div class="zoom-badge">🔍 Ampliar</div>
                     </div>
                     <div class="card-content">
                         <h3>Suítes Master</h3>
@@ -993,11 +1096,55 @@
         <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
     </a>
 
+    <!-- LIGHTBOX / MODAL DE ZOOM UNIVERSAL -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-dialog">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
     <script>
+        // FAQ Accordion
         document.querySelectorAll('.faq-header').forEach(header => {
             header.addEventListener('click', () => {
                 header.parentElement.classList.toggle('open');
             });
+        });
+
+        // LIGHTBOX UNIVERSAL COM ZOOM
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImg');
+        const modalCaption = document.getElementById('lightboxCaption');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        document.querySelectorAll('.zoom-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const fullSrc = trigger.getAttribute('data-full') || trigger.querySelector('img').src;
+                const caption = trigger.getAttribute('data-caption') || trigger.querySelector('img').alt || '';
+                modalImg.src = fullSrc;
+                modalCaption.textContent = caption;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === modalImg) {
+                closeModal();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
         });
     </script>
 </body>

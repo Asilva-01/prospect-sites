@@ -100,31 +100,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 80px;
+            height: 85px;
         }
         .brand-block {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
-        .brand-icon-box {
-            width: 40px;
-            height: 40px;
-            background: var(--blue-tech);
-            color: #fff;
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            font-weight: 800;
+        .brand-block img {
+            height: 44px;
+            width: auto;
+            display: block;
         }
         .brand-text {
             display: flex;
             flex-direction: column;
         }
         .brand-logo {
-            font-size: 22px;
+            font-size: 20px;
             letter-spacing: -0.02em;
             color: var(--navy-deep);
         }
@@ -270,13 +263,14 @@
             font-weight: 600;
         }
 
-        /* Hero Frame */
+        /* Hero Frame com Zoom */
         .hero-photo-wrap {
             position: relative;
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: 0 25px 50px rgba(15, 23, 42, 0.1);
             border: 1px solid var(--border-ui);
+            cursor: zoom-in;
         }
         .hero-photo-wrap img {
             width: 100%;
@@ -287,6 +281,19 @@
         }
         .hero-photo-wrap:hover img {
             transform: scale(1.03);
+        }
+        .zoom-tag-tech {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-ui);
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--blue-tech);
         }
         .hero-photo-badge {
             position: absolute;
@@ -311,7 +318,7 @@
             color: #94A3B8;
         }
 
-        /* Services Grid */
+        /* Services Grid com Zoom */
         .section-padding {
             padding: 105px 0;
         }
@@ -357,9 +364,10 @@
             border-color: #BAE6FD;
         }
         .card-photo {
-            height: 230px;
+            height: 240px;
             overflow: hidden;
             position: relative;
+            cursor: zoom-in;
         }
         .card-photo img {
             width: 100%;
@@ -368,7 +376,7 @@
             transition: transform 0.6s ease;
         }
         .service-card:hover .card-photo img {
-            transform: scale(1.05);
+            transform: scale(1.06);
         }
         .card-tag {
             position: absolute;
@@ -657,6 +665,70 @@
             fill: currentColor;
         }
 
+        /* LIGHTBOX MODAL DE ZOOM */
+        .lightbox-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(10, 15, 29, 0.94);
+            backdrop-filter: blur(16px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+        .lightbox-dialog {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 80vh;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--blue-tech);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+            object-fit: contain;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .lightbox-modal.active .lightbox-img {
+            transform: scale(1);
+        }
+        .lightbox-caption {
+            margin-top: 16px;
+            color: #F8FAFC;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 0.02em;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: -45px;
+            right: 0;
+            background: transparent;
+            border: none;
+            color: #F8FAFC;
+            font-size: 32px;
+            cursor: pointer;
+            line-height: 1;
+            transition: var(--transition);
+        }
+        .lightbox-close:hover {
+            color: #38BDF8;
+            transform: rotate(90deg);
+        }
+
         @media (max-width: 960px) {
             .hero-layout, .pmoc-wrapper, .contact-card {
                 grid-template-columns: 1fr;
@@ -692,7 +764,7 @@
     <header>
         <div class="container navbar">
             <div class="brand-block">
-                <div class="brand-icon-box">T</div>
+                <img src="img/logo.png" alt="Tempstar Climatização Logo Oficial">
                 <div class="brand-text">
                     <div class="brand-logo">TEMPSTAR <span>Climatização</span></div>
                     <div class="brand-sub">Instalação, Manutenção & PMOC</div>
@@ -745,29 +817,31 @@
                 </div>
             </div>
 
-            <div class="hero-photo-wrap">
-                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85" alt="Ambiente Residencial Contemporâneo com Climatização Integrada">
+            <!-- FOTO HERO COM ZOOM -->
+            <div class="hero-photo-wrap zoom-trigger" data-full="img/dutado.jpg" data-caption="Instalação de Sistema de Ar Condicionado Dutado e Climatização Corporativa — Tempstar">
+                <img src="img/dutado.jpg" alt="Sistema de Ar Condicionado Dutado e Conforto Térmico">
+                <div class="zoom-tag-tech">🔍 Clique para ampliar</div>
                 <div class="hero-photo-badge">
-                    <div class="badge-title">Atendimento Técnico em Santo Amaro</div>
-                    <div class="badge-desc">Diagnóstico preciso com manômetros digitais e recolhimento ecológico de gás refrigerante.</div>
+                    <div class="badge-title">Instalação Técnica & Engenharia de Dutos</div>
+                    <div class="badge-desc">Dimensionamento de carga térmica (BTU/h) e vazão de ar em conformidade com as normas ABNT.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section com Zoom -->
     <section id="servicos" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <span class="section-kicker">Soluções Completas</span>
                 <h2>Engenharia de Climatização para Cada Demanda</h2>
-                <p>Equipes treinadas para preservar a garantia dos fabricantes e otimizar o consumo energético dos aparelhos.</p>
+                <p>Clique nas imagens para abrir os procedimentos em alta resolução.</p>
             </div>
 
             <div class="services-grid">
                 <!-- 1. Instalação -->
                 <div class="service-card">
-                    <div class="card-photo">
+                    <div class="card-photo zoom-trigger" data-full="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1600&q=90" data-caption="Instalação Técnica de Ar Condicionado com Manômetros Digitais e Bomba de Vácuo">
                         <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Instalação Técnica de Ar Condicionado">
                         <div class="card-tag">Residencial & Comercial</div>
                     </div>
@@ -787,7 +861,7 @@
 
                 <!-- 2. Higienização -->
                 <div class="service-card">
-                    <div class="card-photo">
+                    <div class="card-photo zoom-trigger" data-full="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=90" data-caption="Higienização Química Antibacteriana com Produtos Homologados pela Anvisa">
                         <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Higienização Química Antibacteriana de Ar Condicionado">
                         <div class="card-tag">Saúde Respiratória</div>
                     </div>
@@ -807,8 +881,8 @@
 
                 <!-- 3. Conserto e Placas -->
                 <div class="service-card">
-                    <div class="card-photo">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Conserto de Placas Inverter e Manutenção Corretiva">
+                    <div class="card-photo zoom-trigger" data-full="img/vrf.jpg" data-caption="Manutenção de Equipamentos de Climatização VRF e Placas Eletrônicas Inverter">
+                        <img src="img/vrf.jpg" alt="Conserto de Placas Inverter e Manutenção de VRF">
                         <div class="card-tag">Reparo de Precisão</div>
                     </div>
                     <div class="card-body">
@@ -995,11 +1069,55 @@
         <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
     </a>
 
+    <!-- LIGHTBOX MODAL DE ZOOM -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-dialog">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">✕</button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
     <script>
+        // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(q => {
             q.addEventListener('click', () => {
                 q.parentElement.classList.toggle('open');
             });
+        });
+
+        // LIGHTBOX UNIVERSAL COM ZOOM
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImg');
+        const modalCaption = document.getElementById('lightboxCaption');
+        const closeBtn = document.getElementById('lightboxClose');
+
+        document.querySelectorAll('.zoom-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const fullSrc = trigger.getAttribute('data-full') || trigger.querySelector('img').src;
+                const caption = trigger.getAttribute('data-caption') || trigger.querySelector('img').alt || '';
+                modalImg.src = fullSrc;
+                modalCaption.textContent = caption;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === modalImg) {
+                closeModal();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
         });
     </script>
 </body>
