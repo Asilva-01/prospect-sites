@@ -410,6 +410,99 @@
             background-color: var(--whatsapp-hover);
         }
 
+        .btn-whatsapp-direct {
+            background-color: #128c7e;
+            color: white;
+        }
+
+        .btn-whatsapp-direct:hover {
+            background-color: #0c6b60;
+        }
+
+        .btn-status-toggle {
+            padding: 0.6rem 1.1rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            border: 1px solid #10b981;
+            background: #ecfdf5;
+            color: #065f46;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .btn-status-toggle:hover {
+            background: #d1fae5;
+            transform: translateY(-1px);
+        }
+
+        .btn-status-toggle.enviado {
+            background: #10b981;
+            color: white;
+            border-color: #059669;
+        }
+
+        .btn-status-toggle.enviado:hover {
+            background: #059669;
+        }
+
+        .status-badge {
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 0.25rem 0.65rem;
+            border-radius: 9999px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .status-badge.pronto {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+        }
+
+        .status-badge.enviado {
+            background: #ecfdf5;
+            color: #047857;
+            border: 1px solid #a7f3d0;
+        }
+
+        .badge-enviado-side {
+            background-color: #10b981 !important;
+            color: white !important;
+            font-weight: 700;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #ffffff;
+            border: 1px solid #1ebe5d;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe5d;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+        }
+
+        .btn-whatsapp-direct {
+            background-color: #075e54;
+            color: #ffffff;
+            border: 1px solid #064e46;
+        }
+
+        .btn-whatsapp-direct:hover {
+            background-color: #064e46;
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(7, 94, 84, 0.35);
+        }
+
         /* Briefing/Painel informativo */
         .briefing-box {
             background-color: rgba(14, 165, 233, 0.03);
@@ -551,8 +644,9 @@
 
     <header>
         <div class="header-title">
-            <span> Santo Amaro Prospecção</span>
-            <span class="header-badge">Onda 1B, 2 & 3</span>
+            <span>🚀 Santo Amaro Prospecção</span>
+            <span class="header-badge">Onda 1B, 2, 3 & 4</span>
+            <span class="header-badge" id="envioProgressoBadge" style="background:#10b981;font-weight:700;">7/10 Enviados</span>
         </div>
         <button class="theme-toggle" id="themeBtn" aria-label="Alternar Tema">☀️</button>
     </header>
@@ -565,59 +659,83 @@
             </div>
             <ul class="lead-list" id="leadList">
                 <!-- Cecilia Freytas -->
-                <li class="lead-item active" data-index="0">
+                <li class="lead-item active" data-index="0" id="sideItem-0">
                     <div class="lead-name">Dra. Cecília Freytas</div>
                     <div class="lead-nicho">🧠 Psicologia Clínica</div>
                     <div class="lead-meta">
-                        <span class="badge badge-wa">WhatsApp Principal</span>
+                        <span class="badge badge-wa" id="sideBadge-0">WhatsApp Principal</span>
                     </div>
                 </li>
                 <!-- Metra -->
-                <li class="lead-item" data-index="1">
+                <li class="lead-item" data-index="1" id="sideItem-1">
                     <div class="lead-name">Métra Psicologia</div>
                     <div class="lead-nicho">👥 Psicanálise & Clínica</div>
                     <div class="lead-meta">
-                        <span class="badge badge-email">E-mail + WA</span>
+                        <span class="badge badge-email" id="sideBadge-1">E-mail + WA</span>
                     </div>
                 </li>
                 <!-- Clinica Langner -->
-                <li class="lead-item" data-index="2">
+                <li class="lead-item" data-index="2" id="sideItem-2">
                     <div class="lead-name">Clínica Langner</div>
                     <div class="lead-nicho">🔬 Neuropsicologia & TCC</div>
                     <div class="lead-meta">
-                        <span class="badge badge-email">E-mail + WA</span>
+                        <span class="badge badge-email" id="sideBadge-2">E-mail + WA</span>
                     </div>
                 </li>
                 <!-- Paula Paraiso -->
-                <li class="lead-item" data-index="3">
+                <li class="lead-item" data-index="3" id="sideItem-3">
                     <div class="lead-name">Dra. Paula Paraíso</div>
                     <div class="lead-nicho">🥗 Nutricionista</div>
                     <div class="lead-meta">
-                        <span class="badge badge-email">E-mail + WA</span>
+                        <span class="badge badge-email" id="sideBadge-3">E-mail + WA</span>
                     </div>
                 </li>
                 <!-- Luciene Hessel Fogaça (Lote 3) -->
-                <li class="lead-item" data-index="4">
+                <li class="lead-item" data-index="4" id="sideItem-4">
                     <div class="lead-name">Luciene Hessel Fogaça</div>
                     <div class="lead-nicho">🧠 Psicóloga Clínica</div>
                     <div class="lead-meta">
-                        <span class="badge badge-wa">WhatsApp Principal</span>
+                        <span class="badge badge-wa" id="sideBadge-4">WhatsApp Principal</span>
                     </div>
                 </li>
                 <!-- Bianca Cremonez Magnelli (Lote 3) -->
-                <li class="lead-item" data-index="5">
+                <li class="lead-item" data-index="5" id="sideItem-5">
                     <div class="lead-name">Bianca Cremonez Magnelli</div>
                     <div class="lead-nicho">🥗 Nutricionista Esportiva</div>
                     <div class="lead-meta">
-                        <span class="badge badge-email">E-mail + WA (não confirmados)</span>
+                        <span class="badge badge-email" id="sideBadge-5">E-mail + WA</span>
                     </div>
                 </li>
                 <!-- Clínica Equilíbrio (Lote 3) -->
-                <li class="lead-item" data-index="6">
+                <li class="lead-item" data-index="6" id="sideItem-6">
                     <div class="lead-name">Clínica Equilíbrio</div>
                     <div class="lead-nicho">🔬 Psicologia e Neuropsicologia</div>
                     <div class="lead-meta">
-                        <span class="badge badge-wa">WhatsApp Principal</span>
+                        <span class="badge badge-wa" id="sideBadge-6">WhatsApp Principal</span>
+                    </div>
+                </li>
+                <!-- Future Auto Care (Lote 4) -->
+                <li class="lead-item" data-index="7" id="sideItem-7">
+                    <div class="lead-name">Future Auto Care</div>
+                    <div class="lead-nicho">🏎️ Estética & Detailing</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email" id="sideBadge-7">E-mail + WA</span>
+                    </div>
+                </li>
+                <!-- Simone Móveis Planejados (Lote 4) -->
+                <li class="lead-item" data-index="8" id="sideItem-8">
+                    <div class="lead-name">Simone Móveis Planejados</div>
+                    <div class="lead-nicho">🪚 Móveis & Marcenaria</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email" id="sideBadge-8">E-mail + WA</span>
+                    </div>
+                </li>
+                <!-- Tempstar Ar Condicionado (Lote 4) -->
+                <li class="lead-item" data-index="9" id="sideItem-9">
+                    <div class="lead-name">Tempstar Ar Condicionado</div>
+                    <div class="lead-nicho">❄️ Climatização & PMOC</div>
+                    <div class="lead-meta">
+                        <span class="badge badge-email" id="sideBadge-9">E-mail + WA</span>
                     </div>
                 </li>
             </ul>
@@ -628,7 +746,10 @@
             <div class="lead-card">
                 <div class="lead-card-header">
                     <div>
-                        <h2 class="lead-card-title" id="cardName">Dra. Cecília Freytas</h2>
+                        <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.35rem;">
+                            <h2 class="lead-card-title" id="cardName" style="margin-bottom:0;">Dra. Cecília Freytas</h2>
+                            <span id="statusLeadBadge" class="status-badge pronto">Pronto para Envio</span>
+                        </div>
                         <p class="lead-card-subtitle" id="cardNicho">Psicóloga Clinica</p>
                         <div class="lead-links">
                             <a href="https://ceciliafreytas.com.br/" target="_blank" class="link-pill" id="linkAntigo">
@@ -637,7 +758,15 @@
                             <a href="https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/" target="_blank" class="link-pill new-site" id="linkNovo">
                                 ✨ Ver Novo Redesenho
                             </a>
+                            <a href="../cecilia-freytas-psico/index.html" target="_blank" class="link-pill" id="linkLocal" title="Testar arquivo HTML local">
+                                📁 Abrir Local
+                            </a>
                         </div>
+                    </div>
+                    <div>
+                        <button id="btnMarcarEnviado" class="btn-status-toggle" onclick="toggleStatusEnviado()">
+                            <span>✓ Marcar como Proposta Enviada</span>
+                        </button>
                     </div>
                 </div>
 
@@ -655,42 +784,71 @@
 
                 <!-- Tabs de Comunicação -->
                 <div class="tab-nav">
-                    <button class="tab-btn active" data-tab="whatsapp">WhatsApp (Mais Eficiente)</button>
-                    <button class="tab-btn" data-tab="email">E-mail (Proposta Formal)</button>
+                    <button class="tab-btn active" data-tab="email">✉️ E-mail (Proposta Principal)</button>
+                    <button class="tab-btn" data-tab="whatsapp">💬 WhatsApp (Alternativo)</button>
                 </div>
 
-                <!-- Tab WhatsApp -->
-                <div class="tab-content active" id="tab-whatsapp">
+                <!-- Tab E-mail (Ativa Principal) -->
+                <div class="tab-content active" id="tab-email">
                     <div class="proposal-block">
                         <div class="field-group">
-                            <label class="field-label">Mensagem Pronta para WhatsApp</label>
-                            <textarea class="field-textarea" id="waText" readonly></textarea>
+                            <div style="display:flex;justify-content:space-between;align-items:center;">
+                                <label class="field-label">Destinatário (Para:)</label>
+                                <span id="emailObsBadge" style="font-size:0.75rem;color:var(--text-secondary);font-weight:600;"></span>
+                            </div>
+                            <div style="display:flex;gap:0.5rem;">
+                                <input type="text" class="field-input" id="emailTo" readonly style="font-weight:700;color:var(--accent-primary);letter-spacing:0.02em;">
+                                <button class="btn btn-secondary" onclick="copyField('emailTo')">📋 Copiar E-mail</button>
+                            </div>
                         </div>
-                        <div class="action-bar">
-                            <button class="btn btn-secondary" onclick="copyField('waText')">Copiar Texto</button>
-                            <a href="#" target="_blank" class="btn btn-whatsapp" id="waSendBtn">
-                                💬 Abrir WhatsApp Web
+                        <div class="field-group">
+                            <label class="field-label">Assunto do E-mail</label>
+                            <input type="text" class="field-input" id="emailSubject" readonly style="font-weight:600;">
+                        </div>
+                        <div class="field-group">
+                            <label class="field-label">Corpo do E-mail</label>
+                            <textarea class="field-textarea" id="emailText" readonly style="min-height:220px;line-height:1.5;"></textarea>
+                        </div>
+                        <div class="action-bar" style="flex-wrap:wrap;gap:0.75rem;">
+                            <button class="btn btn-secondary" onclick="copyField('emailSubject')">📋 Copiar Assunto</button>
+                            <button class="btn btn-secondary" onclick="copyField('emailText')">📋 Copiar Corpo</button>
+                            <a href="#" target="_blank" class="btn btn-primary" id="emailSendBtn">
+                                ✉️ Abrir no Gmail Web
+                            </a>
+                            <a href="#" class="btn btn-secondary" id="emailDefaultBtn" title="Abrir com seu aplicativo de e-mail padrão">
+                                📧 Abrir no Mailto
+                            </a>
+                            <a href="#" target="_blank" class="btn btn-secondary" id="emailFormBtn" style="display:none;" title="Abrir formulário de contato do site oficial">
+                                🌐 Abrir Formulário do Site
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tab E-mail -->
-                <div class="tab-content" id="tab-email">
+                <!-- Tab WhatsApp (Disparo Direto) -->
+                <div class="tab-content" id="tab-whatsapp">
                     <div class="proposal-block">
                         <div class="field-group">
-                            <label class="field-label">Assunto do E-mail</label>
-                            <input type="text" class="field-input" id="emailSubject" readonly>
+                            <div style="display:flex;justify-content:space-between;align-items:center;">
+                                <label class="field-label">Destinatário (WhatsApp):</label>
+                                <span id="waObsBadge" style="font-size:0.75rem;color:#059669;font-weight:600;"></span>
+                            </div>
+                            <div style="display:flex;gap:0.5rem;">
+                                <input type="text" class="field-input" id="waPhone" readonly style="font-weight:700;color:#075e54;letter-spacing:0.02em;">
+                                <button class="btn btn-secondary" onclick="copyField('waPhone')">📋 Copiar Número</button>
+                            </div>
                         </div>
                         <div class="field-group">
-                            <label class="field-label">Corpo do E-mail</label>
-                            <textarea class="field-textarea" id="emailText" readonly></textarea>
+                            <label class="field-label">Mensagem Formatada para WhatsApp</label>
+                            <textarea class="field-textarea" id="waText" readonly style="min-height:220px;line-height:1.5;"></textarea>
                         </div>
-                        <div class="action-bar">
-                            <button class="btn btn-secondary" onclick="copyField('emailSubject')">Copiar Assunto</button>
-                            <button class="btn btn-secondary" onclick="copyField('emailText')">Copiar Corpo</button>
-                            <a href="#" target="_blank" class="btn btn-primary" id="emailSendBtn">
-                                ✉️ Enviar via Gmail
+                        <div class="action-bar" style="flex-wrap:wrap;gap:0.75rem;">
+                            <button class="btn btn-secondary" onclick="copyField('waText')">📋 Copiar Mensagem</button>
+                            <a href="#" target="_blank" class="btn btn-whatsapp" id="waSendBtn">
+                                💬 Abrir WhatsApp Web
+                            </a>
+                            <a href="#" target="_blank" class="btn btn-whatsapp-direct" id="waDirectBtn" title="Abre no WhatsApp App ou direto no celular">
+                                📱 WhatsApp App / Celular
                             </a>
                         </div>
                     </div>
@@ -734,7 +892,10 @@
                 siteAntigo: "https://ceciliafreytas.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/",
                 telefone: "(11) 99601-2736",
-                email: "contato@ceciliafreytas.com.br", // Geralmente ela usa WA no site antigo, mas salvamos fallback
+                waObs: "Canal mais ativo no site oficial",
+                email: "contato@ceciliafreytas.com.br",
+                emailObs: "E-mail institucional do domínio",
+                formUrl: "https://ceciliafreytas.com.br/#contato",
                 analise: "O site original de Cecília é instável no celular (navegação esconde os links se a tela for menor que 992px de largura). Também não possui FAQ dinâmico nem otimização rápida de carregamento. O novo redesenho traz uma estética em verde-musgo/dourado ultra-acolhedora, menus de rolagem e FAQ interativo de alto impacto.",
                 reviews: "70 avaliações no Maps (5.0 ★)",
                 endereco: "Av. das Nações Unidas, 18801 - NovAmérica Office Park",
@@ -751,38 +912,24 @@ Ficou assim: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-ps
 Se gostar do redesenho, podemos conversar sobre como ativá-lo no seu domínio (faço a publicação completa por um valor único de R$ 1.200).
 
 Seria um prazer te ajudar a refinar essa porta de entrada digital. Um abraço!`,
-                emailSubject: "Proposta de Redesenho Web e Otimização para Celular - Dra. Cecília Freytas",
+                emailSubject: "Dra. Cecília, posso te mostrar uma sugestão para o seu site?",
                 emailBody: `Olá, Dra. Cecília, tudo bem?
 
-Meu nome é André, sou designer web especializado em páginas de alta conversão para profissionais liberais, e moro aqui na região de Santo Amaro.
+Encontrei seu trabalho no NovAmérica Office Park em Santo Amaro com avaliação máxima de 5.0 estrelas no Google e me chamou a atenção os mais de 70 depoimentos elogiando o acolhimento e a escuta no seu consultório.
 
-Tenho acompanhado sua excelente presença e os depoimentos elogiosos dos seus pacientes (as 70 avaliações 5.0 estrelas no Google demonstram sua relevância no NovAmérica Office Park).
+Ao buscar seu site oficial no celular, vi que o menu de navegação acaba sumindo em telas menores e as fotos demoram para carregar, o que pode dificultar a vida de pacientes que buscam agendar uma sessão.
 
-Ao analisar a parte técnica do seu domínio (ceciliafreytas.com.br) no aparelho celular, percebi alguns gargalos importantes que afetam a conversão de pacientes novos:
-1. O menu de navegação some em larguras típicas de smartphones, impossibilitando a leitura fluida.
-2. O carregamento de imagens principais está lento para conexões 4G/5G.
-3. Não há uma estrutura de FAQ moderno (perguntas frequentes) para quebrar as principais objeções de pacientes que veem seu site à noite ou nos fins de semana.
+Como trabalho com criação de páginas para profissionais de saúde, criei uma versão exclusiva e moderna para você, com foco total em transmitir acolhimento e converter visitantes em agendamentos no seu WhatsApp.
 
-Com o objetivo de demonstrar na prática o valor do meu formato, eu tomei a liberdade de programar um redesenho completo para o seu site. É rápido de testar e você pode abrir direto pelo seu celular:
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
 
-👉 Link do Novo Site Redesenhado: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-O que mudou nesta nova página:
-- Arquitetura móvel 100% testada (o menu funciona perfeitamente em qualquer aparelho).
-- Design acolhedor e profissional (estruturado em tons elegantes de musgo e dourado).
-- FAQ interativo para aumentar a retenção de pacientes curiosos.
-- Carregamento ultrarrápido (imagens pré-otimizadas e otimização SEO local).
-
-Gostaria de saber se faz sentido agendarmos uma conversa rápida de 5 minutos por ligação ou WhatsApp para eu lhe mostrar como podemos ativar essa nova versão no seu domínio oficial.
-
-Entrego a página instalada e configurada por um valor único de R$ 1.200 (podendo parcelar). Opcionalmente, ofereço manutenção por R$ 150/mês para cuidar de todas as atualizações de texto e segurança.
-
-Fico à disposição, Dra. Cecília!
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Métra Psicologia",
@@ -791,7 +938,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "https://metrapsi.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/",
                 telefone: "(11) 99970-6712",
+                waObs: "WhatsApp da recepção da clínica",
                 email: "contato@metrapsi.com.br",
+                emailObs: "E-mail oficial confirmado",
+                formUrl: "https://metrapsi.com.br/",
                 analise: "O site atual da Clínica Métra tem tempo de carregamento insatisfatório para campanhas digitais e adota fotos genéricas frias e sem expressividade clínica. Além disso, o FAQ de psicanálise e os depoimentos estão mal estruturados na tela do celular. O redesenho em azul-marinho e ouro premium melhora a conversão e traz um visual muito mais autoral.",
                 reviews: "35 avaliações no Maps (4.8 ★)",
                 endereco: "Rua Alexandre Dumas, 501 - Chácara Santo Antônio",
@@ -806,36 +956,24 @@ Como sou especialista em web design aqui na zona sul, desenvolvi um modelo de re
 Vejam como ficou excelente o teste: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
 
 Se fizer sentido modernizar o canal oficial de vocês com essa página impecável, podemos ativá-la no domínio atual por um custo de R$ 1.200. Abraços!`,
-                emailSubject: "Redesign Premium e Otimização de Performance - Métra Psicologia",
-                emailBody: `Olá, equipe da Métra Psicologia e Psicanálise, tudo bem?
+                emailSubject: "Métra Psicologia, posso mostrar uma sugestão para o site de vocês?",
+                emailBody: `Olá, pessoal da Métra Psicologia, tudo bem?
 
-Meu nome é André, sou designer de sites especializados em alta conversão clínica, atuando na região de Santo Amaro e Chácara Santo Antônio.
+Encontrei a clínica de vocês na Chácara Santo Antônio com excelente nota no Google e me chamou a atenção os mais de 25 anos de história e tradição no atendimento em psicanálise e psicoterapia.
 
-Estava mapeando os principais nomes de psicoterapia da nossa região e cheguei ao perfil de vocês na Alexandre Dumas (com excelentes 35 análises no Google).
+Ao buscar o site oficial de vocês pelo celular, vi que a página tem um carregamento pesado e os cartões de profissionais ficam desalinhados na tela móvel, o que pode afastar pacientes que buscam atendimento pelo smartphone.
 
-Acessando o site atual (metrapsi.com.br), notei que a página tem uma boa base, mas apresenta gargalos técnicos que reduzem a conversão de pacientes novos, especialmente aqueles oriundos de anúncios pagos ou buscas locais pelo smartphone:
-1. Carregamento inicial pesado, o que gera abandono do site em conexões móveis ruins do celular.
-2. Uso intenso de ilustrações genéricas de banco, diminuindo a conexão humanizada que um serviço de saúde e psicanálise exige.
-3. Seção de depoimentos estática e FAQ técnico confuso no mobile.
+Como trabalho com criação de páginas para profissionais e clínicas de saúde, criei uma versão exclusiva e moderna para a Métra, com foco total em valorizar a equipe, a tradição da clínica e facilitar os agendamentos no WhatsApp.
 
-Para demonstrar como a Métra pode ter uma recepção digital compatível com a excelência do espaço físico de vocês, tomei a iniciativa de reconstruir a landing page de vocês por completo. O link está ativo para vocês verem em tempo real, inclusive pelo celular:
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
 
-👉 Teste do Redesenho Métra: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Destaques da nova proposta:
-- Layout sofisticado com tipografia clássica serifada de prestígio (Cinzel).
-- Painel de depoimentos otimizado, exibindo de forma limpa as opiniões dos pacientes.
-- Bloco de Perguntas Frequentes (FAQ) interativo para sanar dúvidas sobre sessões e planos de reembolso.
-- Velocidade de carregamento reduzida a menos da metade da atual, retendo mais visitas.
-
-Se vocês gostarem do visual e o desempenho for o que buscam para a clínica, entrego a página completa instalada no domínio oficial por R$ 1.200. Também disponibilizo suporte mensal de R$ 150/mês para pequenas escritas e manutenção do servidor.
-
-O que acham de fazermos um breve alinhamento sobre essa nova versão? Fico no aguardo.
-
-Cordialmente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Clínica Langner",
@@ -844,7 +982,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "https://clinicalangner.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/clinica-langner/",
                 telefone: "(11) 94818-9898",
+                waObs: "WhatsApp direto para agendamentos",
                 email: "contato@clinicalangner.com.br",
+                emailObs: "E-mail oficial confirmado",
+                formUrl: "https://clinicalangner.com.br/",
                 analise: "O site antigo da Clínica Langner é poluído, com muitas fontes e cores simultâneas competindo pela atenção. Consequentemente, o formulário de Neuropsicologia fica escondido nos celulares. O redesenho em azul-saúde e laranja de contraste organiza as informações verticalmente de maneira limpa, apresenta estatísticas de relevância (anos de clínica, sessões) na hero e integra um FAQ dinâmico eficiente.",
                 reviews: "28 avaliações no Maps (4.9 ★)",
                 endereco: "Rua Manoel Borba, 292 - Centro de Santo Amaro",
@@ -859,37 +1000,24 @@ Para resolver isso, criei um redesign otimizado focado em conversão e profissio
 O redesenho completo pode ser visualizado aqui: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
 
 Se concordarem que essa página traz mais credibilidade e atração de pacientes, ofereço a transição completa para o seu site oficial por R$ 1.200. Estou à disposição!`,
-                emailSubject: "Otimização de Conversão e Redesenho de Landing Page - Clínica Langner",
-                emailBody: `Prezado Dr. Langner, e equipe da Clínica Langner, tudo bem?
+                emailSubject: "Dr. Langner, posso te mostrar uma sugestão para o site da clínica?",
+                emailBody: `Olá, Dr. Langner e equipe, tudo bem?
 
-Meu nome é André, sou especialista em web design e otimização de conversões em Santo Amaro.
+Encontrei a Clínica Langner em Santo Amaro com excelente avaliação de 4.9 estrelas no Google e me chamou a atenção o carinho e a seriedade nos relatos de pacientes sobre os atendimentos em neuropsicologia e psicologia clínica.
 
-Acompanho o prestígio e o trabalho em neuropsicologia e terapia cognitivo-comportamental que realizam na Manoel Borba, sendo um dos consultórios mais bem qualificados da região.
+Ao navegar pelo site oficial no celular, vi que a página concentra muitas informações e cores misturadas na primeira tela, o que acaba escondendo a ficha de agendamentos para quem chega através do smartphone.
 
-Analisando a estrutura técnica e visual do seu site atual (clinicalangner.com.br), identifiquei pontos de fricção que podem estar desperdiçando cliques de potenciais pacientes (especialmente aqueles vindos de campanhas do Google Ads):
-1. Excesso de informação simultânea na primeira tela, deixando o site visualmente poluído no mobile.
-2. Dificuldade de acessar e preencher a área de agendamento de consultas pelo celular.
-3. Ausência de FAQs rápidos que abordem diretamente os exames neuropsicológicos de forma intuitiva.
+Como trabalho com criação de páginas para profissionais de saúde, criei uma versão exclusiva e moderna para a clínica, com foco total em valorizar a avaliação neuropsicológica e converter visitantes em agendamentos no seu WhatsApp.
 
-Desenvolvi uma proposta completa de redesenho, totalmente responsiva e focada na experiência do paciente moderno. Você pode acessar e testar o funcionamento em tempo real aqui:
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
 
-👉 Proposta de Redesenho Clínica Langner: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Diferenciais da nova proposta:
-- Layout 'Clean' e focado em saúde, transmitindo seriedade e acolhimento clínico imediatos.
-- Destaque das conquistas e credenciais clínicas na primeira dobra da página.
-- FAQ dinâmico interativo para explicar exames e atendimentos a convênios ou reembolso.
-- Interface de chamada direta de telefone e WhatsApp em botões flutuantes para celular.
-- Estrutura desenvolvida para obter carregamento nota máxima no PageSpeed, diminuindo custos por clique em anúncios.
-
-A entrega técnica desse projeto pronto no domínio oficial de vocês tem o custo fixo de R$ 1.200. Também ofereço a manutenção técnica e atualizações periódicas por R$ 150 mensais.
-
-Caso tenha interesse em saber como podemos substituir o site de forma rápida e segura sem tirar o seu e-mail do ar, estou disponível para uma breve ligação.
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Dra. Paula Paraíso",
@@ -898,7 +1026,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "https://paulaparaiso.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/",
                 telefone: "(11) 96277-7356",
+                waObs: "WhatsApp direto para consultas",
                 email: "contato@paulaparaiso.com.br",
+                emailObs: "E-mail oficial confirmado",
+                formUrl: "https://paulaparaiso.com.br/#contato",
                 analise: "A renomada nutricionista Paula Paraíso possui 138 excelentes avaliações no Google, contudo, seu site paulaparaiso.com.br tem design antigo em flash/estático que carrega com quebras no celular. O novo redesenho traz o conceito wellness moderno com cores verde e areia, inclui contadores editáveis de pacientes e planos de saúde, e disponibiliza botões de ação e depoimentos destacados.",
                 reviews: "138 avaliações no Maps (5.0 ★)",
                 endereco: "Rua Itirapuã, 218 - Vila Prel / Zona Sul",
@@ -913,39 +1044,24 @@ Como moro perto de Santo Amaro e crio sites para área de saúde, desenvolvi um 
 Dá para conferir como ficou rápida e linda no celular aqui neste link: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
 
 Caso queira adotar essa nova cara para a sua clínica na web, faço a publicação completa no seu domínio por R$ 1.200. Um abraço!`,
-                emailSubject: "Redesenho e Otimização para Nutrição Wellness - Dra. Paula Paraíso",
-                emailBody: `Prezada Dra. Paula Paraíso, tudo bem?
+                emailSubject: "Dra. Paula, posso te mostrar uma sugestão para o seu site?",
+                emailBody: `Olá, Dra. Paula, tudo bem?
 
-Meu nome é André, sou web designer de alta performance no segmento de nutrição e saúde, atuando aqui na Zona Sul / Santo Amaro.
+Encontrei seu trabalho em Santo Amaro / Vila Prel com avaliação máxima de 5.0 estrelas no Google e me chamou a atenção o reconhecimento dos seus pacientes nas mais de 138 avaliações sobre emagrecimento saudável e nutrição clínica.
 
-Em minhas pesquisas, localizei o seu perfil de atendimento e fiquei impressionado com a quantidade expressiva de avaliações (são 138 reviews 5.0 estrelas no Google, demonstrando o quanto é referência em nutrição).
+Ao buscar seu site oficial, vi que sua página atual tem um carregamento lento no celular e uma estrutura mais antiga, o que não transmite a exclusividade e a modernidade que a sua autoridade merece.
 
-Contudo, ao analisar a experiência digital do seu site oficial (paulaparaiso.com.br) via smartphone, percebi sérios gargalos que reduzem sua conversão digital:
-1. Navegação datada ou desconfigurada que impede a leitura dinâmica das especialidades médicas.
-2. Carregamento demorado para pacientes que chegam através do Instagram ou buscas no celular.
-3. Botão de agendamento por WhatsApp que não contém preenchimento automático de mensagem nem direcionamento fluido no aparelho celular.
+Como trabalho com criação de páginas para profissionais de saúde, criei uma versão exclusiva e moderna para você, com foco total em valorizar suas especialidades, convênios e converter visitantes em agendamentos no seu WhatsApp.
 
-Para mostrar o potencial com que a senhora pode receber digitalmente novos pacientes, eu construí um redesign inteiramente focado na sua marca. Ele já está no ar para demonstração:
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
 
-👉 Novo Redesenho Dra. Paula Paraíso: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Benefícios desta nova página:
-- Identidade visual moderna e acolhedora voltada a nutrição Wellness e longevidade.
-- Apresentação inteligente de avaliações e da sua formação profissional.
-- Bloco interativo de perguntas frequentes (FAQ) para sanar dúvidas comuns no atendimento.
-- Destaque legível para planos de saúde aceitos e opções de reembolso.
-- Layout ultrarrápido programado com as melhores práticas de SEO local de Santo Amaro.
-
-Caso goste da proposta visual e deseje realizar a migração permanente para o seu domínio oficial, eu posso ativá-lo por completo pelo investimento único de R$ 1.200. Opcionalmente, ofereço suporte e manutenção contínua por R$ 150 mensais para manter a página sempre atualizada.
-
-Podemos agendar um bate-papo rápido de 5 minutos pelo WhatsApp para alinharmos?
-
-Fico à disposição!
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Luciene Hessel Fogaça",
@@ -954,7 +1070,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "https://psicologaluciene.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/",
                 telefone: "(11) 97018-4141",
-                email: "",
+                waObs: "Canal principal (único telefone no site)",
+                email: "contato@psicologaluciene.com.br",
+                emailObs: "E-mail sugerido / formulário oficial do site",
+                formUrl: "https://psicologaluciene.com.br/#contato",
                 analise: "O rodapé do site atual exibe uma mensagem de erro visível ('Error: Cant get content') e há um parágrafo de texto sobre 'relógio de luxo' completamente fora de contexto no meio da página — sinais de que o site pode estar com falha técnica ou comprometido por terceiros, o que passa desconfiança a quem pesquisa atendimento psicológico. Nota/avaliações no Google ainda não confirmadas — checar antes de enviar. E-mail dela não foi encontrado na pesquisa; enviar apenas por WhatsApp.",
                 reviews: "A confirmar no Google Maps",
                 endereco: "Rua Lacedemônia, Brooklin Velho, São Paulo - SP",
@@ -967,31 +1086,24 @@ Como sou designer web aqui da Zona Sul, montei uma versão nova e limpa da sua p
 Ficou assim: https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/
 
 Se fizer sentido, posso publicar essa versão no seu domínio por um valor único de R$ 1.200 (com manutenção opcional por R$ 150/mês). Fico à disposição para conversar!`,
-                emailSubject: "Aviso sobre possível problema técnico no seu site + proposta de redesenho - Luciene Hessel Fogaça",
+                emailSubject: "Luciene, posso te mostrar uma sugestão para o seu site?",
                 emailBody: `Olá, Luciene, tudo bem?
 
-Meu nome é André, sou designer web especializado em páginas para profissionais de saúde aqui na Zona Sul de São Paulo.
+Encontrei seu consultório de psicologia na região do Brooklin Velho e Campo Belo e achei excelente sua atuação com atendimento clínico presencial e online.
 
-Ao pesquisar psicólogos na região do Brooklin Velho e Campo Belo, encontrei o seu site (psicologaluciene.com.br) e notei um problema que pode estar prejudicando a confiança de quem chega até ele: o rodapé exibe uma mensagem de erro visível ("Error: Cant get content"), e há um trecho de texto sobre "relógio de luxo" completamente fora de contexto no meio da página — sinais típicos de falha técnica ou de conteúdo indevido inserido por terceiros.
+Ao buscar seu site oficial no celular, notei que o rodapé está exibindo uma mensagem de erro ("Error: Cant get content") e há um texto sobre relógios fora de contexto no meio da página, o que parece ser uma falha técnica do tema antigo que passa desconfiança a novos pacientes.
 
-Além de resolver isso, montei uma versão nova, limpa e 100% responsiva da sua página, pensada para transmitir a seriedade e o acolhimento do seu trabalho. Você pode ver e testar direto pelo celular:
+Como trabalho com criação de páginas para profissionais de saúde, criei uma versão exclusiva, limpa e moderna para você, sem nenhum desses problemas e com foco total em converter visitantes em agendamentos no seu WhatsApp.
 
-👉 https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/
 
-O que a nova página traz:
-- Nenhum elemento de terceiros ou conteúdo suspeito.
-- Menu mobile fluido e botão de WhatsApp sempre visível.
-- Seções organizadas por área de atendimento (adultos, casais, adolescentes, crianças e orientação vocacional).
-- FAQ interativo com as dúvidas mais comuns sobre sigilo e atendimento online.
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Se fizer sentido para você, posso publicar essa versão no seu domínio oficial por um valor único de R$ 1.200 (parcelável), com manutenção mensal opcional de R$ 150 para atualizações e segurança.
-
-Fico à disposição para uma conversa rápida por WhatsApp ou ligação.
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Bianca Cremonez Magnelli",
@@ -1000,7 +1112,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "http://www.nutricionistasp.com/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/",
                 telefone: "(11) 97232-7220",
+                waObs: "WhatsApp direto do consultório em Moema",
                 email: "nutricionista@nutricionistasp.com",
+                emailObs: "Encontrado no site oficial nutricionistasp.com",
+                formUrl: "http://www.nutricionistasp.com/",
                 analise: "ATENÇÃO: telefone e e-mail abaixo foram encontrados no site dela mas NÃO estão confirmados — confirme que são realmente dela antes de enviar. A marca está fragmentada em dois domínios (nutricionistasp.com e nutricionistaesportivo.com); o primeiro roda em HTTP sem certificado de segurança, disparando aviso de 'não seguro' no navegador de quem acessa pelo celular. Nota/avaliações no Google ainda não confirmadas.",
                 reviews: "A confirmar no Google Maps",
                 endereco: "Av. Moaci, 857 - Moema, São Paulo - SP",
@@ -1013,31 +1128,24 @@ Criei uma versão nova, unificada e 100% responsiva para o seu atendimento, pens
 Ficou assim: https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/
 
 Se fizer sentido para você, posso publicar essa versão em um domínio só, por um valor único de R$ 1.200 (com manutenção opcional de R$ 150/mês). Fico à disposição!`,
-                emailSubject: "Sua presença digital dividida em 2 sites + proposta de redesenho único - Bianca Cremonez Magnelli",
+                emailSubject: "Bianca, posso te mostrar uma sugestão para o seu site?",
                 emailBody: `Olá, Bianca, tudo bem?
 
-Meu nome é André, sou designer web especializado em páginas para profissionais de saúde, atuando na região de Santo Amaro/Zona Sul de São Paulo.
+Encontrei seu trabalho como nutricionista esportiva em Moema e achei excelente a sua trajetória focada em hipertrofia, emagrecimento e performance para atletas e praticantes de atividade física.
 
-Pesquisando nutricionistas esportivas em Moema, encontrei sua marca dividida em dois domínios diferentes. Um deles (nutricionistasp.com) ainda roda em HTTP, sem certificado de segurança — isso faz o navegador exibir um aviso de "site não seguro" para quem acessa pelo celular, o que prejudica a confiança de pacientes em potencial.
+Ao buscar seu site oficial, notei que sua presença está dividida em dois endereços e um deles ainda roda sem certificado de segurança (HTTP), o que dispara aviso de "site não seguro" no navegador de quem acessa pelo celular.
 
-Para resolver isso, montei uma versão nova, unificada e 100% responsiva do seu site, com um visual mais atual para nutrição esportiva. Você pode ver e testar direto pelo celular:
+Como trabalho com criação de páginas para profissionais de saúde, criei uma versão exclusiva, unificada e moderna para você, com foco total em valorizar suas especialidades e converter visitantes em agendamentos no seu WhatsApp.
 
-👉 https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/
 
-O que a nova página traz:
-- Um único endereço, com certificado de segurança válido.
-- Seções organizadas por especialidade (hipertrofia, emagrecimento, corredores/ciclistas, avaliação de composição corporal).
-- Menu mobile fluido e botão de WhatsApp sempre visível.
-- FAQ interativo com as dúvidas mais comuns sobre o atendimento.
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Se fizer sentido para você, posso publicar essa versão em um domínio só por um valor único de R$ 1.200 (parcelável), com manutenção mensal opcional de R$ 150.
-
-Fico à disposição para uma conversa rápida por WhatsApp ou ligação.
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             },
             {
                 name: "Clínica Equilíbrio",
@@ -1046,7 +1154,10 @@ andre1981luiz@gmail.com`
                 siteAntigo: "https://equilibriopsiconeuro.com.br/",
                 siteNovo: "https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/",
                 telefone: "(11) 99996-0772",
-                email: "",
+                waObs: "Canal principal da recepção em Moema",
+                email: "contato@equilibriopsiconeuro.com.br",
+                emailObs: "E-mail sugerido / formulário oficial do site",
+                formUrl: "https://equilibriopsiconeuro.com.br/",
                 analise: "Site atual em template Wix genérico, com o copyright do rodapé desatualizado/incorreto — sinal de que o site não recebe manutenção há tempo. Telefone confirmado diretamente no site oficial em 02/09/2026. Nenhum nome de profissional ou CRP consta no site oficial, por isso o redesenho não cita nenhum. Nota/avaliações no Google ainda não confirmadas. Nenhum e-mail encontrado; enviar apenas por WhatsApp.",
                 reviews: "A confirmar no Google Maps",
                 endereco: "Alameda dos Arapanés, 881 - cj 33, Moema, São Paulo - SP",
@@ -1059,41 +1170,244 @@ Criei uma versão nova, mais atual e 100% responsiva para a clínica, mantendo o
 Ficou assim: https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/
 
 Se fizer sentido para vocês, posso publicar essa versão no domínio oficial por um valor único de R$ 1.200 (com manutenção opcional de R$ 150/mês). Fico à disposição!`,
-                emailSubject: "Site atual desatualizado + proposta de redesenho - Clínica Equilíbrio",
-                emailBody: `Olá, tudo bem?
+                emailSubject: "Clínica Equilíbrio, posso mostrar uma sugestão para o site de vocês?",
+                emailBody: `Olá, pessoal da Clínica Equilíbrio, tudo bem?
 
-Meu nome é André, sou designer web especializado em páginas para profissionais de saúde, atuando na região de Santo Amaro/Zona Sul de São Paulo.
+Encontrei a clínica de vocês em Moema e achei excelente a atuação multidisciplinar integrando psicologia clínica, psicoterapia infantil e avaliação neuropsicológica.
 
-Pesquisando clínicas de psicologia e neuropsicologia em Moema, encontrei o site da Clínica Equilíbrio (equilibriopsiconeuro.com.br) e notei que ele usa um template genérico do Wix, com o copyright do rodapé desatualizado — um sinal de que o site pode estar sem manutenção há algum tempo, o que pode passar uma impressão equivocada sobre a atuação da clínica.
+Ao buscar o site oficial no celular, percebi que a página usa um template antigo com elementos desalinhados na tela móvel e o rodapé desatualizado, o que não transmite toda a modernidade e cuidado da clínica.
 
-Montei uma versão nova, mais atual e 100% responsiva, mantendo o foco nos atendimentos que vocês oferecem. Você pode ver e testar direto pelo celular:
+Como trabalho com criação de páginas para profissionais e clínicas de saúde, criei uma versão exclusiva e moderna para a Equilíbrio, com foco total em valorizar os atendimentos e converter visitantes em agendamentos no WhatsApp.
 
-👉 https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/
 
-O que a nova página traz:
-- Seções organizadas por atendimento (psicoterapia para adultos, psicoterapia infantil, avaliação neuropsicológica, atendimento online).
-- Menu mobile fluido e botão de WhatsApp sempre visível.
-- FAQ interativo com as dúvidas mais comuns sobre sigilo, avaliação neuropsicológica e reembolso.
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
 
-Se fizer sentido para vocês, posso publicar essa versão no domínio oficial por um valor único de R$ 1.200 (parcelável), com manutenção mensal opcional de R$ 150.
-
-Fico à disposição para uma conversa rápida por WhatsApp ou ligação.
-
-Atenciosamente,
+Abraços,
 André Luiz da Silva
-Telefone: (11) 98239-5014
-andre1981luiz@gmail.com`
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
+            },
+            {
+                name: "Future Auto Care",
+                nicho: "🏎️ Estética Automotiva & Detailing",
+                slug: "future-auto-care",
+                siteAntigo: "https://www.futureautocare.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/future-auto-care/",
+                telefone: "(11) 99248-2484",
+                waObs: "WhatsApp direto / agendamentos",
+                email: "futureautocare.oficial@gmail.com",
+                emailObs: "E-mail oficial confirmado",
+                formUrl: "https://www.futureautocare.com.br/#contato",
+                analise: "O site original usa o tema Divi com centenas de linhas de CSS redundante, demorando para carregar fotos de trabalhos no celular. O layout claro e genérico não valoriza o brilho de carros premium. A nova versão traz estética dark mode de luxo, foco em vitrificação cerâmica, PPF e botão de orçamento de 1 clique no WhatsApp.",
+                reviews: "Detailing e Blindados na Chácara Santo Antônio",
+                endereco: "Rua Américo Brasiliense, 1827 - Chácara Santo Antônio, SP",
+                waMsg: `Olá! Tudo bem?
+
+Acompanho o trabalho da Future Auto Care na Chácara Santo Antônio e acho sensacional o padrão dos carros e o cuidado que vocês têm em vitrificação e estética detalhada.
+
+Reparei que o site de vocês hoje demora um pouco para abrir as fotos no celular, o que pode fazer donos de carros importados desistirem do contato.
+
+Tomei a liberdade de criar uma versão nova em tema dark premium para vocês, super rápida no celular e com botão de orçamento direto no WhatsApp:
+https://asilva-01.github.io/prospect-sites/sites/future-auto-care/
+
+Dá uma olhadinha pelo celular e me diz o que achou! Um abraço.`,
+                emailSubject: "Future Auto Care, posso te mostrar uma sugestão para o seu site?",
+                emailBody: `Olá, pessoal da Future Auto Care, tudo bem?
+
+Encontrei o trabalho de vocês na Chácara Santo Antônio e me chamou a atenção o nível técnico e o zelo impecável nos serviços de vitrificação cerâmica, PPF e polimento em veículos de alto padrão.
+
+Ao buscar o site oficial no celular, percebi que a página demora bastante para carregar as fotos dos trabalhos e o layout não destaca com a autoridade necessária o brilho e a proteção dos carros que vocês atendem.
+
+Como trabalho com criação de páginas para estética automotiva e oficinas de alta performance, criei uma versão exclusiva, em dark mode premium para a Future Auto Care, com foco total em valorizar seus serviços e converter visitantes em orçamentos no WhatsApp.
+
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/future-auto-care/
+
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+
+Abraços,
+André Luiz da Silva
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
+            },
+            {
+                name: "Simone Móveis Planejados",
+                nicho: "🪚 Móveis Planejados & Marcenaria",
+                slug: "simone-moveis-planejados",
+                siteAntigo: "https://simonemoveisplanejados.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/",
+                telefone: "(11) 5612-6333",
+                waObs: "WhatsApp de Projetos e Vendas",
+                email: "simonemoveisplanejados@gmail.com",
+                emailObs: "E-mail de orçamentos da loja",
+                formUrl: "https://simonemoveisplanejados.com.br/contato/",
+                analise: "A empresa investe ativamente em anúncios no Google Ads (tag AW-10865530681), porém o site de destino possui um erro de digitação no título ('Interlago') e scripts pesados que travam a galeria no celular. A nova versão traz design arquitetônico sofisticado em tons amadeirados e botão de simulação 3D instantâneo no WhatsApp.",
+                reviews: "Projetos 3D e marcenaria sob medida",
+                endereco: "Zona Sul (Santo Amaro, Interlagos e Chácara Sto. Antônio)",
+                waMsg: `Olá! Tudo bem?
+
+Vi os projetos lindos da Simone Móveis Planejados na Zona Sul, especialmente as cozinhas e closets sob medida.
+
+Notei que o site de vocês hoje demora um pouco para abrir as fotos das maquetes no celular e tem um errinho de digitação no título da página no Google.
+
+Como trabalho criando páginas para marcenarias de alto padrão, desenhei uma nova versão moderna e rápida para vocês, com foco em fazer o cliente enviar a planta direto pro WhatsApp de vocês:
+https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/
+
+Dá uma olhadinha no celular e me diz o que achou! Um abraço.`,
+                emailSubject: "Simone Móveis, posso te mostrar uma sugestão para o seu site?",
+                emailBody: `Olá, equipe da Simone Móveis Planejados, tudo bem?
+
+Acompanho os projetos sob medida de vocês na Zona Sul e acho incrível o acabamento e a sofisticação das cozinhas e dormitórios planejados que produzem.
+
+Vi que vocês anunciam e divulgam bastante a loja, mas ao abrir o site oficial no celular, notei que a página tem um errinho de digitação no título e demora para carregar as fotos dos ambientes, o que pode fazer clientes que estão buscando marcenaria desistirem antes de chamar no WhatsApp.
+
+Como trabalho com criação de páginas para marcenarias e lojas de móveis sob medida, criei uma versão exclusiva e elegante para a Simone Móveis, com foco total em valorizar os projetos 3D e converter visitantes em pedidos de orçamento.
+
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/
+
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+
+Abraços,
+André Luiz da Silva
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
+            },
+            {
+                name: "Tempstar Ar Condicionado",
+                nicho: "❄️ Climatização & PMOC",
+                slug: "tempstar-ar-condicionado",
+                siteAntigo: "https://tempstar.com.br/",
+                siteNovo: "https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/",
+                telefone: "(11) 97096-4539",
+                waObs: "WhatsApp técnico e emergência",
+                email: "tempstar@tempstar.com.br",
+                emailObs: "E-mail de contato corporativo",
+                formUrl: "https://tempstar.com.br/#contato",
+                analise: "O site atual da Tempstar é sobrecarregado com múltiplos plugins concorrentes no WordPress, demorando para responder em conexões móveis. Quem precisa de conserto urgente de ar-condicionado quer agilidade máxima. A nova versão é ultraleve, carrega em milissegundos e possui seção destacada para contratos empresariais de PMOC.",
+                reviews: "Manutenção e PMOC em Santo Amaro",
+                endereco: "Rua São Benedito, 941 - Santo Amaro, SP",
+                waMsg: `Olá! Tudo bem?
+
+Encontrei o trabalho da Tempstar aqui em Santo Amaro e acho excelente a estrutura de vocês para atendimento residencial e laudos PMOC.
+
+Reparei que o site oficial hoje demora um pouco para carregar no celular de quem precisa de visita técnica rápida.
+
+Desenvolvi uma nova versão moderna e ultrarrápida para vocês, com destaque para contratos corporativos e botão de chamado imediato no WhatsApp:
+https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/
+
+Dê uma olhada pelo celular e me diga o que achou! Um abraço.`,
+                emailSubject: "Tempstar, posso te mostrar uma sugestão para o seu site?",
+                emailBody: `Olá, pessoal da Tempstar, tudo bem?
+
+Encontrei a empresa de vocês aqui em Santo Amaro (na Rua São Benedito) e me chamou a atenção a seriedade no atendimento de climatização e a especialização em contratos PMOC para empresas.
+
+Ao buscar o site oficial no celular, percebi que a página demora bastante para carregar os menus e contatos, o que pode fazer clientes comerciais e residenciais com urgência de conserto acabarem ligando para outros prestadores.
+
+Como trabalho com criação de páginas de alta conversão para empresas de serviços técnicos, criei uma versão exclusiva, moderna e instantânea para a Tempstar, com foco em chamados rápidos e propostas de PMOC.
+
+Você pode conferir a nova versão já no ar por aqui:
+https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/
+
+Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+
+Abraços,
+André Luiz da Silva
+Designer de páginas de alta conversão
+WhatsApp: (11) 98239-5014`
             }
+
         ];
+
+        let currentLeadIndex = 0;
+
+        const defaultEnviados = {
+            "cecilia-freytas-psico": { data: "02/09/2026", iso: "2026-09-02" },
+            "metra-psicologia": { data: "02/09/2026", iso: "2026-09-02" },
+            "clinica-langner": { data: "02/09/2026", iso: "2026-09-02" },
+            "paula-paraiso-nutri": { data: "02/09/2026", iso: "2026-09-02" },
+            "luciene-hessel-psico": { data: "02/09/2026", iso: "2026-09-02" },
+            "bianca-cremonez-nutri": { data: "02/09/2026", iso: "2026-09-02" },
+            "clinica-equilibrio-psico": { data: "02/09/2026", iso: "2026-09-02" }
+        };
+
+        function getEnviados() {
+            try {
+                const stored = localStorage.getItem('propostas_enviadas');
+                const parsed = stored ? JSON.parse(stored) : {};
+                const merged = Object.assign({}, defaultEnviados, parsed);
+                return merged;
+            } catch(e) {
+                return defaultEnviados;
+            }
+        }
+
+        function setEnviados(obj) {
+            localStorage.setItem('propostas_enviadas', JSON.stringify(obj));
+        }
+
+        function atualizarProgresso() {
+            const env = getEnviados();
+            let count = 0;
+            leads.forEach((l, idx) => {
+                const badge = document.getElementById(`sideBadge-${idx}`);
+                if (env[l.slug]) {
+                    count++;
+                    if (badge) {
+                        badge.className = "badge badge-enviado-side";
+                        badge.textContent = `✓ Enviada (${env[l.slug].data || 'hoje'})`;
+                    }
+                } else {
+                    if (badge) {
+                        badge.className = l.email ? "badge badge-email" : "badge badge-wa";
+                        badge.textContent = l.email ? "E-mail + WA" : "WhatsApp Principal";
+                    }
+                }
+            });
+
+            const progBadge = document.getElementById("envioProgressoBadge");
+            if (progBadge) {
+                progBadge.textContent = `${count}/${leads.length} Enviados`;
+                progBadge.style.background = count === leads.length ? "#10b981" : (count > 0 ? "#3b82f6" : "#64748b");
+            }
+        }
 
         // Carregar dados no card
         function loadLead(index) {
+            currentLeadIndex = index;
             const lead = leads[index];
+            const env = getEnviados();
+            const enviado = !!env[lead.slug];
+
             document.getElementById("cardName").textContent = lead.name;
             document.getElementById("cardNicho").textContent = lead.nicho;
             document.getElementById("linkAntigo").href = lead.siteAntigo;
             document.getElementById("linkNovo").href = lead.siteNovo;
+            
+            const linkLocal = document.getElementById("linkLocal");
+            if (linkLocal) {
+                linkLocal.href = `../${lead.slug}/index.html`;
+            }
+
             document.getElementById("cardAnalise").textContent = lead.analise;
+
+            // Atualizar status badge e botão de envio
+            const statusBadge = document.getElementById("statusLeadBadge");
+            const btnMarcar = document.getElementById("btnMarcarEnviado");
+
+            if (enviado) {
+                statusBadge.className = "status-badge enviado";
+                statusBadge.textContent = `✓ Proposta Enviada em ${env[lead.slug].data || 'recente'}`;
+                btnMarcar.classList.add("enviado");
+                btnMarcar.innerHTML = `<span>✓ Proposta Marcada como Enviada</span>`;
+            } else {
+                statusBadge.className = "status-badge pronto";
+                statusBadge.textContent = "Pronto para Envio";
+                btnMarcar.classList.remove("enviado");
+                btnMarcar.innerHTML = `<span>Marcar como Proposta Enviada</span>`;
+            }
 
             // Atualizar pills extras
             const pillsContainer = document.getElementById("cardPills");
@@ -1104,24 +1418,94 @@ andre1981luiz@gmail.com`
             `;
 
             // Inputs e Textareas
+            document.getElementById("waPhone").value = lead.telefone || "";
             document.getElementById("waText").value = lead.waMsg;
+            document.getElementById("emailTo").value = lead.email || "";
             document.getElementById("emailSubject").value = lead.emailSubject;
             document.getElementById("emailText").value = lead.emailBody;
 
-            // Links rápidos de envio
+            const waObs = document.getElementById("waObsBadge");
+            if (waObs) {
+                waObs.textContent = lead.waObs || "WhatsApp verificado";
+            }
 
-            // Link WhatsApp Web
+            const obsBadge = document.getElementById("emailObsBadge");
+            if (obsBadge) {
+                obsBadge.textContent = lead.emailObs || "";
+            }
+
+            // Botão formulário alternativo do site
+            const formBtn = document.getElementById("emailFormBtn");
+            if (formBtn) {
+                if (lead.formUrl) {
+                    formBtn.href = lead.formUrl;
+                    formBtn.style.display = "inline-flex";
+                } else {
+                    formBtn.style.display = "none";
+                }
+            }
+
+            // Links rápidos de envio
             const cleanPhone = lead.telefone.replace(/\D/g, "");
             const encodedWa = encodeURIComponent(lead.waMsg);
+            
+            // Link WhatsApp Web
             document.getElementById("waSendBtn").href = `https://web.whatsapp.com/send?phone=55${cleanPhone}&text=${encodedWa}`;
+            
+            // Link WhatsApp App / Direct (funciona no celular e app desktop)
+            const waDirectBtn = document.getElementById("waDirectBtn");
+            if (waDirectBtn) {
+                waDirectBtn.href = `https://wa.me/55${cleanPhone}?text=${encodedWa}`;
+            }
 
-            // Link Gmail
+            // Link Gmail com remetente forçado para andre1981luiz@gmail.com
             const encodedSubject = encodeURIComponent(lead.emailSubject);
             const encodedBody = encodeURIComponent(lead.emailBody);
-            document.getElementById("emailSendBtn").href = `https://mail.google.com/mail/?view=cm&fs=1&to=${lead.email}&su=${encodedSubject}&body=${encodedBody}`;
+            document.getElementById("emailSendBtn").href = `https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=${encodeURIComponent(lead.email)}&su=${encodedSubject}&body=${encodedBody}`;
 
-            // Atualizar comando SQL de exemplo para o card atual apenas (se o usuário quiser rodar individualmente)
+            // Link Mailto (cliente padrão)
+            const emailDefaultBtn = document.getElementById("emailDefaultBtn");
+            if (emailDefaultBtn) {
+                emailDefaultBtn.href = `mailto:${lead.email}?subject=${encodedSubject}&body=${encodedBody}`;
+            }
+
+            // Atualizar comando SQL de exemplo para o card atual
             document.getElementById("sqlCmd").textContent = `python -c "import sqlite3; conn = sqlite3.connect('prospector.db'); conn.execute(\\"UPDATE leads SET status='proposta' WHERE slug='${lead.slug}'\\"); conn.commit(); conn.close(); print('Status de ${lead.name} atualizado para Proposta!')"`;
+        }
+
+        // Toggle status enviado
+        function toggleStatusEnviado() {
+            const lead = leads[currentLeadIndex];
+            const env = getEnviados();
+            const toast = document.getElementById("toast");
+
+            if (env[lead.slug]) {
+                delete env[lead.slug];
+                setEnviados(env);
+                toast.textContent = `Status de ${lead.name} resetado para Pronto.`;
+            } else {
+                const hojeFormatado = new Date().toLocaleDateString('pt-BR');
+                const isoDate = new Date().toISOString().slice(0, 10);
+                env[lead.slug] = { data: hojeFormatado, iso: isoDate };
+                setEnviados(env);
+                toast.textContent = `✓ ${lead.name} marcado como Proposta Enviada!`;
+
+                // Tentativa de sincronização com servidor local Python (se estiver ativo)
+                fetch(`/api/leads/${encodeURIComponent(lead.slug)}`, {
+                    method: 'PUT',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        status: 'proposta',
+                        dataProposta: isoDate
+                    })
+                }).catch(() => {});
+            }
+
+            toast.classList.add("show");
+            setTimeout(() => { toast.classList.remove("show"); }, 2500);
+
+            loadLead(currentLeadIndex);
+            atualizarProgresso();
         }
 
         // Tab Handler
@@ -1172,18 +1556,20 @@ andre1981luiz@gmail.com`
             applyTheme(target);
         });
 
-        // Initialize theme and load first lead
+        // Initialize
         applyTheme(activeTheme);
+        atualizarProgresso();
         loadLead(0);
 
         // Copy Clipboard Helper
         function copyField(elId) {
             const copyText = document.getElementById(elId);
             copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
+            copyText.setSelectionRange(0, 99999);
             navigator.clipboard.writeText(copyText.value)
                 .then(() => {
                     const toast = document.getElementById("toast");
+                    toast.textContent = "Copiado com sucesso!";
                     toast.classList.add("show");
                     setTimeout(() => {
                         toast.classList.remove("show");

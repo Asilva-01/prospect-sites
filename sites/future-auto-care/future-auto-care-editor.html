@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Auto Care | Estética Automotiva & Detailing Premium — Chácara Santo Antônio, SP</title>
+    <meta name="description" content="Centro especializado em estética automotiva de alto padrão na Chácara Santo Antônio. Vitrificação cerâmica, PPF, polimento técnico e martelinho de ouro. Solicite seu orçamento via WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0B0D11;
+            --bg-card: #13161D;
+            --bg-card-hover: #1A1F29;
+            --border-color: #222733;
+            --gold: #D4AF37;
+            --gold-light: #F3E5AB;
+            --gold-glow: rgba(212, 175, 55, 0.25);
+            --text-main: #F1F3F5;
+            --text-muted: #8E95A5;
+            --accent-red: #E53E3E;
+            --whatsapp: #25D366;
+            --whatsapp-dark: #1EBE5D;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --transition: all 0.25s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Top Bar */
+        .topbar {
+            background: #060709;
+            border-bottom: 1px solid var(--border-color);
+            padding: 10px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .topbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .topbar-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .topbar-item strong {
+            color: var(--gold);
+        }
+
+        /* Header / Nav */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 13, 17, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75px;
+        }
+        .logo-area {
+            display: flex;
+            flex-direction: column;
+        }
+        .brand-name {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .brand-name span {
+            color: var(--gold);
+        }
+        .brand-sub {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-menu a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+        .nav-menu a:hover {
+            color: var(--gold);
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--gold) 0%, #B8860B 100%);
+            color: #0B0D11;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 12px 22px;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            box-shadow: 0 4px 18px var(--gold-glow);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .btn-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(212, 175, 55, 0.4);
+            filter: brightness(1.08);
+        }
+
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--whatsapp);
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 15px 28px;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            box-shadow: 0 6px 22px rgba(37, 211, 102, 0.28);
+        }
+        .btn-wa:hover {
+            background: var(--whatsapp-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 90px 0 80px;
+            background: radial-gradient(circle at 80% 30%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+                        radial-gradient(circle at 20% 70%, rgba(229, 62, 62, 0.05) 0%, transparent 50%);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .kicker {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            padding: 6px 14px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: clamp(32px, 4.5vw, 52px);
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .hero h1 em {
+            font-style: normal;
+            background: linear-gradient(135deg, #fff 40%, var(--gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            font-size: 17px;
+            color: var(--text-muted);
+            margin-bottom: 34px;
+            max-width: 560px;
+        }
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            padding: 14px 24px;
+            border: 1px solid var(--border-color);
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: var(--radius-md);
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .badges-trust {
+            display: flex;
+            gap: 28px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 24px;
+        }
+        .trust-item h4 {
+            font-size: 24px;
+            color: var(--gold);
+            font-weight: 800;
+        }
+        .trust-item span {
+            font-size: 12px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-card-preview {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .hero-card-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        .card-header-fast {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+        .tag-pulse {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #10B981;
+            font-weight: 600;
+        }
+        .dot-green {
+            width: 8px;
+            height: 8px;
+            background: #10B981;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #10B981;
+        }
+        .preview-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 26px;
+        }
+        .preview-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            color: #CBD5E1;
+        }
+        .preview-list li i {
+            color: var(--gold);
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        /* Serviços */
+        .section-padding {
+            padding: 85px 0;
+        }
+        .section-header {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 55px;
+        }
+        .section-header h2 {
+            font-size: clamp(28px, 3.5vw, 40px);
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 24px;
+        }
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.4);
+            background: var(--bg-card-hover);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+        }
+        .service-tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        .service-card h3 {
+            font-size: 21px;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 22px;
+            flex-grow: 1;
+        }
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 24px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+            color: #94A3B8;
+        }
+        .service-card ul li::before {
+            content: "✓ ";
+            color: var(--gold);
+            font-weight: bold;
+        }
+        .service-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        .service-cta:hover {
+            color: var(--gold-light);
+            gap: 10px;
+        }
+
+        /* Diferenciais / Por que escolher */
+        .diff-section {
+            background: #0E1117;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+        .diff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .diff-box {
+            padding: 26px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+        .diff-box .icon {
+            font-size: 28px;
+            margin-bottom: 14px;
+            display: inline-block;
+        }
+        .diff-box h4 {
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .diff-box p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        /* FAQ */
+        .faq-wrap {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            user-select: none;
+        }
+        .faq-question:hover {
+            color: var(--gold);
+        }
+        .faq-answer {
+            padding: 0 24px 20px;
+            font-size: 14px;
+            color: var(--text-muted);
+            display: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 14px;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+            color: var(--gold);
+        }
+        .faq-toggle {
+            font-size: 20px;
+            transition: var(--transition);
+        }
+
+        /* Localização e Contato */
+        .contact-box {
+            background: linear-gradient(135deg, var(--bg-card) 0%, #171C26 100%);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 48px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .contact-info h3 {
+            font-size: 32px;
+            color: #fff;
+            margin-bottom: 14px;
+        }
+        .contact-info p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            font-size: 15px;
+        }
+        .info-lines {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: #CBD5E1;
+        }
+        .info-row span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background: #060709;
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0 24px;
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+        .footer-note {
+            margin-bottom: 12px;
+        }
+
+        /* Float WhatsApp */
+        .float-wa {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 999;
+            background: var(--whatsapp);
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+        .float-wa:hover {
+            transform: scale(1.08);
+            background: var(--whatsapp-dark);
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .contact-box {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+            .nav-menu {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <div class="topbar-item">
+                📍 <span>Rua Américo Brasiliense, 1827 — Chácara Santo Antônio, SP</span>
+            </div>
+            <div class="topbar-item">
+                ⏰ <span>Seg a Sex: 08h às 18h | Sábado: 08h às 13h</span>
+            </div>
+            <div class="topbar-item">
+                📞 <strong>(11) 2614-3480</strong> · WhatsApp: <strong>(11) 99248-2484</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrap">
+            <div class="logo-area">
+                <div class="brand-name">Future <span>Auto Care</span></div>
+                <div class="brand-sub">Estética Automotiva & Detailing</div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
+                <li><a href="#contato">Localização</a></li>
+            </ul>
+            <a href="https://wa.me/5511992482484?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20est%C3%A9tica%20automotiva." class="btn-cta" target="_blank" rel="noopener">
+                Agendar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="kicker">
+                    ⭐ Referência em Detailing na Chácara Santo Antônio
+                </div>
+                <h1>O cuidado e proteção que o seu <em>veículo premium</em> exige.</h1>
+                <p>
+                    Mais de 15 anos de experiência técnica em vitrificação cerâmica, proteção com PPF, polimento espelhado e estética interna detalhada na Zona Sul de São Paulo.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro." class="btn-wa" target="_blank" rel="noopener">
+                        💬 Orçamento Rápido no WhatsApp
+                    </a>
+                    <a href="#servicos" class="btn-outline">
+                        Conhecer Serviços
+                    </a>
+                </div>
+                <div class="badges-trust">
+                    <div class="trust-item">
+                        <h4>+15 Anos</h4>
+                        <span>De Experiência Técnica</span>
+                    </div>
+                    <div class="trust-item">
+                        <h4>Até 3 Anos</h4>
+                        <span>De Garantia em Vitrificação</span>
+                    </div>
+                    <div class="trust-item">
+                        <h4>Zona Sul</h4>
+                        <span>Chácara Sto. Antônio / Berrini</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-card-preview">
+                <div class="card-header-fast">
+                    <h3 style="font-size: 18px; color:#fff;">Atendimento Exclusivo</h3>
+                    <div class="tag-pulse"><span class="dot-green"></span> Agenda Aberta</div>
+                </div>
+                <ul class="preview-list">
+                    <li><i>✦</i> <strong>Ambiente com Iluminação Técnica:</strong> Diagnóstico preciso de hologramas e micro-riscos na pintura.</li>
+                    <li><i>✦</i> <strong>Produtos Importados de 1ª Linha:</strong> Polidores alemães, vitrificadores cerâmicos certificados e películas de alta durabilidade.</li>
+                    <li><i>✦</i> <strong>Especialistas em Carros Blindados e Importados:</strong> Cuidados redobrados com vedações, travas e vidros especiais.</li>
+                    <li><i>✦</i> <strong>Garantia de Entrega no Prazo:</strong> Sem surpresas e com acompanhamento por fotos das etapas de aplicação.</li>
+                </ul>
+                <a href="https://wa.me/5511992482484?text=Ol%C3%A1%2C%20quero%20saber%20a%20disponibilidade%20para%20esta%20semana." class="btn-cta" style="width: 100%; justify-content: center;" target="_blank" rel="noopener">
+                    Consultar Disponibilidade de Agenda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços de Detailing & Estética Automotiva</h2>
+                <p>Processos meticulosos pensados para devolver o aspecto de zero km e proteger o valor de revenda do seu automóvel.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- 1. Vitrificação -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Proteção Máxima</div>
+                        <h3>Vitrificação Cerâmica</h3>
+                        <p>Aplicação de camada vítrea de alta dureza sobre o verniz. Cria escudo hidrofóbico que repele água, sujeiras, fezes de pássaros e raios UV por até 3 anos.</p>
+                        <ul>
+                            <li>Brilho profundo e toque aveludado</li>
+                            <li>Facilita lavagens semanais sem riscar</li>
+                            <li>Certificado de aplicação e garantia</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Gostaria%20de%20saber%20valores%20de%20Vitriva%C3%A7%C3%A3o%20Cer%C3%A2mica." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+
+                <!-- 2. PPF -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Blindagem da Pintura</div>
+                        <h3>PPF (Paint Protection Film)</h3>
+                        <p>Película de poliuretano transparente com tecnologia auto-regenerativa contra lascas de pedras de estrada, arranhões de chaves e impactos mecânicos.</p>
+                        <ul>
+                            <li>Aplicação frontal (capô e para-choque) ou total</li>
+                            <li>Auto-cura de riscos leves com água morna/sol</li>
+                            <li>Invisível, preservando a cor original</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Tenho%20interesse%20em%20PPF%20para%20o%20meu%20carro." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+
+                <!-- 3. Polimento Técnico -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Correção de Verniz</div>
+                        <h3>Polimento Técnico & Espelhamento</h3>
+                        <p>Nivelamento micrométrico do verniz para eliminação de marcas de lavagens incorretas (swirls), manchas d'água e perda de reflexo natural.</p>
+                        <ul>
+                            <li>Processo em múltiplas etapas (corte, refino e lustro)</li>
+                            <li>Sem marcas de boina ou efeito holográfico</li>
+                            <li>Realce imediato da profundidade da cor</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20um%20Polimento%20T%C3%A9cnico." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+
+                <!-- 4. Martelinho de Ouro -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Reparo Artesanal</div>
+                        <h3>Martelinho de Ouro Express</h3>
+                        <p>Desamassamento artesanal que preserva 100% da pintura de fábrica em pequenas batidas de porta, chuva de granizo e amassados de estacionamento.</p>
+                        <ul>
+                            <li>Sem necessidade de repintura nem massa</li>
+                            <li>Veículo não perde valor de originalidade</li>
+                            <li>Execução rápida e acabamento impecável</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Preciso%20de%20reparo%20com%20Martelinho%20de%20Ouro." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+
+                <!-- 5. Higienização e Oxi-Sanitização -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Conforto Interno</div>
+                        <h3>Higienização & Oxi-Sanitização</h3>
+                        <p>Limpeza profunda e hidratação de bancos de couro ou tecidos, teto, carpetes e painéis, eliminando bactérias, fungos e odores persistentes.</p>
+                        <ul>
+                            <li>Tratamento de couro com aspecto fosco original</li>
+                            <li>Desinfecção de ar condicionado por ozônio</li>
+                            <li>Ambiente livre de ácaros para sua família</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20Higieniza%C3%A7%C3%A3o%20Interna." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+
+                <!-- 6. Lavagem Detalhada -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-tag">Cuidado Periódico</div>
+                        <h3>Lavagem Técnica Detalhada</h3>
+                        <p>Procedimento com técnica de dois baldes, pincéis de cerdas macias para emblemas e grelhas, descontaminação ferrosa de rodas e caixas de roda.</p>
+                        <ul>
+                            <li>Zero atrito agressivo sobre a lataria</li>
+                            <li>Proteção com cera de carnaúba ou selante</li>
+                            <li>Ideal para veículos vitrificados</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Quero%20agendar%20uma%20Lavagem%20T%C3%A9cnica." class="service-cta" target="_blank" rel="noopener">Solicitar Orçamento →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="section-padding diff-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por Que Escolher a Future Auto Care?</h2>
+                <p>Nossa estrutura na Chácara Santo Antônio foi projetada com padrões internacionais de detailing automotivo.</p>
+            </div>
+            <div class="diff-grid">
+                <div class="diff-box">
+                    <div class="icon">🛡️</div>
+                    <h4>Segurança Total</h4>
+                    <p>Espaço monitorado 24 horas para garantir total tranquilidade enquanto o seu veículo estiver sob nossos cuidados.</p>
+                </div>
+                <div class="diff-box">
+                    <div class="icon">💎</div>
+                    <h4>Insumos Internacionais</h4>
+                    <p>Utilizamos apenas compostos certificados de marcas líderes como Gyeon, Koch-Chemie, Vonixx e CarPro.</p>
+                </div>
+                <div class="diff-box">
+                    <div class="icon">🔍</div>
+                    <h4>Vistoria Detalhada</h4>
+                    <p>Check-in digital com fotos e relatório de espessura de verniz antes de iniciar qualquer procedimento de corte.</p>
+                </div>
+                <div class="diff-box">
+                    <div class="icon">🤝</div>
+                    <h4>Atendimento Transparente</h4>
+                    <p>Explicamos cada etapa do serviço e enviamos fotos em tempo real durante a execução do trabalho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas Frequentes</h2>
+                <p>Tire suas dúvidas sobre os nossos procedimentos de estética automotiva.</p>
+            </div>
+
+            <div class="faq-wrap">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quanto tempo dura a aplicação de uma vitrificação cerâmica?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        O processo completo leva de 1 a 2 dias úteis, pois inclui a descontaminação da pintura, polimento técnico para nivelamento e o tempo de cura da camada cerâmica em estufa/ambiente controlado.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Vocês atendem carros blindados?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim! Temos técnicos altamente treinados para manipular veículos blindados, com cuidados específicos para não danificar policarbonatos, vidros laminados e borrachas de vedação reforçadas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual a diferença entre PPF e Vitrificação?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        A vitrificação é uma proteção química líquida contra raios solares, manchas e sujeiras leves. O PPF é uma película física resistente que protege contra impactos reais de pedras na estrada e arranhões profundos. Muitos clientes combinam PPF no para-choque/capô e vitrificação no restante do carro.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Como faço para receber uma avaliação de orçamento?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Você pode nos enviar fotos ou vídeo do veículo diretamente pelo WhatsApp (11) 99248-2484 para uma prévia, ou trazer o carro em nossa oficina na Rua Américo Brasiliense para uma análise precisa com medidor de espessura de tinta.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização e Contato -->
+    <section id="contato" class="section-padding" style="padding-top: 20px;">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h3>Visite Nossa Oficina</h3>
+                    <p>Estamos estrategicamente localizados na Chácara Santo Antônio, com fácil acesso pelas avenidas Santo Amaro, Chucri Zaidan e Nações Unidas.</p>
+                    <div class="info-lines">
+                        <div class="info-row">
+                            📍 <span>Rua Américo Brasiliense, 1827</span> — Chácara Santo Antônio, São Paulo - SP
+                        </div>
+                        <div class="info-row">
+                            📞 <span>Telefone:</span> (11) 2614-3480
+                        </div>
+                        <div class="info-row">
+                            💬 <span>WhatsApp:</span> (11) 99248-2484
+                        </div>
+                        <div class="info-row">
+                            ✉️ <span>E-mail:</span> futureautocare.oficial@gmail.com
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20na%20oficina." class="btn-wa" target="_blank" rel="noopener">
+                        Chamar no WhatsApp Agora
+                    </a>
+                </div>
+
+                <div style="border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); height: 320px; background: #13161D;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.152345437434!2d-46.70237952387123!3d-23.63473136427329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50eed234eb75%3A0x6b447eb598444a8!2sR.%20Am%C3%A9rico%20Brasiliense%2C%201827%20-%20Ch%C3%A1cara%20Santo%20Ant%C3%B4nio%20(Zona%20Sul)%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1725321000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-note"><strong>Future Auto Care</strong> — Estética Automotiva, Detailing, Vitrificação e Proteção de Veículos de Alto Padrão.</p>
+            <p>Rua Américo Brasiliense, 1827 - Chácara Santo Antônio, São Paulo - SP | CNPJ cadastrado</p>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5511992482484?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Future%20Auto%20Care%20e%20gostaria%20de%20um%20or%C3%A7amento." class="float-wa" target="_blank" rel="noopener" title="Falar no WhatsApp">
+        💬
+    </a>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+<!-- PROSPECTOR-EDITOR-START -->
+<style id="pe-style">
+#pe-bar{position:fixed;top:0;left:0;right:0;z-index:99999;background:#111;color:#fff;font:14px/1 -apple-system,Segoe UI,Roboto,sans-serif;display:flex;align-items:center;gap:16px;padding:10px 16px;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#pe-bar button{background:#22c55e;color:#fff;border:0;border-radius:8px;padding:8px 16px;font-weight:600;cursor:pointer}
+#pe-bar button:hover{background:#16a34a}
+body{margin-top:44px !important}
+.pe-hover{outline:2px dashed #22c55e !important;outline-offset:2px;cursor:pointer}
+[contenteditable="true"]:focus{outline:2px solid #3b82f6 !important;outline-offset:2px}
+</style>
+<div id="pe-bar">
+  <strong>Modo edição</strong>
+  <span>Clique em textos para editar · clique em imagens para trocar</span>
+  <button id="pe-export" type="button">Exportar página</button>
+</div>
+<input type="file" id="pe-file" accept="image/*" style="display:none">
+<script id="pe-script">
+(function(){
+  var TEXT='h1,h2,h3,h4,h5,h6,p,li,a,span,button,td,th,figcaption,blockquote,strong,em';
+  document.querySelectorAll(TEXT).forEach(function(el){
+    if(el.closest('#pe-bar'))return;
+    if(el.children.length===0||el.childElementCount<=1){
+      el.addEventListener('click',function(e){
+        if(el.tagName==='A'||el.tagName==='BUTTON')e.preventDefault();
+        el.setAttribute('contenteditable','true');el.focus();
+      });
+      el.addEventListener('mouseenter',function(){el.classList.add('pe-hover')});
+      el.addEventListener('mouseleave',function(){el.classList.remove('pe-hover')});
+      el.addEventListener('blur',function(){el.removeAttribute('contenteditable')});
+    }
+  });
+  var fileInput=document.getElementById('pe-file'),currentImg=null;
+  document.querySelectorAll('img').forEach(function(img){
+    img.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();currentImg=img;fileInput.click()});
+    img.addEventListener('mouseenter',function(){img.classList.add('pe-hover')});
+    img.addEventListener('mouseleave',function(){img.classList.remove('pe-hover')});
+  });
+  fileInput.addEventListener('change',function(){
+    var f=fileInput.files[0];if(!f||!currentImg)return;
+    var r=new FileReader();
+    r.onload=function(){currentImg.src=r.result;if(currentImg.srcset)currentImg.removeAttribute('srcset')};
+    r.readAsDataURL(f);fileInput.value='';
+  });
+  document.getElementById('pe-export').addEventListener('click',function(){
+    var doc=document.documentElement.cloneNode(true);
+    ['#pe-bar','#pe-style','#pe-script','#pe-file'].forEach(function(s){var n=doc.querySelector(s);if(n)n.remove()});
+    doc.querySelectorAll('[contenteditable]').forEach(function(n){n.removeAttribute('contenteditable')});
+    doc.querySelectorAll('.pe-hover').forEach(function(n){n.classList.remove('pe-hover')});
+    var html='<!DOCTYPE html>\n'+doc.outerHTML;
+    var blob=new Blob([html],{type:'text/html'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='index.html';a.click();
+  });
+})();
+</script>
+<!-- PROSPECTOR-EDITOR-END -->
+</body>
+</html>

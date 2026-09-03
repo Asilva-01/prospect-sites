@@ -1,61 +1,63 @@
-# Status da Sessão de Prospecção — Santo Amaro (Lote 1 + Lote 1B + Lote 2)
+# Status da Sessão de Prospecção — Santo Amaro (Lotes 1, 1B, 2 e 3)
 
-**Data:** 31/08/2026  
-**Nichos Ativos:** Nutricionistas & Psicólogos / Neuropsicólogos  
-**Região:** Santo Amaro, Chácara Santo Antônio e Zona Sul, São Paulo - SP  
-
----
-
-## 🎯 Entregas do Sistema
-
-### 1. Comparador Antes vs Depois Multicliente
-- [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html) — Navegação em abas para 7 clientes (Nutrição + Psicologia).
+**Data da última atualização:** 02/09/2026  
+**Status Atual:** 🚀 **100% DAS PROPOSTAS ENVIADAS (10 DE 10 LEADS DISPARADOS)**  
+**Nichos:** Psicologia Clínica, Psicanálise, Neuropsicologia & Nutrição (Clínica e Esportiva)  
+**Região:** Santo Amaro, Chácara Santo Antônio, Moema e Brooklin Velho — São Paulo - SP  
 
 ---
 
-### 2. Nicho Ouro: Psicólogos & Neuropsicólogos em Santo Amaro (Lote 2)
-- **Dra. Cecília Freytas — Psicóloga (NovAmérica Office Park, 70+ avaliações 5.0★):**
-  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/cecilia-freytas-psico/index.html)
-  - Editor Visual: [cecilia-freytas-psico-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/cecilia-freytas-psico/cecilia-freytas-psico-editor.html)
-  - WhatsApp: `(11) 99601-2736`
-- **Métra Psicologia e Psicanálise (Alexandre Dumas, 15 profissionais, 25+ anos de história):**
-  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/metra-psicologia/index.html)
-  - Editor Visual: [metra-psicologia-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/metra-psicologia/metra-psicologia-editor.html)
-  - E-mail: `contato@metrapsi.com.br` | WhatsApp: `(11) 99970-6712`
-- **Clínica Langner — Psicologia e Neuropsicologia (Manoel Borba, Centro de Sto Amaro):**
-  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/clinica-langner/index.html)
-  - Editor Visual: [clinica-langner-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/clinica-langner/clinica-langner-editor.html)
-  - E-mail: `contato@clinicalangner.com.br` | WhatsApp: `(11) 94818-9898`
+## 📊 Resumo Consolidado de Envios
+
+- **Total de Propostas Enviadas:** 10
+  - **Lote 1 (Enviado em 30/08/2026):** 3 nutricionistas (Lourdes Costa, Carolina Vasconcelos, Dra. Vanessa Lacerda).
+  - **Lote 2 e 3 (Enviado em 02/09/2026):** 7 profissionais e clínicas (Dra. Paula Paraíso, Métra Psicologia, Clínica Langner, Bianca Cremonez, Dra. Cecília Freytas, Luciene Hessel, Clínica Equilíbrio).
+- **Taxa de Conclusão:** 100% dos sites produzidos foram abordados.
+- **Painel de Propostas:** 7/7 marcados como Enviados com sucesso.
+- **Banco de Dados SQLite (`prospector.db`):** 100% sincronizado com status `proposta enviada`.
 
 ---
 
-### 3. Lead Ouro: Nutrição com Alto Volume de Avaliações (Lote 1B)
-- **Dra. Paula Paraíso Nutricionista (138 avaliações 5.0★ no Google):**
-  - Página Nova: [index.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/paula-paraiso-nutri/index.html)
-  - Editor Visual: [paula-paraiso-nutri-editor.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/paula-paraiso-nutri/paula-paraiso-nutri-editor.html)
-  - WhatsApp: `(11) 96277-7356`
+## 🎯 Leads com Proposta Enviada em 02/09/2026
+
+1. **Dra. Paula Paraíso — Nutricionista (138 avaliações 5.0★ no Google Maps)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@paulaparaiso.com.br` / WhatsApp (11) 96277-7356
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
+
+2. **Métra Psicologia e Psicanálise (Alexandre Dumas, 25+ anos de tradição)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@metrapsi.com.br` / WhatsApp (11) 99970-6712
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
+
+3. **Clínica Langner — Neuropsicologia & TCC (Centro de Santo Amaro)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@clinicalangner.com.br` / WhatsApp (11) 94818-9898
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
+
+4. **Bianca Cremonez Magnelli — Nutricionista Esportiva (Moema)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `nutricionista@nutricionistasp.com` / WhatsApp (11) 97232-7220
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/
+
+5. **Dra. Cecília Freytas — Psicóloga (NovAmérica Office Park, 70+ avaliações 5.0★)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@ceciliafreytas.com.br` / WhatsApp (11) 99601-2736
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
+
+6. **Luciene Hessel Fogaça — Psicóloga (Brooklin Velho / Campo Belo)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@psicologaluciene.com.br` / WhatsApp (11) 97018-4141
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/
+
+7. **Clínica Equilíbrio — Psicologia e Neuropsicologia (Moema)**
+   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
+   - Contato: `contato@equilibriopsiconeuro.com.br` / WhatsApp (11) 99996-0772
+   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/
 
 ---
 
-### 4. Nutricionistas — Lote 1 Enviado (30/08/2026)
-- **Lourdes Costa Nutricionista** (`nutrilourdescosta@gmail.com`) -> Enviado
-- **Carolina Vasconcelos Nutricionista** (`carolinavasconcelost@gmail.com`) -> Enviado
-- **Dra. Vanessa Lacerda Nutricionista** (`vanessa.lacerdanutri@yahoo.com`) -> Enviado
+## 📅 Próximos Passos Comerciais (Régua de Follow-up)
 
----
-
-### 5. Banco de Dados e Dashboard
-- SQLite [prospector.db](file:///c:/Temp/ProspectSitesStoAmaro/prospector.db) sincronizado com 9 leads.
-- Servidor local do painel rodando na porta 8765.
-
----
-
-### 6. Painel de Propostas — Pronto para Envio (01/09/2026)
-- Publicado: [painel-propostas.html](https://asilva-01.github.io/prospect-sites/sites/painel-propostas.html)
-- Correções de responsividade (menu mobile, FAQ animado) aplicadas e publicadas nos 4 sites do Lote 1B/2:
-  - https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
-  - https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
-  - https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
-  - https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
-- Mensagens de WhatsApp e e-mail já redigidas por lead — abrir o painel, selecionar o lead na barra lateral e clicar em "Abrir WhatsApp Web" ou "Enviar via Gmail".
-- Após cada envio, marcar o status como `proposta enviada` em [leads.md](file:///c:/Temp/ProspectSitesStoAmaro/leads.md) e rodar o comando SQL sugerido no próprio painel.
+- **03/09/2026 a 04/09/2026:** Monitorar respostas na caixa de entrada do Gmail `andre1981luiz@gmail.com` e no WhatsApp `(11) 98239-5014`.
+- **05/09/2026 (após 3 dias úteis):** Rodar follow-up amigável para quem não respondeu ("Conseguiu abrir a página no celular?").
