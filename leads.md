@@ -20,7 +20,7 @@ Status geral: **13 Propostas Enviadas + 4 Novos Leads Qualificados (Onda 4 — J
 
 **Descartados com dado real (mantidos no banco para referência):** Auto Brandão Mecânica e Centro Automotivo Taniguchi e Auto Mecânica HW (sem site/e-mail próprio), TK Garage (site já bom), H-Norte Especializada Honda (fora da região + site já ótimo, nota 4.9★/500+ citada pelo próprio site, não confirmada via Maps).
 
-**Próximo passo sugerido:** André confirmar manualmente no Maps/WhatsApp a nota real e a veracidade dos contatos dos 4 qualificados antes de rodar `/redesenhar`.
+**Próximo passo sugerido:** André confirmar manualmente no Maps/WhatsApp a nota real e a veracidade dos contatos dos 4 antes de rodar `/publicar` e enviar as propostas.
 
 ---
 
