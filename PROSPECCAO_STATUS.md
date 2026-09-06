@@ -1,9 +1,9 @@
-# Status da Sessão de Prospecção — Santo Amaro (Lotes 1, 2, 3 e 4)
+# Status da Sessão de Prospecção — Santo Amaro (Lotes 1-4) + Jabaquara (Onda 4)
 
-**Data da última atualização:** 04/09/2026 às 20:25  
-**Status Atual:** 🚀 **100% DAS PROPOSTAS ENVIADAS (13 DE 13 LEADS DISPARADOS COM SUCESSO)**  
-**Nichos:** Saúde & Bem-Estar (Psicologia, Neuropsicologia, Nutrição) e Comércio de Alto Ticket (Estética Automotiva, Marcenaria & Climatização)  
-**Região:** Santo Amaro, Chácara Santo Antônio, Moema, Brooklin Velho e Zona Sul — São Paulo - SP  
+**Data da última atualização:** 05/09/2026 às 21:47  
+**Status Atual:** 🚀 **13 PROPOSTAS ENVIADAS (Lotes 1-4)** + 🆕 **4 novos leads qualificados na Onda 4 (Jabaquara), aguardando confirmação antes do redesign**  
+**Nichos:** Saúde & Bem-Estar (Psicologia, Neuropsicologia, Nutrição), Comércio de Alto Ticket (Estética Automotiva, Marcenaria & Climatização) e Oficinas Mecânicas de Carro (nova Onda 4)  
+**Região:** Santo Amaro, Chácara Santo Antônio, Moema, Brooklin Velho, Zona Sul e Jabaquara — São Paulo - SP  
 
 ---
 
@@ -109,3 +109,18 @@ Ambos corrigidos, commitados (`b4a6f60`, `70ebb1a`) e publicados em produção e
 **🟢 Tempstar Ar Condicionado respondeu positivo** em 05/09/2026: Engº Augusto J Caldas gostou da proposta, mas está de férias — retorno só no fim de setembro/2026. **Não mexer no site nem reenviar nada para ela até lá.**
 
 **Pendente:** conector do Gmail ainda não autenticado nesta sessão (necessário rodar `/mcp` e autorizar "claude.ai Gmail") para checar resposta dos outros 12 leads e gerar follow-ups formais.
+
+---
+
+## 🚗 Onda 4 — Oficinas Mecânicas de Carro (Jabaquara) — Pesquisado em 05/09/2026
+
+Nova região de prospecção decidida com o usuário (primeira fora de Santo Amaro). **Sem acesso ao Google Maps/navegador nesta sessão** — pesquisa feita via WebSearch/WebFetch, mesmo método do Lote 3. Nenhuma nota/avaliação foi confirmada ou inventada.
+
+- 20 oficinas avaliadas a partir de um diretório real (guiafacil.com) + buscas diretas.
+- **4 qualificadas** (status `novo` no banco/dashboard): Kimiko Auto Center, Destake Garage, Riveiro Restauradora de Veículos, Omenauto (baixa prioridade).
+- **16 descartadas** — a maioria por não ter site nem e-mail/WhatsApp próprio (esperado no nicho: oficinas pequenas raramente têm presença digital). 5 descartes com dado real relevante foram mantidos no banco para referência (Auto Brandão, Taniguchi, Auto Mecânica HW, TK Garage, H-Norte Honda).
+- Detalhes completos em `leads.md` (seção "Onda 4").
+
+**Pendências antes de avançar para `/redesenhar`:**
+1. André confirmar manualmente no Google Maps/WhatsApp a nota real e a veracidade dos contatos dos 4 qualificados (nenhum tem e-mail exceto Kimiko).
+2. Decidir se cria os sites-demo dos 4 agora ou aguarda essa confirmação primeiro.
