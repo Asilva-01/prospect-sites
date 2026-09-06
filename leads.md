@@ -11,10 +11,12 @@ Status geral: **13 Propostas Enviadas + 4 Novos Leads Qualificados (Onda 4 — J
 
 | # | Nome | Nicho | Contato | WhatsApp | Site atual | Motivo | Status | Bairro |
 |---|------|-------|---------|----------|------------|--------|--------|--------|
-| 14 | **Kimiko Auto Center** | Oficina mecânica | `kimikoautocenter@gmail.com` / (11) 5068-2446 | 5511955866874 | https://www.kimiko.com.br/ | WordPress datado, sem foco mobile | `novo` | Zona Sul / Saúde-Jabaquara |
-| 15 | **Destake Garage** | Oficina mecânica | (11) 96629-9293 (sem e-mail) | 5511966299293 | Google Sites (template gratuito) | Site genérico sem domínio próprio | `novo` | Jabaquara |
-| 16 | **Riveiro Restauradora de Veículos** | Oficina mecânica | (sem e-mail) | 5511981382222 | Canva Sites (landing simples) | Empresa tradicional (desde 1980) com site básico sem domínio | `novo` | Jabaquara |
-| 17 | **Omenauto** | Oficina mecânica | (11) 5012-7393 (sem e-mail) | 5511959545902 | https://www.omenauto.com.br/ | Site com domínio próprio mas datado — baixa prioridade | `novo` | Jabaquara |
+| 14 | **Kimiko Auto Center** | Oficina mecânica | `kimikoautocenter@gmail.com` / (11) 5068-2446 | 5511955866874 | https://www.kimiko.com.br/ | WordPress datado, sem foco mobile | `redesenhado` | Zona Sul / Saúde-Jabaquara |
+| 15 | **Destake Garage** | Oficina mecânica | (11) 96629-9293 (sem e-mail) | 5511966299293 | Google Sites (template gratuito) | Site genérico sem domínio próprio | `redesenhado` | Jabaquara |
+| 16 | **Riveiro Restauradora de Veículos** | Oficina mecânica | (sem e-mail) | 5511981382222 | Canva Sites (landing simples) | Empresa tradicional (desde 1980) com site básico sem domínio | `redesenhado` | Jabaquara |
+| 17 | **Omenauto** | Oficina mecânica | (11) 5012-7393 (sem e-mail) | 5511959545902 | https://www.omenauto.com.br/ | Site com domínio próprio mas datado — baixa prioridade | `redesenhado` | Jabaquara |
+
+**Sites redesenhados em 05/09/2026:** os 4 já têm página nova em `sites/[slug]/[slug].html`, editor visual (`[slug]-editor.html`) e abas em `comparar.html`. Identidade visual tipográfica (sem foto/logo hotlinkado) — ver [[feedback-nao-fabricar-dados-profissionais]]. Ainda **não publicados** (falta `/publicar`) nem enviados como proposta.
 
 **Descartados com dado real (mantidos no banco para referência):** Auto Brandão Mecânica e Centro Automotivo Taniguchi e Auto Mecânica HW (sem site/e-mail próprio), TK Garage (site já bom), H-Norte Especializada Honda (fora da região + site já ótimo, nota 4.9★/500+ citada pelo próprio site, não confirmada via Maps).
 
