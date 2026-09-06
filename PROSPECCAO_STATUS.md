@@ -112,15 +112,19 @@ Ambos corrigidos, commitados (`b4a6f60`, `70ebb1a`) e publicados em produção e
 
 ---
 
-## 🚗 Onda 4 — Oficinas Mecânicas de Carro (Jabaquara) — Pesquisado em 05/09/2026
+## 🚗 Onda 4 — Oficinas Mecânicas de Carro (Jabaquara) — Pesquisado, redesenhado e publicado em 05/09/2026
 
 Nova região de prospecção decidida com o usuário (primeira fora de Santo Amaro). **Sem acesso ao Google Maps/navegador nesta sessão** — pesquisa feita via WebSearch/WebFetch, mesmo método do Lote 3. Nenhuma nota/avaliação foi confirmada ou inventada.
 
 - 20 oficinas avaliadas a partir de um diretório real (guiafacil.com) + buscas diretas.
-- **4 qualificadas** (status `novo` no banco/dashboard): Kimiko Auto Center, Destake Garage, Riveiro Restauradora de Veículos, Omenauto (baixa prioridade).
+- **4 qualificadas**: Kimiko Auto Center, Destake Garage, Riveiro Restauradora de Veículos, Omenauto (baixa prioridade).
 - **16 descartadas** — a maioria por não ter site nem e-mail/WhatsApp próprio (esperado no nicho: oficinas pequenas raramente têm presença digital). 5 descartes com dado real relevante foram mantidos no banco para referência (Auto Brandão, Taniguchi, Auto Mecânica HW, TK Garage, H-Norte Honda).
+- **André decidiu (05/09/2026) que não há como confirmar manualmente as notas/avaliações no Maps** — seguimos só com o que já estava disponível nos sites oficiais dos 4 clientes (dados reais extraídos via WebFetch: serviços, endereço, telefone, WhatsApp, horário, diferenciais). Nenhuma nota numérica foi incluída nas páginas.
+- **4 sites redesenhados** (identidade visual tipográfica, sem foto/logo hotlinkado — ver [[feedback-nao-fabricar-dados-profissionais]] na memória) e **publicados no GitHub Pages** (push para `origin/main`, mesmo método dos lotes anteriores; HostGator nunca foi configurado neste projeto). URLs testadas em HTTPS (200 OK):
+  - https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/
+  - https://asilva-01.github.io/prospect-sites/sites/destake-garage/
+  - https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/
+  - https://asilva-01.github.io/prospect-sites/sites/omenauto/
 - Detalhes completos em `leads.md` (seção "Onda 4").
 
-**Pendências antes de avançar para `/redesenhar`:**
-1. André confirmar manualmente no Google Maps/WhatsApp a nota real e a veracidade dos contatos dos 4 qualificados (nenhum tem e-mail exceto Kimiko).
-2. Decidir se cria os sites-demo dos 4 agora ou aguarda essa confirmação primeiro.
+**Próximo passo:** rodar `/proposta` para os 4 (enviar e-mail/WhatsApp com o link do site novo, sem citar nota/avaliação).
