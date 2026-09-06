@@ -210,27 +210,25 @@ WhatsApp: (11) 98239-5014
 
 ---
 
-## ⚡ Novos Leads Comerciais (Lote 4)
+## ⚡ Novos Leads Comerciais (Lote 4 — Revisados e Otimizados)
 
-8. **[✉️ Abrir E-mail de Future Auto Care no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=futureautocare.oficial@gmail.com&su=Future%20Auto%20Care%2C%20posso%20te%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20seu%20site%3F&body=Ol%C3%A1%2C%20pessoal%20da%20Future%20Auto%20Care%2C%20tudo%20bem%3F%0A%0AEncontrei%20o%20trabalho%20de%20voc%C3%AAs%20na%20Ch%C3%A1cara%20Santo%20Ant%C3%B4nio%20e%20me%20chamou%20a%20aten%C3%A7%C3%A3o%20o%20n%C3%ADvel%20t%C3%A9cnico%20e%20o%20zelo%20impec%C3%A1vel%20nos%20servi%C3%A7os%20de%20vitrifica%C3%A7%C3%A3o%20cer%C3%A2mica%2C%20PPF%20e%20polimento%20em%20ve%C3%ADculos%20de%20alto%20padr%C3%A3o.%0A%0AAo%20buscar%20o%20site%20oficial%20no%20celular%2C%20percebi%20que%20a%20p%C3%A1gina%20demora%20bastante%20para%20carregar%20as%20fotos%20dos%20trabalhos%20e%20o%20layout%20n%C3%A3o%20destaca%20com%20a%20autoridade%20necess%C3%A1ria%20o%20brilho%20e%20a%20prote%C3%A7%C3%A3o%20dos%20carros%20que%20voc%C3%AAs%20atendem.%0A%0AComo%20trabalho%20com%20cria%C3%A7%C3%A3o%20de%20p%C3%A1ginas%20para%20est%C3%A9tica%20automotiva%20e%20oficinas%20de%20alta%20performance%2C%20criei%20uma%20vers%C3%A3o%20exclusiva%2C%20em%20dark%20mode%20premium%20para%20a%20Future%20Auto%20Care%2C%20com%20foco%20total%20em%20valorizar%20seus%20servi%C3%A7os%20e%20converter%20visitantes%20em%20or%C3%A7amentos%20no%20WhatsApp.%0A%0AVoc%C3%AA%20pode%20conferir%20a%20nova%20vers%C3%A3o%20j%C3%A1%20no%20ar%20por%20aqui%3A%0Ahttps%3A//asilva-01.github.io/prospect-sites/sites/future-auto-care/%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20celular%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
+8. **[✉️ Abrir E-mail de Future Auto Care no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=futureautocare.oficial%40gmail.com&su=Future%20Auto%20Care%2C%20posso%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20site%3F&body=Ol%C3%A1%2C%20pessoal%20da%20Future%20Auto%20Care%2C%20tudo%20bem%3F%0A%0AAcompanho%20o%20trabalho%20de%20voc%C3%AAs%20na%20Ch%C3%A1cara%20Santo%20Ant%C3%B4nio%20e%20me%20chamou%20a%20aten%C3%A7%C3%A3o%20o%20n%C3%ADvel%20t%C3%A9cnico%20nos%20servi%C3%A7os%20de%20vitrifica%C3%A7%C3%A3o%20cer%C3%A2mica%2C%20PPF%20e%20o%20cuidado%20impec%C3%A1vel%20com%20ve%C3%ADculos%20de%20alto%20padr%C3%A3o.%0A%0AAo%20pesquisar%20o%20site%20oficial%20de%20voc%C3%AAs%20pelo%20celular%2C%20notei%20que%20a%20p%C3%A1gina%20tem%20um%20carregamento%20pesado%20e%20um%20visual%20claro%20que%20n%C3%A3o%20valoriza%20o%20brilho%20e%20a%20sofistica%C3%A7%C3%A3o%20dos%20carros%20que%20voc%C3%AAs%20atendem%20%E2%80%94%20o%20que%20pode%20fazer%20donos%20de%20ve%C3%ADculos%20premium%20desistirem%20do%20contato%20antes%20de%20pedir%20um%20or%C3%A7amento.%0A%0AComo%20trabalho%20com%20cria%C3%A7%C3%A3o%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%20para%20est%C3%A9tica%20automotiva%2C%20tomei%20a%20liberdade%20de%20criar%20uma%20nova%20vers%C3%A3o%20exclusiva%20em%20tema%20dark%20premium%20para%20a%20Future%20Auto%20Care%2C%20r%C3%A1pida%20no%20celular%20e%20pensada%20para%20direcionar%20o%20cliente%20direto%20ao%20WhatsApp%3A%0Ahttps%3A%2F%2Fasilva-01.github.io%2Fprospect-sites%2Fsites%2Ffuture-auto-care%2F%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20smartphone%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
 
 ### 8. Future Auto Care
 - **Para:** `futureautocare.oficial@gmail.com`
-- **Assunto:** `Future Auto Care, posso te mostrar uma sugestão para o seu site?`
+- **Assunto:** `Future Auto Care, posso mostrar uma sugestão para o site?`
 
 ```text
 Olá, pessoal da Future Auto Care, tudo bem?
 
-Encontrei o trabalho de vocês na Chácara Santo Antônio e me chamou a atenção o nível técnico e o zelo impecável nos serviços de vitrificação cerâmica, PPF e polimento em veículos de alto padrão.
+Acompanho o trabalho de vocês na Chácara Santo Antônio e me chamou a atenção o nível técnico nos serviços de vitrificação cerâmica, PPF e o cuidado impecável com veículos de alto padrão.
 
-Ao buscar o site oficial no celular, percebi que a página demora bastante para carregar as fotos dos trabalhos e o layout não destaca com a autoridade necessária o brilho e a proteção dos carros que vocês atendem.
+Ao pesquisar o site oficial de vocês pelo celular, notei que a página tem um carregamento pesado e um visual claro que não valoriza o brilho e a sofisticação dos carros que vocês atendem — o que pode fazer donos de veículos premium desistirem do contato antes de pedir um orçamento.
 
-Como trabalho com criação de páginas para estética automotiva e oficinas de alta performance, criei uma versão exclusiva, em dark mode premium para a Future Auto Care, com foco total em valorizar seus serviços e converter visitantes em orçamentos no WhatsApp.
-
-Você pode conferir a nova versão já no ar por aqui:
+Como trabalho com criação de páginas de alta conversão para estética automotiva, tomei a liberdade de criar uma nova versão exclusiva em tema dark premium para a Future Auto Care, rápida no celular e pensada para direcionar o cliente direto ao WhatsApp:
 https://asilva-01.github.io/prospect-sites/sites/future-auto-care/
 
-Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+Dê uma olhada (inclusive pelo smartphone) e me diga o que achou!
 
 Abraços,
 André Luiz da Silva
@@ -238,25 +236,25 @@ Designer de páginas de alta conversão
 WhatsApp: (11) 98239-5014
 ```
 
-9. **[✉️ Abrir E-mail de Simone Móveis Planejados no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=simonemoveisplanejados@gmail.com&su=Simone%20M%C3%B3veis%2C%20posso%20te%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20seu%20site%3F&body=Ol%C3%A1%2C%20equipe%20da%20Simone%20M%C3%B3veis%20Planejados%2C%20tudo%20bem%3F%0A%0AAcompanho%20os%20projetos%20sob%20medida%20de%20voc%C3%AAs%20na%20Zona%20Sul%20e%20acho%20incr%C3%ADvel%20o%20acabamento%20e%20a%20sofistica%C3%A7%C3%A3o%20das%20cozinhas%20e%20dormit%C3%B3rios%20planejados%20que%20produzem.%0A%0AVi%20que%20voc%C3%AAs%20anunciam%20e%20divulgam%20bastante%20a%20loja%2C%20mas%20ao%20abrir%20o%20site%20oficial%20no%20celular%2C%20notei%20que%20a%20p%C3%A1gina%20tem%20um%20errinho%20de%20digita%C3%A7%C3%A3o%20no%20t%C3%ADtulo%20e%20demora%20para%20carregar%20as%20fotos%20dos%20ambientes%2C%20o%20que%20pode%20fazer%20clientes%20que%20est%C3%A3o%20buscando%20marcenaria%20desistirem%20antes%20de%20chamar%20no%20WhatsApp.%0A%0AComo%20trabalho%20com%20cria%C3%A7%C3%A3o%20de%20p%C3%A1ginas%20para%20marcenarias%20e%20lojas%20de%20m%C3%B3veis%20sob%20medida%2C%20criei%20uma%20vers%C3%A3o%20exclusiva%20e%20elegante%20para%20a%20Simone%20M%C3%B3veis%2C%20com%20foco%20total%20em%20valorizar%20os%20projetos%203D%20e%20converter%20visitantes%20em%20pedidos%20de%20or%C3%A7amento.%0A%0AVoc%C3%AA%20pode%20conferir%20a%20nova%20vers%C3%A3o%20j%C3%A1%20no%20ar%20por%20aqui%3A%0Ahttps%3A//asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20celular%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
+---
+
+9. **[✉️ Abrir E-mail de Simone Móveis Planejados no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=simonemoveisplanejados%40gmail.com&su=Simone%20M%C3%B3veis%2C%20posso%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20site%3F&body=Ol%C3%A1%2C%20equipe%20da%20Simone%20M%C3%B3veis%20Planejados%2C%20tudo%20bem%3F%0A%0AAcompanho%20os%20projetos%20sob%20medida%20de%20voc%C3%AAs%20na%20Zona%20Sul%20e%20acho%20impec%C3%A1vel%20o%20acabamento%20e%20o%20bom%20gosto%20das%20cozinhas%20e%20dormit%C3%B3rios%20planejados%20que%20produzem.%0A%0AVi%20que%20voc%C3%AAs%20divulgam%20a%20marca%20na%20regi%C3%A3o%2C%20mas%20ao%20abrir%20o%20site%20oficial%20no%20celular%20notei%20que%20a%20galeria%20de%20fotos%20demora%20para%20abrir%20e%20h%C3%A1%20um%20pequeno%20erro%20de%20digita%C3%A7%C3%A3o%20no%20t%C3%ADtulo%20da%20p%C3%A1gina%20no%20Google.%20Em%20m%C3%B3veis%20de%20alto%20padr%C3%A3o%2C%20onde%20o%20cliente%20decide%20pelo%20impacto%20visual%2C%20isso%20pode%20fazer%20muitas%20pessoas%20desistirem%20antes%20de%20pedir%20uma%20cota%C3%A7%C3%A3o.%0A%0AComo%20trabalho%20com%20cria%C3%A7%C3%A3o%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%20para%20marcenarias%20e%20lojas%20de%20planejados%2C%20desenhei%20uma%20nova%20vers%C3%A3o%20moderna%20e%20elegante%20para%20a%20Simone%20M%C3%B3veis%2C%20com%20visual%20de%20arquitetura%20e%20foco%20em%20fazer%20o%20cliente%20enviar%20a%20planta%20do%20im%C3%B3vel%20direto%20para%20o%20WhatsApp%3A%0Ahttps%3A%2F%2Fasilva-01.github.io%2Fprospect-sites%2Fsites%2Fsimone-moveis-planejados%2F%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20smartphone%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
 
 ### 9. Simone Móveis Planejados
 - **Para:** `simonemoveisplanejados@gmail.com`
-- **Assunto:** `Simone Móveis, posso te mostrar uma sugestão para o seu site?`
+- **Assunto:** `Simone Móveis, posso mostrar uma sugestão para o site?`
 
 ```text
 Olá, equipe da Simone Móveis Planejados, tudo bem?
 
-Acompanho os projetos sob medida de vocês na Zona Sul e acho incrível o acabamento e a sofisticação das cozinhas e dormitórios planejados que produzem.
+Acompanho os projetos sob medida de vocês na Zona Sul e acho impecável o acabamento e o bom gosto das cozinhas e dormitórios planejados que produzem.
 
-Vi que vocês anunciam e divulgam bastante a loja, mas ao abrir o site oficial no celular, notei que a página tem um errinho de digitação no título e demora para carregar as fotos dos ambientes, o que pode fazer clientes que estão buscando marcenaria desistirem antes de chamar no WhatsApp.
+Vi que vocês divulgam a marca na região, mas ao abrir o site oficial no celular notei que a galeria de fotos demora para abrir e há um pequeno erro de digitação no título da página no Google. Em móveis de alto padrão, onde o cliente decide pelo impacto visual, isso pode fazer muitas pessoas desistirem antes de pedir uma cotação.
 
-Como trabalho com criação de páginas para marcenarias e lojas de móveis sob medida, criei uma versão exclusiva e elegante para a Simone Móveis, com foco total em valorizar os projetos 3D e converter visitantes em pedidos de orçamento.
-
-Você pode conferir a nova versão já no ar por aqui:
+Como trabalho com criação de páginas de alta conversão para marcenarias e lojas de planejados, desenhei uma nova versão moderna e elegante para a Simone Móveis, com visual de arquitetura e foco em fazer o cliente enviar a planta do imóvel direto para o WhatsApp:
 https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/
 
-Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+Dê uma olhada (inclusive pelo smartphone) e me diga o que achou!
 
 Abraços,
 André Luiz da Silva
@@ -264,29 +262,30 @@ Designer de páginas de alta conversão
 WhatsApp: (11) 98239-5014
 ```
 
-10. **[✉️ Abrir E-mail de Tempstar Ar Condicionado no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=tempstar@tempstar.com.br&su=Tempstar%2C%20posso%20te%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20seu%20site%3F&body=Ol%C3%A1%2C%20pessoal%20da%20Tempstar%2C%20tudo%20bem%3F%0A%0AEncontrei%20a%20empresa%20de%20voc%C3%AAs%20aqui%20em%20Santo%20Amaro%20%28na%20Rua%20S%C3%A3o%20Benedito%29%20e%20me%20chamou%20a%20aten%C3%A7%C3%A3o%20a%20seriedade%20no%20atendimento%20de%20climatiza%C3%A7%C3%A3o%20e%20a%20especializa%C3%A7%C3%A3o%20em%20contratos%20PMOC%20para%20empresas.%0A%0AAo%20buscar%20o%20site%20oficial%20no%20celular%2C%20percebi%20que%20a%20p%C3%A1gina%20demora%20bastante%20para%20carregar%20os%20menus%20e%20contatos%2C%20o%20que%20pode%20fazer%20clientes%20comerciais%20e%20residenciais%20com%20urg%C3%AAncia%20de%20conserto%20acabarem%20ligando%20para%20outros%20prestadores.%0A%0AComo%20trabalho%20com%20cria%C3%A7%C3%A3o%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%20para%20empresas%20de%20servi%C3%A7os%20t%C3%A9cnicos%2C%20criei%20uma%20vers%C3%A3o%20exclusiva%2C%20moderna%20e%20instant%C3%A2nea%20para%20a%20Tempstar%2C%20com%20foco%20em%20chamados%20r%C3%A1pidos%20e%20propostas%20de%20PMOC.%0A%0AVoc%C3%AA%20pode%20conferir%20a%20nova%20vers%C3%A3o%20j%C3%A1%20no%20ar%20por%20aqui%3A%0Ahttps%3A//asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20celular%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
+---
+
+10. **[✉️ Abrir E-mail de Tempstar Ar Condicionado no Gmail](https://mail.google.com/mail/u/andre1981luiz@gmail.com/?view=cm&fs=1&to=tempstar%40tempstar.com.br&su=Tempstar%2C%20posso%20mostrar%20uma%20sugest%C3%A3o%20para%20o%20site%20de%20voc%C3%AAs%3F&body=Ol%C3%A1%2C%20pessoal%20da%20Tempstar%2C%20tudo%20bem%3F%0A%0AEncontrei%20a%20empresa%20de%20voc%C3%AAs%20aqui%20em%20Santo%20Amaro%20%28na%20Rua%20S%C3%A3o%20Benedito%29%20e%20me%20chamou%20a%20aten%C3%A7%C3%A3o%20a%20tradi%C3%A7%C3%A3o%20t%C3%A9cnica%20no%20atendimento%20de%20climatiza%C3%A7%C3%A3o%20e%20a%20especializa%C3%A7%C3%A3o%20em%20contratos%20de%20PMOC%20para%20empresas.%0A%0AAo%20buscar%20o%20site%20oficial%20no%20celular%2C%20percebi%20que%20a%20p%C3%A1gina%20demora%20para%20carregar%20os%20menus%20e%20contatos%20t%C3%A9cnicos.%20Em%20climatiza%C3%A7%C3%A3o%2C%20clientes%20residenciais%20com%20calor%2Furg%C3%AAncia%20ou%20empresas%20precisando%20de%20suporte%20querem%20contato%20imediato%2C%20e%20a%20lentid%C3%A3o%20pode%20lev%C3%A1-los%20a%20ligar%20para%20outro%20prestador.%0A%0AComo%20trabalho%20com%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%20para%20o%20setor%20t%C3%A9cnico%2C%20desenvolvi%20uma%20nova%20vers%C3%A3o%20moderna%20e%20ultrarr%C3%A1pida%20para%20a%20Tempstar%2C%20com%20bot%C3%A3o%20de%20emerg%C3%AAncia%20em%201%20toque%20e%20destaque%20para%20os%20laudos%20e%20contratos%20de%20PMOC%3A%0Ahttps%3A%2F%2Fasilva-01.github.io%2Fprospect-sites%2Fsites%2Ftempstar-ar-condicionado%2F%0A%0AD%C3%AA%20uma%20olhada%20%28inclusive%20pelo%20smartphone%29%20e%20me%20diga%20o%20que%20achou%21%0A%0AAbra%C3%A7os%2C%0AAndr%C3%A9%20Luiz%20da%20Silva%0ADesigner%20de%20p%C3%A1ginas%20de%20alta%20convers%C3%A3o%0AWhatsApp%3A%20%2811%29%2098239-5014)**
 
 ### 10. Tempstar Ar Condicionado
 - **Para:** `tempstar@tempstar.com.br`
-- **Assunto:** `Tempstar, posso te mostrar uma sugestão para o seu site?`
+- **Assunto:** `Tempstar, posso mostrar uma sugestão para o site de vocês?`
 
 ```text
 Olá, pessoal da Tempstar, tudo bem?
 
-Encontrei a empresa de vocês aqui em Santo Amaro (na Rua São Benedito) e me chamou a atenção a seriedade no atendimento de climatização e a especialização em contratos PMOC para empresas.
+Encontrei a empresa de vocês aqui em Santo Amaro (na Rua São Benedito) e me chamou a atenção a tradição técnica no atendimento de climatização e a especialização em contratos de PMOC para empresas.
 
-Ao buscar o site oficial no celular, percebi que a página demora bastante para carregar os menus e contatos, o que pode fazer clientes comerciais e residenciais com urgência de conserto acabarem ligando para outros prestadores.
+Ao buscar o site oficial no celular, percebi que a página demora para carregar os menus e contatos técnicos. Em climatização, clientes residenciais com calor/urgência ou empresas precisando de suporte querem contato imediato, e a lentidão pode levá-los a ligar para outro prestador.
 
-Como trabalho com criação de páginas de alta conversão para empresas de serviços técnicos, criei uma versão exclusiva, moderna e instantânea para a Tempstar, com foco em chamados rápidos e propostas de PMOC.
-
-Você pode conferir a nova versão já no ar por aqui:
+Como trabalho com páginas de alta conversão para o setor técnico, desenvolvi uma nova versão moderna e ultrarrápida para a Tempstar, com botão de emergência em 1 toque e destaque para os laudos e contratos de PMOC:
 https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/
 
-Dê uma olhada (inclusive pelo celular) e me diga o que achou!
+Dê uma olhada (inclusive pelo smartphone) e me diga o que achou!
 
 Abraços,
 André Luiz da Silva
 Designer de páginas de alta conversão
 WhatsApp: (11) 98239-5014
 ```
+
 

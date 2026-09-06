@@ -1,21 +1,21 @@
 # Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da atualização: 02/09/2026  
-Status geral: **10 Propostas Enviadas + 3 Novos Sites Prontos para Envio (Lote 4 Comercial)**
+Data da atualização: 04/09/2026 às 20:25  
+Status geral: **13 Propostas Enviadas (100% dos Leads Abordados com Sucesso)**
 
 ---
 
-## ⚡ Lote 4: Negócios Comerciais de Alto Ticket (3 Novos Leads com Sites Prontos)
+## ⚡ Lote 4: Negócios Comerciais de Alto Ticket (3 Propostas Enviadas em 04/09/2026)
 
-| # | Nome | Nicho | Contato / E-mail | WhatsApp / Tel | Site atual | Status | URL Nova Local | Bairro |
-|---|------|-------|------------------|----------------|------------|--------|----------------|--------|
-| 1 | **Future Auto Care** | 🏎️ Estética & Detailing | `futureautocare.oficial@gmail.com` | (11) 99248-2484 | https://www.futureautocare.com.br/ | `site pronto` | [Ver Página](sites/future-auto-care/index.html) | Chácara Santo Antônio |
-| 2 | **Simone Móveis Planejados** | 🪚 Móveis & Marcenaria | `simonemoveisplanejados@gmail.com` | (11) 5612-6333 | https://simonemoveisplanejados.com.br/ | `site pronto` | [Ver Página](sites/simone-moveis-planejados/index.html) | Zona Sul / Sto. Amaro |
-| 3 | **Tempstar Ar Condicionado** | ❄️ Climatização & PMOC | `tempstar@tempstar.com.br` | (11) 97096-4539 | https://tempstar.com.br/ | `site pronto` | [Ver Página](sites/tempstar-ar-condicionado/index.html) | Centro de Santo Amaro |
+| # | Nome | Nicho | Contato / E-mail | WhatsApp / Tel | Site atual | Status | URL Nova Pública | Bairro |
+|---|------|-------|------------------|----------------|------------|--------|------------------|--------|
+| 1 | **Future Auto Care** | 🏎️ Estética & Detailing | `futureautocare.oficial@gmail.com` | (11) 99248-2484 | https://www.futureautocare.com.br/ | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/future-auto-care/) | Chácara Santo Antônio |
+| 2 | **Simone Móveis Planejados** | 🪚 Móveis & Marcenaria | `simonemoveisplanejados@gmail.com` | (11) 5612-6333 | https://simonemoveisplanejados.com.br/ | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/) | Zona Sul / Sto. Amaro |
+| 3 | **Tempstar Ar Condicionado** | ❄️ Climatização & PMOC | `tempstar@tempstar.com.br` | (11) 97096-4539 | https://tempstar.com.br/ | `respondeu — positivo, de férias até fim de 09/2026` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/) | Centro de Santo Amaro |
 
 ---
 
-## 🚀 Propostas Já Enviadas em 02/09/2026 — 7 Leads Ativos
+## 🚀 Propostas Enviadas em 02/09/2026 — Lotes 2 e 3 (7 Leads Ativos)
 
 | # | Nome | Nicho | Nota / Aval. | E-mail / Contato | WhatsApp / Telefone | Site atual | Status | URL Nova no Ar | Bairro |
 |---|------|-------|--------------|------------------|---------------------|------------|--------|----------------|--------|
@@ -40,7 +40,7 @@ Status geral: **10 Propostas Enviadas + 3 Novos Sites Prontos para Envio (Lote 4
 ---
 
 ## 🔗 Painéis e Ferramentas de Acompanhamento
-- **Painel de Propostas (Visão Focada com Disparos):** [painel-propostas.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/painel-propostas.html) (Contém os 10 leads, sendo 7 enviados e 3 prontos para envio em 1 clique)
+- **Painel de Propostas (Visão Focada com Disparos):** [painel-propostas.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/painel-propostas.html) (Contém todos os leads com status sincronizado)
 - **Dashboard Geral Local:** [dashboard.html](file:///c:/Temp/ProspectSitesStoAmaro/dashboard.html) (Sincronizado com o banco SQLite `prospector.db`)
 - **Comparador Geral Antes vs Depois:** [comparar.html](file:///c:/Temp/ProspectSitesStoAmaro/comparar.html)
 - **Roteiro de E-mails com 1 Clique:** [PROPOSTAS_EMAIL.md](file:///c:/Temp/ProspectSitesStoAmaro/PROPOSTAS_EMAIL.md)
