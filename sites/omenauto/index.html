@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omenauto | Comércio e Mecânica para Autos — Jabaquara, São Paulo</title>
+    <meta name="description" content="Omenauto: oficina multimarca no Jabaquara desde 1988. Injeção eletrônica, revisão preventiva, arrefecimento, motor e câmbio para mais de 20 montadoras.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-body: #101112; --bg-surface: #18191B; --bg-surface-elevated: #202224;
+            --border-subtle: rgba(255,255,255,0.08); --border-highlight: rgba(224,64,64,0.35);
+            --accent: #E04040; --accent-hover: #EC6262;
+            --text-primary: #F5F5F5; --text-secondary: #A0A3A6; --text-muted: #6B6E71;
+            --whatsapp-green: #25D366;
+            --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
+            --transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif; background:var(--bg-body); color:var(--text-primary); line-height:1.6; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+        h1,h2,h3,h4 { font-family:'Syne',sans-serif; font-weight:800; letter-spacing:-0.02em; line-height:1.15; }
+        a { text-decoration:none; color:inherit; }
+        .container { width:100%; max-width:1200px; margin:0 auto; padding:0 24px; }
+
+        .top-info { background:#0A0A0B; border-bottom:1px solid var(--border-subtle); font-size:13px; color:var(--text-secondary); padding:9px 0; }
+        .top-info-wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+        .top-info strong { color:var(--accent); font-weight:700; }
+
+        header { position:sticky; top:0; z-index:100; background:rgba(16,17,18,0.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--border-subtle); }
+        .nav-wrapper { display:flex; justify-content:space-between; align-items:center; height:80px; }
+        .wordmark { display:flex; align-items:center; gap:14px; }
+        .wordmark-badge { width:46px; height:46px; border-radius:10px; flex-shrink:0; background:linear-gradient(145deg,var(--accent),#8F1F1F); display:flex; align-items:center; justify-content:center; font-family:'Syne',sans-serif; font-weight:800; font-size:15px; color:#fff; }
+        .wordmark-text { display:flex; flex-direction:column; }
+        .wordmark-name { font-size:19px; font-weight:800; text-transform:uppercase; letter-spacing:0.03em; color:#fff; }
+        .wordmark-tag { font-size:10px; text-transform:uppercase; letter-spacing:0.2em; color:var(--text-muted); font-weight:600; }
+        .nav-menu { display:flex; gap:28px; list-style:none; }
+        .nav-menu a { font-size:14px; font-weight:600; color:var(--text-secondary); transition:var(--transition); }
+        .nav-menu a:hover { color:#fff; }
+        .btn-solid { display:inline-flex; align-items:center; justify-content:center; gap:9px; background:var(--accent); color:#fff; font-size:13px; font-weight:800; padding:12px 22px; border-radius:var(--radius-sm); text-transform:uppercase; letter-spacing:0.06em; transition:var(--transition); }
+        .btn-solid:hover { background:var(--accent-hover); transform:translateY(-2px); box-shadow:0 10px 22px rgba(224,64,64,0.25); }
+        .btn-wa { display:inline-flex; align-items:center; justify-content:center; gap:11px; background:var(--whatsapp-green); color:#fff; font-size:15px; font-weight:700; padding:15px 30px; border-radius:var(--radius-sm); transition:var(--transition); box-shadow:0 8px 22px rgba(37,211,102,0.28); }
+        .btn-wa:hover { transform:translateY(-2px); box-shadow:0 12px 30px rgba(37,211,102,0.4); filter:brightness(1.05); }
+        .btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:9px; background:rgba(255,255,255,0.04); color:#fff; font-size:14px; font-weight:600; padding:14px 26px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); transition:var(--transition); }
+        .btn-outline:hover { border-color:#fff; background:rgba(255,255,255,0.08); }
+
+        .hero { position:relative; padding:78px 0 66px; background:radial-gradient(circle at 85% 20%, rgba(224,64,64,0.08) 0%, transparent 55%); border-bottom:1px solid var(--border-subtle); }
+        .hero-grid { display:grid; grid-template-columns:1.05fr 0.95fr; gap:48px; align-items:center; }
+        .hero-kicker { display:inline-flex; align-items:center; gap:8px; background:rgba(224,64,64,0.08); border:1px solid rgba(224,64,64,0.3); padding:6px 14px; border-radius:4px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; color:var(--accent); margin-bottom:20px; }
+        .hero h1 { font-size:clamp(32px,4.2vw,50px); color:#fff; margin-bottom:20px; }
+        .hero h1 span { color:var(--accent); }
+        .hero p { font-size:16.5px; color:var(--text-secondary); margin-bottom:32px; max-width:540px; }
+        .hero-actions { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:36px; }
+        .hero-stats { display:flex; gap:32px; border-top:1px solid var(--border-subtle); padding-top:22px; flex-wrap:wrap; }
+        .stat-item h4 { font-size:26px; color:#fff; margin-bottom:2px; }
+        .stat-item span { font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); font-weight:600; }
+
+        .hero-visual { position:relative; border-radius:var(--radius-lg); border:1px solid var(--border-highlight); background:linear-gradient(160deg,var(--bg-surface-elevated),#0D0E0F); box-shadow:0 25px 55px rgba(0,0,0,0.6); padding:44px 32px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; min-height:400px; }
+        .hero-visual .icon-ring { width:140px; height:140px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:radial-gradient(circle, rgba(224,64,64,0.12) 0%, transparent 70%); }
+        .hero-visual svg.engine { width:96px; height:96px; }
+        .hero-visual .big-name { font-family:'Syne',sans-serif; font-weight:800; font-size:15px; letter-spacing:0.3em; text-transform:uppercase; color:var(--text-muted); text-align:center; }
+        .hero-visual .quote-line { font-size:14px; color:var(--text-secondary); text-align:center; max-width:320px; font-style:italic; }
+
+        .section-padding { padding:88px 0; }
+        .section-header { text-align:center; max-width:720px; margin:0 auto 52px; }
+        .section-kicker { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.18em; color:var(--accent); margin-bottom:12px; }
+        .section-header h2 { font-size:clamp(30px,3.8vw,42px); color:#fff; margin-bottom:14px; }
+        .section-header p { font-size:15.5px; color:var(--text-secondary); }
+
+        .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+        .service-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:28px 24px; transition:var(--transition); text-align:center; }
+        .service-card:hover { border-color:var(--border-highlight); transform:translateY(-4px); box-shadow:0 18px 36px rgba(0,0,0,0.35); }
+        .service-icon { width:50px; height:50px; border-radius:12px; background:rgba(224,64,64,0.1); display:flex; align-items:center; justify-content:center; margin:0 auto 16px; }
+        .service-icon svg { width:24px; height:24px; stroke:var(--accent); fill:none; stroke-width:1.8; }
+        .service-card h3 { font-size:16.5px; color:#fff; }
+
+        .brands-box { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:30px; margin-top:16px; }
+        .brands-box h4 { font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:var(--accent); margin-bottom:16px; font-weight:800; text-align:center; }
+        .brands-tags { display:flex; flex-wrap:wrap; gap:9px; justify-content:center; }
+        .brand-pill { background:rgba(224,64,64,0.08); border:1px solid rgba(224,64,64,0.22); color:var(--text-secondary); font-size:12.5px; font-weight:600; padding:7px 15px; border-radius:16px; }
+
+        .about-wrap { display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; }
+        .about-lead h3 { font-size:26px; color:#fff; margin-bottom:14px; }
+        .about-lead p { font-size:15.5px; color:var(--text-secondary); margin-bottom:18px; line-height:1.7; }
+        .mvv-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:24px; margin-bottom:16px; }
+        .mvv-card h4 { font-size:12px; text-transform:uppercase; letter-spacing:0.14em; color:var(--accent); margin-bottom:10px; font-weight:800; }
+        .mvv-card p { font-size:14.5px; color:var(--text-secondary); line-height:1.65; }
+
+        .contact-box { background:linear-gradient(135deg,var(--bg-surface) 0%,#1C1E20 100%); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:50px; display:grid; grid-template-columns:1fr 1fr; gap:46px; align-items:center; }
+        .contact-meta h3 { font-size:30px; color:#fff; margin-bottom:14px; }
+        .contact-meta p { font-size:14.5px; color:var(--text-secondary); margin-bottom:26px; }
+        .contact-lines { display:flex; flex-direction:column; gap:15px; margin-bottom:32px; }
+        .contact-line { display:flex; align-items:flex-start; gap:14px; font-size:14.5px; color:#E2E8F0; }
+        .line-label { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); width:84px; flex-shrink:0; padding-top:1px; }
+
+        footer { background:#0A0A0B; border-top:1px solid var(--border-subtle); padding:36px 0; font-size:13px; color:var(--text-muted); text-align:center; }
+        .footer-brand { color:#fff; font-weight:800; letter-spacing:0.08em; margin-bottom:8px; text-transform:uppercase; font-family:'Syne',sans-serif; font-size:17px; }
+
+        .floating-wa { position:fixed; bottom:24px; right:24px; z-index:999; background:var(--whatsapp-green); color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 22px rgba(37,211,102,0.35); transition:var(--transition); }
+        .floating-wa:hover { transform:scale(1.08); filter:brightness(1.1); }
+        .floating-wa svg { width:28px; height:28px; fill:currentColor; }
+
+        @media (max-width:960px) {
+            .hero-grid, .contact-box, .about-wrap { grid-template-columns:1fr; gap:36px; }
+            .contact-box { padding:28px 20px; }
+            .nav-menu { display:none; }
+            .hero-visual { min-height:280px; padding:32px 22px; }
+        }
+        @media (max-width:480px) {
+            .top-info-wrap { flex-direction:column; align-items:flex-start; }
+            .hero-actions .btn-wa, .hero-actions .btn-outline { width:100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-info">
+        <div class="container top-info-wrap">
+            <span>Av. Eng. George Corbisier, 983 — <strong>Jabaquara, São Paulo</strong></span>
+            <span>WhatsApp: <strong>(11) 95954-5902</strong></span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="wordmark">
+                <div class="wordmark-badge">OA</div>
+                <div class="wordmark-text">
+                    <div class="wordmark-name">Omenauto</div>
+                    <div class="wordmark-tag">Desde 1988 · Jabaquara</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Localização</a></li>
+            </ul>
+            <a href="https://wa.me/5511959545902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Omenauto%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-solid" target="_blank" rel="noopener">Pedir Orçamento</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-kicker">Cuidando Bem da Sua Máquina Desde 1988</div>
+                <h1>Comércio e mecânica para autos de <span>mais de 20 montadoras.</span></h1>
+                <p>Fundada pelos irmãos Bilecki, a Omenauto une décadas de experiência a técnicas e ferramentas modernas para cuidar do seu carro no Jabaquara.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5511959545902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Omenauto%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn-wa" target="_blank" rel="noopener">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                    <a href="#servicos" class="btn-outline">Ver Serviços</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><h4>Desde 1988</h4><span>Tradição familiar</span></div>
+                    <div class="stat-item"><h4>+20</h4><span>Montadoras atendidas</span></div>
+                    <div class="stat-item"><h4>Família Bilecki</h4><span>Fundação</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="icon-ring">
+                    <svg class="engine" viewBox="0 0 24 24" fill="none" stroke="#E04040" stroke-width="1.3">
+                        <rect x="3" y="9" width="14" height="9" rx="1.2"/>
+                        <path d="M6 9V6a1 1 0 011-1h3a1 1 0 011 1v3"/>
+                        <path d="M17 12h2.5a1.5 1.5 0 011.5 1.5v0a1.5 1.5 0 01-1.5 1.5H17"/>
+                        <path d="M6 18v1.5M11 18v1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="big-name">Omenauto</div>
+                <p class="quote-line">"Proporcionar uma experiência singular, acolhedora e segura."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-kicker">Nossos Serviços</div>
+                <h2>Manutenção completa, do motor ao câmbio</h2>
+                <p>Consulte disponibilidade e receba um orçamento direto pelo WhatsApp.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="7" rx="1.5"/><path d="M7 10V7a1 1 0 011-1h2"/></svg></div>
+                    <h3>Injeção Eletrônica</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+                    <h3>Revisão Preventiva</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 00-6 6c0 4 6 12 6 12s6-8 6-12a6 6 0 00-6-6z"/><circle cx="12" cy="9" r="2"/></svg></div>
+                    <h3>Arrefecimento</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+                    <h3>Troca de Óleo</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 20l4-9 2 4 2-6 2 5 2-4 4 10"/><path d="M2 20h20"/></svg></div>
+                    <h3>Suspensão</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="14" height="8" rx="1.5"/><path d="M17 12h2.5a1.5 1.5 0 011.5 1.5v0"/></svg></div>
+                    <h3>Motor</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.5 7.5 0 000-2l2-1.6-2-3.4-2.4 1a7.6 7.6 0 00-1.7-1l-.4-2.5H10.1l-.4 2.5a7.6 7.6 0 00-1.7 1l-2.4-1-2 3.4L5.6 11a7.5 7.5 0 000 2l-2 1.6 2 3.4 2.4-1a7.6 7.6 0 001.7 1l.4 2.5h3.8l.4-2.5a7.6 7.6 0 001.7-1l2.4 1 2-3.4-2-1.6z"/></svg></div>
+                    <h3>Câmbio</h3>
+                </div>
+            </div>
+            <div class="brands-box">
+                <h4>Montadoras Atendidas</h4>
+                <div class="brands-tags">
+                    <span class="brand-pill">Audi</span><span class="brand-pill">BMW</span><span class="brand-pill">Chevrolet</span><span class="brand-pill">Citroën</span><span class="brand-pill">Fiat</span><span class="brand-pill">Ford</span><span class="brand-pill">Honda</span><span class="brand-pill">Hyundai</span><span class="brand-pill">Jaguar</span><span class="brand-pill">Jeep</span><span class="brand-pill">Kia</span><span class="brand-pill">Mercedes-Benz</span><span class="brand-pill">Mitsubishi</span><span class="brand-pill">Nissan</span><span class="brand-pill">Peugeot</span><span class="brand-pill">Porsche</span><span class="brand-pill">Renault</span><span class="brand-pill">Toyota</span><span class="brand-pill">Volkswagen</span><span class="brand-pill">Volvo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding" style="background:#0A0A0B; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
+        <div class="container about-wrap">
+            <div class="about-lead">
+                <div class="section-kicker">Sobre a Omenauto</div>
+                <h3>Fundada pelos irmãos Bilecki</h3>
+                <p>A Omenauto nasceu de uma paixão por carros que virou negócio de família — hoje, décadas depois, seguimos com o mesmo espírito de ambiente inovador, amizade e cuidado técnico com cada veículo.</p>
+                <p>Trabalhamos com modernas técnicas e ferramentas para atender uma ampla variedade de montadoras, sempre com atenção aos detalhes que fazem a diferença na sua experiência.</p>
+            </div>
+            <div>
+                <div class="mvv-card">
+                    <h4>Missão</h4>
+                    <p>Proporcionar uma experiência singular, acolhedora e segura para cada cliente.</p>
+                </div>
+                <div class="mvv-card">
+                    <h4>Valores</h4>
+                    <p>Inovação, honestidade, aprimoramento constante e respeito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding" style="background:#0A0A0B; border-top:1px solid var(--border-subtle);">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-meta">
+                    <h3>Venha até a Omenauto</h3>
+                    <p>Estamos na Av. Eng. George Corbisier, no Jabaquara, Zona Sul de São Paulo.</p>
+                    <div class="contact-lines">
+                        <div class="contact-line"><span class="line-label">Endereço</span><span>Av. Eng. George Corbisier, 983 — Jabaquara, São Paulo - SP</span></div>
+                        <div class="contact-line"><span class="line-label">Telefones</span><span>(11) 5012-7393 · (11) 5012-3837</span></div>
+                        <div class="contact-line"><span class="line-label">WhatsApp</span><span>(11) 95954-5902</span></div>
+                        <div class="contact-line"><span class="line-label">Avaliações</span><span><a href="https://www.google.com/maps/search/?api=1&query=Omenauto+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Ver no Google Maps ↗</a></span></div>
+                    </div>
+                    <a href="https://wa.me/5511959545902?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20oficina." class="btn-wa" target="_blank" rel="noopener">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+                <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); height:320px; background:#08090C;">
+                    <iframe src="https://www.google.com/maps?q=Av.%20Eng.%20George%20Corbisier%2C%20983%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-brand">Omenauto</div>
+            <p>Comércio e Mecânica para Autos — Cuidando bem da sua máquina desde 1988.</p>
+            <p style="margin-top:6px;">Av. Eng. George Corbisier, 983 — Jabaquara, São Paulo - SP · CNPJ 58.634.486/0001-08</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511959545902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Omenauto%20e%20gostaria%20de%20um%20or%C3%A7amento." class="floating-wa" target="_blank" rel="noopener" title="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
+    </a>
+
+</body>
+</html>
