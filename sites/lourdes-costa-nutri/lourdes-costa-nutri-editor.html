@@ -385,6 +385,29 @@
       transition: transform 0.6s ease;
     }
 
+    .photo-placeholder {
+      width: 100%;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, var(--accent-soft) 0%, var(--bg-surface) 100%);
+    }
+
+    .photo-placeholder .initials {
+      font-family: 'Fraunces', serif;
+      font-size: 6rem;
+      font-weight: 700;
+      color: var(--primary-accent);
+      opacity: 0.85;
+    }
+
+    .about-img-frame .photo-placeholder {
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
     .hero-card-frame:hover img {
       transform: scale(1.03);
     }
@@ -413,11 +436,7 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-    }
-
-    .lotus-badge-icon img {
-      width: 26px;
-      height: auto;
+      font-size: 1.4rem;
     }
 
     .hero-floating-badge strong {
@@ -988,9 +1007,12 @@
       margin-bottom: 48px;
     }
 
-    .footer-brand img {
-      height: 42px;
-      width: auto;
+    .footer-brand .footer-logo-text {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
       margin-bottom: 16px;
     }
 
@@ -1111,7 +1133,6 @@
   <header>
     <div class="container header-nav">
       <a href="#" class="logo-link">
-        <img src="http://www.nutrilourdescostaa.com.br/assets/logo.png" alt="Lourdes Costa Nutricionista" class="logo-img">
         <div class="brand-title">
           Lourdes Costa
           <span>Nutricionista · Santo Amaro</span>
@@ -1166,11 +1187,11 @@
 
         <div class="hero-media">
           <div class="hero-card-frame">
-            <img src="http://www.nutrilourdescostaa.com.br/assets/foto-hero.jpg" alt="Dra. Lourdes Costa Nutricionista em consultório">
+            <div class="photo-placeholder"><span class="initials">LC</span></div>
           </div>
           <div class="hero-floating-badge">
             <div class="lotus-badge-icon">
-              <img src="http://www.nutrilourdescostaa.com.br/assets/lotus-icon.png" alt="Lótus">
+              🌿
             </div>
             <div>
               <strong>Dra. Lourdes Costa</strong>
@@ -1224,7 +1245,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="about-img-frame">
-            <img src="http://www.nutrilourdescostaa.com.br/assets/foto-lourdes.jpg" alt="Dra. Lourdes Costa Nutricionista">
+            <div class="photo-placeholder"><span class="initials">LC</span></div>
             <span class="about-tag">Nutricionista Clínica</span>
           </div>
         </div>
@@ -1437,58 +1458,14 @@
     <div class="container">
       <div class="section-header">
         <div class="eyebrow">Prova Social</div>
-        <h2>O que dizem os pacientes atendidos.</h2>
-        <p>Avaliações reais e verificadas diretamente do perfil oficial no Google.</p>
+        <h2>Avaliação real no Google.</h2>
+        <p>Confira as avaliações verificadas de pacientes diretamente no perfil oficial do Google.</p>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div>
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "A Lourdes é uma profissional incrível! Muito atenciosa, ouve com calma todas as necessidades e monta um plano alimentar que realmente cabe na rotina. Já perdi peso sem passar fome!"
-            </p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">MC</div>
-            <div class="author-meta">
-              <strong>Mariana C.</strong>
-              <span>Paciente Presencial · Google Review</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div>
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "Excelente nutricionista! O plano me ajudou demais nos treinos de hipertrofia. O atendimento humanizado e o suporte constante fazem toda a diferença nos resultados."
-            </p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">RS</div>
-            <div class="author-meta">
-              <strong>Rodrigo S.</strong>
-              <span>Paciente Online · Google Review</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div>
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">
-              "Consultório muito acolhedor e localização ótima em Santo Amaro. A Dra. Lourdes explica tudo com muita clareza e empatia. Super recomendo a todos!"
-            </p>
-          </div>
-          <div class="testimonial-author">
-            <div class="author-avatar">PL</div>
-            <div class="author-meta">
-              <strong>Patrícia L.</strong>
-              <span>Paciente Presencial · Google Review</span>
-            </div>
-          </div>
-        </div>
+      <div style="text-align:center; max-width:520px; margin:0 auto;">
+        <div style="font-size:2.5rem;">★★★★★</div>
+        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">5,0 · 45 avaliações no Google</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lourdes+Costa+Nutricionista+Rua+Augusto+Ferreira+de+Moraes+47+Socorro+Santo+Amaro" target="_blank" rel="noopener" class="btn btn-outline-dark">Ver avaliações no Google</a>
       </div>
     </div>
   </section>
@@ -1623,7 +1600,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="http://www.nutrilourdescostaa.com.br/assets/logo.png" alt="Lourdes Costa Nutricionista">
+          <span class="footer-logo-text">Lourdes Costa</span>
           <p>
             Nutrição humanizada, baseada em evidências e focada na sua qualidade de vida, emagrecimento e performance.
           </p>

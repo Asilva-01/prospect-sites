@@ -385,6 +385,29 @@
       transition: transform 0.6s ease;
     }
 
+    .photo-placeholder {
+      width: 100%;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, var(--accent-soft) 0%, var(--bg-surface) 100%);
+    }
+
+    .photo-placeholder .initials {
+      font-family: 'Fraunces', serif;
+      font-size: 6rem;
+      font-weight: 700;
+      color: var(--primary-accent);
+      opacity: 0.85;
+    }
+
+    .about-img-frame .photo-placeholder {
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
     .hero-card-frame:hover img {
       transform: scale(1.03);
     }
@@ -413,11 +436,7 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-    }
-
-    .lotus-badge-icon img {
-      width: 26px;
-      height: auto;
+      font-size: 1.4rem;
     }
 
     .hero-floating-badge strong {
@@ -988,9 +1007,12 @@
       margin-bottom: 48px;
     }
 
-    .footer-brand img {
-      height: 42px;
-      width: auto;
+    .footer-brand .footer-logo-text {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #ffffff;
       margin-bottom: 16px;
     }
 
@@ -1111,7 +1133,6 @@
   <header>
     <div class="container header-nav">
       <a href="#" class="logo-link">
-        <img src="http://www.nutrilourdescostaa.com.br/assets/logo.png" alt="Lourdes Costa Nutricionista" class="logo-img">
         <div class="brand-title">
           Lourdes Costa
           <span>Nutricionista · Santo Amaro</span>
@@ -1166,11 +1187,11 @@
 
         <div class="hero-media">
           <div class="hero-card-frame">
-            <img src="http://www.nutrilourdescostaa.com.br/assets/foto-hero.jpg" alt="Dra. Lourdes Costa Nutricionista em consultório">
+            <div class="photo-placeholder"><span class="initials">LC</span></div>
           </div>
           <div class="hero-floating-badge">
             <div class="lotus-badge-icon">
-              <img src="http://www.nutrilourdescostaa.com.br/assets/lotus-icon.png" alt="Lótus">
+              🌿
             </div>
             <div>
               <strong>Dra. Lourdes Costa</strong>
@@ -1224,7 +1245,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="about-img-frame">
-            <img src="http://www.nutrilourdescostaa.com.br/assets/foto-lourdes.jpg" alt="Dra. Lourdes Costa Nutricionista">
+            <div class="photo-placeholder"><span class="initials">LC</span></div>
             <span class="about-tag">Nutricionista Clínica</span>
           </div>
         </div>
@@ -1579,7 +1600,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="http://www.nutrilourdescostaa.com.br/assets/logo.png" alt="Lourdes Costa Nutricionista">
+          <span class="footer-logo-text">Lourdes Costa</span>
           <p>
             Nutrição humanizada, baseada em evidências e focada na sua qualidade de vida, emagrecimento e performance.
           </p>

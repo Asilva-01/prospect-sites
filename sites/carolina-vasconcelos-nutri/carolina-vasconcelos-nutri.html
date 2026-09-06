@@ -312,6 +312,28 @@
       background: var(--bg-surface);
     }
 
+    .photo-placeholder {
+      width: 100%;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, var(--accent-soft) 0%, var(--bg-surface) 100%);
+    }
+
+    .photo-placeholder .initials {
+      font-size: 6rem;
+      font-weight: 700;
+      color: var(--primary-accent);
+      opacity: 0.85;
+    }
+
+    .about-img-frame .photo-placeholder {
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
     .hero-card-frame img {
       width: 100%;
       height: 480px;
@@ -817,7 +839,7 @@
 
         <div class="hero-media">
           <div class="hero-card-frame">
-            <img src="https://static.wixstatic.com/media/141ef2_aa15817e1c074640bb501ea2b3f14d08~mv2.jpg" alt="Dra. Carolina Vasconcelos Nutricionista">
+            <div class="photo-placeholder"><span class="initials">CV</span></div>
           </div>
           <div class="hero-floating-badge">
             <div>
@@ -872,7 +894,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="about-img-frame">
-            <img src="https://static.wixstatic.com/media/141ef2_9d2808aff5ab4c899b4c242dee4cefc9~mv2.jpg" alt="Consulta com Carolina Vasconcelos">
+            <div class="photo-placeholder"><span class="initials">CV</span></div>
           </div>
         </div>
         <div class="about-content">
@@ -997,43 +1019,15 @@
   <section id="depoimentos" class="section-spacing testimonials-section">
     <div class="container">
       <div class="section-header">
-        <div class="eyebrow">Depoimentos Reais</div>
-        <h2>O que as pacientes dizem sobre o acompanhamento.</h2>
+        <div class="eyebrow">Prova Social</div>
+        <h2>Avaliação real no Google.</h2>
+        <p>Confira as avaliações verificadas de pacientes diretamente no perfil oficial do Google.</p>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "A Carol é uma excelente nutricionista! Procura entender todo o histórico da pessoa, facilidades e dificuldades e faz um plano alimentar factível com a sua realidade. Muito atenciosa e sempre disponível!"
-          </p>
-          <div class="author-meta">
-            <strong>Alessandra Mattozinho</strong>
-            <span>Paciente · Google Review</span>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "O atendimento da Carol transformou minha relação com o corpo e com a alimentação. Tratar a SOP com o acompanhamento dela me trouxe alívio de sintomas e muita qualidade de vida!"
-          </p>
-          <div class="author-meta">
-            <strong>Juliana M.</strong>
-            <span>Paciente Online · Google Review</span>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-quote">
-            "Muito empática, paciente e competente. O plano alimentar é super gostoso de seguir, sem radicalismos e com resultados que aparecem naturalmente."
-          </p>
-          <div class="author-meta">
-            <strong>Fernanda S.</strong>
-            <span>Paciente · Google Review</span>
-          </div>
-        </div>
+      <div style="text-align:center; max-width:520px; margin:0 auto;">
+        <div style="font-size:2.5rem;">★★★★★</div>
+        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">5,0 · 42 avaliações no Google</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Carolina+Vasconcelos+Nutricionista+Santo+Amaro+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn btn-outline-dark">Ver avaliações no Google</a>
       </div>
     </div>
   </section>
