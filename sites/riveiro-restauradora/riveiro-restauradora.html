@@ -1,298 +1,770 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riveiro Restauradora de Veículos | 44 Anos de Tradição — Jabaquara, São Paulo</title>
-    <meta name="description" content="Riveiro Restauradora de Veículos: oficina multimarca no Jabaquara desde 1980. Troca de óleo, revisão de freios, regulagem de motor e revisão geral com preços justos.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-body: #0E1210; --bg-surface: #161C19; --bg-surface-elevated: #1D2521;
-            --border-subtle: rgba(255,255,255,0.08); --border-highlight: rgba(201,168,92,0.35);
-            --accent: #C9A85C; --accent-hover: #DBBE7A;
-            --text-primary: #F5F6F4; --text-secondary: #9CA6A0; --text-muted: #667069;
-            --whatsapp-green: #25D366;
-            --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px;
-            --transition: all 0.25s cubic-bezier(0.16,1,0.3,1);
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,sans-serif; background:var(--bg-body); color:var(--text-primary); line-height:1.6; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
-        h1,h2,h3,h4 { font-family:'Fraunces',serif; font-weight:700; letter-spacing:-0.01em; line-height:1.2; }
-        a { text-decoration:none; color:inherit; }
-        .container { width:100%; max-width:1200px; margin:0 auto; padding:0 24px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riveiro Restauradora de Veículos | 44 anos no Jabaquara — desde 1980</title>
+<meta name="description" content="Oficina multimarca no Jabaquara, São Paulo, desde 1980. Troca de óleo, revisão de freios, regulagem de motor e revisão geral, com atendimento excepcional e preços justos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F0EAE0;
+  --paper-2:#E7DFD1;
+  --paper-3:#DED4C4;
+  --ink:#1A1613;
+  --ink-60:rgba(26,22,19,.62);
+  --ink-40:rgba(26,22,19,.42);
+  --rule:rgba(26,22,19,.22);
+  --rule-soft:rgba(26,22,19,.13);
+  --ox:#6B2028;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --print:sepia(.18) contrast(1.08) saturate(.85);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+/* grão de papel */
+body::before{
+  content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='180' height='180' filter='url(%23n)' opacity='.34'/></svg>");
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--ox);color:#F4EFE7}
 
-        .top-info { background:#080B09; border-bottom:1px solid var(--border-subtle); font-size:13px; color:var(--text-secondary); padding:9px 0; }
-        .top-info-wrap { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
-        .top-info strong { color:var(--accent); font-weight:700; }
+/* ---------- tipografia editorial ---------- */
+.serif{font-family:'Fraunces',Georgia,'Times New Roman',serif;font-variation-settings:'opsz' 144,'SOFT' 0,'WONK' 1}
+.display{
+  font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'opsz' 144,'SOFT' 0,'WONK' 1;
+  font-weight:600;line-height:.87;letter-spacing:-.028em;
+}
+.kicker{
+  font-size:10.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--ox);
+}
+.meta{font-size:10.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-40)}
+.cap{font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:12.5px;line-height:1.5;color:var(--ink-60);
+  font-variation-settings:'opsz' 14}
+.rule{height:1px;background:var(--rule);border:0}
+.wrap{width:100%;max-width:1260px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+section{position:relative}
+.vlabel{
+  writing-mode:vertical-rl;text-orientation:mixed;
+  font-size:10px;font-weight:600;letter-spacing:.36em;text-transform:uppercase;color:var(--ink-40);
+  white-space:nowrap;
+}
 
-        header { position:sticky; top:0; z-index:100; background:rgba(14,18,16,0.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--border-subtle); }
-        .nav-wrapper { display:flex; justify-content:space-between; align-items:center; height:80px; }
-        .wordmark { display:flex; align-items:center; gap:14px; }
-        .wordmark-badge { width:46px; height:46px; border-radius:10px; flex-shrink:0; background:linear-gradient(145deg,var(--accent),#8F7434); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-weight:700; font-size:16px; color:#0E1210; }
-        .wordmark-text { display:flex; flex-direction:column; }
-        .wordmark-name { font-size:18px; font-weight:700; letter-spacing:0.01em; color:#fff; font-family:'Fraunces',serif; }
-        .wordmark-tag { font-size:10px; text-transform:uppercase; letter-spacing:0.2em; color:var(--text-muted); font-weight:600; font-family:'Plus Jakarta Sans',sans-serif; }
-        .nav-menu { display:flex; gap:28px; list-style:none; font-family:'Plus Jakarta Sans',sans-serif; }
-        .nav-menu a { font-size:14px; font-weight:600; color:var(--text-secondary); transition:var(--transition); }
-        .nav-menu a:hover { color:#fff; }
-        .btn-solid { display:inline-flex; align-items:center; justify-content:center; gap:9px; background:var(--accent); color:#181205; font-size:13px; font-weight:800; padding:12px 22px; border-radius:var(--radius-sm); text-transform:uppercase; letter-spacing:0.06em; transition:var(--transition); font-family:'Plus Jakarta Sans',sans-serif; }
-        .btn-solid:hover { background:var(--accent-hover); transform:translateY(-2px); box-shadow:0 10px 22px rgba(201,168,92,0.25); }
-        .btn-wa { display:inline-flex; align-items:center; justify-content:center; gap:11px; background:var(--whatsapp-green); color:#fff; font-size:15px; font-weight:700; padding:15px 30px; border-radius:var(--radius-sm); transition:var(--transition); box-shadow:0 8px 22px rgba(37,211,102,0.28); font-family:'Plus Jakarta Sans',sans-serif; }
-        .btn-wa:hover { transform:translateY(-2px); box-shadow:0 12px 30px rgba(37,211,102,0.4); filter:brightness(1.05); }
-        .btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:9px; background:rgba(255,255,255,0.04); color:#fff; font-size:14px; font-weight:600; padding:14px 26px; border-radius:var(--radius-sm); border:1px solid var(--border-subtle); transition:var(--transition); font-family:'Plus Jakarta Sans',sans-serif; }
-        .btn-outline:hover { border-color:#fff; background:rgba(255,255,255,0.08); }
+/* barra de progresso */
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--ox);transform:scaleX(0);transform-origin:0 50%;z-index:220}
 
-        .hero { position:relative; padding:78px 0 66px; background:radial-gradient(circle at 85% 20%, rgba(201,168,92,0.08) 0%, transparent 55%); border-bottom:1px solid var(--border-subtle); }
-        .hero-grid { display:grid; grid-template-columns:1.05fr 0.95fr; gap:48px; align-items:center; }
-        .hero-kicker { display:inline-flex; align-items:center; gap:8px; background:rgba(201,168,92,0.08); border:1px solid rgba(201,168,92,0.3); padding:6px 14px; border-radius:4px; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.14em; color:var(--accent); margin-bottom:20px; font-family:'Plus Jakarta Sans',sans-serif; }
-        .hero h1 { font-size:clamp(32px,4.2vw,50px); color:#fff; margin-bottom:20px; }
-        .hero h1 span { color:var(--accent); }
-        .hero p { font-family:'Plus Jakarta Sans',sans-serif; font-size:16.5px; color:var(--text-secondary); margin-bottom:32px; max-width:540px; }
-        .hero-actions { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-bottom:36px; }
-        .hero-stats { display:flex; gap:32px; border-top:1px solid var(--border-subtle); padding-top:22px; flex-wrap:wrap; font-family:'Plus Jakarta Sans',sans-serif; }
-        .stat-item h4 { font-family:'Plus Jakarta Sans',sans-serif; font-size:26px; font-weight:800; color:#fff; margin-bottom:2px; }
-        .stat-item span { font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); font-weight:600; }
+/* ---------- masthead ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:200;transition:background .55s var(--ease),box-shadow .55s var(--ease);
+  border-bottom:1px solid transparent}
+header.solid{background:rgba(240,234,224,.93);backdrop-filter:blur(10px) saturate(1.1);border-bottom-color:var(--rule)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;height:74px}
+.mast{display:flex;align-items:baseline;gap:11px}
+.mast b{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 60,'WONK' 1;font-weight:700;
+  font-size:21px;letter-spacing:-.01em}
+.mast span{font-size:9.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-40)}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-60);
+  padding:5px 0;position:relative;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ox);transition:width .45s var(--ease)}
+.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}
+.nav-cta{font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  border:1px solid var(--ink);padding:11px 19px;transition:.4s var(--ease)}
+.nav-cta:hover{background:var(--ox);border-color:var(--ox);color:#F4EFE7}
+@media(max-width:940px){.nav-links{display:none}}
 
-        .hero-visual { position:relative; border-radius:var(--radius-lg); border:1px solid var(--border-highlight); background:linear-gradient(160deg,var(--bg-surface-elevated),#0C100D); box-shadow:0 25px 55px rgba(0,0,0,0.6); padding:44px 32px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; min-height:400px; }
-        .hero-visual .icon-ring { width:140px; height:140px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:radial-gradient(circle, rgba(201,168,92,0.12) 0%, transparent 70%); }
-        .hero-visual svg.wrench { width:96px; height:96px; }
-        .hero-visual .big-name { font-family:'Fraunces',serif; font-weight:700; font-size:20px; letter-spacing:0.02em; color:#fff; text-align:center; }
-        .hero-visual .since { font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:var(--text-muted); text-align:center; }
+/* ---------- HERO capa de revista ---------- */
+.hero{height:100svh;min-height:620px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;
+  background:var(--paper)}
+.hero-media{position:absolute;inset:-9% 0 -9%;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:var(--print) brightness(1.02)}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(to top,var(--paper) 1%,rgba(240,234,224,.9) 20%,rgba(240,234,224,.34) 52%,rgba(240,234,224,.62) 100%),
+    linear-gradient(to right,rgba(240,234,224,.68),rgba(240,234,224,.05) 55%);
+}
+.hero-top{position:absolute;top:0;left:0;right:0;z-index:3;padding-top:86px}
+.hero-top .row{display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+  border-bottom:1px solid var(--rule);padding-bottom:10px}
+.hero-inner{position:relative;z-index:3;width:100%;padding-bottom:clamp(34px,6vh,68px)}
+.hero h1{font-size:clamp(3.1rem,12.6vw,12.4rem);margin:0 0 6px;font-weight:600}
+.hero h1 .l2{display:block;font-style:italic;font-weight:400;font-size:.34em;letter-spacing:-.01em;
+  margin-top:.1em;margin-left:.06em;color:var(--ox)}
+.hero-rule{display:flex;align-items:center;gap:18px;margin:22px 0 20px}
+.hero-rule hr{flex:1;height:1px;background:var(--ink);border:0;opacity:.35}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(20px,4vw,60px);align-items:end}
+.hero-foot p{max-width:40ch;font-size:clamp(14.5px,1.5vw,16.5px);color:#3A322B}
+.hero-foot p b{font-weight:600;color:var(--ink)}
+.hero-num{text-align:right}
+.hero-num .n{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:clamp(3rem,7vw,6rem);line-height:.82;letter-spacing:-.04em;display:block;color:var(--ox)}
+.hero-num .t{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-40);display:block;margin-top:10px}
+.hero-side{position:absolute;right:clamp(8px,2vw,22px);top:50%;transform:translateY(-50%);z-index:3}
+.scrollhint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:4;display:flex;
+  flex-direction:column;align-items:center;gap:8px;font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-40)}
+.scrollhint i{width:1px;height:34px;background:linear-gradient(var(--ox),transparent);display:block;animation:drop 2.2s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}
+  55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:760px){
+  .hero-foot{grid-template-columns:1fr;gap:26px}
+  .hero-num{text-align:left}
+  .hero-side{display:none}
+}
 
-        .section-padding { padding:88px 0; }
-        .section-header { text-align:center; max-width:720px; margin:0 auto 52px; }
-        .section-kicker { font-family:'Plus Jakarta Sans',sans-serif; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.18em; color:var(--accent); margin-bottom:12px; }
-        .section-header h2 { font-size:clamp(28px,3.6vw,40px); color:#fff; margin-bottom:14px; }
-        .section-header p { font-family:'Plus Jakarta Sans',sans-serif; font-size:15.5px; color:var(--text-secondary); }
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;gap:11px;font-size:11.5px;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;padding:15px 26px;transition:.4s var(--ease)}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-ox{background:var(--ox);color:#F4EFE7}
+.btn-ox:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(107,32,40,.24)}
+.btn-line{border:1px solid var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
 
-        .services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
-        .service-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:32px 26px; transition:var(--transition); text-align:center; }
-        .service-card:hover { border-color:var(--border-highlight); transform:translateY(-4px); box-shadow:0 18px 36px rgba(0,0,0,0.35); }
-        .service-icon { width:52px; height:52px; border-radius:12px; background:rgba(201,168,92,0.1); display:flex; align-items:center; justify-content:center; margin:0 auto 18px; }
-        .service-icon svg { width:26px; height:26px; stroke:var(--accent); fill:none; stroke-width:1.8; }
-        .service-card h3 { font-size:18px; color:#fff; }
+/* ---------- cabeçalho de seção numerado ---------- */
+.shead{display:flex;align-items:baseline;gap:clamp(14px,2vw,26px);margin-bottom:clamp(30px,5vh,54px)}
+.shead .num{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 14;font-weight:600;
+  font-size:12px;color:var(--ox);letter-spacing:.1em;flex:none}
+.shead h2{font-size:clamp(1.9rem,5.4vw,4.2rem);font-weight:500}
+.shead h2 em{font-style:italic;color:var(--ox);font-weight:400}
+.shead .ln{flex:1;height:1px;background:var(--rule);align-self:center;min-width:20px}
 
-        .about-wrap { display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; }
-        .about-lead h3 { font-size:26px; color:#fff; margin-bottom:14px; }
-        .about-lead p { font-family:'Plus Jakarta Sans',sans-serif; font-size:15.5px; color:var(--text-secondary); margin-bottom:18px; line-height:1.7; }
-        .diff-list { display:flex; flex-direction:column; gap:14px; font-family:'Plus Jakarta Sans',sans-serif; }
-        .diff-item { display:flex; gap:14px; align-items:flex-start; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:18px 20px; }
-        .diff-item .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); margin-top:7px; flex-shrink:0; }
-        .diff-item p { font-size:14px; color:#E2E8F0; }
+/* ---------- 01 A CASA — bleed à esquerda ---------- */
+.casa{padding:clamp(5rem,12vh,9rem) 0;overflow:hidden}
+.casa-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(26px,5vw,72px);align-items:start}
+.casa-fig{position:relative;overflow:hidden;margin-left:calc(-1 * clamp(20px,5vw,64px));aspect-ratio:4/3}
+.casa-fig .ph{position:absolute;inset:-8% 0;}
+.casa-fig .ph img{width:100%;height:100%;object-fit:cover;filter:var(--print)}
+.casa-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px clamp(16px,3vw,26px);
+  background:linear-gradient(transparent,rgba(240,234,224,.94) 55%)}
+.casa-txt{padding-top:clamp(0px,3vw,40px)}
+.ghost{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:clamp(4.5rem,13vw,11rem);line-height:.78;letter-spacing:-.05em;color:transparent;
+  -webkit-text-stroke:1px rgba(26,22,19,.24);margin-bottom:14px}
+.lead{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 40;font-weight:400;
+  font-size:clamp(1.12rem,2.1vw,1.5rem);line-height:1.42;margin-bottom:26px}
+.lead::first-letter{
+  float:left;font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:4.6em;line-height:.76;padding:.06em .1em 0 0;margin-top:.04em;color:var(--ox);
+}
+.cols{column-count:2;column-gap:clamp(22px,3vw,42px);column-rule:1px solid var(--rule-soft);
+  font-size:15px;color:#3A322B;padding-top:20px;border-top:1px solid var(--rule)}
+.cols p{margin-bottom:14px;break-inside:avoid}
+.casa-side{display:flex;gap:16px;align-items:stretch;margin-top:30px}
+@media(max-width:900px){
+  .casa-grid{grid-template-columns:1fr;gap:34px}
+  .casa-fig{margin-left:calc(-1 * clamp(20px,5vw,64px));margin-right:calc(-1 * clamp(20px,5vw,64px));aspect-ratio:16/10}
+  .cols{column-count:1}
+}
 
-        .testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; font-family:'Plus Jakarta Sans',sans-serif; }
-        .testi-card { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:28px; }
-        .testi-card p.quote { font-size:14.5px; color:#E2E8F0; line-height:1.65; margin-bottom:16px; font-style:italic; }
-        .testi-card .who { font-size:13px; font-weight:700; color:var(--accent); }
-        .testi-source { text-align:center; font-family:'Plus Jakarta Sans',sans-serif; font-size:12.5px; color:var(--text-muted); margin-top:24px; }
+/* ---------- 02 O OFÍCIO — índice + retrato sangrando à direita ---------- */
+.oficio{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);overflow:hidden}
+.oficio-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(26px,5vw,70px);align-items:stretch}
+.oficio-left{padding:clamp(4.5rem,11vh,8rem) 0 clamp(4.5rem,11vh,8rem)}
+.idx{border-top:1px solid var(--rule)}
+.idx-row{display:grid;grid-template-columns:44px 1fr auto;gap:14px;align-items:baseline;
+  padding:clamp(18px,2.6vh,26px) 0;border-bottom:1px solid var(--rule);transition:.45s var(--ease)}
+.idx-row .n{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 14;font-weight:600;
+  font-size:11.5px;color:var(--ink-40);letter-spacing:.1em;transition:color .4s}
+.idx-row h3{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'SOFT' 0,'WONK' 1;
+  font-weight:500;font-size:clamp(1.35rem,3.4vw,2.5rem);line-height:1.02;letter-spacing:-.02em;transition:color .4s}
+.idx-row .dot{font-size:11px;color:var(--ink-40);letter-spacing:.06em;white-space:nowrap;font-weight:500}
+.idx-row:hover{padding-left:12px}
+.idx-row:hover h3{color:var(--ox);font-style:italic}
+.idx-row:hover .n{color:var(--ink)}
+.oficio-note{margin-top:32px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.oficio-note p{font-size:14.5px;color:#3A322B;max-width:46ch}
+.oficio-fig{position:relative;overflow:hidden;margin-right:calc(-1 * clamp(20px,5vw,64px));min-height:520px}
+.oficio-fig .ph{position:absolute;inset:-9% 0}
+.oficio-fig .ph img{width:100%;height:100%;object-fit:cover;filter:var(--print)}
+.oficio-fig .over{position:absolute;left:0;bottom:clamp(24px,6vh,64px);z-index:3;
+  transform:translateX(-14%);pointer-events:none}
+.oficio-fig .over span{display:block;font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;font-style:italic;
+  font-size:clamp(2.2rem,6.4vw,5rem);line-height:.9;letter-spacing:-.03em;color:var(--paper);
+  text-shadow:0 2px 26px rgba(26,22,19,.42)}
+.oficio-fig figcaption{position:absolute;right:clamp(16px,3vw,26px);top:20px;z-index:3;text-align:right;
+  color:rgba(244,239,231,.86);max-width:22ch;text-shadow:0 1px 12px rgba(26,22,19,.5)}
+@media(max-width:900px){
+  .oficio-grid{grid-template-columns:1fr;gap:0}
+  .oficio-fig{margin-right:calc(-1 * clamp(20px,5vw,64px));margin-left:calc(-1 * clamp(20px,5vw,64px));
+    min-height:0;aspect-ratio:4/5;max-height:70vh}
+  .oficio-fig .over{transform:none;left:clamp(16px,4vw,26px)}
+  .oficio-left{padding-bottom:clamp(3rem,7vh,5rem)}
+}
 
-        .faq-wrap { max-width:820px; margin:0 auto; display:flex; flex-direction:column; gap:12px; font-family:'Plus Jakarta Sans',sans-serif; }
-        .faq-item { background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:var(--radius-sm); overflow:hidden; }
-        .faq-q { padding:20px 26px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; font-size:15.5px; font-weight:700; color:#fff; user-select:none; }
-        .faq-q:hover { color:var(--accent); }
-        .faq-icon { font-size:19px; color:var(--accent); transition:var(--transition); }
-        .faq-a { padding:0 26px 22px; font-size:14px; color:var(--text-secondary); display:none; border-top:1px solid rgba(255,255,255,0.04); padding-top:15px; line-height:1.7; }
-        .faq-item.open .faq-a { display:block; }
-        .faq-item.open .faq-icon { transform:rotate(45deg); }
+/* ---------- BREAK full-bleed ---------- */
+.break{height:clamp(440px,78vh,720px);display:flex;align-items:center;overflow:hidden}
+.break-media{position:absolute;inset:-12% 0;z-index:0}
+.break-media img{width:100%;height:100%;object-fit:cover;filter:var(--print) brightness(.86)}
+.break-media::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(26,22,19,.74),rgba(26,22,19,.3) 62%,rgba(26,22,19,.55))}
+.break .wrap{position:relative;z-index:2}
+.break blockquote{max-width:17ch;font-family:'Fraunces',Georgia,serif;
+  font-variation-settings:'opsz' 144,'SOFT' 0,'WONK' 1;font-weight:500;
+  font-size:clamp(1.8rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.03em;color:#F4EFE7}
+.break blockquote em{font-style:italic;color:#E0A5A5}
+.break cite{display:block;margin-top:26px;font-style:normal;font-size:10.5px;letter-spacing:.26em;
+  text-transform:uppercase;color:rgba(244,239,231,.6)}
 
-        .contact-box { background:linear-gradient(135deg,var(--bg-surface) 0%,#1A211D 100%); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:50px; display:grid; grid-template-columns:1fr 1fr; gap:46px; align-items:center; font-family:'Plus Jakarta Sans',sans-serif; }
-        .contact-meta h3 { font-size:28px; color:#fff; margin-bottom:14px; }
-        .contact-meta p { font-size:14.5px; color:var(--text-secondary); margin-bottom:26px; }
-        .contact-lines { display:flex; flex-direction:column; gap:15px; margin-bottom:32px; }
-        .contact-line { display:flex; align-items:flex-start; gap:14px; font-size:14.5px; color:#E2E8F0; }
-        .line-label { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); width:84px; flex-shrink:0; padding-top:1px; }
+/* ---------- 03 LINHA DO TEMPO (sem pin: altura natural do conteudo) ---------- */
+.linha{background:var(--paper);border-bottom:1px solid var(--rule)}
+.linha-pin{display:block;padding:clamp(5rem,10vh,7rem) 0;overflow:hidden}
+.linha-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:clamp(30px,6vh,58px)}
+.linha-top p{max-width:34ch;font-size:14.5px;color:#3A322B}
+.big-year{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:clamp(3.4rem,11vw,9.5rem);line-height:.8;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+.regua{position:relative;padding:56px 0 0;border-top:1px solid var(--ink)}
+.regua .ticks{display:flex;justify-content:space-between;position:absolute;top:0;left:0;right:0}
+.regua .tick{position:relative;width:1px;background:var(--rule);height:14px;flex:none}
+.regua .tick.maj{height:26px;background:var(--ink)}
+.regua .tick span{position:absolute;top:32px;left:0;transform:translateX(-50%);font-size:10.5px;font-weight:600;
+  letter-spacing:.16em;color:var(--ink-40);white-space:nowrap}
+.regua .tick.maj span{color:var(--ink)}
+.regua .marker{position:absolute;top:-1px;left:0;width:2px;height:44px;background:var(--ox);z-index:3}
+.regua .marker::after{content:"";position:absolute;top:-5px;left:-4px;width:10px;height:10px;border-radius:50%;background:var(--ox)}
+.regua .fill{position:absolute;top:-2px;left:0;height:3px;background:var(--ox);width:0}
+.anos-row{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,52px);align-items:end;margin-top:clamp(46px,8vh,86px);
+  border-top:1px solid var(--rule);padding-top:clamp(24px,4vh,40px)}
+.anos-num{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:clamp(5rem,17vw,15rem);line-height:.72;letter-spacing:-.055em;color:var(--ox);font-variant-numeric:tabular-nums}
+.anos-txt h3{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 60,'WONK' 1;font-weight:500;
+  font-size:clamp(1.2rem,2.6vw,2rem);line-height:1.14;margin-bottom:10px;letter-spacing:-.02em}
+.anos-txt p{font-size:14.5px;color:#3A322B;max-width:44ch}
+@media(max-width:760px){
+  .regua .tick span{font-size:9px;letter-spacing:.08em}
+  .anos-row{grid-template-columns:1fr;gap:18px}
+}
 
-        footer { background:#080B09; border-top:1px solid var(--border-subtle); padding:36px 0; font-size:13px; color:var(--text-muted); text-align:center; font-family:'Plus Jakarta Sans',sans-serif; }
-        .footer-brand { color:#fff; font-weight:700; letter-spacing:0.02em; margin-bottom:8px; font-family:'Fraunces',serif; font-size:17px; }
+/* ---------- 04 DEPOIMENTOS ---------- */
+.depo{padding:clamp(5rem,12vh,9rem) 0 clamp(4rem,9vh,7rem);overflow:hidden}
+.depo-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(26px,5vw,70px);align-items:start}
+.quotes{display:flex;flex-direction:column}
+figure.q{padding:clamp(26px,4vh,42px) 0;border-bottom:1px solid var(--rule);position:relative}
+figure.q:first-child{border-top:1px solid var(--rule)}
+figure.q blockquote{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 100,'SOFT' 0,'WONK' 1;
+  font-weight:400;font-size:clamp(1.15rem,2.5vw,1.75rem);line-height:1.32;letter-spacing:-.015em;
+  text-indent:-.42em}
+figure.q figcaption{margin-top:16px;font-size:11px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--ox)}
+figure.q .mark{position:absolute;font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;
+  font-weight:700;font-size:clamp(5rem,11vw,9rem);line-height:1;color:rgba(107,32,40,.14);
+  top:-6px;right:-4px;pointer-events:none;user-select:none}
+figure.q:nth-child(2){padding-left:clamp(0px,5vw,64px)}
+.depo-src{margin-top:22px;display:flex;gap:12px;align-items:flex-start;max-width:52ch}
+.depo-src i{width:22px;height:1px;background:var(--ox);flex:none;margin-top:10px}
+.depo-src p{font-size:12px;color:var(--ink-60);line-height:1.55}
+.depo-fig{position:relative;overflow:hidden;margin-right:calc(-1 * clamp(20px,5vw,64px));aspect-ratio:3/4;
+  position:sticky;top:110px}
+.depo-fig .ph{position:absolute;inset:-8% 0}
+.depo-fig .ph img{width:100%;height:100%;object-fit:cover;filter:var(--print)}
+.depo-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px clamp(16px,3vw,24px);
+  background:linear-gradient(transparent,rgba(240,234,224,.95) 60%)}
+@media(max-width:900px){
+  .depo-grid{grid-template-columns:1fr;gap:34px}
+  .depo-fig{position:relative;top:auto;margin-left:calc(-1 * clamp(20px,5vw,64px));aspect-ratio:16/11}
+  figure.q:nth-child(2){padding-left:0}
+}
 
-        .floating-wa { position:fixed; bottom:24px; right:24px; z-index:999; background:var(--whatsapp-green); color:#fff; width:58px; height:58px; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 22px rgba(37,211,102,0.35); transition:var(--transition); }
-        .floating-wa:hover { transform:scale(1.08); filter:brightness(1.1); }
-        .floating-wa svg { width:28px; height:28px; fill:currentColor; }
+/* ---------- 05 PRINCÍPIOS ---------- */
+.princ{background:var(--paper-2);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:clamp(4.5rem,11vh,8rem) 0}
+.princ-list{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(28px,5vw,80px)}
+.princ-item{padding:clamp(22px,3.6vh,34px) 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.princ-item:nth-child(3),.princ-item:nth-child(4){border-bottom:1px solid var(--rule)}
+.princ-item .n{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 14;font-weight:600;
+  font-size:11.5px;color:var(--ox);letter-spacing:.1em;padding-top:9px}
+.princ-item h3{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 100,'WONK' 1;font-weight:500;
+  font-size:clamp(1.15rem,2.5vw,1.75rem);line-height:1.15;letter-spacing:-.02em}
+.princ-item h3 em{font-style:italic;color:var(--ox)}
+.princ-item:nth-child(even){margin-top:clamp(0px,3vw,44px)}
+@media(max-width:760px){.princ-list{grid-template-columns:1fr}.princ-item:nth-child(even){margin-top:0}
+  .princ-item:nth-child(3){border-bottom:0}}
 
-        @media (max-width:960px) {
-            .hero-grid, .contact-box, .about-wrap { grid-template-columns:1fr; gap:36px; }
-            .contact-box { padding:28px 20px; }
-            .nav-menu { display:none; }
-            .hero-visual { min-height:280px; padding:32px 22px; }
-        }
-        @media (max-width:480px) {
-            .top-info-wrap { flex-direction:column; align-items:flex-start; }
-            .hero-actions .btn-wa, .hero-actions .btn-outline { width:100%; }
-        }
-    </style>
+/* ---------- 06 VISITE ---------- */
+.visite{padding:clamp(5rem,12vh,9rem) 0 clamp(3.5rem,7vh,5rem);overflow:hidden}
+.visite-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.visite h2.big{font-size:clamp(2.1rem,6.4vw,5rem);font-weight:500;margin-bottom:26px;line-height:.95}
+.visite h2.big em{font-style:italic;color:var(--ox)}
+.dl{border-top:1px solid var(--ink)}
+.dl div{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule-soft)}
+.dl dt{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ox);padding-top:4px}
+.dl dd{font-size:15px;color:#3A322B}
+.dl dd b{font-weight:600;color:var(--ink)}
+.visite-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.visite-right{display:flex;flex-direction:column;gap:clamp(18px,3vh,28px)}
+.map{position:relative;aspect-ratio:4/3;border:1px solid var(--rule);overflow:hidden;background:var(--paper-3);
+  filter:sepia(.3) contrast(.96) saturate(.7)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.visite-fig{position:relative;overflow:hidden;aspect-ratio:16/10;margin-right:calc(-1 * clamp(20px,5vw,64px))}
+.visite-fig .ph{position:absolute;inset:-8% 0}
+.visite-fig .ph img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:var(--print)}
+.visite-fig figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px clamp(14px,3vw,22px);
+  background:linear-gradient(transparent,rgba(240,234,224,.94) 58%)}
+@media(max-width:900px){.visite-grid{grid-template-columns:1fr;gap:36px}
+  .visite-fig{margin-left:calc(-1 * clamp(20px,5vw,64px))}}
+
+/* ---------- rodapé ---------- */
+footer{border-top:1px solid var(--ink);padding:44px 0 38px;background:var(--paper)}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;flex-wrap:wrap;margin-bottom:30px}
+.foot-mark{font-family:'Fraunces',Georgia,serif;font-variation-settings:'opsz' 144,'WONK' 1;font-weight:700;
+  font-size:clamp(2rem,8.5vw,6rem);line-height:.8;letter-spacing:-.045em}
+.foot-mark em{font-style:italic;font-weight:400;color:var(--ox);font-size:.36em;display:block;margin-top:.3em}
+.foot-meta{font-size:13px;color:var(--ink-60);display:flex;flex-direction:column;gap:5px;text-align:right}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;color:var(--ink-40);
+  border-top:1px solid var(--rule);padding-top:20px;letter-spacing:.03em}
+@media(max-width:700px){.foot-meta{text-align:left}}
+
+/* ---------- whatsapp flutuante ---------- */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:210;display:flex;align-items:center;gap:10px;
+  background:var(--ox);color:#F4EFE7;padding:14px 18px;box-shadow:0 12px 30px rgba(26,22,19,.24);
+  font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;transition:.4s var(--ease)}
+.wa-float svg{width:20px;height:20px;fill:currentColor;flex:none}
+.wa-float:hover{transform:translateY(-3px)}
+@media(max-width:520px){.wa-float span{display:none}.wa-float{padding:15px;border-radius:50%}}
+
+[data-reveal]{will-change:transform,opacity}
+[data-split]{overflow:hidden;display:block}
+.ch{display:inline-block;white-space:pre}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::after,*::before{animation:none!important;transition:none!important}
+  [data-reveal]{opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
 </head>
 <body>
 
-    <div class="top-info">
-        <div class="container top-info-wrap">
-            <span>R. Alberto Leal, 512 — <strong>Jabaquara, São Paulo</strong></span>
-            <span>WhatsApp: <strong>(11) 98138-2222</strong></span>
-        </div>
+<div class="progress" id="progress"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#topo" class="mast"><b>Riveiro</b><span>Restauradora · 1980</span></a>
+    <nav class="nav-links">
+      <a href="#casa">A casa</a>
+      <a href="#oficio">O ofício</a>
+      <a href="#linha">1980 → 2026</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#visite">Visite</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5511981382222" target="_blank" rel="noopener">Falar com a oficina</a>
+  </div>
+</header>
+
+<!-- ============ HERO — capa ============ -->
+<section class="hero" id="topo">
+  <div class="hero-media" id="heroMedia">
+    <img src="../../assets/fotos/restauracao-classicos-oficina-05.jpg" alt="Automóveis clássicos em processo de restauração dentro de uma oficina">
+  </div>
+
+  <div class="hero-top">
+    <div class="wrap">
+      <div class="row">
+        <span class="kicker">Jabaquara · São Paulo</span>
+        <span class="meta">Desde 1980 — Ano 44</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-side"><span class="vlabel">Oficina multimarca · R. Alberto Leal, 512</span></div>
+
+  <div class="wrap hero-inner" id="heroInner">
+    <h1 class="display">
+      <span data-split>Riveiro</span>
+      <span class="l2" data-split>Restauradora de Veículos</span>
+    </h1>
+    <div class="hero-rule"><hr><span class="meta">Matéria de capa</span></div>
+    <div class="hero-foot">
+      <p>Seu carro nas mãos de quem entende de verdade. Desde 1980, uma oficina <b>multimarca</b> no Jabaquara — atendimento excepcional, preços justos e atualização constante nas técnicas e tecnologias do setor.</p>
+      <div class="hero-num">
+        <span class="n">1980</span>
+        <span class="t">Ano de fundação</span>
+      </div>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:30px">
+      <a class="btn btn-ox" href="https://wa.me/5511981382222" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+        Pedir orçamento
+      </a>
+      <a class="btn btn-line" href="#oficio">Ler a matéria</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ 01 A CASA ============ -->
+<section class="casa" id="casa">
+  <div class="wrap">
+    <div class="shead">
+      <span class="num">01</span>
+      <h2 class="display">A <em>casa</em></h2>
+      <span class="ln"></span>
+      <span class="meta">Jabaquara</span>
     </div>
 
-    <header>
-        <div class="container nav-wrapper">
-            <div class="wordmark">
-                <div class="wordmark-badge">R</div>
-                <div class="wordmark-text">
-                    <div class="wordmark-name">Riveiro Restauradora</div>
-                    <div class="wordmark-tag">44 Anos · Desde 1980</div>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Nossa História</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Localização</a></li>
-            </ul>
-            <a href="https://wa.me/5511981382222?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Riveiro%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-solid" target="_blank" rel="noopener">Pedir Orçamento</a>
+    <div class="casa-grid">
+      <figure class="casa-fig" data-reveal>
+        <div class="ph" data-par><img src="../../assets/fotos/restauracao-oficina-elevador-04.jpg" alt="Carro clássico sobre elevador em oficina de restauração"></div>
+        <figcaption class="cap">Clássico sobre o elevador — a paciência de quem trabalha com carro há quatro décadas.</figcaption>
+      </figure>
+
+      <div class="casa-txt">
+        <div class="ghost" data-reveal>1980</div>
+        <p class="lead" data-reveal>Quarenta e quatro anos numa mesma rua do Jabaquara não se explicam com propaganda: explicam-se com carro entregue no prazo, conta que fecha e cliente que volta.</p>
+        <div class="cols" data-reveal>
+          <p>A Riveiro Restauradora de Veículos abriu as portas em 1980 e nunca saiu do bairro. É uma oficina multimarca — recebe o carro popular do dia a dia com a mesma atenção que dá ao veículo que exige mão firme e tempo de bancada.</p>
+          <p>O que sustenta a casa é a soma de duas coisas que raramente andam juntas: atendimento excepcional e preços justos. Uma não vale sem a outra.</p>
+          <p>Tradição, aqui, não é sinônimo de parada no tempo. A oficina se mantém atualizada com as técnicas e tecnologias mais recentes do setor — o que muda é a ferramenta, não o critério.</p>
+          <p>Do óleo à revisão geral, o serviço sai com garantia e qualidade. É esse o acordo desde o primeiro dia.</p>
         </div>
-    </header>
-
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="hero-kicker">44 Anos de Tradição no Jabaquara</div>
-                <h1>Seu carro nas mãos de quem entende de <span>verdade.</span></h1>
-                <p>Desde 1980, oficina multimarca no Jabaquara com atendimento excepcional e preços justos, sempre atualizada com as técnicas e tecnologias mais recentes do setor.</p>
-                <div class="hero-actions">
-                    <a href="https://wa.me/5511981382222?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Riveiro%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn-wa" target="_blank" rel="noopener">
-                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                        Falar no WhatsApp
-                    </a>
-                    <a href="#servicos" class="btn-outline">Ver Serviços</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item"><h4>44 Anos</h4><span>Desde 1980</span></div>
-                    <div class="stat-item"><h4>Multimarca</h4><span>Diversas montadoras</span></div>
-                    <div class="stat-item"><h4>Preço Justo</h4><span>Sem surpresa no fechamento</span></div>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="icon-ring">
-                    <svg class="wrench" viewBox="0 0 24 24" fill="none" stroke="#C9A85C" stroke-width="1.3">
-                        <path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 005.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/>
-                    </svg>
-                </div>
-                <div class="big-name">Riveiro Restauradora de Veículos</div>
-                <div class="since">Tradição desde 1980</div>
-            </div>
+        <div class="casa-side" data-reveal>
+          <span class="meta">R. Alberto Leal, 512 — Jabaquara, São Paulo · SP</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="servicos" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">Nossos Serviços</div>
-                <h2>Manutenção completa para o seu carro</h2>
-                <p>Consulte disponibilidade e receba um orçamento direto pelo WhatsApp.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-                    <h3>Troca de Óleo</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
-                    <h3>Revisão de Freios</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.5 7.5 0 000-2l2-1.6-2-3.4-2.4 1a7.6 7.6 0 00-1.7-1l-.4-2.5H10.1l-.4 2.5a7.6 7.6 0 00-1.7 1l-2.4-1-2 3.4L5.6 11a7.5 7.5 0 000 2l-2 1.6 2 3.4 2.4-1a7.6 7.6 0 001.7 1l.4 2.5h3.8l.4-2.5a7.6 7.6 0 001.7-1l2.4 1 2-3.4-2-1.6z"/></svg></div>
-                    <h3>Regulagem de Motor</h3>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4M7 14h6"/></svg></div>
-                    <h3>Revisão Geral</h3>
-                </div>
-            </div>
+<!-- ============ 02 O OFÍCIO ============ -->
+<section class="oficio" id="oficio">
+  <div class="wrap">
+    <div class="oficio-grid">
+      <div class="oficio-left">
+        <div class="shead">
+          <span class="num">02</span>
+          <h2 class="display">O <em>ofício</em></h2>
+          <span class="ln"></span>
         </div>
-    </section>
 
-    <section id="sobre" class="section-padding" style="background:#080B09; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
-        <div class="container about-wrap">
-            <div class="about-lead">
-                <div class="section-kicker">Nossa História</div>
-                <h3>44 anos de tradição, sempre atualizados</h3>
-                <p>A Riveiro Restauradora de Veículos atua desde 1980 no Jabaquara, sempre priorizando o atendimento excepcional e os preços justos aos clientes.</p>
-                <p>Além da tradição, mantemos atualização contínua de técnicas e tecnologias — para que o cuidado com o seu carro nunca fique para trás.</p>
-            </div>
-            <div class="diff-list">
-                <div class="diff-item"><div class="dot"></div><p>Atendimento excepcional e preços justos.</p></div>
-                <div class="diff-item"><div class="dot"></div><p>Atualização contínua de técnicas e tecnologias.</p></div>
-                <div class="diff-item"><div class="dot"></div><p>Garantia e qualidade em todos os serviços.</p></div>
-                <div class="diff-item"><div class="dot"></div><p>Melhor preço da região.</p></div>
-            </div>
+        <div class="idx">
+          <article class="idx-row" data-reveal>
+            <span class="n">01</span>
+            <h3>Troca de Óleo</h3>
+            <span class="dot">Manutenção</span>
+          </article>
+          <article class="idx-row" data-reveal>
+            <span class="n">02</span>
+            <h3>Revisão de Freios</h3>
+            <span class="dot">Segurança</span>
+          </article>
+          <article class="idx-row" data-reveal>
+            <span class="n">03</span>
+            <h3>Regulagem de Motor</h3>
+            <span class="dot">Desempenho</span>
+          </article>
+          <article class="idx-row" data-reveal>
+            <span class="n">04</span>
+            <h3>Revisão Geral</h3>
+            <span class="dot">Check-up</span>
+          </article>
         </div>
-    </section>
 
-    <section id="depoimentos" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">Quem já passou pela Riveiro</div>
-                <h2>Depoimentos de clientes</h2>
-            </div>
-            <div class="testi-grid">
-                <div class="testi-card">
-                    <p class="quote">"A pelo menos 2 anos levo meu carro para o Ricardo!! Oficina de confiança, serviços de primeira qualidade e pontuais! Recomendo a todos."</p>
-                    <div class="who">Gustavo Paz</div>
-                </div>
-                <div class="testi-card">
-                    <p class="quote">"Tive um excelente atendimento. Meu carro estava cheio de problemas crônicos e foi resolvido muito rápido a entrega do serviço."</p>
-                    <div class="who">Bruno Martins</div>
-                </div>
-                <div class="testi-card">
-                    <p class="quote">"Tive um excelente atendimento do telefone até a ida na oficina. Profissionais honestos e solícitos. Recomendo com certeza."</p>
-                    <div class="who">Fernanda Laia</div>
-                </div>
-            </div>
-            <p class="testi-source">Depoimentos reproduzidos do site oficial da Riveiro Restauradora de Veículos.</p>
+        <div class="oficio-note" data-reveal>
+          <span class="vlabel">Nota da redação</span>
+          <p>Oficina multimarca. Todos os serviços saem com garantia e qualidade — e com o melhor preço da região. Para saber se atendemos o seu modelo, chame no WhatsApp: <b>(11) 98138-2222</b>.</p>
         </div>
-    </section>
+      </div>
 
-    <section id="contato" class="section-padding" style="background:#080B09; border-top:1px solid var(--border-subtle);">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-meta">
-                    <h3>Venha até a Riveiro</h3>
-                    <p>Estamos na Rua Alberto Leal, no Jabaquara, Zona Sul de São Paulo.</p>
-                    <div class="contact-lines">
-                        <div class="contact-line"><span class="line-label">Endereço</span><span>R. Alberto Leal, 512 — Jabaquara, São Paulo - SP, CEP 04343-000</span></div>
-                        <div class="contact-line"><span class="line-label">WhatsApp</span><span>(11) 98138-2222</span></div>
-                        <div class="contact-line"><span class="line-label">Horário</span><span>Segunda a sexta, 09:00 às 18:00. Sábado e domingo: fechado.</span></div>
-                        <div class="contact-line"><span class="line-label">Avaliações</span><span><a href="https://www.google.com/maps/search/?api=1&query=Riveiro+Restauradora+de+Ve%C3%ADculos+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Ver no Google Maps ↗</a></span></div>
-                    </div>
-                    <a href="https://wa.me/5511981382222?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20oficina." class="btn-wa" target="_blank" rel="noopener">
-                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                        Falar no WhatsApp
-                    </a>
-                </div>
-                <div style="border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-subtle); height:320px; background:#08090C;">
-                    <iframe src="https://www.google.com/maps?q=R.%20Alberto%20Leal%2C%20512%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004343-000&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+      <figure class="oficio-fig" data-reveal>
+        <div class="ph" data-par><img src="../../assets/fotos/motor-classico-cromado-03.jpg" alt="Motor clássico com componentes cromados, visto de perto"></div>
+        <div class="over"><span>Motor</span></div>
+        <figcaption class="cap">Motor clássico cromado — imagem ilustrativa.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BREAK ============ -->
+<section class="break">
+  <div class="break-media"><img src="../../assets/fotos/peca-pinca-freio-disco-01.jpg" alt="Pinça de freio e disco ventilado em detalhe"></div>
+  <div class="wrap">
+    <blockquote data-reveal>Seu carro nas mãos de quem <em>entende de verdade</em>.</blockquote>
+    <cite data-reveal>Riveiro Restauradora de Veículos · Jabaquara, desde 1980</cite>
+  </div>
+</section>
+
+<!-- ============ 03 LINHA DO TEMPO ============ -->
+<section class="linha" id="linha">
+  <div class="linha-pin" id="linhaPin">
+    <div class="wrap">
+      <div class="shead">
+        <span class="num">03</span>
+        <h2 class="display">Linha do <em>tempo</em></h2>
+        <span class="ln"></span>
+      </div>
+
+      <div class="linha-top">
+        <div class="big-year" id="anoNow">1980</div>
+        <p>Uma régua de quatro décadas e meia: da abertura, em 1980, ao carro que entra na oficina hoje.</p>
+      </div>
+
+      <div class="regua" id="regua">
+        <div class="fill" id="reguaFill"></div>
+        <div class="marker" id="reguaMarker"></div>
+        <div class="ticks">
+          <span class="tick maj"><span>1980</span></span>
+          <span class="tick"></span>
+          <span class="tick maj"><span>1990</span></span>
+          <span class="tick"></span>
+          <span class="tick maj"><span>2000</span></span>
+          <span class="tick"></span>
+          <span class="tick maj"><span>2010</span></span>
+          <span class="tick"></span>
+          <span class="tick maj"><span>2020</span></span>
+          <span class="tick maj"><span>2026</span></span>
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <div class="container">
-            <div class="footer-brand">Riveiro Restauradora de Veículos</div>
-            <p>44 anos de tradição no Jabaquara — Troca de óleo, freios, motor e revisão geral.</p>
-            <p style="margin-top:6px;">R. Alberto Leal, 512 — Jabaquara, São Paulo - SP</p>
+      <div class="anos-row">
+        <div class="anos-num"><span id="anosCount">0</span></div>
+        <div class="anos-txt">
+          <h3>anos de tradição no Jabaquara.</h3>
+          <p>O mesmo bairro, o mesmo compromisso: atendimento excepcional, preços justos e serviço com garantia — sempre com as técnicas e tecnologias mais recentes do setor.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <a href="https://wa.me/5511981382222?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Riveiro%20e%20gostaria%20de%20um%20or%C3%A7amento." class="floating-wa" target="_blank" rel="noopener" title="Falar no WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-    </a>
+<!-- ============ 04 DEPOIMENTOS ============ -->
+<section class="depo" id="depoimentos">
+  <div class="wrap">
+    <div class="shead">
+      <span class="num">04</span>
+      <h2 class="display">O que dizem os <em>clientes</em></h2>
+      <span class="ln"></span>
+    </div>
 
-    <script>
-        document.querySelectorAll('.faq-q').forEach(q => {
-            q.addEventListener('click', () => { q.parentElement.classList.toggle('open'); });
-        });
-    </script>
+    <div class="depo-grid">
+      <div class="quotes">
+        <figure class="q" data-reveal>
+          <span class="mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>&ldquo;A pelo menos 2 anos levo meu carro para o Ricardo!! Oficina de confiança, serviços de primeira qualidade e pontuais! Recomendo a todos.&rdquo;</blockquote>
+          <figcaption>Gustavo Paz</figcaption>
+        </figure>
+        <figure class="q" data-reveal>
+          <span class="mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>&ldquo;Tive um excelente atendimento. Meu carro estava cheio de problemas crônicos e foi resolvido muito rápido a entrega do serviço.&rdquo;</blockquote>
+          <figcaption>Bruno Martins</figcaption>
+        </figure>
+        <figure class="q" data-reveal>
+          <span class="mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>&ldquo;Tive um excelente atendimento do telefone até a ida na oficina. Profissionais honestos e solícitos. Recomendo com certeza.&rdquo;</blockquote>
+          <figcaption>Fernanda Laia</figcaption>
+        </figure>
+
+        <div class="depo-src" data-reveal>
+          <i></i>
+          <p>Depoimentos reproduzidos do site oficial da Riveiro Restauradora de Veículos.</p>
+        </div>
+      </div>
+
+      <figure class="depo-fig" data-reveal>
+        <div class="ph" data-par><img src="../../assets/fotos/restauracao-classico-elevador-03.jpg" alt="Carro clássico erguido no elevador hidráulico de uma oficina"></div>
+        <figcaption class="cap">Veículo no elevador, pronto para inspeção — imagem ilustrativa.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 PRINCÍPIOS ============ -->
+<section class="princ" id="principios">
+  <div class="wrap">
+    <div class="shead">
+      <span class="num">05</span>
+      <h2 class="display">Princípios da <em>casa</em></h2>
+      <span class="ln"></span>
+    </div>
+
+    <div class="princ-list">
+      <div class="princ-item" data-reveal>
+        <span class="n">i</span>
+        <h3>Atendimento excepcional e <em>preços justos</em>.</h3>
+      </div>
+      <div class="princ-item" data-reveal>
+        <span class="n">ii</span>
+        <h3>Atualização contínua de <em>técnicas e tecnologias</em>.</h3>
+      </div>
+      <div class="princ-item" data-reveal>
+        <span class="n">iii</span>
+        <h3>Garantia e qualidade em <em>todos os serviços</em>.</h3>
+      </div>
+      <div class="princ-item" data-reveal>
+        <span class="n">iv</span>
+        <h3>O <em>melhor preço</em> da região.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 VISITE ============ -->
+<section class="visite" id="visite">
+  <div class="wrap">
+    <div class="shead">
+      <span class="num">06</span>
+      <h2 class="display">Visite a <em>oficina</em></h2>
+      <span class="ln"></span>
+    </div>
+
+    <div class="visite-grid">
+      <div>
+        <h2 class="big display" data-reveal>Traga o carro <em>até nós</em>.</h2>
+        <dl class="dl" data-reveal>
+          <div><dt>Endereço</dt><dd>R. Alberto Leal, 512 — Jabaquara, São Paulo · SP, CEP 04343-000</dd></div>
+          <div><dt>WhatsApp</dt><dd><b>(11) 98138-2222</b></dd></div>
+          <div><dt>Horário</dt><dd>Segunda a sexta, das 09:00 às 18:00.<br>Sábado e domingo: fechado.</dd></div>
+          <div><dt>Desde</dt><dd>1980 — oficina multimarca no Jabaquara</dd></div>
+        </dl>
+        <div class="visite-actions" data-reveal>
+          <a class="btn btn-ox" href="https://wa.me/5511981382222" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Riveiro+Restauradora+de+Ve%C3%ADculos+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Maps ↗</a>
+        </div>
+      </div>
+
+      <div class="visite-right">
+        <div class="map" data-reveal>
+          <iframe title="Mapa — Riveiro Restauradora de Veículos, R. Alberto Leal, 512, Jabaquara"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=R.%20Alberto%20Leal%2C%20512%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004343-000&output=embed"></iframe>
+        </div>
+        <figure class="visite-fig" data-reveal>
+          <div class="ph" data-par><img src="../../assets/fotos/estetica-capo-gotas-01.jpg" alt="Capô de automóvel coberto por gotas de água após lavagem"></div>
+          <figcaption class="cap">Detalhe de capô com gotas d'água — imagem ilustrativa.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-mark">Riveiro<em>Restauradora de Veículos · 1980</em></div>
+      <div class="foot-meta">
+        <span>R. Alberto Leal, 512 — Jabaquara, São Paulo · SP, 04343-000</span>
+        <span>WhatsApp (11) 98138-2222</span>
+        <span>Segunda a sexta, 09:00 às 18:00 · Sábado e domingo fechado</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Riveiro Restauradora de Veículos · Oficina multimarca desde 1980</span>
+      <span>Fotografias ilustrativas (Unsplash / Pexels) — não retratam a oficina.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511981382222" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  function onScroll(){ hdr.classList.toggle('solid', window.scrollY>50); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  var anoEl=document.getElementById('anoNow');
+  var anosEl=document.getElementById('anosCount');
+  var fill=document.getElementById('reguaFill');
+  var marker=document.getElementById('reguaMarker');
+
+  // estado estatico (sem JS/animacao): valores finais visiveis
+  if(anosEl) anosEl.textContent='44';
+  if(anoEl) anoEl.textContent='2026';
+
+  if(!window.gsap||!window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to('#progress',{scaleX:1,ease:'none',
+    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+
+  var mm=gsap.matchMedia();
+
+  /* ---------- movimento completo ---------- */
+  mm.add('(prefers-reduced-motion: no-preference)',function(){
+
+    // titulo do hero letra a letra
+    document.querySelectorAll('[data-split]').forEach(function(el,i){
+      el.innerHTML=el.textContent.replace(/\S/g,"<span class='ch'>$&</span>");
+      gsap.from(el.querySelectorAll('.ch'),{yPercent:114,opacity:0,stagger:.022,duration:.95,
+        ease:'expo.out',delay:.12+i*.12});
+    });
+    gsap.from('.hero-top .row, .hero-side',{opacity:0,y:-14,duration:1,ease:'power3.out',delay:.05});
+    gsap.from('.hero-rule, .hero-foot, .hero .btn',{y:24,opacity:0,duration:1,stagger:.06,ease:'power3.out',delay:.6});
+
+    // reveals gerais
+    gsap.utils.toArray('[data-reveal]').forEach(function(el){
+      gsap.from(el,{y:44,opacity:0,duration:1.05,ease:'power3.out',
+        immediateRender:false,scrollTrigger:{trigger:el,start:'top 88%'}});
+    });
+
+    // hero: parallax + saida
+    gsap.to('#heroMedia img',{yPercent:12,ease:'none',
+      scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+    gsap.to('#heroInner',{opacity:0,y:-34,ease:'none',
+      scrollTrigger:{trigger:'.hero',start:'42% top',end:'bottom top',scrub:true}});
+
+    // parallax com scrub em todas as fotos internas
+    gsap.utils.toArray('[data-par]').forEach(function(el){
+      gsap.fromTo(el,{yPercent:-7},{yPercent:7,ease:'none',
+        scrollTrigger:{trigger:el.parentNode,start:'top bottom',end:'bottom top',scrub:true}});
+    });
+
+    // break
+    gsap.fromTo('.break-media img',{yPercent:-9},{yPercent:9,ease:'none',
+      scrollTrigger:{trigger:'.break',start:'top bottom',end:'bottom top',scrub:true}});
+
+    // contador dos 44 anos
+    if(anosEl){
+      var o={v:0};
+      gsap.to(o,{v:44,duration:1.8,ease:'power2.out',
+        onUpdate:function(){ anosEl.textContent=Math.round(o.v); },
+        scrollTrigger:{trigger:'.anos-row',start:'top 82%',once:true}});
+    }
+  });
+
+  /* ---------- regua: NUNCA sequestra a rolagem (sem pin, em nenhuma largura) ----------
+     A animacao dispara uma vez quando a secao entra na tela e roda sozinha.
+     A rolagem vertical da pagina segue livre o tempo todo. */
+  mm.add('(prefers-reduced-motion: no-preference)',function(){
+    var o={y:1980};
+    if(anoEl) anoEl.textContent='1980';
+    gsap.to(o,{y:2026,duration:2,ease:'power2.out',
+      scrollTrigger:{trigger:'#regua',start:'top 80%',once:true},
+      onUpdate:function(){
+        if(anoEl) anoEl.textContent=Math.round(o.y);
+        var p=(o.y-1980)/46;
+        if(fill) fill.style.width=(p*100)+'%';
+        if(marker) marker.style.left=(p*100)+'%';
+      }});
+  });
+
+  /* ---------- reduced motion: tudo estatico e completo ---------- */
+  mm.add('(prefers-reduced-motion: reduce)',function(){
+    if(fill) fill.style.width='100%';
+    if(marker) marker.style.left='100%';
+    if(anoEl) anoEl.textContent='2026';
+    if(anosEl) anosEl.textContent='44';
+  });
+
+  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
+})();
+</script>
 </body>
 </html>

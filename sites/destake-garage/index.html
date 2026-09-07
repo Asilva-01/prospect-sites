@@ -1,350 +1,495 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destake Garage | Oficina Mecânica de Confiança — Jabaquara, São Paulo</title>
-    <meta name="description" content="Destake Garage: oficina mecânica no Jabaquara especializada em troca de óleo, amortecedores e diagnóstico veicular. Orçamento claro, atendimento personalizado.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-body: #0D0F12;
-            --bg-surface: #15181D;
-            --bg-surface-elevated: #1C2027;
-            --border-subtle: rgba(255, 255, 255, 0.08);
-            --border-highlight: rgba(255, 149, 0, 0.35);
-            --accent: #FF9500;
-            --accent-hover: #FFAB33;
-            --text-primary: #F5F6F8;
-            --text-secondary: #9AA3AF;
-            --text-muted: #6B7280;
-            --whatsapp-green: #25D366;
-            --radius-sm: 6px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-body);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-        h1, h2, h3, h4, .brand-title { font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
-        a { text-decoration: none; color: inherit; }
-        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destake Garage | Oficina mecânica no Jabaquara — orçamento por escrito</title>
+<meta name="description" content="Oficina mecânica no Jabaquara, São Paulo. Troca de óleo, amortecedores e diagnóstico com orçamento claro por escrito antes de qualquer serviço. Mecânicos qualificados e peças de qualidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F6F7; --card:#FFFFFF; --dark:#12161A; --dark-2:#1B2127;
+  --ink:#0F1317; --muted:#69707A; --line:rgba(15,19,23,.13); --line-dark:rgba(255,255,255,.14);
+  --accent:#E08A00; --accent-soft:rgba(224,138,0,.12);
+  --wa:#25D366; --ease:cubic-bezier(.16,1,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
 
-        /* Top bar */
-        .top-info { background: #08090B; border-bottom: 1px solid var(--border-subtle); font-size: 13px; color: var(--text-secondary); padding: 9px 0; }
-        .top-info-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-        .top-info strong { color: var(--accent); font-weight: 700; }
+h1,h2,h3,h4{font-family:'Manrope',system-ui,sans-serif;font-weight:800;letter-spacing:-.028em;line-height:1.08}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);flex:none}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 clamp(22px,5vw,60px)}
+section{position:relative}
 
-        /* Header */
-        header { position: sticky; top: 0; z-index: 100; background: rgba(13, 15, 18, 0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border-subtle); }
-        .nav-wrapper { display: flex; justify-content: space-between; align-items: center; height: 80px; }
-        .wordmark { display: flex; align-items: center; gap: 14px; }
-        .wordmark-badge {
-            width: 46px; height: 46px; border-radius: 10px; flex-shrink: 0;
-            background: linear-gradient(145deg, var(--accent), #C9720A);
-            display: flex; align-items: center; justify-content: center;
-            font-family: 'Syne', sans-serif; font-weight: 800; font-size: 17px; color: #0D0F12;
-        }
-        .wordmark-text { display: flex; flex-direction: column; }
-        .wordmark-name { font-size: 19px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: #fff; }
-        .wordmark-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); font-weight: 600; }
-        .nav-menu { display: flex; gap: 30px; list-style: none; }
-        .nav-menu a { font-size: 14px; font-weight: 600; color: var(--text-secondary); transition: var(--transition); }
-        .nav-menu a:hover { color: #fff; }
-        .btn-solid { display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: var(--accent); color: #100C06; font-size: 13px; font-weight: 800; padding: 12px 22px; border-radius: var(--radius-sm); text-transform: uppercase; letter-spacing: 0.06em; transition: var(--transition); }
-        .btn-solid:hover { background: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(255, 149, 0, 0.25); }
-        .btn-wa { display: inline-flex; align-items: center; justify-content: center; gap: 11px; background: var(--whatsapp-green); color: #fff; font-size: 15px; font-weight: 700; padding: 15px 30px; border-radius: var(--radius-sm); transition: var(--transition); box-shadow: 0 8px 22px rgba(37, 211, 102, 0.28); }
-        .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4); filter: brightness(1.05); }
-        .btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 9px; background: rgba(255,255,255,0.04); color: #fff; font-size: 14px; font-weight: 600; padding: 14px 26px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); transition: var(--transition); }
-        .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:200}
 
-        /* Hero */
-        .hero { position: relative; padding: 80px 0 70px; background: radial-gradient(circle at 85% 20%, rgba(255,149,0,0.08) 0%, transparent 55%); border-bottom: 1px solid var(--border-subtle); overflow: hidden; }
-        .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
-        .hero-kicker { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,149,0,0.08); border: 1px solid rgba(255,149,0,0.3); padding: 6px 14px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 20px; }
-        .hero h1 { font-size: clamp(34px, 4.3vw, 52px); color: #fff; margin-bottom: 20px; }
-        .hero h1 span { color: var(--accent); }
-        .hero p { font-size: 17px; color: var(--text-secondary); margin-bottom: 34px; max-width: 540px; }
-        .hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
-        .hero-values { display: flex; gap: 30px; border-top: 1px solid var(--border-subtle); padding-top: 24px; flex-wrap: wrap; }
-        .val-item h4 { font-size: 15px; color: #fff; margin-bottom: 2px; }
-        .val-item span { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600; }
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:150;transition:.45s var(--ease);border-bottom:1px solid transparent;
+  background:rgba(245,246,247,.88);backdrop-filter:blur(14px)}
+header.solid{background:rgba(245,246,247,.96);border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Manrope';font-weight:800;font-size:18px;letter-spacing:-.02em}
+.brand i{width:10px;height:10px;background:var(--accent);border-radius:2px;flex:none;display:block}
+.nav-links{display:flex;gap:28px}
+.nav-links a{font-size:13.5px;font-weight:500;color:var(--muted);transition:color .3s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-size:13px;font-weight:600;
+  padding:12px 20px;border-radius:8px;transition:.35s var(--ease)}
+.nav-cta:hover{background:var(--accent);transform:translateY(-2px)}
+@media(max-width:940px){.nav-links{display:none}}
 
-        /* Hero visual — sem foto, ilustração tipográfica */
-        .hero-visual { position: relative; border-radius: var(--radius-lg); border: 1px solid var(--border-highlight); background: linear-gradient(160deg, var(--bg-surface-elevated), #0F1216); box-shadow: 0 25px 55px rgba(0,0,0,0.6); padding: 46px 34px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; min-height: 400px; }
-        .hero-visual .gear-ring { width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: radial-gradient(circle, rgba(255,149,0,0.12) 0%, transparent 70%); }
-        .hero-visual svg.gear { width: 110px; height: 110px; }
-        .hero-visual .big-initials { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--text-muted); text-align: center; }
-        .hero-visual .quote-line { font-size: 14px; color: var(--text-secondary); text-align: center; max-width: 320px; font-style: italic; }
+/* botoes */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;font-size:14.5px;font-weight:600;
+  padding:16px 26px;border-radius:9px;transition:.35s var(--ease);font-family:'Inter'}
+.btn-wa{background:var(--wa);color:#06180D}
+.btn-wa svg{width:19px;height:19px;fill:currentColor}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.28)}
+.btn-line{border:1px solid var(--line);color:var(--ink);background:var(--card)}
+.btn-line:hover{border-color:var(--ink);transform:translateY(-2px)}
 
-        /* Sections */
-        .section-padding { padding: 90px 0; }
-        .section-header { text-align: center; max-width: 700px; margin: 0 auto 55px; }
-        .section-kicker { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 12px; }
-        .section-header h2 { font-size: clamp(30px, 3.8vw, 42px); color: #fff; margin-bottom: 14px; }
-        .section-header p { font-size: 15.5px; color: var(--text-secondary); }
+/* HERO dividido */
+.hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:100svh}
+.hero-copy{display:flex;align-items:center;padding:clamp(104px,13vh,150px) clamp(22px,4.6vw,64px) clamp(48px,8vh,80px);
+  padding-left:max(clamp(22px,4.6vw,60px),calc((100vw - 1240px)/2 + clamp(22px,5vw,60px)))}
+.hero-copy-in{max-width:600px}
+.hero h1{font-size:clamp(2.15rem,4.1vw,3.9rem);margin:20px 0 0}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--accent-soft);z-index:-1}
+.hero-lead{font-size:clamp(15.5px,1.5vw,17.5px);color:var(--muted);margin-top:22px;max-width:47ch}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:20px 24px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+.trust div{display:flex;flex-direction:column;gap:3px}
+.trust b{font-family:'Manrope';font-size:14.5px;font-weight:800}
+.trust span{font-size:12.5px;color:var(--muted)}
+.hero-shot{position:relative;overflow:hidden;min-height:52vh}
+.hero-shot img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;filter:contrast(1.05) saturate(1.02)}
+.hero-shot::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,var(--bg) 0%,rgba(245,246,247,.35) 22%,transparent 52%)}
+.shot-tag{position:absolute;left:22px;bottom:22px;z-index:3;background:rgba(18,22,26,.72);backdrop-filter:blur(8px);
+  color:#fff;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:6px}
+@media(max-width:940px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-copy{order:2;padding:clamp(40px,7vh,64px) clamp(22px,5vw,40px) clamp(44px,7vh,64px)}
+  .hero-shot{order:1;min-height:58svh;margin-top:76px}
+  .hero-shot::after{background:linear-gradient(to bottom,rgba(245,246,247,.5) 0%,transparent 30%)}
+}
 
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 26px; }
-        .service-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 34px 28px; transition: var(--transition); display: flex; flex-direction: column; }
-        .service-card:hover { border-color: var(--border-highlight); transform: translateY(-4px); box-shadow: 0 18px 36px rgba(0,0,0,0.35); }
-        .service-icon { width: 54px; height: 54px; border-radius: 12px; background: rgba(255,149,0,0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
-        .service-icon svg { width: 28px; height: 28px; stroke: var(--accent); fill: none; stroke-width: 1.8; }
-        .service-card h3 { font-size: 20px; color: #fff; margin-bottom: 10px; }
-        .service-card p { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1; line-height: 1.65; }
-        .link-quote { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; display: inline-flex; align-items: center; gap: 6px; transition: var(--transition); }
-        .link-quote:hover { color: var(--accent-hover); gap: 9px; }
+/* cabecalho de secao */
+.sec{padding:clamp(5rem,12vh,9rem) 0}
+.sec-head{max-width:640px;margin-bottom:clamp(38px,6vh,60px)}
+.sec-head h2{font-size:clamp(1.8rem,3.5vw,2.9rem);margin-top:16px}
+.sec-head p{color:var(--muted);margin-top:14px;font-size:16px}
 
-        /* Sobre / Missão-Visão-Valores */
-        .about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        .mvv-card { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 26px; }
-        .mvv-card h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 10px; font-weight: 800; }
-        .mvv-card p { font-size: 14.5px; color: var(--text-secondary); line-height: 1.65; }
-        .mvv-stack { display: flex; flex-direction: column; gap: 18px; }
-        .about-lead h3 { font-size: 26px; color: #fff; margin-bottom: 14px; }
-        .about-lead p { font-size: 15.5px; color: var(--text-secondary); margin-bottom: 18px; line-height: 1.7; }
-        .value-pills { display: flex; flex-wrap: wrap; gap: 10px; }
-        .value-pill { background: rgba(255,149,0,0.08); border: 1px solid rgba(255,149,0,0.25); color: var(--accent); font-size: 12.5px; font-weight: 700; padding: 8px 16px; border-radius: 20px; }
+/* SERVICOS — linhas alternadas, sem cards com icone */
+.svc-row{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(26px,4.5vw,64px);align-items:center;
+  padding:clamp(32px,5vh,52px) 0;border-top:1px solid var(--line)}
+.svc-row:last-child{border-bottom:1px solid var(--line)}
+.svc-row:nth-child(even) .svc-txt{order:2}
+.svc-num{font-family:'Manrope';font-weight:800;font-size:13px;color:var(--accent);letter-spacing:.08em}
+.svc-txt h3{font-size:clamp(1.4rem,2.7vw,2.1rem);margin:12px 0 14px}
+.svc-txt p{color:var(--muted);font-size:15.5px;max-width:44ch}
+.svc-txt a{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:14px;font-weight:600;color:var(--ink);
+  border-bottom:1.5px solid var(--accent);padding-bottom:3px;transition:gap .3s var(--ease)}
+.svc-txt a:hover{gap:14px}
+.svc-shot{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:14px;background:#E7E9EB}
+.svc-shot img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;filter:contrast(1.04) saturate(1.02)}
+@media(max-width:880px){
+  .svc-row{grid-template-columns:1fr;gap:22px}
+  .svc-row:nth-child(even) .svc-txt{order:0}
+  .svc-shot{aspect-ratio:16/11}
+}
 
-        /* FAQ */
-        .faq-wrap { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
-        .faq-item { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); overflow: hidden; }
-        .faq-q { padding: 20px 26px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 15.5px; font-weight: 700; color: #fff; user-select: none; }
-        .faq-q:hover { color: var(--accent); }
-        .faq-icon { font-size: 19px; color: var(--accent); transition: var(--transition); }
-        .faq-a { padding: 0 26px 22px; font-size: 14px; color: var(--text-secondary); display: none; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 15px; line-height: 1.7; }
-        .faq-item.open .faq-a { display: block; }
-        .faq-item.open .faq-icon { transform: rotate(45deg); }
+/* BREAK escuro full-bleed */
+.break{background:var(--dark);color:#fff;overflow:hidden}
+.break-in{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(28px,5vw,70px);
+  padding:clamp(4.5rem,10vh,7.5rem) 0}
+.break h2{font-size:clamp(1.7rem,3.4vw,2.8rem);color:#fff}
+.break h2 em{font-style:normal;color:var(--accent)}
+.break p{color:#A8B0B8;margin-top:18px;font-size:16px;max-width:42ch}
+.break-shot{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:14px}
+.break-shot img{position:absolute;inset:-9% 0;width:100%;height:118%;object-fit:cover;filter:contrast(1.06) brightness(.92)}
+@media(max-width:880px){.break-in{grid-template-columns:1fr}}
 
-        /* Contact */
-        .contact-box { background: linear-gradient(135deg, var(--bg-surface) 0%, #191D24 100%); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: center; }
-        .contact-meta h3 { font-size: 30px; color: #fff; margin-bottom: 14px; }
-        .contact-meta p { font-size: 14.5px; color: var(--text-secondary); margin-bottom: 26px; }
-        .contact-lines { display: flex; flex-direction: column; gap: 15px; margin-bottom: 32px; }
-        .contact-line { display: flex; align-items: flex-start; gap: 14px; font-size: 14.5px; color: #E2E8F0; }
-        .line-label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); width: 84px; flex-shrink: 0; padding-top: 1px; }
+/* ORCAMENTO ABERTO — trilho horizontal do usuario, sem pin */
+.flow{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.flow-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.flow-nav{display:flex;gap:9px}
+.flow-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);
+  font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.3s var(--ease)}
+.flow-nav button:hover:not(:disabled){background:var(--ink);color:#fff;border-color:var(--ink)}
+.flow-nav button:disabled{opacity:.32;cursor:default}
+.rail-holder{position:relative}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:18px;cursor:grab}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.rail::-webkit-scrollbar{height:5px}
+.rail::-webkit-scrollbar-thumb{background:rgba(15,19,23,.22);border-radius:4px}
+.rail::-webkit-scrollbar-track{background:rgba(15,19,23,.06);border-radius:4px}
+.card{flex:0 0 clamp(250px,25vw,310px);scroll-snap-align:start;background:var(--bg);border:1px solid var(--line);
+  border-radius:14px;padding:26px 24px 28px;user-select:none;transition:.35s var(--ease)}
+.card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 16px 34px rgba(15,19,23,.08)}
+.card .k{font-family:'Manrope';font-weight:800;font-size:34px;color:var(--accent);line-height:1;margin-bottom:16px}
+.card h4{font-size:17px;margin-bottom:10px}
+.card p{font-size:14px;color:var(--muted)}
+.rail-hint{font-size:12.5px;color:var(--muted);margin-top:6px;display:flex;align-items:center;gap:8px}
+@media(max-width:700px){.flow-nav{display:none}}
 
-        /* Footer */
-        footer { background: #08090B; border-top: 1px solid var(--border-subtle); padding: 36px 0; font-size: 13px; color: var(--text-muted); text-align: center; }
-        .footer-brand { color: #fff; font-weight: 800; letter-spacing: 0.08em; margin-bottom: 8px; text-transform: uppercase; font-family: 'Syne', sans-serif; font-size: 17px; }
+/* VALORES */
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.val{background:var(--bg);padding:28px 24px}
+.val b{font-family:'Manrope';font-size:16px;display:block;margin-bottom:8px}
+.val span{font-size:14px;color:var(--muted)}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.mv div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 26px}
+.mv dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+.mv dd{font-size:16px;font-family:'Manrope';font-weight:700;line-height:1.35;letter-spacing:-.02em}
+@media(max-width:760px){.mv{grid-template-columns:1fr}}
 
-        .floating-wa { position: fixed; bottom: 24px; right: 24px; z-index: 999; background: var(--whatsapp-green); color: #fff; width: 58px; height: 58px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 22px rgba(37,211,102,0.35); transition: var(--transition); }
-        .floating-wa:hover { transform: scale(1.08); filter: brightness(1.1); }
-        .floating-wa svg { width: 28px; height: 28px; fill: currentColor; }
+/* FAQ */
+.faq{max-width:820px}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:24px 44px 24px 0;position:relative;
+  font-family:'Manrope';font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.015em}
+.faq-q::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--accent);
+  font-weight:400;transition:transform .35s var(--ease)}
+.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq-a p{padding:0 0 24px;color:var(--muted);font-size:15.5px;max-width:64ch}
 
-        @media (max-width: 960px) {
-            .hero-grid, .contact-box, .about-wrap { grid-template-columns: 1fr; gap: 36px; }
-            .contact-box { padding: 28px 20px; }
-            .nav-menu { display: none; }
-            .hero-visual { min-height: 300px; padding: 34px 22px; }
-        }
-        @media (max-width: 480px) {
-            .top-info-wrap { flex-direction: column; align-items: flex-start; }
-            .hero-actions .btn-wa, .hero-actions .btn-outline { width: 100%; }
-        }
-    </style>
+/* CONTATO */
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,60px);align-items:stretch}
+.dl{border-top:1px solid var(--line);margin:26px 0 30px}
+.dl div{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+.dl dt{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700;padding-top:3px}
+.map{min-height:400px;border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:880px){.contato-grid{grid-template-columns:1fr}.map{min-height:290px}}
+
+/* footer */
+footer{background:var(--dark);color:#fff;padding:56px 0 34px;margin-top:clamp(3rem,8vh,6rem)}
+.foot-top{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid var(--line-dark)}
+.foot-brand{font-family:'Manrope';font-weight:800;font-size:22px;letter-spacing:-.02em}
+.foot-meta{font-size:13.5px;color:#A8B0B8;display:flex;flex-direction:column;gap:6px;text-align:right}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11.5px;color:#767E86;padding-top:20px}
+@media(max-width:700px){.foot-meta{text-align:left}}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:180;width:56px;height:56px;border-radius:50%;background:var(--wa);
+  color:#06180D;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.32);transition:.35s var(--ease)}
+.wa-float svg{width:27px;height:27px;fill:currentColor}
+.wa-float:hover{transform:scale(1.08)}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  [data-reveal]{opacity:1!important;transform:none!important}
+}
+</style>
 </head>
 <body>
 
-    <div class="top-info">
-        <div class="container top-info-wrap">
-            <span>Av. Eng. George Corbisier, 942b — <strong>Jabaquara, São Paulo</strong></span>
-            <span>WhatsApp: <strong>(11) 96629-9293</strong></span>
-        </div>
+<div class="progress" id="progress"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><i></i>Destake Garage</a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#orcamento">Como funciona</a>
+      <a href="#oficina">A oficina</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5511966299293" target="_blank" rel="noopener">Pedir orçamento</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <div class="hero-copy-in">
+      <span class="eyebrow">Oficina mecânica · Jabaquara · SP</span>
+      <h1>Orçamento <em>por escrito</em>, antes de qualquer serviço.</h1>
+      <p class="hero-lead">A sua oficina de confiança no Jabaquara. Mecânicos qualificados, peças de qualidade e comunicação transparente em cada etapa — sem letras miúdas, sem surpresa na hora de pagar.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/5511966299293" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+          Pedir orçamento
+        </a>
+        <a class="btn btn-line" href="#orcamento">Ver como funciona</a>
+      </div>
+      <div class="trust">
+        <div><b>Orçamento claro</b><span>Por escrito, antes de começar</span></div>
+        <div><b>Peças de qualidade</b><span>E mão de obra qualificada</span></div>
+        <div><b>Jabaquara</b><span>Av. Eng. George Corbisier</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-shot">
+    <img src="../../assets/fotos/oficina-elevador-hidraulico-02.jpg" alt="Veículo suspenso em elevador hidráulico numa oficina mecânica">
+    <span class="shot-tag">Imagem ilustrativa</span>
+  </div>
+</section>
+
+<!-- SERVICOS -->
+<section class="sec" id="servicos">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Três serviços, feitos do jeito certo.</h2>
+      <p>Consulte a disponibilidade e receba um orçamento claro direto pelo WhatsApp.</p>
     </div>
 
-    <header>
-        <div class="container nav-wrapper">
-            <div class="wordmark">
-                <div class="wordmark-badge">DG</div>
-                <div class="wordmark-text">
-                    <div class="wordmark-name">Destake Garage</div>
-                    <div class="wordmark-tag">Oficina Mecânica · Jabaquara</div>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#faq">Dúvidas</a></li>
-                <li><a href="#contato">Localização</a></li>
-            </ul>
-            <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destake%20Garage%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-solid" target="_blank" rel="noopener">Pedir Orçamento</a>
+    <article class="svc-row" data-reveal>
+      <div class="svc-txt">
+        <span class="svc-num">01</span>
+        <h3>Troca de óleo</h3>
+        <p>Troca do óleo do motor e filtro com peças de qualidade, verificando os níveis do veículo para manter o motor protegido no dia a dia.</p>
+        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
+      </div>
+      <div class="svc-shot"><img src="../../assets/fotos/motor-macro-01.jpg" alt="Detalhe do cofre do motor de um automóvel"></div>
+    </article>
+
+    <article class="svc-row" data-reveal>
+      <div class="svc-txt">
+        <span class="svc-num">02</span>
+        <h3>Amortecedores</h3>
+        <p>Avaliação e troca de amortecedores para devolver estabilidade, conforto e segurança na direção do seu carro.</p>
+        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
+      </div>
+      <div class="svc-shot"><img src="../../assets/fotos/peca-coilover-fundo-preto-03.jpg" alt="Conjunto de amortecedor e mola em fundo escuro"></div>
+    </article>
+
+    <article class="svc-row" data-reveal>
+      <div class="svc-txt">
+        <span class="svc-num">03</span>
+        <h3>Diagnóstico</h3>
+        <p>Diagnóstico do problema do seu veículo antes de qualquer serviço, com explicação clara do que foi encontrado e o que precisa ser feito.</p>
+        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
+      </div>
+      <div class="svc-shot"><img src="../../assets/fotos/diagnostico-notebook-carro-02.jpg" alt="Diagnóstico eletrônico de veículo com notebook"></div>
+    </article>
+  </div>
+</section>
+
+<!-- BREAK -->
+<section class="break">
+  <div class="wrap break-in">
+    <div data-reveal>
+      <span class="eyebrow">A promessa</span>
+      <h2 style="margin-top:16px">Você aprova <em>antes</em>. Nunca depois.</h2>
+      <p>Nada é executado sem o seu aval. O que foi encontrado, o que precisa ser feito e quanto custa: tudo na sua mão antes de a chave entrar no carro.</p>
+    </div>
+    <div class="break-shot" data-reveal><img src="../../assets/fotos/oficina-inspecao-por-baixo-03.jpg" alt="Inspeção da parte inferior de um veículo na oficina"></div>
+  </div>
+</section>
+
+<!-- ORCAMENTO ABERTO -->
+<section class="sec flow" id="orcamento">
+  <div class="wrap">
+    <div class="flow-top">
+      <div class="sec-head" style="margin-bottom:0" data-reveal>
+        <span class="eyebrow">O orçamento aberto</span>
+        <h2>Como funciona, do primeiro contato à entrega.</h2>
+      </div>
+      <div class="flow-nav">
+        <button id="prev" aria-label="Etapa anterior">←</button>
+        <button id="next" aria-label="Próxima etapa">→</button>
+      </div>
+    </div>
+    <div class="rail-holder">
+      <div class="rail" id="rail">
+        <div class="card"><div class="k">01</div><h4>Você chama no WhatsApp</h4><p>Conte o problema ou o serviço desejado. Respondemos rápido para entender o caso do seu carro.</p></div>
+        <div class="card"><div class="k">02</div><h4>Diagnóstico do problema</h4><p>O veículo é avaliado antes de qualquer serviço, para saber exatamente o que ele tem.</p></div>
+        <div class="card"><div class="k">03</div><h4>Orçamento por escrito</h4><p>Você recebe o valor e o que será feito por escrito, antes de qualquer serviço ser iniciado.</p></div>
+        <div class="card"><div class="k">04</div><h4>Execução</h4><p>Mecânicos qualificados e peças de qualidade, com comunicação transparente em cada etapa.</p></div>
+        <div class="card"><div class="k">05</div><h4>Entrega sem surpresa</h4><p>Você paga o que foi combinado. Sem letras miúdas na hora de fechar.</p></div>
+      </div>
+      <p class="rail-hint">Arraste para o lado para ver todas as etapas →</p>
+    </div>
+  </div>
+</section>
+
+<!-- A OFICINA -->
+<section class="sec" id="oficina">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">A oficina</span>
+      <h2>A sua oficina de confiança no Jabaquara.</h2>
+      <p>Trabalhamos com mecânicos qualificados e peças de qualidade para que você saia com o carro resolvido — e com um orçamento claro na mão.</p>
+    </div>
+    <div class="vals" data-reveal>
+      <div class="val"><b>Transparência</b><span>Orçamento por escrito, sem letras miúdas.</span></div>
+      <div class="val"><b>Qualidade</b><span>Peças de qualidade e mão de obra qualificada.</span></div>
+      <div class="val"><b>Profissionalismo</b><span>Comunicação clara em cada etapa do serviço.</span></div>
+      <div class="val"><b>Atendimento personalizado</b><span>Cada carro e cada cliente tratados como caso único.</span></div>
+    </div>
+    <dl class="mv" data-reveal>
+      <div><dt>Missão</dt><dd>Garantir a tranquilidade do cliente do início ao fim de cada serviço.</dd></div>
+      <div><dt>Visão</dt><dd>Ser referência no Jabaquara, reconhecida pela qualidade e paixão em cada serviço.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="duvidas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head" data-reveal><span class="eyebrow">Dúvidas</span><h2>Perguntas sobre o atendimento.</h2></div>
+    <div class="faq" data-reveal>
+      <div class="faq-item">
+        <button class="faq-q">Como faço um orçamento?</button>
+        <div class="faq-a"><p>Chame no WhatsApp contando o problema ou o serviço desejado. O orçamento é passado por escrito antes de qualquer serviço ser iniciado, sem surpresas na hora de fechar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quais marcas de carro vocês atendem?</button>
+        <div class="faq-a"><p>Consulte pelo WhatsApp informando o modelo do seu veículo — nossa equipe confirma a disponibilidade e o prazo para o seu carro.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Qual o horário de atendimento?</button>
+        <div class="faq-a"><p>Consulte a disponibilidade de horário diretamente pelo WhatsApp — respondemos rápido para agendar o melhor dia para você.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="sec" id="contato" style="padding-top:0">
+  <div class="wrap">
+    <div class="contato-grid">
+      <div data-reveal>
+        <span class="eyebrow">Contato</span>
+        <h2 style="font-size:clamp(1.8rem,3.5vw,2.9rem);margin-top:16px">Traga o carro no Jabaquara.</h2>
+        <dl class="dl">
+          <div><dt>Endereço</dt><dd>Av. Eng. George Corbisier, 942b — Jabaquara, São Paulo · SP, 04345-000</dd></div>
+          <div><dt>WhatsApp</dt><dd>(11) 96629-9293</dd></div>
+          <div><dt>Orçamento</dt><dd>Por escrito, antes de qualquer serviço</dd></div>
+        </dl>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-wa" href="https://wa.me/5511966299293" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Destake+Garage+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Maps ↗</a>
         </div>
-    </header>
+      </div>
+      <div class="map" data-reveal>
+        <iframe title="Mapa — Destake Garage" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Av.%20Eng.%20George%20Corbisier%2C%20942b%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004345-000&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="hero-kicker">A Sua Oficina de Confiança no Jabaquara</div>
-                <h1>Seu carro em boas mãos, com <span>orçamento claro</span> do início ao fim.</h1>
-                <p>Mecânicos qualificados, peças de qualidade e comunicação transparente em cada etapa do serviço — sem letras miúdas, sem surpresa na hora de pagar.</p>
-                <div class="hero-actions">
-                    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destake%20Garage%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn-wa" target="_blank" rel="noopener">
-                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                        Falar no WhatsApp
-                    </a>
-                    <a href="#servicos" class="btn-outline">Ver Serviços</a>
-                </div>
-                <div class="hero-values">
-                    <div class="val-item"><h4>Transparência</h4><span>Orçamento por escrito</span></div>
-                    <div class="val-item"><h4>Qualidade</h4><span>Peças e mão de obra</span></div>
-                    <div class="val-item"><h4>Atendimento</h4><span>Personalizado</span></div>
-                </div>
-            </div>
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">Destake Garage</div>
+        <div style="font-size:13.5px;color:#A8B0B8;margin-top:6px">Oficina mecânica · Jabaquara, São Paulo</div>
+      </div>
+      <div class="foot-meta">
+        <span>Av. Eng. George Corbisier, 942b — Jabaquara, SP</span>
+        <span>WhatsApp (11) 96629-9293</span>
+        <span>Troca de óleo · Amortecedores · Diagnóstico</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Destake Garage</span>
+      <span>Fotografias ilustrativas (Unsplash / Pexels) — não retratam a oficina.</span>
+    </div>
+  </div>
+</footer>
 
-            <div class="hero-visual">
-                <div class="gear-ring">
-                    <svg class="gear" viewBox="0 0 24 24" fill="none" stroke="#FF9500" stroke-width="1.3">
-                        <path d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"/>
-                        <path d="M19.4 13a7.5 7.5 0 000-2l2.1-1.6a.8.8 0 00.2-1l-2-3.4a.8.8 0 00-.9-.4l-2.5 1a7.6 7.6 0 00-1.7-1l-.4-2.6a.8.8 0 00-.8-.6h-4a.8.8 0 00-.8.6l-.4 2.6a7.6 7.6 0 00-1.7 1l-2.5-1a.8.8 0 00-.9.4l-2 3.4a.8.8 0 00.2 1L4.6 11a7.5 7.5 0 000 2l-2.1 1.6a.8.8 0 00-.2 1l2 3.4a.8.8 0 00.9.4l2.5-1a7.6 7.6 0 001.7 1l.4 2.6a.8.8 0 00.8.6h4a.8.8 0 00.8-.6l.4-2.6a7.6 7.6 0 001.7-1l2.5 1a.8.8 0 00.9-.4l2-3.4a.8.8 0 00-.2-1L19.4 13z"/>
-                    </svg>
-                </div>
-                <div class="big-initials">Destake Garage</div>
-                <p class="quote-line">"Ser referência no Jabaquara, reconhecida pela qualidade e paixão em cada serviço."</p>
-            </div>
-        </div>
-    </section>
+<a class="wa-float" href="https://wa.me/5511966299293" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+</a>
 
-    <section id="servicos" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">Nossos Serviços</div>
-                <h2>O que fazemos pelo seu carro</h2>
-                <p>Consulte a disponibilidade e receba um orçamento claro direto pelo WhatsApp.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg>
-                    </div>
-                    <h3>Troca de Óleo</h3>
-                    <p>Troca do óleo do motor e filtro com peças de qualidade, verificando os níveis do veículo para manter o motor protegido no dia a dia.</p>
-                    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20troca%20de%20%C3%B3leo." class="link-quote" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24"><path d="M4 20l4-9 2 4 2-6 2 5 2-4 4 10"/><path d="M2 20h20"/></svg>
-                    </div>
-                    <h3>Amortecedores</h3>
-                    <p>Avaliação e troca de amortecedores para devolver estabilidade, conforto e segurança na direção do seu carro.</p>
-                    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20troca%20de%20amortecedores." class="link-quote" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
-                    </div>
-                    <h3>Diagnóstico</h3>
-                    <p>Diagnóstico do problema do seu veículo antes de qualquer serviço, com explicação clara do que foi encontrado e o que precisa ser feito.</p>
-                    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20do%20meu%20carro." class="link-quote" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  var onScroll=function(){ hdr.classList.toggle('solid', window.scrollY>50); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 
-    <section id="sobre" class="section-padding" style="background: #08090B; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
-        <div class="container about-wrap">
-            <div class="about-lead">
-                <div class="section-kicker">Sobre a Destake Garage</div>
-                <h3>A sua oficina mecânica de confiança no Jabaquara</h3>
-                <p>Trabalhamos com mecânicos qualificados e peças de qualidade para que você saia com o carro resolvido — e com um orçamento claro na mão, sem letras miúdas.</p>
-                <p>Nossa missão é simples: garantir a sua tranquilidade em cada visita à oficina.</p>
-                <div class="value-pills">
-                    <span class="value-pill">Transparência</span>
-                    <span class="value-pill">Qualidade</span>
-                    <span class="value-pill">Profissionalismo</span>
-                    <span class="value-pill">Atendimento Personalizado</span>
-                </div>
-            </div>
-            <div class="mvv-stack">
-                <div class="mvv-card">
-                    <h4>Missão</h4>
-                    <p>Garantir a tranquilidade do cliente do início ao fim de cada serviço.</p>
-                </div>
-                <div class="mvv-card">
-                    <h4>Visão</h4>
-                    <p>Ser referência no Jabaquara, reconhecida pela qualidade e paixão em cada serviço.</p>
-                </div>
-                <div class="mvv-card">
-                    <h4>Diferencial</h4>
-                    <p>Mecânicos qualificados, peças de alta qualidade e orçamentos claros — sem surpresa na hora de fechar o serviço.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  // FAQ
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
+    q.addEventListener('click',function(){
+      var open=item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null;
+      });
+      if(!open){ item.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
+    });
+  });
 
-    <section id="faq" class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-kicker">Dúvidas Frequentes</div>
-                <h2>Perguntas sobre o atendimento</h2>
-            </div>
-            <div class="faq-wrap">
-                <div class="faq-item">
-                    <div class="faq-q"><span>Como faço um orçamento?</span><span class="faq-icon">+</span></div>
-                    <div class="faq-a">Chame no WhatsApp contando o problema ou o serviço desejado. O orçamento é passado por escrito antes de qualquer serviço ser iniciado, sem surpresas na hora de fechar.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q"><span>Quais marcas de carro vocês atendem?</span><span class="faq-icon">+</span></div>
-                    <div class="faq-a">Consulte pelo WhatsApp informando o modelo do seu veículo — nossa equipe confirma a disponibilidade e o prazo para o seu carro.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q"><span>Qual o horário de atendimento?</span><span class="faq-icon">+</span></div>
-                    <div class="faq-a">Consulte a disponibilidade de horário diretamente pelo WhatsApp — respondemos rápido para agendar o melhor dia para você.</div>
-                </div>
-            </div>
-        </div>
-    </section>
+  // trilho horizontal: rolagem do usuario, nunca prende a pagina
+  var rail=document.getElementById('rail');
+  if(rail){
+    var prev=document.getElementById('prev'), next=document.getElementById('next');
+    var step=function(){ var c=rail.querySelector('.card'); return c?c.offsetWidth+18:300; };
+    var sync=function(){
+      var max=rail.scrollWidth-rail.clientWidth-2;
+      if(prev) prev.disabled=rail.scrollLeft<=2;
+      if(next) next.disabled=rail.scrollLeft>=max;
+    };
+    if(prev) prev.addEventListener('click',function(){ rail.scrollBy({left:-step(),behavior:'smooth'}); });
+    if(next) next.addEventListener('click',function(){ rail.scrollBy({left:step(),behavior:'smooth'}); });
+    rail.addEventListener('scroll',sync,{passive:true});
+    window.addEventListener('resize',sync); sync();
 
-    <section id="contato" class="section-padding" style="background: #08090B; border-top: 1px solid var(--border-subtle);">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-meta">
-                    <h3>Venha até a nossa oficina</h3>
-                    <p>Estamos na Av. Eng. George Corbisier, no Jabaquara, Zona Sul de São Paulo.</p>
-                    <div class="contact-lines">
-                        <div class="contact-line"><span class="line-label">Endereço</span><span>Av. Eng. George Corbisier, 942b — Jabaquara, São Paulo - SP, CEP 04345-000</span></div>
-                        <div class="contact-line"><span class="line-label">WhatsApp</span><span>(11) 96629-9293</span></div>
-                        <div class="contact-line"><span class="line-label">Avaliações</span><span><a href="https://www.google.com/maps/search/?api=1&query=Destake+Garage+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Ver no Google Maps ↗</a></span></div>
-                    </div>
-                    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20oficina." class="btn-wa" target="_blank" rel="noopener">
-                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-                        Falar no WhatsApp
-                    </a>
-                </div>
-                <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); height: 320px; background: #08090C;">
-                    <iframe
-                        src="https://www.google.com/maps?q=Av.%20Eng.%20George%20Corbisier%2C%20942b%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004345-000&output=embed"
-                        width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    // arrastar com o mouse
+    var down=false,sx=0,sl=0,moved=0;
+    rail.addEventListener('pointerdown',function(e){
+      if(e.pointerType==='touch') return;
+      down=true;moved=0;sx=e.clientX;sl=rail.scrollLeft;rail.classList.add('drag');
+    });
+    rail.addEventListener('pointermove',function(e){
+      if(!down) return;
+      var d=e.clientX-sx; moved=Math.abs(d);
+      if(moved>3) e.preventDefault();
+      rail.scrollLeft=sl-d;
+    });
+    var up=function(){ if(!down) return; down=false; rail.classList.remove('drag'); sync(); };
+    rail.addEventListener('pointerup',up);
+    rail.addEventListener('pointerleave',up);
+    rail.addEventListener('click',function(e){ if(moved>5) e.preventDefault(); },true);
+  }
 
-    <footer>
-        <div class="container">
-            <div class="footer-brand">Destake Garage</div>
-            <p>Oficina Mecânica de Confiança no Jabaquara — Troca de Óleo, Amortecedores e Diagnóstico.</p>
-            <p style="margin-top: 6px;">Av. Eng. George Corbisier, 942b — Jabaquara, São Paulo - SP</p>
-        </div>
-    </footer>
+  if(!window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger);
 
-    <a href="https://wa.me/5511966299293?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destake%20Garage%20e%20gostaria%20de%20um%20or%C3%A7amento." class="floating-wa" target="_blank" rel="noopener" title="Falar no WhatsApp">
-        <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/></svg>
-    </a>
+  gsap.to('#progress',{scaleX:1,ease:'none',
+    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
 
-    <script>
-        document.querySelectorAll('.faq-q').forEach(q => {
-            q.addEventListener('click', () => { q.parentElement.classList.toggle('open'); });
-        });
-    </script>
+  var mm=gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference)',function(){
+    gsap.from('.hero-copy-in > *',{y:26,opacity:0,duration:.95,stagger:.075,ease:'power3.out',delay:.1});
+    gsap.from('.hero-shot img',{scale:1.1,duration:1.6,ease:'power2.out'});
+
+    gsap.utils.toArray('[data-reveal]').forEach(function(el){
+      gsap.from(el,{y:50,opacity:0,duration:.95,ease:'power3.out',
+        immediateRender:false,scrollTrigger:{trigger:el,start:'top 86%'}});
+    });
+
+    // parallax discreto — nenhum pin, a pagina nunca trava
+    gsap.utils.toArray('.svc-shot img, .break-shot img').forEach(function(img){
+      gsap.fromTo(img,{yPercent:-5},{yPercent:5,ease:'none',
+        scrollTrigger:{trigger:img.parentElement,start:'top bottom',end:'bottom top',scrub:true}});
+    });
+    gsap.to('.hero-shot img',{yPercent:6,ease:'none',
+      scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+  });
+
+  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
+})();
+</script>
 </body>
 </html>
