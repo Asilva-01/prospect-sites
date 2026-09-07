@@ -1,22 +1,24 @@
 # Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da atualização: 05/09/2026 às 22:25  
-Status geral: **13 Propostas Enviadas (Lotes 1-4) + 4 Sites Publicados aguardando proposta (Onda 4 — Jabaquara)**
+Data da atualização: 07/09/2026 às 20:06  
+Status geral: **17 Propostas Enviadas (Lotes 1-4 + Onda 4)**
 
 ---
 
-## 🚗 Onda 4: Oficinas Mecânicas de Carro — Jabaquara (Pesquisado e publicado em 05/09/2026)
+## 🚗 Onda 4: Oficinas Mecânicas de Carro — Jabaquara (4 Propostas Enviadas em 07/09/2026)
 
 **Aviso importante:** esta pesquisa foi feita **sem acesso ao Google Maps/navegador** nesta sessão (só WebSearch/WebFetch), igual ao método usado no Lote 3. Nenhuma nota ou nº de avaliações foi confirmado ou inventado — como não há como confirmar manualmente (decisão do usuário em 05/09/2026), seguimos só com o que já estava disponível nos sites oficiais dos clientes. Das 20 oficinas avaliadas em Jabaquara, a maioria não tem site/e-mail próprio (só aparece em diretórios de terceiros) — só 4 restaram qualificadas.
 
 | # | Nome | Nicho | Contato | WhatsApp | Site atual | Motivo | Status | URL Nova Pública | Bairro |
 |---|------|-------|---------|----------|------------|--------|--------|------------------|--------|
-| 14 | **Kimiko Auto Center** | Oficina mecânica | `kimikoautocenter@gmail.com` / (11) 5068-2446 | 5511955866874 | https://www.kimiko.com.br/ | WordPress datado, sem foco mobile | `publicado` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/) | Zona Sul / Saúde-Jabaquara |
-| 15 | **Destake Garage** | Oficina mecânica | (11) 96629-9293 (sem e-mail) | 5511966299293 | Google Sites (template gratuito) | Site genérico sem domínio próprio | `publicado` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/destake-garage/) | Jabaquara |
-| 16 | **Riveiro Restauradora de Veículos** | Oficina mecânica | (sem e-mail) | 5511981382222 | Canva Sites (landing simples) | Empresa tradicional (desde 1980) com site básico sem domínio | `publicado` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/) | Jabaquara |
-| 17 | **Omenauto** | Oficina mecânica | (11) 5012-7393 (sem e-mail) | 5511959545902 | https://www.omenauto.com.br/ | Site com domínio próprio mas datado — baixa prioridade | `publicado` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/omenauto/) | Jabaquara |
+| 14 | **Kimiko Auto Center** | Oficina mecânica | `kimikoautocenter@gmail.com` / (11) 5068-2446 | 5511955866874 | https://www.kimiko.com.br/ | WordPress datado, sem foco mobile | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/) | Zona Sul / Saúde-Jabaquara |
+| 15 | **Destake Garage** | Oficina mecânica | (11) 96629-9293 (sem e-mail) | 5511966299293 | Google Sites (template gratuito) | Site genérico sem domínio próprio | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/destake-garage/) | Jabaquara |
+| 16 | **Riveiro Restauradora de Veículos** | Oficina mecânica | (sem e-mail) | 5511981382222 | Canva Sites (landing simples) | Empresa tradicional (desde 1980) com site básico sem domínio | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/) | Jabaquara |
+| 17 | **Omenauto** | Oficina mecânica | (11) 5012-7393 (sem e-mail) | 5511959545902 | https://www.omenauto.com.br/ | Site com domínio próprio mas datado — baixa prioridade | `proposta enviada` | [Ver Nova Página](https://asilva-01.github.io/prospect-sites/sites/omenauto/) | Jabaquara |
 
-**Sites publicados em 05/09/2026** via GitHub Pages (push para `origin/main`, mesmo método dos lotes anteriores — HostGator nunca foi configurado neste projeto). Todas as 4 URLs testadas em HTTPS (200 OK): editor visual (`[slug]-editor.html`) e abas em `comparar.html` também disponíveis. Identidade visual tipográfica (sem foto/logo hotlinkado) — ver [[feedback-nao-fabricar-dados-profissionais]]. Ainda **não enviados como proposta**.
+**Sites publicados em 05/09/2026 e REDESENHADOS em 06-07/09/2026** via GitHub Pages. A primeira versão foi reprovada pelo cliente ("muito cara de IA", "não vendável"): identidade só tipográfica e nenhuma imagem. Os 4 foram refeitos em formato cinematográfico, cada um com direção de arte própria e fotografia real de banco livre (`assets/fotos/`, baixadas — nunca hotlink), com aviso de imagem ilustrativa no rodapé. As 4 URLs e as 23 imagens foram testadas em produção (200 OK).
+
+**Propostas enviadas em 07/09/2026** pelo `sites/painel-propostas.html`: e-mail para a Kimiko (único com endereço, `kimikoautocenter@gmail.com`, confirmado no site oficial) e WhatsApp para Destake, Riveiro e Omenauto (sem e-mail público). Nenhuma nota ou avaliação do Google foi citada — não temos essas confirmadas. Preço não foi mencionado nas mensagens; o valor de referência (R$ 1.200 + R$ 150/mês) está registrado no banco como previsão, não como valor comunicado ao cliente.
 
 **Descartados com dado real (mantidos no banco para referência):** Auto Brandão Mecânica e Centro Automotivo Taniguchi e Auto Mecânica HW (sem site/e-mail próprio), TK Garage (site já bom), H-Norte Especializada Honda (fora da região + site já ótimo, nota 4.9★/500+ citada pelo próprio site, não confirmada via Maps).
 
