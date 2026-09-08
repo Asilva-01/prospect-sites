@@ -1,7 +1,37 @@
 # Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da atualização: 07/09/2026 às 20:06  
-Status geral: **17 Propostas Enviadas (Lotes 1-4 + Onda 4)**
+Data da atualização: 07/09/2026 às 22:14  
+Status geral: **17 Propostas Enviadas (Lotes 1-4 + Onda 4) + 7 Leads Novos (Onda 6 — Dedetizadoras)**
+
+---
+
+## 🐜 Onda 6: Dedetizadoras / Controle de Pragas — Zona Sul (Pesquisado em 07/09/2026)
+
+**Por que este nicho:** das 17 propostas enviadas, a única resposta positiva veio da Tempstar (climatização/PMOC) — serviço técnico recorrente, que precisa passar credibilidade. Dedetizadora tem o mesmo perfil e costuma exibir licença sanitária.
+
+**Aviso de método:** pesquisa feita **sem Google Maps e sem navegador** (só WebSearch/WebFetch). **Nenhuma nota ou nº de avaliações foi confirmado — e nenhum foi inventado.** O critério eliminatório desta rodada foi **e-mail público**, porque na Onda 4 três dos quatro leads não tinham e-mail e a abordagem travou.
+
+**Os 7 e-mails abaixo foram conferidos um a um por mim**, direto na página de cada empresa. Todos os defeitos listados também foram verificados por medição própria (tamanho de HTML, tempo de carregamento, bibliotecas, TLS) — não são estimativa.
+
+| # | Nome | Nicho | Contato | WhatsApp | Site atual | Motivo (verificado) | Status | Bairro |
+|---|------|-------|---------|----------|------------|---------------------|--------|--------|
+| 18 | **Interprag** | Dedetizadora | `contato@interprag.com.br` / (11) 5891-8644 | 5511988102849 (celular, não rotulado) | https://interprag.com.br/ | 462.783 bytes de HTML numa página só; layout com `<table>`; FancyBox antigo | `novo` | **Santo Amaro** |
+| 19 | **Bio SP** | Dedetizadora | `contato@biosp.com.br` / (11) 2059-7392 | 5511983578159 | https://biosp.com.br/ | 221 KB e **3,27s** de carregamento; `jquery.mobile` obsoleto; sem endereço no site | `novo` | não publicado |
+| 20 | **Dedetizadora Hiroshima** | Dedetizadora | `contato@hiroshima.com.br` / (11) 5615-0352 | — | https://dedetizadorahiroshima.com.br/ | Servidor bloqueia não-navegadores (Mod_Security); site cartão de visita, sem endereço nem licença | `novo` | não publicado |
+| 21 | **Hydrotécnica** | Dedetizadora | `atendimento@hydrotecnica.com.br` / (11) 5841-0800 | 5511984360159 | https://hydrotecnica.com.br/ | 243 KB; layout com `<table>`; páginas `.php` legadas | `novo` | Campo Limpo |
+| 22 | **Etoprag** | Dedetizadora | `contato@etoprag.com.br` / (11) 94727-9500 | 5511947279500 (celular) | https://etoprag.com.br/ | Slider Revolution + `jquery-migrate` (~2017); 2,67s de carregamento | `novo` | CEP 05736 (Zona Sul) |
+| 23 | **Exterminex** | Dedetizadora | `contato@exterminex.com.br` / (11) 5872-2226 | 5511919116808 | http://www.exterminex.com.br/ | 368 KB; `<table>`; **HTTPS cai para HTTP**; sem endereço publicado | `novo` | não publicado |
+| 24 | **Letec Pragas Urbanas** | Dedetizadora | `comercial@letecpragasurbanas.com.br` / (11) 5677-2767 | 5511971225219 | https://letecpragasurbanas.com.br/ | 4 links mortos `href="#"`; revslider + `jquery-migrate`; sem endereço nem CNPJ | `novo` | não publicado |
+
+**Credenciais reais para usar na abordagem** (extraídas do site de cada uma, nada inventado): Interprag "mais de 15 anos"; Bio SP "30 anos" + licença **SIVISA 351630901-812-000034-1-7**; Hiroshima "28 anos". Etoprag, Exterminex e Letec **não publicam** anos de atuação nem licença — para essas, a abertura terá de se apoiar só no defeito técnico do site.
+
+### ⚠️ Sedim Saneamento (Jabaquara) — melhor alvo técnico, mas SEM e-mail
+
+Rua Freire Farto 150, Jabaquara. CNPJ 68.859.503/0001-50, "30 anos", exibe Licença Sanitária/Ambiental/Bombeiros. **Confirmei por `openssl`: o certificado TLS venceu em 23/07/2026 e o site não completa conexão HTTPS** — há ~6 semanas mostra "conexão não é particular" para qualquer visitante. É o argumento mais forte da rodada inteira. Só tem telefone (11) 5594-2700 e WhatsApp 5511910380778. **Descartado pelo critério de e-mail — decisão do André se vale abordar por WhatsApp.**
+
+**Descartadas (19 de 26 avaliadas).** Motivo predominante: **sem e-mail público** (Sedim, Okinawa Cupins, Delta, Galli, Dernex, Lider Pac, SP Dedetizadora, Termitek, dedetizadoranojabaquara.com.br, dedetizarsp.eco.br). Outras: site já moderno (Ibaraki); fora da Zona Sul (Primordial, Lunar, Alvo, Bioprev, Dedetizadora Brasil SP); Zona Norte (Protec); só Facebook (Cloroart); domínio sem DNS, fora do ar (Stop Serv); sem endereço e e-mail genérico (Dedetizadora JW).
+
+**Leitura do nicho:** raso na região. Jabaquara tem ~18 dedetizadoras em diretórios, mas a busca é dominada por páginas-satélite de SEO de empresas de fora. As locais de verdade têm site fraco — o perfil ideal — porém quase nenhuma publica e-mail. Das 7 qualificadas, só **Interprag (Santo Amaro)** tem bairro-alvo confirmado; 4 não publicam endereço.
 
 ---
 
