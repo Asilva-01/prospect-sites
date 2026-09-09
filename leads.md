@@ -1,7 +1,29 @@
 # Leads Prospector — Santo Amaro, São Paulo - SP
 
-Data da atualização: 07/09/2026 às 22:14  
-Status geral: **17 Propostas Enviadas (Lotes 1-4 + Onda 4) + 7 Leads Novos (Onda 6 — Dedetizadoras)**
+Data da atualização: 09/09/2026 às 20:51  
+Status geral: **20 Propostas Enviadas + 4 Leads Novos (Onda 6) + 5 Leads Novos (Onda 5 — Materiais de Construção)**
+
+---
+
+## 🧱 Onda 5: Lojas de Materiais de Construção — Zona Sul (Pesquisado em 09/09/2026)
+
+**Por que este nicho:** comércio estabelecido, ticket mais alto que loja de roupa/papelaria, maior chance de ter site próprio e e-mail — critério que travou a Onda 6 de dedetizadoras.
+
+**Aviso de método:** pesquisa feita **sem Google Maps e sem navegador** (só WebSearch/WebFetch). **Nenhuma nota do Google foi encontrada nem citada para nenhuma loja avaliada** — não confirmado em todos os casos. **Os 5 e-mails abaixo foram reabertos e reconfirmados por mim, pessoalmente**, diretamente na página de cada loja (não apenas aceitos do relatório da pesquisa).
+
+**Resultado abaixo da meta:** 22 lojas avaliadas, **5 qualificadas** (meta era 10). Jabaquara/Santo Amaro puro tem muita loja tradicional, mas quase nenhuma com site próprio — a maioria só em diretórios (GuiaMais, Sampa.br). O volume só apareceu abrindo para bairros vizinhos (Ipiranga, Campo Belo) e sub-nichos adjacentes (tintas, materiais elétricos). **Alerta para rodadas futuras:** 2 falsos positivos apareceram só por coincidência de nome com o bairro "Santo Amaro" — uma empresa em Portugal e outra em Santa Catarina. Sempre cruzar o estado/CEP antes de qualificar.
+
+| # | Nome | Nicho | Contato | WhatsApp | Site atual | Motivo (verificado) | Status | Bairro |
+|---|------|-------|---------|----------|------------|---------------------|--------|--------|
+| 25 | **Zathura (Comercial Zathura Materiais Elétricos)** | Materiais elétricos | `comercial@zathura.com.br` / (11) 5181-4860 | 5511966383252 | https://www.zathura.com.br/ | Sem HTTPS efetivo, layout de e-commerce de início de 2010 | `novo` | **Santo Amaro** (Av. João Dias, 1588) |
+| 26 | **Temfer Materiais para Construção** | Materiais de construção | `marketing@temfer.com.br` / (11) 5033-5500 | 551150335500 (mesmo nº, rotulado WhatsApp no site) | https://www.temfer.com.br/ | Layout com tabelas e jQuery datado; maioria dos produtos exibe "Esse produto acabou :(" | `novo` | Campo Belo (2ª loja: Av. Santo Amaro, 2661) |
+| 27 | **MATER — Comércio de Materiais para Construção e Ferragens** | Materiais de construção | `contato@materconstrucao.com.br` / (11) 5061-1687 | 5511976943185 | https://materconstrucao.com.br/ | Tema WordPress datado, navegação por listas de texto, pouca evidência de responsividade | `novo` | Ipiranga (limítrofe) |
+| 28 | **Tintas Lar e Auto Ltda** | Tintas | `tintaslareauto@terra.com.br` / (11) 5011-0304 | 5511960130000 | https://tintaslareauto.com.br/ | Carrossel quebrado; link "Contato" do menu aponta para URL errada (/tintas/) | `novo` | **Jabaquara** (Av. Eng. Armando Arruda Pereira, 1676) |
+| 29 | **Elétrica ADR** | Materiais elétricos | `eletricaadr@gmail.com` / (11) 5631-5675 | — | https://www.eletricaadr.com/ | Sem HTTPS efetivo, imagens quebradas (CDN de builder), funciona como página de contato, não como loja | `novo` | Zona Sul (Av. N. Sra. de Sabará, 1927 — bairro exato não confirmado, fora do Jabaquara/Sto. Amaro estrito) |
+
+**Credenciais reais para abertura da mensagem:** Zathura "mais de 15 anos", CNPJ público. Temfer "mais de 50 anos de história" (2 lojas + CD). MATER — sem CNPJ/ano no site, mas registro público confirma fundação em 1966 (não citar no e-mail o que não está no site oficial dela, salvo se o André autorizar usar dado de registro público). Tintas Lar e Auto "desde 1990". Elétrica ADR "desde 2000, mais de 20 anos de experiência".
+
+**Descartadas (17 de 22 avaliadas):** sem e-mail público (Ferragens Novo Jabaquara, Tintas Mais Cor, Pravalom); sem site próprio funcional (Casa São Benedito, Antônio Materiais, Lemão, Materiais Básicos, Matriz Materiais, Casa Montu); site com erro de certificado/inacessível (Basicolar, Jetpiso); fora da região (São Thomé Materiais/Diadema, Comercial Carvalho/Santo André-Campinas, Ville Rose Cerâmica/Indianópolis); **falsos positivos por nome** (Estrela de Santo Amaro = Portugal; MV Centerlar = Santa Catarina).
 
 ---
 
