@@ -15,9 +15,9 @@ Status geral: **17 Propostas Enviadas (Lotes 1-4 + Onda 4) + 7 Leads Novos (Onda
 
 | # | Nome | Nicho | Contato | WhatsApp | Site atual | Motivo (verificado) | Status | Bairro |
 |---|------|-------|---------|----------|------------|---------------------|--------|--------|
-| 18 | **Interprag** | Dedetizadora | `contato@interprag.com.br` / (11) 5891-8644 | 5511988102849 (celular, não rotulado) | https://interprag.com.br/ | 462.783 bytes de HTML numa página só; layout com `<table>`; FancyBox antigo | `novo` | **Santo Amaro** |
-| 19 | **Bio SP** | Dedetizadora | `contato@biosp.com.br` / (11) 2059-7392 | 5511983578159 | https://biosp.com.br/ | 221 KB e **3,27s** de carregamento; `jquery.mobile` obsoleto; sem endereço no site | `novo` | não publicado |
-| 20 | **Dedetizadora Hiroshima** | Dedetizadora | `contato@hiroshima.com.br` / (11) 5615-0352 | — | https://dedetizadorahiroshima.com.br/ | Servidor bloqueia não-navegadores (Mod_Security); site cartão de visita, sem endereço nem licença | `novo` | não publicado |
+| 18 | **Interprag** | Dedetizadora | `contato@interprag.com.br` / (11) 5891-8644 | 5511988102849 (celular, não rotulado) | https://interprag.com.br/ | 462.783 bytes de HTML numa página só; layout com `<table>`; FancyBox antigo | `redesenhado` | **Santo Amaro** |
+| 19 | **Bio SP** | Dedetizadora | `contato@biosp.com.br` / (11) 2059-7392 | 5511983578159 | https://biosp.com.br/ | 221 KB e **3,27s** de carregamento; `jquery.mobile` obsoleto; sem endereço no site | `redesenhado` | não publicado |
+| 20 | **Dedetizadora Hiroshima** | Dedetizadora | `contato@hiroshima.com.br` / (11) 5615-0352 | 5511957511959 | https://dedetizadorahiroshima.com.br/ | Servidor bloqueia não-navegadores (Mod_Security); site cartão de visita, sem endereço nem licença | `redesenhado` | não publicado |
 | 21 | **Hydrotécnica** | Dedetizadora | `atendimento@hydrotecnica.com.br` / (11) 5841-0800 | 5511984360159 | https://hydrotecnica.com.br/ | 243 KB; layout com `<table>`; páginas `.php` legadas | `novo` | Campo Limpo |
 | 22 | **Etoprag** | Dedetizadora | `contato@etoprag.com.br` / (11) 94727-9500 | 5511947279500 (celular) | https://etoprag.com.br/ | Slider Revolution + `jquery-migrate` (~2017); 2,67s de carregamento | `novo` | CEP 05736 (Zona Sul) |
 | 23 | **Exterminex** | Dedetizadora | `contato@exterminex.com.br` / (11) 5872-2226 | 5511919116808 | http://www.exterminex.com.br/ | 368 KB; `<table>`; **HTTPS cai para HTTP**; sem endereço publicado | `novo` | não publicado |

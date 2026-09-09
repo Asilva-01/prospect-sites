@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dedetizadora Hiroshima | Plantão 24h contra pragas — Grande São Paulo, ABC e Litoral</title>
+<meta name="description" content="Dedetizadora Hiroshima: 28 anos em Dedetização, Descupinização, Desratização e Desentupimento. Plantão 24 horas, atendimento em finais de semana e feriados sem custo adicional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0C10; --surface:#141519; --line:rgba(237,238,240,.14);
+  --ink:#EDEEF0; --muted:#8D9096; --accent:#F5C400; --wa:#25D366;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Barlow',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#0B0C10}
+
+.display{font-family:'Barlow Condensed',sans-serif;font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.01em}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--accent)}
+.rule{height:1px;background:var(--line);border:0}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+section{position:relative}
+
+/* faixa hazard — usada com moderacao */
+.hazard{height:12px;background:repeating-linear-gradient(45deg,var(--accent) 0 16px,#0B0C10 16px 32px)}
+.hazard-thin{height:6px;background:repeating-linear-gradient(45deg,var(--accent) 0 12px,#0B0C10 12px 24px)}
+
+/* progresso */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:200}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:150;transition:background .5s var(--ease),border-color .5s var(--ease);border-bottom:1px solid transparent}
+header::before{content:"";position:absolute;inset:0 0 -46px 0;z-index:-1;pointer-events:none;
+  background:linear-gradient(to bottom,rgba(11,12,16,.94) 0%,rgba(11,12,16,.6) 55%,transparent 100%);transition:opacity .5s var(--ease)}
+header.solid::before{opacity:0}
+header.solid{background:rgba(11,12,16,.92);backdrop-filter:blur(16px);border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.brand{display:flex;align-items:baseline;gap:12px;font-family:'Barlow Condensed',sans-serif;font-weight:800;
+  text-transform:uppercase;font-size:20px;letter-spacing:.01em}
+.brand i{width:10px;height:10px;background:var(--accent);display:block;flex:none;align-self:center}
+.brand small{font-family:'Barlow';font-size:10px;font-weight:600;letter-spacing:.2em;color:#B7BABF;text-transform:uppercase}
+.nav-links{display:flex;gap:30px}
+.nav-links a{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#D6D8DB;position:relative;padding:4px 0;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .45s var(--ease)}
+.nav-links a:hover{color:#fff}.nav-links a:hover::after{width:100%}
+.nav-cta{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:var(--accent);color:#0B0C10;padding:12px 20px;transition:.4s var(--ease)}
+.nav-cta:hover{filter:brightness(1.1);transform:translateY(-2px)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* HERO */
+.hero{height:100svh;min-height:620px;display:flex;align-items:flex-end;overflow:hidden}
+.hero-media{position:absolute;inset:-8% 0;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 42%;filter:contrast(1.25) saturate(.85) brightness(.55)}
+.hero-media::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,var(--bg) 3%,rgba(11,12,16,.78) 34%,rgba(11,12,16,.3) 66%,rgba(11,12,16,.72) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:100px;padding-bottom:clamp(74px,11vh,116px)}
+.hero h1{font-size:clamp(2.6rem,10.4vw,8.4rem);margin:14px 0 0}
+.hero h1>span{display:block;white-space:nowrap}
+.hero h1 .hi{color:var(--accent)}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;flex-wrap:wrap;margin-top:30px}
+.hero-sub p{max-width:36ch;font-size:clamp(15px,1.6vw,17px);color:#D2D4D8}
+.hero-sub p b{color:var(--accent);font-weight:700}
+.hero-stats{display:flex;gap:clamp(24px,4vw,54px)}
+.hero-stats div span{display:block;font-family:'Barlow Condensed';font-weight:900;font-size:clamp(24px,2.8vw,36px);line-height:1;color:var(--accent)}
+.hero-stats div em{font-style:normal;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+
+/* botoes */
+.btn-wa{display:inline-flex;align-items:center;gap:12px;background:var(--wa);color:#04140A;font-size:13px;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;padding:17px 30px;transition:.4s var(--ease)}
+.btn-wa svg{width:19px;height:19px;fill:currentColor}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(37,211,102,.26)}
+.btn-ghost{display:inline-flex;align-items:center;gap:11px;border:1px solid var(--line);padding:16px 28px;font-size:12px;
+  font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:.4s var(--ease)}
+.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+/* SECAO — cabecalho numerado */
+.sec-head{display:flex;align-items:baseline;gap:20px;margin-bottom:clamp(38px,6vh,64px)}
+.sec-num{font-family:'Barlow Condensed';font-weight:800;font-size:13px;color:var(--accent);letter-spacing:.1em}
+.sec-head h2{font-size:clamp(1.9rem,4.8vw,3.8rem)}
+.sec-head .line{flex:1;height:1px;background:var(--line);align-self:center}
+
+/* MANIFESTO */
+.manifesto{padding:clamp(5rem,12vh,9rem) 0 clamp(3rem,6vh,4rem)}
+.manifesto-txt h2{font-size:clamp(1.7rem,3.6vw,3rem);font-family:'Barlow Condensed';font-weight:800;
+  line-height:1.1;letter-spacing:-.01em;margin:16px 0 26px;max-width:22ch;text-transform:uppercase}
+.manifesto-txt h2 em{font-style:normal;color:var(--accent)}
+.manifesto-txt p{color:#B4B7BC;font-size:16px;margin-bottom:16px;max-width:62ch}
+
+/* SERVICOS — lista editorial (nao cards) */
+.svc{padding:clamp(4rem,10vh,7rem) 0 clamp(6rem,13vh,10rem);border-top:1px solid var(--line)}
+.svc-layout{display:grid;grid-template-columns:1fr 380px;gap:clamp(30px,5vw,70px);align-items:start}
+.svc-row{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:30px 0;border-bottom:1px solid var(--line);cursor:default;transition:.45s var(--ease)}
+.svc-row:first-child{border-top:1px solid var(--line)}
+.svc-row .n{font-family:'Barlow Condensed';font-weight:700;font-size:12px;color:var(--muted);padding-top:8px;transition:color .4s}
+.svc-row h3{font-family:'Barlow Condensed';font-weight:800;text-transform:uppercase;
+  font-size:clamp(1.15rem,2.6vw,2rem);letter-spacing:-.01em;line-height:1.05;transition:.45s var(--ease)}
+.svc-row p{font-size:14px;color:var(--muted);margin-top:12px;max-width:56ch}
+.svc-row:hover{padding-left:14px}
+.svc-row:hover h3{color:var(--accent)}
+.svc-row:hover .n{color:var(--ink)}
+.svc-preview{position:sticky;top:110px;aspect-ratio:4/5;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
+.svc-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);
+  filter:contrast(1.25) saturate(.85) brightness(.85);transition:opacity .7s var(--ease),transform 1.2s var(--ease)}
+.svc-preview img.on{opacity:1;transform:scale(1)}
+.svc-preview .cap{position:absolute;left:0;bottom:0;right:0;padding:16px 18px;z-index:2;
+  background:linear-gradient(transparent,rgba(11,12,16,.92));font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:1000px){.svc-layout{grid-template-columns:1fr}.svc-preview{display:none}}
+
+/* BREAK full-bleed com citacao */
+.break{height:clamp(420px,68vh,620px);display:flex;align-items:center;overflow:hidden}
+.break-media{position:absolute;inset:-12% 0;z-index:0}
+.break-media img{width:100%;height:100%;object-fit:cover;filter:contrast(1.25) saturate(.85) brightness(.45)}
+.break-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,12,16,.92),rgba(11,12,16,.4))}
+.break .wrap{position:relative;z-index:2}
+.break blockquote{max-width:20ch;font-family:'Barlow Condensed';font-weight:900;text-transform:uppercase;
+  font-size:clamp(1.7rem,5.8vw,4.4rem);line-height:.94;letter-spacing:-.02em}
+.break blockquote em{font-style:normal;color:var(--accent)}
+.break cite{display:block;margin-top:26px;font-style:normal;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* COBERTURA 24h — secao assinatura */
+.cobertura{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cob-wrap{padding:clamp(5rem,12vh,8rem) 0}
+.cob-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,72px);align-items:start}
+.cob-shot{position:sticky;top:104px;aspect-ratio:4/5;max-height:calc(100svh - 168px);overflow:hidden;border:1px solid var(--line)}
+.cob-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.25) saturate(.85) brightness(.8)}
+.cob-shot::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,transparent 30%,rgba(20,21,25,.55) 100%)}
+.cob-24{display:flex;align-items:baseline;gap:22px;margin-bottom:8px}
+.cob-24 .num{font-family:'Barlow Condensed';font-weight:900;font-size:clamp(5.5rem,13vw,10.5rem);line-height:.8;color:var(--accent)}
+.cob-24 .txt{font-size:14px;color:var(--muted);max-width:20ch;padding-bottom:.6rem}
+.cob-underline{width:120px;margin-bottom:clamp(2rem,5vh,3.2rem)}
+.cob-txt p{color:#B4B7BC;font-size:16px;max-width:56ch;margin-bottom:26px}
+.cob-list{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.cob-list div{display:flex;align-items:baseline;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:clamp(15px,1.7vw,19px);letter-spacing:.01em}
+.cob-list div::before{content:"";width:8px;height:8px;background:var(--accent);flex:none}
+@media(max-width:900px){.cob-grid{grid-template-columns:1fr;gap:32px}.cob-shot{position:relative;top:auto;max-height:none;aspect-ratio:16/10}.cob-list{grid-template-columns:1fr}}
+
+/* DIFERENCIAIS */
+.dif{padding:clamp(6rem,13vh,10rem) 0}
+.dif-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:start}
+.dif-shot{position:relative;aspect-ratio:4/5;overflow:hidden;border:1px solid var(--line)}
+.dif-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.25) saturate(.85) brightness(.85)}
+.dif-shot figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:22px 22px 18px;
+  background:linear-gradient(transparent,rgba(11,12,16,.94));font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.dif-row{display:grid;grid-template-columns:38px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.dif-row:first-child{border-top:1px solid var(--line)}
+.dif-row .n{font-family:'Barlow Condensed';font-weight:700;font-size:12px;color:var(--accent);padding-top:4px}
+.dif-row h4{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:clamp(15px,1.9vw,19px);letter-spacing:.01em;margin-bottom:4px}
+.dif-row p{font-size:13.5px;color:var(--muted);max-width:48ch}
+@media(max-width:900px){.dif-grid{grid-template-columns:1fr}.dif-shot{aspect-ratio:16/9;order:-1}}
+
+/* marquee segmentos */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:24px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:44px;animation:slide 34s linear infinite;will-change:transform}
+.marquee span{font-family:'Barlow Condensed';font-weight:800;text-transform:uppercase;
+  font-size:clamp(1.1rem,2.6vw,1.9rem);color:transparent;-webkit-text-stroke:1px rgba(237,238,240,.3);letter-spacing:.01em}
+.marquee span.hot{color:var(--accent);-webkit-text-stroke:0}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* CONTATO */
+.contato{padding:clamp(6rem,13vh,10rem) 0}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,70px);align-items:stretch}
+.contato h2{font-size:clamp(2rem,5.2vw,4rem);margin-bottom:26px}
+.contato h2 em{font-style:normal;color:var(--accent)}
+.dl{border-top:1px solid var(--line);margin-bottom:34px}
+.dl div{display:grid;grid-template-columns:110px 1fr;gap:18px;padding:17px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.dl dt{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;padding-top:3px}
+.dl dd{color:#D2D4D8}
+.map{min-height:400px;border:1px solid var(--line);overflow:hidden;position:relative;filter:grayscale(1) invert(.92) contrast(.86)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media(max-width:900px){.contato-grid{grid-template-columns:1fr}.map{min-height:300px}}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:52px 0 40px}
+.foot-top{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-end;margin-bottom:34px}
+.foot-mark{font-family:'Barlow Condensed';font-weight:900;text-transform:uppercase;
+  font-size:clamp(2rem,8vw,5.5rem);line-height:.82;letter-spacing:-.02em;color:transparent;-webkit-text-stroke:1px rgba(237,238,240,.22)}
+.foot-meta{font-size:12.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;text-align:right}
+.foot-bottom{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:11px;color:#5E6167;
+  border-top:1px solid var(--line);padding-top:22px;letter-spacing:.03em}
+@media(max-width:700px){.foot-meta{text-align:left}}
+
+/* whatsapp flutuante */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:180;width:56px;height:56px;border-radius:50%;background:var(--wa);
+  color:#04140A;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.34);transition:.4s var(--ease)}
+.wa-float svg{width:27px;height:27px;fill:currentColor}
+.wa-float:hover{transform:scale(1.09)}
+
+@media(max-width:620px){
+  .nav{height:66px;gap:12px}
+  .brand{font-size:16px;gap:8px}
+  .brand small{display:none}
+  .nav-cta{padding:9px 14px;font-size:10px;letter-spacing:.08em}
+  .hero-inner{padding-top:84px;padding-bottom:44px;max-width:100%}
+  .hero .eyebrow{display:block;font-size:9.5px;letter-spacing:.14em;line-height:1.6}
+  .hero-sub{gap:22px;margin-top:22px}
+  .hero-sub p{min-width:0;font-size:14.5px}
+  .hero-stats{flex-wrap:wrap;gap:16px 24px}
+  .hero-stats div em{font-size:9px;letter-spacing:.08em}
+  .btn-wa,.btn-ghost{padding:14px 18px;font-size:11.5px;letter-spacing:.05em}
+  .btn-wa svg{width:16px;height:16px}
+  .cob-24 .num{font-size:clamp(4rem,20vw,6rem)}
+}
+[data-reveal]{will-change:transform,opacity}
+[data-split]{overflow:hidden;padding-top:.16em;margin-top:-.16em}
+.ch{display:inline-block;white-space:pre}
+@media(prefers-reduced-motion:reduce){
+  *,*::after{animation:none!important;transition:none!important}
+  [data-reveal],.cob-shot img,.svc-preview img{opacity:1!important;transform:none!important}
+  .marquee-track{animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand"><i></i>Hiroshima <small>Dedetizadora</small></a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5511957511959" target="_blank" rel="noopener">Plantão 24h</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-media" id="heroMedia">
+    <img src="../../assets/fotos/praga2-tecnico-interno-nevoa-01.jpg" alt="Técnico com equipamento de proteção total aplicando produto em ambiente com névoa">
+  </div>
+  <div class="wrap hero-inner" id="heroInner">
+    <span class="eyebrow">Plantão 24h · Grande São Paulo, ABC, Litoral e Interior</span>
+    <h1 class="display">
+      <span data-split>Dedetização</span>
+      <span class="hi" data-split>De Emergência</span>
+      <span data-split>24 Horas</span>
+    </h1>
+    <div class="hero-sub">
+      <p>Há <b>28 anos</b> atuando em Sanitização, Descupinização, Dedetização, Desratização e Desentupimentos — plantão todos os dias, inclusive finais de semana e feriados, <b>sem custo adicional</b>.</p>
+      <div class="hero-stats">
+        <div><span>28</span><em>Anos de atuação</em></div>
+        <div><span>24h</span><em>Plantão todos os dias</em></div>
+        <div><span>40%</span><em>Economia em contrato mensal</em></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px">
+      <a class="btn-wa" href="https://wa.me/5511957511959" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+        Chamar plantão agora
+      </a>
+      <a class="btn-ghost" href="#servicos">Ver serviços</a>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="wrap manifesto-txt">
+    <span class="eyebrow" data-reveal>28 anos de plantão</span>
+    <h2 data-reveal>Praga não escolhe <em>horário</em>. A gente também não.</h2>
+    <p data-reveal>A Dedetizadora Hiroshima atua há 28 anos em Sanitização, Descupinização, Dedetização, Desratização e Desentupimentos, com atendimento rápido e serviços com garantia para condomínios, escolas, residências, comércios, restaurantes, hotéis, clínicas, bares, fazendas e sítios.</p>
+    <p data-reveal>Produtos sem manchas e sem cheiro, aprovados pelo Ministério da Saúde, com pagamento facilitado — inclusive contratos mensais com economia de até 40%.</p>
+  </div>
+  <div class="hazard" aria-hidden="true" style="margin-top:clamp(3rem,7vh,5rem)"></div>
+</section>
+
+<!-- SERVICOS -->
+<section class="svc" id="servicos">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">01</span><h2 class="display">Serviços</h2><span class="line"></span></div>
+    <div class="svc-layout">
+      <div class="svc-list">
+        <article class="svc-row" data-reveal data-img="0">
+          <span class="n">01</span>
+          <div>
+            <h3>Dedetização</h3>
+            <p>Exterminamos com tecnologia avançada todos os tipos de insetos, com produtos sem manchas e sem cheiro aprovados pelo Ministério da Saúde.</p>
+          </div>
+        </article>
+        <article class="svc-row" data-reveal data-img="0">
+          <span class="n">02</span>
+          <div>
+            <h3>Descupinização</h3>
+            <p>Tratamento contra cupins em residências, comércios, condomínios e imóveis rurais, com atendimento rápido e garantia.</p>
+          </div>
+        </article>
+        <article class="svc-row" data-reveal data-img="1">
+          <span class="n">03</span>
+          <div>
+            <h3>Desratização</h3>
+            <p>Ratos transmitem mais de 200 doenças, incluindo a leptospirose. Controle de roedores com técnica e produtos seguros.</p>
+          </div>
+        </article>
+        <article class="svc-row" data-reveal data-img="1">
+          <span class="n">04</span>
+          <div>
+            <h3>Desentupimento</h3>
+            <p>Pias, ralos, colunas, esgotos, vasos sanitários, fossas e tanques — desentupimento com equipamento próprio e plantão 24h.</p>
+          </div>
+        </article>
+      </div>
+      <aside class="svc-preview" id="svcPreview">
+        <img src="../../assets/fotos/praga2-tecnico-jardim-gloves-02.jpg" alt="Mãos com luvas de proteção durante atendimento em jardim residencial" class="on">
+        <img src="../../assets/fotos/praga2-epi-luvas-detalhe-03.jpg" alt="Par de luvas de proteção usadas no atendimento, em detalhe">
+        <span class="cap">Imagem ilustrativa</span>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- BREAK -->
+<section class="break">
+  <div class="break-media"><img src="../../assets/fotos/praga-equipamento-pulverizador-mao-01.jpg" alt="Mão segurando pulverizador de aplicação, equipamento pronto para o plantão"></div>
+  <div class="wrap">
+    <blockquote data-reveal>Ligou, <em>a gente vai</em>. Dia, noite, fim de semana ou feriado.</blockquote>
+    <cite data-reveal>Dedetizadora Hiroshima · Plantão 24 horas</cite>
+  </div>
+</section>
+
+<!-- COBERTURA 24H — secao assinatura -->
+<section class="cobertura" id="cobertura">
+  <div class="wrap cob-wrap">
+    <div class="sec-head"><span class="sec-num">02</span><h2 class="display">Cobertura 24h</h2><span class="line"></span></div>
+    <div class="cob-grid">
+      <div class="cob-shot" data-reveal>
+        <img src="../../assets/fotos/praga-bairro-aereo-sp-03.jpg" alt="Vista aérea de bairro paulistano, área de cobertura do atendimento">
+      </div>
+      <div class="cob-txt">
+        <div class="cob-24" data-reveal>
+          <span class="num">24H</span>
+          <span class="txt">Plantão todos os dias, sem parar — inclusive finais de semana e feriados, sem custo adicional.</span>
+        </div>
+        <div class="hazard-thin cob-underline" aria-hidden="true"></div>
+        <p data-reveal>Atendimento rápido em todo o raio da Grande São Paulo, ABC, litoral e interior, com equipe pronta para sair a qualquer hora.</p>
+        <div class="cob-list" data-reveal>
+          <div>Grande São Paulo</div>
+          <div>ABC</div>
+          <div>São Caetano do Sul</div>
+          <div>Santo André</div>
+          <div>São Bernardo do Campo</div>
+          <div>Diadema</div>
+          <div>Litoral</div>
+          <div>Interior</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="dif" id="diferenciais">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">03</span><h2 class="display">Diferenciais</h2><span class="line"></span></div>
+    <div class="dif-grid">
+      <div>
+        <div class="dif-row" data-reveal>
+          <span class="n">01</span>
+          <div><h4>Plantão 24 horas</h4><p>Atendimento a qualquer hora do dia ou da noite.</p></div>
+        </div>
+        <div class="dif-row" data-reveal>
+          <span class="n">02</span>
+          <div><h4>Finais de semana e feriados sem custo adicional</h4><p>O plantão continua no sábado, domingo e feriado, sem taxa extra.</p></div>
+        </div>
+        <div class="dif-row" data-reveal>
+          <span class="n">03</span>
+          <div><h4>Atendimento rápido e serviços com garantia</h4><p>Resposta ágil e garantia no serviço executado.</p></div>
+        </div>
+        <div class="dif-row" data-reveal>
+          <span class="n">04</span>
+          <div><h4>Produtos sem manchas e sem cheiro</h4><p>Aprovados pelo Ministério da Saúde, seguros para o ambiente.</p></div>
+        </div>
+        <div class="dif-row" data-reveal>
+          <span class="n">05</span>
+          <div><h4>Pagamento facilitado</h4><p>Condições facilitadas para residências, comércios e condomínios.</p></div>
+        </div>
+        <div class="dif-row" data-reveal>
+          <span class="n">06</span>
+          <div><h4>Contratos mensais com economia de até 40%</h4><p>Ideal para condomínios, escolas, restaurantes, hotéis e clínicas.</p></div>
+        </div>
+      </div>
+      <figure class="dif-shot" data-reveal>
+        <img src="../../assets/fotos/praga2-jardim-area-externa-08.jpg" alt="Área externa de jardim, atendimento a sítios, fazendas e residências">
+        <figcaption>Atendimento também em sítios e fazendas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-track" id="mq">
+    <span>Condomínios</span><span class="hot">·</span><span>Escolas</span><span class="hot">·</span><span>Residências</span><span class="hot">·</span><span>Comércios</span><span class="hot">·</span><span>Restaurantes</span><span class="hot">·</span><span>Hotéis</span><span class="hot">·</span><span>Clínicas</span><span class="hot">·</span><span>Bares</span><span class="hot">·</span><span>Fazendas</span><span class="hot">·</span><span>Sítios</span><span class="hot">·</span>
+  </div>
+</div>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">04</span><h2 class="display">Contato</h2><span class="line"></span></div>
+    <div class="contato-grid">
+      <div>
+        <h2 class="display" data-reveal>Chame o <em>plantão</em>.</h2>
+        <dl class="dl" data-reveal>
+          <div><dt>WhatsApp</dt><dd>(11) 95751-1959</dd></div>
+          <div><dt>Telefones</dt><dd>(11) 5615-0352 · (11) 5560-1017</dd></div>
+          <div><dt>ABC</dt><dd>(11) 4059-3656</dd></div>
+          <div><dt>E-mail</dt><dd>contato@hiroshima.com.br · hiroshimasp@uol.com.br</dd></div>
+          <div><dt>Região</dt><dd>Grande São Paulo, ABC, São Caetano, Santo André, São Bernardo do Campo, Diadema, litoral e interior</dd></div>
+        </dl>
+        <div style="display:flex;gap:13px;flex-wrap:wrap" data-reveal>
+          <a class="btn-wa" href="https://wa.me/5511957511959" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Dedetizadora+Hiroshima+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Maps ↗</a>
+        </div>
+      </div>
+      <div class="map" data-reveal>
+        <iframe title="Mapa — área de cobertura Dedetizadora Hiroshima" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Grande%20S%C3%A3o%20Paulo&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-mark">Hiroshima</div>
+      <div class="foot-meta">
+        <span>WhatsApp (11) 95751-1959</span>
+        <span>(11) 5615-0352 · (11) 5560-1017 · ABC (11) 4059-3656</span>
+        <span>Plantão 24 horas · Dedetização · Descupinização · Desratização · Desentupimento</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Dedetizadora Hiroshima · 28 anos de atuação</span>
+      <span>Fotografias ilustrativas (Unsplash / Pexels) — não retratam a empresa.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5511957511959" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var hdr=document.getElementById('hdr');
+  var onScroll=function(){ hdr.classList.toggle('solid', window.scrollY>60); };
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+  // preview de servicos (desktop)
+  var prev=document.getElementById('svcPreview');
+  var imgs=prev?prev.querySelectorAll('img'):[];
+  document.querySelectorAll('.svc-row').forEach(function(row){
+    row.addEventListener('mouseenter',function(){
+      var i=+row.dataset.img;
+      imgs.forEach(function(im,idx){ im.classList.toggle('on', idx===i); });
+    });
+  });
+
+  // duplica marquee para loop continuo
+  var mq=document.getElementById('mq');
+  if(mq) mq.innerHTML+=mq.innerHTML;
+
+  if(!window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to('#progress',{scaleX:1,ease:'none',
+    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+
+  var mm=gsap.matchMedia();
+
+  mm.add('(prefers-reduced-motion: no-preference)',function(){
+    // titulo do hero letra a letra
+    document.querySelectorAll('[data-split]').forEach(function(el){
+      el.innerHTML=el.textContent.replace(/\S/g,"<span class='ch'>$&</span>");
+      gsap.from(el.querySelectorAll('.ch'),{yPercent:112,opacity:0,stagger:.024,duration:.9,ease:'expo.out',delay:.15});
+    });
+    gsap.from('.hero .eyebrow',{y:20,opacity:0,duration:.9,ease:'power3.out',delay:.05});
+    gsap.from('.hero-sub, .hero .btn-wa, .hero .btn-ghost',{y:26,opacity:0,duration:1,stagger:.07,ease:'power3.out',delay:.55});
+
+    // reveals — cada elemento com seu proprio scrollTrigger, sem duplicar opacidade no pai
+    gsap.utils.toArray('[data-reveal]').forEach(function(el){
+      gsap.from(el,{y:56,opacity:0,duration:1,ease:'power3.out',
+        immediateRender:false,scrollTrigger:{trigger:el,start:'top 86%'}});
+    });
+
+    // hero: parallax + saida
+    gsap.to('#heroMedia img',{yPercent:14,ease:'none',
+      scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+    gsap.to('#heroInner',{opacity:0,y:-40,ease:'none',
+      scrollTrigger:{trigger:'.hero',start:'40% top',end:'bottom top',scrub:true}});
+
+    // parallax da imagem de break
+    gsap.fromTo('.break-media img',{yPercent:-10},{yPercent:10,ease:'none',
+      scrollTrigger:{trigger:'.break',start:'top bottom',end:'bottom top',scrub:true}});
+
+    // parallax leve na foto de cobertura (sticky, sem pin)
+    gsap.to('.cob-shot img',{yPercent:8,ease:'none',
+      scrollTrigger:{trigger:'.cobertura',start:'top bottom',end:'bottom top',scrub:true}});
+  });
+
+  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>
