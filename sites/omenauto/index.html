@@ -280,6 +280,7 @@ footer{border-top:1px solid var(--line);padding:clamp(48px,8vh,80px) 0 40px;posi
 @media(max-width:520px){.wa span{display:none}.wa{padding:15px;border-radius:50%}}
 
 .ch{display:inline-block;white-space:pre}
+.word{display:inline-block}
 [data-split]{display:block;overflow:hidden;padding-bottom:.06em}
 [data-reveal]{will-change:transform,opacity}
 
@@ -595,16 +596,23 @@ footer{border-top:1px solid var(--line);padding:clamp(48px,8vh,80px) 0 40px;posi
   /* ---- movimento geral (só sem reduced-motion) ---- */
   mm.add('(prefers-reduced-motion: no-preference)',function(){
 
-    /* título do hero, letra a letra (percorre nós de texto, preserva o <span class="gold">) */
+    /* título do hero, letra a letra (percorre nós de texto, preserva o <span class="gold">; agrupa por palavra pra nao quebrar no meio) */
     document.querySelectorAll('[data-split]').forEach(function(el){
       var walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null,false),nodes=[],n;
       while((n=walker.nextNode())) nodes.push(n);
       nodes.forEach(function(node){
         var frag=document.createDocumentFragment();
-        node.nodeValue.split('').forEach(function(c){
-          var s=document.createElement('span');
-          s.className='ch'; s.textContent=c;
-          frag.appendChild(s);
+        node.nodeValue.split(/(\s+)/).forEach(function(chunk){
+          if(!chunk) return;
+          if(/^\s+$/.test(chunk)){ frag.appendChild(document.createTextNode(chunk)); return; }
+          var word=document.createElement('span');
+          word.className='word';
+          chunk.split('').forEach(function(c){
+            var s=document.createElement('span');
+            s.className='ch'; s.textContent=c;
+            word.appendChild(s);
+          });
+          frag.appendChild(word);
         });
         node.parentNode.replaceChild(frag,node);
       });
