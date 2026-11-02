@@ -1,130 +1,97 @@
-# Status da Sessão de Prospecção — Santo Amaro (Lotes 1-4) + Jabaquara (Onda 4)
+# Status Geral da Prospecção — Santo Amaro & Zona Sul (Lotes 1-4, Ondas 4, 5 e 6)
 
-**Data da última atualização:** 05/09/2026 às 21:47  
-**Status Atual:** 🚀 **13 PROPOSTAS ENVIADAS (Lotes 1-4)** + 🆕 **4 novos leads qualificados na Onda 4 (Jabaquara), aguardando confirmação antes do redesign**  
-**Nichos:** Saúde & Bem-Estar (Psicologia, Neuropsicologia, Nutrição), Comércio de Alto Ticket (Estética Automotiva, Marcenaria & Climatização) e Oficinas Mecânicas de Carro (nova Onda 4)  
-**Região:** Santo Amaro, Chácara Santo Antônio, Moema, Brooklin Velho, Zona Sul e Jabaquara — São Paulo - SP  
-
----
-
-## 📊 Resumo Consolidado de Envios
-
-- **Total de Propostas Enviadas:** 13
-  - **Lote 1 (Enviado em 30/08/2026):** 3 nutricionistas (Lourdes Costa, Carolina Vasconcelos, Dra. Vanessa Lacerda).
-  - **Lotes 2 e 3 (Enviado em 02/09/2026):** 7 profissionais e clínicas (Dra. Paula Paraíso, Métra Psicologia, Clínica Langner, Bianca Cremonez, Dra. Cecília Freytas, Luciene Hessel, Clínica Equilíbrio).
-  - **Lote 4 Comercial (Enviado em 04/09/2026):** 3 empresas de alto ticket (Future Auto Care, Simone Móveis Planejados, Tempstar Ar Condicionado).
-- **Taxa de Conclusão:** 100% dos sites produzidos foram abordados com propostas personalizadas.
-- **Banco de Dados SQLite (`prospector.db`):** 100% sincronizado com status `proposta enviada`.
-- **Dashboard de Leads:** Atualizado com todos os 13 leads sincronizados.
+**Data da última atualização:** 13/09/2026  
+**Status Consolidado:**
+- 🚀 **28 Propostas Enviadas (100% dos Leads Qualificados Abordados)**
+- 🟢 **1 Resposta Positiva Quente** (Tempstar Ar Condicionado — retorno de férias em ~30/09/2026)
+- 🎨 **0 Pendências de Redesenho ou Envio** (Todos os 29 sites produzidos já foram enviados com abordagem personalizada)
+- 📁 **7 Descartados com Justificativa Técnica Arquivada**
+- **Total no Banco:** 36 leads catalogados
 
 ---
 
-## ⚡ Leads Comerciais de Alto Ticket com Proposta Enviada em 04/09/2026 (Lote 4)
+## 📊 Resumo Consolidado por Lote / Onda
 
-1. **Future Auto Care — Estética Automotiva & Detailing (Chácara Santo Antônio)**
-   - Status: `✓ Proposta Enviada` (04/09/2026 às 20:25)
-   - Contato: `futureautocare.oficial@gmail.com` / WhatsApp (11) 99248-2484
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/future-auto-care/
-   - Gancho: Versão Dark Mode de alto luxo destacando vitrificação cerâmica e PPF para veículos premium.
-
-2. **Simone Móveis Planejados — Marcenaria & Projetos 3D (Zona Sul / Santo Amaro)**
-   - Status: `✓ Proposta Enviada` (04/09/2026 às 20:25)
-   - Contato: `simonemoveisplanejados@gmail.com` / WhatsApp (11) 5612-6333
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/simone-moveis-planejados/
-   - Gancho: Layout sofisticado de arquitetura com botão para o cliente enviar a planta direto ao WhatsApp.
-
-3. **Tempstar Ar Condicionado — Climatização & PMOC (Centro de Santo Amaro)**
-   - Status: `🟢 RESPONDEU — positivo` (respondeu 05/09/2026 de madrugada)
-   - Contato: `tempstar@tempstar.com.br` / WhatsApp (11) 97096-4539 / contato direto Engº Augusto J Caldas: (11) 9.9511-1810
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/
-   - Gancho: Carregamento ultrarrápido com chamado de emergência em 1 toque e destaque para laudos de PMOC.
-   - **Resposta do cliente:** "Gostei bastante e gostaria de conversar contigo. Hoje iniciam minhas férias e retorno no fim do mês quando poderemos nos falar." — **Ação: agendar follow-up para ~30/09/2026. Não mexer no site nem reenviar proposta agora — lead quente, só aguardando o fim das férias dele.**
+| Lote / Onda | Nicho / Segmento | Enviados | Redesenhados (Prontos) | Novos | Resposta |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Lote 1** (30/08) | Nutrição | 3 | — | — | — |
+| **Lotes 2 e 3** (02/09) | Saúde, Nutrição e Psicologia | 7 | — | — | — |
+| **Lote 4** (04/09) | Estética Automotiva, Marcenaria e Climatização | 2 | — | — | 1 (Tempstar) |
+| **Onda 4** (07/09) | Oficinas Mecânicas (Jabaquara) | 4 | — | — | — |
+| **Onda 5** (11 e 13/09) | Materiais de Construção, Tintas e Elétrica | 5 | — | — | — |
+| **Onda 6** (09 e 13/09) | Dedetizadoras / Controle de Pragas | 7 | — | — | — |
+| **Totais** | | **28** | **0** | **0** | **1** |
 
 ---
 
-## 🎯 Leads com Proposta Enviada em 02/09/2026 (Lotes 2 e 3)
+## 🟢 Lead Quente com Resposta Positiva (Prioridade Máxima de Fechamento)
 
-4. **Dra. Paula Paraíso — Nutricionista (138 avaliações 5.0★ no Google Maps)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `contato@paulaparaiso.com.br` / WhatsApp (11) 96277-7356
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/paula-paraiso-nutri/
-
-5. **Métra Psicologia e Psicanálise (Alexandre Dumas, 25+ anos de tradição)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `contato@metrapsi.com.br` / WhatsApp (11) 99970-6712
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/
-
-6. **Clínica Langner — Neuropsicologia & TCC (Centro de Santo Amaro)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `contato@clinicalangner.com.br` / WhatsApp (11) 94818-9898
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/clinica-langner/
-
-7. **Bianca Cremonez Magnelli — Nutricionista Esportiva (Moema)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `nutricionista@nutricionistasp.com` / WhatsApp (11) 97232-7220
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/
-
-8. **Dra. Cecília Freytas — Psicóloga (NovAmérica Office Park, 70+ avaliações 5.0★)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `contato@ceciliafreytas.com.br` / WhatsApp (11) 99601-2736
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/
-
-9. **Luciene Hessel Fogaça — Psicóloga (Brooklin Velho / Campo Belo)**
-   - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-   - Contato: `contato@psicologaluciene.com.br` / WhatsApp (11) 97018-4141
-   - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/luciene-hessel-psico/
-
-10. **Clínica Equilíbrio — Psicologia e Neuropsicologia (Moema)**
-    - Status: `✓ Proposta Enviada` (02/09/2026 às 20:00)
-    - Contato: `contato@equilibriopsiconeuro.com.br` / WhatsApp (11) 99996-0772
-    - Site novo no ar: https://asilva-01.github.io/prospect-sites/sites/clinica-equilibrio-psico/
+* **Tempstar Ar Condicionado — Climatização & PMOC (Centro de Santo Amaro)**
+  * **Status:** `🟢 RESPONDEU — positivo` (respondeu em 05/09/2026)
+  * **Interlocutor:** Engº Augusto J Caldas | Contato direto: `(11) 9.9511-1810` / `tempstar@tempstar.com.br`
+  * **Site demonstrativo no ar:** https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/
+  * **Retorno do cliente:** *"Gostei bastante e gostaria de conversar contigo. Hoje iniciam minhas férias e retorno no fim do mês quando poderemos nos falar."*
+  * **Ação Programada:** Agendar abordagem de fechamento para **30/09/2026**. Proposta de valor focada em conformidade técnica PMOC, agilidade de emergência e contrato de manutenção mensal.
 
 ---
 
-## ✉️ Leads com Proposta Enviada em 30/08/2026 (Lote 1)
+## 🧱 Onda 5: Materiais de Construção (Propostas Enviadas)
 
-11. **Lourdes Costa Nutricionista** (`nutrilourdescosta@gmail.com`) — Status: `✓ Proposta Enviada`
-12. **Carolina Vasconcelos Nutricionista** (`carolinavasconcelost@gmail.com`) — Status: `✓ Proposta Enviada`
-13. **Dra. Vanessa Lacerda Nutricionista** (`vanessa.lacerdanutri@yahoo.com`) — Status: `✓ Proposta Enviada`
+Os 4 sites abaixo já estão 100% desenvolvidos, publicados no GitHub Pages e com mensagens prontas no [painel-propostas.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/painel-propostas.html):
 
----
+1. **Temfer Materiais para Construção** (Campo Belo / Santo Amaro)
+   * Contato: `marketing@temfer.com.br` | WhatsApp: (11) 5033-5500
+   * Site novo: https://asilva-01.github.io/prospect-sites/sites/temfer-materiais-construcao/
+   * Gancho: Mais de 50 anos de história, 2 lojas + CD, modernização do catálogo e cotação direta no WhatsApp.
+2. **MATER — Materiais e Ferragens** (Ipiranga / Zona Sul)
+   * Contato: `contato@materconstrucao.com.br` | WhatsApp: (11) 97694-3185
+   * Site novo: https://asilva-01.github.io/prospect-sites/sites/mater-materiais-ferragens/
+   * Gancho: Layout moderno substituindo listas de texto simples por catálogo visual responsivo.
+3. **Tintas Lar e Auto Ltda** (Jabaquara)
+   * Contato: `tintaslareauto@terra.com.br` | WhatsApp: (11) 96013-0000
+   * Site novo: https://asilva-01.github.io/prospect-sites/sites/tintas-lar-e-auto/
+   * Gancho: Correção de carrossel quebrado do site antigo e destaque para linha imobiliária e repintura automotiva.
+4. **Elétrica ADR** (Zona Sul)
+   * Contato: `eletricaadr@gmail.com` | Tel: (11) 5631-5675
+   * Site novo: https://asilva-01.github.io/prospect-sites/sites/eletrica-adr/
+   * Gancho: Desde 2000 no mercado, substituição de página com imagens quebradas por catálogo técnico claro.
 
-## 📅 Próximos Passos Comerciais (Régua de Follow-up)
-
-- **Monitoramento Diário:** Acompanhar respostas na caixa de entrada `andre1981luiz@gmail.com` e no WhatsApp `(11) 98239-5014`.
-- **Follow-up Lotes 2 e 3:** A partir de 05/09/2026 para quem ainda não respondeu ("Conseguiu abrir a página no celular?").
-- **Follow-up Lote 4:** A partir de 09/09/2026 (após 3 dias úteis do envio de 04/09), EXCETO Tempstar (ver abaixo).
-
----
-
-## 🛠️ Auditoria de Qualidade e Correções — 05/09/2026
-
-Motivada pelo primeiro retorno real (Tempstar) e pela suspeita de que os sites poderiam melhorar, uma auditoria de qualidade nos 13 sites-demo encontrou e corrigiu dois problemas críticos que já estavam publicados havia dias:
-
-1. **Depoimentos 100% fabricados** (nomes e citações inventadas atribuídas a "Google Review") em Lourdes, Carolina e Vanessa (Lote 1, no ar desde 30/08). Substituídos por bloco honesto de nota real + link de busca no Google.
-2. **Hotlink de fotos/logo reais** dos domínios/perfis originais dos leads (Lourdes, Carolina, Vanessa, Paula Paraíso) — inclusive nas cópias `-editor.html` e `<slug>.html` publicadas no GitHub Pages. Substituído por bloco de iniciais (mesmo padrão da Bianca Cremonez).
-
-Ambos corrigidos, commitados (`b4a6f60`, `70ebb1a`) e publicados em produção em 05/09/2026. Reforma leve (lazy-load + 1 estatística não confirmada suavizada na Métra) também aplicada em: metra-psicologia, simone-moveis-planejados, future-auto-care, cecilia-freytas-psico, clinica-langner.
-
-**🟢 Tempstar Ar Condicionado respondeu positivo** em 05/09/2026: Engº Augusto J Caldas gostou da proposta, mas está de férias — retorno só no fim de setembro/2026. **Não mexer no site nem reenviar nada para ela até lá.**
-
-**Pendente:** conector do Gmail ainda não autenticado nesta sessão (necessário rodar `/mcp` e autorizar "claude.ai Gmail") para checar resposta dos outros 12 leads e gerar follow-ups formais.
+*Nota: **Zathura Materiais Elétricos** já teve a proposta enviada em 11/09/2026.*
 
 ---
 
-## 🚗 Onda 4 — Oficinas Mecânicas de Carro (Jabaquara) — Pesquisado, redesenhado e publicado em 05/09/2026
+## 🐜 Onda 6: Dedetizadoras & Controle de Pragas (Zona Sul)
 
-Nova região de prospecção decidida com o usuário (primeira fora de Santo Amaro). **Sem acesso ao Google Maps/navegador nesta sessão** — pesquisa feita via WebSearch/WebFetch, mesmo método do Lote 3. Nenhuma nota/avaliação foi confirmada ou inventada.
+* **Propostas Enviadas em 09/09/2026:**
+  1. **Interprag** (`contato@interprag.com.br`) — Mais de 15 anos em Santo Amaro. Site antigo pesado (460KB).
+  2. **Bio SP** (`contato@biosp.com.br`) — 30 anos e Licença SIVISA publicada.
+  3. **Dedetizadora Hiroshima** (`contato@hiroshima.com.br`) — 28 anos de mercado.
+* **Leads da Onda 6 com Proposta Enviada em 13/09/2026:**
+  4. **Hydrotécnica** (`atendimento@hydrotecnica.com.br` / WA 11 98436-0159) — https://asilva-01.github.io/prospect-sites/sites/hydrotecnica/
+  5. **Etoprag** (`contato@etoprag.com.br` / WA 11 94727-9500) — https://asilva-01.github.io/prospect-sites/sites/etoprag/
+  6. **Exterminex** (`contato@exterminex.com.br` / WA 11 91911-6808) — https://asilva-01.github.io/prospect-sites/sites/exterminex/
+  7. **Letec Pragas Urbanas** (`comercial@letecpragasurbanas.com.br` / WA 11 97122-5219) — https://asilva-01.github.io/prospect-sites/sites/letec-pragas-urbanas/
 
-- 20 oficinas avaliadas a partir de um diretório real (guiafacil.com) + buscas diretas.
-- **4 qualificadas**: Kimiko Auto Center, Destake Garage, Riveiro Restauradora de Veículos, Omenauto (baixa prioridade).
-- **16 descartadas** — a maioria por não ter site nem e-mail/WhatsApp próprio (esperado no nicho: oficinas pequenas raramente têm presença digital). 5 descartes com dado real relevante foram mantidos no banco para referência (Auto Brandão, Taniguchi, Auto Mecânica HW, TK Garage, H-Norte Honda).
-- **André decidiu (05/09/2026) que não há como confirmar manualmente as notas/avaliações no Maps** — seguimos só com o que já estava disponível nos sites oficiais dos 4 clientes (dados reais extraídos via WebFetch: serviços, endereço, telefone, WhatsApp, horário, diferenciais). Nenhuma nota numérica foi incluída nas páginas.
-- **4 sites redesenhados** (identidade visual tipográfica, sem foto/logo hotlinkado — ver [[feedback-nao-fabricar-dados-profissionais]] na memória) e **publicados no GitHub Pages** (push para `origin/main`, mesmo método dos lotes anteriores; HostGator nunca foi configurado neste projeto). URLs testadas em HTTPS (200 OK):
-  - https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/
-  - https://asilva-01.github.io/prospect-sites/sites/destake-garage/
-  - https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/
-  - https://asilva-01.github.io/prospect-sites/sites/omenauto/
-- Detalhes completos em `leads.md` (seção "Onda 4").
+---
 
-**Próximo passo:** rodar `/proposta` para os 4 (enviar e-mail/WhatsApp com o link do site novo, sem citar nota/avaliação).
+## 🚗 Onda 4: Oficinas Mecânicas (Jabaquara — Enviadas em 07/09/2026)
+
+1. **Kimiko Auto Center** (`kimikoautocenter@gmail.com` / WA (11) 95586-6874) — https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/
+2. **Destake Garage** (WhatsApp (11) 96629-9293) — https://asilva-01.github.io/prospect-sites/sites/destake-garage/
+3. **Riveiro Restauradora** (WhatsApp (11) 98138-2222) — https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/
+4. **Omenauto** (WhatsApp (11) 95954-5902) — https://asilva-01.github.io/prospect-sites/sites/omenauto/
+
+---
+
+## ⚡ Lotes 1, 2, 3 e 4 (Enviados Anteriormente)
+
+* **Lote 4 Comercial (04/09):** Future Auto Care, Simone Móveis Planejados.
+* **Lotes 2 e 3 Saúde (02/09):** Dra. Paula Paraíso, Métra Psicologia, Clínica Langner, Bianca Cremonez, Dra. Cecília Freytas, Luciene Hessel, Clínica Equilíbrio.
+* **Lote 1 (30/08):** Lourdes Costa, Carolina Vasconcelos, Dra. Vanessa Lacerda.
+
+---
+
+## 🔗 Ferramentas Centrais de Operação
+* **Painel Interativo de Disparo Rápido:** [sites/painel-propostas.html](file:///c:/Temp/ProspectSitesStoAmaro/sites/painel-propostas.html)
+* **Dashboard Local de Controle (SQLite):** [dashboard.html](file:///c:/Temp/ProspectSitesStoAmaro/dashboard.html)
+* **Servidor Local:** [dashboard-server.py](file:///c:/Temp/ProspectSitesStoAmaro/dashboard-server.py) (`python dashboard-server.py`)

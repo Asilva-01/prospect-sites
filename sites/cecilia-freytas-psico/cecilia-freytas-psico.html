@@ -3,1264 +3,1425 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psicóloga Cecília Freytas | Terapia em Santo Amaro - SP & Online</title>
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Psicóloga Cecília Freytas | Terapia em Santo Amaro - SP & Online">
-  <meta property="og:description" content="Atendimento psicológico acolhedor e humanizado para adultos, casais e adolescentes em Santo Amaro e online.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80">
-  <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%231b3329'/%3E%3Ctext x='50' y='68' font-size='48' font-family='Arial' fill='white' text-anchor='middle'%3ECF%3C/text%3E%3C/svg%3E">
-  <meta name="description" content="Atendimento psicológico acolhedor e humanizado para adultos, casais, adolescentes e crianças. Presencial no NovAmérica Office Park (Santo Amaro) e Online. Mais de 70 avaliações 5 estrelas no Google.">
+  <title>Dra. Cecília Freytas | Psicologia Clínica no NovAmérica Office Park — Santo Amaro, SP</title>
+  <meta name="description" content="Atendimento psicológico clínico acolhedor e humanizado para adultos, casais e adolescentes. Presencial no NovAmérica Office Park (Santo Amaro, SP) e Online. Mais de 70 avaliações 5 estrelas no Google.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #2d4a3e;
-      --primary-dark: #1b3329;
-      --primary-light: #446b5c;
-      --accent: #d48b48;
-      --accent-hover: #b87132;
-      --bg-cream: #fbf9f5;
-      --bg-white: #ffffff;
-      --bg-soft-green: #edf4f0;
-      --text-main: #1e2925;
-      --text-muted: #586861;
-      --border-light: #e2ebe6;
-      --shadow-sm: 0 4px 12px rgba(45, 74, 62, 0.05);
-      --shadow-md: 0 10px 28px rgba(45, 74, 62, 0.08);
-      --shadow-lg: 0 20px 40px rgba(45, 74, 62, 0.12);
+      --clinic-primary: #1E3A2F;      /* Verde floresta profundo / sobriedade clínica */
+      --clinic-primary-dark: #12241D;
+      --clinic-primary-light: #EBF2EE;
+      --clinic-accent: #9A6B3E;       /* Bronze suave / acolhimento */
+      --clinic-accent-light: #FBF6EE;
+      --text-main: #1F2937;
+      --text-muted: #576574;
+      --text-light: #8395A7;
+      --bg-page: #FDFCF9;            /* Tom papel acolhedor / consultório */
+      --bg-surface: #FFFFFF;
+      --border-soft: #E8ECE9;
+      --border-accent: #DFD5C6;
+      --wa-green: #25D366;
+      --wa-hover: #1EBE5D;
+      --shadow-sm: 0 2px 6px rgba(18, 36, 29, 0.04);
+      --shadow-md: 0 6px 20px rgba(18, 36, 29, 0.07);
+      --shadow-lg: 0 16px 36px rgba(18, 36, 29, 0.1);
       --radius-sm: 8px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
-      --radius-full: 9999px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --transition: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     html {
       scroll-behavior: smooth;
     }
 
-    section[id] {
-      scroll-margin-top: 100px;
-    }
-
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-cream);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, h5 {
-      font-family: 'Outfit', sans-serif;
-      color: var(--primary-dark);
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--clinic-primary-dark);
       font-weight: 700;
       line-height: 1.25;
+      letter-spacing: -0.02em;
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     .container {
+      width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
-    /* Top Bar */
-    .top-bar {
-      background: var(--primary-dark);
-      color: #e5f0eb;
-      font-size: 0.875rem;
-      padding: 8px 0;
-      text-align: center;
+    /* TOP BAR ÉTICA E LOCALIZAÇÃO */
+    .topbar {
+      background-color: var(--clinic-primary);
+      color: #E2ECE6;
+      font-size: 13px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .top-bar strong {
-      color: #ffd699;
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    .top-bar a {
-      color: #ffd699;
-      text-decoration: none;
+    .topbar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .top-bar a:hover {
-      text-decoration: underline;
+    .badge-pill {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #A3E6C3;
     }
 
-    /* Header */
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar-links a {
+      color: #E2ECE6;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .topbar-links a:hover {
+      color: #F8FAFC;
+    }
+
+    /* CABEÇALHO / HEADER */
     header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
       z-index: 100;
-      border-bottom: 1px solid var(--border-light);
+      background: rgba(253, 252, 249, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
     }
 
     .header-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 80px;
+      height: 82px;
     }
 
-    .logo-container {
+    .brand-block {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
-    .logo-badge {
+    .brand-monogram {
       width: 44px;
       height: 44px;
-      background: var(--bg-soft-green);
-      color: var(--primary);
+      background: var(--clinic-primary-light);
+      color: var(--clinic-primary);
+      border: 1px solid rgba(30, 58, 47, 0.15);
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: 'Plus Jakarta Sans', sans-serif;
       font-weight: 800;
-      font-size: 1.25rem;
+      font-size: 19px;
+      letter-spacing: -0.02em;
     }
 
-    .logo-text h2 {
-      font-size: 1.35rem;
-      color: var(--primary-dark);
-      letter-spacing: -0.5px;
+    .brand-text h1 {
+      font-size: 20px;
+      line-height: 1.1;
+      color: var(--clinic-primary-dark);
     }
 
-    .logo-text p {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .brand-text span {
+      font-size: 11px;
       font-weight: 600;
-    }
-
-    /* Hamburger Menu Button */
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.75rem;
-      color: var(--primary-dark);
-      cursor: pointer;
-      padding: 8px;
-      line-height: 1;
-      z-index: 110;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--clinic-accent);
+      display: block;
+      margin-top: 2px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
     }
 
     .nav-links a {
-      font-size: 0.95rem;
+      font-size: 14.5px;
       font-weight: 600;
       color: var(--text-main);
-      transition: color 0.2s ease;
+      transition: color var(--transition);
     }
 
     .nav-links a:hover {
-      color: var(--primary);
+      color: var(--clinic-primary);
     }
 
-    .btn-header {
-      background: var(--primary);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 0.9rem;
+    .btn-header-wa {
+      background-color: var(--clinic-primary);
+      color: #FFFFFF;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 11px 20px;
+      border-radius: 999px;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      transition: all var(--transition);
     }
 
-    .btn-header:hover {
-      background: var(--primary-dark);
+    .btn-header-wa:hover {
+      background-color: var(--clinic-primary-dark);
       transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-sm);
     }
 
-    /* Hero Section */
+    /* HERO SECTION CLÍNICA */
     .hero {
-      padding: 70px 0 80px;
-      background: linear-gradient(180deg, rgba(237, 244, 240, 0.7) 0%, rgba(251, 249, 245, 1) 100%);
+      padding: 70px 0 85px;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--bg-page) 100%);
+      border-bottom: 1px solid var(--border-soft);
       position: relative;
     }
 
-    .hero-grid {
+    .hero-layout {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 50px;
+      gap: 56px;
       align-items: center;
     }
 
-    .badge-google {
+    .hero-badge-google {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--bg-white);
-      padding: 8px 18px;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 24px;
-      font-size: 0.875rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-soft);
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 13px;
       font-weight: 600;
-      color: var(--primary-dark);
+      color: var(--clinic-primary);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 22px;
     }
 
-    .stars {
-      color: #f59e0b;
+    .hero-badge-google .stars {
+      color: #EAB308;
+      font-size: 14px;
       letter-spacing: 2px;
     }
 
-    .hero-title {
-      font-size: 3.25rem;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
+    .hero h2 {
+      font-size: clamp(34px, 4.4vw, 52px);
+      line-height: 1.15;
+      margin-bottom: 22px;
+      color: var(--clinic-primary-dark);
     }
 
-    .hero-title span {
-      color: var(--accent);
+    .hero h2 span {
+      color: var(--clinic-accent);
     }
 
     .hero-desc {
-      font-size: 1.15rem;
+      font-size: 17.5px;
+      line-height: 1.65;
       color: var(--text-muted);
-      margin-bottom: 32px;
+      margin-bottom: 34px;
       max-width: 580px;
     }
 
     .hero-actions {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       gap: 16px;
-      margin-bottom: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 42px;
     }
 
-    .btn-primary {
-      background: #25d366;
-      color: #fff;
-      padding: 16px 32px;
-      border-radius: var(--radius-full);
+    .btn-primary-wa {
+      background-color: var(--wa-green);
+      color: #042D15;
+      font-size: 15px;
       font-weight: 700;
-      font-size: 1.05rem;
+      padding: 16px 28px;
+      border-radius: 999px;
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all var(--transition);
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
     }
 
-    .btn-primary:hover {
-      background: #20ba5a;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+    .btn-primary-wa:hover {
+      background-color: var(--wa-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-primary-wa svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
     }
 
     .btn-secondary {
-      background: var(--bg-white);
-      color: var(--primary-dark);
-      border: 1.5px solid var(--border-light);
-      padding: 16px 28px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 1rem;
+      background: #FFFFFF;
+      color: var(--clinic-primary);
+      border: 1.5px solid var(--border-soft);
+      font-size: 14.5px;
+      font-weight: 600;
+      padding: 15px 24px;
+      border-radius: 999px;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      transition: all 0.2s ease;
+      transition: all var(--transition);
     }
 
     .btn-secondary:hover {
-      background: var(--bg-soft-green);
-      border-color: var(--primary-light);
+      background: var(--clinic-primary-light);
+      border-color: var(--clinic-primary);
     }
 
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border-light);
+      padding-top: 26px;
+      border-top: 1px solid var(--border-soft);
     }
 
-    .stat-item h3 {
-      font-size: 1.75rem;
-      color: var(--primary);
-      margin-bottom: 2px;
-    }
-
-    .stat-item p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    .hero-visual {
-      position: relative;
-    }
-
-    .hero-image-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-lg);
-      border: 6px solid #ffffff;
-      position: relative;
-    }
-
-    .hero-image-card img {
-      width: 100%;
-      height: 480px;
-      object-fit: cover;
+    .hero-stat-item b {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 22px;
+      color: var(--clinic-primary-dark);
       display: block;
     }
 
-    .floating-badge {
-      position: absolute;
-      bottom: -20px;
-      left: 20px;
-      background: var(--bg-white);
-      padding: 16px 20px;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      border: 1px solid var(--border-light);
-      max-width: 320px;
+    .hero-stat-item span {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: block;
+      margin-top: 2px;
     }
 
-    .floating-badge .icon {
-      width: 48px;
-      height: 48px;
-      background: #fef3c7;
-      color: #d97706;
+    /* CARD HERO LATERAL / IDENTIDADE CLÍNICA SÓBRIA */
+    .hero-card-container {
+      position: relative;
+    }
+
+    .clinical-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .clinical-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--border-soft);
+      margin-bottom: 24px;
+    }
+
+    .clinic-seal {
+      width: 52px;
+      height: 52px;
+      background: var(--clinic-accent-light);
+      color: var(--clinic-accent);
+      border: 1.5px solid var(--border-accent);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: 22px;
       flex-shrink: 0;
     }
 
-    .floating-badge h4 {
-      font-size: 0.95rem;
+    .clinic-seal-text h4 {
+      font-size: 18px;
       margin-bottom: 2px;
     }
 
-    .floating-badge p {
-      font-size: 0.8rem;
+    .clinic-seal-text p {
+      font-size: 12.5px;
       color: var(--text-muted);
+      font-weight: 500;
     }
 
-    /* Section Shared */
-    section {
-      padding: 90px 0;
-    }
-
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 60px;
-    }
-
-    .section-subtitle {
-      color: var(--primary);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 0.85rem;
-      margin-bottom: 12px;
-      display: block;
-    }
-
-    .section-title {
-      font-size: 2.4rem;
-      margin-bottom: 16px;
-      letter-spacing: -0.5px;
-    }
-
-    .section-desc {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-    }
-
-    /* Services Grid */
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-
-    .service-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-md);
-      padding: 36px 28px;
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+    .clinical-checklist {
+      list-style: none;
       display: flex;
       flex-direction: column;
+      gap: 16px;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-      border-color: rgba(45, 74, 62, 0.25);
-    }
-
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--bg-soft-green);
-      color: var(--primary);
-      border-radius: 14px;
+    .clinical-checklist li {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      margin-bottom: 22px;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-main);
+      line-height: 1.5;
     }
 
-    .service-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
+    .clinical-checklist svg {
+      width: 18px;
+      height: 18px;
+      color: var(--clinic-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
     }
 
-    .service-card p {
+    .clinical-card-foot {
+      margin-top: 26px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-soft);
+      font-size: 13px;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      flex-grow: 1;
-      margin-bottom: 20px;
-    }
-
-    .service-link {
-      font-weight: 700;
-      color: var(--primary);
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.9rem;
-    }
-
-    .service-link:hover {
-      color: var(--primary-dark);
-      text-decoration: underline;
-    }
-
-    /* Location Banner */
-    .location-banner {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-      color: #fff;
-      border-radius: var(--radius-lg);
-      padding: 50px;
-      margin-top: 50px;
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 40px;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
     }
 
-    .location-banner h3 {
-      color: #fff;
-      font-size: 1.85rem;
-      margin-bottom: 14px;
+    /* WIDGET INTERATIVO: CONSULTA DE HORÁRIOS PRIVADA */
+    .schedule-widget-section {
+      padding: 85px 0;
+      background: linear-gradient(135deg, var(--clinic-primary-dark) 0%, var(--clinic-primary) 100%);
+      color: #FFFFFF;
+      border-bottom: 1px solid var(--border-soft);
     }
 
-    .location-banner p {
-      color: #e2f1e8;
-      font-size: 1rem;
-      margin-bottom: 24px;
-    }
-
-    .location-banner .btn-white {
-      background: #fff;
-      color: var(--primary-dark);
-      padding: 14px 28px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    }
-
-    /* About Section */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .about-image-wrapper img {
-      width: 100%;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg);
-      display: block;
-    }
-
-    .about-text h2 {
-      font-size: 2.35rem;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      color: var(--text-muted);
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .credential-badge {
-      display: inline-block;
-      background: var(--bg-soft-green);
-      color: var(--primary);
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 4px 14px;
-      border-radius: var(--radius-full);
-      letter-spacing: 0.5px;
-      margin-bottom: 16px;
-    }
-
-    .check-list {
-      list-style: none;
-      margin: 24px 0 32px;
+    .schedule-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .schedule-info h3 {
+      color: #FFFFFF;
+      font-size: clamp(28px, 3.4vw, 42px);
+      line-height: 1.18;
+      margin-bottom: 18px;
+    }
+
+    .schedule-info h3 span {
+      color: #E2ECE6;
+      font-weight: 400;
+    }
+
+    .schedule-info p {
+      font-size: 16.5px;
+      color: #D1E0D7;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .schedule-guarantees {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
       gap: 14px;
     }
 
-    .check-list li {
+    .schedule-guarantees li {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-weight: 600;
+      gap: 12px;
+      font-size: 14.5px;
+      color: #E2ECE6;
+    }
+
+    .schedule-guarantees li svg {
+      width: 18px;
+      height: 18px;
+      color: #34D399;
+      flex-shrink: 0;
+    }
+
+    /* FORMULÁRIO DE TRIAGEM RÁPIDA */
+    .schedule-form-card {
+      background: #FFFFFF;
       color: var(--text-main);
-      font-size: 0.95rem;
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      box-shadow: var(--shadow-lg);
     }
 
-    .check-list li span {
-      color: var(--primary);
-      font-size: 1.1rem;
+    .form-card-title {
+      font-size: 20px;
+      margin-bottom: 6px;
+      color: var(--clinic-primary-dark);
     }
 
-    /* Testimonials */
-    .testimonials {
-      background: var(--bg-soft-green);
+    .form-card-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
     }
 
-    .testimonials-grid {
+    .form-field {
+      margin-bottom: 18px;
+    }
+
+    .form-field label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--clinic-primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--text-main);
+      background: #FDFCF9;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+    }
+
+    .form-input:focus, .form-select:focus {
+      outline: none;
+      border-color: var(--clinic-primary);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(30, 58, 47, 0.12);
+    }
+
+    .btn-submit-schedule {
+      width: 100%;
+      background-color: var(--wa-green);
+      color: #042D15;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 15px;
+      border: none;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+      margin-top: 6px;
+    }
+
+    .btn-submit-schedule:hover {
+      background-color: var(--wa-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-submit-schedule svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* SERVIÇOS CLÍNICOS */
+    .section-services {
+      padding: 90px 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto 55px;
+    }
+
+    .section-eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--clinic-accent);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-head h3 {
+      font-size: clamp(28px, 3.2vw, 38px);
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
 
-    .testimonial-card {
-      background: var(--bg-white);
+    .service-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-soft);
       border-radius: var(--radius-md);
-      padding: 32px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid rgba(45, 74, 62, 0.08);
+      padding: 34px 28px;
       display: flex;
       flex-direction: column;
+      transition: all var(--transition);
     }
 
-    .testimonial-stars {
-      color: #f59e0b;
-      font-size: 1rem;
-      margin-bottom: 14px;
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-accent);
+      box-shadow: var(--shadow-md);
+      background: #FFFFFF;
     }
 
-    .testimonial-quote {
-      color: var(--text-main);
-      font-size: 0.95rem;
-      font-style: italic;
-      margin-bottom: 20px;
-      flex-grow: 1;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border-light);
-    }
-
-    .author-avatar {
-      width: 42px;
-      height: 42px;
-      background: var(--bg-soft-green);
-      color: var(--primary);
-      border-radius: 50%;
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--clinic-primary-light);
+      color: var(--clinic-primary);
+      border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      font-size: 0.95rem;
+      margin-bottom: 20px;
+      font-size: 20px;
     }
 
-    .author-info h4 {
-      font-size: 0.95rem;
+    .service-card h4 {
+      font-size: 19px;
+      margin-bottom: 12px;
     }
 
-    .author-info p {
-      font-size: 0.75rem;
+    .service-card p {
+      font-size: 14.5px;
       color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 22px;
+      flex: 1;
     }
 
-    /* FAQ Section */
+    .service-link {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--clinic-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap var(--transition);
+    }
+
+    .service-link:hover {
+      gap: 10px;
+      color: var(--clinic-accent);
+    }
+
+    /* O CONSULTÓRIO / LOCALIZAÇÃO NOVAMÉRICA */
+    .section-location {
+      padding: 90px 0;
+      background: var(--bg-page);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .location-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .location-text h3 {
+      font-size: clamp(26px, 3vw, 36px);
+      margin-bottom: 16px;
+    }
+
+    .location-text p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .location-details {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+      font-size: 14.5px;
+    }
+
+    .location-details div {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-main);
+    }
+
+    .location-details svg {
+      width: 18px;
+      height: 18px;
+      color: var(--clinic-primary);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .location-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-location-maps {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 22px;
+      background: var(--clinic-primary-light);
+      color: var(--clinic-primary);
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all var(--transition);
+    }
+
+    .btn-location-maps:hover {
+      background: var(--clinic-primary);
+      color: #FFFFFF;
+    }
+
+    .location-card-online {
+      background: var(--clinic-accent-light);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-md);
+      padding: 32px 26px;
+      text-align: center;
+    }
+
+    .online-icon {
+      width: 52px;
+      height: 52px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--clinic-accent);
+      font-size: 24px;
+    }
+
+    .location-card-online h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .location-card-online p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+
+    /* FAQ CLÍNICO */
+    .section-faq {
+      padding: 90px 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
     .faq-container {
       max-width: 800px;
       margin: 0 auto;
     }
 
-    .faq-item {
-      background: var(--bg-white);
-      border-radius: var(--radius-md);
-      margin-bottom: 16px;
-      border: 1px solid var(--border-light);
+    .faq-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
       overflow: hidden;
-      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition);
     }
 
-    .faq-question {
-      padding: 20px 24px;
+    .faq-card.active {
+      border-color: var(--clinic-primary);
+    }
+
+    .faq-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 22px 24px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
       font-weight: 700;
-      color: var(--primary-dark);
+      color: var(--clinic-primary-dark);
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.05rem;
-      user-select: none;
+      gap: 16px;
     }
 
-    .faq-question:hover {
-      background: var(--bg-soft-green);
+    .faq-toggle-icon {
+      font-size: 20px;
+      color: var(--clinic-primary);
+      transition: transform var(--transition);
     }
 
-    .faq-question .faq-icon {
-      font-size: 1.4rem;
-      font-weight: 400;
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-      width: 24px;
-      text-align: center;
+    .faq-card.active .faq-toggle-icon {
+      transform: rotate(45deg);
     }
 
-    .faq-answer {
+    .faq-content {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
-      padding: 0 24px;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-body {
+      padding: 0 24px 22px;
+      font-size: 14.5px;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    .faq-item.active .faq-answer {
-      max-height: 300px;
-      padding: 0 24px 20px;
+    /* FOOTER */
+    footer {
+      background-color: var(--clinic-primary-dark);
+      color: #94A3B8;
+      padding: 60px 0 30px;
+      font-size: 14px;
     }
 
-    /* CTA Bottom */
-    .cta-bottom {
-      background: linear-gradient(135deg, #1b3329 0%, #2d4a3e 100%);
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
+    .footer-layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .cta-bottom h2 {
-      color: #fff;
-      font-size: 2.8rem;
+    .footer-col h4, .footer-col h5 {
+      color: #FFFFFF;
+      font-size: 16px;
       margin-bottom: 16px;
     }
 
-    .cta-bottom p {
-      color: #d1fae5;
-      font-size: 1.15rem;
-      max-width: 600px;
-      margin: 0 auto 36px;
-    }
-
-    /* Footer */
-    footer {
-      background: #111d18;
-      color: #8fa89e;
-      padding: 60px 0 30px;
-      font-size: 0.9rem;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 50px;
-      margin-bottom: 50px;
-    }
-
-    .footer-col h4 {
-      color: #fff;
-      font-size: 1.1rem;
-      margin-bottom: 18px;
-    }
-
     .footer-col p {
-      margin-bottom: 12px;
       line-height: 1.6;
+      margin-bottom: 16px;
+      max-width: 320px;
     }
 
-    .footer-col a {
-      color: #8fa89e;
-      text-decoration: none;
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .footer-col a:hover {
-      color: #fff;
+    .footer-list a {
+      color: #CBD5E1;
+      transition: color var(--transition);
     }
 
-    .footer-instagram {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: #8fa89e;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .footer-instagram:hover {
-      color: #fff;
+    .footer-list a:hover {
+      color: #FFFFFF;
     }
 
     .footer-bottom {
-      text-align: center;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 25px;
+      font-size: 13px;
     }
 
-    /* Floating WhatsApp */
-    .floating-whatsapp {
+    /* BOTÃO FLUTUANTE DE WHATSAPP */
+    .wa-float-btn {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25d366;
-      color: #fff;
-      width: 64px;
-      height: 64px;
+      bottom: 24px;
+      right: 24px;
+      z-index: 150;
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      width: 58px;
+      height: 58px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 32px;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
-      z-index: 999;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      animation: pulse 2.5s infinite;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: all var(--transition);
     }
 
-    .floating-whatsapp:hover {
-      transform: scale(1.1);
-      background: #20ba5a;
+    .wa-float-btn:hover {
+      transform: scale(1.08);
+      background-color: var(--wa-hover);
     }
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    .wa-float-btn svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
     }
 
-    /* ---- Responsive: 992px ---- */
-    @media (max-width: 992px) {
-      .hero-grid, .about-grid, .location-banner {
+    /* RESPONSIVIDADE */
+    @media (max-width: 1024px) {
+      .hero-layout, .schedule-layout, .location-box {
         grid-template-columns: 1fr;
+        gap: 40px;
       }
-      .services-grid, .testimonials-grid {
-        grid-template-columns: 1fr;
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .hero-title {
-        font-size: 2.5rem;
+      .footer-layout {
+        grid-template-columns: repeat(2, 1fr);
       }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
+    }
 
-      /* Mobile hamburger menu */
-      .menu-toggle {
-        display: block;
+    @media (max-width: 768px) {
+      .topbar-content {
+        flex-direction: column;
+        align-items: flex-start;
       }
-
-      .btn-header {
+      .nav-links {
         display: none;
       }
-
-      .header-nav {
-        height: auto;
-        min-height: 64px;
-      }
-
-      .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(12px);
-        padding: 0;
-        gap: 0;
-        border-bottom: 1px solid var(--border-light);
-        box-shadow: var(--shadow-md);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.35s ease;
-        z-index: 105;
-      }
-
-      .nav-links.open {
-        max-height: 400px;
-      }
-
-      .nav-links li {
-        border-bottom: 1px solid var(--border-light);
-      }
-
-      .nav-links li:last-child {
-        border-bottom: none;
-      }
-
-      .nav-links a {
-        display: block;
-        padding: 16px 24px;
-        font-size: 1.05rem;
-      }
-
-      .nav-links a:hover {
-        background: var(--bg-soft-green);
-      }
-    }
-
-    /* ---- Responsive: 576px ---- */
-    @media (max-width: 576px) {
-      .hero-title {
-        font-size: 1.8rem;
-      }
-
-      .section-title {
-        font-size: 1.6rem;
-      }
-
-      section {
-        padding: 50px 0;
-      }
-
-      .hero {
-        padding: 40px 0 50px;
-      }
-
       .hero-stats {
         grid-template-columns: 1fr;
         gap: 14px;
       }
-
-      .services-grid,
-      .testimonials-grid {
+      .services-grid {
         grid-template-columns: 1fr;
       }
-
-      .check-list {
+      .location-box {
+        padding: 28px 20px;
+      }
+      .footer-layout {
         grid-template-columns: 1fr;
-      }
-
-      .location-banner {
-        padding: 30px 20px;
-      }
-
-      .cta-bottom h2 {
-        font-size: 1.8rem;
-      }
-
-      .cta-bottom {
-        padding: 50px 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      🌿 <strong>Atendimento Presencial e Online</strong> — NovAmérica Office Park (Santo Amaro, SP) & Videochamada | WhatsApp: <strong><a href="https://wa.me/5511996012736">(11) 99601-2736</a></strong>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="header-nav">
-        <div class="logo-container">
-          <div class="logo-badge">CF</div>
-          <div class="logo-text">
-            <h2>Cecília Freytas</h2>
-            <p>Psicóloga Clínica & Psicoterapeuta</p>
-          </div>
-        </div>
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">&#9776;</button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#tratamentos">Tratamentos</a></li>
-          <li><a href="#consultorio">Consultório</a></li>
-          <li><a href="#depoimentos">Avaliações</a></li>
-          <li><a href="#faq">Dúvidas</a></li>
-        </ul>
-        <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20sess%C3%B5es%20de%20psicoterapia!" target="_blank" class="btn-header">
-          Agendar Sessão
-        </a>
+  <!-- TOP BAR ÉTICA E INFORMAÇÕES -->
+  <aside class="topbar" aria-label="Informações éticas e de localização">
+    <div class="container topbar-content">
+      <div class="topbar-badge">
+        <span class="badge-pill">CFP / CRP Ativo</span>
+        <span>Atendimento Psicológico com Sigilo Ético Rigoroso</span>
       </div>
+      <div class="topbar-links">
+        <a href="https://wa.me/5511996012736" target="_blank" rel="noopener">
+          WhatsApp: (11) 99601-2736
+        </a>
+        <span>NovAmérica Office Park · Santo Amaro, SP</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container header-nav">
+      <a href="#inicio" class="brand-block" aria-label="Página inicial Dra. Cecília Freytas Psicóloga">
+        <div class="brand-monogram" aria-hidden="true">CF</div>
+        <div class="brand-text">
+          <h1>Dra. Cecília Freytas</h1>
+          <span>Psicologia Clínica · CRP São Paulo</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação do consultório">
+        <ul class="nav-links">
+          <li><a href="#consulta">Horários &amp; Sessões</a></li>
+          <li><a href="#areas">Áreas de Atendimento</a></li>
+          <li><a href="#consultorio">O Consultório</a></li>
+          <li><a href="#faq">Dúvidas Frequentes</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn-header-wa" href="https://wa.me/5511996012736?text=Ol%C3%A1%2C%20Dra.%20Cec%C3%ADlia!%20Gostaria%20de%20consultar%20a%20disponibilidade%20de%20hor%C3%A1rios%20para%20atendimento." target="_blank" rel="noopener">
+        <span>Falar no WhatsApp</span>
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="badge-google">
-            <span class="stars">★★★★★</span>
-            <span><strong>5.0 no Google</strong> (+70 avaliações verificadas)</span>
+  <main id="inicio">
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-layout">
+        <div class="hero-left">
+          <div class="hero-badge-google">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span><strong>5.0</strong> no Google (Mais de 70 avaliações de pacientes)</span>
           </div>
-          <h1 class="hero-title">
-            Um espaço seguro de escuta, acolhimento e <span>transformação</span>.
-          </h1>
+
+          <h2 id="hero-heading">Um espaço seguro e acolhedor para a sua <span>saúde emocional</span>.</h2>
           <p class="hero-desc">
-            Psicoterapia humanizada para adultos, jovens, casais e crianças. Um espaço para lidar com a ansiedade, o estresse e os conflitos emocionais, com acompanhamento ético e sigiloso.
+            Psicoterapia com base científica e escuta humana e atenta. Atendimento individual para adultos, casais e adolescentes no <strong>NovAmérica Office Park (Santo Amaro)</strong> ou com toda a conveniência da <strong>sessão online</strong>.
           </p>
+
           <div class="hero-actions">
-            <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20um%20atendimento%20psicol%C3%B3gico!" target="_blank" class="btn-primary">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
-              Conversar no WhatsApp
+            <a class="btn-primary-wa" href="#consulta">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+              <span>Consultar Horários no WhatsApp</span>
             </a>
-            <a href="#tratamentos" class="btn-secondary">
-              Conhecer Abordagens
+            <a class="btn-secondary" href="#areas">
+              <span>Conhecer Abordagens</span>
             </a>
           </div>
+
           <div class="hero-stats">
-            <div class="stat-item">
-              <h3>70+</h3>
-              <p>Avaliações 5 Estrelas</p>
+            <div class="hero-stat-item">
+              <b>+70 Avaliações</b>
+              <span>Nota máxima 5.0★ no Google Meu Negócio</span>
             </div>
-            <div class="stat-item">
-              <h3>Ética</h3>
-              <p>Sigilo Profissional</p>
+            <div class="hero-stat-item">
+              <b>Sigilo Absoluto</b>
+              <span>Conformidade com o Código de Ética do CFP</span>
             </div>
-            <div class="stat-item">
-              <h3>Híbrido</h3>
-              <p>Presencial ou Online</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-image-card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Psicoterapia Acolhedora Santo Amaro">
-          </div>
-          <div class="floating-badge">
-            <div class="icon">🤍</div>
-            <div>
-              <h4>Atendimento Humanizado</h4>
-              <p>Espaço preparado para acolher sua história sem julgamentos.</p>
+            <div class="hero-stat-item">
+              <b>Flexibilidade</b>
+              <span>Presencial em Santo Amaro ou Online seguro</span>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Treatments Section -->
-  <section id="tratamentos">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Áreas de Cuidado</span>
-        <h2 class="section-title">Como a psicoterapia pode te ajudar</h2>
-        <p class="section-desc">Metodologias personalizadas para diferentes momentos e necessidades da vida.</p>
-      </div>
+        <div class="hero-card-container">
+          <div class="clinical-card">
+            <div class="clinical-card-header">
+              <div class="clinic-seal" aria-hidden="true">⚖️</div>
+              <div class="clinic-seal-text">
+                <h4>Compromisso Profissional</h4>
+                <p>Prática baseada em evidências &amp; escuta clínica</p>
+              </div>
+            </div>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🌱</div>
-          <h3>Psicoterapia para Adultos</h3>
-          <p>Superação de ansiedade, depressão, transtorno de pânico, estresse crônico e busca por autoconhecimento e equilíbrio emocional.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20psicoterapia%20para%20adultos" class="service-link">Agendar sessão →</a>
-        </div>
+            <ul class="clinical-checklist">
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Ambiente neutro e sem julgamentos:</strong> acolhimento para angústias, ansiedade e momentos de crise.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Emissão de Recibo para Convênio:</strong> documentação adequada para solicitação de reembolso no seu plano de saúde.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span><strong>Localização Privilegiada:</strong> edifício corporativo de alto padrão com estacionamento, recepção e segurança.</span>
+              </li>
+            </ul>
 
-        <div class="service-card">
-          <div class="service-icon">💑</div>
-          <h3>Terapia de Casal</h3>
-          <p>Restauração do diálogo, resolução de conflitos, superação de crises conjugais e construção de uma parceria saudável e madura.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20terapia%20de%20casal" class="service-link">Agendar sessão →</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🧸</div>
-          <h3>Psicoterapia Infantil / Ludoterapia</h3>
-          <p>Acolhimento de dificuldades emocionais e comportamentais na infância através do brincar e do diálogo com os pais.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20atendimento%20infantil" class="service-link">Agendar sessão →</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🧠</div>
-          <h3>Psicoterapia Breve & Foco</h3>
-          <p>Intervenções pontuais e objetivas para momentos de crise, luto, transições de carreira ou tomada de decisões importantes.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20saber%20mais%20sobre%20terapia%20breve" class="service-link">Agendar sessão →</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">💼</div>
-          <h3>Burnout & Saúde no Trabalho</h3>
-          <p>Apoio a profissionais em esgotamento mental, excesso de cobrança, ansiedade corporativa e redefinição de limites.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20ajuda%20com%20estresse%20e%20burnout" class="service-link">Agendar sessão →</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Terapia Online Segura</h3>
-          <p>Sessões por videochamada com o mesmo sigilo e eficácia, para você ser atendido no conforto e privacidade do seu lar.</p>
-          <a href="https://wa.me/5511996012736?text=Gostaria%20de%20agendar%20terapia%20online" class="service-link">Agendar sessão →</a>
+            <div class="clinical-card-foot">
+              <span>📍 NovAmérica Office Park — Santo Amaro</span>
+              <span style="color:var(--clinic-accent);font-weight:700">CRP 06 Ativo</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Location Highlight Banner -->
-      <div class="location-banner" id="consultorio">
-        <div>
-          <h3>Consultório no NovAmérica Office Park</h3>
-          <p>Localização privilegiada na Av. das Nações Unidas em Santo Amaro, com fácil acesso, estacionamento no local, segurança e privacidade absoluta.</p>
-          <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Santo%20Amaro!" target="_blank" class="btn-white">
-            Agendar Atendimento Presencial
-          </a>
-        </div>
-        <div style="text-align: center; font-size: 4rem;">
-          📍 🏢
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="sobre" style="background: #fff;">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Ambiente acolhedor de atendimento psicológico">
-        </div>
-        <div class="about-text">
-          <span class="section-subtitle">Sobre a Profissional</span>
-          <h2>Cecília Freytas</h2>
-          <span class="credential-badge">CRP/SP 10166 J</span>
+    <!-- WIDGET INTERATIVO DE CONSULTA DE HORÁRIOS PRIVADA -->
+    <section class="schedule-widget-section" id="consulta" aria-labelledby="schedule-heading">
+      <div class="container schedule-layout">
+        <div class="schedule-info">
+          <span class="badge-pill" style="margin-bottom:14px;display:inline-block">Atendimento com Hora Marcada</span>
+          <h3 id="schedule-heading">Dê o primeiro passo para o seu <span>cuidado emocional</span>.</h3>
           <p>
-            Sou psicóloga com sólida formação clínica e anos de dedicação ao bem-estar emocional de adultos, casais e famílias.
+            Sabemos que iniciar a psicoterapia exige coragem e discrição. Selecione suas preferências abaixo: a mensagem será gerada com delicadeza e sigilo diretamente no WhatsApp do consultório.
           </p>
-          <p>
-            Meu trabalho é fundamentado na escuta ética, no respeito à singularidade de cada pessoa e no desenvolvimento de ferramentas práticas para que você lide com os desafios da vida de forma mais autêntica e serena.
-          </p>
-          <ul class="check-list">
-            <li><span>✔</span> Ambiente seguro e confidencial</li>
-            <li><span>✔</span> Abordagem humanizada e integrativa</li>
-            <li><span>✔</span> Mais de 70 avaliações nota máxima</li>
-            <li><span>✔</span> Flexibilidade de horários</li>
+
+          <ul class="schedule-guarantees">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Conversa direta e confidencial, sem intermediários.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Esclarecimento sobre valores, frequência e duração das sessões.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Orientação transparente sobre emissão de recibo para reembolso.</span>
+            </li>
           </ul>
-          <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20conhecer%20mais%20o%20seu%20trabalho!" target="_blank" class="btn-primary">
-            Agendar Primeira Sessão
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="depoimentos" class="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Depoimentos</span>
-        <h2 class="section-title">O que dizem os pacientes</h2>
-        <p class="section-desc">Avaliações públicas compartilhadas no Google Meu Negócio.</p>
-      </div>
-
-      <div class="rating-summary" style="text-align:center; max-width:520px; margin:0 auto;">
-        <div style="font-size:2.5rem;">★★★★★</div>
-        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">5,0 · mais de 70 avaliações no Google</p>
-        <p style="color:var(--text-muted, #555);">Confira as avaliações reais de pacientes no perfil do Google.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Cec%C3%ADlia+Freytas+Psic%C3%B3loga+Av+das+Na%C3%A7%C3%B5es+Unidas+18801+Santo+Amaro" target="_blank" rel="noopener" class="btn-secondary">Ver avaliações no Google</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Dúvidas Frequentes</span>
-        <h2 class="section-title">Perguntas Comuns sobre Psicoterapia</h2>
-      </div>
-
-      <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">Qual a frequência das sessões? <span class="faq-icon">+</span></div>
-          <div class="faq-answer">Geralmente as sessões ocorrem semanalmente, com duração de 50 minutos. A frequência pode ser ajustada conforme a necessidade clínica de cada caso.</div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">Como funciona o sigilo profissional? <span class="faq-icon">+</span></div>
-          <div class="faq-answer">O sigilo é rigoroso e garantido pelo Código de Ética Profissional do Psicólogo. Tudo o que for compartilhado em sessão permanece em total confidencialidade.</div>
-        </div>
+        <div class="schedule-form-card">
+          <h4 class="form-card-title">Consultar Disponibilidade</h4>
+          <p class="form-card-desc">Personalize sua mensagem para envio rápido no WhatsApp:</p>
 
-        <div class="faq-item">
-          <div class="faq-question">Você emite recibo para reembolso no convênio? <span class="faq-icon">+</span></div>
-          <div class="faq-answer">Sim! Emito recibo detalhado para que você solicite reembolso junto ao seu plano de saúde; o valor reembolsado depende das regras do seu convênio.</div>
+          <form id="scheduleForm" onsubmit="event.preventDefault(); enviarConsultaWhatsApp();">
+            <div class="form-field">
+              <label for="schedModality">Modalidade de Atendimento:</label>
+              <select id="schedModality" class="form-select" required>
+                <option value="Presencial no NovAmérica Office Park (Santo Amaro)">Presencial — NovAmérica Office Park (Santo Amaro)</option>
+                <option value="Online (Videoconsulta segura)">Online — Videoconsulta em plataforma segura</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="schedCategory">Para quem é o atendimento?</label>
+              <select id="schedCategory" class="form-select" required>
+                <option value="Individual para Adulto">Individual para Adulto</option>
+                <option value="Terapia de Casal">Terapia de Casal</option>
+                <option value="Adolescente / Jovem">Adolescente ou Jovem</option>
+                <option value="Orientação Psicológica Pontual">Orientação Psicológica Pontual</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="schedShift">Melhor período para as sessões:</label>
+              <select id="schedShift" class="form-select" required>
+                <option value="Manhã (8h às 12h)">Manhã (8h às 12h)</option>
+                <option value="Tarde (13h às 17h)">Tarde (13h às 17h)</option>
+                <option value="Noite (18h às 20h)">Noite (18h às 20h)</option>
+                <option value="Flexível / Qualquer horário">Flexível / Qualquer horário disponível</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="schedName">Seu Nome ou como gostaria de ser chamado(a):</label>
+              <input type="text" id="schedName" class="form-input" placeholder="Ex: Maria / Carlos..." required>
+            </div>
+
+            <button type="submit" class="btn-submit-schedule">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+              <span>Consultar com a Dra. Cecília no WhatsApp</span>
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Bottom -->
-  <section class="cta-bottom">
-    <div class="container">
-      <h2>Dê o primeiro passo para o seu bem-estar emocional</h2>
-      <p>Cuidar da sua saúde mental é o maior investimento que você pode fazer por si mesmo. Fale comigo pelo WhatsApp.</p>
-      <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20quero%20agendar%20uma%20sess%C3%A3o!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
-        Agendar pelo WhatsApp
-      </a>
-    </div>
-  </section>
+    <!-- ÁREAS DE ATENDIMENTO -->
+    <section class="section-services" id="areas" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Abordagens Clínicas</span>
+          <h3 id="services-heading">Como a psicoterapia pode te apoiar</h3>
+          <p>Processos terapêuticos desenhados respeitando a individualidade, a história e o momento de cada paciente.</p>
+        </div>
 
-  <!-- Footer -->
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🌱</div>
+            <h4>Ansiedade &amp; Burnout</h4>
+            <p>Compreensão profunda dos gatilhos de estresse, sobrecarga profissional, aceleração mental e crises de pânico, construindo ferramentas reais de autorregulação e tranquilidade.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">👥</div>
+            <h4>Terapia de Casal</h4>
+            <p>Espaço neutro para restabelecer o diálogo, mediar conflitos recorrentes, alinhar expectativas e restaurar a cumplicidade e o respeito no relacionamento afetivo.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🧭</div>
+            <h4>Transições de Vida &amp; Crises</h4>
+            <p>Apoio qualificado para momentos de mudança profunda: luto, separação, mudança de carreira, maternidade/paternidade ou tomada de decisões desafiadoras.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🧠</div>
+            <h4>Depressão &amp; Desânimo</h4>
+            <p>Cuidado sensível para o resgate do sentido vital, identificação de padrões de pensamento autocríticos e reconstrução paulatina da autoestima e do bem-estar.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🎓</div>
+            <h4>Adolescentes &amp; Jovens</h4>
+            <p>Escuta especializada para as pressões do amadurecimento, escolhas vocacionais, ansiedade social e desafios de comunicação com a família.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🌐</div>
+            <h4>Atendimento Online</h4>
+            <p>Sessões virtuais realizadas com a mesma eficácia e profundidade da modalidade presencial, ideais para quem busca otimizar a rotina ou reside fora de São Paulo.</p>
+            <a class="service-link" href="#consulta">Agendar primeira conversa →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O CONSULTÓRIO E LOCALIZAÇÃO -->
+    <section class="section-location" id="consultorio" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="location-box">
+          <div class="location-text">
+            <span class="section-eyebrow">Localização do Consultório</span>
+            <h3 id="location-heading">Presencial no NovAmérica Office Park</h3>
+            <p>
+              Instalado em um dos complexos corporativos mais consolidados e seguros da Zona Sul, o consultório oferece discrição total, fácil acesso e infraestrutura completa para o seu conforto.
+            </p>
+
+            <div class="location-details">
+              <div>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                <span><strong>Endereço:</strong> NovAmérica Office Park — Av. Mário Lopes Leão / Santo Amaro, São Paulo - SP</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H11a1 1 0 001-1v-5h2.586a1 1 0 00.707-.293l2.414-2.414A1 1 0 0018 7.086V5a1 1 0 00-1-1H3z"/></svg>
+                <span><strong>Estacionamento &amp; Acesso:</strong> Estacionamento com manobrista no local e proximidade de estações de metrô/trem.</span>
+              </div>
+              <div>
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                <span><strong>Horários:</strong> Atendimentos previamente agendados de segunda a sexta-feira.</span>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a class="btn-location-maps" href="https://www.google.com/maps/search/?api=1&query=NovAmerica+Office+Park+Santo+Amaro" target="_blank" rel="noopener">
+                <span>Abrir rota no Google Maps ↗</span>
+              </a>
+              <a class="btn-header-wa" href="https://wa.me/5511996012736?text=Ol%C3%A1%2C%20Dra.%20Cec%C3%ADlia!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20como%20chegar%20ao%20consult%C3%B3rio." target="_blank" rel="noopener">
+                <span>Dúvidas sobre o local no WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="location-card-online">
+            <div class="online-icon" aria-hidden="true">💻</div>
+            <h4>Prefere Atendimento Online?</h4>
+            <p>
+              Você pode realizar as sessões de onde estiver, com total privacidade, por meio de plataforma com criptografia de ponta a ponta em conformidade com as diretrizes do Conselho Federal de Psicologia.
+            </p>
+            <a class="btn-secondary" style="width:100%;justify-content:center" href="#consulta">
+              <span>Agendar Sessão Online</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ CLÍNICO -->
+    <section class="section-faq" id="faq" aria-labelledby="faq-heading">
+      <div class="container faq-container">
+        <div class="section-head">
+          <span class="section-eyebrow">Dúvidas Frequentes</span>
+          <h3 id="faq-heading">Informações sobre o processo terapêutico</h3>
+        </div>
+
+        <div class="faq-card">
+          <button class="faq-btn" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Como funciona a primeira sessão?</span>
+            <span class="faq-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              A primeira sessão é um momento inicial de conhecimento mútuo e acolhimento. Você trará o que motivou a busca por terapia, suas preocupações atuais e dúvidas. A Dra. Cecília explicará como funciona o trabalho clínico, alinhando expectativas, periodicidade e combinados práticos de forma leve e transparente.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button class="faq-btn" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Você atende por planos de saúde ou convênios?</span>
+            <span class="faq-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              Os atendimentos são particulares, o que garante tempo estendido de sessão, acompanhamento personalizado e sem as limitações impostas pelas operadoras. No entanto, fornecemos recibo detalhado com registro profissional (CRP) e dados completos para que você solicite o reembolso junto ao seu plano de saúde (a maioria dos convênios oferece cobertura para psicoterapia).
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button class="faq-btn" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Qual é a frequência e a duração das sessões?</span>
+            <span class="faq-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              As sessões têm duração média de 50 minutos e ocorrem habitualmente em frequência semanal, com dia e horário fixos combinados previamente. Essa regularidade é fundamental para o aprofundamento do processo terapêutico e para a consolidação dos resultados.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-card">
+          <button class="faq-btn" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Como é garantido o sigilo das informações?</span>
+            <span class="faq-toggle-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="faq-body">
+              O sigilo profissional é um dever ético absoluto e inviolável assegurado pelo Artigo 9º do Código de Ética do Psicólogo. Tudo o que é compartilhado durante as sessões permanece sob estrita confidencialidade profissional. No atendimento online, são utilizadas plataformas seguras recomendadas para telessaúde.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Psicóloga Cecília Freytas</h4>
-          <p>Centro de Saúde Psicológica • Atendimento Clínico e Terapia Online.</p>
-          <p>Mais de 70 avaliações 5 estrelas no Google Meu Negócio.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Endereço do Consultório</h4>
-          <p>📍 Av. das Nações Unidas, 18801 - NovAmérica Office Park, Santo Amaro, São Paulo - SP</p>
-        </div>
-        <div class="footer-col">
-          <h4>Atendimento Direto</h4>
-          <p>📱 WhatsApp: <a href="https://wa.me/5511996012736">(11) 99601-2736</a></p>
-          <p>🌐 Atendimento Online para todo o Brasil</p>
-        </div>
+    <div class="container footer-layout">
+      <div class="footer-col">
+        <h4>Dra. Cecília Freytas</h4>
+        <p>Psicologia Clínica dedicada ao cuidado ético, humanizado e baseado em evidências científicas para a saúde emocional.</p>
+        <span style="color:#A3E6C3;font-size:12.5px;font-weight:600">Registro Profissional Ativo · CRP SP</span>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Cecília Freytas Psicologia. Todos os direitos reservados.</p>
+
+      <div class="footer-col">
+        <h5>Atendimento</h5>
+        <ul class="footer-list">
+          <li><a href="#areas">Psicoterapia Adulto</a></li>
+          <li><a href="#areas">Terapia de Casal</a></li>
+          <li><a href="#areas">Adolescentes e Jovens</a></li>
+          <li><a href="#areas">Atendimento Online</a></li>
+        </ul>
       </div>
+
+      <div class="footer-col">
+        <h5>Consultório</h5>
+        <ul class="footer-list">
+          <li>NovAmérica Office Park</li>
+          <li>Av. Mário Lopes Leão</li>
+          <li>Santo Amaro, São Paulo - SP</li>
+          <li><a href="#consultorio">Ver Localização no Mapa ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato Direto</h5>
+        <ul class="footer-list">
+          <li><strong>WhatsApp:</strong> (11) 99601-2736</li>
+          <li><strong>E-mail:</strong> contato@ceciliafreytas.com.br</li>
+          <li><strong>Horários:</strong> Com hora marcada</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Dra. Cecília Freytas — Psicóloga Clínica. Todos os direitos reservados.</p>
+      <p>Desenvolvido com respeito aos preceitos éticos do CFP.</p>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/5511996012736?text=Ol%C3%A1%20Cec%C3%ADlia,%20gostaria%20de%20agendar%20uma%20consulta!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
-    💬
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a class="wa-float-btn" href="https://wa.me/5511996012736?text=Ol%C3%A1%2C%20Dra.%20Cec%C3%ADlia!%20Gostaria%20de%20consultar%20a%20disponibilidade%20de%20hor%C3%A1rios%20para%20atendimento." target="_blank" rel="noopener" aria-label="Enviar mensagem no WhatsApp da Dra. Cecília Freytas">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
   </a>
 
-  <!-- JavaScript: Mobile Menu Toggle & FAQ Accordion -->
+  <!-- JAVASCRIPT VANILLA NATIVO -->
   <script>
-    // Mobile hamburger menu toggle
-    (function() {
-      var toggle = document.getElementById('menuToggle');
-      var nav = document.getElementById('navLinks');
-      var isOpen = false;
+    function toggleFaq(button) {
+      const card = button.closest('.faq-card');
+      const content = card.querySelector('.faq-content');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-      toggle.addEventListener('click', function() {
-        isOpen = !isOpen;
-        nav.classList.toggle('open', isOpen);
-        toggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
-        toggle.setAttribute('aria-label', isOpen ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+      document.querySelectorAll('.faq-card').forEach(other => {
+        if (other !== card && other.classList.contains('active')) {
+          other.classList.remove('active');
+          other.querySelector('.faq-btn').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-content').style.maxHeight = null;
+        }
       });
 
-      // Close menu when a nav link is clicked
-      var links = nav.querySelectorAll('a');
-      for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function() {
-          isOpen = false;
-          nav.classList.remove('open');
-          toggle.innerHTML = '&#9776;';
-          toggle.setAttribute('aria-label', 'Abrir menu de navegação');
-        });
+      if (!isExpanded) {
+        card.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        card.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = null;
       }
-    })();
+    }
 
-    // FAQ accordion
-    (function() {
-      var items = document.querySelectorAll('.faq-item');
+    function enviarConsultaWhatsApp() {
+      const modalidade = document.getElementById('schedModality').value;
+      const categoria = document.getElementById('schedCategory').value;
+      const turno = document.getElementById('schedShift').value;
+      const nome = document.getElementById('schedName').value.trim();
 
-      for (var i = 0; i < items.length; i++) {
-        items[i].querySelector('.faq-question').addEventListener('click', function() {
-          var parent = this.parentElement;
-          var wasActive = parent.classList.contains('active');
-
-          // Close all items
-          for (var j = 0; j < items.length; j++) {
-            items[j].classList.remove('active');
-            items[j].querySelector('.faq-icon').textContent = '+';
-          }
-
-          // Open clicked item if it was not already open
-          if (!wasActive) {
-            parent.classList.add('active');
-            parent.querySelector('.faq-icon').textContent = '−';
-          }
-        });
+      if (!nome) {
+        alert('Por favor, informe seu nome para contato.');
+        return;
       }
-    })();
-  </script>
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Cecília Freytas Psicóloga",
-  "telephone": "+5511996012736",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. das Nações Unidas, 18801 - NovAmérica Office Park",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "70"
-  }
-}
-  </script>
+      const mensagem = `Olá, Dra. Cecília Freytas!
 
+Meu nome é ${nome}. Gostaria de consultar a disponibilidade de horários para atendimento psicológico:
+• Modalidade: ${modalidade}
+• Atendimento: ${categoria}
+• Melhor período: ${turno}
+
+Poderia me informar as opções de horários e os valores das sessões? Obrigado(a)!`;
+
+      const link = `https://wa.me/5511996012736?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    }
+  </script>
 </body>
 </html>

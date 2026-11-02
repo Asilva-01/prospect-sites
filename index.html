@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Landing Pages Comerciais | Asilva-01</title>
+  <meta name="description" content="Showcase de landing pages profissionais para negócios locais com HTML5 semântico, CSS3 moderno, JavaScript vanilla e ferramentas interativas de conversão via WhatsApp.">
+  <meta name="author" content="Asilva-01">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfólio de Landing Pages Comerciais | Asilva-01">
+  <meta property="og:description" content="Aplicações web de alta conversão, sem cara de IA, com código limpo e calculadoras interativas.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f172a'/%3E%3Cpath d='M30 70L48 30h6l18 40h-7l-4.5-11h-21L36 70h-6zm14.5-17h13l-6.5-16.5-6.5 16.5z' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-card: #0f172a;
+      --bg-card-hover: #17233f;
+      --border: #1e293b;
+      --border-focus: #38bdf8;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-hover: #0ea5e9;
+      --accent-green: #10b981;
+      --accent-purple: #a855f7;
+      --accent-orange: #f97316;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .logo-badge {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.25rem;
+    }
+
+    .logo-badge span {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1e293b;
+      color: #f8fafc;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+
+    .btn-github:hover {
+      background: #334155;
+      border-color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: var(--radius-full);
+      color: var(--primary);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-title span {
+      background: linear-gradient(135deg, #38bdf8 0%, #34d399 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+    }
+
+    .metric-item {
+      text-align: left;
+    }
+
+    .metric-val {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .metric-label {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    /* FILTER TABS */
+    .filters-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 50px 0 36px;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: var(--radius-full);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover {
+      color: #ffffff;
+      border-color: #475569;
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      color: #090d16;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* PROJECTS GRID */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 28px;
+      margin-bottom: 80px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(56, 189, 248, 0.4);
+      background: var(--bg-card-hover);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .card-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .badge-status {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-status::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 10px #10b981;
+    }
+
+    .project-card h3 {
+      font-size: 1.45rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .project-card p {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      flex-grow: 1;
+      line-height: 1.6;
+    }
+
+    .project-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+      padding: 14px;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--primary);
+    }
+
+    .highlight-item {
+      font-size: 0.8125rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .highlight-item svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+
+    .tech-tag {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      background: #1e293b;
+      border-radius: 4px;
+      color: #94a3b8;
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: auto;
+    }
+
+    .btn-preview {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--primary);
+      color: #090d16;
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 12px 18px;
+      border-radius: var(--radius-sm);
+    }
+
+    .btn-preview:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+    }
+
+    .btn-code {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .btn-code:hover {
+      background: #334155;
+      color: #ffffff;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-metrics {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo-badge">
+        <svg width="28" height="28" viewBox="0 0 100 100" fill="none">
+          <rect width="100" height="100" rx="20" fill="#0f172a"/>
+          <path d="M30 70L48 30h6l18 40h-7l-4.5-11h-21L36 70h-6zm14.5-17h13l-6.5-16.5-6.5 16.5z" fill="#38bdf8"/>
+        </svg>
+        <span>Asilva-01 · Portfólio Web</span>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Asilva-01/prospect-sites" target="_blank" rel="noopener noreferrer" class="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Ver no GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pill">
+        ⚡ Engenharia Front-End · Padrão Origamid
+      </div>
+      <h1 class="hero-title">
+        Landing Pages Comerciais de <span>Alta Conversão &amp; Performance</span>
+      </h1>
+      <p class="hero-desc">
+        Aplicações web sem cara de template de IA, desenvolvidas com HTML5 semântico, CSS moderno e JavaScript nativo. Cada projeto inclui ferramentas interativas sob medida (calculadoras e triagens) integradas ao WhatsApp.
+      </p>
+
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <div class="metric-val">&lt; 0.5s</div>
+          <div class="metric-label">Tempo de Carregamento</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-val">100%</div>
+          <div class="metric-label">Mobile-First Responsivo</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-val">WCAG AA</div>
+          <div class="metric-label">Acessibilidade &amp; Semântica</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-val">0 KB</div>
+          <div class="metric-label">Framework Bloat Externo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS -->
+    <div class="filters-bar" role="tablist" aria-label="Filtro de Projetos">
+      <button class="filter-btn active" onclick="filtrar('todos')">Todos os Projetos</button>
+      <button class="filter-btn" onclick="filtrar('construcao')">Construção &amp; Elétrica</button>
+      <button class="filter-btn" onclick="filtrar('saude')">Clínicas &amp; Saúde</button>
+      <button class="filter-btn" onclick="filtrar('automotivo')">Automotivo</button>
+    </div>
+
+    <!-- GRID DE PROJETOS -->
+    <div class="projects-grid" id="projectsContainer">
+
+      <!-- TEMFER -->
+      <article class="project-card" data-category="construcao">
+        <div class="card-top">
+          <span class="card-category">Materiais de Construção</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Temfer Materiais para Construção</h3>
+        <p>
+          Landing page institucional e comercial para distribuidora tradicional com lojas em Santo Amaro, Campo Belo e Centro de Distribuição.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Calculadora de Orçamento:</strong> cimento, areia, blocos e frete</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Multi-endereços físicos com mapas e marcas líderes (Tigre, Votoran)</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">HTML5 Semântico</span>
+          <span class="tech-tag">Calculadora WhatsApp</span>
+          <span class="tech-tag">Schema.org</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/temfer-materiais-construcao/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/temfer-materiais-construcao" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- ZATHURA -->
+      <article class="project-card" data-category="construcao">
+        <div class="card-top">
+          <span class="card-category">Materiais Elétricos</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Zathura Materiais Elétricos</h3>
+        <p>
+          Engenharia elétrica B2B e varejo na Av. João Dias. Foco em eletricistas, instaladores e quadros de distribuição industrial.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Esquema Técnico SVG:</strong> diagrama do quadro elétrico</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Montador de Lista Elétrica:</strong> envio formatado para WhatsApp</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">SVG Dinâmico</span>
+          <span class="tech-tag">Barramentos de Cobre</span>
+          <span class="tech-tag">B2B Elétrica</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/zathura-materiais-eletricos/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/zathura-materiais-eletricos" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- TINTAS LAR E AUTO -->
+      <article class="project-card" data-category="construcao">
+        <div class="card-top">
+          <span class="card-category">Tintas &amp; Pintura</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Tintas Lar e Auto Ltda</h3>
+        <p>
+          Loja completa de tintas na Av. Eng. Armando Arruda Pereira. Segmentos automotivo, residencial, artesanato e aviação PPG.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Simulador de Demãos e Litragem:</strong> cálculo m² por tipo de tinta</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Inscrição para turmas presenciais de pintura artística</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">Simulador Dinâmico</span>
+          <span class="tech-tag">Aviação &amp; Auto</span>
+          <span class="tech-tag">Mobile-First</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/tintas-lar-e-auto/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/tintas-lar-e-auto" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- CLÍNICA LANGNER -->
+      <article class="project-card" data-category="saude">
+        <div class="card-top">
+          <span class="card-category">Neuropsicologia</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Clínica Langner Psicologia &amp; Neuro</h3>
+        <p>
+          Centro especializado em avaliação neuropsicológica (TDAH, Autismo, Memória) e TCC em Santo Amaro (Rua Manoel Borba, 292).
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Triagem Confidencial Interativa:</strong> anamnese rápida WhatsApp</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Guia completo de reembolso para convênios e laudos SATEPSI</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">MedicalBusiness</span>
+          <span class="tech-tag">Triagem Clínica</span>
+          <span class="tech-tag">Accordion Nativo</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/clinica-langner/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/clinica-langner" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- MÉTRA PSICOLOGIA -->
+      <article class="project-card" data-category="saude">
+        <div class="card-top">
+          <span class="card-category">Psicanálise Clínica</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Métra Psicologia e Psicanálise</h3>
+        <p>
+          Consultório com foco em psicanálise e saúde mental na Rua Alexandre Dumas (Chácara Santo Antônio), com selo clínico ético.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Formulário de Acolhimento:</strong> agendamento sigiloso presencial/online</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Design sobrio e elegante, sem fotos fake de modelos</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">Psicanálise</span>
+          <span class="tech-tag">Sigilo Ético</span>
+          <span class="tech-tag">Formulário Seguro</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/metra-psicologia/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/metra-psicologia" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- DRA CECÍLIA FREYTAS -->
+      <article class="project-card" data-category="saude">
+        <div class="card-top">
+          <span class="card-category">Psicologia Clínica</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Dra. Cecília Freytas (CRP SP)</h3>
+        <p>
+          Atendimento humanizado no NovAmérica Office Park. Terapia Cognitivo-Comportamental com avaliação 5.0★ Google.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Widget de Consulta:</strong> agendamento confidencial com opções</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Credenciais oficiais verificadas e integração Google Maps</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">TCC Ansiedade</span>
+          <span class="tech-tag">5.0 Estrelas</span>
+          <span class="tech-tag">NovAmérica</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/cecilia-freytas-psico/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/cecilia-freytas-psico" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+      <!-- DESTAKE GARAGE -->
+      <article class="project-card" data-category="automotivo">
+        <div class="card-top">
+          <span class="card-category">Oficina Mecânica</span>
+          <span class="badge-status">Refatorado 100%</span>
+        </div>
+        <h3>Destake Garage Auto Center</h3>
+        <p>
+          Oficina especializada na Av. Eng. George Corbisier (Jabaquara/Santo Amaro). Injeção, freios, câmbio e suspensão.
+        </p>
+        <div class="project-highlights">
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span><strong>Orçamento Rápido por Veículo:</strong> modelo, placa e sintoma</span>
+          </div>
+          <div class="highlight-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            <span>Diagnóstico eletrônico preventivo e tabela transparente</span>
+          </div>
+        </div>
+        <div class="card-tags">
+          <span class="tech-tag">AutoRepair</span>
+          <span class="tech-tag">Diagnóstico OBD</span>
+          <span class="tech-tag">WhatsApp Direto</span>
+        </div>
+        <div class="card-actions">
+          <a href="./sites/destake-garage/index.html" class="btn-preview">Testar ao Vivo ↗</a>
+          <a href="https://github.com/Asilva-01/prospect-sites/tree/main/sites/destake-garage" target="_blank" class="btn-code">Código</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 8px;">
+        © 2026 <strong>Asilva-01</strong> · Portfólio de Desenvolvimento Web Full Stack.
+      </p>
+      <p style="font-size: 0.8125rem;">
+        Desenvolvido seguindo as diretrizes do <a href="https://origamid.com/" target="_blank" rel="noopener">Padrão Origamid</a>. Código aberto no <a href="https://github.com/Asilva-01/prospect-sites" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    function filtrar(categoria) {
+      const botoes = document.querySelectorAll('.filter-btn');
+      botoes.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        if (categoria === 'todos' || card.getAttribute('data-category') === categoria) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

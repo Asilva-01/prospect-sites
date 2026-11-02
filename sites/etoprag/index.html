@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etoprag Controle de Pragas | Manejo Integrado e Laudos Sanitários SP</title>
+<meta name="description" content="Etoprag Controle de Pragas — Metodologia MIP, conformidade com a Anvisa e atendimento técnico em São Paulo. Desinsetização, descupinização e desratização com laudo técnico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b131e;
+  --bg-card: #131e2d;
+  --bg-card-hover: #1b293c;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-dark: #0284c7;
+  --border: rgba(255, 255, 255, 0.08);
+  --wa: #25d366;
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, .brand-font {
+  font-family: 'Outfit', sans-serif;
+}
+a { color: inherit; text-decoration: none; }
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #070d14;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.topbar-contact a:hover { color: var(--accent); }
+
+/* NAVBAR */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 19, 30, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+.logo-badge {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #031424;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.logo small {
+  display: block;
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-links a:hover { color: var(--accent); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-primary {
+  background: var(--accent);
+  color: #031424;
+}
+.btn-primary:hover {
+  background: #7dd3fc;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(56, 189, 248, 0.25);
+}
+.btn-wa {
+  background: var(--wa);
+  color: #062012;
+}
+.btn-wa:hover {
+  background: #1ebd59;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.3);
+}
+.btn-outline {
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  background: transparent;
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  padding: clamp(60px, 9vw, 110px) 0;
+  position: relative;
+  background: radial-gradient(circle at 85% 25%, rgba(56, 189, 248, 0.09) 0%, transparent 65%);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(32px, 4.5vw, 54px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+.hero h1 span { color: var(--accent); }
+.hero-lead {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 32px;
+  position: relative;
+}
+.hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+}
+.hero-card h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.card-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+.card-item-check {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+/* STATS */
+.stats {
+  padding: 36px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: #070d14;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+.stat-num {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: var(--accent);
+}
+.stat-lbl {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* SERVICES */
+.services {
+  padding: 90px 0;
+}
+.sec-head {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 56px;
+}
+.sec-head h2 {
+  font-size: clamp(28px, 3.5vw, 42px);
+  margin-bottom: 14px;
+}
+.sec-head p { color: var(--text-muted); }
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.s-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  transition: var(--transition);
+}
+.s-card:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(56, 189, 248, 0.3);
+  transform: translateY(-4px);
+}
+.s-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.s-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.s-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* MIP METHOD */
+.mip-sec {
+  padding: 80px 0;
+  background: #08101a;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.mip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.mip-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 30px;
+}
+.mip-box h4 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.mip-box p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* CTA */
+.cta-sec {
+  padding: 80px 0;
+  text-align: center;
+}
+.cta-box {
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: clamp(36px, 6vw, 60px) 32px;
+}
+.cta-box h2 {
+  font-size: clamp(26px, 3.5vw, 38px);
+  margin-bottom: 16px;
+}
+.cta-box p {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #05090f;
+  padding: 50px 0 30px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .mip-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+@media (max-width: 600px) {
+  .hero-btns { flex-direction: column; width: 100%; }
+  .hero-btns .btn { width: 100%; justify-content: center; }
+  .stats-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-content">
+    <div>📍 Atendimento Técnico em Toda a Zona Sul e Grande São Paulo</div>
+    <div class="topbar-contact">
+      <a href="tel:11947279500">📞 (11) 94727-9500</a>
+      <a href="mailto:contato@etoprag.com.br" style="margin-left: 15px;">✉️ contato@etoprag.com.br</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="container nav-wrap">
+    <a href="#" class="logo">
+      <span class="logo-badge">ETOPRAG</span>
+      <div>
+        Controle de Pragas
+        <small>Manejo Integrado MIP</small>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#metodologia">Metodologia MIP</a>
+      <a href="#laudos">Laudos Sanitários</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div>
+      <a href="https://wa.me/5511947279500?text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento+com+a+Etoprag." target="_blank" class="btn btn-wa">
+        Orçamento no WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">🔬 Metodologia Científica & Sanitária</div>
+        <h1>Controle Integrado de Pragas com <span>Rigor Técnico</span> e Documentação Completa</h1>
+        <p class="hero-lead">
+          Programas de manejo preventivo e corretivo para condomínios residenciais, indústrias alimentícias, comércios e restaurantes. Emissão de laudos para fiscalização sanitária.
+        </p>
+        <div class="hero-btns">
+          <a href="https://wa.me/5511947279500?text=Ol%C3%A1%2C+preciso+de+uma+avalia%C3%A7%C3%A3o+técnica+da+Etoprag." target="_blank" class="btn btn-wa">
+            Chamar no WhatsApp (11) 94727-9500
+          </a>
+          <a href="#metodologia" class="btn btn-outline">
+            Conhecer Metodologia
+          </a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Diferenciais Técnicos Etoprag</h3>
+        <div class="card-item">
+          <span class="card-item-check">✓</span>
+          <p><strong>Manejo Integrado (MIP):</strong> Foco na causa raiz da infestação, minimizando o uso desnecessário de químicos.</p>
+        </div>
+        <div class="card-item">
+          <span class="card-item-check">✓</span>
+          <p><strong>Laudos para Fiscalização:</strong> Documentação rigorosa em conformidade com as normas da Anvisa e Vigilância Sanitária.</p>
+        </div>
+        <div class="card-item">
+          <span class="card-item-check">✓</span>
+          <p><strong>Cronograma Preventivo:</strong> Planos mensais e trimestrais sob medida para condomínios e empresas.</p>
+        </div>
+        <div class="card-item">
+          <span class="card-item-check">✓</span>
+          <p><strong>Segurança & Sustentabilidade:</strong> Produtos modernos sem residual tóxico para colaboradores e animais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container stats-grid">
+      <div>
+        <div class="stat-num">MIP</div>
+        <div class="stat-lbl">Manejo Integrado</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-lbl">Conformidade Anvisa</div>
+      </div>
+      <div>
+        <div class="stat-num">Ágil</div>
+        <div class="stat-lbl">Visita de Avaliação</div>
+      </div>
+      <div>
+        <div class="stat-num">Laudo</div>
+        <div class="stat-lbl">Técnico Certificado</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicos">
+    <div class="container">
+      <div class="sec-head">
+        <div class="badge">Especialidades</div>
+        <h2>Ações Precisas para Cada Desafio Sanitário</h2>
+        <p>Técnicas modernas desenvolvidas para eliminar colônias e prevenir novas infestações de forma definitiva.</p>
+      </div>
+
+      <div class="grid-services">
+        <div class="s-card">
+          <div class="s-icon">🛡️</div>
+          <h3>Desinsetização Direcionada</h3>
+          <p>Controle de baratas (germânica e americanas), formigas, moscas e mosquitos com barreiras químicas e geles atrativos.</p>
+        </div>
+
+        <div class="s-card">
+          <div class="s-icon">🪵</div>
+          <h3>Tratamento de Cupins</h3>
+          <p>Identificação de espécies (solo e madeira seca) e aplicação de inseticidas com tecnologia de barreira não repelente.</p>
+        </div>
+
+        <div class="s-card">
+          <div class="s-icon">🐁</div>
+          <h3>Controle de Roedores</h3>
+          <p>Instalação estratégica de portas-iscas lacrados com chave e mapeamento de trilhas e tocas de ratos e camundongos.</p>
+        </div>
+
+        <div class="s-card">
+          <div class="s-icon">📋</div>
+          <h3>Consultoria Sanitária</h3>
+          <p>Orientação de boas práticas de armazenamento e vedação estrutural para auditorias e fiscalizações sanitárias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mip-sec" id="metodologia">
+    <div class="container">
+      <div class="mip-grid">
+        <div>
+          <div class="badge">Abordagem MIP</div>
+          <h2 style="font-size: 36px; margin-bottom: 16px;">O que é o Manejo Integrado de Pragas?</h2>
+          <p style="color: var(--text-muted); margin-bottom: 20px;">
+            Diferente da dedetização convencional focada apenas em despejar produtos químicos, o Manejo Integrado de Pragas (MIP) combina inspeção rigorosa, identificação da espécie, medidas estruturais preventivas e controle biológico/químico inteligente.
+          </p>
+          <p style="color: var(--text-muted);">
+            O resultado é uma proteção muito mais duradoura, com redução drástica no uso de venenos e total segurança para ambientes corporativos e familiares.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="mip-box">
+            <h4>1. Inspeção & Mapeamento</h4>
+            <p>Análise minuciosa de abrigos, fontes de água e alimentos que atraem as pragas no seu imóvel.</p>
+          </div>
+          <div class="mip-box">
+            <h4>2. Ação Seletiva</h4>
+            <p>Emprego de produtos químicos de ponta direcionados estritamente aos pontos de proliferação.</p>
+          </div>
+          <div class="mip-box">
+            <h4>3. Monitoramento Contínuo</h4>
+            <p>Acompanhamento periódico para certificar que a população da praga permaneça em zero.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-sec" id="contato">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Garanta a Proteção Sanitária do seu Espaço</h2>
+        <p>Receba atendimento técnico especializado e agende uma inspeção técnica sem compromisso.</p>
+        <a href="https://wa.me/5511947279500?text=Ol%C3%A1%2C+gostaria+de+solicitar+uma+avalia%C3%A7%C3%A3o+técnica+com+a+Etoprag." target="_blank" class="btn btn-wa" style="font-size: 16px; padding: 16px 32px;">
+          Solicitar Atendimento Técnico no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 10px;">Etoprag Controle de Pragas</div>
+        <p>Metodologia de Manejo Integrado e controle sanitário em São Paulo.</p>
+        <p style="margin-top: 8px;">📍 Rua Castelar de Carvalho, 214 - São Paulo - SP, 05736-090</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 12px;">Contato</h4>
+        <p>Telefone / WhatsApp: (11) 94727-9500</p>
+        <p>E-mail: contato@etoprag.com.br</p>
+      </div>
+      <div>
+        <h4 style="color: #fff; margin-bottom: 12px;">Atendimento</h4>
+        <p>Zona Sul e Grande São Paulo</p>
+        <p>Residências, Empresas e Condomínios</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Etoprag Controle de Pragas. Todos os direitos reservados. Apresentação profissional de alta conversão.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

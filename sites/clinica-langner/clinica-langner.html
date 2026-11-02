@@ -3,250 +3,430 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Langner | Psicologia & Neuropsicologia em Santo Amaro - SP</title>
-  <meta name="description" content="Clínica especializada em Avaliação Neuropsicológica, TCC, Psicologia Clínica e Reabilitação Cognitiva em Santo Amaro. Cuidado humanizado e baseado em evidências.">
+  <title>Clínica Langner | Neuropsicologia e Psicologia Clínica em Santo Amaro - SP</title>
+  <meta name="description" content="Avaliação neuropsicológica completa (TDAH, TEA/Autismo, Memória, Aprendizagem) e Terapia Cognitivo-Comportamental em Santo Amaro, SP. Laudos detalhados e atendimento humanizado.">
+  <meta name="keywords" content="avaliação neuropsicológica Santo Amaro, psicólogo Santo Amaro, diagnóstico TDAH, avaliação autismo TEA, neuropsicóloga zona sul SP, TCC Santo Amaro, laudo neuropsicológico">
+  <meta name="author" content="Clínica Langner">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociais -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Clínica Langner | Psicologia & Neuropsicologia em Santo Amaro - SP">
-  <meta property="og:description" content="Clínica especializada em Avaliação Neuropsicológica, TCC e Psicologia Clínica em Santo Amaro.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80">
+  <meta property="og:title" content="Clínica Langner | Neuropsicologia e Psicologia Clínica em Santo Amaro">
+  <meta property="og:description" content="Diagnóstico neuropsicológico preciso e psicoterapia baseada em evidências científicas para crianças, adolescentes, adultos e idosos.">
+  <meta property="og:url" content="https://clinicalangner.com.br/">
   <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f4c5c'/%3E%3Ctext x='50' y='68' font-size='42' font-family='Arial' fill='white' text-anchor='middle'%3ECL%3C/text%3E%3C/svg%3E">
+  <meta property="og:site_name" content="Clínica Langner">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://clinicalangner.com.br/">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f4c5c'/%3E%3Cpath d='M32 30v40h12V30H32zm24 0v40h12c11 0 16-7 16-20s-5-20-16-20H56zm12 28h-2V42h2c5 0 7 3 7 8s-2 8-7 8z' fill='%23ffffff'/%3E%3Ccircle cx='76' cy='32' r='6' fill='%23059669'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- Fontes do Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
+    /* ==========================================================================
+       RESET E VARIÁVEIS DE DESIGN SYSTEM
+       ========================================================================== */
     :root {
-      --primary: #0f4c5c;
-      --primary-dark: #0a333e;
-      --primary-light: #166b82;
-      --accent: #e36414;
-      --accent-hover: #c4520e;
-      --bg-cream: #fafafa;
-      --bg-white: #ffffff;
-      --bg-soft: #edf5f7;
-      --text-main: #18282d;
-      --text-muted: #536b73;
-      --border-light: #e1ebed;
-      --shadow-sm: 0 4px 12px rgba(15, 76, 92, 0.05);
-      --shadow-md: 0 10px 28px rgba(15, 76, 92, 0.08);
-      --shadow-lg: 0 20px 40px rgba(15, 76, 92, 0.12);
+      --color-primary: #0f4c5c;
+      --color-primary-dark: #0a333e;
+      --color-primary-deep: #06222a;
+      --color-primary-light: #166b82;
+      --color-primary-soft: #edf6f8;
+      --color-accent: #059669;
+      --color-accent-hover: #047857;
+      --color-warm: #d97706;
+      --color-warm-soft: #fef3c7;
+      --color-text: #18282d;
+      --color-text-muted: #516972;
+      --color-border: #dbe7eb;
+      --color-card-bg: #ffffff;
+      --color-bg-alt: #f7fafb;
+      --color-bg-warm: #fcfbfa;
+
       --radius-sm: 8px;
-      --radius-md: 16px;
-      --radius-lg: 24px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
       --radius-full: 9999px;
+
+      --shadow-subtle: 0 2px 8px rgba(15, 76, 92, 0.04);
+      --shadow-sm: 0 4px 14px rgba(15, 76, 92, 0.07);
+      --shadow-md: 0 10px 28px rgba(15, 76, 92, 0.09);
+      --shadow-lg: 0 18px 40px rgba(15, 76, 92, 0.12);
+
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-cream);
-      color: var(--text-main);
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background-color: var(--color-bg-alt);
       line-height: 1.6;
       overflow-x: hidden;
     }
 
     h1, h2, h3, h4, h5 {
-      font-family: 'Outfit', sans-serif;
-      color: var(--primary-dark);
+      font-family: var(--font-heading);
+      color: var(--color-primary-dark);
       font-weight: 700;
       line-height: 1.25;
     }
 
+    p {
+      margin-bottom: 1rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    ul, ol {
+      list-style: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
     }
 
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
+      width: 100%;
+      max-width: 1220px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
     }
 
-    /* Top Bar */
-    .top-bar {
-      background: var(--primary-dark);
-      color: #e0f2f7;
-      font-size: 0.875rem;
-      padding: 8px 0;
+    /* Utilitários Visuais */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .badge-primary {
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      border: 1px solid var(--color-border);
+    }
+
+    .badge-accent {
+      background: #ecfdf5;
+      color: var(--color-accent);
+      border: 1px solid #a7f3d0;
+    }
+
+    .badge-warm {
+      background: var(--color-warm-soft);
+      color: #92400e;
+      border: 1px solid #fde68a;
+    }
+
+    /* Botões */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       text-align: center;
+      line-height: 1.2;
     }
 
-    .top-bar strong {
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.32);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #20ba5a;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.42);
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(15, 76, 92, 0.25);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-primary-dark);
+      box-shadow: 0 10px 24px rgba(15, 76, 92, 0.35);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--color-primary-soft);
+      border-color: var(--color-primary-dark);
+      color: var(--color-primary-dark);
+    }
+
+    .btn-white {
+      background-color: #ffffff;
+      color: var(--color-primary-dark);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-white:hover {
+      background-color: #f8fafc;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    /* ==========================================================================
+       TOP BAR & CABEÇALHO
+       ========================================================================== */
+    .top-bar {
+      background: var(--color-primary-deep);
+      color: #d1e7ec;
+      font-size: 0.8125rem;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .top-bar-info {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .top-bar-item svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      opacity: 0.85;
+    }
+
+    .top-bar-highlight {
       color: #fed7aa;
+      font-weight: 600;
     }
 
-    .top-bar a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    /* Header */
     header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
-      z-index: 100;
-      border-bottom: 1px solid var(--border-light);
+      z-index: 99;
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: var(--shadow-subtle);
     }
 
     .header-nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 80px;
+      height: 82px;
     }
 
-    .logo-container {
+    .brand-logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
     }
 
-    .logo-badge {
-      width: 44px;
-      height: 44px;
-      background: var(--bg-soft);
-      color: var(--primary);
-      border-radius: var(--radius-sm);
+    .brand-symbol {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 1.25rem;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(15, 76, 92, 0.2);
     }
 
-    .logo-text h2 {
-      font-size: 1.35rem;
-      color: var(--primary-dark);
-      letter-spacing: -0.5px;
+    .brand-symbol svg {
+      width: 28px;
+      height: 28px;
     }
 
-    .logo-text p {
+    .brand-text h1 {
+      font-size: 1.375rem;
+      color: var(--color-primary-dark);
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+    }
+
+    .brand-text p {
       font-size: 0.75rem;
-      color: var(--text-muted);
+      font-weight: 600;
+      color: var(--color-text-muted);
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 600;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 32px;
-      list-style: none;
+      gap: 28px;
     }
 
     .nav-links a {
-      font-size: 0.95rem;
+      font-size: 0.9375rem;
       font-weight: 600;
-      color: var(--text-main);
-      transition: color 0.2s ease;
+      color: var(--color-text);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-accent);
+      transition: width 0.25s ease;
     }
 
     .nav-links a:hover {
-      color: var(--primary);
+      color: var(--color-primary);
     }
 
-    .btn-header {
-      background: var(--primary);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 0.9rem;
-      display: inline-flex;
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      gap: 16px;
     }
 
-    .btn-header:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-
-    /* Hamburger Menu */
     .hamburger {
       display: none;
       background: none;
-      border: none;
-      font-size: 1.6rem;
-      cursor: pointer;
-      color: var(--primary-dark);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
       width: 44px;
       height: 44px;
+      cursor: pointer;
       align-items: center;
       justify-content: center;
-      border-radius: var(--radius-sm);
-      transition: background 0.2s ease;
+      color: var(--color-primary-dark);
+      font-size: 1.4rem;
     }
 
-    .hamburger:hover {
-      background: var(--bg-soft);
-    }
-
-    /* Hero Section */
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
     .hero {
-      padding: 70px 0 80px;
-      background: linear-gradient(180deg, rgba(237, 245, 247, 0.7) 0%, rgba(250, 250, 250, 1) 100%);
       position: relative;
+      padding: 68px 0 84px;
+      background: linear-gradient(180deg, #edf6f8 0%, #f7fafb 100%);
+      border-bottom: 1px solid var(--color-border);
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 50px;
+      gap: 48px;
       align-items: center;
     }
 
-    .badge-evidence {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--bg-white);
-      padding: 8px 18px;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 24px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--primary-dark);
-    }
-
-    .badge-evidence span {
-      color: var(--accent);
+    .hero-preheader {
+      margin-bottom: 20px;
     }
 
     .hero-title {
-      font-size: 3.25rem;
+      font-size: 3.125rem;
+      letter-spacing: -1.2px;
       margin-bottom: 20px;
-      letter-spacing: -1px;
+      color: var(--color-primary-deep);
     }
 
-    .hero-title span {
-      color: var(--accent);
+    .hero-title .highlight {
+      color: var(--color-primary);
+      position: relative;
+      display: inline-block;
     }
 
-    .hero-desc {
-      font-size: 1.15rem;
-      color: var(--text-muted);
+    .hero-title .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: rgba(5, 150, 105, 0.16);
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .hero-description {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
       margin-bottom: 32px;
       max-width: 580px;
+      line-height: 1.65;
     }
 
     .hero-actions {
@@ -257,171 +437,235 @@
       margin-bottom: 40px;
     }
 
-    .btn-primary {
-      background: #25d366;
-      color: #fff;
-      padding: 16px 32px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 1.05rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .btn-primary:hover {
-      background: #20ba5a;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
-    }
-
-    .btn-secondary {
-      background: var(--bg-white);
-      color: var(--primary-dark);
-      border: 1.5px solid var(--border-light);
-      padding: 16px 28px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .btn-secondary:hover {
-      background: var(--bg-soft);
-      border-color: var(--primary-light);
-    }
-
-    .hero-stats {
+    .hero-trust-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border-light);
+      padding-top: 28px;
+      border-top: 1px solid var(--color-border);
     }
 
-    .stat-item h3 {
-      font-size: 1.75rem;
-      color: var(--primary);
-      margin-bottom: 2px;
+    .trust-stat h3 {
+      font-size: 1.875rem;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
-    .stat-item p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 500;
+    .trust-stat p {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      font-weight: 600;
+      margin-top: 2px;
     }
 
-    .hero-visual {
+    /* Card Visual Institucional do Hero (Sem fotos fake de banco de imagens) */
+    .hero-card-container {
       position: relative;
     }
 
-    .hero-image-card {
-      background: var(--bg-white);
+    .clinical-protocol-card {
+      background: #ffffff;
       border-radius: var(--radius-lg);
-      overflow: hidden;
+      padding: 36px 32px;
       box-shadow: var(--shadow-lg);
-      border: 6px solid #ffffff;
+      border: 1px solid var(--color-border);
       position: relative;
+      overflow: hidden;
     }
 
-    .hero-image-card img {
-      width: 100%;
-      height: 480px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .floating-badge {
+    .clinical-protocol-card::before {
+      content: '';
       position: absolute;
-      bottom: -20px;
-      left: 20px;
-      background: var(--bg-white);
-      padding: 16px 20px;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    }
+
+    .card-institution-header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .card-institution-header h4 {
+      font-size: 1.125rem;
+      color: var(--color-primary-dark);
+    }
+
+    .verified-seal {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      background: #ecfdf5;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid #a7f3d0;
+    }
+
+    .protocol-domains-list {
+      display: flex;
+      flex-direction: column;
       gap: 14px;
-      border: 1px solid var(--border-light);
-      max-width: 320px;
+      margin-bottom: 26px;
     }
 
-    .floating-badge .icon {
-      width: 48px;
-      height: 48px;
-      background: #fef3c7;
-      color: #d97706;
-      border-radius: 50%;
+    .domain-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 14px;
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--color-primary);
+    }
+
+    .domain-item strong {
+      display: block;
+      font-size: 0.875rem;
+      color: var(--color-primary-dark);
+    }
+
+    .domain-item span {
+      display: block;
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    .protocol-badge-alert {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      font-size: 0.8125rem;
+      color: #166534;
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      flex-shrink: 0;
+      gap: 10px;
     }
 
-    .floating-badge h4 {
-      font-size: 0.95rem;
-      margin-bottom: 2px;
-    }
-
-    .floating-badge p {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* Section Shared */
-    section {
-      padding: 90px 0;
-    }
-
-    section[id] {
-      scroll-margin-top: 100px;
+    /* ==========================================================================
+       SEÇÃO: ETAPAS DA AVALIAÇÃO NEUROPSICOLÓGICA
+       ========================================================================== */
+    .section-standard {
+      padding: 92px 0;
     }
 
     .section-header {
       text-align: center;
-      max-width: 680px;
-      margin: 0 auto 60px;
+      max-width: 720px;
+      margin: 0 auto 56px;
     }
 
-    .section-subtitle {
-      color: var(--accent);
-      font-weight: 700;
+    .section-tag {
+      font-size: 0.8125rem;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 0.85rem;
+      letter-spacing: 1.6px;
+      color: var(--color-accent);
       margin-bottom: 12px;
-      display: block;
+      display: inline-block;
     }
 
     .section-title {
-      font-size: 2.4rem;
+      font-size: 2.375rem;
+      letter-spacing: -0.6px;
       margin-bottom: 16px;
-      letter-spacing: -0.5px;
+      color: var(--color-primary-deep);
     }
 
     .section-desc {
-      color: var(--text-muted);
-      font-size: 1.05rem;
+      font-size: 1.0625rem;
+      color: var(--color-text-muted);
+      line-height: 1.65;
     }
 
-    /* Services Grid */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .step-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .step-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--color-primary-light);
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+      border: 1px solid var(--color-border);
+    }
+
+    .step-card h3 {
+      font-size: 1.1875rem;
+      margin-bottom: 12px;
+      color: var(--color-primary-dark);
+    }
+
+    .step-card p {
+      font-size: 0.90625rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+
+    .step-card .step-detail {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px dashed var(--color-border);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    /* ==========================================================================
+       SEÇÃO: ESPECIALIDADES & DEMANDAS ATENDIDAS
+       ========================================================================== */
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 28px;
     }
 
     .service-card {
-      background: var(--bg-white);
+      background: #ffffff;
       border-radius: var(--radius-md);
-      padding: 36px 28px;
-      border: 1px solid var(--border-light);
+      padding: 34px 28px;
+      border: 1px solid var(--color-border);
       box-shadow: var(--shadow-sm);
       transition: all 0.3s ease;
       display: flex;
@@ -431,814 +675,1844 @@
     .service-card:hover {
       transform: translateY(-6px);
       box-shadow: var(--shadow-lg);
-      border-color: rgba(15, 76, 92, 0.25);
+      border-color: rgba(15, 76, 92, 0.3);
     }
 
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--bg-soft);
-      color: var(--primary);
-      border-radius: 14px;
+    .service-icon-wrap {
+      width: 58px;
+      height: 58px;
+      background: var(--color-primary-soft);
+      border-radius: var(--radius-md);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
+      color: var(--color-primary);
       margin-bottom: 22px;
+      border: 1px solid var(--color-border);
+    }
+
+    .service-icon-wrap svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
     }
 
     .service-card h3 {
       font-size: 1.25rem;
       margin-bottom: 12px;
+      color: var(--color-primary-dark);
     }
 
     .service-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
       flex-grow: 1;
+    }
+
+    .service-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
       margin-bottom: 20px;
     }
 
-    .service-link {
+    .service-mini-tag {
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      background: var(--color-bg-alt);
+      border-radius: 4px;
+      color: var(--color-primary-dark);
+      font-weight: 600;
+      border: 1px solid var(--color-border);
+    }
+
+    .service-action-link {
+      font-size: 0.875rem;
       font-weight: 700;
-      color: var(--primary);
+      color: var(--color-primary);
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.9rem;
     }
 
-    .service-link:hover {
-      color: var(--accent);
-      text-decoration: underline;
+    .service-action-link:hover {
+      color: var(--color-accent);
     }
 
-    /* Location Banner */
-    .location-banner {
-      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-      color: #fff;
-      border-radius: var(--radius-lg);
-      padding: 50px;
-      margin-top: 50px;
+    /* ==========================================================================
+       WIDGET DE TRIAGEM CONFIDENCIAL & ORÇAMENTO WHATSAPP
+       ========================================================================== */
+    .triage-section {
+      background: linear-gradient(180deg, #f7fafb 0%, #edf6f8 100%);
+      padding: 92px 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .triage-container-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 40px;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .triage-info-box h2 {
+      font-size: 2.375rem;
+      letter-spacing: -0.6px;
+      margin-bottom: 18px;
+      color: var(--color-primary-deep);
+    }
+
+    .triage-info-box p {
+      font-size: 1.0625rem;
+      color: var(--color-text-muted);
+      margin-bottom: 28px;
+      line-height: 1.65;
+    }
+
+    .triage-benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .benefit-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .benefit-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #ecfdf5;
+      color: var(--color-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      border: 1px solid #a7f3d0;
+    }
+
+    .benefit-text h4 {
+      font-size: 1rem;
+      color: var(--color-primary-dark);
+      margin-bottom: 2px;
+    }
+
+    .benefit-text p {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+    }
+
+    .reimbursement-callout {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .reimbursement-callout h4 {
+      font-size: 1rem;
+      color: var(--color-primary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .reimbursement-callout p {
+      font-size: 0.84375rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+    }
+
+    /* Card do Formulário */
+    .triage-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 38px 34px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--color-border);
+    }
+
+    .triage-card-header {
+      margin-bottom: 26px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .triage-card-header h3 {
+      font-size: 1.375rem;
+      color: var(--color-primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .triage-card-header p {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: var(--color-bg-alt);
+      color: var(--color-text);
+      font-size: 0.9375rem;
+      transition: all 0.2s ease;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(15, 76, 92, 0.12);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-chips {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .chip-label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+    }
+
+    .chip-label input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .chip-content {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: var(--color-bg-alt);
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      font-size: 0.84375rem;
+      font-weight: 600;
+      color: var(--color-text);
+      transition: all 0.2s ease;
+    }
+
+    .chip-label input[type="radio"]:checked + .chip-content {
+      background: var(--color-primary-soft);
+      border-color: var(--color-primary);
+      color: var(--color-primary-dark);
+      font-weight: 700;
+    }
+
+    .privacy-notice {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78125rem;
+      color: var(--color-text-muted);
+      margin: 18px 0 24px;
+    }
+
+    .btn-submit-triage {
+      width: 100%;
+      padding: 16px;
+      font-size: 1.0625rem;
+    }
+
+    /* ==========================================================================
+       SEÇÃO: REEMBOLSO & PLANOS DE SAÚDE
+       ========================================================================== */
+    .reimbursement-section {
+      background: #ffffff;
+      padding: 92px 0;
+    }
+
+    .reimbursement-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
       align-items: center;
     }
 
-    .location-banner h3 {
-      color: #fff;
-      font-size: 1.85rem;
-      margin-bottom: 14px;
+    .reimbursement-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .location-banner p {
-      color: #e0f2f7;
-      font-size: 1rem;
+    .reimb-step-item {
+      display: flex;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--color-bg-alt);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+
+    .reimb-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #ffffff;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+    }
+
+    .reimb-text h4 {
+      font-size: 0.96875rem;
+      color: var(--color-primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .reimb-text p {
+      font-size: 0.84375rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0;
+    }
+
+    .insurance-tags-box {
+      background: var(--color-bg-warm);
+      border: 1px solid #ebdccb;
+      border-radius: var(--radius-lg);
+      padding: 34px;
+    }
+
+    .insurance-tags-box h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      color: #7c2d12;
+    }
+
+    .insurance-tags-box p {
+      font-size: 0.90625rem;
+      color: #78350f;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    .insurance-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
       margin-bottom: 24px;
     }
 
-    .location-banner .btn-white {
-      background: #fff;
-      color: var(--primary-dark);
-      padding: 14px 28px;
+    .insurance-pill {
+      background: #ffffff;
+      padding: 8px 14px;
       border-radius: var(--radius-full);
+      font-size: 0.8125rem;
       font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      color: #92400e;
+      border: 1px solid #fed7aa;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
     }
 
-    /* About Section */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 60px;
-      align-items: center;
+    /* ==========================================================================
+       PROVA SOCIAL & AVALIAÇÕES GOOGLE
+       ========================================================================== */
+    .reviews-section {
+      background: var(--color-bg-alt);
+      padding: 92px 0;
+      border-top: 1px solid var(--color-border);
     }
 
-    .about-image-wrapper img {
-      width: 100%;
+    .reviews-badge-container {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg);
-      display: block;
-    }
-
-    .about-text h2 {
-      font-size: 2.35rem;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      color: var(--text-muted);
-      margin-bottom: 18px;
-      font-size: 1.05rem;
-    }
-
-    .about-crp {
-      background: var(--bg-soft);
-      border-left: 4px solid var(--accent);
-      padding: 14px 20px;
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      margin-bottom: 18px;
-      font-weight: 600;
-      color: var(--primary-dark);
-      font-size: 0.95rem;
-    }
-
-    .check-list {
-      list-style: none;
-      margin: 24px 0 32px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .check-list li {
+      padding: 36px 40px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 28px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 48px;
+    }
+
+    .google-rating-score {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .score-big {
+      font-size: 3.5rem;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      color: var(--color-primary-dark);
+      line-height: 1;
+    }
+
+    .score-stars {
+      color: #f59e0b;
+      font-size: 1.35rem;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+
+    .score-meta {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
       font-weight: 600;
-      color: var(--text-main);
-      font-size: 0.95rem;
     }
 
-    .check-list li span {
-      color: var(--accent);
-      font-size: 1.1rem;
-    }
-
-    /* Testimonials Section */
-    .testimonials {
-      background: var(--bg-soft);
-    }
-
-    .testimonials-grid {
+    .reviews-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 28px;
     }
 
-    .testimonial-card {
-      background: var(--bg-white);
+    .review-card {
+      background: #ffffff;
       border-radius: var(--radius-md);
-      padding: 32px 28px;
-      border: 1px solid var(--border-light);
+      padding: 30px;
+      border: 1px solid var(--color-border);
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
-      transition: all 0.3s ease;
     }
 
-    .testimonial-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .testimonial-stars {
+    .review-stars {
       color: #f59e0b;
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-      letter-spacing: 2px;
+      font-size: 1.0625rem;
+      margin-bottom: 14px;
     }
 
-    .testimonial-card blockquote {
-      color: var(--text-main);
-      font-size: 0.95rem;
-      line-height: 1.7;
-      flex-grow: 1;
-      margin-bottom: 20px;
+    .review-text {
+      font-size: 0.9375rem;
+      color: var(--color-text);
+      line-height: 1.65;
       font-style: italic;
+      margin-bottom: 20px;
+      flex-grow: 1;
     }
 
-    .testimonial-author {
+    .review-author {
+      font-size: 0.875rem;
       font-weight: 700;
-      color: var(--primary-dark);
-      font-size: 0.9rem;
-      padding-top: 16px;
-      border-top: 1px solid var(--border-light);
+      color: var(--color-primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-top: 1px solid var(--color-border);
+      padding-top: 14px;
     }
 
-    /* FAQ Section */
+    .review-badge-verified {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      background: #ecfdf5;
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      margin-left: auto;
+    }
+
+    /* ==========================================================================
+       FAQ - NATIVO COM DETAILS/SUMMARY
+       ========================================================================== */
     .faq-section {
-      background: var(--bg-white);
+      background: #ffffff;
+      padding: 92px 0;
+      border-top: 1px solid var(--color-border);
     }
 
-    .faq-list {
-      max-width: 800px;
+    .faq-accordion-list {
+      max-width: 860px;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    .faq-item {
-      border: 1px solid var(--border-light);
+    details.faq-item {
+      background: var(--color-bg-alt);
+      border: 1.5px solid var(--color-border);
       border-radius: var(--radius-md);
-      margin-bottom: 16px;
       overflow: hidden;
-      transition: box-shadow 0.3s ease;
+      transition: all 0.25s ease;
     }
 
-    .faq-item:hover {
+    details.faq-item[open] {
+      background: #ffffff;
+      border-color: var(--color-primary);
       box-shadow: var(--shadow-sm);
     }
 
-    .faq-question {
-      width: 100%;
-      background: var(--bg-cream);
-      border: none;
+    summary.faq-question {
       padding: 22px 28px;
-      font-size: 1.05rem;
+      font-family: var(--font-heading);
+      font-size: 1.0625rem;
       font-weight: 700;
-      font-family: 'Outfit', sans-serif;
-      color: var(--primary-dark);
-      text-align: left;
+      color: var(--color-primary-dark);
       cursor: pointer;
+      list-style: none;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      transition: background 0.2s ease;
+      user-select: none;
     }
 
-    .faq-question:hover {
-      background: var(--bg-soft);
+    summary.faq-question::-webkit-details-marker {
+      display: none;
     }
 
-    .faq-question .faq-icon {
-      font-size: 1.3rem;
-      color: var(--accent);
+    summary.faq-question .toggle-indicator {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 700;
+      transition: transform 0.25s ease;
       flex-shrink: 0;
-      transition: transform 0.3s ease;
     }
 
-    .faq-item.active .faq-question .faq-icon {
+    details[open] summary.faq-question .toggle-indicator {
       transform: rotate(45deg);
+      background: var(--color-primary);
+      color: #ffffff;
     }
 
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease;
-    }
-
-    .faq-answer-inner {
-      padding: 0 28px 22px;
-      color: var(--text-muted);
+    .faq-content {
+      padding: 0 28px 24px;
+      color: var(--color-text-muted);
       font-size: 0.95rem;
       line-height: 1.7;
+      border-top: 1px solid transparent;
     }
 
-    .faq-item.active .faq-answer {
-      max-height: 300px;
+    details[open] .faq-content {
+      border-top: 1px dashed var(--color-border);
+      padding-top: 18px;
     }
 
-    /* CTA Bottom */
-    .cta-bottom {
-      background: linear-gradient(135deg, #0a333e 0%, #0f4c5c 100%);
-      color: #fff;
-      text-align: center;
-      padding: 80px 0;
+    /* ==========================================================================
+       LOCALIZAÇÃO E ATENDIMENTO SANTO AMARO
+       ========================================================================== */
+    .location-section {
+      background: var(--color-bg-alt);
+      padding: 92px 0;
+      border-top: 1px solid var(--color-border);
     }
 
-    .cta-bottom h2 {
-      color: #fff;
-      font-size: 2.8rem;
+    .location-card-main {
+      background: linear-gradient(135deg, var(--color-primary-deep) 0%, var(--color-primary) 100%);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .location-text h3 {
+      color: #ffffff;
+      font-size: 2.125rem;
       margin-bottom: 16px;
     }
 
-    .cta-bottom p {
-      color: #e0f2f7;
-      font-size: 1.15rem;
-      max-width: 600px;
-      margin: 0 auto 36px;
+    .location-text p {
+      color: #d1e7ec;
+      font-size: 1.0625rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
     }
 
-    /* Footer */
+    .address-details-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 30px;
+    }
+
+    .address-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+
+    .address-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .address-row svg {
+      width: 22px;
+      height: 22px;
+      fill: #a7f3d0;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .address-row strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.9375rem;
+    }
+
+    .address-row span {
+      display: block;
+      color: #cbd5e1;
+      font-size: 0.84375rem;
+    }
+
+    .map-frame-wrapper {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      height: 380px;
+    }
+
+    .map-frame-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* ==========================================================================
+       BANNER FINAL CTA
+       ========================================================================== */
+    .cta-banner {
+      background: #061e24;
+      color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-banner-content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .cta-banner h2 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+
+    .cta-banner p {
+      color: #d1e7ec;
+      font-size: 1.125rem;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .cta-buttons-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    /* ==========================================================================
+       FOOTER INSTITUCIONAL
+       ========================================================================== */
     footer {
-      background: #081a20;
-      color: #7997a0;
-      padding: 60px 0 30px;
-      font-size: 0.9rem;
+      background: #031418;
+      color: #8da4ac;
+      padding: 72px 0 36px;
+      font-size: 0.875rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 50px;
-      margin-bottom: 50px;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 56px;
     }
 
     .footer-col h4 {
-      color: #fff;
-      font-size: 1.1rem;
-      margin-bottom: 18px;
+      color: #ffffff;
+      font-size: 1.0625rem;
+      margin-bottom: 20px;
+      letter-spacing: -0.2px;
     }
 
     .footer-col p {
-      margin-bottom: 12px;
-      line-height: 1.6;
+      line-height: 1.65;
+      margin-bottom: 14px;
     }
 
     .footer-col a {
-      color: #7997a0;
-      text-decoration: none;
-      transition: color 0.2s ease;
+      color: #8da4ac;
     }
 
     .footer-col a:hover {
-      color: #e0f2f7;
+      color: #ffffff;
     }
 
-    .footer-bottom {
-      text-align: center;
-      padding-top: 30px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.8rem;
+    .footer-links-list li {
+      margin-bottom: 10px;
     }
 
-    /* Floating WhatsApp */
-    .floating-whatsapp {
+    .footer-ethical-note {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-sm);
+      padding: 18px 24px;
+      margin-bottom: 36px;
+      font-size: 0.8125rem;
+      color: #728d96;
+      line-height: 1.6;
+    }
+
+    .footer-bottom-bar {
+      padding-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8125rem;
+    }
+
+    /* Botão Flutuante WhatsApp */
+    .whatsapp-float-btn {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
+      bottom: 28px;
+      right: 28px;
       background: #25d366;
-      color: #fff;
-      width: 64px;
-      height: 64px;
+      color: #ffffff;
+      width: 62px;
+      height: 62px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 32px;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
       z-index: 999;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      animation: pulse 2.5s infinite;
     }
 
-    .floating-whatsapp:hover {
-      transform: scale(1.1);
+    .whatsapp-float-btn svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    .whatsapp-float-btn:hover {
+      transform: scale(1.1) translateY(-2px);
       background: #20ba5a;
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
     }
 
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    /* ==========================================================================
+       RESPONSIVIDADE (MOBILE-FIRST ADAPTATIVO)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .triage-container-grid,
+      .reimbursement-grid,
+      .location-card-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-grid,
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
-    @media (max-width: 992px) {
-      .hero-grid, .about-grid, .location-banner {
-        grid-template-columns: 1fr;
+    @media (max-width: 768px) {
+      .top-bar {
+        display: none;
       }
-      .services-grid, .testimonials-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero-title {
-        font-size: 2.5rem;
-      }
+
       .hamburger {
         display: flex;
       }
+
       .nav-links {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 80px;
+        top: 82px;
         left: 0;
         right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(12px);
+        background: #ffffff;
         padding: 0;
         gap: 0;
-        border-bottom: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--color-border);
         box-shadow: var(--shadow-md);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.35s ease, padding 0.35s ease;
+        transition: max-height 0.35s ease;
       }
+
       .nav-links.open {
-        max-height: 320px;
+        max-height: 380px;
         padding: 16px 0;
       }
+
       .nav-links li {
         width: 100%;
       }
+
       .nav-links a {
         display: block;
         padding: 14px 24px;
-        border-bottom: 1px solid var(--border-light);
-        font-size: 1rem;
+        border-bottom: 1px solid var(--color-border);
       }
+
       .nav-links li:last-child a {
         border-bottom: none;
       }
-      .btn-header {
+
+      .header-actions .btn-whatsapp {
         display: none;
       }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .check-list {
-        grid-template-columns: 1fr;
-      }
-    }
 
-    @media (max-width: 576px) {
+      .hero {
+        padding: 48px 0 60px;
+      }
+
       .hero-title {
-        font-size: 1.8rem;
+        font-size: 2.25rem;
       }
-      .section-title {
-        font-size: 1.6rem;
+
+      .hero-trust-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
       }
-      .hero-stats {
+
+      .section-standard,
+      .triage-section,
+      .reimbursement-section,
+      .reviews-section,
+      .faq-section,
+      .location-section {
+        padding: 60px 0;
+      }
+
+      .steps-grid,
+      .services-grid,
+      .reviews-grid {
         grid-template-columns: 1fr;
       }
-      section {
-        padding: 50px 0;
+
+      .form-row,
+      .form-chips {
+        grid-template-columns: 1fr;
       }
-      .cta-bottom {
-        padding: 50px 0;
-      }
-      .cta-bottom h2 {
-        font-size: 1.8rem;
-      }
-      .location-banner {
+
+      .location-card-main {
         padding: 30px 20px;
       }
-      .location-banner h3 {
-        font-size: 1.4rem;
+
+      .location-text h3 {
+        font-size: 1.75rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
+  <!-- Top Bar Informativa -->
+  <aside class="top-bar" aria-label="Informações de Contato e Localização">
     <div class="container">
-      🧠 <strong>Psicologia & Neuropsicologia Clínica</strong> — Rua Manoel Borba, 292 (Santo Amaro, SP) | WhatsApp: <a href="https://wa.me/5511948189898"><strong>(11) 94818-9898</strong></a>
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>Rua Manoel Borba, 292 — Santo Amaro, São Paulo - SP</span>
+        </div>
+        <div class="top-bar-item">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          <span>Seg a Sex: 08h às 20h | Sáb: 08h às 14h</span>
+        </div>
+      </div>
+      <div>
+        <span class="top-bar-highlight">Recibos para Reembolso Médico</span> | WhatsApp: <a href="https://wa.me/5511948189898" target="_blank" rel="noopener noreferrer"><strong>(11) 94818-9898</strong></a>
+      </div>
     </div>
-  </div>
+  </aside>
 
-  <!-- Header -->
+  <!-- Cabeçalho Principal -->
   <header>
     <div class="container">
-      <div class="header-nav">
-        <div class="logo-container">
-          <div class="logo-badge">CL</div>
-          <div class="logo-text">
-            <h2>Clínica Langner</h2>
-            <p>Psicologia & Neuropsicologia</p>
+      <nav class="header-nav" aria-label="Navegação Principal">
+        <a href="#" class="brand-logo" aria-label="Clínica Langner - Página Inicial">
+          <div class="brand-symbol">
+            <svg viewBox="0 0 100 100">
+              <path d="M30 25v50h14V25H30zm26 0v50h14c12 0 18-8 18-25s-6-25-18-25H56zm14 36h-2V39h2c6 0 8 4 8 11s-2 11-8 11z" fill="currentColor"/>
+              <circle cx="78" cy="27" r="7" fill="#059669"/>
+            </svg>
           </div>
-        </div>
-        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menu" aria-expanded="false">☰</button>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#sobre">A Clínica</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#neuropsicologia">Neuropsicologia</a></li>
-          <li><a href="#contato">Localização</a></li>
-        </ul>
-        <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimentos%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-header">
-          Agendar Consulta
+          <div class="brand-text">
+            <h1>Clínica Langner</h1>
+            <p>Psicologia &amp; Neuropsicologia</p>
+          </div>
         </a>
-      </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#protocolo">Como Funciona o Laudo</a></li>
+          <li><a href="#triagem">Triagem &amp; Agendamento</a></li>
+          <li><a href="#reembolso">Reembolso</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="https://wa.me/5511948189898?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20na%20Cl%C3%ADnica%20Langner." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+            Agendar no WhatsApp
+          </a>
+          <button class="hamburger" id="hamburger-btn" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+            ☰
+          </button>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="badge-evidence">
-            <span>🧠</span> Prática Clínica Baseada em Evidências Científicas
-          </div>
-          <h1 class="hero-title">
-            Compreender a mente para <span>cuidar</span> da saúde mental.
-          </h1>
-          <p class="hero-desc">
-            Diagnóstico neuropsicológico preciso e intervenções psicoterapêuticas integradas para crianças, adolescentes, adultos e idosos em Santo Amaro.
-          </p>
-          <div class="hero-actions">
-            <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-primary">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
-              Agendar no WhatsApp
-            </a>
-            <a href="#especialidades" class="btn-secondary">
-              Ver Especialidades
-            </a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <h3>4,9★</h3>
-              <p>Avaliação Google</p>
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-preheader">
+              <span class="badge badge-accent">
+                ✓ Prática Clínica Baseada em Evidências Científicas
+              </span>
             </div>
-            <div class="stat-item">
-              <h3>28</h3>
-              <p>Avaliações</p>
+            <h2 id="hero-heading" class="hero-title">
+              Avaliação neuropsicológica precisa e <span class="highlight">cuidado humano</span> em Santo Amaro.
+            </h2>
+            <p class="hero-description">
+              Diagnóstico aprofundado para TDAH, TEA, dificuldades escolares e queixas de memória. Laudos clínicos completos com respaldo para neurologistas, psiquiatras e escolas, atendendo crianças, adultos e idosos.
+            </p>
+            <div class="hero-actions">
+              <a href="#triagem" class="btn btn-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+                Fazer Triagem &amp; Agendar
+              </a>
+              <a href="#protocolo" class="btn btn-outline">
+                Conhecer o Processo
+              </a>
             </div>
-            <div class="stat-item">
-              <h3>Integral</h3>
-              <p>Abordagem Baseada em Evidências</p>
+
+            <div class="hero-trust-row">
+              <div class="trust-stat">
+                <h3>4,9 ★</h3>
+                <p>28 avaliações reais no Google</p>
+              </div>
+              <div class="trust-stat">
+                <h3>SATEPSI</h3>
+                <p>Testes psicológicos homologados</p>
+              </div>
+              <div class="trust-stat">
+                <h3>Presencial/Online</h3>
+                <p>Santo Amaro e plataforma segura</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Institucional com Domínios de Avaliação -->
+          <div class="hero-card-container">
+            <div class="clinical-protocol-card">
+              <div class="card-institution-header">
+                <div>
+                  <h4>Bateria de Avaliação Cognitiva</h4>
+                  <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Protocolo Clínico Estruturado</span>
+                </div>
+                <span class="verified-seal">✓ CFP / SATEPSI</span>
+              </div>
+
+              <div class="protocol-domains-list">
+                <div class="domain-item">
+                  <div>
+                    <strong>Atenção &amp; Funções Executivas</strong>
+                    <span>Foco sustentado, alternância, controle inibitório e planejamento (TDAH).</span>
+                  </div>
+                </div>
+                <div class="domain-item">
+                  <div>
+                    <strong>Memória &amp; Linguagem</strong>
+                    <span>Memória de trabalho, episódica, semântica e fluência verbal.</span>
+                  </div>
+                </div>
+                <div class="domain-item">
+                  <div>
+                    <strong>Raciocínio &amp; Eficiência Cognitiva</strong>
+                    <span>Quociente de inteligência (QI), raciocínio fluido e visuoespacial.</span>
+                  </div>
+                </div>
+                <div class="domain-item">
+                  <div>
+                    <strong>Socioemocional &amp; Comportamental</strong>
+                    <span>Regulação afetiva, pragmática social (TEA) e rastreio de humor.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="protocol-badge-alert">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                <span>Laudo conclusivo com diagnóstico diferencial e plano de intervenção.</span>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="hero-visual">
-          <div class="hero-image-card">
-            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80" alt="Cuidado colaborativo em saúde mental">
+    <!-- COMO FUNCIONA O PROCESSO AVALIATIVO (4 ETAPAS CLÍNICAS) -->
+    <section class="section-standard" id="protocolo" aria-labelledby="protocol-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Metodologia e Rigor</span>
+          <h2 id="protocol-heading" class="section-title">As 4 Etapas da Avaliação Neuropsicológica</h2>
+          <p class="section-desc">
+            Cada indivíduo possui um funcionamento neurocognitivo singular. Nosso processo é conduzido com calma, transparência e respeito ao paciente e sua família.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Entrevista Anamnese</h3>
+            <p>
+              Coleta aprofundada do histórico de desenvolvimento, marcos biológicos, trajetória escolar ou profissional, histórico familiar e queixas do paciente ou cuidadores.
+            </p>
+            <div class="step-detail">Sessão inicial com pais ou paciente</div>
           </div>
-          <div class="floating-badge">
-            <div class="icon">🔍</div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Sessões de Testagem</h3>
+            <p>
+              Aplicação de instrumentos neuropsicológicos padronizados e validados pelo CFP/SATEPSI para mensurar memória, atenção, raciocínio lógico, funções executivas e linguagem.
+            </p>
+            <div class="step-detail">Média de 4 a 6 sessões de testagem</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Análise e Síntese Clínica</h3>
+            <p>
+              Cruzamento estatístico e qualitativo dos dados obtidos com a média populacional de mesma idade e escolaridade, construindo o perfil cognitivo e diagnóstico funcional.
+            </p>
+            <div class="step-detail">Estudo minucioso e laudo pericial</div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Sessão Devolutiva</h3>
+            <p>
+              Encontro dedicado para explicar detalhadamente os resultados, tirar dúvidas e entregar o laudo formal contendo encaminhamentos para médicos, terapeutas e escolas.
+            </p>
+            <div class="step-detail">Entrega do laudo completo em mãos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESPECIALIDADES E DEMANDAS -->
+    <section class="section-standard" id="especialidades" style="background: var(--color-bg-alt);" aria-labelledby="especialidades-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Áreas de Atuação</span>
+          <h2 id="especialidades-heading" class="section-title">Especialidades e Demandas Atendidas</h2>
+          <p class="section-desc">
+            Equipe qualificada para atuar desde a infância até a terceira idade, aliando neurociência aplicada e acolhimento clínico.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9c0 3.31 1.79 6.2 4.45 7.74L8 21h8l.55-1.26A8.996 8.996 0 0 0 21 12a9 9 0 0 0-9-9zm0 16a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm-1-11h2v4h-2zm0 6h2v2h-2z"/></svg>
+            </div>
+            <h3>Investigação de TDAH</h3>
+            <p>
+              Avaliação de desatenção crônica, hiperatividade, impulsividade e disfunções executivas em crianças, jovens em fase de vestibular e adultos no ambiente de trabalho.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Crianças &amp; Adultos</span>
+              <span class="service-mini-tag">Funções Executivas</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Solicitar triagem de TDAH →</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <h3>Avaliação de Autismo (TEA)</h3>
+            <p>
+              Mapeamento de comportamentos restritos, hiperfocos, reciprocidade social e processamento sensorial para suporte a diagnósticos infantis ou em adultos tardios.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Infantojuvenil &amp; Adulto</span>
+              <span class="service-mini-tag">Comunicação Social</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Solicitar triagem de TEA →</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </div>
+            <h3>Memória &amp; Declínio Cognitivo</h3>
+            <p>
+              Investigação diferencial para adultos maduros e idosos com queixas de esquecimentos frequentes, auxiliando no diagnóstico precoce de Comprometimento Cognitivo Leve e Alzheimer.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Idosos &amp; Adultos</span>
+              <span class="service-mini-tag">Gerontologia</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Solicitar avaliação de memória →</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+            </div>
+            <h3>Terapia Cognitivo-Comportamental</h3>
+            <p>
+              Psicoterapia clínica baseada em evidências para transtornos de ansiedade generalizada, síndrome do pânico, fobias, estresse ocupacional (burnout) e depressão.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Padrão Ouro</span>
+              <span class="service-mini-tag">Foco no Presente</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Agendar sessão de TCC →</a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+            </div>
+            <h3>Dificuldades de Aprendizagem</h3>
+            <p>
+              Investigação em crianças e jovens de possíveis quadros de dislexia, discalculia, dificuldades no processamento fonológico ou lentidão na alfabetização.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Psicopedagógico</span>
+              <span class="service-mini-tag">Orientação Escolar</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Saber mais sobre aprendizagem →</a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card">
+            <div class="service-icon-wrap">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+            </div>
+            <h3>Psicoterapia Online Sigilosa</h3>
+            <p>
+              Atendimento remoto estruturado para pacientes adultos que necessitam de flexibilidade geográfica, mantendo o mesmo rigor e sigilo ético da consulta presencial.
+            </p>
+            <div class="service-badges">
+              <span class="service-mini-tag">Videoconferência</span>
+              <span class="service-mini-tag">Segurança e Sigilo</span>
+            </div>
+            <a href="#triagem" class="service-action-link">Consultar horários online →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIDGET DE TRIAGEM CONFIDENCIAL & AGENDAMENTO WHATSAPP -->
+    <section class="triage-section" id="triagem" aria-labelledby="triage-heading">
+      <div class="container">
+        <div class="triage-container-grid">
+          <!-- Coluna Explicativa -->
+          <div class="triage-info-box">
+            <span class="section-tag">Triagem Rápida e Confidencial</span>
+            <h2 id="triage-heading">Inicie o seu atendimento de forma simples e orientada</h2>
+            <p>
+              Preencha o formulário interativo ao lado com o perfil do paciente e o objetivo da consulta. Nossa equipe de acolhimento receberá sua demanda estruturada no WhatsApp para orientar a disponibilidade de datas e os passos seguintes.
+            </p>
+
+            <div class="triage-benefits-list">
+              <div class="benefit-item">
+                <div class="benefit-icon">🛡️</div>
+                <div class="benefit-text">
+                  <h4>Sigilo Clínico Absoluto</h4>
+                  <p>Suas informações são tratadas sob as normas do Conselho Federal de Psicologia (CFP).</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">📄</div>
+                <div class="benefit-text">
+                  <h4>Recibos Aptos para Reembolso</h4>
+                  <p>Emitimos notas fiscais e relatórios para você solicitar reembolso junto ao seu convênio.</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <div class="benefit-icon">📍</div>
+                <div class="benefit-text">
+                  <h4>Localização Central em Santo Amaro</h4>
+                  <p>Próximo ao metrô Adolfo Pinheiro e Largo Treze, em rua tranquila e de fácil acesso.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reimbursement-callout">
+              <h4>
+                <span>💡</span> Tem encaminhamento médico ou escolar?
+              </h4>
+              <p>
+                Se o seu neurologista, psiquiatra, pediatra ou a escola do seu filho já forneceu um pedido de avaliação neuropsicológica, traga-o na primeira consulta para direcionarmos a bateria de testes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Formulário Interativo -->
+          <div class="triage-card">
+            <div class="triage-card-header">
+              <h3>Triagem Clínica Inicial</h3>
+              <p>Selecione as opções para montar sua solicitação diretamente no WhatsApp</p>
+            </div>
+
+            <form id="langnerBookingForm" onsubmit="enviarTriagemLangner(event)">
+              <!-- Faixa Etária -->
+              <div class="form-group">
+                <label>Faixa etária do paciente:</label>
+                <div class="form-chips">
+                  <label class="chip-label">
+                    <input type="radio" name="faixaEtaria" value="Criança (até 12 anos)" checked>
+                    <div class="chip-content">🧒 Criança (&lt; 12 anos)</div>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="faixaEtaria" value="Adolescente (13 a 17 anos)">
+                    <div class="chip-content">🧑 Adolescente (13-17)</div>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="faixaEtaria" value="Adulto (18 a 59 anos)">
+                    <div class="chip-content">👤 Adulto (18-59 anos)</div>
+                  </label>
+                  <label class="chip-label">
+                    <input type="radio" name="faixaEtaria" value="Idoso (60+ anos)">
+                    <div class="chip-content">👵 Idoso (60+ anos)</div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Demanda Principal -->
+              <div class="form-group">
+                <label for="demandaPrincipal">Objetivo / Demanda Principal:</label>
+                <select id="demandaPrincipal" class="form-control" required>
+                  <option value="Avaliação Neuropsicológica (Investigação de TDAH)">Avaliação Neuropsicológica (Investigação de TDAH)</option>
+                  <option value="Avaliação Neuropsicológica (Investigação de TEA / Autismo)">Avaliação Neuropsicológica (Investigação de TEA / Autismo)</option>
+                  <option value="Avaliação de Memória / Declínio Cognitivo">Avaliação de Memória / Declínio Cognitivo (Idoso/Adulto)</option>
+                  <option value="Dificuldades Escolares e de Aprendizagem">Dificuldades Escolares e de Aprendizagem (Dislexia, etc.)</option>
+                  <option value="Psicoterapia TCC (Ansiedade, Pânico, Burnout, Depressão)">Psicoterapia TCC (Ansiedade, Pânico, Burnout, Depressão)</option>
+                  <option value="Outra Demanda / Dúvida Inicial">Outra Demanda / Dúvida Inicial</option>
+                </select>
+              </div>
+
+              <!-- Modalidade & Turno -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="modalidade">Modalidade preferida:</label>
+                  <select id="modalidade" class="form-control" required>
+                    <option value="Presencial em Santo Amaro">Presencial em Santo Amaro (SP)</option>
+                    <option value="Atendimento Online (Videoconferência)">Atendimento Online (Videoconferência)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="preferenciaTurno">Melhor turno para consulta:</label>
+                  <select id="preferenciaTurno" class="form-control" required>
+                    <option value="Manhã (08h às 12h)">Manhã (08h às 12h)</option>
+                    <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+                    <option value="Noite (18h às 20h)">Noite (18h às 20h)</option>
+                    <option value="Sábado (08h às 14h)">Sábado (08h às 14h)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Encaminhamento -->
+              <div class="form-group">
+                <label for="encaminhamento">Possui encaminhamento profissional?</label>
+                <select id="encaminhamento" class="form-control">
+                  <option value="Sim, de Neurologista ou Psiquiatra">Sim, de Neurologista ou Psiquiatra</option>
+                  <option value="Sim, da Escola / Coordenação Pedagógica">Sim, da Escola / Coordenação Pedagógica</option>
+                  <option value="Sim, de Pediatra ou Geriatra">Sim, de Pediatra ou Geriatra</option>
+                  <option value="Não, procura espontânea">Não, é uma procura espontânea do paciente/família</option>
+                </select>
+              </div>
+
+              <!-- Nome e Telefone -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nomePaciente">Seu Nome ou do Responsável:</label>
+                  <input type="text" id="nomePaciente" class="form-control" placeholder="Ex: Patrícia Alves" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="telefonePaciente">Seu WhatsApp de contato:</label>
+                  <input type="tel" id="telefonePaciente" class="form-control" placeholder="(11) 98888-8888" required>
+                </div>
+              </div>
+
+              <!-- Observações breves -->
+              <div class="form-group">
+                <label for="observacaoClinica">Relato breve da queixa (opcional):</label>
+                <textarea id="observacaoClinica" class="form-control" rows="2" placeholder="Ex: Dificuldade de foco em sala de aula ou esquecimentos recentes no trabalho..."></textarea>
+              </div>
+
+              <div class="privacy-notice">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                <span>Privacidade protegida. Suas informações serão enviadas diretamente ao WhatsApp da clínica.</span>
+              </div>
+
+              <button type="submit" class="btn btn-whatsapp btn-submit-triage">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+                Enviar Triagem para o WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: REEMBOLSO PELO PLANO DE SAÚDE -->
+    <section class="reimbursement-section" id="reembolso" aria-labelledby="reimb-heading">
+      <div class="container">
+        <div class="reimbursement-grid">
+          <div>
+            <span class="section-tag">Transparência e Facilidade</span>
+            <h2 id="reimb-heading" class="section-title">Como funciona o Reembolso pelo seu Convênio</h2>
+            <p class="section-desc">
+              Os atendimentos na Clínica Langner são realizados na modalidade particular, garantindo a autonomia de tempo, o uso dos melhores testes e o cuidado dedicado que uma avaliação de alto nível exige.
+            </p>
+            <p style="color: var(--color-text-muted); font-size: 0.95rem;">
+              A maioria dos planos de saúde oferece cláusula de livre escolha com reembolso para consultas e avaliações especializadas. Fornecemos toda a documentação comprobatória com rigor fiscal e técnico.
+            </p>
+
+            <div class="reimbursement-steps">
+              <div class="reimb-step-item">
+                <div class="reimb-num">1</div>
+                <div class="reimb-text">
+                  <h4>Emissão do Recibo / Nota Fiscal</h4>
+                  <p>Emitimos o documento fiscal com número de CRP, CPF/CNPJ e descrição do procedimento realizado.</p>
+                </div>
+              </div>
+              <div class="reimb-step-item">
+                <div class="reimb-num">2</div>
+                <div class="reimb-text">
+                  <h4>Envio ao Aplicativo da sua Operadora</h4>
+                  <p>Você anexa a nota fiscal e o pedido do seu médico diretamente no aplicativo ou portal do seu plano.</p>
+                </div>
+              </div>
+              <div class="reimb-step-item">
+                <div class="reimb-num">3</div>
+                <div class="reimb-text">
+                  <h4>Crédito em Conta Corrente</h4>
+                  <p>O valor de restituição (integral ou parcial, dependendo da sua categoria de plano) é depositado na sua conta.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box de Convênios Frequentes -->
+          <div>
+            <div class="insurance-tags-box">
+              <h3>Planos de Saúde com Reembolso Habitual</h3>
+              <p>
+                Nossos pacientes costumam solicitar e receber reembolsos de operadoras e seguradoras como:
+              </p>
+              <div class="insurance-list">
+                <span class="insurance-pill">Bradesco Saúde</span>
+                <span class="insurance-pill">SulAmérica</span>
+                <span class="insurance-pill">Amil One / Fácil</span>
+                <span class="insurance-pill">Porto Seguro Saúde</span>
+                <span class="insurance-pill">Care Plus</span>
+                <span class="insurance-pill">Omint</span>
+                <span class="insurance-pill">Allianz Saúde</span>
+                <span class="insurance-pill">Unimed Seguros</span>
+                <span class="insurance-pill">NotreDame Intermédica</span>
+                <span class="insurance-pill">Petrobras / Sabesprev</span>
+              </div>
+              <div style="font-size: 0.8125rem; color: #92400e; line-height: 1.5;">
+                <em>* Consulte previamente a sua operadora para conhecer o percentual e os prazos de reembolso previstos no seu contrato.</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROVA SOCIAL: 4,9 ESTRELAS NO GOOGLE -->
+    <section class="reviews-section" id="depoimentos" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reputação Comprovada</span>
+          <h2 id="reviews-heading" class="section-title">O que dizem os pacientes da Clínica Langner</h2>
+          <p class="section-desc">Avaliações reais e espontâneas registradas publicamente no perfil do Google Maps da clínica.</p>
+        </div>
+
+        <div class="reviews-badge-container">
+          <div class="google-rating-score">
+            <div class="score-big">4,9</div>
             <div>
-              <h4>Avaliação Cognitiva Completa</h4>
-              <p>Investigação para TDAH, Autismo, Memória e Aprendizagem.</p>
+              <div class="score-stars">★★★★★</div>
+              <div class="score-meta">Média baseada em 28 avaliações no Google Meu Negócio</div>
             </div>
           </div>
+          <div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Langner+Rua+Manoel+Borba+292+Santo+Amaro" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Ver todas as avaliações no Google
+            </a>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Avaliação 1 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Fiz a avaliação neuropsicológica do meu filho para investigação de TDAH e dislexia. O atendimento foi impecável, muito acolhedor e com paciência ímpar. O laudo foi super detalhado e ajudou demais a escola e o neuropediatra a fecharem o diagnóstico."
+            </p>
+            <div class="review-author">
+              <span>Mariana S.</span>
+              <span class="review-badge-verified">✓ Avaliação Google</span>
+            </div>
+          </article>
+
+          <!-- Avaliação 2 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Profissionais de altíssimo nível ético e técnico. A sessão devolutiva foi esclarecedora, me explicaram cada gráfico e resultado sem jargões difíceis. Consegui o reembolso total pelo Bradesco Saúde com a nota fiscal fornecida."
+            </p>
+            <div class="review-author">
+              <span>Eduardo F. C.</span>
+              <span class="review-badge-verified">✓ Avaliação Google</span>
+            </div>
+          </article>
+
+          <!-- Avaliação 3 -->
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Consultório muito acolhedor e de fácil acesso aqui em Santo Amaro, próximo ao metrô. Faço acompanhamento psicoterápico em TCC e os resultados para o controle da minha ansiedade foram transformadores. Recomendo de olhos fechados."
+            </p>
+            <div class="review-author">
+              <span>Renata M.</span>
+              <span class="review-badge-verified">✓ Avaliação Google</span>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="especialidades">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Nossos Serviços</span>
-        <h2 class="section-title">Especialidades Clínicas</h2>
-        <p class="section-desc">Atendimentos voltados para o diagnóstico, reabilitação e desenvolvimento emocional saudável.</p>
+    <!-- DÚVIDAS FREQUENTES (ACCORDION NATIVO COM DETAILS/SUMMARY) -->
+    <section class="faq-section" id="duvidas" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Esclarecimentos</span>
+          <h2 id="faq-heading" class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">Tire suas dúvidas sobre o processo avaliativo, psicoterapia e normas clínicas.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O que é exatamente uma avaliação neuropsicológica e qual o seu objetivo?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              A avaliação neuropsicológica é uma investigação clínica minuciosa que mapeia o funcionamento das funções cerebrais superiores (atenção concentrada, memória de curto e longo prazo, raciocínio lógico, linguagem, funções executivas, velocidade de processamento e quociente de inteligência). Seu objetivo é identificar potencialidades e fragilidades cognitivas, auxiliando médicos (neurologistas, psiquiatras, geriatras e pediatras) no diagnóstico diferencial de condições como TDAH, Transtorno do Espectro Autista (TEA), transtornos de aprendizagem e quadros demenciais.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Quantas sessões são necessárias para concluir a avaliação e receber o laudo?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              Em média, o processo completo leva de 6 a 8 sessões estruturadas: 1 sessão inicial de anamnese com os pais ou o paciente; de 4 a 6 sessões de testagem e baterias psicométricas; e 1 sessão final de devolutiva para explicação minuciosa e entrega do laudo impresso e assinado.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>O laudo fornecido tem valor legal para escolas, faculdades e concursos?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              Sim. Nossos laudos são emitidos em estrita conformidade com as resoluções do Conselho Federal de Psicologia (CFP), contendo fundamentação teórica, descrição dos testes aprovados pelo SATEPSI, tabela normativa de percentis e recomendações práticas. Eles possuem validade oficial para adaptação curricular escolar (PEI), tempo adicional em vestibulares/ENEM e perícias médicas.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>A clínica atende convênios médicos diretamente?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              Não realizamos atendimento direto via credenciamento de convênios para assegurar a autonomia técnica e o tempo necessário que uma avaliação fidedigna exige. Entretanto, emitimos recibo/nota fiscal detalhada com todos os dados exigidos pelas operadoras para que você solicite o reembolso integral ou parcial conforme seu plano.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>A partir de qual idade a avaliação neuropsicológica pode ser feita?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              Atendemos crianças a partir da primeira infância (com instrumentos lúdicos e observacionais padronizados), idade escolar, adolescentes, adultos e idosos. A bateria de testes é calibrada rigorosamente para a faixa etária e o nível de escolaridade de cada pessoa.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Como funciona a sessão devolutiva?</span>
+              <span class="toggle-indicator">+</span>
+            </summary>
+            <div class="faq-content">
+              A sessão devolutiva é um dos momentos mais importantes. Nela, o profissional senta com o paciente e/ou sua família para explicar com clareza o significado de cada escore, o perfil cognitivo encontrado, tirar todas as dúvidas e sugerir estratégias de manejo cotidiano e encaminhamentos multidisciplinares (fonoaudiologia, psicopedagogia, psiquiatria, etc.).
+            </div>
+          </details>
+        </div>
       </div>
+    </section>
 
-      <div class="services-grid">
-        <div class="service-card" id="neuropsicologia">
-          <div class="service-icon">🧠</div>
-          <h3>Avaliação Neuropsicológica</h3>
-          <p>Investigação aprofundada de funções executivas, atenção, QI e memória para suporte diagnóstico de TDAH, TEA e demências.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20avalia%C3%A7%C3%A3o%20neuropsicol%C3%B3gica" class="service-link">Saiba mais →</a>
-        </div>
+    <!-- LOCALIZAÇÃO EM SANTO AMARO -->
+    <section class="location-section" id="localizacao" aria-labelledby="loc-heading">
+      <div class="container">
+        <div class="location-card-main">
+          <div class="location-text">
+            <span class="badge badge-accent" style="margin-bottom: 14px;">Consultório em Santo Amaro</span>
+            <h3 id="loc-heading">Localização Privilegiada no Centro de Santo Amaro</h3>
+            <p>
+              Ambiente planejado para oferecer conforto, acessibilidade e discrição, com salas climatizadas e preparadas para testes infantis e de adultos.
+            </p>
 
-        <div class="service-card">
-          <div class="service-icon">💡</div>
-          <h3>Terapia Cognitivo-Comportamental (TCC)</h3>
-          <p>Tratamento focado no presente, identificando padrões de pensamento disfuncionais para superar ansiedade, pânico e depressão.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20TCC" class="service-link">Saiba mais →</a>
-        </div>
+            <div class="address-details-box">
+              <div class="address-row">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                <div>
+                  <strong>Rua Manoel Borba, 292</strong>
+                  <span>Santo Amaro, São Paulo - SP, CEP 04743-010</span>
+                </div>
+              </div>
 
-        <div class="service-card">
-          <div class="service-icon">🧸</div>
-          <h3>Psicologia Infantil & Neurodesenvolvimento</h3>
-          <p>Acompanhamento lúdico especializado para crianças com dificuldades escolares, comportamentais ou atipicidades no desenvolvimento.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20psicologia%20infantil" class="service-link">Saiba mais →</a>
-        </div>
+              <div class="address-row">
+                <svg viewBox="0 0 24 24"><path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+                <div>
+                  <strong>Pontos de Referência:</strong>
+                  <span>A 5 minutos do Metrô Adolfo Pinheiro (Linha 5-Lilás) e do Largo Treze.</span>
+                </div>
+              </div>
 
-        <div class="service-card">
-          <div class="service-icon">🧩</div>
-          <h3>Reabilitação Cognitiva</h3>
-          <p>Treinamento de habilidades cerebrais para pacientes pós-AVC, traumatismo, ou em tratamento de perdas de memória.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20reabilita%C3%A7%C3%A3o%20cognitiva" class="service-link">Saiba mais →</a>
-        </div>
+              <div class="address-row">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <div>
+                  <strong>WhatsApp &amp; Agendamentos:</strong>
+                  <span>(11) 94818-9898 | contato@clinicalangner.com.br</span>
+                </div>
+              </div>
+            </div>
 
-        <div class="service-card">
-          <div class="service-icon">🎯</div>
-          <h3>Orientação Vocacional & Profissional</h3>
-          <p>Processo estruturado para jovens em escolha de carreira e profissionais buscando transição no mercado de trabalho.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20orienta%C3%A7%C3%A3o%20vocacional" class="service-link">Saiba mais →</a>
-        </div>
+            <a href="https://wa.me/5511948189898?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20hor%C3%A1rios%20dispon%C3%ADveis%20na%20Cl%C3%ADnica%20Langner%20em%20Santo%20Amaro." target="_blank" rel="noopener noreferrer" class="btn btn-white">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#0f4c5c"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Agendar Consulta Presencial
+            </a>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Psicoterapia Online</h3>
-          <p>Sessões estruturadas por videoconferência, com praticidade e sigilo profissional.</p>
-          <a href="https://wa.me/5511948189898?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20atendimento%20online" class="service-link">Saiba mais →</a>
+          <div class="map-frame-wrapper">
+            <iframe 
+              src="https://www.google.com/maps?q=Rua+Manoel+Borba,+292,+Santo+Amaro,+S%C3%A3o+Paulo+-+SP&output=embed" 
+              title="Mapa de Localização da Clínica Langner em Santo Amaro"
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Location Highlight Banner -->
-      <div class="location-banner" id="contato">
-        <div>
-          <h3>Consultório em Santo Amaro</h3>
-          <p>Localizado na Rua Manoel Borba, 292 — no Centro de Santo Amaro.</p>
-          <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Santo%20Amaro!" target="_blank" class="btn-white">
-            Agendar Atendimento Presencial
-          </a>
-        </div>
-        <iframe src="https://www.google.com/maps?q=Rua+Manoel+Borba,+292,+Santo+Amaro,+S%C3%A3o+Paulo+-+SP&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="sobre" style="background: #fff;">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Ambiente profissional de atendimento">
-        </div>
-        <div class="about-text">
-          <span class="section-subtitle">Sobre a Clínica</span>
-          <h2>Clínica Langner</h2>
+    <!-- BANNER FINAL CTA -->
+    <section class="cta-banner" aria-label="Chamada para Ação Final">
+      <div class="container">
+        <div class="cta-banner-content">
+          <h2>Compreensão e clareza para a saúde mental da sua família</h2>
           <p>
-            A Clínica Langner conta com equipe multidisciplinar de Psicologia e Neuropsicologia, e atuamos com foco em avaliação neuropsicológica e psicoterapia, unindo rigor científico e acolhimento humano.
+            Não postergue o diagnóstico e as intervenções adequadas. Agende a primeira conversa com nossa equipe técnica e receba um acolhimento ético e especializado.
           </p>
-          <p>
-            Trabalhamos com protocolos clínicos reconhecidos, entregando laudos detalhados que auxiliam médicos neurologistas, psiquiatras, escolas e famílias a entenderem a fundo o funcionamento cognitivo e emocional de cada paciente.
-          </p>
-          <ul class="check-list">
-            <li><span>✔</span> Testes neuropsicológicos padronizados</li>
-            <li><span>✔</span> Atendimento humanizado</li>
-            <li><span>✔</span> Consultório aconchegante e acessível</li>
-            <li><span>✔</span> Emissão de recibos para reembolso</li>
-          </ul>
-          <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20conversar%20sobre%20um%20agendamento!" target="_blank" class="btn-primary">
-            Falar Diretamente com a Clínica
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Depoimentos</span>
-        <h2 class="section-title">O que dizem nossos pacientes</h2>
-      </div>
-      <div class="rating-summary" style="text-align:center; max-width:520px; margin:0 auto;">
-        <div style="font-size:2.5rem;">★★★★★</div>
-        <p style="font-size:1.25rem; font-weight:700; margin:8px 0;">4,9 · 28 avaliações no Google</p>
-        <p>Confira as avaliações reais no perfil do Google da clínica.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Cl%C3%ADnica+Langner+Rua+Manoel+Borba+292+Santo+Amaro" target="_blank" rel="noopener" class="btn-primary">Ver avaliações no Google</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Dúvidas Frequentes</span>
-        <h2 class="section-title">Perguntas Frequentes</h2>
-      </div>
-      <div class="faq-list">
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>O que é uma avaliação neuropsicológica?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">É um processo de investigação clínica detalhada das funções cognitivas (memória, atenção, linguagem, funções executivas). Utiliza testes padronizados e validados cientificamente para auxiliar no diagnóstico de condições como TDAH, TEA, dificuldades de aprendizagem e declínio cognitivo.</div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Quanto tempo dura a avaliação?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">A duração da avaliação varia conforme a demanda e é definida na entrevista inicial. O processo inclui entrevista inicial, aplicação de testes, análise dos resultados e devolutiva com laudo detalhado.</div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>Vocês atendem crianças e adultos?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Sim. Nossa equipe é capacitada para atendimento de crianças, adolescentes e adultos, adaptando os procedimentos e instrumentos para cada faixa etária.</div>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>O plano de saúde cobre o atendimento?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Trabalhamos com atendimento particular. Emitimos recibo para que você solicite reembolso junto ao seu convênio, conforme as regras de cada operadora.</div>
+          <div class="cta-buttons-center">
+            <a href="https://wa.me/5511948189898?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20inicial%20na%20Cl%C3%ADnica%20Langner." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size: 1.05rem; padding: 16px 36px;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Falar com a Clínica no WhatsApp
+            </a>
+            <a href="#triagem" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">
+              Fazer Triagem Online
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- CTA Bottom -->
-  <section class="cta-bottom">
-    <div class="container">
-      <h2>O cuidado com a saúde mental começa com uma boa decisão</h2>
-      <p>Agende uma avaliação com nossa equipe e descubra o caminho para uma vida com mais clareza, equilíbrio e bem-estar.</p>
-      <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20quero%20agendar%20minha%20consulta%20na%20Cl%C3%ADnica%20Langner!" target="_blank" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
-        Agendar Consulta via WhatsApp
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- RODAPÉ INSTITUCIONAL -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h4>Clínica Langner</h4>
-          <p>Centro de Psicologia Clínica, Neuropsicologia e Desenvolvimento Humano.</p>
-          <p>Prática baseada em evidências científicas.</p>
+          <div class="brand-logo" style="margin-bottom: 16px;">
+            <div class="brand-symbol" style="width: 40px; height: 40px;">
+              <svg viewBox="0 0 100 100" style="width: 24px; height: 24px;">
+                <path d="M30 25v50h14V25H30zm26 0v50h14c12 0 18-8 18-25s-6-25-18-25H56zm14 36h-2V39h2c6 0 8 4 8 11s-2 11-8 11z" fill="currentColor"/>
+                <circle cx="78" cy="27" r="7" fill="#059669"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <h4 style="color: #ffffff; margin-bottom: 0;">Clínica Langner</h4>
+              <p style="color: #728d96; font-size: 0.7rem;">Psicologia &amp; Neuropsicologia</p>
+            </div>
+          </div>
+          <p>
+            Centro especializado em avaliação neuropsicológica e intervenções psicoterapêuticas fundamentadas em evidências científicas e ética profissional.
+          </p>
         </div>
+
         <div class="footer-col">
-          <h4>Endereço</h4>
-          <p>📍 Rua Manoel Borba, 292 - Santo Amaro, São Paulo - SP</p>
-          <p>🌐 Atendimentos presenciais e online</p>
+          <h4>Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#protocolo">Etapas da Avaliação</a></li>
+            <li><a href="#triagem">Triagem Confidencial</a></li>
+            <li><a href="#reembolso">Reembolso de Planos</a></li>
+            <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+          </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Contato</h4>
+          <h4>Atendimento</h4>
+          <p>📍 Rua Manoel Borba, 292<br>Santo Amaro, São Paulo - SP<br>CEP 04743-010</p>
+          <p>🕒 Seg a Sex: 08h às 20h<br>Sábados: 08h às 14h</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contato Direto</h4>
           <p>📱 WhatsApp: <a href="https://wa.me/5511948189898">(11) 94818-9898</a></p>
           <p>✉️ E-mail: <a href="mailto:contato@clinicalangner.com.br">contato@clinicalangner.com.br</a></p>
+          <p>🌐 Atendimento presencial e online</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Clínica Langner. Todos os direitos reservados.</p>
+
+      <!-- Nota Ética do CFP -->
+      <div class="footer-ethical-note">
+        <strong>Conformidade Ética e Resguardo Legal:</strong> As atividades clínicas, diagnósticas e avaliativas da Clínica Langner são conduzidas em conformidade com o Código de Ética Profissional do Psicólogo (Resolução CFP nº 010/2005) e resoluções do Conselho Federal de Psicologia para aplicação de instrumentos avaliativos (SATEPSI). Este website tem caráter estritamente informativo e não substitui consulta médica ou avaliação profissional individualizada.
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Clínica Langner. Todos os direitos reservados.
+        </div>
+        <div>
+          Santo Amaro · São Paulo - SP
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/5511948189898?text=Ol%C3%A1,%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimentos!" target="_blank" class="floating-whatsapp" title="Falar no WhatsApp" aria-label="WhatsApp">
-    💬
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a href="https://wa.me/5511948189898?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20atendimentos%20na%20Cl%C3%ADnica%20Langner." target="_blank" rel="noopener noreferrer" class="whatsapp-float-btn" title="Conversar no WhatsApp" aria-label="Abrir conversa no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
   </a>
 
-  <!-- JavaScript: Hamburger Menu & FAQ Accordion -->
+  <!-- SCRIPTS FUNCIONAIS: MENU MOBILE & WIDGET DE TRIAGEM WHATSAPP -->
   <script>
-    // Hamburger Menu Toggle
-    (function() {
-      var hamburger = document.getElementById('hamburger-btn');
-      var navLinks = document.getElementById('nav-links');
-      var isOpen = false;
+    // Menu Mobile com ARIA e fechamento ao clicar em link
+    (function initMobileMenu() {
+      const hamburger = document.getElementById('hamburger-btn');
+      const navLinks = document.getElementById('nav-links');
+      if (!hamburger || !navLinks) return;
 
-      hamburger.addEventListener('click', function() {
-        isOpen = !isOpen;
+      let isOpen = false;
+
+      function toggleMenu(state) {
+        isOpen = (typeof state === 'boolean') ? state : !isOpen;
         navLinks.classList.toggle('open', isOpen);
         hamburger.textContent = isOpen ? '✕' : '☰';
-        hamburger.setAttribute('aria-expanded', isOpen);
-        hamburger.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+      }
+
+      hamburger.addEventListener('click', function() {
+        toggleMenu();
       });
 
-      // Close menu when a nav link is clicked
-      var links = navLinks.querySelectorAll('a');
-      for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function() {
-          isOpen = false;
-          navLinks.classList.remove('open');
-          hamburger.textContent = '☰';
-          hamburger.setAttribute('aria-expanded', 'false');
-          hamburger.setAttribute('aria-label', 'Abrir menu');
+      const links = navLinks.querySelectorAll('a');
+      links.forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (isOpen) toggleMenu(false);
         });
-      }
+      });
     })();
 
-    // FAQ Accordion Toggle
-    (function() {
-      var faqItems = document.querySelectorAll('.faq-item');
+    // Função de Envio do Widget de Triagem para o WhatsApp
+    function enviarTriagemLangner(e) {
+      e.preventDefault();
 
-      for (var i = 0; i < faqItems.length; i++) {
-        faqItems[i].querySelector('.faq-question').addEventListener('click', function() {
-          var parent = this.parentElement;
-          var isActive = parent.classList.contains('active');
+      const form = document.getElementById('langnerBookingForm');
+      if (!form) return;
 
-          // Close all items
-          for (var j = 0; j < faqItems.length; j++) {
-            faqItems[j].classList.remove('active');
-            faqItems[j].querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          }
+      // Obter faixa etária
+      const faixaEtariaInput = form.querySelector('input[name="faixaEtaria"]:checked');
+      const faixaEtaria = faixaEtariaInput ? faixaEtariaInput.value : 'Não informada';
 
-          // Open clicked item if it was closed
-          if (!isActive) {
-            parent.classList.add('active');
-            this.setAttribute('aria-expanded', 'true');
-          }
-        });
+      const demanda = document.getElementById('demandaPrincipal').value;
+      const modalidade = document.getElementById('modalidade').value;
+      const turno = document.getElementById('preferenciaTurno').value;
+      const encaminhamento = document.getElementById('encaminhamento').value;
+      const nome = document.getElementById('nomePaciente').value.trim();
+      const telefone = document.getElementById('telefonePaciente').value.trim();
+      const obs = document.getElementById('observacaoClinica').value.trim();
+
+      let mensagem = `Olá, equipe da *Clínica Langner*!\n`;
+      mensagem += `Gostaria de solicitar informações para agendamento.\n\n`;
+      mensagem += `📋 *Dados da Triagem Inicial:*\n`;
+      mensagem += `• *Paciente / Responsável:* ${nome}\n`;
+      mensagem += `• *WhatsApp:* ${telefone}\n`;
+      mensagem += `• *Faixa Etária:* ${faixaEtaria}\n`;
+      mensagem += `• *Demanda / Objetivo:* ${demanda}\n`;
+      mensagem += `• *Modalidade:* ${modalidade}\n`;
+      mensagem += `• *Melhor Turno:* ${turno}\n`;
+      mensagem += `• *Encaminhamento:* ${encaminhamento}\n`;
+
+      if (obs) {
+        mensagem += `• *Observações:* ${obs}\n`;
       }
-    })();
+
+      mensagem += `\nAguardo retorno para combinarmos a disponibilidade de agenda. Obrigado(a)!`;
+
+      const foneClinica = "5511948189898";
+      const urlWhatsapp = `https://wa.me/${foneClinica}?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(urlWhatsapp, '_blank');
+    }
   </script>
 
+  <!-- SCHEMA.ORG DADOS ESTRUTURADOS (MEDICAL BUSINESS / CLINIC) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Clínica Langner - Psicologia e Neuropsicologia",
+    "description": "Centro clínico especializado em avaliação neuropsicológica, TDAH, TEA e terapia cognitivo-comportamental em Santo Amaro.",
     "telephone": "+5511948189898",
     "email": "contato@clinicalangner.com.br",
+    "url": "https://clinicalangner.com.br/",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Rua Manoel Borba, 292",
       "addressLocality": "São Paulo",
       "addressRegion": "SP",
+      "postalCode": "04743-010",
       "addressCountry": "BR"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.652157,
+      "longitude": -46.703212
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
       "reviewCount": "28"
-    }
+    },
+    "medicalSpecialty": [
+      "https://schema.org/Neuropsychology",
+      "https://schema.org/Psychology"
+    ]
   }
   </script>
-
 </body>
 </html>

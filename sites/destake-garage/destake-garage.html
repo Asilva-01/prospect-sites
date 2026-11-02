@@ -1,495 +1,1447 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Destake Garage | Oficina mecânica no Jabaquara — orçamento por escrito</title>
-<meta name="description" content="Oficina mecânica no Jabaquara, São Paulo. Troca de óleo, amortecedores e diagnóstico com orçamento claro por escrito antes de qualquer serviço. Mecânicos qualificados e peças de qualidade.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#F5F6F7; --card:#FFFFFF; --dark:#12161A; --dark-2:#1B2127;
-  --ink:#0F1317; --muted:#69707A; --line:rgba(15,19,23,.13); --line-dark:rgba(255,255,255,.14);
-  --accent:#E08A00; --accent-soft:rgba(224,138,0,.12);
-  --wa:#25D366; --ease:cubic-bezier(.16,1,.3,1);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:#fff}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destake Garage | Oficina Mecânica no Jabaquara — Diagnóstico &amp; Orçamento Claro</title>
+  <meta name="description" content="Oficina mecânica de confiança na Av. Eng. George Corbisier, Jabaquara - SP. Diagnóstico computadorizado, suspensão, freios, troca de óleo e motor. Orçamento por escrito aprovado antes do início do serviço.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --garage-dark: #111827;         /* Preto automotivo / mecânica */
+      --garage-surface: #1F2937;
+      --garage-surface-card: #283548;
+      --garage-amber: #F59E0B;        /* Âmbar / amarelo de precisão técnica */
+      --garage-amber-hover: #D97706;
+      --garage-amber-light: #FEF3C7;
+      --text-main: #1F2937;
+      --text-muted: #64748B;
+      --bg-page: #F8FAFC;
+      --bg-white: #FFFFFF;
+      --border-light: #E2E8F0;
+      --border-dark: #374151;
+      --wa-green: #25D366;
+      --wa-hover: #1EBE5D;
+      --shadow-sm: 0 1px 3px rgba(17, 24, 39, 0.08);
+      --shadow-md: 0 6px 18px rgba(17, 24, 39, 0.08);
+      --shadow-lg: 0 16px 36px rgba(17, 24, 39, 0.16);
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --transition: 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-h1,h2,h3,h4{font-family:'Manrope',system-ui,sans-serif;font-weight:800;letter-spacing:-.028em;line-height:1.08}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:700;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--accent)}
-.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);flex:none}
-.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 clamp(22px,5vw,60px)}
-section{position:relative}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:200}
+    html {
+      scroll-behavior: smooth;
+    }
 
-/* header */
-header{position:fixed;top:0;left:0;right:0;z-index:150;transition:.45s var(--ease);border-bottom:1px solid transparent;
-  background:rgba(245,246,247,.88);backdrop-filter:blur(14px)}
-header.solid{background:rgba(245,246,247,.96);border-bottom-color:var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
-.brand{display:flex;align-items:center;gap:11px;font-family:'Manrope';font-weight:800;font-size:18px;letter-spacing:-.02em}
-.brand i{width:10px;height:10px;background:var(--accent);border-radius:2px;flex:none;display:block}
-.nav-links{display:flex;gap:28px}
-.nav-links a{font-size:13.5px;font-weight:500;color:var(--muted);transition:color .3s}
-.nav-links a:hover{color:var(--ink)}
-.nav-cta{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:#fff;font-size:13px;font-weight:600;
-  padding:12px 20px;border-radius:8px;transition:.35s var(--ease)}
-.nav-cta:hover{background:var(--accent);transform:translateY(-2px)}
-@media(max-width:940px){.nav-links{display:none}}
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
 
-/* botoes */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;font-size:14.5px;font-weight:600;
-  padding:16px 26px;border-radius:9px;transition:.35s var(--ease);font-family:'Inter'}
-.btn-wa{background:var(--wa);color:#06180D}
-.btn-wa svg{width:19px;height:19px;fill:currentColor}
-.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.28)}
-.btn-line{border:1px solid var(--line);color:var(--ink);background:var(--card)}
-.btn-line:hover{border-color:var(--ink);transform:translateY(-2px)}
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--garage-dark);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
 
-/* HERO dividido */
-.hero{display:grid;grid-template-columns:1.03fr .97fr;min-height:100svh}
-.hero-copy{display:flex;align-items:center;padding:clamp(104px,13vh,150px) clamp(22px,4.6vw,64px) clamp(48px,8vh,80px);
-  padding-left:max(clamp(22px,4.6vw,60px),calc((100vw - 1240px)/2 + clamp(22px,5vw,60px)))}
-.hero-copy-in{max-width:600px}
-.hero h1{font-size:clamp(2.15rem,4.1vw,3.9rem);margin:20px 0 0}
-.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
-.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.16em;background:var(--accent-soft);z-index:-1}
-.hero-lead{font-size:clamp(15.5px,1.5vw,17.5px);color:var(--muted);margin-top:22px;max-width:47ch}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
-.trust{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:20px 24px;margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
-.trust div{display:flex;flex-direction:column;gap:3px}
-.trust b{font-family:'Manrope';font-size:14.5px;font-weight:800}
-.trust span{font-size:12.5px;color:var(--muted)}
-.hero-shot{position:relative;overflow:hidden;min-height:52vh}
-.hero-shot img{position:absolute;inset:-6% 0;width:100%;height:112%;object-fit:cover;filter:contrast(1.05) saturate(1.02)}
-.hero-shot::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,var(--bg) 0%,rgba(245,246,247,.35) 22%,transparent 52%)}
-.shot-tag{position:absolute;left:22px;bottom:22px;z-index:3;background:rgba(18,22,26,.72);backdrop-filter:blur(8px);
-  color:#fff;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;padding:8px 14px;border-radius:6px}
-@media(max-width:940px){
-  .hero{grid-template-columns:1fr;min-height:0}
-  .hero-copy{order:2;padding:clamp(40px,7vh,64px) clamp(22px,5vw,40px) clamp(44px,7vh,64px)}
-  .hero-shot{order:1;min-height:58svh;margin-top:76px}
-  .hero-shot::after{background:linear-gradient(to bottom,rgba(245,246,247,.5) 0%,transparent 30%)}
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-/* cabecalho de secao */
-.sec{padding:clamp(5rem,12vh,9rem) 0}
-.sec-head{max-width:640px;margin-bottom:clamp(38px,6vh,60px)}
-.sec-head h2{font-size:clamp(1.8rem,3.5vw,2.9rem);margin-top:16px}
-.sec-head p{color:var(--muted);margin-top:14px;font-size:16px}
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-/* SERVICOS — linhas alternadas, sem cards com icone */
-.svc-row{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(26px,4.5vw,64px);align-items:center;
-  padding:clamp(32px,5vh,52px) 0;border-top:1px solid var(--line)}
-.svc-row:last-child{border-bottom:1px solid var(--line)}
-.svc-row:nth-child(even) .svc-txt{order:2}
-.svc-num{font-family:'Manrope';font-weight:800;font-size:13px;color:var(--accent);letter-spacing:.08em}
-.svc-txt h3{font-size:clamp(1.4rem,2.7vw,2.1rem);margin:12px 0 14px}
-.svc-txt p{color:var(--muted);font-size:15.5px;max-width:44ch}
-.svc-txt a{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:14px;font-weight:600;color:var(--ink);
-  border-bottom:1.5px solid var(--accent);padding-bottom:3px;transition:gap .3s var(--ease)}
-.svc-txt a:hover{gap:14px}
-.svc-shot{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:14px;background:#E7E9EB}
-.svc-shot img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;filter:contrast(1.04) saturate(1.02)}
-@media(max-width:880px){
-  .svc-row{grid-template-columns:1fr;gap:22px}
-  .svc-row:nth-child(even) .svc-txt{order:0}
-  .svc-shot{aspect-ratio:16/11}
-}
+    .container {
+      width: 100%;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-/* BREAK escuro full-bleed */
-.break{background:var(--dark);color:#fff;overflow:hidden}
-.break-in{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(28px,5vw,70px);
-  padding:clamp(4.5rem,10vh,7.5rem) 0}
-.break h2{font-size:clamp(1.7rem,3.4vw,2.8rem);color:#fff}
-.break h2 em{font-style:normal;color:var(--accent)}
-.break p{color:#A8B0B8;margin-top:18px;font-size:16px;max-width:42ch}
-.break-shot{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:14px}
-.break-shot img{position:absolute;inset:-9% 0;width:100%;height:118%;object-fit:cover;filter:contrast(1.06) brightness(.92)}
-@media(max-width:880px){.break-in{grid-template-columns:1fr}}
+    /* TOP BAR DA OFICINA */
+    .topbar {
+      background-color: var(--garage-dark);
+      color: #E5E7EB;
+      font-size: 13px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border-dark);
+    }
 
-/* ORCAMENTO ABERTO — trilho horizontal do usuario, sem pin */
-.flow{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.flow-top{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
-.flow-nav{display:flex;gap:9px}
-.flow-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);
-  font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.3s var(--ease)}
-.flow-nav button:hover:not(:disabled){background:var(--ink);color:#fff;border-color:var(--ink)}
-.flow-nav button:disabled{opacity:.32;cursor:default}
-.rail-holder{position:relative}
-.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;
-  -webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:18px;cursor:grab}
-.rail.drag{cursor:grabbing;scroll-snap-type:none}
-.rail::-webkit-scrollbar{height:5px}
-.rail::-webkit-scrollbar-thumb{background:rgba(15,19,23,.22);border-radius:4px}
-.rail::-webkit-scrollbar-track{background:rgba(15,19,23,.06);border-radius:4px}
-.card{flex:0 0 clamp(250px,25vw,310px);scroll-snap-align:start;background:var(--bg);border:1px solid var(--line);
-  border-radius:14px;padding:26px 24px 28px;user-select:none;transition:.35s var(--ease)}
-.card:hover{border-color:var(--accent);transform:translateY(-4px);box-shadow:0 16px 34px rgba(15,19,23,.08)}
-.card .k{font-family:'Manrope';font-weight:800;font-size:34px;color:var(--accent);line-height:1;margin-bottom:16px}
-.card h4{font-size:17px;margin-bottom:10px}
-.card p{font-size:14px;color:var(--muted)}
-.rail-hint{font-size:12.5px;color:var(--muted);margin-top:6px;display:flex;align-items:center;gap:8px}
-@media(max-width:700px){.flow-nav{display:none}}
+    .topbar-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
 
-/* VALORES */
-.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--line);
-  border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.val{background:var(--bg);padding:28px 24px}
-.val b{font-family:'Manrope';font-size:16px;display:block;margin-bottom:8px}
-.val span{font-size:14px;color:var(--muted)}
-.mv{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
-.mv div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px 26px}
-.mv dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
-.mv dd{font-size:16px;font-family:'Manrope';font-weight:700;line-height:1.35;letter-spacing:-.02em}
-@media(max-width:760px){.mv{grid-template-columns:1fr}}
+    .topbar-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+    }
 
-/* FAQ */
-.faq{max-width:820px}
-.faq-item{border-bottom:1px solid var(--line)}
-.faq-q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:24px 44px 24px 0;position:relative;
-  font-family:'Manrope';font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.015em}
-.faq-q::after{content:"+";position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--accent);
-  font-weight:400;transition:transform .35s var(--ease)}
-.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
-.faq-a p{padding:0 0 24px;color:var(--muted);font-size:15.5px;max-width:64ch}
+    .badge-amber {
+      background-color: var(--garage-amber);
+      color: #000000;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
 
-/* CONTATO */
-.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,60px);align-items:stretch}
-.dl{border-top:1px solid var(--line);margin:26px 0 30px}
-.dl div{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
-.dl dt{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);font-weight:700;padding-top:3px}
-.map{min-height:400px;border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
-.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-@media(max-width:880px){.contato-grid{grid-template-columns:1fr}.map{min-height:290px}}
+    .topbar-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-/* footer */
-footer{background:var(--dark);color:#fff;padding:56px 0 34px;margin-top:clamp(3rem,8vh,6rem)}
-.foot-top{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-bottom:30px;border-bottom:1px solid var(--line-dark)}
-.foot-brand{font-family:'Manrope';font-weight:800;font-size:22px;letter-spacing:-.02em}
-.foot-meta{font-size:13.5px;color:#A8B0B8;display:flex;flex-direction:column;gap:6px;text-align:right}
-.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11.5px;color:#767E86;padding-top:20px}
-@media(max-width:700px){.foot-meta{text-align:left}}
+    .topbar-info a {
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
 
-.wa-float{position:fixed;right:20px;bottom:20px;z-index:180;width:56px;height:56px;border-radius:50%;background:var(--wa);
-  color:#06180D;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.32);transition:.35s var(--ease)}
-.wa-float svg{width:27px;height:27px;fill:currentColor}
-.wa-float:hover{transform:scale(1.08)}
+    .topbar-info a:hover {
+      color: var(--garage-amber);
+    }
 
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  [data-reveal]{opacity:1!important;transform:none!important}
-}
-</style>
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--garage-dark);
+      color: var(--garage-amber);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 4px 10px rgba(17, 24, 39, 0.2);
+    }
+
+    .brand-title h1 {
+      font-size: 21px;
+      color: var(--garage-dark);
+      line-height: 1;
+    }
+
+    .brand-title span {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--garage-amber-hover);
+    }
+
+    .btn-header-wa {
+      background-color: var(--wa-green);
+      color: #042D15;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+      box-shadow: 0 3px 10px rgba(37, 211, 102, 0.2);
+    }
+
+    .btn-header-wa:hover {
+      background-color: var(--wa-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .btn-header-wa svg {
+      width: 17px;
+      height: 17px;
+      fill: currentColor;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+      padding: 60px 0 80px;
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #92400E;
+      background: var(--garage-amber-light);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: clamp(34px, 4.4vw, 54px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 span {
+      color: var(--garage-amber-hover);
+      text-decoration: underline;
+      text-decoration-color: var(--garage-amber);
+      text-underline-offset: 6px;
+    }
+
+    .hero-lead {
+      font-size: 17.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 34px;
+      max-width: 580px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .btn-primary-wa {
+      background-color: var(--wa-green);
+      color: #042D15;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 16px 28px;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all var(--transition);
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-primary-wa:hover {
+      background-color: var(--wa-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-primary-wa svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .btn-secondary {
+      background-color: #FFFFFF;
+      color: var(--garage-dark);
+      font-size: 14.5px;
+      font-weight: 600;
+      padding: 15px 24px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-light);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .btn-secondary:hover {
+      background-color: #F8FAFC;
+      border-color: var(--garage-dark);
+    }
+
+    .hero-badges-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .hero-badge-item b {
+      font-size: 17px;
+      color: var(--garage-dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: block;
+    }
+
+    .hero-badge-item span {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      display: block;
+      margin-top: 2px;
+    }
+
+    /* CARD FOTO DA OFICINA NO HERO */
+    .hero-card-holder {
+      position: relative;
+    }
+
+    .hero-photo-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 12px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .hero-photo-img {
+      border-radius: var(--radius-md);
+      width: 100%;
+      height: 390px;
+      object-fit: cover;
+    }
+
+    .hero-float-card {
+      position: absolute;
+      bottom: -24px;
+      left: 20px;
+      right: 20px;
+      background: var(--garage-dark);
+      color: #FFFFFF;
+      padding: 18px 22px;
+      border-radius: var(--radius-md);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-float-card .card-kicker {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--garage-amber);
+    }
+
+    .hero-float-card p {
+      font-size: 14px;
+      font-weight: 600;
+      color: #F9FAFB;
+      margin-top: 2px;
+    }
+
+    .hero-float-card a {
+      background-color: var(--garage-amber);
+      color: #000000;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      white-space: nowrap;
+      transition: background var(--transition);
+    }
+
+    .hero-float-card a:hover {
+      background-color: var(--garage-amber-hover);
+      color: #FFFFFF;
+    }
+
+    /* WIDGET INTERATIVO: PRÉ-DIAGNÓSTICO WHATSAPP */
+    .section-widget {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--garage-dark) 0%, var(--garage-surface) 100%);
+      color: #FFFFFF;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .widget-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .widget-info h3 {
+      color: #FFFFFF;
+      font-size: clamp(28px, 3.4vw, 42px);
+      line-height: 1.18;
+      margin-bottom: 18px;
+    }
+
+    .widget-info h3 span {
+      color: var(--garage-amber);
+    }
+
+    .widget-info p {
+      font-size: 16.5px;
+      color: #D1D5DB;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .widget-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .widget-points li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14.5px;
+      color: #E5E7EB;
+    }
+
+    .widget-points li svg {
+      width: 18px;
+      height: 18px;
+      color: var(--garage-amber);
+      flex-shrink: 0;
+    }
+
+    /* CARD FORMULÁRIO */
+    .widget-form-card {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border-radius: var(--radius-lg);
+      padding: 38px 32px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .widget-form-title {
+      font-size: 20px;
+      color: var(--garage-dark);
+      margin-bottom: 6px;
+    }
+
+    .widget-form-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--garage-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--text-main);
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--garage-dark);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.12);
+    }
+
+    .btn-send-diagnostic {
+      width: 100%;
+      background-color: var(--wa-green);
+      color: #042D15;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 15px;
+      border: none;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all var(--transition);
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+      margin-top: 6px;
+    }
+
+    .btn-send-diagnostic:hover {
+      background-color: var(--wa-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-send-diagnostic svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* SERVIÇOS MECÂNICOS */
+    .section-services {
+      padding: 90px 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto 55px;
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--garage-amber-hover);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-header h3 {
+      font-size: clamp(28px, 3.2vw, 38px);
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .service-card {
+      background: var(--bg-page);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition);
+    }
+
+    .service-card:hover {
+      border-color: var(--garage-amber);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      background: #FFFFFF;
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--garage-amber-light);
+      color: #B45309;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h4 {
+      font-size: 19px;
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 22px;
+      flex: 1;
+    }
+
+    .service-link {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--garage-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap var(--transition);
+    }
+
+    .service-link:hover {
+      gap: 10px;
+      color: var(--garage-amber-hover);
+    }
+
+    /* ETAPAS / COMO FUNCIONA O ORÇAMENTO */
+    .section-steps {
+      padding: 90px 0;
+      background: var(--bg-page);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .step-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      position: relative;
+    }
+
+    .step-number {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--garage-amber);
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .step-card h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .step-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* LOCALIZAÇÃO E CONTATO */
+    .section-contact {
+      padding: 90px 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .contact-info h3 {
+      font-size: clamp(28px, 3.2vw, 38px);
+      margin-bottom: 16px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 26px;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14.5px;
+    }
+
+    .contact-item svg {
+      width: 20px;
+      height: 20px;
+      color: var(--garage-amber-hover);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-maps {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 14px 22px;
+      background: var(--garage-dark);
+      color: #FFFFFF;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .btn-maps:hover {
+      background: var(--garage-surface);
+      transform: translateY(-2px);
+    }
+
+    .map-frame {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      min-height: 380px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .map-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FAQ */
+    .section-faq {
+      padding: 90px 0;
+      background: var(--bg-page);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .faq-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: border-color var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--garage-dark);
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 22px 24px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--garage-dark);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-icon {
+      font-size: 20px;
+      color: var(--garage-amber-hover);
+      transition: transform var(--transition);
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 22px;
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: var(--garage-dark);
+      color: #9CA3AF;
+      padding: 60px 0 30px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .footer-col h4, .footer-col h5 {
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .footer-col p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+      max-width: 320px;
+    }
+
+    .footer-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-list a {
+      color: #D1D5DB;
+      transition: color var(--transition);
+    }
+
+    .footer-list a:hover {
+      color: var(--garage-amber);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 25px;
+      font-size: 13px;
+    }
+
+    /* BOTÃO FLUTUANTE DE WHATSAPP */
+    .floating-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 150;
+      background-color: var(--wa-green);
+      color: #FFFFFF;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: all var(--transition);
+    }
+
+    .floating-wa:hover {
+      transform: scale(1.08);
+      background-color: var(--wa-hover);
+    }
+
+    .floating-wa svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 1024px) {
+      .hero-grid, .widget-layout, .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .topbar-layout {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero h2 {
+        font-size: 32px;
+      }
+      .hero-badges-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .hero-float-card {
+        position: static;
+        margin-top: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero-float-card a {
+        width: 100%;
+        text-align: center;
+      }
+      .services-grid, .steps-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="progress" id="progress"></div>
-
-<header id="hdr">
-  <div class="wrap nav">
-    <a href="#top" class="brand"><i></i>Destake Garage</a>
-    <nav class="nav-links">
-      <a href="#servicos">Serviços</a>
-      <a href="#orcamento">Como funciona</a>
-      <a href="#oficina">A oficina</a>
-      <a href="#duvidas">Dúvidas</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <a class="nav-cta" href="https://wa.me/5511966299293" target="_blank" rel="noopener">Pedir orçamento</a>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-copy">
-    <div class="hero-copy-in">
-      <span class="eyebrow">Oficina mecânica · Jabaquara · SP</span>
-      <h1>Orçamento <em>por escrito</em>, antes de qualquer serviço.</h1>
-      <p class="hero-lead">A sua oficina de confiança no Jabaquara. Mecânicos qualificados, peças de qualidade e comunicação transparente em cada etapa — sem letras miúdas, sem surpresa na hora de pagar.</p>
-      <div class="hero-actions">
-        <a class="btn btn-wa" href="https://wa.me/5511966299293" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
-          Pedir orçamento
+  <!-- TOP BAR -->
+  <aside class="topbar" aria-label="Informações de endereço e horário">
+    <div class="container topbar-layout">
+      <div class="topbar-tag">
+        <span class="badge-amber">Jabaquara · SP</span>
+        <span>Oficina Mecânica Especializada · Orçamento Claro por Escrito</span>
+      </div>
+      <div class="topbar-info">
+        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">
+          WhatsApp: (11) 96629-9293
         </a>
-        <a class="btn btn-line" href="#orcamento">Ver como funciona</a>
-      </div>
-      <div class="trust">
-        <div><b>Orçamento claro</b><span>Por escrito, antes de começar</span></div>
-        <div><b>Peças de qualidade</b><span>E mão de obra qualificada</span></div>
-        <div><b>Jabaquara</b><span>Av. Eng. George Corbisier</span></div>
+        <span>Av. Eng. George Corbisier, 942b</span>
       </div>
     </div>
-  </div>
-  <div class="hero-shot">
-    <img src="../../assets/fotos/oficina-elevador-hidraulico-02.jpg" alt="Veículo suspenso em elevador hidráulico numa oficina mecânica">
-    <span class="shot-tag">Imagem ilustrativa</span>
-  </div>
-</section>
+  </aside>
 
-<!-- SERVICOS -->
-<section class="sec" id="servicos">
-  <div class="wrap">
-    <div class="sec-head" data-reveal>
-      <span class="eyebrow">O que fazemos</span>
-      <h2>Três serviços, feitos do jeito certo.</h2>
-      <p>Consulte a disponibilidade e receba um orçamento claro direto pelo WhatsApp.</p>
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="container header-nav">
+      <a href="#inicio" class="brand-logo" aria-label="Página inicial Destake Garage">
+        <div class="brand-icon" aria-hidden="true">🔧</div>
+        <div class="brand-title">
+          <h1>Destake Garage</h1>
+          <span>Oficina Mecânica Especializada</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação da oficina">
+        <ul class="nav-links">
+          <li><a href="#orcamento">Pedir Orçamento</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#localizacao">Onde Estamos</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn-header-wa" href="https://wa.me/5511966299293?text=Ol%C3%A1%2C%20equipe%20Destake%20Garage!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20ve%C3%ADculo." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+        <span>Falar no WhatsApp</span>
+      </a>
     </div>
+  </header>
 
-    <article class="svc-row" data-reveal>
-      <div class="svc-txt">
-        <span class="svc-num">01</span>
-        <h3>Troca de óleo</h3>
-        <p>Troca do óleo do motor e filtro com peças de qualidade, verificando os níveis do veículo para manter o motor protegido no dia a dia.</p>
-        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-      </div>
-      <div class="svc-shot"><img src="../../assets/fotos/motor-macro-01.jpg" alt="Detalhe do cofre do motor de um automóvel"></div>
-    </article>
+  <main id="inicio">
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="hero-badge">Transparência Total &amp; Agilidade</div>
+          <h2 id="hero-title">Orçamento <span>por escrito</span> antes de qualquer serviço no seu carro.</h2>
+          <p class="hero-lead">
+            A sua oficina mecânica de confiança no Jabaquara. Mecânicos qualificados, diagnóstico computadorizado preciso e peças com garantia. Você aprova tudo antes de iniciarmos qualquer trabalho — sem surpresa na hora de pagar.
+          </p>
 
-    <article class="svc-row" data-reveal>
-      <div class="svc-txt">
-        <span class="svc-num">02</span>
-        <h3>Amortecedores</h3>
-        <p>Avaliação e troca de amortecedores para devolver estabilidade, conforto e segurança na direção do seu carro.</p>
-        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-      </div>
-      <div class="svc-shot"><img src="../../assets/fotos/peca-coilover-fundo-preto-03.jpg" alt="Conjunto de amortecedor e mola em fundo escuro"></div>
-    </article>
+          <div class="hero-actions">
+            <a class="btn-primary-wa" href="#orcamento">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+              <span>Pedir Pré-Orçamento no WhatsApp</span>
+            </a>
+            <a class="btn-secondary" href="#servicos">
+              <span>Ver Serviços Realizados</span>
+            </a>
+          </div>
 
-    <article class="svc-row" data-reveal>
-      <div class="svc-txt">
-        <span class="svc-num">03</span>
-        <h3>Diagnóstico</h3>
-        <p>Diagnóstico do problema do seu veículo antes de qualquer serviço, com explicação clara do que foi encontrado e o que precisa ser feito.</p>
-        <a href="https://wa.me/5511966299293" target="_blank" rel="noopener">Consultar no WhatsApp →</a>
-      </div>
-      <div class="svc-shot"><img src="../../assets/fotos/diagnostico-notebook-carro-02.jpg" alt="Diagnóstico eletrônico de veículo com notebook"></div>
-    </article>
-  </div>
-</section>
+          <div class="hero-badges-row">
+            <div class="hero-badge-item">
+              <b>Sem Letras Miúdas</b>
+              <span>Você aprova cada peça e valor antes</span>
+            </div>
+            <div class="hero-badge-item">
+              <b>Peças com Garantia</b>
+              <span>Procedência e nota fiscal de fábrica</span>
+            </div>
+            <div class="hero-badge-item">
+              <b>Fácil Acesso</b>
+              <span>Av. Eng. George Corbisier (Jabaquara)</span>
+            </div>
+          </div>
+        </div>
 
-<!-- BREAK -->
-<section class="break">
-  <div class="wrap break-in">
-    <div data-reveal>
-      <span class="eyebrow">A promessa</span>
-      <h2 style="margin-top:16px">Você aprova <em>antes</em>. Nunca depois.</h2>
-      <p>Nada é executado sem o seu aval. O que foi encontrado, o que precisa ser feito e quanto custa: tudo na sua mão antes de a chave entrar no carro.</p>
-    </div>
-    <div class="break-shot" data-reveal><img src="../../assets/fotos/oficina-inspecao-por-baixo-03.jpg" alt="Inspeção da parte inferior de um veículo na oficina"></div>
-  </div>
-</section>
-
-<!-- ORCAMENTO ABERTO -->
-<section class="sec flow" id="orcamento">
-  <div class="wrap">
-    <div class="flow-top">
-      <div class="sec-head" style="margin-bottom:0" data-reveal>
-        <span class="eyebrow">O orçamento aberto</span>
-        <h2>Como funciona, do primeiro contato à entrega.</h2>
-      </div>
-      <div class="flow-nav">
-        <button id="prev" aria-label="Etapa anterior">←</button>
-        <button id="next" aria-label="Próxima etapa">→</button>
-      </div>
-    </div>
-    <div class="rail-holder">
-      <div class="rail" id="rail">
-        <div class="card"><div class="k">01</div><h4>Você chama no WhatsApp</h4><p>Conte o problema ou o serviço desejado. Respondemos rápido para entender o caso do seu carro.</p></div>
-        <div class="card"><div class="k">02</div><h4>Diagnóstico do problema</h4><p>O veículo é avaliado antes de qualquer serviço, para saber exatamente o que ele tem.</p></div>
-        <div class="card"><div class="k">03</div><h4>Orçamento por escrito</h4><p>Você recebe o valor e o que será feito por escrito, antes de qualquer serviço ser iniciado.</p></div>
-        <div class="card"><div class="k">04</div><h4>Execução</h4><p>Mecânicos qualificados e peças de qualidade, com comunicação transparente em cada etapa.</p></div>
-        <div class="card"><div class="k">05</div><h4>Entrega sem surpresa</h4><p>Você paga o que foi combinado. Sem letras miúdas na hora de fechar.</p></div>
-      </div>
-      <p class="rail-hint">Arraste para o lado para ver todas as etapas →</p>
-    </div>
-  </div>
-</section>
-
-<!-- A OFICINA -->
-<section class="sec" id="oficina">
-  <div class="wrap">
-    <div class="sec-head" data-reveal>
-      <span class="eyebrow">A oficina</span>
-      <h2>A sua oficina de confiança no Jabaquara.</h2>
-      <p>Trabalhamos com mecânicos qualificados e peças de qualidade para que você saia com o carro resolvido — e com um orçamento claro na mão.</p>
-    </div>
-    <div class="vals" data-reveal>
-      <div class="val"><b>Transparência</b><span>Orçamento por escrito, sem letras miúdas.</span></div>
-      <div class="val"><b>Qualidade</b><span>Peças de qualidade e mão de obra qualificada.</span></div>
-      <div class="val"><b>Profissionalismo</b><span>Comunicação clara em cada etapa do serviço.</span></div>
-      <div class="val"><b>Atendimento personalizado</b><span>Cada carro e cada cliente tratados como caso único.</span></div>
-    </div>
-    <dl class="mv" data-reveal>
-      <div><dt>Missão</dt><dd>Garantir a tranquilidade do cliente do início ao fim de cada serviço.</dd></div>
-      <div><dt>Visão</dt><dd>Ser referência no Jabaquara, reconhecida pela qualidade e paixão em cada serviço.</dd></div>
-    </dl>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="sec" id="duvidas" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head" data-reveal><span class="eyebrow">Dúvidas</span><h2>Perguntas sobre o atendimento.</h2></div>
-    <div class="faq" data-reveal>
-      <div class="faq-item">
-        <button class="faq-q">Como faço um orçamento?</button>
-        <div class="faq-a"><p>Chame no WhatsApp contando o problema ou o serviço desejado. O orçamento é passado por escrito antes de qualquer serviço ser iniciado, sem surpresas na hora de fechar.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Quais marcas de carro vocês atendem?</button>
-        <div class="faq-a"><p>Consulte pelo WhatsApp informando o modelo do seu veículo — nossa equipe confirma a disponibilidade e o prazo para o seu carro.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">Qual o horário de atendimento?</button>
-        <div class="faq-a"><p>Consulte a disponibilidade de horário diretamente pelo WhatsApp — respondemos rápido para agendar o melhor dia para você.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section class="sec" id="contato" style="padding-top:0">
-  <div class="wrap">
-    <div class="contato-grid">
-      <div data-reveal>
-        <span class="eyebrow">Contato</span>
-        <h2 style="font-size:clamp(1.8rem,3.5vw,2.9rem);margin-top:16px">Traga o carro no Jabaquara.</h2>
-        <dl class="dl">
-          <div><dt>Endereço</dt><dd>Av. Eng. George Corbisier, 942b — Jabaquara, São Paulo · SP, 04345-000</dd></div>
-          <div><dt>WhatsApp</dt><dd>(11) 96629-9293</dd></div>
-          <div><dt>Orçamento</dt><dd>Por escrito, antes de qualquer serviço</dd></div>
-        </dl>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn btn-wa" href="https://wa.me/5511966299293" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
-            Falar no WhatsApp
-          </a>
-          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Destake+Garage+Jabaquara+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Maps ↗</a>
+        <div class="hero-card-holder">
+          <div class="hero-photo-card">
+            <img class="hero-photo-img" src="../../assets/fotos/oficina-elevador-hidraulico-02.jpg" alt="Veículo suspenso em elevador hidráulico para inspeção na Destake Garage">
+          </div>
+          <div class="hero-float-card">
+            <div>
+              <span class="card-kicker">Revisão &amp; Manutenção Preventiva</span>
+              <p>Traga seu carro para uma checagem completa</p>
+            </div>
+            <a href="https://wa.me/5511966299293?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20revis%C3%A3o%20no%20meu%20carro." target="_blank" rel="noopener">Agendar Horário</a>
+          </div>
         </div>
       </div>
-      <div class="map" data-reveal>
-        <iframe title="Mapa — Destake Garage" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Av.%20Eng.%20George%20Corbisier%2C%20942b%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004345-000&output=embed"></iframe>
+    </section>
+
+    <!-- WIDGET INTERATIVO: PRÉ-DIAGNÓSTICO AUTOMOTIVO WHATSAPP -->
+    <section class="section-widget" id="orcamento" aria-labelledby="widget-title">
+      <div class="container widget-layout">
+        <div class="widget-info">
+          <span class="badge-amber" style="margin-bottom:14px;display:inline-block">Atendimento Rápido</span>
+          <h3 id="widget-title">Seu carro apresentou algum <span>problema ou barulho</span>?</h3>
+          <p>
+            Evite que um defeito simples se transforme em uma despesa pesada. Preencha as informações do seu veículo para abrir o WhatsApp com seu chamado pronto: nossa equipe responde rápido com uma previsão inicial.
+          </p>
+
+          <ul class="widget-points">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Diagnóstico honesto e técnico sem empurrar serviços desnecessários.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Esclarecimento detalhado das peças que realmente precisam de troca.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Parcelamento em até 10x no cartão para sua comodidade.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="widget-form-card">
+          <h4 class="widget-form-title">Montar Consulta Rápida</h4>
+          <p class="widget-form-desc">Envie os dados do veículo diretamente para a bancada técnica:</p>
+
+          <form id="carForm" onsubmit="event.preventDefault(); enviarOrcamentoCarro();">
+            <div class="form-group">
+              <label for="carModel">Modelo e Ano do Carro:</label>
+              <input type="text" id="carModel" class="form-control" placeholder="Ex: Onix 1.0 2020 / Civic 2018 / HB20..." required>
+            </div>
+
+            <div class="form-group">
+              <label for="carService">Qual o tipo de serviço ou sintoma?</label>
+              <select id="carService" class="form-control" required>
+                <option value="Revisão Preventiva & Troca de Óleo / Filtros">Revisão Preventiva &amp; Troca de Óleo / Filtros</option>
+                <option value="Suspensão & Barulho ao passar em buracos / Amortecedores">Suspensão &amp; Barulho ao passar em buracos / Amortecedores</option>
+                <option value="Freios (Ruído metálico, pedal fofo ou trepidação)">Freios (Ruído metálico, pedal fofo ou trepidação)</option>
+                <option value="Luz da Injeção Eletrônica Acesa / Falha de Motor">Luz da Injeção Eletrônica Acesa / Falha de Motor</option>
+                <option value="Superaquecimento / Vazamento de Água ou Óleo">Superaquecimento / Vazamento de Água ou Óleo</option>
+                <option value="Diagnóstico Geral / Avaliação Completa Pré-Compra">Diagnóstico Geral / Avaliação Completa Pré-Compra</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="carNotes">Conte brevemente o que está acontecendo:</label>
+              <input type="text" id="carNotes" class="form-control" placeholder="Ex: Faz barulho na roda dianteira quando viro para a esquerda..." required>
+            </div>
+
+            <button type="submit" class="btn-send-diagnostic">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+              <span>Enviar para WhatsApp da Destake</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS MECÂNICOS -->
+    <section class="section-services" id="servicos" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Mecânica de Precisão</span>
+          <h3 id="services-title">Serviços executados no padrão técnico correto</h3>
+          <p>Equipamentos modernos e mão de obra qualificada para cuidar da segurança e do valor do seu patrimônio.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">💻</div>
+            <h4>Diagnóstico Computadorizado</h4>
+            <p>Scanner eletrônico para leitura dos parâmetros da injeção, sensores, atuadores e módulos do veículo. Identificação precisa da causa raiz sem trocas desnecessárias de peças.</p>
+            <a class="service-link" href="#orcamento">Pedir diagnóstico →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🛞</div>
+            <h4>Suspensão &amp; Amortecedores</h4>
+            <p>Troca de amortecedores, molas, batentes, buchas, pivôs e bandejas. Elimine ruídos incômodos e recupere a estabilidade, o conforto e a segurança nas curvas.</p>
+            <a class="service-link" href="#orcamento">Consultar suspensão →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🛑</div>
+            <h4>Sistema de Freios</h4>
+            <p>Inspeção e substituição de pastilhas, discos, sapatas, cilindros e sangria do fluido de freio. Frenagem firme e segura em qualquer situação de emergência.</p>
+            <a class="service-link" href="#orcamento">Revisar freios →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🛢️</div>
+            <h4>Troca de Óleo &amp; Filtros</h4>
+            <p>Óleo sintético, semissintético ou mineral na viscosidade exata exigida pelo manual da montadora, com troca do filtro de óleo, ar, combustível e ar-condicionado.</p>
+            <a class="service-link" href="#orcamento">Trocar óleo →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">⚙️</div>
+            <h4>Correia Dentada &amp; Motor</h4>
+            <p>Substituição preventiva da correia dentada, tensionadores, bomba d'água e velas de ignição. Evite o rompimento da correia e danos graves ao cabeçote.</p>
+            <a class="service-link" href="#orcamento">Cotar correia →</a>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon" aria-hidden="true">🌡️</div>
+            <h4>Sistema de Arrefecimento</h4>
+            <p>Limpeza de radiador, troca de aditivo orgânico, teste de estanqueidade contra vazamentos, válvula termostática e eletroventilador. Motor na temperatura ideal.</p>
+            <a class="service-link" href="#orcamento">Checar arrefecimento →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA O ATENDIMENTO -->
+    <section class="section-steps" id="como-funciona" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">Sem Letras Miúdas</span>
+          <h3 id="steps-title">Como funciona nosso atendimento</h3>
+          <p>Trabalhamos com regras claras para que você tenha controle total sobre o custo do seu conserto.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h4>Você chama no WhatsApp</h4>
+            <p>Conta o sintoma ou o que precisa ser feito. Já passamos uma prévia de agendamento e valores básicos.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h4>Avaliação no Elevador</h4>
+            <p>O carro é inspecionado na oficina por mecânicos que identificam o que está desgastado e o que ainda dura.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h4>Orçamento por Escrito</h4>
+            <p>Você recebe no WhatsApp o valor discriminado de cada peça e da mão de obra. Só fazemos com seu "OK".</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h4>Carro Pronto &amp; Garantia</h4>
+            <p>Você retira o veículo testado, com as peças velhas à sua disposição para conferência e garantia formal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO E CONTATO -->
+    <section class="section-contact" id="localizacao" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <span class="section-kicker">Fácil Acesso no Jabaquara</span>
+          <h3 id="contact-title">Traga seu veículo na Destake Garage</h3>
+          <p>
+            Estamos situados na Av. Eng. George Corbisier, com acesso rápido pelas principais avenidas da Zona Sul. Agende seu horário e evite esperas.
+          </p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <span><strong>Endereço:</strong> Av. Eng. George Corbisier, 942b — Jabaquara, São Paulo - SP, CEP 04345-000</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+              <span><strong>WhatsApp Direto:</strong> (11) 96629-9293</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+              <span><strong>Horário de Funcionamento:</strong> Seg. a Sex. das 8h às 18h</span>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&query=Av.+Eng.+George+Corbisier%2C+942b+-+Jabaquara" target="_blank" rel="noopener">
+              <span>Abrir no Google Maps ↗</span>
+            </a>
+            <a class="btn-primary-wa" href="https://wa.me/5511966299293?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20chegar%20na%20oficina." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+              <span>Chamar no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <iframe title="Mapa de localização Destake Garage" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Av.%20Eng.%20George%20Corbisier%2C%20942b%20-%20Jabaquara%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004345-000&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section-faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-wrapper">
+        <div class="section-header">
+          <span class="section-kicker">Tire Suas Dúvidas</span>
+          <h3 id="faq-title">Perguntas frequentes sobre a oficina</h3>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Vocês cobram pelo orçamento?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Para serviços rápidos de revisão visual e consultas no balcão, a prévia do orçamento é gratuita e sem compromisso. Quando o veículo necessita de desmontagem complexa ou diagnóstico eletrônico avançado com scanner, informamos previamente o valor do teste antes de iniciar.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Quais são as formas de pagamento aceitas?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Aceitamos cartões de crédito em até 10x sem juros (consulte condições de parcelamento por valor do serviço), cartões de débito, Pix com desconto à vista e faturamento para frotas de empresas cadastradas.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>As peças instaladas possuem garantia?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Sim! Trabalhamos apenas com peças de linhas originais ou marcas de primeira linha reconhecidas pelas montadoras. Todas as peças contam com garantia legal do fabricante (de 3 a 12 meses) além da garantia sobre a nossa mão de obra.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false" onclick="toggleFaq(this)">
+            <span>Vocês atendem veículos nacionais e importados?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Atendemos todas as principais marcas do mercado nacional (Chevrolet, Fiat, Volkswagen, Ford, Renault, Hyundai, Toyota, Honda, Nissan, Jeep e Peugeot), com ferramentas adequadas para cada especificação de motor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Destake Garage</h4>
+        <p>Oficina mecânica especializada no Jabaquara. Segurança, honestidade e compromisso com o bolso e a tranquilidade do cliente.</p>
+        <span style="color:var(--garage-amber);font-size:12.5px;font-weight:700">Mão de Obra Qualificada &amp; Peças com Garantia</span>
+      </div>
+
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul class="footer-list">
+          <li><a href="#servicos">Diagnóstico Eletrônico</a></li>
+          <li><a href="#servicos">Suspensão &amp; Amortecedores</a></li>
+          <li><a href="#servicos">Pastilhas &amp; Freios</a></li>
+          <li><a href="#servicos">Troca de Óleo &amp; Filtros</a></li>
+          <li><a href="#servicos">Correia Dentada</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Oficina</h5>
+        <ul class="footer-list">
+          <li>Av. Eng. George Corbisier, 942b</li>
+          <li>Jabaquara, São Paulo - SP</li>
+          <li>CEP 04345-000</li>
+          <li><a href="#localizacao">Ver no Mapa ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato Direto</h5>
+        <ul class="footer-list">
+          <li><strong>WhatsApp:</strong> (11) 96629-9293</li>
+          <li><strong>Atendimento:</strong> Seg. a Sex. 8h às 18h</li>
+          <li><strong>Orçamentos:</strong> Por escrito antes do início</li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div>
-        <div class="foot-brand">Destake Garage</div>
-        <div style="font-size:13.5px;color:#A8B0B8;margin-top:6px">Oficina mecânica · Jabaquara, São Paulo</div>
-      </div>
-      <div class="foot-meta">
-        <span>Av. Eng. George Corbisier, 942b — Jabaquara, SP</span>
-        <span>WhatsApp (11) 96629-9293</span>
-        <span>Troca de óleo · Amortecedores · Diagnóstico</span>
-      </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Destake Garage. Todos os direitos reservados.</p>
+      <p>Desenvolvido com foco em conversão e transparência.</p>
     </div>
-    <div class="foot-bottom">
-      <span>© 2026 Destake Garage</span>
-      <span>Fotografias ilustrativas (Unsplash / Pexels) — não retratam a oficina.</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<a class="wa-float" href="https://wa.me/5511966299293" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
-</a>
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
+  <a class="floating-wa" href="https://wa.me/5511966299293?text=Ol%C3%A1%2C%20equipe%20Destake%20Garage!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20carro." target="_blank" rel="noopener" aria-label="Falar agora com o mecânico da Destake Garage no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.36.101 11.944c0 2.096.548 4.142 1.588 5.945L0 24l6.335-1.652a11.93 11.93 0 005.703 1.45h.006c6.585 0 11.946-5.36 11.949-11.945a11.87 11.87 0 00-3.473-8.404"/></svg>
+  </a>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
-(function(){
-  var hdr=document.getElementById('hdr');
-  var onScroll=function(){ hdr.classList.toggle('solid', window.scrollY>50); };
-  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  <!-- SCRIPT VANILLA NATIVO -->
+  <script>
+    function toggleFaq(button) {
+      const item = button.closest('.faq-item');
+      const answer = item.querySelector('.faq-answer');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-  // FAQ
-  document.querySelectorAll('.faq-item').forEach(function(item){
-    var q=item.querySelector('.faq-q'), a=item.querySelector('.faq-a');
-    q.addEventListener('click',function(){
-      var open=item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(function(o){
-        o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null;
+      document.querySelectorAll('.faq-item').forEach(other => {
+        if (other !== item && other.classList.contains('active')) {
+          other.classList.remove('active');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        }
       });
-      if(!open){ item.classList.add('open'); a.style.maxHeight=a.scrollHeight+'px'; }
-    });
-  });
 
-  // trilho horizontal: rolagem do usuario, nunca prende a pagina
-  var rail=document.getElementById('rail');
-  if(rail){
-    var prev=document.getElementById('prev'), next=document.getElementById('next');
-    var step=function(){ var c=rail.querySelector('.card'); return c?c.offsetWidth+18:300; };
-    var sync=function(){
-      var max=rail.scrollWidth-rail.clientWidth-2;
-      if(prev) prev.disabled=rail.scrollLeft<=2;
-      if(next) next.disabled=rail.scrollLeft>=max;
-    };
-    if(prev) prev.addEventListener('click',function(){ rail.scrollBy({left:-step(),behavior:'smooth'}); });
-    if(next) next.addEventListener('click',function(){ rail.scrollBy({left:step(),behavior:'smooth'}); });
-    rail.addEventListener('scroll',sync,{passive:true});
-    window.addEventListener('resize',sync); sync();
+      if (!isExpanded) {
+        item.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      } else {
+        item.classList.remove('active');
+        button.setAttribute('aria-expanded', 'false');
+        answer.style.maxHeight = null;
+      }
+    }
 
-    // arrastar com o mouse
-    var down=false,sx=0,sl=0,moved=0;
-    rail.addEventListener('pointerdown',function(e){
-      if(e.pointerType==='touch') return;
-      down=true;moved=0;sx=e.clientX;sl=rail.scrollLeft;rail.classList.add('drag');
-    });
-    rail.addEventListener('pointermove',function(e){
-      if(!down) return;
-      var d=e.clientX-sx; moved=Math.abs(d);
-      if(moved>3) e.preventDefault();
-      rail.scrollLeft=sl-d;
-    });
-    var up=function(){ if(!down) return; down=false; rail.classList.remove('drag'); sync(); };
-    rail.addEventListener('pointerup',up);
-    rail.addEventListener('pointerleave',up);
-    rail.addEventListener('click',function(e){ if(moved>5) e.preventDefault(); },true);
-  }
+    function enviarOrcamentoCarro() {
+      const modelo = document.getElementById('carModel').value.trim();
+      const servico = document.getElementById('carService').value;
+      const notas = document.getElementById('carNotes').value.trim();
 
-  if(!window.gsap) return;
-  gsap.registerPlugin(ScrollTrigger);
+      if (!modelo || !notas) {
+        alert('Por favor, informe o modelo do carro e os sintomas observados.');
+        return;
+      }
 
-  gsap.to('#progress',{scaleX:1,ease:'none',
-    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+      const mensagem = `Olá, equipe da Destake Garage!
 
-  var mm=gsap.matchMedia();
-  mm.add('(prefers-reduced-motion: no-preference)',function(){
-    gsap.from('.hero-copy-in > *',{y:26,opacity:0,duration:.95,stagger:.075,ease:'power3.out',delay:.1});
-    gsap.from('.hero-shot img',{scale:1.1,duration:1.6,ease:'power2.out'});
+Gostaria de uma avaliação / pré-orçamento para o meu veículo:
+• *Veículo:* ${modelo}
+• *Serviço/Sintoma:* ${servico}
+• *Observações:* ${notas}
 
-    gsap.utils.toArray('[data-reveal]').forEach(function(el){
-      gsap.from(el,{y:50,opacity:0,duration:.95,ease:'power3.out',
-        immediateRender:false,scrollTrigger:{trigger:el,start:'top 86%'}});
-    });
+Poderiam me informar uma previsão de valor e a disponibilidade para atendimento na oficina? Obrigado!`;
 
-    // parallax discreto — nenhum pin, a pagina nunca trava
-    gsap.utils.toArray('.svc-shot img, .break-shot img').forEach(function(img){
-      gsap.fromTo(img,{yPercent:-5},{yPercent:5,ease:'none',
-        scrollTrigger:{trigger:img.parentElement,start:'top bottom',end:'bottom top',scrub:true}});
-    });
-    gsap.to('.hero-shot img',{yPercent:6,ease:'none',
-      scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-  });
-
-  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
-})();
-</script>
+      const link = `https://wa.me/5511966299293?text=${encodeURIComponent(mensagem)}`;
+      window.open(link, '_blank');
+    }
+  </script>
 </body>
 </html>
