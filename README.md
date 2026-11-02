@@ -41,6 +41,7 @@ Acesse o **Hub Interativo de Demonstração**:
 | **Métra Psicologia** | Clínica & Psicanálise | Selo clínico institucional, Chácara Santo Antônio, abordagem psicanalítica freudo-lacaniana, FAQ nativo e **Widget de Acolhimento**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/) |
 | **Dra. Cecília Freytas** | Psicologia Clínica | CRP verificado, NovAmérica Office Park, 5.0★ Google, **Formulário de Agendamento Seguro** e foco em ansiedade/TCC. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/) |
 | **Destake Garage** | Mecânica & Auto Center | Diagnóstico transparente de injeção eletrônica, freios ABS e suspensão, **Widget de Orçamento por Placa/Marca** no WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/destake-garage/) |
+| **Kimiko Auto Center** | Mecânica Especializada | Precisão japonesa desde 2003 (Bosque da Saúde), especialistas em Honda, Toyota e multimarcas, **Widget de Diagnóstico e Agendamento** no WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/) |
 | **Tempstar** | Engenharia Térmica | Engenharia B2B, PMOC (Lei 13.589/2018), sistemas VRF/Chiller, credenciamento Daikin e Carrier. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/) |
 
 ---
