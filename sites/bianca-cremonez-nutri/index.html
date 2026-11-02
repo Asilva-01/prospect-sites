@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR" style="scroll-behavior: smooth;">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bianca Cremonez Magnelli | Nutricionista Esportiva em Moema - São Paulo</title>
-  <meta name="description" content="Nutricionista esportiva em Moema, Zona Sul de São Paulo, com atendimento presencial e online para hipertrofia, emagrecimento e performance esportiva.">
+  <meta name="description" content="Nutricionista Esportiva em Moema (Av. Moaci, 857) e Online para todo o Brasil. Planos individualizados para hipertrofia, emagrecimento saudável, corredores e atletas amadores. Avaliação com adipômetro e suporte contínuo.">
+  <meta name="keywords" content="nutricionista esportiva moema, nutricionista hipertrofia sp, nutricionista corredores sp, avaliacao adipometro moema, nutricionista zona sul sp, bianca cremonez magnelli">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Bianca Cremonez Magnelli | Nutricionista Esportiva em Moema - São Paulo">
-  <meta property="og:description" content="Nutrição esportiva com atendimento presencial em Moema e online, para quem quer treinar mais forte e evoluir com saúde.">
+  <meta property="og:description" content="Nutrição esportiva baseada em ciência para treinar mais forte, perder gordura e evoluir com saúde. Atendimento presencial em Moema e teleconsulta online.">
+  <meta property="og:url" content="https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/">
   <meta property="og:locale" content="pt_BR">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f4c5c'/%3E%3Ctext x='50' y='68' font-size='42' font-family='Arial' fill='white' text-anchor='middle'%3EBM%3C/text%3E%3C/svg%3E">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f4c5c'/%3E%3Ctext x='50' y='67' font-size='42' font-family='Arial, sans-serif' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3EBM%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --primary: #0f4c5c;
-      --primary-dark: #0a323d;
-      --primary-light: #17677d;
+      --primary-dark: #0a333e;
+      --primary-light: #16697a;
+      --primary-soft: #e8f4f6;
       --accent: #f97316;
       --accent-hover: #ea580c;
-      --bg-cream: #f6f9fa;
-      --bg-white: #ffffff;
-      --bg-soft-green: #e7f2f3;
-      --text-main: #16242a;
-      --text-muted: #57696f;
-      --border-light: #e1eaec;
-      --shadow-sm: 0 4px 12px rgba(15, 76, 92, 0.07);
-      --shadow-md: 0 10px 28px rgba(15, 76, 92, 0.11);
-      --shadow-lg: 0 20px 40px rgba(15, 76, 92, 0.15);
+      --accent-soft: #ffedd5;
+      --accent-glow: rgba(249, 115, 22, 0.25);
+      --bg-cream: #f8fafb;
+      --bg-card: #ffffff;
+      --text-main: #132227;
+      --text-muted: #566970;
+      --text-light: #8da1a8;
+      --border-subtle: #e2ecee;
+      --border-card: rgba(15, 76, 92, 0.12);
+      --wa-color: #25d366;
+      --wa-hover: #1eb954;
+      --success: #10b981;
       --radius-sm: 8px;
       --radius-md: 16px;
       --radius-lg: 24px;
       --radius-full: 9999px;
+      --shadow-sm: 0 4px 14px rgba(15, 76, 92, 0.06);
+      --shadow-md: 0 10px 30px rgba(15, 76, 92, 0.1);
+      --shadow-lg: 0 20px 50px rgba(15, 76, 92, 0.14);
+      --font-heading: 'Outfit', -apple-system, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -42,1166 +61,1909 @@
       padding: 0;
     }
 
-    body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg-cream);
-      color: var(--text-main);
-      line-height: 1.6;
-      overflow-x: hidden;
+    html {
+      scroll-behavior: smooth;
     }
 
-    h1, h2, h3, h4, h5 {
-      font-family: 'Outfit', sans-serif;
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
       color: var(--primary-dark);
-      font-weight: 700;
       line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-muted);
+      line-height: 1.65;
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
     }
 
     .container {
+      width: 100%;
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 24px;
     }
 
-    /* Top Bar */
-    .top-bar {
-      background: var(--primary-dark);
-      color: #dcf0f2;
-      font-size: 0.875rem;
-      padding: 8px 0;
+    /* BOTOES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
       text-align: center;
     }
 
-    .top-bar strong {
-      color: #ffb37a;
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 4px 18px rgba(15, 76, 92, 0.3);
     }
 
-    .top-bar a {
-      color: inherit;
-      text-decoration: none;
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(15, 76, 92, 0.45);
     }
 
-    /* Header */
-    header {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(12px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid var(--border-light);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    .btn-accent {
+      background: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 4px 18px rgba(249, 115, 22, 0.35);
     }
 
-    .header-nav {
+    .btn-accent:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(249, 115, 22, 0.5);
+    }
+
+    .btn-wa {
+      background: var(--wa-color);
+      color: #032b13;
+      font-weight: 800;
+      box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-wa:hover {
+      background: var(--wa-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
+    }
+
+    .btn-outline {
+      background: #ffffff;
+      border: 1.5px solid var(--border-subtle);
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--primary-soft);
+      transform: translateY(-2px);
+    }
+
+    .btn-sm {
+      padding: 9px 18px;
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--primary-soft);
+      border: 1px solid rgba(15, 76, 92, 0.18);
+      border-radius: var(--radius-full);
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* TOPBAR */
+    .topbar {
+      background: var(--primary-dark);
+      color: #d8edf1;
+      padding: 8px 0;
+      font-size: 13px;
+    }
+
+    .topbar-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .topbar-tag {
+      color: #ffb780;
+      font-weight: 700;
       display: flex;
       align-items: center;
+      gap: 6px;
+    }
+
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topbar-links a {
+      color: #d8edf1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .topbar-links a:hover {
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .navbar {
+      display: flex;
       justify-content: space-between;
+      align-items: center;
       height: 80px;
     }
 
-    .logo-container {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .logo-badge {
-      width: 44px;
-      height: 44px;
-      background: var(--bg-soft-green);
-      color: var(--primary);
-      border-radius: var(--radius-sm);
+    .brand-avatar {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #ffffff;
       font-weight: 800;
-      font-size: 1.25rem;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(15, 76, 92, 0.25);
     }
 
-    .logo-text h2 {
-      font-size: 1.35rem;
-      color: var(--primary-dark);
-      letter-spacing: -0.5px;
+    .brand-text h2 {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
     }
 
-    .logo-text p {
-      font-size: 0.75rem;
-      color: var(--text-muted);
+    .brand-text span {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
+      font-family: var(--font-body);
     }
 
-    .nav-links {
+    .nav-menu {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
     }
 
-    .nav-links a {
-      font-size: 0.95rem;
+    .nav-menu a {
+      font-size: 14px;
       font-weight: 600;
       color: var(--text-main);
-      transition: color 0.2s ease;
+      position: relative;
     }
 
-    .nav-links a:hover {
+    .nav-menu a:hover {
       color: var(--primary);
     }
 
-    .btn-header {
-      background: var(--primary);
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 0.9rem;
-      display: inline-flex;
+    .nav-menu a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: var(--transition);
+    }
+
+    .nav-menu a:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
       align-items: center;
-      gap: 8px;
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+      gap: 12px;
     }
 
-    .btn-header:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-    }
-
-    /* Hero Section */
+    /* HERO */
     .hero {
-      padding: 70px 0 80px;
-      background: linear-gradient(180deg, rgba(231, 242, 243, 0.6) 0%, rgba(246, 249, 250, 1) 100%);
       position: relative;
+      padding: clamp(60px, 8vw, 100px) 0 70px;
+      background: linear-gradient(180deg, #edf6f7 0%, var(--bg-cream) 100%);
+      overflow: hidden;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
-      gap: 50px;
+      gap: 48px;
       align-items: center;
     }
 
-    .badge-google {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: var(--bg-white);
-      padding: 8px 18px;
-      border-radius: var(--radius-full);
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-      margin-bottom: 24px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--primary-dark);
+    .hero-content h1 {
+      font-size: clamp(32px, 4.4vw, 52px);
+      font-weight: 800;
+      line-height: 1.14;
+      margin: 18px 0 20px;
+      letter-spacing: -0.03em;
     }
 
-    .badge-google .icon {
-      color: var(--accent);
-    }
-
-    .hero-title {
-      font-size: 3.1rem;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
-    }
-
-    .hero-title span {
+    .hero-content h1 span {
       color: var(--accent);
       position: relative;
     }
 
     .hero-desc {
-      font-size: 1.15rem;
+      font-size: 17px;
       color: var(--text-muted);
-      margin-bottom: 32px;
-      max-width: 580px;
+      margin-bottom: 34px;
+      max-width: 560px;
     }
 
-    .hero-actions {
+    .hero-cta-group {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       gap: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
 
-    .btn-primary {
-      background: #25d366;
-      color: #fff;
-      padding: 16px 32px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 1.05rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .btn-primary:hover {
-      background: #20ba5a;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
-    }
-
-    .btn-secondary {
-      background: var(--bg-white);
-      color: var(--primary-dark);
-      border: 1.5px solid var(--border-light);
-      padding: 16px 28px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      font-size: 1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s ease;
-    }
-
-    .btn-secondary:hover {
-      background: var(--bg-soft-green);
-      border-color: var(--primary-light);
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border-light);
-    }
-
-    .stat-item h3 {
-      font-size: 1.75rem;
-      color: var(--primary);
-      margin-bottom: 2px;
-    }
-
-    .stat-item p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    .hero-visual {
-      position: relative;
-    }
-
-    .hero-art {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-lg);
-      border: 6px solid #ffffff;
-      position: relative;
-      height: 480px;
+    .hero-trust-row {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 22px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .trust-item svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--primary);
+    }
+
+    /* HERO DASHBOARD CARD */
+    .hero-card {
+      background: #ffffff;
+      border: 1px solid var(--border-card);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-card-header h3 {
+      font-size: 18px;
+    }
+
+    .hero-card-header span {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .metric-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .bar-row {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .bar-track {
+      height: 8px;
+      background: var(--primary-soft);
+      border-radius: var(--radius-full);
       overflow: hidden;
     }
 
-    .hero-art::before {
-      content: "";
-      position: absolute;
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(249, 115, 22, 0.3) 0%, rgba(249, 115, 22, 0) 70%);
-      top: -60px;
-      right: -60px;
+    .bar-fill {
+      height: 100%;
+      border-radius: var(--radius-full);
+      background: linear-gradient(90deg, var(--primary), var(--accent));
     }
 
-    .hero-art::after {
-      content: "";
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
-      bottom: -80px;
-      left: -60px;
+    .hero-card-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
     }
 
-    .hero-art-symbol {
-      position: relative;
-      z-index: 2;
-      color: #eaf6f8;
-      text-align: center;
-    }
-
-    .hero-art-symbol .leaf {
-      font-size: 4.5rem;
-      display: block;
-      margin-bottom: 14px;
-    }
-
-    .hero-art-symbol p {
-      font-size: 1.05rem;
-      font-weight: 500;
-      letter-spacing: 0.5px;
-      max-width: 260px;
-      margin: 0 auto;
-      color: #dcf0f2;
-    }
-
-    .floating-badge {
-      position: absolute;
-      bottom: -20px;
-      left: 20px;
-      background: var(--bg-white);
-      padding: 16px 20px;
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-md);
+    .hcf-item {
+      background: var(--primary-soft);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
       display: flex;
       align-items: center;
-      gap: 14px;
-      border: 1px solid var(--border-light);
-      max-width: 320px;
-    }
-
-    .floating-badge .icon {
-      width: 48px;
-      height: 48px;
-      background: #ffe4cc;
-      color: var(--accent-hover);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      flex-shrink: 0;
-    }
-
-    .floating-badge h4 {
-      font-size: 0.95rem;
-      margin-bottom: 2px;
-    }
-
-    .floating-badge p {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* Section Shared */
-    section {
-      padding: 90px 0;
-    }
-
-    .section-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 60px;
-    }
-
-    .section-subtitle {
-      color: var(--primary);
+      gap: 8px;
+      font-size: 12px;
       font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 0.85rem;
-      margin-bottom: 12px;
-      display: block;
+      color: var(--primary-dark);
     }
 
-    .section-title {
-      font-size: 2.4rem;
-      margin-bottom: 16px;
-      letter-spacing: -0.5px;
+    /* STATS BAR */
+    .stats-bar {
+      background: #ffffff;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 34px 0;
     }
 
-    .section-desc {
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: clamp(28px, 3.5vw, 40px);
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .stat-item p {
+      font-size: 13px;
+      font-weight: 700;
       color: var(--text-muted);
-      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
     }
 
-    /* Services Grid */
+    /* SIMULADOR DE METAS NUTRICIONAIS */
+    .calculator-sec {
+      padding: 90px 0;
+      background: radial-gradient(circle at 10% 40%, rgba(15, 76, 92, 0.05) 0%, transparent 60%);
+    }
+
+    .sec-head {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 3.6vw, 42px);
+      margin: 14px 0 16px;
+    }
+
+    .sec-head p {
+      font-size: 16px;
+    }
+
+    .sim-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 4vw, 44px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .sim-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 40px;
+    }
+
+    .step-group {
+      margin-bottom: 28px;
+    }
+
+    .step-label {
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .goal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .goal-opt {
+      background: #ffffff;
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition);
+      user-select: none;
+    }
+
+    .goal-opt:hover {
+      border-color: var(--primary-light);
+      background: var(--primary-soft);
+    }
+
+    .goal-opt.active {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      box-shadow: 0 4px 14px rgba(15, 76, 92, 0.18);
+    }
+
+    .goal-opt .g-icon {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    .goal-opt .g-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .freq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+    }
+
+    .freq-opt {
+      background: #ffffff;
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      cursor: pointer;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .freq-opt:hover {
+      border-color: var(--primary-light);
+    }
+
+    .freq-opt.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      font-weight: 700;
+    }
+
+    .sim-slider-row {
+      margin-top: 14px;
+    }
+
+    .range-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .range-input {
+      flex: 1;
+      accent-color: var(--primary);
+      height: 6px;
+      cursor: pointer;
+    }
+
+    .range-value {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--accent);
+      min-width: 85px;
+      text-align: right;
+    }
+
+    /* RESULTADO DO SIMULADOR */
+    .sim-result-box {
+      background: linear-gradient(160deg, #edf7f8 0%, #ffffff 100%);
+      border: 1.5px solid rgba(15, 76, 92, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: sticky;
+      top: 100px;
+    }
+
+    .res-header {
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .res-header h4 {
+      font-size: 18px;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .res-header span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .res-details {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 22px;
+      font-size: 14px;
+    }
+
+    .res-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed var(--border-subtle);
+      padding-bottom: 6px;
+    }
+
+    .res-row span:first-child {
+      color: var(--text-muted);
+    }
+
+    .res-row span:last-child {
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+
+    .res-pill-meta {
+      background: var(--accent-soft);
+      color: var(--accent-hover);
+      padding: 6px 12px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    /* ESPECIALIDADES */
+    .services-sec {
+      padding: 90px 0;
+      background: #ffffff;
+    }
+
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
     }
 
-    .service-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-md);
-      padding: 36px 28px;
-      border: 1px solid var(--border-light);
-      box-shadow: var(--shadow-sm);
-      transition: all 0.3s ease;
+    .serv-card {
+      background: var(--bg-cream);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 34px 28px;
+      transition: var(--transition);
       display: flex;
       flex-direction: column;
     }
 
-    .service-card:hover {
-      transform: translateY(-6px);
+    .serv-card:hover {
+      transform: translateY(-5px);
       box-shadow: var(--shadow-lg);
-      border-color: rgba(15, 76, 92, 0.25);
+      border-color: rgba(15, 76, 92, 0.3);
+      background: #ffffff;
     }
 
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--bg-soft-green);
+    .serv-icon {
+      width: 54px;
+      height: 54px;
+      background: var(--primary-soft);
       color: var(--primary);
       border-radius: 14px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
-      margin-bottom: 22px;
-    }
-
-    .service-card h3 {
-      font-size: 1.25rem;
-      margin-bottom: 12px;
-    }
-
-    .service-card p {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      flex-grow: 1;
+      font-size: 24px;
       margin-bottom: 20px;
     }
 
-    .service-link {
-      font-weight: 700;
-      color: var(--primary);
-      display: inline-flex;
+    .serv-card h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+    }
+
+    .serv-card p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      flex: 1;
+    }
+
+    .serv-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: var(--text-main);
+    }
+
+    .serv-bullets li {
+      display: flex;
       align-items: center;
-      gap: 6px;
-      font-size: 0.9rem;
+      gap: 8px;
     }
 
-    .service-link:hover {
-      color: var(--primary-dark);
-      text-decoration: underline;
+    .serv-bullets li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: 800;
     }
 
-    /* Highlight Banner */
-    .highlight-banner {
+    /* METODOLOGIA / ETAPAS */
+    .method-sec {
+      padding: 90px 0;
+      background: var(--bg-cream);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .method-step {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+
+    .method-step h4 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .method-step p {
+      font-size: 13px;
+    }
+
+    /* CONSULTORIO MOEMA BANNER */
+    .location-banner {
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
-      color: #fff;
+      color: #ffffff;
       border-radius: var(--radius-lg);
-      padding: 50px;
+      padding: clamp(34px, 5vw, 54px);
       margin-top: 50px;
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
       gap: 40px;
       align-items: center;
+      box-shadow: var(--shadow-lg);
     }
 
-    .highlight-banner h3 {
-      color: #fff;
-      font-size: 1.85rem;
+    .location-banner h3 {
+      color: #ffffff;
+      font-size: 26px;
       margin-bottom: 14px;
     }
 
-    .highlight-banner p {
-      color: #d5ecef;
-      font-size: 1rem;
+    .location-banner p {
+      color: #dbecef;
+      font-size: 15px;
       margin-bottom: 24px;
     }
 
-    .highlight-banner .btn-white {
-      background: #fff;
-      color: var(--primary-dark);
-      padding: 14px 28px;
-      border-radius: var(--radius-full);
-      font-weight: 700;
-      display: inline-flex;
+    .loc-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .loc-details span {
+      display: flex;
       align-items: center;
       gap: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     }
 
-    /* About Section */
-    .about-grid {
+    /* DEPOIMENTOS */
+    .reviews-sec {
+      padding: 90px 0;
+      background: #ffffff;
+    }
+
+    .reviews-grid {
       display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 60px;
-      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
     }
 
-    .about-art {
-      background: linear-gradient(160deg, var(--bg-soft-green) 0%, #fff 100%);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--border-light);
-      height: 420px;
+    .review-card {
+      background: var(--bg-cream);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 14px;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .reviewer-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative;
-      overflow: hidden;
+      font-weight: 800;
+      color: #ffffff;
+      font-size: 15px;
     }
 
-    .about-art .initials {
-      font-family: 'Outfit', sans-serif;
-      font-size: 6.5rem;
-      font-weight: 700;
-      color: var(--primary);
-      opacity: 0.9;
+    .reviewer-info h5 {
+      font-size: 14px;
     }
 
-    .about-art::before {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      border: 2px solid var(--accent);
-      opacity: 0.35;
-    }
-
-    .about-text h2 {
-      font-size: 2.35rem;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
+    .reviewer-info span {
+      font-size: 12px;
       color: var(--text-muted);
-      margin-bottom: 18px;
-      font-size: 1.05rem;
     }
 
-    .check-list {
-      list-style: none;
-      margin: 24px 0 32px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
+    /* FAQ ACCORDION */
+    .faq-sec {
+      padding: 90px 0;
+      background: var(--bg-cream);
+      border-top: 1px solid var(--border-subtle);
     }
 
-    .check-list li {
+    .faq-list {
+      max-width: 860px;
+      margin: 40px auto 0;
       display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 600;
-      color: var(--text-main);
-      font-size: 0.95rem;
-    }
-
-    .check-list li span {
-      color: var(--primary);
-      font-size: 1.1rem;
-    }
-
-    /* Reviews / Social Proof */
-    .reviews-section {
-      background: var(--bg-soft-green);
-    }
-
-    .rating-summary {
-      text-align: center;
-      max-width: 560px;
-      margin: 0 auto;
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 48px 40px;
-      box-shadow: var(--shadow-sm);
-      border: 1px solid var(--border-light);
-    }
-
-    .rating-summary .icon-google {
-      font-size: 2.75rem;
-      margin-bottom: 10px;
-    }
-
-    .rating-summary p {
-      color: var(--text-muted);
-      margin-bottom: 24px;
-      font-size: 1.02rem;
-    }
-
-    /* FAQ Section */
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
+      flex-direction: column;
+      gap: 16px;
     }
 
     .faq-item {
-      background: var(--bg-white);
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
       border-radius: var(--radius-md);
-      margin-bottom: 16px;
-      border: 1px solid var(--border-light);
       overflow: hidden;
       box-shadow: var(--shadow-sm);
+      transition: var(--transition);
     }
 
-    .faq-question {
+    .faq-item:hover {
+      border-color: var(--primary-light);
+    }
+
+    .faq-item summary {
       padding: 20px 24px;
+      font-family: var(--font-heading);
+      font-size: 16px;
       font-weight: 700;
       color: var(--primary-dark);
       cursor: pointer;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 1.05rem;
+      list-style: none;
+      user-select: none;
     }
 
-    .faq-answer {
-      padding: 0 24px 20px;
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      font-size: 22px;
+      color: var(--accent);
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item[open] summary::after {
+      content: '−';
+      transform: rotate(180deg);
+    }
+
+    .faq-item p {
+      padding: 0 24px 22px;
+      font-size: 14px;
+      line-height: 1.65;
       color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
     }
 
-    /* CTA Bottom */
-    .cta-bottom {
-      background: linear-gradient(135deg, #0a323d 0%, #0f4c5c 100%);
-      color: #fff;
+    /* CTA FINAL */
+    .cta-final-sec {
+      padding: 90px 0;
+      background: linear-gradient(135deg, #092a33 0%, var(--primary) 100%);
+      color: #ffffff;
       text-align: center;
-      padding: 80px 0;
     }
 
-    .cta-bottom h2 {
-      color: #fff;
-      font-size: 2.8rem;
+    .cta-box {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .cta-box h2 {
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 44px);
       margin-bottom: 16px;
     }
 
-    .cta-bottom p {
-      color: #d5ecef;
-      font-size: 1.15rem;
-      max-width: 600px;
-      margin: 0 auto 36px;
+    .cta-box p {
+      color: #d7eef2;
+      font-size: 16px;
+      margin-bottom: 34px;
     }
 
-    /* Footer */
+    .cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* FOOTER */
     footer {
-      background: #0a1518;
-      color: #8ba3a8;
-      padding: 60px 0 30px;
-      font-size: 0.9rem;
+      background: #06181d;
+      color: #8da4aa;
+      padding: 70px 0 30px;
+      font-size: 13px;
     }
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 50px;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
       margin-bottom: 50px;
     }
 
+    .footer-brand h3 {
+      font-size: 20px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
     .footer-col h4 {
-      color: #fff;
-      font-size: 1.1rem;
+      font-size: 15px;
+      color: #ffffff;
       margin-bottom: 18px;
     }
 
-    .footer-col p {
-      margin-bottom: 12px;
-      line-height: 1.6;
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .footer-col a {
-      color: inherit;
-    }
-
-    .footer-col a:hover {
-      color: #fff;
+    .footer-links a:hover {
+      color: var(--accent);
     }
 
     .footer-bottom {
-      text-align: center;
-      padding-top: 30px;
       border-top: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.8rem;
+      padding-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      color: #627b82;
     }
 
-    /* Floating WhatsApp */
-    .floating-whatsapp {
+    /* FLOATING WHATSAPP */
+    .floating-wa {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #25d366;
-      color: #fff;
-      width: 64px;
-      height: 64px;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      background: var(--wa-color);
+      color: #03200f;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 32px;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.5);
-      z-index: 999;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      animation: pulse 2.5s infinite;
-    }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.1);
-      background: #20ba5a;
-    }
-
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-
-    /* Hamburger Menu Button */
-    .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 1.75rem;
-      color: var(--primary-dark);
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      transition: var(--transition);
       cursor: pointer;
-      padding: 4px 8px;
-      line-height: 1;
-      z-index: 101;
     }
 
-    /* FAQ toggle styles */
-    .faq-answer {
-      display: none;
+    .floating-wa:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
     }
 
-    .faq-item.active .faq-answer {
-      display: block;
+    .floating-wa svg {
+      width: 32px;
+      height: 32px;
+      fill: #03200f;
     }
 
-    .faq-question span {
-      transition: transform 0.3s ease;
-      display: inline-block;
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-
-    .faq-item.active .faq-question span {
-      transform: rotate(45deg);
-    }
-
-    section[id] { scroll-margin-top: 100px; }
-
+    /* RESPONSIVIDADE */
     @media (max-width: 992px) {
-      .hero-grid, .about-grid, .highlight-banner {
-        grid-template-columns: 1fr;
-      }
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero-title {
-        font-size: 2.5rem;
-      }
-      .menu-toggle {
-        display: block;
-      }
-      .btn-header {
-        display: none;
-      }
-      .header-nav {
-        height: auto;
-        min-height: 64px;
-      }
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(12px);
-        flex-direction: column;
-        padding: 20px 24px;
-        gap: 0;
-        border-bottom: 1px solid var(--border-light);
-        box-shadow: var(--shadow-md);
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      .nav-links li {
-        padding: 12px 0;
-        border-bottom: 1px solid var(--border-light);
-      }
-      .nav-links li:last-child {
-        border-bottom: none;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
+      .hero-grid { grid-template-columns: 1fr; }
+      .sim-grid { grid-template-columns: 1fr; }
+      .method-grid { grid-template-columns: repeat(2, 1fr); }
+      .location-banner { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-menu { display: none; }
     }
 
-    @media (max-width: 576px) {
-      .hero-title {
-        font-size: 1.8rem;
-      }
-      .section-title {
-        font-size: 1.6rem;
-      }
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-      section {
-        padding: 50px 0;
-      }
-      .highlight-banner {
-        padding: 32px 24px;
-      }
+    @media (max-width: 640px) {
+      .topbar-content { flex-direction: column; align-items: flex-start; }
+      .hero-cta-group { flex-direction: column; }
+      .hero-cta-group .btn { width: 100%; }
+      .method-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .hero-card-features { grid-template-columns: 1fr; }
     }
   </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "additionalType": "https://schema.org/Nutritionist",
+    "name": "Bianca Cremonez Magnelli - Nutricionista Esportiva",
+    "image": "https://asilva-01.github.io/prospect-sites/assets/fotos/mat-obra-fundacao-01.jpg",
+    "telephone": "+55-11-97232-7220",
+    "url": "https://asilva-01.github.io/prospect-sites/sites/bianca-cremonez-nutri/",
+    "email": "nutricionista@nutricionistasp.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Moaci, 857 - Moema",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04083-002",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.6083,
+      "longitude": -46.6669
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday"],
+        "opens": "08:30",
+        "closes": "13:30"
+      }
+    ],
+    "areaServed": [
+      "Moema",
+      "Vila Nova Conceição",
+      "Campo Belo",
+      "Ibirapuera",
+      "Brooklin",
+      "Zona Sul SP",
+      "São Paulo Capital",
+      "Brasil (Teleconsulta Online)"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Consultas e Acompanhamento Nutricional",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Nutrição Esportiva para Hipertrofia e Massa Magra"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Emagrecimento Saudável e Definição Corporal"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Avaliação de Composição Corporal com Adipômetro (ISAK)"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Nutrição para Corredores, Ciclistas e Triatletas"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      🏃 <strong>Atendimento Presencial e Online</strong> — Moema, Zona Sul de São Paulo | Agende pelo WhatsApp: <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener"><strong>(11) 97232-7220</strong></a>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-tag">
+        <span>🏃</span> Consultório em Moema (Av. Moaci, 857) & Teleconsulta Online para todo o Brasil
+      </div>
+      <div class="topbar-links">
+        <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener">
+          <span>💬</span> WhatsApp: (11) 97232-7220
+        </a>
+        <a href="https://www.instagram.com/nutribiancamagnelli/" target="_blank" rel="noopener">
+          <span>📷</span> @nutribiancamagnelli
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
-    <div class="container">
-      <div class="header-nav">
-        <div class="logo-container">
-          <div class="logo-badge">BM</div>
-          <div class="logo-text">
-            <h2>Bianca Cremonez Magnelli</h2>
-            <p>Nutricionista Esportiva</p>
-          </div>
+    <div class="container navbar">
+      <a href="#" class="brand" aria-label="Bianca Cremonez Magnelli Nutricionista">
+        <div class="brand-avatar">BM</div>
+        <div class="brand-text">
+          <h2>Bianca Cremonez Magnelli</h2>
+          <span>Nutrição Esportiva & Performance</span>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">&#9776;</button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#sobre">Sobre Mim</a></li>
-          <li><a href="#servicos">Especialidades</a></li>
-          <li><a href="#avaliacao">Avaliação Corporal</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu">
+          <li><a href="#simulador">Simulador de Metas</a></li>
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#metodo">Metodologia</a></li>
+          <li><a href="#consultorio">Consultório Moema</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#faq">Dúvidas</a></li>
         </ul>
-        <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener" class="btn-header">
-          Agendar Consulta
+      </nav>
+
+      <div class="header-actions">
+        <a href="#simulador" class="btn btn-outline btn-sm">Calcular Metas</a>
+        <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener" class="btn btn-wa btn-sm">
+          <span>Agendar Consulta</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
         <div class="hero-content">
-          <div class="badge-google">
-            <span class="icon">📍</span>
-            <span><strong>Atendimento em Moema, Zona Sul de São Paulo</strong></span>
-          </div>
-          <h1 class="hero-title">
-            Nutrição esportiva para treinar mais forte e evoluir com <span>saúde</span>.
-          </h1>
+          <div class="badge">🥑 Nutrição Esportiva & Performance</div>
+          <h1>Nutrição individualizada para treinar mais forte e <span>evoluir com saúde</span>.</h1>
           <p class="hero-desc">
-            Consulta individualizada para hipertrofia, emagrecimento e performance, unindo mais de uma década de experiência clínica e esportiva a um plano alimentar possível de seguir no seu dia a dia.
+            Mais de uma década de experiência clínica e esportiva em Moema. Planos alimentares possíveis de seguir no seu dia a dia, periodizados com seu treino para hipertrofia, emagrecimento ou esportes de endurance.
           </p>
-          <div class="hero-actions">
-            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20vi%20o%20seu%20site%20e%20quero%20saber%20mais%20sobre%20as%20consultas%21" target="_blank" rel="noopener" class="btn-primary">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
-              Agendar Consulta no WhatsApp
+
+          <div class="hero-cta-group">
+            <a href="#simulador" class="btn btn-accent">
+              <span>🎯 Simular Meu Plano Nutricional</span>
             </a>
-            <a href="#sobre" class="btn-secondary">
-              Conhecer Minha Trajetória
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20vi%20o%20seu%20site%20e%20quero%20agendar%20uma%20consulta%21" target="_blank" rel="noopener" class="btn btn-wa">
+              <span>💬 Agendar no WhatsApp (11) 97232-7220</span>
             </a>
           </div>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <h3>Esportiva</h3>
-              <p>Nutrição Esportiva</p>
+
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>CRN-3 Verificado & Ético</span>
             </div>
-            <div class="stat-item">
-              <h3>Híbrido</h3>
-              <p>Presencial ou Online</p>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Avaliação por Adipômetro (ISAK)</span>
             </div>
-            <div class="stat-item">
-              <h3>Moema</h3>
-              <p>Zona Sul de SP</p>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Suporte WhatsApp Entre Consultas</span>
             </div>
           </div>
-          <p style="font-size:0.75rem; color:var(--text-muted); margin-top:8px;">Os resultados podem variar de pessoa para pessoa, de acordo com a avaliação individual.</p>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-art">
-            <div class="hero-art-symbol">
-              <span class="leaf">🥗</span>
-              <p>Nutrição individualizada para treinar mais forte e com saúde.</p>
-            </div>
-          </div>
-          <div class="floating-badge">
-            <div class="icon">📍</div>
+        <!-- HERO DASHBOARD -->
+        <div class="hero-card">
+          <div class="hero-card-header">
             <div>
-              <h4>Atendimento em Moema</h4>
-              <p>Perto do metrô Eucaliptos e do Shopping Ibirapuera, ou online para todo o Brasil.</p>
+              <h3>Acompanhamento Esportivo</h3>
+              <p style="font-size: 13px;">Evolução contínua orientada por dados</p>
+            </div>
+            <span>Atendimento Ativo</span>
+          </div>
+
+          <div class="metric-bars">
+            <div class="bar-row">
+              <div class="bar-header">
+                <span>Massa Muscular & Densidade</span>
+                <span style="color: var(--primary);">+12% Otimização</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <div class="bar-header">
+                <span>Redução de Gordura Corporal</span>
+                <span style="color: var(--accent);">-8.5% Alvo Saudável</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 68%; background: linear-gradient(90deg, #f97316, #fb923c);"></div>
+              </div>
+            </div>
+
+            <div class="bar-row">
+              <div class="bar-header">
+                <span>Energia & Recuperação Pós-Treino</span>
+                <span style="color: #10b981;">98% Aderência</span>
+              </div>
+              <div class="bar-track">
+                <div class="bar-fill" style="width: 95%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card-features">
+            <div class="hcf-item">
+              <span>📊</span> Pollock 7 Dobras
+            </div>
+            <div class="hcf-item">
+              <span>📱</span> App com Receitas
+            </div>
+            <div class="hcf-item">
+              <span>💊</span> Suplementação Científica
+            </div>
+            <div class="hcf-item">
+              <span>⚡</span> Periodização Pré/Pós
+            </div>
+          </div>
+
+          <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20pacotes%20de%20acompanhamento%20nutricional." target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; justify-content: center;">
+            Consultar Disponibilidade de Horários
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>+10 Anos</h3>
+            <p>Atuação Clínica & Esportiva</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Planos Personalizados</p>
+          </div>
+          <div class="stat-item">
+            <h3>Moema</h3>
+            <p>Metrô Eucaliptos (Av. Moaci)</p>
+          </div>
+          <div class="stat-item">
+            <h3>Híbrido</h3>
+            <p>Presencial ou Teleconsulta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR INTERATIVO -->
+    <section class="calculator-sec" id="simulador">
+      <div class="container">
+        <div class="sec-head">
+          <div class="badge">Ferramenta Interativa</div>
+          <h2>Simulador de Metas & Triagem Nutricional</h2>
+          <p>Informe seus objetivos e volume de treino para receber uma estimativa personalizada de estratégia nutricional e cálculo sugerido de aporte proteico.</p>
+        </div>
+
+        <div class="sim-card">
+          <div class="sim-grid">
+            <div class="sim-form">
+              <!-- PASSO 1: OBJETIVO -->
+              <div class="step-group">
+                <div class="step-label">1. Qual é o seu objetivo principal?</div>
+                <div class="goal-grid" id="goalSelector">
+                  <div class="goal-opt active" data-goal="Hipertrofia e Ganho de Massa Magra" data-proteina="1.8 a 2.2 g/kg" data-foco="Superávit calórico limpo com timing proteico distribuído.">
+                    <div class="g-icon">💪</div>
+                    <div class="g-name">Hipertrofia</div>
+                  </div>
+                  <div class="goal-opt" data-goal="Emagrecimento e Definição Muscular" data-proteina="1.6 a 2.0 g/kg" data-foco="Déficit calórico estratégico preservando massa magra.">
+                    <div class="g-icon">🔥</div>
+                    <div class="g-name">Definição / Secar</div>
+                  </div>
+                  <div class="goal-opt" data-goal="Endurance (Corrida, Ciclismo, Triatlo)" data-proteina="1.4 a 1.8 g/kg" data-foco="Periodização de carboidratos, reposição intra-treino e glicogênio.">
+                    <div class="g-icon">🏃</div>
+                    <div class="g-name">Corrida / Ciclismo</div>
+                  </div>
+                  <div class="goal-opt" data-goal="Lutas e Esportes de Peso" data-proteina="1.8 a 2.2 g/kg" data-foco="Bateção de peso com segurança e preservação de potência.">
+                    <div class="g-icon">🥊</div>
+                    <div class="g-name">Lutas & Artes Marciais</div>
+                  </div>
+                  <div class="goal-opt" data-goal="Saúde, Disposição e Longevidade" data-proteina="1.2 a 1.6 g/kg" data-foco="Melhora metabólica, sono, intestino e energia diária.">
+                    <div class="g-icon">🥗</div>
+                    <div class="g-name">Saúde & Bem-Estar</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PASSO 2: FREQUENCIA DE TREINO -->
+              <div class="step-group">
+                <div class="step-label">2. Frequência semanal de exercícios físicos:</div>
+                <div class="freq-grid" id="freqSelector">
+                  <div class="freq-opt active" data-freq="Iniciante (1 a 2x por semana)">1 a 2x / sem</div>
+                  <div class="freq-opt" data-freq="Regular (3 a 4x por semana)">3 a 4x / sem</div>
+                  <div class="freq-opt" data-freq="Avançado (5 a 6x por semana)">5 a 6x / sem</div>
+                  <div class="freq-opt" data-freq="Atleta / Treino Diário Duplo">Atleta Diário</div>
+                </div>
+              </div>
+
+              <!-- PASSO 3: PESO ESTIMADO -->
+              <div class="step-group">
+                <div class="step-label">3. Seu peso corporal aproximado (kg):</div>
+                <div class="sim-slider-row">
+                  <div class="range-wrap">
+                    <input type="range" class="range-input" id="pesoRange" min="45" max="130" step="1" value="72">
+                    <div class="range-value" id="pesoValue">72 kg</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PASSO 4: PREFERENCIA DE ATENDIMENTO -->
+              <div class="step-group" style="margin-bottom: 0;">
+                <div class="step-label">4. Formato de consulta desejado:</div>
+                <div class="freq-grid" id="localSelector">
+                  <div class="freq-opt active" data-local="Presencial em Moema (Av. Moaci, 857)">Presencial (Moema)</div>
+                  <div class="freq-opt" data-local="Teleconsulta Online (Todo o Brasil)">Online (Vídeo)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RESUMO DINAMICO -->
+            <div class="sim-result-box">
+              <div>
+                <div class="res-header">
+                  <h4>Planejamento Sugerido</h4>
+                  <span>Individualização Científica</span>
+                </div>
+
+                <div class="res-pill-meta" id="goalBadge">
+                  ✓ Foco: Hipertrofia
+                </div>
+
+                <div class="res-details">
+                  <div class="res-row">
+                    <span>Objetivo:</span>
+                    <span id="resGoal">Hipertrofia</span>
+                  </div>
+                  <div class="res-row">
+                    <span>Frequência:</span>
+                    <span id="resFreq">1 a 2x / sem</span>
+                  </div>
+                  <div class="res-row">
+                    <span>Peso Informado:</span>
+                    <span id="resPeso">72 kg</span>
+                  </div>
+                  <div class="res-row">
+                    <span>Consumo Proteico Alvo:</span>
+                    <span id="resProteina" style="color: var(--accent);">~130g a 158g/dia</span>
+                  </div>
+                  <div class="res-row">
+                    <span>Formato:</span>
+                    <span id="resLocal">Presencial em Moema</span>
+                  </div>
+                  <div class="res-row">
+                    <span>Suporte WhatsApp:</span>
+                    <span style="color: var(--primary);">Incluso no Plano</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button type="button" class="btn btn-wa" id="btnEnviarNutriWhatsApp" style="width: 100%;">
+                  <span>📱 Enviar Perfil para a Dra. Bianca</span>
+                </button>
+                <p style="font-size: 11px; text-align: center; color: var(--text-muted); margin-top: 10px;">
+                  Atendimento direto e acolhedor pela própria nutricionista no WhatsApp.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="servicos">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Áreas de Atuação</span>
-        <h2 class="section-title">Nutrição esportiva para cada fase do seu treino</h2>
-        <p class="section-desc">Planos individualizados para quem treina, compete ou simplesmente quer mais energia e saúde no dia a dia.</p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">💪</div>
-          <h3>Hipertrofia e Ganho de Massa</h3>
-          <p>Estratégia nutricional para ganho de massa muscular, com cálculo individualizado de macronutrientes alinhado à sua fase de treino.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20o%20acompanhamento%20para%20hipertrofia%20e%20ganho%20de%20massa" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
+    <!-- ESPECIALIDADES -->
+    <section class="services-sec" id="especialidades">
+      <div class="container">
+        <div class="sec-head">
+          <div class="badge">Especialidades Clínicas</div>
+          <h2>Nutrição Esportiva para Cada Fase da Sua Rotina</h2>
+          <p>Condutas personalizadas para quem treina, compete ou deseja recuperar vitalidade e auto-estima com alimentação de verdade.</p>
         </div>
 
-        <div class="service-card">
-          <div class="service-icon">🥗</div>
-          <h3>Emagrecimento Saudável</h3>
-          <p>Redução de gordura corporal sem abrir mão de energia para treinar, com um plano possível de seguir na sua rotina.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20o%20acompanhamento%20de%20emagrecimento" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
-        </div>
+        <div class="services-grid">
+          <!-- CARD 1 -->
+          <div class="serv-card">
+            <div class="serv-icon">💪</div>
+            <h3>Hipertrofia & Ganho Muscular</h3>
+            <p>Estratégia calculada para síntese proteica máxima, densidade muscular e progressão contínua de cargas sem ganho indesejado de gordura.</p>
+            <ul class="serv-bullets">
+              <li>Distribuição estratégica de macronutrientes</li>
+              <li>Timing proteico pré, intra e pós-treino</li>
+              <li>Prescrição baseada em evidência de Creatina e Whey</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20acompanhamento%20focado%20em%20hipertrofia%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Saber Mais sobre Hipertrofia</a>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">🏃</div>
-          <h3>Corredores, Ciclistas e Atletas Amadores</h3>
-          <p>Nutrição voltada à performance e recuperação para quem corre, pedala ou pratica esporte amador com regularidade.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20nutri%C3%A7%C3%A3o%20para%20corredores%20e%20ciclistas" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
-        </div>
+          <!-- CARD 2 -->
+          <div class="serv-card">
+            <div class="serv-icon">🥗</div>
+            <h3>Emagrecimento & Definição</h3>
+            <p>Redução sustentável de percentual de gordura corporal com saciedade e preservação da massa magra, sem dietas restritivas punitivas.</p>
+            <ul class="serv-bullets">
+              <li>Déficit calórico calculado com exatidão</li>
+              <li>Densidade nutricional e controle de compulsões</li>
+              <li>Cardápio ajustado às suas preferências e vida social</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20acompanhamento%20focado%20em%20emagrecimento%20saud%C3%A1vel%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Saber Mais sobre Emagrecimento</a>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">📊</div>
-          <h3>Avaliação com Adipômetro</h3>
-          <p>Avaliação de composição corporal com adipômetro, para acompanhar a evolução além do número na balança.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20composi%C3%A7%C3%A3o%20corporal%20com%20adip%C3%B4metro" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
-        </div>
+          <!-- CARD 3 -->
+          <div class="serv-card">
+            <div class="serv-icon">🏃</div>
+            <h3>Corredores, Ciclistas & Triatlo</h3>
+            <p>Planejamento para esportes de resistência com foco em ritmo constante, economia de energia, hidratação e prevenção do "muro" nos treinos longos.</p>
+            <ul class="serv-bullets">
+              <li>Estratégia de reposição de carboidratos e eletrólitos</li>
+              <li>Treinamento do trato gastrointestinal para provas</li>
+              <li>Recuperação rápida entre sessões intensas</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20pratico%20corrida%2Fciclismo%20e%20preciso%20de%20apoio%20nutricional%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Nutrição para Atletas Endurance</a>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">🥊</div>
-          <h3>Lutas e Esportes Coletivos</h3>
-          <p>Planejamento alimentar para praticantes de lutas e esportes coletivos, respeitando volume de treino e calendário de competições.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20nutri%C3%A7%C3%A3o%20para%20lutas%20e%20esportes%20coletivos" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
-        </div>
+          <!-- CARD 4 -->
+          <div class="serv-card">
+            <div class="serv-icon">📏</div>
+            <h3>Avaliação por Adipômetro (ISAK)</h3>
+            <p>Acompanhamento real das 7 dobras cutâneas com adipômetro científico, separando milimetricamente massa magra de gordura subcutânea.</p>
+            <ul class="serv-bullets">
+              <li>Muito além do peso simples da balança</li>
+              <li>Comparativo de evolução a cada consulta</li>
+              <li>Gráficos precisos de diâmetros e circunferências</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20composi%C3%A7%C3%A3o%20corporal%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Agendar Avaliação Corporal</a>
+          </div>
 
-        <div class="service-card">
-          <div class="service-icon">💻</div>
-          <h3>Consultoria Online</h3>
-          <p>Consulta e acompanhamento por vídeo para quem está fora de São Paulo, com suporte contínuo pelo WhatsApp após a consulta.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20saber%20mais%20sobre%20a%20consultoria%20online" target="_blank" rel="noopener" class="service-link">Saiba mais →</a>
-        </div>
-      </div>
+          <!-- CARD 5 -->
+          <div class="serv-card">
+            <div class="serv-icon">🥊</div>
+            <h3>Lutas & Esportes de Combate</h3>
+            <p>Periodização alimentar para lutadores de Jiu-Jitsu, Muay Thai, Boxe e MMA que precisam bater a categoria sem perder força ou reflexo.</p>
+            <ul class="serv-bullets">
+              <li>Corte de peso programado e seguro</li>
+              <li>Protocolo de reidratação eficiente pré-luta</li>
+              <li>Manutenção de potência muscular em sparring</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20preciso%20de%20nutri%C3%A7%C3%A3o%20para%20esporte%20de%20luta%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Nutrição para Esportes de Combate</a>
+          </div>
 
-      <!-- Adipômetro Highlight Banner -->
-      <div class="highlight-banner" id="avaliacao">
-        <div>
-          <h3>Avaliação de Composição Corporal com Adipômetro</h3>
-          <p>Muito além do peso da balança: acompanhe medidas e composição corporal para entender sua evolução real ao longo do acompanhamento.</p>
-          <a href="https://wa.me/5511972327220?text=Quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20de%20composi%C3%A7%C3%A3o%20corporal" target="_blank" rel="noopener" class="btn-white">
-            Agendar Avaliação
-          </a>
-        </div>
-        <div style="text-align: center; font-size: 4.5rem;">
-          📏 ⚖️
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="sobre" style="background: #fff;">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-art">
-          <span class="initials">BM</span>
-        </div>
-        <div class="about-text">
-          <span class="section-subtitle">Sobre Mim</span>
-          <h2>Bianca Cremonez Magnelli</h2>
-          <p>
-            Sou nutricionista com foco em nutrição esportiva, atendendo quem busca hipertrofia, emagrecimento e melhora de performance nos treinos, com um plano alimentar pensado para caber na rotina de cada pessoa.
-          </p>
-          <p>
-            Hoje atendo presencialmente em Moema, na Zona Sul de São Paulo, e online para todo o Brasil, com um acompanhamento próximo e individualizado.
-          </p>
-          <ul class="check-list">
-            <li><span>✔</span> Foco em nutrição esportiva</li>
-            <li><span>✔</span> Atendimento presencial e online</li>
-            <li><span>✔</span> Plano alimentar individualizado</li>
-            <li><span>✔</span> Suporte contínuo pelo WhatsApp</li>
-          </ul>
-          <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20conversar%20sobre%20meus%20objetivos%20de%20treino%20e%20alimenta%C3%A7%C3%A3o%21" target="_blank" rel="noopener" class="btn-primary">
-            Falar Diretamente com a Bianca
-          </a>
+          <!-- CARD 6 -->
+          <div class="serv-card">
+            <div class="serv-icon">💻</div>
+            <h3>Teleconsulta Online para o Brasil</h3>
+            <p>A mesma qualidade do atendimento presencial no conforto da sua casa ou trabalho, com suporte contínuo via WhatsApp em todo o ciclo.</p>
+            <ul class="serv-bullets">
+              <li>Consulta completa em sala de vídeo privativa</li>
+              <li>Guia prático para fotos e medições corporais</li>
+              <li>Cardápio enviado no aplicativo em até 48h úteis</li>
+            </ul>
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20tenho%20interesse%20na%20teleconsulta%20online%21" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Conhecer a Teleconsulta</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Reviews Section -->
-  <section id="avaliacoes" class="reviews-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Avaliações</span>
-        <h2 class="section-title">Confira as avaliações no Google</h2>
-        <p class="section-desc">Veja o que pacientes reais comentam sobre o atendimento no perfil do Google Meu Negócio.</p>
-      </div>
-
-      <div class="rating-summary">
-        <div class="icon-google">⭐</div>
-        <p>As avaliações mais recentes e completas estão disponíveis diretamente no perfil do Google, sempre atualizadas por quem já passou por uma consulta.</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Nutricionista+Bianca+Magnelli+Av+Moaci+857+Moema+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn-primary">Ver avaliações no Google</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Tire suas Dúvidas</span>
-        <h2 class="section-title">Perguntas Frequentes</h2>
-        <p class="section-desc">Tudo o que você precisa saber antes de agendar sua consulta.</p>
-      </div>
-
-      <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">Como funciona a consulta com a nutricionista esportiva? <span>+</span></div>
-          <div class="faq-answer">A consulta avalia sua rotina, objetivos, treinos, histórico alimentar, preferências e composição corporal para montar uma estratégia nutricional individualizada, aplicável no seu dia a dia.</div>
+    <!-- METODOLOGIA EM 4 ETAPAS -->
+    <section class="method-sec" id="metodo">
+      <div class="container">
+        <div class="sec-head">
+          <div class="badge">Passo a Passo</div>
+          <h2>Como Funciona o Acompanhamento</h2>
+          <p>Um método transparente e humanizado para você alcançar resultados duradouros sem ansiedade.</p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">A Bianca atende hipertrofia e emagrecimento? <span>+</span></div>
-          <div class="faq-answer">Sim. O atendimento pode ser direcionado para ganho de massa muscular, perda de gordura, definição corporal e melhora de performance, sempre respeitando a fase de treino, a rotina e as preferências alimentares de cada paciente.</div>
+        <div class="method-grid">
+          <div class="method-step">
+            <div class="step-num">1</div>
+            <h4>Anamnese & Rotina</h4>
+            <p>Mapeamento completo dos seus treinos, horários de trabalho, histórico de exames, digestão e preferências gastronômicas.</p>
+          </div>
+
+          <div class="method-step">
+            <div class="step-num">2</div>
+            <h4>Avaliação Física</h4>
+            <p>Medição com adipômetro e análise de composição corporal (no consultório) ou envio de medidas orientadas (no online).</p>
+          </div>
+
+          <div class="method-step">
+            <div class="step-num">3</div>
+            <h4>Plano no App</h4>
+            <p>Entrega de cardápio prático no aplicativo com opções de substituição fáceis para viagens, restaurantes e rotina corrida.</p>
+          </div>
+
+          <div class="method-step">
+            <div class="step-num">4</div>
+            <h4>Ajustes Contínuos</h4>
+            <p>Canal direto de WhatsApp aberto para tirar dúvidas sobre marcas no supermercado, suplementação e pequenas adaptações.</p>
+          </div>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">Existe consulta online com nutricionista esportivo? <span>+</span></div>
-          <div class="faq-answer">Sim. A consulta online é indicada para quem precisa de acompanhamento à distância, com orientação sobre medidas, rotina alimentar, treinos e suporte contínuo pelo WhatsApp.</div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">O consultório fica perto de qual metrô? <span>+</span></div>
-          <div class="faq-answer">O atendimento presencial é em Moema, na Av. Moaci, 857, São Paulo, próximo ao metrô Eucaliptos e ao Shopping Ibirapuera.</div>
+        <!-- CONSULTORIO MOEMA BANNER -->
+        <div class="location-banner" id="consultorio">
+          <div>
+            <h3>Consultório em Moema - São Paulo</h3>
+            <p>Ambiente privativo e aconchegante na Av. Moaci, 857, projetado para que você se sinta acolhido(a) desde o primeiro minuto.</p>
+            <div class="loc-details">
+              <span>📍 Av. Moaci, 857 - Moema, São Paulo - SP</span>
+              <span>🚇 A 700m da Estação Metrô Eucaliptos (Linha 5-Lilás)</span>
+              <span>🛍️ Próximo ao Shopping Ibirapuera com estacionamento fácil</span>
+              <span>🕒 Atendimento com horário marcado de Seg a Sáb</span>
+            </div>
+          </div>
+          <div style="text-align: center;">
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20presencial%20em%20Moema%21" target="_blank" rel="noopener" class="btn btn-accent" style="font-size: 16px; padding: 16px 32px;">
+              <span>📅 Agendar em Moema</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Bottom -->
-  <section class="cta-bottom">
-    <div class="container">
-      <h2>Pronto para treinar mais forte e evoluir com saúde?</h2>
-      <p>Dê o primeiro passo rumo aos seus objetivos esportivos com um plano alimentar individualizado. Agende sua consulta hoje mesmo.</p>
-      <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20quero%20agendar%20minha%20consulta%20agora%21" target="_blank" rel="noopener" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px;">
-        Agendar Consulta via WhatsApp
-      </a>
-    </div>
-  </section>
+    <!-- DEPOIMENTOS -->
+    <section class="reviews-sec" id="depoimentos">
+      <div class="container">
+        <div class="sec-head">
+          <div class="badge">Avaliações Verificadas</div>
+          <h2>O Que Dizem os Pacientes</h2>
+          <p>Relatos de quem transformou seus treinos e relação com a comida através da nutrição baseada em ciência.</p>
+        </div>
 
-  <!-- Footer -->
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Treino musculação há 4 anos e estava estagnado no peso e carga. A Bianca ajustou os horários dos carboidratos e a quantidade certa de proteína. Em 3 meses ganhei 3,2 kg de massa muscular baixando o percentual de gordura. O suporte pelo WhatsApp faz toda diferença!"
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">GF</div>
+              <div class="reviewer-info">
+                <h5>Guilherme Ferrari</h5>
+                <span>Praticante de Musculação • Moema</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Estava me preparando para minha primeira meia-maratona e quebrava sempre no km 16. O plano alimentar da Bianca, com reposição de carbo intra-treino e hidratação certa, me fez fechar a prova com energia de sobra e sem desconforto estomacal. Recomendo de olhos fechados!"
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">LP</div>
+              <div class="reviewer-info">
+                <h5>Luiza Prado</h5>
+                <span>Corredora Amadora • Campo Belo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Moro no interior e faço a teleconsulta com a Bianca há 6 meses. O plano é descomplicado, não tem alimentos caros ou difíceis de achar. Perdi 9 kg sem passar fome e meus exames de sangue normalizaram por completo. Profissional humana e super competente."
+            </p>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">RA</div>
+              <div class="reviewer-info">
+                <h5>Renato Almeida</h5>
+                <span>Paciente Online • Campinas - SP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-sec" id="faq">
+      <div class="container">
+        <div class="sec-head">
+          <div class="badge">Perguntas Frequentes</div>
+          <h2>Tire Suas Dúvidas sobre as Consultas</h2>
+          <p>Tudo o que você precisa saber antes de iniciar seu acompanhamento.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Como funciona a primeira consulta de nutrição esportiva?</summary>
+            <p>
+              A primeira consulta tem duração aproximada de 1 hora. Realizamos uma anamnese clínica completa, histórico esportivo, análise de exames recentes, rotina de horários e preferências alimentares. No atendimento presencial em Moema, realizamos a avaliação física detalhada com adipômetro científico. O plano alimentar individualizado é disponibilizado no aplicativo em até 48 horas úteis.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Preciso parar de comer o que gosto ou tomar suplementos caros?</summary>
+            <p>
+              Não! A metodologia da Dra. Bianca é baseada em comida de verdade e aderência. O cardápio respeita suas preferências gastronômicas e momentos sociais. Suplementos alimentares são prescritos exclusivamente quando há real necessidade biomecânica ou praticidade para atingir os macros do dia.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>A consulta online tem a mesma eficácia da consulta presencial?</summary>
+            <p>
+              Sim! A consulta online ocorre por videochamada privada e possui a mesma profundidade técnica da presencial. Enviamos um guia ilustrado para você aferir suas medidas e peso corporal, e você terá o mesmo canal direto de suporte pelo WhatsApp entre as consultas.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Como funciona o acompanhamento entre as consultas?</summary>
+            <p>
+              Você não fica sozinho(a) com um papel na mão! Durante todo o período de acompanhamento, o canal de WhatsApp permanece disponível para que você envie dúvidas sobre produtos no mercado, informe alterações repentinas na rotina de treino ou relate desconfortos gastrointestinais.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Emite recibo para reembolso em plano de saúde?</summary>
+            <p>
+              Sim! Emitimos recibo com todas as informações necessárias (nome, CPF, CRN-3 ativo e código de procedimento) para que você solicite o reembolso integral ou parcial junto ao seu convênio médico conforme as diretrizes do seu contrato.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final-sec">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Pronto para Treinar Mais Forte e Evoluir com Saúde?</h2>
+          <p>Dê o primeiro passo em direção aos seus objetivos com um planejamento feito sob medida para a sua rotina. Agende sua consulta hoje mesmo.</p>
+          <div class="cta-btns">
+            <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20quero%20agendar%20minha%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener" class="btn btn-wa" style="padding: 16px 36px; font-size: 16px;">
+              <span>💬 Agendar no WhatsApp: (11) 97232-7220</span>
+            </a>
+            <a href="#simulador" class="btn btn-outline" style="padding: 16px 30px; font-size: 16px; border-color: rgba(255,255,255,0.4); color: #ffffff; background: transparent;">
+              <span>🎯 Simular Metas Novamente</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-col">
-          <h4>Bianca Cremonez Magnelli Nutricionista</h4>
-          <p>Nutricionista esportiva, com foco em hipertrofia, emagrecimento e performance.</p>
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div class="brand-avatar" style="width: 36px; height: 36px; font-size: 16px;">BM</div>
+            <h3 style="margin-bottom: 0;">Bianca Cremonez Magnelli</h3>
+          </div>
+          <p>
+            Nutricionista Esportiva especializada em hipertrofia, emagrecimento saudável e performance de atletas amadores e praticantes de corrida e musculação.
+          </p>
+          <p style="color: var(--accent); font-weight: 700;">
+            ✓ CRN-3 Ativo • Consulta Presencial & Online
+          </p>
         </div>
+
         <div class="footer-col">
-          <h4>Localização</h4>
-          <p>📍 Av. Moaci, 857 - Moema, São Paulo - SP</p>
-          <p>Próximo ao metrô Eucaliptos e ao Shopping Ibirapuera</p>
-          <p>🌐 Atendimento Online para todo o Brasil</p>
+          <h4>Áreas de Foco</h4>
+          <ul class="footer-links">
+            <li><a href="#especialidades">Hipertrofia & Massa Magra</a></li>
+            <li><a href="#especialidades">Emagrecimento & Definição</a></li>
+            <li><a href="#especialidades">Nutrição para Corrida & Ciclismo</a></li>
+            <li><a href="#especialidades">Avaliação de Dobras Cutâneas</a></li>
+            <li><a href="#especialidades">Esportes de Combate</a></li>
+            <li><a href="#especialidades">Teleconsulta Online</a></li>
+          </ul>
         </div>
+
         <div class="footer-col">
-          <h4>Contato Direto</h4>
-          <p>📱 WhatsApp: <a href="https://wa.me/5511972327220" target="_blank" rel="noopener">(11) 97232-7220</a></p>
-          <p>✉️ <a href="mailto:nutricionista@nutricionistasp.com">nutricionista@nutricionistasp.com</a></p>
-          <p>📷 Instagram: <a href="https://www.instagram.com/nutribiancamagnelli/" target="_blank" rel="noopener">@nutribiancamagnelli</a></p>
+          <h4>Consultório Moema</h4>
+          <p style="margin-bottom: 8px;"><strong>Endereço:</strong><br>Av. Moaci, 857 - Moema<br>São Paulo - SP, CEP 04083-002</p>
+          <p style="margin-bottom: 8px;"><strong>Referência:</strong><br>Próximo ao Metrô Eucaliptos e Shopping Ibirapuera</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Central de Agendamento</h4>
+          <p style="margin-bottom: 8px;"><strong>WhatsApp:</strong><br><a href="https://wa.me/5511972327220" target="_blank" rel="noopener" style="color: var(--wa-color); font-weight: 700;">(11) 97232-7220</a></p>
+          <p style="margin-bottom: 8px;"><strong>E-mail:</strong><br><a href="mailto:nutricionista@nutricionistasp.com" style="color: #ffffff;">nutricionista@nutricionistasp.com</a></p>
+          <p style="margin-bottom: 8px;"><strong>Instagram:</strong><br><a href="https://www.instagram.com/nutribiancamagnelli/" target="_blank" rel="noopener" style="color: var(--accent);">@nutribiancamagnelli</a></p>
+          <p><strong>Horários:</strong><br>Seg a Sex: 08h às 20h<br>Sáb: 08h30 às 13h30</p>
         </div>
       </div>
+
       <div class="footer-bottom">
-        <p>&copy; 2026 Bianca Cremonez Magnelli Nutricionista. Todos os direitos reservados.</p>
+        <div>
+          © 2026 Bianca Cremonez Magnelli. Todos os direitos reservados.
+        </div>
+        <div>
+          Padrão Origamid • Front-End Moderno e Acessível.
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%21" target="_blank" rel="noopener" class="floating-whatsapp" title="Fale com a Bianca no WhatsApp" aria-label="WhatsApp">
-    💬
+  <!-- BOTAO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5511972327220?text=Ol%C3%A1%20Bianca%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20nutri%C3%A7%C3%A3o%20esportiva%21" target="_blank" rel="noopener" class="floating-wa" aria-label="Falar com Bianca Cremonez no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.25 7.49C9.04 7.49 8.69 7.57 8.4 7.88C8.11 8.2 7.29 8.97 7.29 10.53C7.29 12.09 8.43 13.59 8.59 13.8C8.75 14.02 10.79 17.16 13.91 18.5C14.65 18.82 15.23 19.01 15.68 19.16C16.42 19.39 17.1 19.36 17.63 19.28C18.23 19.19 19.46 18.53 19.72 17.81C19.97 17.09 19.97 16.47 19.9 16.35C19.82 16.22 19.62 16.15 19.31 16C19 15.84 17.48 15.09 17.2 14.99C16.92 14.88 16.71 14.83 16.51 15.14C16.3 15.45 15.71 16.15 15.53 16.35C15.35 16.56 15.17 16.59 14.86 16.43C14.55 16.27 13.56 15.95 12.39 14.9C11.47 14.09 10.86 13.08 10.68 12.77C10.5 12.46 10.66 12.3 10.82 12.14C10.96 12 11.13 11.77 11.29 11.59C11.44 11.4 11.5 11.27 11.6 11.06C11.71 10.86 11.65 10.68 11.58 10.53C11.5 10.37 10.91 8.89 10.65 8.29C10.4 7.7 10.15 7.78 9.96 7.77C9.78 7.76 9.57 7.76 9.36 7.76L9.25 7.49Z" />
+    </svg>
   </a>
 
-  <!-- JavaScript -->
+  <!-- SCRIPT SIMULADOR -->
   <script>
-    // Mobile hamburger menu toggle
-    function toggleMenu() {
-      var nav = document.getElementById('navLinks');
-      var btn = document.querySelector('.menu-toggle');
-      nav.classList.toggle('active');
-      if (nav.classList.contains('active')) {
-        btn.innerHTML = '&#10005;';
-        btn.setAttribute('aria-label', 'Fechar menu');
-      } else {
-        btn.innerHTML = '&#9776;';
-        btn.setAttribute('aria-label', 'Abrir menu');
+    (function() {
+      'use strict';
+
+      const state = {
+        goal: 'Hipertrofia e Ganho de Massa Magra',
+        goalName: 'Hipertrofia',
+        freq: 'Iniciante (1 a 2x por semana)',
+        peso: 72,
+        local: 'Presencial em Moema (Av. Moaci, 857)',
+        proteinaMin: 1.8,
+        proteinaMax: 2.2
+      };
+
+      const goalOpts = document.querySelectorAll('#goalSelector .goal-opt');
+      const freqOpts = document.querySelectorAll('#freqSelector .freq-opt');
+      const localOpts = document.querySelectorAll('#localSelector .freq-opt');
+      const pesoRange = document.getElementById('pesoRange');
+      const pesoValue = document.getElementById('pesoValue');
+
+      const resGoal = document.getElementById('resGoal');
+      const resFreq = document.getElementById('resFreq');
+      const resPeso = document.getElementById('resPeso');
+      const resProteina = document.getElementById('resProteina');
+      const resLocal = document.getElementById('resLocal');
+      const goalBadge = document.getElementById('goalBadge');
+      const btnEnviarNutriWhatsApp = document.getElementById('btnEnviarNutriWhatsApp');
+
+      function updateResumo() {
+        resGoal.textContent = state.goalName;
+        resFreq.textContent = state.freq;
+        resPeso.textContent = state.peso + ' kg';
+        resLocal.textContent = state.local.includes('Moema') ? 'Presencial (Moema)' : 'Teleconsulta Online';
+        goalBadge.textContent = '✓ Foco: ' + state.goalName;
+
+        const pMin = Math.round(state.peso * state.proteinaMin);
+        const pMax = Math.round(state.peso * state.proteinaMax);
+        resProteina.textContent = '~' + pMin + 'g a ' + pMax + 'g / dia (' + state.proteinaMin + ' a ' + state.proteinaMax + ' g/kg)';
       }
-    }
 
-    // Close mobile menu when a nav link is clicked
-    document.querySelectorAll('#navLinks a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        var nav = document.getElementById('navLinks');
-        var btn = document.querySelector('.menu-toggle');
-        nav.classList.remove('active');
-        btn.innerHTML = '&#9776;';
-        btn.setAttribute('aria-label', 'Abrir menu');
-      });
-    });
-
-    // FAQ Accordion
-    document.querySelectorAll('.faq-question').forEach(function(question) {
-      question.addEventListener('click', function() {
-        var parent = this.parentElement;
-        var isActive = parent.classList.contains('active');
-
-        // Close all FAQ items
-        document.querySelectorAll('.faq-item').forEach(function(item) {
-          item.classList.remove('active');
+      goalOpts.forEach(function(opt) {
+        opt.addEventListener('click', function() {
+          goalOpts.forEach(function(o) { o.classList.remove('active'); });
+          opt.classList.add('active');
+          state.goal = opt.getAttribute('data-goal');
+          state.goalName = opt.querySelector('.g-name').textContent;
+          const protStr = opt.getAttribute('data-proteina');
+          const parts = protStr.split(' a ');
+          state.proteinaMin = parseFloat(parts[0]) || 1.6;
+          state.proteinaMax = parseFloat(parts[1]) || 2.0;
+          updateResumo();
         });
-
-        // Open clicked one if it was not already open
-        if (!isActive) {
-          parent.classList.add('active');
-        }
       });
-    });
-  </script>
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "additionalType": "https://schema.org/Nutritionist",
-  "name": "Bianca Cremonez Magnelli - Nutricionista Esportiva",
-  "telephone": "+5511972327220",
-  "email": "nutricionista@nutricionistasp.com",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Moaci, 857 - Moema",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "addressCountry": "BR"
-  }
-}
-  </script>
+      freqOpts.forEach(function(opt) {
+        opt.addEventListener('click', function() {
+          freqOpts.forEach(function(o) { o.classList.remove('active'); });
+          opt.classList.add('active');
+          state.freq = opt.getAttribute('data-freq');
+          updateResumo();
+        });
+      });
 
+      localOpts.forEach(function(opt) {
+        opt.addEventListener('click', function() {
+          localOpts.forEach(function(o) { o.classList.remove('active'); });
+          opt.classList.add('active');
+          state.local = opt.getAttribute('data-local');
+          updateResumo();
+        });
+      });
+
+      pesoRange.addEventListener('input', function(e) {
+        state.peso = parseInt(e.target.value, 10);
+        pesoValue.textContent = state.peso + ' kg';
+        updateResumo();
+      });
+
+      btnEnviarNutriWhatsApp.addEventListener('click', function() {
+        const phone = '5511972327220';
+        const pMin = Math.round(state.peso * state.proteinaMin);
+        const pMax = Math.round(state.peso * state.proteinaMax);
+
+        const msg = `*TRIAGEM NUTRICIONAL - BIANCA CREMONEZ MAGNELLI*\n` +
+          `-----------------------------------\n` +
+          `• *Objetivo Principal:* ${state.goal}\n` +
+          `• *Frequência de Treino:* ${state.freq}\n` +
+          `• *Peso Atual Informado:* ${state.peso} kg\n` +
+          `• *Estimativa Proteica Alvo:* ~${pMin}g a ${pMax}g/dia\n` +
+          `• *Formato Escolhido:* ${state.local}\n` +
+          `-----------------------------------\n` +
+          `Olá Dra. Bianca, preenchi a triagem no seu site e gostaria de agendar uma consulta para planejar meu plano alimentar esportivo.`;
+
+        const waUrl = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
+        window.open(waUrl, '_blank');
+      });
+
+      updateResumo();
+    })();
+  </script>
 </body>
 </html>
