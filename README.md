@@ -44,6 +44,7 @@ Acesse o **Hub Interativo de Demonstração**:
 | **Kimiko Auto Center** | Mecânica Especializada | Precisão japonesa desde 2003 (Bosque da Saúde), especialistas em Honda, Toyota e multimarcas, **Widget de Diagnóstico e Agendamento** no WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/kimiko-auto-center/) |
 | **Riveiro Restauradora** | Funilaria & Pintura | 44 anos no Jabaquara (desde 1980), estufa italiana pressurizada, tintas PPG/DuPont, martelinho de ouro, sinistros de seguradoras e **Simulador de Orçamento de Funilaria**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/riveiro-restauradora/) |
 | **Omenauto** | Mecânica Especializada | Oficina de família dos irmãos Bilecki desde 1988 (Jabaquara), atendimento a mais de 20 montadoras e **Simulador de Diagnóstico Mecânico por Sintomas**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/omenauto/) |
+| **Future Auto Care** | Estética Automotiva & Detailing | Ateliê na Chácara Santo Antônio, vitrificação cerâmica 9H, polimento técnico, cuidados para blindados, **Slider Antes & Depois** e **Simulador de Pacotes de Estética**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/future-auto-care/) |
 | **Tempstar** | Engenharia Térmica | Engenharia B2B, PMOC (Lei 13.589/2018), sistemas VRF/Chiller, credenciamento Daikin e Carrier. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/) |
 
 ---
