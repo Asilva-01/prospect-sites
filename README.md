@@ -47,6 +47,7 @@ Acesse o **Hub Interativo de Demonstração**:
 | **Future Auto Care** | Estética Automotiva & Detailing | Ateliê na Chácara Santo Antônio, vitrificação cerâmica 9H, polimento técnico, cuidados para blindados, **Slider Antes & Depois** e **Simulador de Pacotes de Estética**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/future-auto-care/) |
 | **Bio SP Dedetizadora** | Controle de Pragas & Sanitização | 30 anos em São Paulo, certificação oficial SIVISA, visita gratuita, produtos seguros para pets e **Simulador Interativo de Pragas**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/bio-sp-dedetizadora/) |
 | **Dedetizadora Hiroshima** | Controle de Pragas & Desentupimento | 28 anos de mercado, plantão 24 horas real sem taxa extra em feriados na Grande SP e ABC, produtos Bayer inodoros e **Simulador de Plantão 24h & Orçamento**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/dedetizadora-hiroshima/) |
+| **Etoprag** | Manejo Integrado (MIP) & Laudos Sanitários | Metodologia MIP com os 4 Pilares, pasta sanitária oficial para ANVISA e auditorias BPF/HACCP, proteção sem interrupção para restaurantes e **Diagnóstico MIP Interativo**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/etoprag/) |
 | **Tempstar** | Engenharia Térmica | Engenharia B2B, PMOC (Lei 13.589/2018), sistemas VRF/Chiller, credenciamento Daikin e Carrier. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/) |
 
 ---
