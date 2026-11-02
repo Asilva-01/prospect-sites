@@ -36,6 +36,7 @@ Acesse o **Hub Interativo de Demonstração**:
 | **Temfer** | Materiais de Construção | Multi-lojas (Santo Amaro, Campo Belo e CD), marcas líderes (Tigre, Votoran, Deca), **Calculadora de Orçamento de Materiais** para WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/temfer-materiais-construcao/) |
 | **Zathura** | Materiais Elétricos | Esquema técnico em SVG do painel de distribuição, barramentos de cobre (100A-400A), **Montador de Lista de Material Elétrico** via WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/zathura-materiais-eletricos/) |
 | **Tintas Lar e Auto** | Tintas Residenciais & Automotivas | 4 pilares técnicos (Automotivo, Imobiliário, Artesanato, Aviação PPG), turmas presenciais de pintura, **Simulador de Tintas & Demãos**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/tintas-lar-e-auto/) |
+| **MATER** | Materiais & Ferragens | Da fundação ao acabamento (Ipiranga), cimento, ferragens, hidráulica, elétrica e tintas, **Simulador de Lista de Materiais** para WhatsApp. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/mater-materiais-ferragens/) |
 | **Clínica Langner** | Psicologia & Neuropsicologia | Protocolo de avaliação diagnóstica (TDAH, TEA, Memória/Alzheimer), etapas do laudo CFP/SATEPSI, guia de reembolso e **Widget de Triagem Confidencial**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/clinica-langner/) |
 | **Métra Psicologia** | Clínica & Psicanálise | Selo clínico institucional, Chácara Santo Antônio, abordagem psicanalítica freudo-lacaniana, FAQ nativo e **Widget de Acolhimento**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/metra-psicologia/) |
 | **Dra. Cecília Freytas** | Psicologia Clínica | CRP verificado, NovAmérica Office Park, 5.0★ Google, **Formulário de Agendamento Seguro** e foco em ansiedade/TCC. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/cecilia-freytas-psico/) |
@@ -95,3 +96,4 @@ Desenvolvido por **Asilva-01**
 ## 📄 Licença
 
 Este projeto é disponibilizado para fins de demonstração técnica e composição de portfólio profissional. Todos os direitos sobre as marcas locais pertencem aos seus respectivos proprietários.
+
