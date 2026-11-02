@@ -49,6 +49,7 @@ Acesse o **Hub Interativo de Demonstração**:
 | **Dedetizadora Hiroshima** | Controle de Pragas & Desentupimento | 28 anos de mercado, plantão 24 horas real sem taxa extra em feriados na Grande SP e ABC, produtos Bayer inodoros e **Simulador de Plantão 24h & Orçamento**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/dedetizadora-hiroshima/) |
 | **Etoprag** | Manejo Integrado (MIP) & Laudos Sanitários | Metodologia MIP com os 4 Pilares, pasta sanitária oficial para ANVISA e auditorias BPF/HACCP, proteção sem interrupção para restaurantes e **Diagnóstico MIP Interativo**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/etoprag/) |
 | **Exterminex** | Controle de Pragas & Higienização | Pronta resposta na Zona Sul de SP, dedetização sem cheiro com secagem rápida (2 a 3h), segurança para crianças/pets e **Simulador de Pronta Resposta**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/exterminex/) |
+| **Hydrotécnica** | Pragas & Limpeza de Caixas d'Água | Campo Limpo e Zona Sul de SP, desinsetização, desratização e higienização de reservatórios com laudo Sabesp/CVS e **Simulador de Pragas & Reservatórios**. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/hydrotecnica/) |
 | **Tempstar** | Engenharia Térmica | Engenharia B2B, PMOC (Lei 13.589/2018), sistemas VRF/Chiller, credenciamento Daikin e Carrier. | [Ver Site](https://asilva-01.github.io/prospect-sites/sites/tempstar-ar-condicionado/) |
 
 ---
