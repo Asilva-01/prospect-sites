@@ -1,519 +1,2112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elétrica ADR | Materiais Elétricos, Hidráulica e Ferragens — Zona Sul de São Paulo</title>
-<meta name="description" content="Elétrica ADR — desde 2000 na Zona Sul de São Paulo. Mais de 20.000 itens em materiais elétricos, hidráulica, iluminação, ferramentas e ferragens em geral. Atendimento personalizado e vendas online para todo o Brasil.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#F6F1E6; --surface:#EFE6D2; --surface2:#FBF8F2; --line:rgba(38,34,29,.14);
-  --ink:#26221D; --muted:#746B5C; --accent:#2F5D50; --accent-2:#1E4038; --accent-light:#9BC4B7; --accent-ink:#F6F1E6;
-  --ease:cubic-bezier(.16,1,.3,1);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:var(--accent-ink)}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elétrica ADR | Materiais Elétricos, Hidráulica & Ferragens — Zona Sul SP</title>
+  <meta name="description" content="Elétrica ADR desde 2000 na Av. Nossa Senhora do Sabará, 1927. Mais de 20.000 itens em materiais elétricos, hidráulica, iluminação e ferramentas com pronta entrega em SP e envio Brasil.">
+  <meta name="keywords" content="eletrica adr, materiais eletricos sabara, eletrica zona sul sp, ferramentas sabara, hidraulica santo amaro, cabos eletricos sp">
+  <meta name="robots" content="index, follow">
 
-.display{font-family:'Spectral',serif;font-weight:600;letter-spacing:-.01em;line-height:1.04}
-.display em{font-style:italic;font-weight:500;color:var(--accent)}
-.label{font-family:'Inter';font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.eyebrow{font-family:'Inter';font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
-.rule{height:1px;background:var(--line);border:0}
-.wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
-section{position:relative}
+  <!-- Open Graph -->
+  <meta property="og:title" content="Elétrica ADR | Materiais Elétricos, Hidráulica & Ferragens">
+  <meta property="og:description" content="Mais de 20 anos de tradição e mais de 20.000 itens a pronta entrega na Av. Nossa Senhora do Sabará, Zona Sul de São Paulo.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%231b4034'/%3E%3Ctext x='50' y='68' font-size='42' font-family='Arial, sans-serif' font-weight='bold' fill='%23e59d3b' text-anchor='middle'%3EADR%3C/text%3E%3C/svg%3E">
 
-/* progresso */
-.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;z-index:200}
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* header */
-header{position:fixed;top:0;left:0;right:0;z-index:150;transition:box-shadow .5s var(--ease),border-color .5s var(--ease);
-  border-bottom:1px solid var(--line);background:rgba(246,241,230,.92);backdrop-filter:blur(14px)}
-header.solid{box-shadow:0 8px 26px rgba(38,34,29,.08)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
-.brand{display:flex;align-items:baseline;gap:10px;font-family:'Spectral',serif;font-weight:600;font-size:20px;letter-spacing:-.01em;color:var(--ink)}
-.brand i{width:8px;height:8px;border-radius:2px;background:var(--accent);display:block;flex:none;align-self:center}
-.brand small{font-family:'Inter';font-size:9.5px;font-weight:600;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;font-style:normal}
-.nav-links{display:flex;gap:30px}
-.nav-links a{font-family:'Inter';font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);position:relative;padding:4px 0;transition:color .3s}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--accent);transition:width .45s var(--ease)}
-.nav-links a:hover{color:var(--accent)}.nav-links a:hover::after{width:100%}
-.nav-cta{font-family:'Inter';font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);padding:11px 18px;transition:.4s var(--ease)}
-.nav-cta:hover{background:var(--accent-2)}
-@media(max-width:900px){.nav-links{display:none}}
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HardwareStore",
+        "@id": "https://asilva-01.github.io/prospect-sites/sites/eletrica-adr/#store",
+        "name": "Elétrica ADR Materiais Elétricos e Ferragens",
+        "description": "Loja especializada em materiais elétricos de alta e baixa tensão, conexões hidráulicas, iluminação LED técnica e ferragens na Zona Sul de São Paulo desde 2000.",
+        "telephone": "+551156315675",
+        "email": "eletricaadr@gmail.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Nossa Senhora do Sabará, 1927",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "04685-004",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -23.6657,
+          "longitude": -46.6895
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "08:00",
+            "closes": "13:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
-/* HERO — painel dividido: texto claro + foto cheia */
-.hero{min-height:100svh;display:grid;grid-template-columns:.92fr 1.08fr;align-items:stretch;background:var(--surface2)}
-.hero-text{display:flex;flex-direction:column;justify-content:center;padding:clamp(120px,16vh,160px) clamp(28px,5vw,72px) clamp(48px,7vh,72px)}
-.hero h1{font-size:clamp(2.4rem,5.4vw,4.4rem);margin:18px 0 0;color:var(--ink)}
-.hero h1 span[data-split]{display:block;overflow:hidden;padding-top:.14em;margin-top:-.14em}
-.hero-sub{margin-top:24px;max-width:46ch;font-size:clamp(15px,1.3vw,17px);color:var(--muted)}
-.hero-sub b{color:var(--ink);font-weight:600}
-.hero-stats{display:flex;gap:clamp(22px,3vw,44px);margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
-.hero-stats div span{display:block;font-family:'Spectral',serif;font-weight:600;font-size:clamp(22px,2.2vw,28px);line-height:1;color:var(--accent)}
-.hero-stats div em{font-style:normal;font-family:'Inter';font-size:9.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
-.hero-media{position:relative;overflow:hidden;min-height:320px}
-.hero-media img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(38,34,29,.06),rgba(38,34,29,.34) 78%,rgba(38,34,29,.52));mix-blend-mode:multiply;opacity:.55}
-.hero-media::before{content:"";position:absolute;left:0;top:0;bottom:0;width:120px;background:linear-gradient(90deg,var(--surface2),rgba(251,248,242,0));z-index:2}
-@media(max-width:900px){
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-media{order:-1;min-height:52vh}
-  .hero-media::before{display:none}
-  .hero-text{padding:44px clamp(20px,5vw,40px) 56px}
-}
+  <style>
+    /* ==========================================================================
+       DESIGN TOKENS - PADRÃO ORIGAMID FULLSTACK
+       ========================================================================== */
+    :root {
+      --color-industrial-black: #141816;
+      --color-primary-dark: #19382f;
+      --color-primary: #234f41;
+      --color-primary-light: #326e5b;
+      --color-emerald-light: #8ec3b2;
+      --color-amber: #d48220;
+      --color-amber-light: #f1a545;
+      --color-amber-soft: #fcf6ec;
+      --color-bg-base: #f7f5f0;
+      --color-surface: #ffffff;
+      --color-surface-alt: #ece8de;
+      --color-text-main: #1f2622;
+      --color-text-muted: #58655f;
+      --color-text-light: #83918b;
+      --color-border: rgba(25, 56, 47, 0.14);
+      --color-border-subtle: rgba(25, 56, 47, 0.08);
 
-/* botoes */
-.btn-primary{display:inline-flex;align-items:center;gap:11px;background:var(--accent);color:var(--accent-ink);font-family:'Inter';font-size:12.5px;font-weight:700;
-  letter-spacing:.04em;text-transform:uppercase;padding:16px 26px;transition:.4s var(--ease)}
-.btn-primary svg{width:17px;height:17px;fill:currentColor}
-.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(47,93,80,.28);background:var(--accent-2)}
-.btn-ghost{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);color:var(--ink);padding:15px 24px;font-family:'Inter';font-size:11.5px;
-  font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:.4s var(--ease)}
-.btn-ghost:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
 
-/* meta strip */
-.metastrip{border-bottom:1px solid var(--line);background:var(--surface2)}
-.metastrip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-.metastrip div{padding:18px clamp(16px,2.4vw,28px);border-left:1px solid var(--line)}
-.metastrip div:first-child{border-left:none;padding-left:0}
-.metastrip .k{font-family:'Inter';font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
-.metastrip .v{font-family:'Spectral',serif;font-size:clamp(13px,1.5vw,16px);font-weight:600}
-@media(max-width:760px){.metastrip .wrap{grid-template-columns:repeat(2,1fr)}
-  .metastrip div:nth-child(3){border-left:none;padding-left:0}}
+      --shadow-sm: 0 4px 12px rgba(20, 24, 22, 0.05);
+      --shadow-md: 0 10px 28px rgba(20, 24, 22, 0.08);
+      --shadow-lg: 0 20px 48px rgba(20, 24, 22, 0.12);
+      --shadow-xl: 0 28px 64px rgba(20, 24, 22, 0.16);
 
-/* SEC HEAD */
-.sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:clamp(36px,6vh,60px)}
-.sec-num{font-family:'Inter';font-weight:700;font-size:12.5px;color:var(--accent);letter-spacing:.05em}
-.sec-head h2{font-size:clamp(1.8rem,4.2vw,3.2rem);color:var(--ink)}
-.sec-head .line{flex:1;height:1px;background:var(--line);align-self:center}
-.sec-tag{font-family:'Inter';font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+      --radius-sm: 6px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
 
-/* SOBRE — texto + foto */
-.sobre{padding:clamp(5rem,11vh,8rem) 0;border-bottom:1px solid var(--line)}
-.sobre .wrap{display:grid;grid-template-columns:.98fr .8fr;gap:clamp(30px,5vw,72px);align-items:center}
-.sobre-txt h2{font-size:clamp(1.7rem,3.2vw,2.6rem);line-height:1.2;letter-spacing:-.01em;margin-bottom:22px;color:var(--ink)}
-.sobre-txt p{color:var(--muted);font-size:16px;margin-bottom:16px;max-width:56ch}
-.sobre-txt .quote{font-family:'Spectral',serif;font-style:italic;font-size:clamp(1.15rem,1.8vw,1.4rem);color:var(--ink);border-left:3px solid var(--accent);padding-left:20px;margin:26px 0}
-.sobre-media{position:relative}
-.sobre-media img{width:100%;height:clamp(320px,42vw,460px);object-fit:cover}
-.sobre-media .tag{position:absolute;left:-1px;bottom:-1px;background:var(--accent);color:var(--accent-ink);font-family:'Inter';font-size:10.5px;
-  font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:12px 18px}
-@media(max-width:900px){.sobre .wrap{grid-template-columns:1fr;gap:34px}.sobre-media{order:-1}}
+      --transition-fast: 0.2s ease;
+      --transition-base: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-/* CATEGORIAS */
-.cat{padding:clamp(4rem,10vh,7rem) 0;border-bottom:1px solid var(--line);background:var(--surface)}
-.cat-layout{display:grid;grid-template-columns:1fr 340px;gap:clamp(30px,5vw,64px);align-items:start}
-.cat-row{display:grid;grid-template-columns:84px 1fr;gap:22px;padding:30px 0;border-bottom:1px solid var(--line);transition:.4s var(--ease)}
-.cat-row:first-child{border-top:1px solid var(--line)}
-.cat-row .n{font-family:'Spectral',serif;font-weight:600;font-size:clamp(1.6rem,2.6vw,2.1rem);color:var(--muted);transition:color .4s;line-height:1}
-.cat-row h3{font-family:'Spectral',serif;font-weight:600;letter-spacing:-.01em;color:var(--ink);
-  font-size:clamp(1.2rem,2.3vw,1.7rem);line-height:1.15;transition:.4s var(--ease);margin-bottom:8px}
-.cat-row p{font-size:14.5px;color:var(--muted);max-width:56ch}
-.cat-row:hover{background:var(--surface2)}
-.cat-row:hover h3{color:var(--accent)}
-.cat-row:hover .n{color:var(--accent)}
-.cat-side{position:sticky;top:110px;background:var(--surface2);border:1px solid var(--line);padding:clamp(26px,3vw,36px)}
-.cat-side .big{font-family:'Spectral',serif;font-style:italic;font-weight:500;font-size:clamp(2.4rem,3.6vw,3.4rem);color:var(--accent);line-height:1;margin:14px 0 10px}
-.cat-side p{font-size:14px;color:var(--muted);max-width:34ch}
-@media(max-width:1000px){.cat-layout{grid-template-columns:1fr}.cat-side{position:static}}
-@media(max-width:560px){.cat-row{grid-template-columns:48px 1fr;gap:14px}}
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-/* FAIXA DE NUMEROS — banda escura de contraste (sem foto) */
-.faixa{background:var(--ink);color:var(--bg);padding:clamp(3.4rem,7vh,4.6rem) 0}
-.faixa .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.faixa .stat{border-left:1px solid rgba(246,241,230,.18);padding-left:20px}
-.faixa .stat:first-child{border-left:none;padding-left:0}
-.faixa .stat b{display:block;font-family:'Spectral',serif;font-weight:600;font-size:clamp(2.1rem,5vw,3.6rem);color:var(--accent-light);line-height:1}
-.faixa .stat span{font-family:'Inter';font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#D8D0BF;display:block;margin-top:8px}
-@media(max-width:700px){.faixa .wrap{grid-template-columns:1fr;gap:26px}.faixa .stat{border-left:none;padding-left:0}}
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-/* MARCAS */
-.marcas{padding:clamp(5rem,11vh,8.5rem) 0;border-bottom:1px solid var(--line)}
-.marcas-layout{display:grid;grid-template-columns:.36fr .64fr;gap:clamp(30px,5vw,64px)}
-.marcas-side{position:sticky;top:110px;align-self:start}
-.marcas-num{font-family:'Spectral',serif;font-style:italic;font-weight:500;font-size:clamp(3.6rem,9vw,8.2rem);line-height:.92;color:var(--accent)}
-.marcas-side p{color:var(--muted);font-size:15.5px;max-width:34ch;margin-top:16px}
-.marcas-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.marcas-grid div{display:flex;align-items:baseline;gap:12px;padding:20px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface2)}
-.marcas-grid .i{font-family:'Inter';font-size:10.5px;font-weight:600;color:var(--accent);letter-spacing:.04em}
-.marcas-grid .b{font-family:'Spectral',serif;font-weight:600;font-size:clamp(1rem,1.6vw,1.3rem);letter-spacing:-.005em;color:var(--ink)}
-@media(max-width:900px){.marcas-layout{grid-template-columns:1fr}.marcas-side{position:static}.marcas-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.marcas-grid{grid-template-columns:1fr}}
+    body {
+      background-color: var(--color-bg-base);
+      color: var(--color-text-main);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
 
-/* DIFERENCIAIS */
-.dif{padding:clamp(4rem,9vh,6.5rem) 0;border-bottom:1px solid var(--line);background:var(--surface)}
-.dif-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
-.dif-item{padding:26px clamp(14px,2vw,26px);border-left:1px solid var(--line);border-bottom:1px solid var(--line)}
-.dif-item:first-child{border-left:none}
-.dif-item .k{font-family:'Inter';font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.08em;display:block;margin-bottom:12px}
-.dif-item h4{font-family:'Spectral',serif;font-weight:600;font-size:17px;margin-bottom:8px;line-height:1.2;color:var(--ink)}
-.dif-item p{font-size:13.5px;color:var(--muted)}
-@media(max-width:860px){.dif-grid{grid-template-columns:repeat(2,1fr)}.dif-item:nth-child(3){border-left:none}}
-@media(max-width:480px){.dif-grid{grid-template-columns:1fr}.dif-item{border-left:none!important}}
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 16px;
+      background: var(--color-industrial-black);
+      color: #ffffff;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      z-index: 1000;
+      font-weight: 600;
+      text-decoration: none;
+      transition: top var(--transition-fast);
+    }
+    .skip-link:focus {
+      top: 16px;
+    }
 
-/* SEGMENTOS */
-.seg{padding:clamp(4.5rem,10vh,7.5rem) 0;border-bottom:1px solid var(--line)}
-.seg-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,40px)}
-.seg-card{border:1px solid var(--line);padding:clamp(28px,3.4vw,40px);background:var(--surface2)}
-.seg-card .label{color:var(--accent)}
-.seg-card h3{font-family:'Spectral',serif;font-weight:600;font-size:clamp(1.5rem,2.6vw,2.1rem);margin:14px 0 14px;color:var(--ink)}
-.seg-card p{font-size:15px;color:var(--muted);max-width:48ch}
-@media(max-width:760px){.seg-grid{grid-template-columns:1fr}}
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
 
-/* CONTATO */
-.contato{padding:clamp(5rem,11vh,8rem) 0;background:var(--surface)}
-.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,64px);align-items:stretch}
-.contato h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:24px;color:var(--ink)}
-.dl{border-top:1px solid var(--line);margin-bottom:30px}
-.dl div{display:grid;grid-template-columns:120px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.dl dt{font-family:'Inter';font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);padding-top:2px}
-.dl dd{color:var(--ink)}
-.map{min-height:400px;border:1px solid var(--line);overflow:hidden;position:relative}
-.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.25) contrast(1.02)}
-@media(max-width:900px){.contato-grid{grid-template-columns:1fr}.map{min-height:300px}}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-/* footer */
-footer{border-top:1px solid var(--line);padding:50px 0 36px;background:var(--surface2);color:var(--ink)}
-.foot-top{display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:flex-end;margin-bottom:32px}
-.foot-mark{font-family:'Spectral',serif;font-weight:600;font-size:clamp(1.9rem,7vw,4.8rem);line-height:.9;letter-spacing:-.01em;color:var(--ink)}
-.foot-mark small{display:block;font-family:'Inter';font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--muted);margin-top:8px;text-transform:uppercase}
-.foot-meta{font-family:'Inter';font-size:11.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;text-align:right}
-.foot-bottom{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:'Inter';font-size:10.5px;color:var(--muted);
-  border-top:1px solid var(--line);padding-top:20px;letter-spacing:.01em}
-@media(max-width:700px){.foot-meta{text-align:left}}
+    button {
+      font-family: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
 
-/* botao flutuante — telefone (sem WhatsApp confirmado) */
-.tel-float{position:fixed;right:20px;bottom:20px;z-index:180;width:56px;height:56px;border-radius:50%;background:var(--accent);
-  color:var(--accent-ink);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(47,93,80,.34);transition:.4s var(--ease)}
-.tel-float svg{width:24px;height:24px;fill:currentColor}
-.tel-float:hover{transform:scale(1.09);background:var(--accent-2)}
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-@media(max-width:620px){
-  .nav{height:66px;gap:12px}
-  .brand{font-size:17px;gap:7px}
-  .brand small{display:none}
-  .nav-cta{padding:9px 13px;font-size:9.5px}
-  .btn-primary,.btn-ghost{padding:13px 17px;font-size:11px}
-  .btn-primary svg{width:15px;height:15px}
-}
-[data-reveal]{will-change:transform,opacity}
-.ch{display:inline-block;white-space:pre}
-.word{display:inline-block}
-@media(prefers-reduced-motion:reduce){
-  *,*::after{animation:none!important;transition:none!important}
-  [data-reveal]{opacity:1!important;transform:none!important}
-}
-</style>
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      color: var(--color-industrial-black);
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 3px;
+      background: var(--color-amber);
+      border-radius: var(--radius-full);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 52px;
+    }
+    .section-header h2 {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      margin-bottom: 16px;
+    }
+    .section-header p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 15px 30px;
+      border-radius: var(--radius-full);
+      transition: var(--transition-base);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(25, 56, 47, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(25, 56, 47, 0.35);
+      color: #ffffff;
+    }
+
+    .btn-amber {
+      background: linear-gradient(135deg, var(--color-amber) 0%, #b36b15 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(212, 130, 32, 0.3);
+    }
+    .btn-amber:hover {
+      background: linear-gradient(135deg, var(--color-amber-light) 0%, var(--color-amber) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(212, 130, 32, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--color-border);
+      color: var(--color-industrial-black);
+    }
+    .btn-outline:hover {
+      background: var(--color-surface-alt);
+      border-color: var(--color-primary);
+      color: var(--color-primary-dark);
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .top-announcement {
+      background: var(--color-industrial-black);
+      color: #e4ece7;
+      font-size: 0.8125rem;
+      padding: 8px 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .top-announcement strong {
+      color: var(--color-amber-light);
+    }
+    .top-announcement a {
+      color: var(--color-amber-light);
+      text-decoration: underline;
+    }
+
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(247, 245, 240, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border-subtle);
+      transition: var(--transition-base);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-symbol {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+      color: var(--color-amber-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      box-shadow: 0 4px 12px rgba(25, 56, 47, 0.2);
+    }
+    .brand-texts {
+      display: flex;
+      flex-direction: column;
+    }
+    .brand-texts .name {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--color-industrial-black);
+      line-height: 1.1;
+    }
+    .brand-texts .tagline {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-list a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      position: relative;
+      transition: color var(--transition-fast);
+    }
+    .nav-list a:hover {
+      color: var(--color-primary);
+    }
+    .nav-list a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--color-amber);
+      transition: width var(--transition-fast);
+    }
+    .nav-list a:hover::after {
+      width: 100%;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding: 70px 0 80px;
+      background: radial-gradient(circle at 85% 15%, rgba(46, 107, 87, 0.14) 0%, transparent 60%),
+                  radial-gradient(circle at 10% 85%, rgba(212, 130, 32, 0.08) 0%, transparent 50%),
+                  var(--color-bg-base);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .hero-badge-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      background: var(--color-surface-alt);
+      color: var(--color-industrial-black);
+      border: 1px solid var(--color-border);
+    }
+
+    .hero-title {
+      font-size: clamp(2.3rem, 4vw, 3.4rem);
+      line-height: 1.15;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--color-primary);
+      font-weight: 400;
+    }
+
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      margin-bottom: 36px;
+      line-height: 1.7;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .hero-trust-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 32px;
+      border-top: 1px solid var(--color-border);
+    }
+    .trust-item strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .trust-item span {
+      font-size: 0.825rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Technical Stock Presentation Box */
+    .authority-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-xl);
+      position: relative;
+    }
+    .authority-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--color-border-subtle);
+      margin-bottom: 24px;
+    }
+    .stock-seal {
+      width: 58px;
+      height: 58px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-industrial-black) 100%);
+      color: var(--color-amber-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-size: 1.35rem;
+      font-weight: 800;
+      box-shadow: 0 4px 14px rgba(25, 56, 47, 0.2);
+    }
+
+    .authority-meta h3 {
+      font-size: 1.25rem;
+      color: var(--color-industrial-black);
+    }
+    .authority-meta p {
+      font-size: 0.825rem;
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .pillars-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .pillar-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+    }
+    .pillar-row svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--color-primary);
+      min-width: 20px;
+      margin-top: 2px;
+    }
+
+    .delivery-callout {
+      background: var(--color-amber-soft);
+      border: 1px solid rgba(212, 130, 32, 0.25);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      font-size: 0.825rem;
+      color: #794d12;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .delivery-callout svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+      min-width: 24px;
+    }
+
+    /* ==========================================================================
+       STRIP BANNER
+       ========================================================================== */
+    .strip-section {
+      background: #ffffff;
+      border-top: 1px solid var(--color-border-subtle);
+      border-bottom: 1px solid var(--color-border-subtle);
+      padding: 34px 0;
+    }
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .strip-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .strip-badge {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 12px;
+      background: var(--color-surface-alt);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .strip-badge svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+    .strip-card h4 {
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+      color: var(--color-industrial-black);
+    }
+    .strip-card p {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       ABOUT & PHILOSOPHY
+       ========================================================================== */
+    .about-section {
+      padding: 100px 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-card-art {
+      background: linear-gradient(150deg, #ffffff 0%, var(--color-surface-alt) 100%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      box-shadow: var(--shadow-lg);
+    }
+    .about-card-art blockquote {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-style: italic;
+      color: var(--color-primary-dark);
+      line-height: 1.45;
+      margin-bottom: 24px;
+      position: relative;
+    }
+    .about-card-art blockquote::before {
+      content: '“';
+      font-size: 3.5rem;
+      color: var(--color-amber);
+      position: absolute;
+      top: -30px;
+      left: -12px;
+      opacity: 0.35;
+      font-family: Georgia, serif;
+    }
+
+    .tradition-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .tradition-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--color-text-main);
+      font-weight: 500;
+    }
+    .tradition-list svg {
+      width: 18px;
+      height: 18px;
+      fill: var(--color-primary);
+      min-width: 18px;
+    }
+
+    .about-content h2 {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      margin-bottom: 24px;
+    }
+    .about-content p {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      margin-bottom: 20px;
+      line-height: 1.75;
+    }
+
+    .experience-matrix {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: 32px 0;
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+    .matrix-box strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--color-industrial-black);
+      margin-bottom: 4px;
+    }
+    .matrix-box span {
+      font-size: 0.825rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       5 CORE CATEGORIES
+       ========================================================================== */
+    .categories-section {
+      padding: 100px 0;
+      background: var(--color-surface-alt);
+    }
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .cat-item-card {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 36px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-base);
+      box-shadow: var(--shadow-sm);
+    }
+    .cat-item-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-primary);
+    }
+
+    .cat-icon-wrap {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: var(--color-surface-alt);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .cat-icon-wrap svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;
+    }
+
+    .cat-item-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: var(--color-industrial-black);
+    }
+    .cat-item-card p {
+      font-size: 0.925rem;
+      color: var(--color-text-muted);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .cat-specs {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+      font-size: 0.85rem;
+      color: var(--color-industrial-black);
+      padding-top: 16px;
+      border-top: 1px dashed var(--color-border);
+    }
+    .cat-specs li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .cat-specs li::before {
+      content: '✓';
+      color: var(--color-primary);
+      font-weight: 800;
+    }
+
+    .cat-cta-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      transition: gap var(--transition-fast);
+    }
+    .cat-cta-link:hover {
+      color: var(--color-amber);
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       BRANDS INDEX (11 MARCAS PARCEIRAS)
+       ========================================================================== */
+    .brands-section {
+      padding: 90px 0;
+      background: #ffffff;
+      border-top: 1px solid var(--color-border-subtle);
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .brand-tile {
+      background: var(--color-bg-base);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition-fast);
+    }
+    .brand-tile:hover {
+      border-color: var(--color-primary);
+      background: #ffffff;
+      box-shadow: var(--shadow-sm);
+    }
+    .brand-name {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--color-industrial-black);
+      letter-spacing: -0.3px;
+    }
+    .brand-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* ==========================================================================
+       INTERACTIVE TOOL: MONTADOR & CALCULADORA DE LISTA DE MATERIAIS
+       ========================================================================== */
+    .calculator-section {
+      padding: 100px 0;
+      background: var(--color-bg-base);
+    }
+
+    .calc-box {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-xl);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+    }
+
+    .calc-form {
+      padding: 48px;
+    }
+    .calc-form h3 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      color: var(--color-industrial-black);
+    }
+    .calc-form p.sub {
+      font-size: 0.925rem;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+    }
+
+    .calc-inputs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .calc-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .calc-group.span-all {
+      grid-column: 1 / -1;
+    }
+    .calc-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-industrial-black);
+    }
+    .calc-select, .calc-input {
+      width: 100%;
+      height: 48px;
+      padding: 0 16px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+      background: var(--color-bg-base);
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--color-text-main);
+      outline: none;
+      transition: border-color var(--transition-fast);
+    }
+    .calc-select:focus, .calc-input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(35, 79, 65, 0.15);
+      background: #ffffff;
+    }
+
+    /* Result Area */
+    .calc-result {
+      background: linear-gradient(165deg, var(--color-industrial-black) 0%, var(--color-primary-dark) 100%);
+      color: #ffffff;
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .calc-result::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle, rgba(212, 130, 32, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .result-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--color-amber-light);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      margin-bottom: 20px;
+    }
+
+    .calc-title {
+      color: #ffffff;
+      font-size: 1.45rem;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+
+    .quote-summary-box {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    .quote-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.875rem;
+    }
+    .quote-row:last-child {
+      border-bottom: none;
+    }
+    .quote-row span.label {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    .quote-row span.val {
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .calc-advice {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    .whatsapp-quote-cta {
+      width: 100%;
+      background: #25d366;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 16px 24px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+      transition: var(--transition-base);
+    }
+    .whatsapp-quote-cta:hover {
+      background: #20ba5a;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+      color: #ffffff;
+    }
+    .whatsapp-quote-cta svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       FAQ ACCORDION
+       ========================================================================== */
+    .faq-section {
+      padding: 100px 0;
+      background: var(--color-surface-alt);
+    }
+    .faq-container {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    details.faq-item {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: border-color var(--transition-fast);
+    }
+    details.faq-item[open] {
+      border-color: var(--color-primary);
+    }
+    details.faq-item summary {
+      padding: 22px 26px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--color-industrial-black);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      user-select: none;
+    }
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    details.faq-item summary::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      transition: transform var(--transition-fast);
+    }
+    details.faq-item[open] summary::after {
+      content: '−';
+      transform: rotate(180deg);
+      color: var(--color-amber);
+    }
+    .faq-body {
+      padding: 0 26px 24px;
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       LOCATION & SABARÁ SECTION
+       ========================================================================== */
+    .contact-section {
+      padding: 100px 0;
+      background: #ffffff;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .contact-details-box h2 {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      margin-bottom: 20px;
+    }
+    .contact-details-box p.lead {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    .contact-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .contact-card-item {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 18px 24px;
+    }
+    .contact-card-item .icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-card-item .icon svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+    .contact-card-item strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--color-industrial-black);
+    }
+    .contact-card-item span, .contact-card-item a {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+    .contact-card-item a:hover {
+      color: var(--color-primary);
+    }
+
+    .map-frame-card {
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+    .map-container {
+      width: 100%;
+      height: 380px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer.site-footer {
+      background: #0d1210;
+      color: rgba(255, 255, 255, 0.7);
+      padding: 80px 0 36px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+
+    .footer-brand .name {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: #ffffff;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .footer-brand p {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 20px;
+    }
+    .footer-col h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 18px;
+      font-family: var(--font-body);
+      font-weight: 700;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      transition: color var(--transition-fast);
+      font-size: 0.875rem;
+    }
+    .footer-links a:hover {
+      color: var(--color-amber-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.825rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Floating Phone / WhatsApp */
+    .whatsapp-floater {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 1000;
+      width: 62px;
+      height: 62px;
+      background: #25d366;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      transition: var(--transition-base);
+    }
+    .whatsapp-floater:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+      color: #ffffff;
+    }
+    .whatsapp-floater svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN (MOBILE-FIRST)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid, .about-grid, .contact-grid, .calc-box {
+        grid-template-columns: 1fr;
+      }
+      .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .strip-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-list {
+        display: none;
+      }
+      .categories-grid, .strip-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-trust-list {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .calc-inputs-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-form, .calc-result {
+        padding: 32px 24px;
+      }
+      .hero-cta-group {
+        flex-direction: column;
+      }
+      .hero-cta-group .btn {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="progress" id="progress"></div>
+  <!-- Skip Link for Accessibility -->
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
-<header id="hdr">
-  <div class="wrap nav">
-    <a href="#top" class="brand"><i></i>Elétrica ADR <small>Materiais Elétricos &amp; Ferragens</small></a>
-    <nav class="nav-links">
-      <a href="#categorias">Categorias</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <a class="nav-cta" href="tel:+551156315675">(11) 5631-5675</a>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-text">
-    <span class="eyebrow">Materiais elétricos, hidráulica e ferragens · Zona Sul de São Paulo</span>
-    <h1 class="display"><span data-split>Mais de 20 anos</span><span data-split>de know-how em cada item.</span></h1>
-    <p class="hero-sub">A Elétrica ADR atua desde <b>2000</b> oferecendo materiais elétricos, hidráulica, iluminação, ferramentas e ferragens em geral — com <b>atendimento personalizado</b> e mais de <b>20.000 itens</b> disponíveis para pronta entrega.</p>
-    <div class="hero-stats">
-      <div><span>20.000+</span><em>Itens em estoque</em></div>
-      <div><span>20+</span><em>Anos de atuação</em></div>
-      <div><span>11</span><em>Marcas parceiras</em></div>
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container">
+      ⚡ <strong>Loja Física na Av. Nossa Senhora do Sabará, 1927</strong> · Tel: <a href="tel:+551156315675">(11) 5631-5675</a> · WhatsApp: <a href="https://wa.me/551156315675" target="_blank" rel="noopener">(11) 5631-5675</a>
     </div>
-    <div class="hero-cta">
-      <a class="btn-primary" href="tel:+551156315675">
-        <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
-        Ligar agora
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="Página inicial Elétrica ADR">
+        <div class="brand-symbol" aria-hidden="true">ADR</div>
+        <div class="brand-texts">
+          <span class="name">Elétrica ADR</span>
+          <span class="tagline">Materiais Elétricos &amp; Ferragens</span>
+        </div>
       </a>
-      <a class="btn-ghost" href="#categorias">Ver categorias</a>
-    </div>
-  </div>
-  <div class="hero-media" id="heroMedia">
-    <img src="../../assets/fotos/mat-loja-ferragens-04.jpg" alt="Parafusos e ferragens organizados sobre superfície de tecido">
-  </div>
-</section>
 
-<!-- META STRIP -->
-<div class="metastrip">
-  <div class="wrap">
-    <div><span class="k">Área de atuação</span><span class="v">Zona Sul de São Paulo</span></div>
-    <div><span class="k">Atuação</span><span class="v">Desde 2000 · +20 anos</span></div>
-    <div><span class="k">Catálogo</span><span class="v">Mais de 20.000 itens</span></div>
-    <div><span class="k">Segmentos</span><span class="v">Residencial e empresarial</span></div>
-  </div>
-</div>
+      <nav role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#categorias">Categorias</a></li>
+          <li><a href="#marcas">Marcas Parceiras</a></li>
+          <li><a href="#calculadora">Montar Lista</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#contato">Localização</a></li>
+        </ul>
+      </nav>
 
-<!-- SOBRE -->
-<section class="sobre">
-  <div class="wrap">
-    <div class="sobre-txt">
-      <span class="eyebrow" data-reveal>Sobre a Elétrica ADR</span>
-      <h2 data-reveal style="margin-top:16px">Amplo know-how, construído desde <em>o ano 2000</em>.</h2>
-      <p data-reveal>A Elétrica ADR atua há mais de 20 anos oferecendo materiais elétricos, hidráulica, iluminação, ferramentas e ferragens em geral — hoje com mais de 20.000 itens disponíveis em catálogo, do fio ao acabamento.</p>
-      <p class="quote" data-reveal>“Aqui você encontra amplo know-how, construído em mais de 20 anos de experiência.”</p>
-      <p data-reveal>Uma equipe de vendedores dá suporte para uma compra segura, com pronta entrega para os itens em estoque — para quem compra para casa e para quem compra para a empresa. Além da loja física, a Elétrica ADR também vende online, com entrega para todo o Brasil.</p>
-    </div>
-    <div class="sobre-media" data-reveal>
-      <img src="../../assets/fotos/mat-eletrica-ferragens-02.jpg" alt="Organizador com parafusos, porcas e engrenagens em divisórias">
-      <span class="tag">Ferragens em estoque</span>
-    </div>
-  </div>
-</section>
-
-<!-- CATEGORIAS -->
-<section class="cat" id="categorias">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">01</span><h2 class="display">Categorias</h2><span class="line"></span><span class="sec-tag">05 registros</span></div>
-    <div class="cat-layout">
-      <div class="cat-list">
-        <article class="cat-row" data-reveal>
-          <span class="n">01</span>
-          <div>
-            <h3>Materiais Elétricos</h3>
-            <p>Fiação, disjuntores, tomadas e componentes para instalações residenciais e empresariais.</p>
-          </div>
-        </article>
-        <article class="cat-row" data-reveal>
-          <span class="n">02</span>
-          <div>
-            <h3>Hidráulica</h3>
-            <p>Conexões, registros e itens para instalação e manutenção hidráulica.</p>
-          </div>
-        </article>
-        <article class="cat-row" data-reveal>
-          <span class="n">03</span>
-          <div>
-            <h3>Iluminação</h3>
-            <p>Lâmpadas e luminárias para cada ambiente, do lar ao comércio.</p>
-          </div>
-        </article>
-        <article class="cat-row" data-reveal>
-          <span class="n">04</span>
-          <div>
-            <h3>Ferramentas</h3>
-            <p>Ferramentas manuais e elétricas para profissionais e para quem resolve em casa.</p>
-          </div>
-        </article>
-        <article class="cat-row" data-reveal>
-          <span class="n">05</span>
-          <div>
-            <h3>Ferragens em geral</h3>
-            <p>Parafusos, porcas, dobradiças e ferragens para obra e acabamento.</p>
-          </div>
-        </article>
-      </div>
-      <aside class="cat-side" data-reveal>
-        <span class="eyebrow">Pronta entrega</span>
-        <div class="big">20.000+</div>
-        <p>Itens disponíveis entre as 5 categorias, com pronta entrega para os itens em estoque.</p>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- FAIXA DE NUMEROS -->
-<section class="faixa">
-  <div class="wrap">
-    <div class="stat" data-reveal><b>20.000+</b><span>Itens disponíveis</span></div>
-    <div class="stat" data-reveal><b>20+</b><span>Anos de atuação</span></div>
-    <div class="stat" data-reveal><b>11</b><span>Marcas parceiras</span></div>
-  </div>
-</section>
-
-<!-- MARCAS -->
-<section class="marcas" id="marcas">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">02</span><h2 class="display">Índice de marcas</h2><span class="line"></span></div>
-    <div class="marcas-layout">
-      <div class="marcas-side">
-        <div class="marcas-num" data-reveal>20.000+</div>
-        <p data-reveal>Itens, agora com atendimento nacional. Marcas parceiras selecionadas para cada categoria do catálogo.</p>
-      </div>
-      <div class="marcas-grid">
-        <div data-reveal><span class="i">01</span><span class="b">WAGO</span></div>
-        <div data-reveal><span class="i">02</span><span class="b">Ourolux</span></div>
-        <div data-reveal><span class="i">03</span><span class="b">Margirius</span></div>
-        <div data-reveal><span class="i">04</span><span class="b">Minipa</span></div>
-        <div data-reveal><span class="i">05</span><span class="b">Blukit</span></div>
-        <div data-reveal><span class="i">06</span><span class="b">Vonder</span></div>
-        <div data-reveal><span class="i">07</span><span class="b">G2R</span></div>
-        <div data-reveal><span class="i">08</span><span class="b">Blux</span></div>
-        <div data-reveal><span class="i">09</span><span class="b">Lukma</span></div>
-        <div data-reveal><span class="i">10</span><span class="b">Hellermann</span></div>
-        <div data-reveal><span class="i">11</span><span class="b">Pinheiro</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DIFERENCIAIS -->
-<section class="dif" id="diferenciais">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">03</span><h2 class="display">Diferenciais</h2><span class="line"></span></div>
-    <div class="dif-grid">
-      <div class="dif-item" data-reveal><span class="k">DIF.01</span><h4>Atendimento personalizado</h4><p>Desde 2000, atendimento próximo com quem entende de obra.</p></div>
-      <div class="dif-item" data-reveal><span class="k">DIF.02</span><h4>Compra segura</h4><p>Equipe de vendedores dá suporte do início ao fim da compra.</p></div>
-      <div class="dif-item" data-reveal><span class="k">DIF.03</span><h4>Alcance nacional</h4><p>Vendas online para todo o território nacional.</p></div>
-      <div class="dif-item" data-reveal><span class="k">DIF.04</span><h4>Pronta entrega</h4><p>Pronta entrega para os itens disponíveis em estoque.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SEGMENTOS -->
-<section class="seg" id="segmentos">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">04</span><h2 class="display">Segmentos atendidos</h2><span class="line"></span></div>
-    <div class="seg-grid">
-      <div class="seg-card" data-reveal>
-        <span class="label">Residencial</span>
-        <h3>Produtos para o lar.</h3>
-        <p>Materiais elétricos, hidráulica, iluminação, ferramentas e ferragens para quem cuida da própria casa.</p>
-      </div>
-      <div class="seg-card" data-reveal>
-        <span class="label">Empresarial</span>
-        <h3>Para empresas.</h3>
-        <p>Catálogo e atendimento dedicados para negócios que precisam de fornecimento contínuo e suporte para compra segura.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section class="contato" id="contato">
-  <div class="wrap">
-    <div class="sec-head"><span class="sec-num">05</span><h2 class="display">Contato</h2><span class="line"></span></div>
-    <div class="contato-grid">
       <div>
-        <h2 class="display" data-reveal>Fale com a <em>Elétrica ADR</em>.</h2>
-        <dl class="dl" data-reveal>
-          <div><dt>Endereço</dt><dd>Av. Nossa Senhora do Sabará, nº 1927, São Paulo - SP</dd></div>
-          <div><dt>Telefone</dt><dd>(11) 5631-5675</dd></div>
-          <div><dt>E-mail</dt><dd>eletricaadr@gmail.com</dd></div>
-          <div><dt>Atuação</dt><dd>Desde 2000 · mais de 20 anos de experiência</dd></div>
-        </dl>
-        <div style="display:flex;gap:13px;flex-wrap:wrap" data-reveal>
-          <a class="btn-primary" href="tel:+551156315675">
-            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
-            Ligar agora
-          </a>
-          <a class="btn-ghost" href="mailto:eletricaadr@gmail.com">Enviar e-mail</a>
-          <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=El%C3%A9trica+ADR+S%C3%A3o+Paulo" target="_blank" rel="noopener">Abrir no Maps ↗</a>
+        <a href="https://wa.me/551156315675?text=Ol%C3%A1%2C%20El%C3%A9trica%20ADR!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20materiais." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.875rem;">
+          Pedir Orçamento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="conteudo-principal">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="badge-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Av. Nossa Sra. do Sabará, 1927 · Zona Sul SP
+            </span>
+            <span class="badge-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.28-1.61 8.09-4.09l-2.6-1.53C16.03 17.84 14.15 19 12 19z"/></svg>
+              Desde 2000 · +25 anos
+            </span>
+          </div>
+
+          <h1 id="hero-heading" class="hero-title">
+            Mais de 25 anos de <em>know-how</em> técnico do fio ao acabamento.
+          </h1>
+
+          <p class="hero-lead">
+            A Elétrica ADR oferece mais de 20.000 itens a pronta entrega em materiais elétricos residenciais e industriais, conexões hidráulicas, iluminação e ferragens com atendimento especializado para eletricistas, construtoras e o consumidor final.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1%2C%20El%C3%A9trica%20ADR!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20materiais%20el%C3%A9tricos." target="_blank" rel="noopener" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              Cotação Rápida no WhatsApp
+            </a>
+            <a href="#calculadora" class="btn btn-outline">
+              Montar Lista de Materiais
+            </a>
+          </div>
+
+          <div class="hero-trust-list">
+            <div class="trust-item">
+              <strong>20.000+</strong>
+              <span>Itens em estoque físico imediato</span>
+            </div>
+            <div class="trust-item">
+              <strong>25 Anos</strong>
+              <span>De tradição na Zona Sul paulistana</span>
+            </div>
+            <div class="trust-item">
+              <strong>11 Líderes</strong>
+              <span>Marcas homologadas NBR / Inmetro</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="authority-card">
+            <div class="authority-header">
+              <div class="stock-seal" aria-hidden="true">ADR</div>
+              <div class="authority-meta">
+                <h3>Elétrica ADR São Paulo</h3>
+                <p>Materiais Elétricos &amp; Ferragens</p>
+                <div style="font-size: 0.78rem; color: var(--color-text-light); margin-top: 2px;">Av. Nossa Sra. do Sabará, 1927 · Zona Sul</div>
+              </div>
+            </div>
+
+            <div class="pillars-stack">
+              <div class="pillar-row">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Materiais Elétricos:</strong> Cabos de cobre normatizados, disjuntores DIN, quadros, barramentos e tomadas.</span>
+              </div>
+              <div class="pillar-row">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Hidráulica &amp; Conexões:</strong> Tubulações PVC e PPR, registros de gaveta, válvulas e reparos de manutenção.</span>
+              </div>
+              <div class="pillar-row">
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                <span><strong>Iluminação Técnica:</strong> Painéis LED embutir/sobrepor, projetores, fitas e lâmpadas econômicas.</span>
+              </div>
+            </div>
+
+            <div class="delivery-callout">
+              <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              <span><strong>Logística Ágil:</strong> Retirada imediata no balcão do Sabará ou entrega expressa para toda a Zona Sul e Grande SP.</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="map" data-reveal>
-        <iframe title="Mapa — Elétrica ADR" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Av.%20Nossa%20Senhora%20do%20Sab%C3%A1r%C3%A1%2C%201927%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"></iframe>
+    </section>
+
+    <!-- STRIP BANNER -->
+    <section class="strip-section" aria-label="Diferenciais da Elétrica ADR">
+      <div class="container strip-grid">
+        <div class="strip-card">
+          <div class="strip-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <div>
+            <h4>Pronta Entrega Real</h4>
+            <p>Mais de 20.000 itens disponíveis em loja para saída imediata.</p>
+          </div>
+        </div>
+
+        <div class="strip-card">
+          <div class="strip-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          </div>
+          <div>
+            <h4>Marcas Homologadas</h4>
+            <p>Parcerias diretas com WAGO, Ourolux, Margirius, Vonder e Minipa.</p>
+          </div>
+        </div>
+
+        <div class="strip-card">
+          <div class="strip-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+          </div>
+          <div>
+            <h4>Atendimento de Balcão</h4>
+            <p>Vendedores técnicos experientes que entendem o linguajar da obra.</p>
+          </div>
+        </div>
+
+        <div class="strip-card">
+          <div class="strip-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 16.5C21 16.88 20.79 17.21 20.47 17.38L12.57 21.82C12.41 21.91 12.21 21.96 12 21.96C11.79 21.96 11.59 21.91 11.43 21.82L3.53 17.38C3.21 17.21 3 16.88 3 16.5V7.5C3 7.12 3.21 6.79 3.53 6.62L11.43 2.18C11.59 2.09 11.79 2.04 12 2.04C12.21 2.04 12.41 2.09 12.57 2.18L20.47 6.62C20.79 6.79 21 7.12 21 7.5V16.5Z"/></svg>
+          </div>
+          <div>
+            <h4>Envio para Todo o Brasil</h4>
+            <p>Vendas corporativas e online com expedição rápida e faturamento NF-e.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="sobre" class="about-section" aria-labelledby="about-heading">
+      <div class="container about-grid">
+        <div class="about-card-art">
+          <blockquote>
+            "Desde o ano 2000, nossa missão na Avenida Nossa Senhora do Sabará é garantir que nenhum instalador ou cliente fique com a obra parada por falta de peça."
+          </blockquote>
+          <ul class="tradition-list">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Estoque amplo com mais de 20 mil códigos ativos</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Faturamento direto para empresas, condomínios e indústrias</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Suporte técnico para dimensionamento de cabos e disjuntores</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-content">
+          <div class="eyebrow">Sobre a Elétrica ADR</div>
+          <h2 id="about-heading">Amplo know-how e tradição na Zona Sul de São Paulo.</h2>
+          <p>
+            A <strong>Elétrica ADR</strong> atua há mais de duas décadas fornecendo materiais elétricos, conexões hidráulicas, luminárias, ferramentas profissionais e ferragens em geral.
+          </p>
+          <p>
+            Entendemos que tempo é dinheiro na construção civil e na manutenção predial. Por isso, mantemos um dos estoques mais completos da região do Sabará e Santo Amaro, aliado a uma equipe de consultores de balcão capacitados para decodificar listas de materiais com agilidade e sugerir as melhores soluções de custo-benefício.
+          </p>
+
+          <div class="experience-matrix">
+            <div class="matrix-box">
+              <strong>Atendimento Residencial</strong>
+              <span>Trocas de chuveiro, tomadas, lâmpadas e reformas da casa</span>
+            </div>
+            <div class="matrix-box">
+              <strong>Fornecimento Corporativo</strong>
+              <span>Condomínios, indústrias, comércios e empreiteiras</span>
+            </div>
+            <div class="matrix-box">
+              <strong>Eletricistas &amp; Instaladores</strong>
+              <span>Condições especiais e separação rápida de pedidos</span>
+            </div>
+            <div class="matrix-box">
+              <strong>Vendas Online Brasil</strong>
+              <span>Expedição e entrega segura para todas as regiões</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/551156315675?text=Ol%C3%A1%2C%20El%C3%A9trica%20ADR!%20Gostaria%20de%20conversar%20com%20um%20vendedor." target="_blank" rel="noopener" class="btn btn-primary">
+            Falar com Vendedor no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 CORE CATEGORIES -->
+    <section id="categorias" class="categories-section" aria-labelledby="cat-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Catálogo Completo</div>
+          <h2 id="cat-heading">As 5 Grandes Linhas da Elétrica ADR</h2>
+          <p>Tudo o que sua obra, reforma ou manutenção precisa em um único endereço.</p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- Cat 1: Materiais Elétricos -->
+          <article class="cat-item-card">
+            <div>
+              <div class="cat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+              </div>
+              <h3>01. Materiais Elétricos</h3>
+              <p>Linha completa para instalações elétricas seguras residenciais, prediais e industriais.</p>
+              <ul class="cat-specs">
+                <li>Fios e cabos flexíveis de 1,5mm² até 50mm² (cobre puro)</li>
+                <li>Disjuntores monopolares, bipolares e tripolares (DIN e NEMA)</li>
+                <li>Quadros de distribuição, DRs, DPS e barramentos pente</li>
+                <li>Tomadas, interruptores, canaletas e eletrodutos corrugados</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Materiais%20El%C3%A9tricos." target="_blank" rel="noopener" class="cat-cta-link">
+              Cotar Materiais Elétricos <span>→</span>
+            </a>
+          </article>
+
+          <!-- Cat 2: Hidráulica -->
+          <article class="cat-item-card">
+            <div>
+              <div class="cat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2c-5.33 4-8 8-8 12 0 4.42 3.58 8 8 8s8-3.58 8-8c0-4-2.67-8-8-12zm0 18c-3.31 0-6-2.69-6-6 0-3.07 2.05-6.19 6-9.52 3.95 3.33 6 6.45 6 9.52 0 3.31-2.69 6-6 6z"/></svg>
+              </div>
+              <h3>02. Hidráulica &amp; Conexões</h3>
+              <p>Soluções em condução de água fria, água quente e esgoto para obras e reparos.</p>
+              <ul class="cat-specs">
+                <li>Tubos e conexões soldáveis e roscáveis (PVC e PPR)</li>
+                <li>Registros de gaveta, pressão e esferas metálicas</li>
+                <li>Sifões, caixas sifonadas, ralos e válvulas de retenção</li>
+                <li>Torneiras, engates flexíveis e reparos de descarga</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Hidr%C3%A1ulica." target="_blank" rel="noopener" class="cat-cta-link">
+              Cotar Hidráulica <span>→</span>
+            </a>
+          </article>
+
+          <!-- Cat 3: Iluminação -->
+          <article class="cat-item-card">
+            <div>
+              <div class="cat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-1.3l-.85-.6C7.8 13.16 7 11.42 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.42-.8 4.16-2.15 5.1z"/></svg>
+              </div>
+              <h3>03. Iluminação LED</h3>
+              <p>Eficiência luminosa, durabilidade e beleza para ambientes residenciais e comerciais.</p>
+              <ul class="cat-specs">
+                <li>Painéis plafon LED quadrados e redondos (embutir/sobrepor)</li>
+                <li>Refletores LED à prova de intempéries (IP65) de 50W a 200W</li>
+                <li>Lâmpadas bulbo, tubulares T8, filamento vintage e dicroicas</li>
+                <li>Fitas LED com fontes chaveadas e sensores de presença</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Ilumina%C3%A7%C3%A3o%20LED." target="_blank" rel="noopener" class="cat-cta-link">
+              Cotar Iluminação LED <span>→</span>
+            </a>
+          </article>
+
+          <!-- Cat 4: Ferramentas -->
+          <article class="cat-item-card">
+            <div>
+              <div class="cat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+              </div>
+              <h3>04. Ferramentas Manuais &amp; Elétricas</h3>
+              <p>Instrumentos de alta precisão e durabilidade para profissionais e hobbistas exigentes.</p>
+              <ul class="cat-specs">
+                <li>Multímetros digitais e alicates amperímetros Minipa</li>
+                <li>Alicates universais, decapadores, bico e corte diagonal</li>
+                <li>Chaves isoladas até 1000V (norma NR10) e jogos de fenda/philips</li>
+                <li>Furadeiras, parafusadeiras, serras e discos de corte Vonder</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Ferramentas." target="_blank" rel="noopener" class="cat-cta-link">
+              Cotar Ferramentas <span>→</span>
+            </a>
+          </article>
+
+          <!-- Cat 5: Ferragens em Geral -->
+          <article class="cat-item-card">
+            <div>
+              <div class="cat-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+              </div>
+              <h3>05. Ferragens &amp; Fixação</h3>
+              <p>Segurança mecânica para ancoragem de caixas, estruturas, telhados e esquadrias.</p>
+              <ul class="cat-specs">
+                <li>Parafusos chipboard, sextavados, autoatarraxantes e franceses</li>
+                <li>Buchas de nylon para alvenaria comum, drywall e tijolo furado</li>
+                <li>Abraçadeiras de nylon (Hellermann) e metálicas tipo D/U</li>
+                <li>Dobradiças, fechaduras, travas e cadeados reforçados</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20uma%20cota%C3%A7%C3%A3o%20de%20Ferragens%20e%20Fixa%C3%A7%C3%A3o." target="_blank" rel="noopener" class="cat-cta-link">
+              Cotar Ferragens <span>→</span>
+            </a>
+          </article>
+
+          <!-- Card 6: Conectores WAGO & Segurança -->
+          <article class="cat-item-card" style="background: linear-gradient(145deg, #ffffff 0%, var(--color-surface-alt) 100%);">
+            <div>
+              <div class="cat-icon-wrap" style="background: var(--color-amber-soft); color: var(--color-amber);">
+                <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+              </div>
+              <h3>Conexões Rápidas WAGO</h3>
+              <p>Elimine fitas isolantes antigas com a tecnologia alemã de emenda rápida WAGO.</p>
+              <ul class="cat-specs">
+                <li>Conectores WAGO série 221 para 2, 3 e 5 condutores</li>
+                <li>Conexão à prova de mau contato e aquecimento</li>
+                <li>Homologação NBR 5410 para instalações seguras</li>
+                <li>Revendedor oficial com garantia de procedência</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/551156315675?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20Conectores%20WAGO." target="_blank" rel="noopener" class="cat-cta-link" style="color: var(--color-amber);">
+              Comprar Conectores WAGO <span>→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS SECTION -->
+    <section id="marcas" class="brands-section" aria-labelledby="brands-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Qualidade Assegurada</div>
+          <h2 id="brands-heading">11 Marcas Líderes em Nosso Estoque</h2>
+          <p>Trabalhamos exclusivamente com fabricantes certificados pelas normas brasileiras de segurança.</p>
+        </div>
+
+        <div class="brands-grid">
+          <div class="brand-tile">
+            <span class="brand-name">WAGO</span>
+            <span class="brand-tag">Conectores</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Ourolux</span>
+            <span class="brand-tag">Iluminação LED</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Margirius</span>
+            <span class="brand-tag">Tomadas &amp; Painéis</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Minipa</span>
+            <span class="brand-tag">Instrumentação</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Blukit</span>
+            <span class="brand-tag">Hidráulica</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Vonder</span>
+            <span class="brand-tag">Ferramentas</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">G2R</span>
+            <span class="brand-tag">Cabos &amp; Fios</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Blux</span>
+            <span class="brand-tag">Módulos Elétricos</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Lukma</span>
+            <span class="brand-tag">Automação &amp; DIN</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Hellermann</span>
+            <span class="brand-tag">Amarração &amp; Fixação</span>
+          </div>
+          <div class="brand-tile">
+            <span class="brand-name">Pinheiro</span>
+            <span class="brand-tag">Tubos &amp; Conexões</span>
+          </div>
+          <div class="brand-tile" style="background: var(--color-amber-soft); border-color: rgba(212,130,32,0.3);">
+            <span class="brand-name" style="color: var(--color-amber);">+20.000 Itens</span>
+            <span class="brand-tag" style="color: #925812;">Estoque Físico</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LIST CALCULATOR TOOL -->
+    <section id="calculadora" class="calculator-section" aria-labelledby="calc-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Ferramenta Interativa</div>
+          <h2 id="calc-heading">Montador &amp; Calculadora de Lista de Materiais</h2>
+          <p>Monte seu perfil de compra e envie sua lista detalhada para os vendedores da Elétrica ADR no WhatsApp.</p>
+        </div>
+
+        <div class="calc-box">
+          <!-- Form Area -->
+          <div class="calc-form">
+            <h3>Parâmetros do Seu Pedido</h3>
+            <p class="sub">Selecione as opções do seu projeto para estimar os componentes recomendados:</p>
+
+            <form id="formEletricaAdr" onsubmit="event.preventDefault();">
+              <div class="calc-inputs-grid">
+                <!-- Tipo de Obra -->
+                <div class="calc-group">
+                  <label class="calc-label" for="calcTipoObra">Tipo de Projeto:</label>
+                  <select id="calcTipoObra" class="calc-select" onchange="calcularListaEletrica()">
+                    <option value="eletrica_completa">Instalação Elétrica Residencial Completa</option>
+                    <option value="quadro_distribuicao">Reforma de Quadro de Luz / Disjuntores</option>
+                    <option value="iluminacao_reforma">Troca e Modernização de Iluminação LED</option>
+                    <option value="hidraulica_reforma">Reforma Hidráulica (Banheiro/Cozinha)</option>
+                    <option value="manutencao_geral">Manutenção Geral / Fixações &amp; Ferragens</option>
+                  </select>
+                </div>
+
+                <!-- Perfil Comprador -->
+                <div class="calc-group">
+                  <label class="calc-label" for="calcPerfil">Perfil do Comprador:</label>
+                  <select id="calcPerfil" class="calc-select" onchange="calcularListaEletrica()">
+                    <option value="instalador">Eletricista / Instalador Profissional</option>
+                    <option value="empreiteiro">Construtor / Empreiteiro de Obras</option>
+                    <option value="consumidor">Consumidor Final (Dono do Imóvel)</option>
+                    <option value="empresa">Empresa / Condomínio (Faturamento PJ)</option>
+                  </select>
+                </div>
+
+                <!-- Tensão do Local -->
+                <div class="calc-group">
+                  <label class="calc-label" for="calcTensao">Tensão do Imóvel / Rede:</label>
+                  <select id="calcTensao" class="calc-select" onchange="calcularListaEletrica()">
+                    <option value="127v">127V Monofásico</option>
+                    <option value="220v_bi">220V Bifásico (Fase + Fase)</option>
+                    <option value="380v_tri">380V / 220V Trifásico Comercial/Industrial</option>
+                  </select>
+                </div>
+
+                <!-- Quantidade Estimada de Pontos / Cômodos -->
+                <div class="calc-group">
+                  <label class="calc-label" for="calcPontos">Tamanho / Pontos Estimados:</label>
+                  <select id="calcPontos" class="calc-select" onchange="calcularListaEletrica()">
+                    <option value="pequeno">Pequeno (Até 10 pontos de luz/tomadas)</option>
+                    <option value="medio" selected>Médio (De 10 a 30 pontos de luz/tomadas)</option>
+                    <option value="grande">Grande (Mais de 30 pontos ou imóvel inteiro)</option>
+                  </select>
+                </div>
+
+                <!-- Urgência / Logística -->
+                <div class="calc-group span-all">
+                  <label class="calc-label" for="calcLogistica">Como prefere receber os materiais?</label>
+                  <select id="calcLogistica" class="calc-select" onchange="calcularListaEletrica()">
+                    <option value="retirada">Retirar no Balcão (Av. N. Sra. do Sabará, 1927)</option>
+                    <option value="entrega_zs">Entrega Expressa na Zona Sul / Grande SP</option>
+                    <option value="envio_brasil">Envio Transportadora / Correios para Outro Estado</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Result Area -->
+          <div class="calc-result">
+            <div>
+              <span class="result-badge">Lista Pré-Montada</span>
+              <h4 id="resTituloAdr" class="calc-title">Kit para Instalação Elétrica Residencial</h4>
+
+              <div class="quote-summary-box">
+                <div class="quote-row">
+                  <span class="label">Cabos Recomendados:</span>
+                  <span id="resCabos" class="val">1,5mm² (retorno), 2,5mm² (tomadas), 6mm² (chuveiro)</span>
+                </div>
+                <div class="quote-row">
+                  <span class="label">Proteção Sugerida:</span>
+                  <span id="resProtecao" class="val">Disjuntores DIN + DR 30mA + DPS 20kA</span>
+                </div>
+                <div class="quote-row">
+                  <span class="label">Conexões Críticas:</span>
+                  <span id="resConexoes" class="val">Conectores WAGO 221 + Fita Autofusão</span>
+                </div>
+                <div class="quote-row">
+                  <span class="label">Logística de Entrega:</span>
+                  <span id="resLocalAdr" class="val">Retirada Imediata no Sabará</span>
+                </div>
+              </div>
+
+              <p id="resNotaAdr" class="calc-advice">
+                Nossa equipe no Sabará confere as bitolas conforme a NBR 5410, garantindo segurança contra sobrecargas e menor perda de energia.
+              </p>
+            </div>
+
+            <div>
+              <a id="btnEnviarListaAdr" href="#" target="_blank" rel="noopener" class="whatsapp-quote-cta">
+                <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+                Enviar Lista para Cotação no WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Dúvidas Frequentes</div>
+          <h2 id="faq-heading">Perguntas Comuns sobre Compras na Elétrica ADR</h2>
+          <p>Tire suas dúvidas sobre faturamento, marcas, frete e atendimento técnico.</p>
+        </div>
+
+        <div class="faq-container">
+          <details class="faq-item" open>
+            <summary>A Elétrica ADR vende apenas para empresas ou também para pessoas físicas?</summary>
+            <div class="faq-body">
+              Atendemos ambos os públicos com o mesmo compromisso! Se você precisa de uma única lâmpada, disjuntor ou torneira para sua casa, pode vir direto ao nosso balcão. Se representa uma construtora, condomínio ou indústria, temos canal corporativo com faturamento faturado via boleto bancário mediante cadastro.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Vocês entregam na Zona Sul de São Paulo e Grande SP?</summary>
+            <div class="faq-body">
+              Sim! Possuímos frota própria e motofrete parceiro para entregas ágeis na Zona Sul (Campo Grande, Santo Amaro, Socorro, Interlagos, Brooklin, Campo Belo, Morumbi, Vila Andrade) e demais regiões da capital e Grande SP.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Os fios e cabos de cobre são certificados pelo Inmetro?</summary>
+            <div class="faq-body">
+              Trabalhamos estritamente com marcas sérias e cabos 100% de cobre homologados pelo Inmetro e em conformidade com as normas NBR 5410. Não vendemos cabos desbitolados ou de alumínio cobreado que ofereçam riscos de incêndio.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Posso enviar uma foto da minha lista escrita à mão para orçamento?</summary>
+            <div class="faq-body">
+              Com certeza! Você pode tirar uma foto da lista do seu eletricista ou encanador e nos enviar no WhatsApp pelo número (11) 5631-5675. Nossos vendedores digitam os códigos, calculam os quantitativos e retornam o orçamento detalhado rapidamente.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quais são as formas de pagamento aceitas?</summary>
+            <div class="faq-body">
+              Aceitamos cartões de crédito e débito, Pix com confirmação instantânea, dinheiro e faturamento faturado para pessoas jurídicas e condomínios cadastrados.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & LOCATION -->
+    <section id="contato" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div class="contact-details-box">
+          <div class="eyebrow">Localização &amp; Contato</div>
+          <h2 id="contact-heading">Venha nos visitar no Sabará ou solicite entrega.</h2>
+          <p class="lead">
+            Balcão amplo e de fácil estacionamento na Avenida Nossa Senhora do Sabará. Fale com a nossa equipe pelos canais diretos:
+          </p>
+
+          <div class="contact-stack">
+            <div class="contact-card-item">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp Comercial:</strong>
+                <a href="https://wa.me/551156315675" target="_blank" rel="noopener">(11) 5631-5675</a>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+              </div>
+              <div>
+                <strong>Telefone Fixo da Loja:</strong>
+                <a href="tel:+551156315675">(11) 5631-5675</a>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <strong>E-mail de Cotações:</strong>
+                <a href="mailto:eletricaadr@gmail.com">eletricaadr@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <strong>Endereço da Loja:</strong>
+                <span>Av. Nossa Senhora do Sabará, nº 1927 · São Paulo - SP</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/551156315675?text=Ol%C3%A1%2C%20El%C3%A9trica%20ADR!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary">
+            Chamar no WhatsApp Agora
+          </a>
+        </div>
+
+        <div class="map-frame-card">
+          <div class="map-container">
+            <iframe title="Mapa de Localização — Elétrica ADR" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Av.%20Nossa%20Senhora%20do%20Sab%C3%A1r%C3%A1%2C%201927%2C%20S%C3%A3o%20Paulo%20-%20SP&output=embed"></iframe>
+          </div>
+          <div style="margin-top: 16px; text-align: center;">
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Nossa+Senhora+do+Sabará,+1927,+São+Paulo+-+SP" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">
+              Abrir Rota no Google Maps ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="name">Elétrica ADR</div>
+          <p>
+            Desde 2000 fornecendo materiais elétricos, hidráulica, iluminação técnica e ferragens na Zona Sul de São Paulo com compromisso, preço justo e mais de 20.000 itens a pronta entrega.
+          </p>
+          <div style="font-size: 0.78rem; color: rgba(255, 255, 255, 0.45);">
+            Produtos em conformidade com as normas ABNT / NBR e Inmetro.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre a Loja</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#marcas">Marcas Homologadas</a></li>
+            <li><a href="#calculadora">Montador de Lista</a></li>
+            <li><a href="#faq">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Linhas de Produto</h4>
+          <ul class="footer-links">
+            <li><a href="#categorias">Cabos &amp; Fios de Cobre</a></li>
+            <li><a href="#categorias">Disjuntores &amp; Quadros</a></li>
+            <li><a href="#categorias">Conectores WAGO</a></li>
+            <li><a href="#categorias">Iluminação LED IP65</a></li>
+            <li><a href="#categorias">Tubos &amp; Conexões Tigre</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li>WhatsApp: (11) 5631-5675</li>
+            <li>Telefone: (11) 5631-5675</li>
+            <li>eletricaadr@gmail.com</li>
+            <li>Av. Nossa Sra. do Sabará, 1927</li>
+            <li>Seg a Sex: 08h às 18h | Sáb: 08h às 13h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Elétrica ADR. Todos os direitos reservados. CNPJ comercial ativo.</div>
+        <div>Av. Nossa Senhora do Sabará, 1927 · São Paulo - SP</div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-mark">Elétrica ADR<small>Materiais elétricos, hidráulica e ferragens</small></div>
-      <div class="foot-meta">
-        <span>Av. Nossa Senhora do Sabará, nº 1927 — São Paulo, SP</span>
-        <span>Tel. (11) 5631-5675</span>
-        <span>eletricaadr@gmail.com · desde 2000, mais de 20 anos de atuação</span>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>© 2026 Elétrica ADR</span>
-      <span>Fotografias ilustrativas (Unsplash / Pexels) — não retratam a empresa.</span>
-    </div>
-  </div>
-</footer>
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/551156315675?text=Ol%C3%A1%2C%20El%C3%A9trica%20ADR!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." class="whatsapp-floater" target="_blank" rel="noopener" aria-label="Falar com a Elétrica ADR no WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+  </a>
 
-<a class="tel-float" href="tel:+551156315675" aria-label="Ligar para Elétrica ADR">
-  <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
-</a>
+  <!-- VANILLA ES6+ JAVASCRIPT LOGIC -->
+  <script>
+    /**
+     * Montador & Calculadora de Lista de Materiais - Elétrica ADR
+     * Padrão Origamid Fullstack em Vanilla ES6+ puro (sem dependência de GSAP ou CDNs)
+     */
+    function calcularListaEletrica() {
+      const tipo = document.getElementById('calcTipoObra').value;
+      const perfil = document.getElementById('calcPerfil').value;
+      const tensao = document.getElementById('calcTensao').value;
+      const pontos = document.getElementById('calcPontos').value;
+      const logistica = document.getElementById('calcLogistica').value;
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
-(function(){
-  var hdr=document.getElementById('hdr');
-  var onScroll=function(){ hdr.classList.toggle('solid', window.scrollY>60); };
-  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+      let titulo = '';
+      let cabos = '';
+      let protecao = '';
+      let conexoes = '';
+      let localEntrega = '';
+      let conselho = '';
 
-  if(!window.gsap) return;
-  gsap.registerPlugin(ScrollTrigger);
+      // Logística
+      if (logistica === 'retirada') {
+        localEntrega = 'Retirada Imediata no Sabará, 1927';
+      } else if (logistica === 'entrega_zs') {
+        localEntrega = 'Entrega Expressa na Zona Sul / SP';
+      } else {
+        localEntrega = 'Envio Transportadora / Brasil';
+      }
 
-  gsap.to('#progress',{scaleX:1,ease:'none',
-    scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:.3}});
+      // Configuração técnica por projeto
+      switch (tipo) {
+        case 'eletrica_completa':
+          titulo = 'Kit Instalação Elétrica Completa';
+          cabos = 'Fios 1,5mm² (ilum.), 2,5mm² (tomadas), 6mm² ou 10mm² (chuveiro)';
+          protecao = tensao === '127v' ? 'Disjuntores DIN Monopolares + DR 30mA + DPS 20kA' : 'Disjuntores DIN Bipolares/Tripolares + DR Geral + DPS';
+          conexoes = 'Conectores WAGO 221 + Eletrodutos Tigreflex + Caixas 4x2';
+          conselho = 'Recomendamos prever 20% a mais de metragem de cabo para perdas de passagem e curvas na tubulação.';
+          break;
 
-  var mm=gsap.matchMedia();
+        case 'quadro_distribuicao':
+          titulo = 'Kit Modernização de Quadro de Disjuntores';
+          cabos = 'Cabos de ligação 10mm² a 16mm² + Barramento Pente de Cobre';
+          protecao = 'Disjuntores padrão DIN curva C + DR tetrapolar/bipolar + DPS Classe II';
+          conexoes = 'Terminais tubulares ilhós + Conectores WAGO linha pesada';
+          conselho = 'Adequação necessária para evitar desarme em cascata e proteger equipamentos eletrônicos contra queimas por raios.';
+          break;
 
-  mm.add('(prefers-reduced-motion: no-preference)',function(){
-    // titulo do hero letra a letra
-    document.querySelectorAll('[data-split]').forEach(function(el){
-    // agrupa por palavra (nao quebra no meio) e preserva tags aninhadas como <em>
-    function splitEmLetras(el){
-      Array.prototype.slice.call(el.childNodes).forEach(function(node){
-        if(node.nodeType===3){
-          var frag=document.createDocumentFragment();
-          node.textContent.split(/(\s+)/).forEach(function(chunk){
-            if(!chunk) return;
-            if(/^\s+$/.test(chunk)){ frag.appendChild(document.createTextNode(chunk)); return; }
-            var word=document.createElement('span');
-            word.className='word';
-            chunk.split('').forEach(function(ch){
-              var c=document.createElement('span');
-              c.className='ch';
-              c.textContent=ch;
-              word.appendChild(c);
-            });
-            frag.appendChild(word);
-          });
-          node.parentNode.replaceChild(frag,node);
-        } else if(node.nodeType===1){
-          splitEmLetras(node);
-        }
-      });
+        case 'iluminacao_reforma':
+          titulo = 'Kit Modernização com Iluminação LED';
+          cabos = 'Cabos paralelos 1,5mm² ou flexíveis de retorno';
+          protecao = 'Disjuntor dedicado para circuito de iluminação (10A a 16A)';
+          conexoes = 'Plafons LED Ourolux + Fitas LED 12V/24V + Fontes Blindadas';
+          conselho = 'Luminárias LED com IRC > 80 garantem fidelidade de cores e reduzem o consumo de energia em até 85%.';
+          break;
+
+        case 'hidraulica_reforma':
+          titulo = 'Kit Hidráulica Predial & Conexões';
+          cabos = 'Engates flexíveis metálicos + Tubos soldáveis 25mm e 32mm';
+          protecao = 'Registros de gaveta e pressão metálicos Docol/Deca';
+          conexoes = 'Conexões PVC tigre + Fita veda-rosca teflon + Adesivo plástico';
+          conselho = 'Use registros estanques com sede substituível para facilitar futuras manutenções sem quebrar alvenaria.';
+          break;
+
+        case 'manutencao_geral':
+          titulo = 'Kit Reparos Gerais, Fixação & Ferragens';
+          cabos = 'Variedade de parafusos chipboard, buchas 6/8/10 e abraçadeiras';
+          protecao = 'Chaves isoladas Vonder + Multímetro digital Minipa';
+          conexoes = 'Abraçadeiras Hellermann + Fitas isolantes 3M';
+          conselho = 'Itens essenciais para ter sempre em estoque na oficina ou almoxarifado do condomínio.';
+          break;
+      }
+
+      // Atualiza DOM
+      document.getElementById('resTituloAdr').textContent = titulo;
+      document.getElementById('resCabos').textContent = cabos;
+      document.getElementById('resProtecao').textContent = protecao;
+      document.getElementById('resConexoes').textContent = conexoes;
+      document.getElementById('resLocalAdr').textContent = localEntrega;
+      document.getElementById('resNotaAdr').textContent = conselho;
+
+      // Monta mensagem WhatsApp
+      const tipoMap = {
+        'eletrica_completa': 'Instalação Elétrica Completa',
+        'quadro_distribuicao': 'Reforma de Quadro de Luz / Disjuntores',
+        'iluminacao_reforma': 'Iluminação LED',
+        'hidraulica_reforma': 'Hidráulica e Conexões',
+        'manutencao_geral': 'Manutenção / Ferragens'
+      };
+
+      const perfilMap = {
+        'instalador': 'Eletricista / Instalador',
+        'empreiteiro': 'Construtor / Empreiteiro',
+        'consumidor': 'Consumidor Final',
+        'empresa': 'Empresa / Condomínio (PJ)'
+      };
+
+      const tensaoMap = {
+        '127v': '127V Monofásico',
+        '220v_bi': '220V Bifásico',
+        '380v_tri': '380V Trifásico'
+      };
+
+      const textoMsg = `Olá, Elétrica ADR! Montei minha lista no site e gostaria de uma cotação:
+• Projeto: ${tipoMap[tipo]}
+• Perfil: ${perfilMap[perfil]}
+• Rede/Tensão: ${tensaoMap[tensao]} (${pontos})
+• Itens Previstos: ${cabos} | ${protecao} | ${conexoes}
+• Logística: ${localEntrega}
+
+Poderiam me passar o orçamento com os melhores valores e disponibilidade?`;
+
+      const encoded = encodeURIComponent(textoMsg);
+      document.getElementById('btnEnviarListaAdr').href = `https://wa.me/551156315675?text=${encoded}`;
     }
-      splitEmLetras(el);
-      gsap.from(el.querySelectorAll('.ch'),{yPercent:112,opacity:0,stagger:.026,duration:.85,ease:'expo.out',delay:.15,immediateRender:false});
+
+    document.addEventListener('DOMContentLoaded', () => {
+      calcularListaEletrica();
     });
-    gsap.from('.hero .eyebrow',{y:20,opacity:0,duration:.9,ease:'power3.out',delay:.05,immediateRender:false});
-    gsap.from('.hero-sub, .hero-stats, .hero-cta',{y:26,opacity:0,duration:1,stagger:.09,ease:'power3.out',delay:.5,immediateRender:false});
-    gsap.from('.hero-media img',{scale:1.12,duration:1.6,ease:'power2.out',immediateRender:false});
-
-    // reveals genericos — um nivel por elemento, cada um com seu proprio trigger
-    gsap.utils.toArray('[data-reveal]').forEach(function(el){
-      gsap.from(el,{y:44,opacity:0,duration:.9,ease:'power3.out',
-        immediateRender:false,scrollTrigger:{trigger:el,start:'top 88%'}});
-    });
-
-    // parallax sutil da foto do hero
-    gsap.to('#heroMedia img',{yPercent:10,ease:'none',
-      scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
-  });
-
-  window.addEventListener('load',function(){ ScrollTrigger.refresh(); });
-  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(function(){ ScrollTrigger.refresh(); }); }
-})();
-</script>
+  </script>
 </body>
 </html>
